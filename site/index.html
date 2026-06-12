@@ -22,7 +22,7 @@
   .top{ padding:6px 2px 0; display:flex; align-items:flex-end; gap:6px; }
   .top-text{ flex:1 1 auto; min-width:0; }
   .ey{ font-size:13px; color:var(--muted); font-weight:600; }
-  .head{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.32; margin:3px 0 0; word-break:keep-all; }
+  .head{ font-size:17px; font-weight:800; letter-spacing:-.03em; line-height:1.32; margin:3px 0 0; word-break:keep-all; white-space:nowrap; }
   .dog-track{ position:relative; flex:0 0 104px; height:34px; }
   .about-dog{ position:absolute; left:0; bottom:0; background:none; border:none; padding:2px;
               cursor:pointer; animation:roam 24s ease-in-out infinite; }
@@ -103,10 +103,13 @@
   .mk-er .mk-lab{ left:auto; right:0; transform:none; }  /* 오른쪽 끝: 안쪽(왼쪽)으로 */
   .chart-cap{ font-size:11.5px; color:var(--muted); margin-top:9px; text-align:center; }
   .tldr{ background:var(--brand-bg); border-radius:12px; padding:13px 16px; margin-top:12px; }
-  .tldr-cap{ font-size:11.5px; font-weight:800; color:var(--brand); letter-spacing:.02em; margin-bottom:5px; }
+  .tldr-meta{ font-size:11px; color:var(--muted); font-weight:600; margin-bottom:6px; }
+.tldr-cap{ font-size:11.5px; font-weight:800; color:var(--brand); letter-spacing:.02em; margin-bottom:5px; }
   .tldr-list{ margin:0; padding-left:17px; }
   .tldr-list li{ font-size:13.5px; line-height:1.6; margin:3px 0; color:#2b313d; }
-  .impact{ margin-left:auto; font-size:12px; letter-spacing:-2px; }
+  .impact{ margin-left:auto; display:inline-flex; gap:2px; align-items:center; }
+  .ig-seg{ width:5px; height:11px; border-radius:1.5px; background:#e3e6ec; }
+  .ig-seg.on{ background:var(--brand); }
   .impact-info, .gauge-info{ flex:none; margin-left:6px; width:18px; height:18px; border:none; border-radius:50%;
                 background:#eceef1; color:var(--muted); font-size:12px; cursor:pointer; vertical-align:middle; padding:0;
                 display:inline-flex; align-items:center; justify-content:center; }
@@ -115,25 +118,27 @@
   .impact-note{ margin:12px 2px 8px; line-height:1.4; }
   .cal-guide{ background:var(--brand-bg); border-radius:12px; padding:12px 14px; margin-bottom:10px;
               font-size:13px; line-height:1.62; color:#2b313d; }
-  .cal-item{ border-top:1px solid var(--line); }
-  .cal-item:first-of-type{ border-top:none; }
-  .cal-row{ display:flex; align-items:flex-start; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
+  .cg-lead{ font-weight:700; }
+  .cg-sub{ margin-top:6px; padding-left:13px; text-indent:-13px; color:#41485a; }
+  .cal-item{ background:#f6f7f9; border:1px solid var(--line); border-radius:12px; margin-bottom:8px; }
+  .cal-item[open]{ background:#fff; }
+  .cal-row{ display:block; padding:12px 14px; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-main{ flex:1; min-width:0; overflow:hidden; }
-  .cal-name{ font-size:13.5px; font-weight:700; white-space:nowrap; overflow:hidden;
-             text-overflow:ellipsis; letter-spacing:-.02em; }
-  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
-  .cal-impact{ font-size:12.5px; color:#41485a; margin-top:2px; line-height:1.5; }
-  .cal-side{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
-  .cal-dday{ min-width:44px; text-align:center; font-size:11.5px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:3px 6px; }
+  .cal-head{ display:flex; align-items:center; gap:7px; margin-bottom:5px; }
+  .cal-dday{ flex:none; min-width:46px; text-align:center; font-size:11px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:3px 6px; }
   .cal-dday.today{ color:#fff; background:var(--brand); }
   .cal-dday.past{ color:var(--muted); background:#eceef1; }
   .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
-  .cal-caret{ font-size:9px; transition:transform .2s; }
-  .cal-item[open] .cal-caret{ transform:rotate(180deg); }
-  .cal-item[open] .cal-more{ background:var(--brand); color:#fff; }
-  .cal-detail{ padding:2px 0 13px 58px; }
+  .cal-caret{ margin-left:auto; flex:none; width:22px; height:22px; border-radius:50%;
+              display:inline-flex; align-items:center; justify-content:center; font-size:11px;
+              color:var(--muted); background:#eceef1; transition:transform .2s, background .2s; }
+  .cal-item[open] .cal-caret{ transform:rotate(180deg); color:#fff; background:var(--brand); }
+  .cal-name{ font-size:13.5px; font-weight:700; letter-spacing:-.02em; margin-bottom:3px;
+             word-break:keep-all; }
+  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
+  .cal-impact{ font-size:12.5px; color:#41485a; line-height:1.5; }
+  .cal-detail{ padding:2px 14px 13px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
   .cal-scn{ font-size:12.5px; color:#41485a; margin-top:6px; line-height:1.55;
             padding-left:13px; text-indent:-13px; }
@@ -276,7 +281,7 @@
     <div class="hero-row">
       <div class="hero-left">
         <div class="hero-label">지금 원·달러 환율</div>
-        <div class="hero-rate" id="rateNow">1,518~1,528원</div>
+        <div class="hero-rate" id="rateNow">1,518원</div>
       </div>
       <div class="hero-right">
         <span id="rateDelta" class="chip"></span>
@@ -286,7 +291,7 @@
     </div>
   </section>
 
-  <section><div class="tldr"><div class="tldr-cap">30초 요약</div><ul class="tldr-list"><li>원/달러 환율은 전날 장중 1,530원대를 넘었다가 오늘 오전 1,518.0원으로 개장하며 10.9원 내렸다.</li><li>트럼프 대통령의 미·이란 종전 합의 임박 발언으로 달러 수요가 줄었고, 한국은행 총재의 금리 인상 예고가 원화를 사려는 수요를 더해 환율이 내렸다.</li><li>달러가 일시적으로 약해진 구간이지만 미국 5월 소비자물가가 4.2%로 높게 나와 연준(미국 중앙은행)의 추가 금리 인상 가능성이 남아 있어 환율이 추가로 크게 내리기는 어려운 상황이므로, 달러 매수나 환전은 서두르지 말고 추이를 조금 더 지켜보는 것이 낫다.</li></ul></div></section>
+  <section><div class="tldr"><div class="tldr-meta">📅 2026년 06월 12일 기준 · 매일 오전 9시 업데이트</div><div class="tldr-cap">30초 요약</div><ul class="tldr-list"><li>원/달러 환율은 전날 장중 1,530원대를 넘었다가 오늘 오전 1,518.0원으로 개장하며 10.9원 내렸다.</li><li>트럼프 대통령의 미·이란 종전 합의 임박 발언으로 달러 수요가 줄었고, 한국은행 총재의 금리 인상 예고가 원화를 사려는 수요를 더해 환율이 내렸다.</li><li>달러가 일시적으로 약해진 구간이지만 미국 5월 소비자물가가 4.2%로 높게 나와 연준(미국 중앙은행)의 추가 금리 인상 가능성이 남아 있어 환율이 추가로 크게 내리기는 어려운 상황이므로, 달러 매수나 환전은 서두르지 말고 추이를 조금 더 지켜보는 것이 낫다.</li></ul></div></section>
 
   <section id="feelBox">
     <h3 class="sec">어제보다 이만큼 더 들어요</h3>
@@ -310,8 +315,8 @@
     <div class="chart-cap" id="chartCap"></div>
   </section>
 
-  <section><h3 class="sec">환율 영향 일정</h3><div class="cal-guide">💡 다음 주 화요일(6월 17일) 한국은행 금융통화위원회와 같은 날 또는 전후로 예정된 미국 6월 FOMC 결과(6월 18일 새벽 한국시간)가 이번 환율의 최대 변수다. 두 중앙은행의 금리 결정이 겹치는 만큼 원/달러 환율 변동성이 극대화될 수 있다. 환전을 서두를 필요가 있는 달러 매수자라면 FOMC 전 주말(6월 14~15일)을 활용하는 것이 안전하고, 달러 매도자는 FOMC 이후 방향성을 확인한 뒤 행동하는 것이 유리하다.</div><div class="cal-wk">이번주</div><details class="cal-item"><summary class="cal-row" data-date="2026-06-11"><div class="cal-main"><div class="cal-name">미국 5월 소비자물가지수(CPI) <span class="cal-star">★★★</span></div><div class="cal-impact">금리 인상 여부를 가를 핵심 물가 지표로, 발표 결과에 따라 원/달러 환율이 크게 움직일 수 있다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/11(목)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-result">📊 미국 5월 CPI가 시장 예상치에 대체로 부합한 가운데, 달러-원 환율은 상승분 일부를 반납하며 1,520.20원에 마감했다.</div></div></details><details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">다음주 <span class="cal-caret">▾</span></summary><details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-main"><div class="cal-name">미국 6월 FOMC 회의 시작 <span class="cal-star">★★★</span></div><div class="cal-impact">연준의 금리 인상 여부와 경제전망(SEP) 공개로 원/달러 환율에 결정적 영향을 준다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-why">뉴스 여러 건에서 '6월 FOMC'와 '경제전망(SEP)'이 금리 인상 판단의 핵심 이벤트로 지목됐다. 금리 인상이 결정되면 달러 강세와 원화 약세가 동시에 나타날 수 있다. 결과는 한국시간으로 6월 18일 새벽에 공개될 것으로 예상된다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 인상 또는 강한 매파적 신호가 나오면</b> 달러 강세 강화, 원/달러 환율 급등 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 동결 및 비둘기파적 신호가 나오면</b> 달러 약세 전환, 원/달러 환율 하락 압력</div></div></details>
-<details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-main"><div class="cal-name">한국은행 금융통화위원회 <span class="cal-star">★★★</span></div><div class="cal-impact">한국 금리 인상 여부 결정으로 원/달러 환율에 직접 영향을 준다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-why">뉴스에서 '6월 임시 금통위 가능성'과 '3분기 연속 금리 인상' 언급이 나왔다. 환율 급등과 고용·물가 압력이 겹치며 한은의 선제 대응 가능성이 부각되고 있다. 금리 인상 결정 시 원화 강세 요인이 되나, 미국 FOMC와 결과가 맞물릴 경우 방향성이 복잡해진다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 인상하면</b> 원화 강세 압력, 원/달러 환율 하락 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 동결하면</b> 원화 약세 압력 지속, 원/달러 환율 상승 우려</div></div></details></details><div class="sec-note">항목을 누르면 상세가 열려요 · 시각은 한국시간(KST) 기준 · 날짜는 뉴스 기반이라 변동될 수 있어요.</div></section>
+  <section><h3 class="sec">환율 영향 일정</h3><div class="cal-guide"><div class="cg-lead">💡 다음 주 화요일(6월 17일) 한국은행 금융통화위원회와 같은 날 또는 전후로 예정된 미국 6월 FOMC 결과(6월 18일 새벽 한국시간)가 이번 환율의 최대 변수다.</div><div class="cg-sub"><span class="cal-dot">·</span>두 중앙은행의 금리 결정이 겹치는 만큼 원/달러 환율 변동성이 극대화될 수 있다.</div><div class="cg-sub"><span class="cal-dot">·</span>환전을 서두를 필요가 있는 달러 매수자라면 FOMC 전 주말(6월 14~15일)을 활용하는 것이 안전하고, 달러 매도자는 FOMC 이후 방향성을 확인한 뒤 행동하는 것이 유리하다.</div></div><div class="cal-wk">이번주</div><details class="cal-item"><summary class="cal-row" data-date="2026-06-11"><div class="cal-head"><span class="cal-dday">·</span><span class="cal-date">6/11(목)</span><span class="cal-caret">▾</span></div><div class="cal-name">미국 5월 소비자물가지수(CPI) <span class="cal-star">★★★</span></div><div class="cal-impact">금리 인상 여부를 가를 핵심 물가 지표로, 발표 결과에 따라 원/달러 환율이 크게 움직일 수 있다.</div></summary><div class="cal-detail"><div class="cal-result">📊 미국 5월 CPI가 시장 예상치에 대체로 부합한 가운데, 달러-원 환율은 상승분 일부를 반납하며 1,520.20원에 마감했다.</div></div></details><details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">다음주 <span class="cal-caret">▾</span></summary><details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-head"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div><div class="cal-name">미국 6월 FOMC 회의 시작 <span class="cal-star">★★★</span></div><div class="cal-impact">연준의 금리 인상 여부와 경제전망(SEP) 공개로 원/달러 환율에 결정적 영향을 준다.</div></summary><div class="cal-detail"><div class="cal-why">뉴스 여러 건에서 '6월 FOMC'와 '경제전망(SEP)'이 금리 인상 판단의 핵심 이벤트로 지목됐다. 금리 인상이 결정되면 달러 강세와 원화 약세가 동시에 나타날 수 있다. 결과는 한국시간으로 6월 18일 새벽에 공개될 것으로 예상된다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 인상 또는 강한 매파적 신호가 나오면</b> 달러 강세 강화, 원/달러 환율 급등 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 동결 및 비둘기파적 신호가 나오면</b> 달러 약세 전환, 원/달러 환율 하락 압력</div></div></details>
+<details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-head"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div><div class="cal-name">한국은행 금융통화위원회 <span class="cal-star">★★★</span></div><div class="cal-impact">한국 금리 인상 여부 결정으로 원/달러 환율에 직접 영향을 준다.</div></summary><div class="cal-detail"><div class="cal-why">뉴스에서 '6월 임시 금통위 가능성'과 '3분기 연속 금리 인상' 언급이 나왔다. 환율 급등과 고용·물가 압력이 겹치며 한은의 선제 대응 가능성이 부각되고 있다. 금리 인상 결정 시 원화 강세 요인이 되나, 미국 FOMC와 결과가 맞물릴 경우 방향성이 복잡해진다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 인상하면</b> 원화 강세 압력, 원/달러 환율 하락 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 동결하면</b> 원화 약세 압력 지속, 원/달러 환율 상승 우려</div></div></details></details></section>
 
   <section id="tipBox">
     <h3 class="sec">매달 환전한다면</h3>
@@ -323,11 +328,10 @@
 
   <section>
     <h3 class="sec">오늘 환율을 움직인 요인 Top 4</h3>
-    <p class="prose"><b class="hl">트럼프 대통령이 미·이란 종전 합의 서명이 이번 주말 이뤄질 것이라고 밝히자</b> 전쟁 위기가 줄어들 것이라는 기대에 <span class="term" data-term="안전자산" data-def="위기 때 사람들이 몰리는 비교적 안전한 자산(달러·금 등)이에요.">안전자산<span class="mag">🔍</span></span>인 달러 수요가 줄어 달러 인덱스(달러의 전반적인 강도)가 99선 아래로 내려앉았고, 환율은 전날보다 10.9원 내린 1,518.0원으로 개장했다. 여기에 한국은행 총재가 '늦지 않게 금리를 올려야 한다'고 밝히면서 <b class="hl">한국 원화 자산의 이자 수익이 높아질 것이라는 기대에 외국인 자금이 원화를 사는 방향으로 움직여</b> 환율을 더 끌어내렸다.</p>
-    <div class="sec-note impact-note">🔥 영향도는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div><div class="factor"><div class="factor-head"><span class="rank">1</span><span class="factor-name">지정학 리스크</span><span class="impact" title="오늘 영향도">🔥🔥🔥🔥🔥</span><button class="impact-info" data-term="지정학 리스크 · 영향도 5/5" data-def="복수 매체가 오늘 개장 환율 급락의 1순위 원인으로 미·이란 종전 기대를 직접 지목했고, 10원 넘는 낙폭의 직접 트리거로 작용했다.">i</button></div><div class="factor-line">트럼프가 미·이란 종전 합의가 마무리 단계라고 밝히자 안전자산인 달러 수요가 줄어 환율이 10.9원 내린 1,518.0원으로 개장했다.</div><ul class="factor-bullets"><li>트럼프 대통령이 미·이란 종전 합의 문서 서명이 이번 주말 이뤄질 것이라고 밝히자 전쟁 위기가 줄어들 것이라는 기대에 달러 인덱스가 99선 아래로 내려앉았다.</li><li>12일 서울 외환시장에서 달러·원 환율은 오전 9시 17분 기준 전날보다 8.30원 내린 수준에서 거래됐으며, 개장가는 1,518.0원이었다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.yna.co.kr/amp/view/AKR20260612040700002" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://kbthink.com/news-list/view.html?newsId=20260612092429639" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://mobile.newsis.com/view_amp.html?ar_id=NISX20260612_0003666581" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://bloomingbit.io/feed/news/114049" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.reportera.co.kr/economy/us-iran-mou-dollar-drop-hormuz-s/" target="_blank" rel="noopener">5</a></div></div>
-<div class="factor"><div class="factor-head"><span class="rank">2</span><span class="factor-name">한국 통화정책</span><span class="impact" title="오늘 영향도">🔥🔥🔥🔥</span><button class="impact-info" data-term="한국 통화정책 · 영향도 4/5" data-def="오늘 한은 창립 기념일에 총재가 금리 인상 필요성을 공식 발언해 원화 강세 기대를 더했고, 복수 매체가 오늘 날짜 발언으로 보도했다.">i</button></div><div class="factor-line">신현송 한국은행 총재가 12일 창립 기념사에서 '늦지 않게 금리를 올려야 한다'고 밝혀 원화 가치를 떠받치는 힘이 커졌다.</div><ul class="factor-bullets"><li>신현송 총재는 12일 한은 76주년 창립 기념사에서 성장·물가·금융 안정이 모두 금리 인상 방향을 가리킨다고 밝혔고, 이는 시장에서 연내 2회 인상 기대로 이어졌다.</li><li>한국이 금리를 올리면 한국 원화 자산의 이자 수익이 높아져 외국인 자금이 들어오고 달러를 팔아 원화를 사는 수요가 늘어 환율을 끌어내리는 힘이 생긴다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.hani.co.kr/arti/economy/economy_general/1263203.html" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.yna.co.kr/amp/view/AKR20260612063000002" target="_blank" rel="noopener">2</a><a class="src-chip" href="http://www.newsian.co.kr/news/articleView.html?idxno=90859" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.youthdaily.co.kr/news/article.html?no=220790" target="_blank" rel="noopener">4</a></div></div>
-<div class="factor"><div class="factor-head"><span class="rank">3</span><span class="factor-name">미국 경제지표</span><span class="impact" title="오늘 영향도">🔥🔥🔥</span><button class="impact-info" data-term="미국 경제지표 · 영향도 3/5" data-def="미국 5월 CPI 결과와 연준 금리 경로가 달러 강도를 좌우하는 변수로 복수 기사에서 언급됐으나, 오늘 환율 방향은 지정학 요인이 압도해 보조적 역할에 그쳤다.">i</button></div><div class="factor-line">미국 5월 CPI가 4.2%로 3년여 만에 최고치를 기록해 연준 추가 금리 인상 가능성이 살아있고, 이는 달러를 끌어올리는 힘으로 작용하며 환율 하단을 지지했다.</div><ul class="factor-bullets"><li>미국 5월 <span class="term" data-term="소비자물가" data-def="물가가 얼마나 올랐는지 보는 지표(CPI). 높으면 금리 인상 압력이 커져요.">소비자물가<span class="mag">🔍</span></span>(<span class="term" data-term="CPI" data-def="소비자물가지수. 물가가 얼마나 올랐는지 보는 지표로, 높으면 금리를 올릴 가능성이 커져요.">CPI<span class="mag">🔍</span></span>)는 4.2%로 3년여 만에 가장 높은 수준을 기록했고, 금리선물 시장은 연말 25bp 추가 인상과 12개월 긴축 지속을 반영하기 시작했다.</li><li>근원 CPI는 소폭 둔화했지만 TD증권은 달러 하락이 제한적이고 <span class="term" data-term="FOMC" data-def="미국 연준이 기준금리를 결정하는 회의예요.">FOMC<span class="mag">🔍</span></span> 이후 달러 강세가 재개될 가능성이 있다고 분석했다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://supple.kr/news/cmq97oba100icxczdxkgx9zwt" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/5%EC%9B%94-cpi-%EB%B0%9C%ED%91%9C-%EC%95%9E%EB%91%90%EA%B3%A0-%EB%8B%AC%EB%9F%AC-%EC%B6%94%EA%B0%80-%EA%B0%95%EC%84%B8-%EA%B0%80%EB%8A%A5%EC%84%B1%EC%8B%9C%EC%9E%A5-%EC%97%B0%EC%A4%80/" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/%EB%AF%B8-%EB%8B%AC%EB%9F%AC%ED%99%94-%EB%AF%B8-cpi-%EB%B0%9C%ED%91%9C-%EC%95%9E%EB%91%90%EA%B3%A0-%EA%B0%95%EC%84%B8-%EC%9C%A0%EC%A7%80%EC%8B%9C%EC%9E%A5-%EA%B7%BC%EC%9B%90-%EC%9D%B8/" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.interactivecrypto.com/ko/eurusd-1-1537-ecb-0-0173-cpi-jun-2026" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/td%EC%A6%9D%EA%B6%8C-%EA%B7%BC%EC%9B%90-cpi-%EB%91%94%ED%99%94%EC%97%90-%EB%8B%AC%EB%9F%AC-%EC%86%8C%ED%8F%AD-%ED%95%98%EB%9D%BD-%EC%A0%84%EB%A7%9Dfomc-%EC%95%9E%EB%91%90%EA%B3%A0-%EB%8B%AC/" target="_blank" rel="noopener">5</a></div></div>
-<div class="factor"><div class="factor-head"><span class="rank">4</span><span class="factor-name">외국인 증시 수급</span><span class="impact" title="오늘 영향도">🔥🔥</span><button class="impact-info" data-term="외국인 증시 수급 · 영향도 2/5" data-def="외국인 주식 매도가 전날 환율 상승에 기여했다는 기사가 있으나, 오늘은 종전 기대로 증시가 반등하면서 매도 압력이 완화돼 보조적·부분적 영향에 그쳤다.">i</button></div><div class="factor-line">전날 외국인 투자자의 국내 주식 순매도가 달러 수요를 높여 환율을 1,530원대 위로 밀어 올렸고, 오늘 증시 반등으로 그 압력이 일부 해소됐다.</div><ul class="factor-bullets"><li>11일 중동 긴장이 고조되는 가운데 외국인이 국내 주식을 순매도하면서 달러 수요가 늘어 환율이 장중 1,530원대를 돌파했다.</li><li>12일 코스닥이 4%대 급등하는 등 국내 증시가 반등하면서 외국인 매도 압력이 줄고 환율을 내리는 힘이 더해졌다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.betanews.net/article/view/beta202606110085" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.tokenpost.kr/news/economy/368223" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.thereport.co.kr/news/articleView.html?idxno=88680" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.news2day.co.kr/article/20260612500080" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.shinailbo.co.kr/news/articleView.html?idxno=5029743" target="_blank" rel="noopener">5</a></div></div>
+    <div class="sec-note impact-note">영향도 막대는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div><div class="factor"><div class="factor-head"><span class="rank">1</span><span class="factor-name">지정학 리스크</span><span class="impact" title="오늘 영향도 5/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span></span><button class="impact-info" data-term="지정학 리스크 · 영향도 5/5" data-def="복수 매체가 오늘 개장 환율 급락의 1순위 원인으로 미·이란 종전 기대를 직접 지목했고, 10원 넘는 낙폭의 직접 트리거로 작용했다.">i</button></div><div class="factor-line">트럼프가 미·이란 종전 합의가 마무리 단계라고 밝히자 안전자산인 달러 수요가 줄어 환율이 10.9원 내린 1,518.0원으로 개장했다.</div><ul class="factor-bullets"><li>트럼프 대통령이 미·이란 종전 합의 문서 서명이 이번 주말 이뤄질 것이라고 밝히자 전쟁 위기가 줄어들 것이라는 기대에 달러 인덱스가 99선 아래로 내려앉았다.</li><li>12일 서울 외환시장에서 달러·원 환율은 오전 9시 17분 기준 전날보다 8.30원 내린 수준에서 거래됐으며, 개장가는 1,518.0원이었다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.yna.co.kr/amp/view/AKR20260612040700002" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://kbthink.com/news-list/view.html?newsId=20260612092429639" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://mobile.newsis.com/view_amp.html?ar_id=NISX20260612_0003666581" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://bloomingbit.io/feed/news/114049" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.reportera.co.kr/economy/us-iran-mou-dollar-drop-hormuz-s/" target="_blank" rel="noopener">5</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">2</span><span class="factor-name">한국 통화정책</span><span class="impact" title="오늘 영향도 4/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg"></span></span><button class="impact-info" data-term="한국 통화정책 · 영향도 4/5" data-def="오늘 한은 창립 기념일에 총재가 금리 인상 필요성을 공식 발언해 원화 강세 기대를 더했고, 복수 매체가 오늘 날짜 발언으로 보도했다.">i</button></div><div class="factor-line">신현송 한국은행 총재가 12일 창립 기념사에서 '늦지 않게 금리를 올려야 한다'고 밝혀 원화 가치를 떠받치는 힘이 커졌다.</div><ul class="factor-bullets"><li>신현송 총재는 12일 한은 76주년 창립 기념사에서 성장·물가·금융 안정이 모두 금리 인상 방향을 가리킨다고 밝혔고, 이는 시장에서 연내 2회 인상 기대로 이어졌다.</li><li>한국이 금리를 올리면 한국 원화 자산의 이자 수익이 높아져 외국인 자금이 들어오고 달러를 팔아 원화를 사는 수요가 늘어 환율을 끌어내리는 힘이 생긴다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.hani.co.kr/arti/economy/economy_general/1263203.html" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.yna.co.kr/amp/view/AKR20260612063000002" target="_blank" rel="noopener">2</a><a class="src-chip" href="http://www.newsian.co.kr/news/articleView.html?idxno=90859" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.youthdaily.co.kr/news/article.html?no=220790" target="_blank" rel="noopener">4</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">3</span><span class="factor-name">미국 경제지표</span><span class="impact" title="오늘 영향도 3/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg"></span><span class="ig-seg"></span></span><button class="impact-info" data-term="미국 경제지표 · 영향도 3/5" data-def="미국 5월 CPI 결과와 연준 금리 경로가 달러 강도를 좌우하는 변수로 복수 기사에서 언급됐으나, 오늘 환율 방향은 지정학 요인이 압도해 보조적 역할에 그쳤다.">i</button></div><div class="factor-line">미국 5월 CPI가 4.2%로 3년여 만에 최고치를 기록해 연준 추가 금리 인상 가능성이 살아있고, 이는 달러를 끌어올리는 힘으로 작용하며 환율 하단을 지지했다.</div><ul class="factor-bullets"><li>미국 5월 <span class="term" data-term="소비자물가" data-def="물가가 얼마나 올랐는지 보는 지표(CPI). 높으면 금리 인상 압력이 커져요.">소비자물가<span class="mag">🔍</span></span>(<span class="term" data-term="CPI" data-def="소비자물가지수. 물가가 얼마나 올랐는지 보는 지표로, 높으면 금리를 올릴 가능성이 커져요.">CPI<span class="mag">🔍</span></span>)는 4.2%로 3년여 만에 가장 높은 수준을 기록했고, 금리선물 시장은 연말 25bp 추가 인상과 12개월 긴축 지속을 반영하기 시작했다.</li><li>근원 CPI는 소폭 둔화했지만 TD증권은 달러 하락이 제한적이고 <span class="term" data-term="FOMC" data-def="미국 연준이 기준금리를 결정하는 회의예요.">FOMC<span class="mag">🔍</span></span> 이후 달러 강세가 재개될 가능성이 있다고 분석했다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://supple.kr/news/cmq97oba100icxczdxkgx9zwt" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/5%EC%9B%94-cpi-%EB%B0%9C%ED%91%9C-%EC%95%9E%EB%91%90%EA%B3%A0-%EB%8B%AC%EB%9F%AC-%EC%B6%94%EA%B0%80-%EA%B0%95%EC%84%B8-%EA%B0%80%EB%8A%A5%EC%84%B1%EC%8B%9C%EC%9E%A5-%EC%97%B0%EC%A4%80/" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/%EB%AF%B8-%EB%8B%AC%EB%9F%AC%ED%99%94-%EB%AF%B8-cpi-%EB%B0%9C%ED%91%9C-%EC%95%9E%EB%91%90%EA%B3%A0-%EA%B0%95%EC%84%B8-%EC%9C%A0%EC%A7%80%EC%8B%9C%EC%9E%A5-%EA%B7%BC%EC%9B%90-%EC%9D%B8/" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.interactivecrypto.com/ko/eurusd-1-1537-ecb-0-0173-cpi-jun-2026" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.vtmarkets.com/kr/live-updates/td%EC%A6%9D%EA%B6%8C-%EA%B7%BC%EC%9B%90-cpi-%EB%91%94%ED%99%94%EC%97%90-%EB%8B%AC%EB%9F%AC-%EC%86%8C%ED%8F%AD-%ED%95%98%EB%9D%BD-%EC%A0%84%EB%A7%9Dfomc-%EC%95%9E%EB%91%90%EA%B3%A0-%EB%8B%AC/" target="_blank" rel="noopener">5</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">4</span><span class="factor-name">외국인 증시 수급</span><span class="impact" title="오늘 영향도 2/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg"></span><span class="ig-seg"></span><span class="ig-seg"></span></span><button class="impact-info" data-term="외국인 증시 수급 · 영향도 2/5" data-def="외국인 주식 매도가 전날 환율 상승에 기여했다는 기사가 있으나, 오늘은 종전 기대로 증시가 반등하면서 매도 압력이 완화돼 보조적·부분적 영향에 그쳤다.">i</button></div><div class="factor-line">전날 외국인 투자자의 국내 주식 순매도가 달러 수요를 높여 환율을 1,530원대 위로 밀어 올렸고, 오늘 증시 반등으로 그 압력이 일부 해소됐다.</div><ul class="factor-bullets"><li>11일 중동 긴장이 고조되는 가운데 외국인이 국내 주식을 순매도하면서 달러 수요가 늘어 환율이 장중 1,530원대를 돌파했다.</li><li>12일 코스닥이 4%대 급등하는 등 국내 증시가 반등하면서 외국인 매도 압력이 줄고 환율을 내리는 힘이 더해졌다.</li></ul><div class="factor-src">관련기사 <a class="src-chip" href="https://www.betanews.net/article/view/beta202606110085" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.tokenpost.kr/news/economy/368223" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.thereport.co.kr/news/articleView.html?idxno=88680" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.news2day.co.kr/article/20260612500080" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.shinailbo.co.kr/news/articleView.html?idxno=5029743" target="_blank" rel="noopener">5</a></div></div>
   </section>
 
   <section><h3 class="sec">지난 브리핑</h3><a class="arc-row" href="d/2026-06-09.html"><span class="arc-date">6/9</span><span class="arc-rate">1,527원 <i class="arc-chg down">▼1</i></span><span class="arc-head">환율 1527원, 여전히 높아요</span></a>
@@ -340,7 +344,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-12 14:58:43 KST<br>환율 <span id="rateSrc">ECB</span><br>뉴스 2026년 06월 12일<br>
+    발행 2026-06-12 16:04:17 KST<br>환율 <span id="rateSrc">ECB</span><br>뉴스 2026년 06월 12일<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -439,26 +443,26 @@ const ADV = [
   { adv:'싸고 더 내리는 중이에요. 천천히 나눠 사며 바닥을 노려보세요.', calc:'C', ref:'low' },
 ];
 const heroHTML = r => `<div class="th-label">${r.label}</div><div class="th-big ${r.dir}">${r.big}</div><div class="th-sub">${r.sub}</div>`;
-function calcA(cl, n){  // 매주 $200×4 분할 vs 오늘 $800 일괄
+function calcA(cl, n){  // 매주 $250×4 분할 vs 오늘 $1,000 일괄
   const weekly = [curRate]; [5,10,15].forEach(o => { const i = n-1-o; if(i>=0) weekly.push(cl[i]); });
   if(weekly.length < 2) return null;
   const avg = Math.round(weekly.reduce((a,b)=>a+b,0)/weekly.length), today = Math.round(curRate);
-  const d = today - avg, amt = Math.round(Math.abs(d)*800);
+  const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '거의 같았어요'; dir = ''; }
   else if(d > 0){ big = won(amt)+'원 아꼈어요'; dir = 'save'; }
   else { big = won(amt)+'원 더 들었어요'; dir = 'cost'; }
-  return { label:'매주 $200씩 4주 나눠 샀다면', big, dir, sub:`나눠 사기 평균 ${won(avg)}원 · 오늘 한 번에 ${won(today)}원` };
+  return { label:'매주 $250씩 4주 나눠 샀다면', big, dir, sub:`나눠 사기 평균 ${won(avg)}원 · 오늘 한 번에 ${won(today)}원` };
 }
-function calcB(v){  // 오늘 vs 최근 한 달 평균 ($800 기준)
+function calcB(v){  // 오늘 vs 최근 한 달 평균 ($1,000 기준)
   if(v.length < 5) return null;
   const avg = Math.round(v.reduce((a,b)=>a+b,0)/v.length), today = Math.round(curRate);
-  const d = today - avg, amt = Math.round(Math.abs(d)*800);
+  const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '평균과 비슷해요'; dir = ''; }
-  else if(d > 0){ big = '$800에 '+won(amt)+'원 더 비싸요'; dir = 'cost'; }
-  else { big = '$800에 '+won(amt)+'원 더 싸요'; dir = 'save'; }
-  return { label:'최근 한 달 평균과 비교하면', big, dir, sub:`한 달 평균 ${won(avg)}원 · 오늘 ${won(today)}원` };
+  else if(d > 0){ big = won(amt)+'원 더 들어요'; dir = 'cost'; }
+  else { big = won(amt)+'원 덜 들어요'; dir = 'save'; }
+  return { label:'한 달 평균 환율로 $1,000 바꿀 때보다', big, dir, sub:`한 달 평균 ${won(avg)}원 · 오늘 ${won(today)}원` };
 }
 function calcC(v, ref){  // 오늘 vs 최근 3개월 최고/최저
   if(v.length < 10) return null;
