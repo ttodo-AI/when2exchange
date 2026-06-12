@@ -529,7 +529,8 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .badge-bad{ background:var(--bad-bg); color:var(--bad-fg); }
   .hero-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
   .hero-left{ min-width:0; }
-  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; padding-top:3px; text-align:right; }
+  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:5px; padding-top:3px; text-align:right; }
+  .hr-verdict{ display:flex; align-items:center; gap:6px; }
   .gauge-mini{ font-size:14.5px; font-weight:800; max-width:150px; text-align:right; line-height:1.15; }
   .hero-meta .hd{ font-weight:800; margin-left:3px; }
   .hero-meta .hd.up{ color:var(--up); } .hero-meta .hd.down{ color:var(--down); }
@@ -737,7 +738,10 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
         <div class="hero-rate" id="rateNow">__RATE__</div>
       </div>
       <div class="hero-right">
-        <span id="gaugeMini" class="gauge-mini"></span>
+        <div class="hr-verdict">
+          <span id="gaugeMini" class="gauge-mini"></span>
+          <span id="rateDelta" class="chip"></span>
+        </div>
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
     </div>
@@ -854,22 +858,23 @@ const won = n => Math.round(n).toLocaleString('ko-KR');
 
 function render(rateNow, rateYest){
   const elNow = document.getElementById('rateNow');
+  const elDelta = document.getElementById('rateDelta');
   const elMeta = document.getElementById('rateMeta');
   const elBox = document.getElementById('feelBox');
 
   elNow.textContent = won(rateNow) + '원';
 
   if(rateYest == null){            // no day-over-day data: show rate only
+    elDelta.textContent = '';
     elMeta.textContent = '';
     elBox.style.display = 'none';
     return;
   }
   const dr = Math.round(rateNow - rateYest);   // +면 달러 비싸짐(원화 약세)
   const up = dr > 0, flat = (dr === 0);
-  // 어제 값 + 전일 대비를 한 줄로(중복 '어제' 제거).
-  elMeta.innerHTML = flat ? '어제와 비슷해요'
-    : '어제 ' + won(rateYest) + '원 <b class="hd ' + (up?'up':'down') + '">'
-      + (up?'▲':'▼') + won(Math.abs(dr)) + '</b>';
+  elDelta.textContent = flat ? '어제와 비슷' : (up?'▲':'▼') + won(Math.abs(dr)) + '원';  // '어제' 빼고 ▲N원
+  elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
+  elMeta.textContent = '어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;

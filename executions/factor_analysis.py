@@ -108,7 +108,7 @@ def get(item, *keys):
 def search_factor(client, query: str, limit: int):
     """Firecrawl news search → list of {title, link, snippet, date}."""
     try:
-        resp = client.search(query=query, limit=limit, sources=["news"], tbs="qdr:w")
+        resp = client.search(query=query, limit=limit, sources=["news"], tbs="qdr:d")  # 오늘(최근 24h)만
     except TypeError:
         resp = client.search(query=query, limit=limit)
     news = getattr(resp, "news", None)
