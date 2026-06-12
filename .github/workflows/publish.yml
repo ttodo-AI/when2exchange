@@ -3,7 +3,7 @@ name: Build & publish share page
 # 한국시간(KST=UTC+9) 기준 하루 2회. cron은 UTC.
 on:
   schedule:
-    - cron: '0 23 * * *'   # 08:00 KST -> full  (요인·일정까지 새로)
+    - cron: '0 0 * * *'    # 09:00 KST -> full  (요인·일정까지 새로)
     - cron: '0 9 * * *'    # 18:00 KST -> light (환율·판정·왜·체감만)
   workflow_dispatch:        # 수동 실행
     inputs:
@@ -39,7 +39,7 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
-          elif [ "${{ github.event.schedule }}" = "0 23 * * *" ]; then
+          elif [ "${{ github.event.schedule }}" = "0 0 * * *" ]; then
             echo "mode=full" >> "$GITHUB_OUTPUT"
           else
             echo "mode=light" >> "$GITHUB_OUTPUT"

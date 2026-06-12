@@ -245,6 +245,7 @@ def main() -> None:
                 items = "".join(f"<li>{emphasize(t)}</li>" for t in tldr)
                 tldr_html = (
                     '<section><div class="tldr">'
+                    '<div class="tldr-meta">📅 __TLDR_DATE__ 기준 · 매일 오전 9시 업데이트</div>'
                     '<div class="tldr-cap">30초 요약</div>'
                     f'<ul class="tldr-list">{items}</ul></div></section>'
                 )
@@ -258,7 +259,10 @@ def main() -> None:
                 )
                 src_html = f'<div class="factor-src">관련기사 {srcs}</div>' if srcs else ""
                 impact = int(f.get("impact") or 0)
-                fires = "🔥" * impact
+                gauge = "".join(
+                    f'<span class="ig-seg{" on" if k < impact else ""}"></span>'
+                    for k in range(5)
+                )
                 reason = esc(f.get("impact_reason", ""))
                 nm = esc(f.get("name", ""))
                 info_html = (
@@ -269,13 +273,13 @@ def main() -> None:
                     '<div class="factor">'
                     f'<div class="factor-head"><span class="rank">{i}</span>'
                     f'<span class="factor-name">{nm}</span>'
-                    f'<span class="impact" title="오늘 영향도">{fires}</span>{info_html}</div>'
+                    f'<span class="impact" title="오늘 영향도 {impact}/5">{gauge}</span>{info_html}</div>'
                     f'<div class="factor-line">{esc(f.get("headline",""))}</div>'
                     f'<ul class="factor-bullets">{bullets}</ul>'
                     f'{src_html}'
                     '</div>'
                 )
-            note = '<div class="sec-note impact-note">🔥 영향도는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div>'
+            note = '<div class="sec-note impact-note">영향도 막대는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div>'
             news_html = note + "\n".join(blocks)
             news_title = "오늘 환율을 움직인 요인 Top 4"
 
@@ -322,12 +326,12 @@ def main() -> None:
                 return (
                     '<details class="cal-item"><summary class="cal-row" '
                     f'data-date="{esc(ev.get("date",""))}">'
-                    f'<div class="cal-main"><div class="cal-name">{esc(ev.get("name",""))} '
-                    f'<span class="cal-star">{stars}</span></div>'
-                    f'<div class="cal-impact">{esc(ev.get("summary",""))}</div></div>'
-                    f'<div class="cal-side"><span class="cal-dday">·</span>'
+                    f'<div class="cal-head"><span class="cal-dday">·</span>'
                     f'<span class="cal-date">{esc(when)}</span>'
                     f'<span class="cal-caret">▾</span></div>'
+                    f'<div class="cal-name">{esc(ev.get("name",""))} '
+                    f'<span class="cal-star">{stars}</span></div>'
+                    f'<div class="cal-impact">{esc(ev.get("summary",""))}</div>'
                     f'</summary><div class="cal-detail">{detail}</div></details>'
                 )
 
@@ -341,12 +345,22 @@ def main() -> None:
                 groups += ('<details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">'
                            '다음주 <span class="cal-caret">▾</span></summary>'
                            + "\n".join(_render_ev(e) for e in next_week) + '</details>')
-            guide = esc(cj.get("guide", ""))
-            guide_html = f'<div class="cal-guide">💡 {guide}</div>' if guide else ""
+            guide_raw = (cj.get("guide", "") or "").strip()
+            if guide_raw:
+                # 메인 한 문장(첫 문장) + 서브 문장은 가운데점 부연으로 분리.
+                parts = [p.strip() for p in re.split(r"(?<=다\.)\s+", guide_raw) if p.strip()]
+                lead = esc(parts[0]) if parts else ""
+                subs = "".join(
+                    f'<div class="cg-sub"><span class="cal-dot">·</span>{esc(p)}</div>'
+                    for p in parts[1:]
+                )
+                guide_html = f'<div class="cal-guide"><div class="cg-lead">💡 {lead}</div>{subs}</div>'
+            else:
+                guide_html = ""
             cal_section = (
                 '<section><h3 class="sec">환율 영향 일정</h3>'
                 + guide_html + groups
-                + '<div class="sec-note">항목을 누르면 상세가 열려요 · 시각은 한국시간(KST) 기준 · 날짜는 뉴스 기반이라 변동될 수 있어요.</div></section>'
+                + '</section>'
             )
 
     # Archive list ("지난 브리핑") from a manifest of past daily pages.
@@ -420,6 +434,7 @@ def main() -> None:
         .replace("__MONTHLY__", f"{monthly_usd:,.0f}")
         .replace("__MONTHLY_NUM__", str(int(monthly_usd)))
         .replace("__TLDR__", tldr_html)
+        .replace("__TLDR_DATE__", esc(gen_disp))
         .replace("__NEWS__", news_html)
         .replace("__NEWS_TITLE__", esc(news_title))
         .replace("__CALENDAR_SECTION__", cal_section)
@@ -534,7 +549,7 @@ __GA__
   .top{ padding:6px 2px 0; display:flex; align-items:flex-end; gap:6px; }
   .top-text{ flex:1 1 auto; min-width:0; }
   .ey{ font-size:13px; color:var(--muted); font-weight:600; }
-  .head{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.32; margin:3px 0 0; word-break:keep-all; }
+  .head{ font-size:17px; font-weight:800; letter-spacing:-.03em; line-height:1.32; margin:3px 0 0; word-break:keep-all; white-space:nowrap; }
   .dog-track{ position:relative; flex:0 0 104px; height:34px; }
   .about-dog{ position:absolute; left:0; bottom:0; background:none; border:none; padding:2px;
               cursor:pointer; animation:roam 24s ease-in-out infinite; }
@@ -615,10 +630,13 @@ __GA__
   .mk-er .mk-lab{ left:auto; right:0; transform:none; }  /* 오른쪽 끝: 안쪽(왼쪽)으로 */
   .chart-cap{ font-size:11.5px; color:var(--muted); margin-top:9px; text-align:center; }
   .tldr{ background:var(--brand-bg); border-radius:12px; padding:13px 16px; margin-top:12px; }
-  .tldr-cap{ font-size:11.5px; font-weight:800; color:var(--brand); letter-spacing:.02em; margin-bottom:5px; }
+  .tldr-meta{ font-size:11px; color:var(--muted); font-weight:600; margin-bottom:6px; }
+.tldr-cap{ font-size:11.5px; font-weight:800; color:var(--brand); letter-spacing:.02em; margin-bottom:5px; }
   .tldr-list{ margin:0; padding-left:17px; }
   .tldr-list li{ font-size:13.5px; line-height:1.6; margin:3px 0; color:#2b313d; }
-  .impact{ margin-left:auto; font-size:12px; letter-spacing:-2px; }
+  .impact{ margin-left:auto; display:inline-flex; gap:2px; align-items:center; }
+  .ig-seg{ width:5px; height:11px; border-radius:1.5px; background:#e3e6ec; }
+  .ig-seg.on{ background:var(--brand); }
   .impact-info, .gauge-info{ flex:none; margin-left:6px; width:18px; height:18px; border:none; border-radius:50%;
                 background:#eceef1; color:var(--muted); font-size:12px; cursor:pointer; vertical-align:middle; padding:0;
                 display:inline-flex; align-items:center; justify-content:center; }
@@ -627,25 +645,27 @@ __GA__
   .impact-note{ margin:12px 2px 8px; line-height:1.4; }
   .cal-guide{ background:var(--brand-bg); border-radius:12px; padding:12px 14px; margin-bottom:10px;
               font-size:13px; line-height:1.62; color:#2b313d; }
-  .cal-item{ border-top:1px solid var(--line); }
-  .cal-item:first-of-type{ border-top:none; }
-  .cal-row{ display:flex; align-items:flex-start; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
+  .cg-lead{ font-weight:700; }
+  .cg-sub{ margin-top:6px; padding-left:13px; text-indent:-13px; color:#41485a; }
+  .cal-item{ background:#f6f7f9; border:1px solid var(--line); border-radius:12px; margin-bottom:8px; }
+  .cal-item[open]{ background:#fff; }
+  .cal-row{ display:block; padding:12px 14px; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-main{ flex:1; min-width:0; overflow:hidden; }
-  .cal-name{ font-size:13.5px; font-weight:700; white-space:nowrap; overflow:hidden;
-             text-overflow:ellipsis; letter-spacing:-.02em; }
-  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
-  .cal-impact{ font-size:12.5px; color:#41485a; margin-top:2px; line-height:1.5; }
-  .cal-side{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
-  .cal-dday{ min-width:44px; text-align:center; font-size:11.5px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:3px 6px; }
+  .cal-head{ display:flex; align-items:center; gap:7px; margin-bottom:5px; }
+  .cal-dday{ flex:none; min-width:46px; text-align:center; font-size:11px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:3px 6px; }
   .cal-dday.today{ color:#fff; background:var(--brand); }
   .cal-dday.past{ color:var(--muted); background:#eceef1; }
   .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
-  .cal-caret{ font-size:9px; transition:transform .2s; }
-  .cal-item[open] .cal-caret{ transform:rotate(180deg); }
-  .cal-item[open] .cal-more{ background:var(--brand); color:#fff; }
-  .cal-detail{ padding:2px 0 13px 58px; }
+  .cal-caret{ margin-left:auto; flex:none; width:22px; height:22px; border-radius:50%;
+              display:inline-flex; align-items:center; justify-content:center; font-size:11px;
+              color:var(--muted); background:#eceef1; transition:transform .2s, background .2s; }
+  .cal-item[open] .cal-caret{ transform:rotate(180deg); color:#fff; background:var(--brand); }
+  .cal-name{ font-size:13.5px; font-weight:700; letter-spacing:-.02em; margin-bottom:3px;
+             word-break:keep-all; }
+  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
+  .cal-impact{ font-size:12.5px; color:#41485a; line-height:1.5; }
+  .cal-detail{ padding:2px 14px 13px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
   .cal-scn{ font-size:12.5px; color:#41485a; margin-top:6px; line-height:1.55;
             padding-left:13px; text-indent:-13px; }
@@ -826,7 +846,6 @@ __GA__
 
   <section>
     <h3 class="sec">__NEWS_TITLE__</h3>
-    <p class="prose">__WHY__</p>
     __NEWS__
   </section>
 
@@ -938,26 +957,26 @@ const ADV = [
   { adv:'싸고 더 내리는 중이에요. 천천히 나눠 사며 바닥을 노려보세요.', calc:'C', ref:'low' },
 ];
 const heroHTML = r => `<div class="th-label">${r.label}</div><div class="th-big ${r.dir}">${r.big}</div><div class="th-sub">${r.sub}</div>`;
-function calcA(cl, n){  // 매주 $200×4 분할 vs 오늘 $800 일괄
+function calcA(cl, n){  // 매주 $250×4 분할 vs 오늘 $1,000 일괄
   const weekly = [curRate]; [5,10,15].forEach(o => { const i = n-1-o; if(i>=0) weekly.push(cl[i]); });
   if(weekly.length < 2) return null;
   const avg = Math.round(weekly.reduce((a,b)=>a+b,0)/weekly.length), today = Math.round(curRate);
-  const d = today - avg, amt = Math.round(Math.abs(d)*800);
+  const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '거의 같았어요'; dir = ''; }
   else if(d > 0){ big = won(amt)+'원 아꼈어요'; dir = 'save'; }
   else { big = won(amt)+'원 더 들었어요'; dir = 'cost'; }
-  return { label:'매주 $200씩 4주 나눠 샀다면', big, dir, sub:`나눠 사기 평균 ${won(avg)}원 · 오늘 한 번에 ${won(today)}원` };
+  return { label:'매주 $250씩 4주 나눠 샀다면', big, dir, sub:`나눠 사기 평균 ${won(avg)}원 · 오늘 한 번에 ${won(today)}원` };
 }
-function calcB(v){  // 오늘 vs 최근 한 달 평균 ($800 기준)
+function calcB(v){  // 오늘 vs 최근 한 달 평균 ($1,000 기준)
   if(v.length < 5) return null;
   const avg = Math.round(v.reduce((a,b)=>a+b,0)/v.length), today = Math.round(curRate);
-  const d = today - avg, amt = Math.round(Math.abs(d)*800);
+  const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '평균과 비슷해요'; dir = ''; }
-  else if(d > 0){ big = '$800에 '+won(amt)+'원 더 비싸요'; dir = 'cost'; }
-  else { big = '$800에 '+won(amt)+'원 더 싸요'; dir = 'save'; }
-  return { label:'최근 한 달 평균과 비교하면', big, dir, sub:`한 달 평균 ${won(avg)}원 · 오늘 ${won(today)}원` };
+  else if(d > 0){ big = won(amt)+'원 더 들어요'; dir = 'cost'; }
+  else { big = won(amt)+'원 덜 들어요'; dir = 'save'; }
+  return { label:'한 달 평균 환율로 $1,000 바꿀 때보다', big, dir, sub:`한 달 평균 ${won(avg)}원 · 오늘 ${won(today)}원` };
 }
 function calcC(v, ref){  // 오늘 vs 최근 3개월 최고/최저
   if(v.length < 10) return null;
