@@ -731,7 +731,7 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   <section class="hero">
     <div class="hero-row">
       <div class="hero-left">
-        <div class="hero-label">지금 원·달러 환율</div>
+        <div class="hero-label">지금 원·달러 환율 (실시간 기준)</div>
         <div class="hero-rate" id="rateNow">__RATE__</div>
       </div>
       <div class="hero-right">
@@ -867,7 +867,7 @@ function render(rateNow, rateYest){
 
   if(rateYest == null){            // no day-over-day data: show rate only
     elDelta.textContent = '';
-    elMeta.textContent = '실시간 환율 기준';
+    elMeta.textContent = '';
     elBox.style.display = 'none';
     return;
   }
@@ -876,7 +876,7 @@ function render(rateNow, rateYest){
   const up = dr > 0, flat = (dr === 0);
   elDelta.textContent = flat ? '어제와 비슷' : `어제 ${up?'▲':'▼'} ${won(Math.abs(dr))}원`;
   elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
-  elMeta.textContent = '실시간 기준 · 어제 ' + won(rateYest) + '원';
+  elMeta.textContent = '어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;
