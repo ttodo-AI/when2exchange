@@ -270,7 +270,7 @@ def main() -> None:
     if why_html is None:  # no factor file -> annotate the fallback why
         why_html = annotate(emphasize(why))
 
-    # This week's economic calendar (D-Day computed client-side).
+    # 환율 영향 일정: 이번주/다음주 그룹, 지난 일정=결과·예정=시나리오. (D-Day는 클라이언트 계산)
     cal_section = ""
     cal_file = find_latest("calendar-*.json")
     if cal_file:
@@ -280,26 +280,33 @@ def main() -> None:
             cj = None
         if cj and cj.get("events"):
             wd = ["월", "화", "수", "목", "금", "토", "일"]
-            guide = esc(cj.get("guide", ""))
-            guide_html = f'<div class="cal-guide">💡 {guide}</div>' if guide else ""
-            rows = []
-            for ev in cj["events"]:
+            kst_today = datetime.now(timezone(timedelta(hours=9))).date()
+            this_sun = kst_today + timedelta(days=(6 - kst_today.weekday()))   # 이번 주 일요일
+
+            def _evd(e):
                 try:
-                    dt = datetime.fromisoformat(ev["date"])
-                    disp = f"{dt.month}/{dt.day}({wd[dt.weekday()]})"
-                except (ValueError, KeyError):
-                    disp = ev.get("date", "")
+                    return datetime.fromisoformat(e.get("date", "")).date()
+                except (ValueError, TypeError):
+                    return None
+
+            def _render_ev(ev):
+                ed = _evd(ev)
+                disp = f"{ed.month}/{ed.day}({wd[ed.weekday()]})" if ed else ev.get("date", "")
                 t = (ev.get("time") or "").strip()
                 when = disp + (f" {t}" if t else "")
                 stars = "★" * int(ev.get("importance", 1))
-                scn = "".join(
-                    f'<div class="cal-scn"><b>{esc(s.get("cond",""))}</b> {esc(s.get("effect",""))}</div>'
-                    for s in ev.get("scenarios", []) if s.get("effect")
-                )
-                evwhy = esc(ev.get("why", ""))
-                evwhy_html = f'<div class="cal-why">{evwhy}</div>' if evwhy else ""
-                detail = evwhy_html + scn
-                rows.append(
+                if ed and ed < kst_today:          # 이미 발표 -> 실제 결과
+                    res = esc((ev.get("result") or "").strip())
+                    detail = (f'<div class="cal-result">📊 {res}</div>' if res
+                              else f'<div class="cal-why">{esc(ev.get("why",""))}</div>')
+                else:                              # 예정 -> 왜 + 시나리오
+                    scn = "".join(
+                        f'<div class="cal-scn"><b>{esc(s.get("cond",""))}</b> {esc(s.get("effect",""))}</div>'
+                        for s in ev.get("scenarios", []) if s.get("effect")
+                    )
+                    evwhy = esc(ev.get("why", ""))
+                    detail = (f'<div class="cal-why">{evwhy}</div>' if evwhy else "") + scn
+                return (
                     '<details class="cal-item"><summary class="cal-row" '
                     f'data-date="{esc(ev.get("date",""))}">'
                     f'<span class="cal-dday">·</span>'
@@ -310,9 +317,20 @@ def main() -> None:
                     f'<span class="cal-more">자세히<span class="cal-caret">▾</span></span>'
                     f'</summary><div class="cal-detail">{detail}</div></details>'
                 )
+
+            evs = sorted((e for e in cj["events"] if _evd(e)), key=lambda e: e["date"])
+            this_week = [e for e in evs if _evd(e) <= this_sun]
+            next_week = [e for e in evs if _evd(e) > this_sun]
+            groups = ""
+            if this_week:
+                groups += '<div class="cal-wk">이번주</div>' + "\n".join(_render_ev(e) for e in this_week)
+            if next_week:
+                groups += '<div class="cal-wk">다음주</div>' + "\n".join(_render_ev(e) for e in next_week)
+            guide = esc(cj.get("guide", ""))
+            guide_html = f'<div class="cal-guide">💡 {guide}</div>' if guide else ""
             cal_section = (
-                '<section><h3 class="sec">이번주 환율 영향 일정</h3>'
-                + guide_html + "\n".join(rows)
+                '<section><h3 class="sec">환율 영향 일정</h3>'
+                + guide_html + groups
                 + '<div class="sec-note">항목을 누르면 상세가 열려요 · 시각은 한국시간(KST) 기준 · 날짜는 뉴스 기반이라 변동될 수 있어요.</div></section>'
             )
 
@@ -614,6 +632,9 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .cal-detail{ padding:2px 0 13px 58px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
   .cal-scn{ font-size:12.5px; color:#41485a; margin-top:7px; line-height:1.55; }
+  .cal-result{ font-size:13px; color:#2b313d; line-height:1.6; }
+  .cal-wk{ font-size:11.5px; font-weight:800; color:var(--muted); margin:15px 0 1px; }
+  .cal-wk:first-of-type{ margin-top:2px; }
   .cal-scn b{ color:var(--ink); display:block; }
   .arc-row{ display:flex; align-items:center; gap:9px; padding:9px 0; border-top:1px solid var(--line);
             text-decoration:none; color:inherit; }

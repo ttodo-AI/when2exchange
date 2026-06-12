@@ -114,21 +114,24 @@ def main() -> None:
     today = datetime.now(kst).strftime("%Y-%m-%d")
 
     prompt = (
-        f"오늘은 {today}(한국시간)입니다. 아래 뉴스에서, 오늘부터 약 8일 이내에 "
-        "예정된, 원/달러(USD/KRW) 환율에 영향이 큰 주요 경제 일정만 뽑아주세요.\n\n"
+        f"오늘은 {today}(한국시간)입니다. 아래 뉴스에서, 이번 주 월요일부터 다음 주 일요일까지"
+        "(약 -7일 ~ +12일) 사이의, 원/달러(USD/KRW) 환율에 영향이 큰 주요 경제 일정을 뽑아주세요.\n\n"
         f"[뉴스]\n{digest}\n\n"
         "■ 규칙:\n"
         "- 날짜·시각은 반드시 뉴스에 근거. 불확실하면 그 일정은 빼라(추측 금지).\n"
-        "- 이미 지난 일정은 제외. 오늘~+8일 사이만.\n"
+        "- 이번 주에 이미 발표·종료된 일정도 포함한다. 그 경우 result에 '실제 결과와 환율 영향'을 "
+        "한 줄로(뉴스에 결과가 나온 경우만, 없으면 빈 문자열, 추측 금지).\n"
+        "- 아직 예정인 일정은 result는 빈 문자열로 두고 scenarios(예상 시나리오)를 채운다.\n"
         "- 문장은 '~다' 문어체, 쉬운 말, 채움말 금지. 수치·고유명사는 뉴스 근거.\n"
         "- 각 일정 필드: date(YYYY-MM-DD), time(한국시간 'HH:MM' 또는 ''), "
         "name(한국어, 예: '미국 5월 소비자물가지수(CPI)'), importance(1~3 정수, 3=가장 중요), "
         "summary(접힌 상태에서 보일 영향 한 줄), why(왜 중요한지 2~3문장, 쉽게), "
-        "scenarios(2개의 {cond, effect}: 예 '예상보다 높게 나오면'→환율이 어떻게 / '낮게 나오면'→어떻게. "
-        "가능하면 뉴스 기반 환율 레벨 포함).\n"
-        "- guide: 이번 주 환전러를 위한 실전 조언 2~3문장(언제·어떻게 환전하면 좋을지).\n\n"
+        "result(이미 발표된 일정의 '실제 결과+환율 영향' 한 줄, 아니면 ''), "
+        "scenarios(예정 일정만, 2개의 {cond, effect}: 예 '예상보다 높게 나오면'→환율 어떻게 / '낮게 나오면'→어떻게).\n"
+        "- guide: 다가오는 가장 큰 변수를 정확한 시점(이번 주/다음 주)과 함께 짚고 환전러 실전 조언 2~3문장. "
+        "다음 주 일정을 '이번 주'라고 하지 말 것.\n\n"
         '아래 정확한 JSON만 출력(코드펜스 없이): {"guide":"...","events":[{"date":"YYYY-MM-DD",'
-        '"time":"HH:MM","name":"...","importance":3,"summary":"...","why":"...",'
+        '"time":"HH:MM","name":"...","importance":3,"summary":"...","why":"...","result":"",'
         '"scenarios":[{"cond":"...","effect":"..."},{"cond":"...","effect":"..."}]}]}'
     )
 
@@ -170,6 +173,7 @@ def main() -> None:
             "importance": imp,
             "summary": (ev.get("summary") or ev.get("impact") or "").strip(),
             "why": (ev.get("why") or "").strip(),
+            "result": (ev.get("result") or "").strip(),
             "scenarios": scns,
         })
     events.sort(key=lambda x: x["date"])  # chronological for the table
