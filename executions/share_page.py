@@ -529,7 +529,7 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .badge-bad{ background:var(--bad-bg); color:var(--bad-fg); }
   .hero-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
   .hero-left{ min-width:0; }
-  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:5px; padding-top:3px; text-align:right; }
+  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:5px; padding-top:21px; text-align:right; }
   .hr-verdict{ display:flex; align-items:center; gap:6px; }
   .gauge-mini{ font-size:14.5px; font-weight:800; max-width:150px; text-align:right; line-height:1.15; }
   .hero-meta .hd{ font-weight:800; margin-left:3px; }
