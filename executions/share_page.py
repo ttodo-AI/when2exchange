@@ -275,7 +275,7 @@ def main() -> None:
                     f'{src_html}'
                     '</div>'
                 )
-            note = '<div class="sec-note">🔥 영향도는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div>'
+            note = '<div class="sec-note impact-note">🔥 영향도는 그날<br>뉴스 분석을 토대로 한 AI 추정이에요.</div>'
             news_html = note + "\n".join(blocks)
             news_title = "오늘 환율을 움직인 요인 Top 4"
 
@@ -321,12 +321,12 @@ def main() -> None:
                 return (
                     '<details class="cal-item"><summary class="cal-row" '
                     f'data-date="{esc(ev.get("date",""))}">'
-                    f'<span class="cal-dday">·</span>'
                     f'<div class="cal-main"><div class="cal-name">{esc(ev.get("name",""))} '
                     f'<span class="cal-star">{stars}</span></div>'
                     f'<div class="cal-impact">{esc(ev.get("summary",""))}</div></div>'
+                    f'<div class="cal-side"><span class="cal-dday">·</span>'
                     f'<span class="cal-date">{esc(when)}</span>'
-                    f'<span class="cal-more">자세히<span class="cal-caret">▾</span></span>'
+                    f'<span class="cal-caret">▾</span></div>'
                     f'</summary><div class="cal-detail">{detail}</div></details>'
                 )
 
@@ -457,6 +457,8 @@ def emphasize(s) -> str:
 
 # Beginner-friendly glossary. Terms found in the copy get a 🔍 + tap-to-define.
 GLOSSARY = {
+    "종전양해각서": "전쟁을 끝내기로 한 합의 문서. 지정학 위험이 줄면 안전자산(달러) 수요가 빠지고 위험자산·신흥국 통화엔 우호적일 수 있어요.",
+    "양해각서": "두 나라·기관이 합의 내용을 적어둔 약속 문서(MOU). 법적 강제력은 약하지만 협력 의사를 보여줘요.",
     "연준": "미국의 중앙은행(Fed). 미국 기준금리를 정해 시중 돈의 양과 값을 조절해요.",
     "FOMC": "미국 연준이 기준금리를 결정하는 회의예요.",
     "기준금리": "중앙은행이 정하는 '돈의 기본 이자율'. 오르면 돈 빌리기가 비싸지고 그 나라 통화가 강해지는 편이에요.",
@@ -621,23 +623,23 @@ __GA__
                 display:inline-flex; align-items:center; justify-content:center; }
   .impact-info:active, .gauge-info:active{ background:#dfe2e7; }
   .sec-note{ font-size:11.5px; color:var(--muted); margin:-2px 2px 10px; }
+  .impact-note{ margin:-2px 2px 4px; line-height:1.4; }
   .cal-guide{ background:var(--brand-bg); border-radius:12px; padding:12px 14px; margin-bottom:10px;
               font-size:13px; line-height:1.62; color:#2b313d; }
   .cal-item{ border-top:1px solid var(--line); }
   .cal-item:first-of-type{ border-top:none; }
-  .cal-row{ display:flex; align-items:center; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
+  .cal-row{ display:flex; align-items:flex-start; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-dday{ flex:none; min-width:48px; text-align:center; font-size:12px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:6px 6px; }
-  .cal-dday.today{ color:#fff; background:var(--brand); }
-  .cal-dday.past{ color:var(--muted); background:#eceef1; }
-  .cal-main{ flex:1; min-width:0; }
-  .cal-name{ font-size:14px; font-weight:700; }
+  .cal-main{ flex:1; min-width:0; overflow:hidden; }
+  .cal-name{ font-size:14px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .cal-star{ color:var(--mid-fg); font-size:11px; }
   .cal-impact{ font-size:12.5px; color:#41485a; margin-top:2px; line-height:1.5; }
-  .cal-date{ flex:none; font-size:12px; color:var(--muted); }
-  .cal-more{ flex:none; display:inline-flex; align-items:center; gap:3px; font-size:11.5px; font-weight:700;
-             color:var(--brand); background:var(--brand-bg); padding:5px 10px; border-radius:999px; }
+  .cal-side{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
+  .cal-dday{ min-width:44px; text-align:center; font-size:11.5px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:3px 6px; }
+  .cal-dday.today{ color:#fff; background:var(--brand); }
+  .cal-dday.past{ color:var(--muted); background:#eceef1; }
+  .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
   .cal-caret{ font-size:9px; transition:transform .2s; }
   .cal-item[open] .cal-caret{ transform:rotate(180deg); }
   .cal-item[open] .cal-more{ background:var(--brand); color:#fff; }
@@ -681,7 +683,8 @@ __GA__
   .feel-amt{ font-size:17px; font-weight:800; margin-top:8px; letter-spacing:-.01em; }
   .feel-amt.up{ color:var(--up); } .feel-amt.down{ color:var(--down); }
   .feel-amt.total{ color:var(--ink); }
-  .feel-chg{ font-size:11px; font-weight:600; }
+  .feel-tot{ white-space:nowrap; }
+  .feel-chg{ font-size:11px; font-weight:600; white-space:nowrap; }
   .feel-chg.up{ color:var(--up); } .feel-chg.down{ color:var(--down); }
   .prose{ font-size:14.5px; line-height:1.72; color:#2b313d; margin:0; }
   .prose .hl{ font-weight:700; text-decoration:underline; text-underline-offset:3px;
@@ -810,8 +813,8 @@ __GA__
 
   <section id="tipBox">
     <h3 class="sec">매달 환전한다면</h3>
+    <p class="prose" id="tipAdvice">한 번에 몰아 사기보다 나눠 사면, 환율이 출렁여도 평균 단가로 살 수 있어요.</p>
     <div class="tip">
-      <p class="prose" id="tipAdvice">한 번에 몰아 사기보다 나눠 사면, 환율이 출렁여도 평균 단가로 살 수 있어요.</p>
       <div class="tip-hero" id="tipHero"></div>
     </div>
   </section>
@@ -831,7 +834,7 @@ __GA__
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 __PUBLISHED__ · 환율 <span id="rateSrc">ECB</span> · 뉴스 __DATE__<br>
+    발행 __PUBLISHED__<br>환율 <span id="rateSrc">ECB</span><br>뉴스 __DATE__<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -1028,7 +1031,7 @@ function renderFeel(dr){
     }
     let amt, dir;
     if(traveler){
-      const total = won(Math.round((curRate||0) * it.usd)) + '원';
+      const total = '<span class="feel-tot">' + won(Math.round((curRate||0) * it.usd)) + '원</span>';
       const chg = flat ? '' : ` <span class="feel-chg ${up?'up':'down'}">(어제 ${sign}${won(Math.abs(dr)*it.usd)}원)</span>`;
       amt = total + chg;   // 지금 실제 금액 + (어제 대비 변화)
       dir = 'total';
