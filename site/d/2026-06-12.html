@@ -117,31 +117,33 @@
               font-size:13px; line-height:1.62; color:#2b313d; }
   .cal-item{ border-top:1px solid var(--line); }
   .cal-item:first-of-type{ border-top:none; }
-  .cal-row{ display:flex; align-items:flex-start; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
+  .cal-row{ display:block; padding:11px 0; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-main{ flex:1; min-width:0; overflow:hidden; }
-  .cal-name{ font-size:14px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .cal-top{ display:flex; align-items:center; gap:7px; margin-bottom:3px; }
+  .cal-name{ font-size:14px; font-weight:700; white-space:nowrap; overflow:hidden;
+             text-overflow:ellipsis; line-height:1.3; }
   .cal-star{ color:var(--mid-fg); font-size:11px; }
   .cal-impact{ font-size:12.5px; color:#41485a; margin-top:2px; line-height:1.5; }
-  .cal-side{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
-  .cal-dday{ min-width:44px; text-align:center; font-size:11.5px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:3px 6px; }
+  .cal-dday{ min-width:42px; text-align:center; font-size:11px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:2px 6px; }
   .cal-dday.today{ color:#fff; background:var(--brand); }
   .cal-dday.past{ color:var(--muted); background:#eceef1; }
   .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
-  .cal-caret{ font-size:9px; transition:transform .2s; }
+  .cal-caret{ font-size:9px; transition:transform .2s; margin-left:auto; }
   .cal-item[open] .cal-caret{ transform:rotate(180deg); }
   .cal-item[open] .cal-more{ background:var(--brand); color:#fff; }
-  .cal-detail{ padding:2px 0 13px 58px; }
+  .cal-detail{ padding:2px 0 13px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
-  .cal-scn{ font-size:12.5px; color:#41485a; margin-top:7px; line-height:1.55; }
+  .cal-scn{ font-size:12.5px; color:#41485a; margin-top:6px; line-height:1.55;
+            padding-left:13px; text-indent:-13px; }
+  .cal-dot{ color:var(--brand); font-weight:800; margin-right:5px; }
   .cal-result{ font-size:13px; color:#2b313d; line-height:1.6; }
   .cal-wk{ font-size:11.5px; font-weight:800; color:var(--muted); margin:15px 0 1px; }
   .cal-wk:first-of-type{ margin-top:2px; }
   .cal-wk-toggle{ cursor:pointer; list-style:none; display:flex; align-items:center; gap:5px; padding:4px 0; }
   .cal-wk-toggle::-webkit-details-marker{ display:none; }
   .cal-nextwk[open] > .cal-wk-toggle .cal-caret{ transform:rotate(180deg); }
-  .cal-scn b{ color:var(--ink); display:block; }
+  .cal-scn b{ color:var(--ink); }
   .arc-row{ display:flex; align-items:center; gap:9px; padding:9px 0; border-top:1px solid var(--line);
             text-decoration:none; color:inherit; }
   .arc-row:first-of-type{ border-top:none; }
@@ -272,7 +274,7 @@
     <div class="hero-row">
       <div class="hero-left">
         <div class="hero-label">지금 원·달러 환율</div>
-        <div class="hero-rate" id="rateNow">1,518~1,560원</div>
+        <div class="hero-rate" id="rateNow">1,518~1,528원</div>
       </div>
       <div class="hero-right">
         <span id="rateDelta" class="chip"></span>
@@ -306,8 +308,8 @@
     <div class="chart-cap" id="chartCap"></div>
   </section>
 
-  <section><h3 class="sec">환율 영향 일정</h3><div class="cal-guide">💡 다음 주 화요일(6월 17일) 한국은행 금융통화위원회와 같은 날 또는 전후로 예정된 미국 6월 FOMC 결과(6월 18일 새벽 한국시간)가 이번 환율의 최대 변수다. 두 중앙은행의 금리 결정이 겹치는 만큼 원/달러 환율 변동성이 극대화될 수 있다. 환전을 서두를 필요가 있는 달러 매수자라면 FOMC 전 주말(6월 14~15일)을 활용하는 것이 안전하고, 달러 매도자는 FOMC 이후 방향성을 확인한 뒤 행동하는 것이 유리하다.</div><div class="cal-wk">이번주</div><details class="cal-item"><summary class="cal-row" data-date="2026-06-11"><div class="cal-main"><div class="cal-name">미국 5월 소비자물가지수(CPI) <span class="cal-star">★★★</span></div><div class="cal-impact">금리 인상 여부를 가를 핵심 물가 지표로, 발표 결과에 따라 원/달러 환율이 크게 움직일 수 있다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/11(목)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-result">📊 미국 5월 CPI가 시장 예상치에 대체로 부합한 가운데, 달러-원 환율은 상승분 일부를 반납하며 1,520.20원에 마감했다.</div></div></details><details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">다음주 <span class="cal-caret">▾</span></summary><details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-main"><div class="cal-name">미국 6월 FOMC 회의 시작 <span class="cal-star">★★★</span></div><div class="cal-impact">연준의 금리 인상 여부와 경제전망(SEP) 공개로 원/달러 환율에 결정적 영향을 준다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-why">뉴스 여러 건에서 '6월 FOMC'와 '경제전망(SEP)'이 금리 인상 판단의 핵심 이벤트로 지목됐다. 금리 인상이 결정되면 달러 강세와 원화 약세가 동시에 나타날 수 있다. 결과는 한국시간으로 6월 18일 새벽에 공개될 것으로 예상된다.</div><div class="cal-scn"><b>금리 인상 또는 강한 매파적 신호가 나오면</b> 달러 강세 강화, 원/달러 환율 급등 가능성</div><div class="cal-scn"><b>금리 동결 및 비둘기파적 신호가 나오면</b> 달러 약세 전환, 원/달러 환율 하락 압력</div></div></details>
-<details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-main"><div class="cal-name">한국은행 금융통화위원회 <span class="cal-star">★★★</span></div><div class="cal-impact">한국 금리 인상 여부 결정으로 원/달러 환율에 직접 영향을 준다.</div></div><div class="cal-side"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-caret">▾</span></div></summary><div class="cal-detail"><div class="cal-why">뉴스에서 '6월 임시 금통위 가능성'과 '3분기 연속 금리 인상' 언급이 나왔다. 환율 급등과 고용·물가 압력이 겹치며 한은의 선제 대응 가능성이 부각되고 있다. 금리 인상 결정 시 원화 강세 요인이 되나, 미국 FOMC와 결과가 맞물릴 경우 방향성이 복잡해진다.</div><div class="cal-scn"><b>한은이 금리를 인상하면</b> 원화 강세 압력, 원/달러 환율 하락 가능성</div><div class="cal-scn"><b>한은이 금리를 동결하면</b> 원화 약세 압력 지속, 원/달러 환율 상승 우려</div></div></details></details><div class="sec-note">항목을 누르면 상세가 열려요 · 시각은 한국시간(KST) 기준 · 날짜는 뉴스 기반이라 변동될 수 있어요.</div></section>
+  <section><h3 class="sec">환율 영향 일정</h3><div class="cal-guide">💡 다음 주 화요일(6월 17일) 한국은행 금융통화위원회와 같은 날 또는 전후로 예정된 미국 6월 FOMC 결과(6월 18일 새벽 한국시간)가 이번 환율의 최대 변수다. 두 중앙은행의 금리 결정이 겹치는 만큼 원/달러 환율 변동성이 극대화될 수 있다. 환전을 서두를 필요가 있는 달러 매수자라면 FOMC 전 주말(6월 14~15일)을 활용하는 것이 안전하고, 달러 매도자는 FOMC 이후 방향성을 확인한 뒤 행동하는 것이 유리하다.</div><div class="cal-wk">이번주</div><details class="cal-item"><summary class="cal-row" data-date="2026-06-11"><div class="cal-top"><span class="cal-dday">·</span><span class="cal-date">6/11(목)</span><span class="cal-star">★★★</span><span class="cal-caret">▾</span></div><div class="cal-name">미국 5월 소비자물가지수(CPI)</div><div class="cal-impact">금리 인상 여부를 가를 핵심 물가 지표로, 발표 결과에 따라 원/달러 환율이 크게 움직일 수 있다.</div></summary><div class="cal-detail"><div class="cal-result">📊 미국 5월 CPI가 시장 예상치에 대체로 부합한 가운데, 달러-원 환율은 상승분 일부를 반납하며 1,520.20원에 마감했다.</div></div></details><details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">다음주 <span class="cal-caret">▾</span></summary><details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-top"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-star">★★★</span><span class="cal-caret">▾</span></div><div class="cal-name">미국 6월 FOMC 회의 시작</div><div class="cal-impact">연준의 금리 인상 여부와 경제전망(SEP) 공개로 원/달러 환율에 결정적 영향을 준다.</div></summary><div class="cal-detail"><div class="cal-why">뉴스 여러 건에서 '6월 FOMC'와 '경제전망(SEP)'이 금리 인상 판단의 핵심 이벤트로 지목됐다. 금리 인상이 결정되면 달러 강세와 원화 약세가 동시에 나타날 수 있다. 결과는 한국시간으로 6월 18일 새벽에 공개될 것으로 예상된다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 인상 또는 강한 매파적 신호가 나오면</b> 달러 강세 강화, 원/달러 환율 급등 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>금리 동결 및 비둘기파적 신호가 나오면</b> 달러 약세 전환, 원/달러 환율 하락 압력</div></div></details>
+<details class="cal-item"><summary class="cal-row" data-date="2026-06-17"><div class="cal-top"><span class="cal-dday">·</span><span class="cal-date">6/17(수)</span><span class="cal-star">★★★</span><span class="cal-caret">▾</span></div><div class="cal-name">한국은행 금융통화위원회</div><div class="cal-impact">한국 금리 인상 여부 결정으로 원/달러 환율에 직접 영향을 준다.</div></summary><div class="cal-detail"><div class="cal-why">뉴스에서 '6월 임시 금통위 가능성'과 '3분기 연속 금리 인상' 언급이 나왔다. 환율 급등과 고용·물가 압력이 겹치며 한은의 선제 대응 가능성이 부각되고 있다. 금리 인상 결정 시 원화 강세 요인이 되나, 미국 FOMC와 결과가 맞물릴 경우 방향성이 복잡해진다.</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 인상하면</b> 원화 강세 압력, 원/달러 환율 하락 가능성</div><div class="cal-scn"><span class="cal-dot">·</span><b>한은이 금리를 동결하면</b> 원화 약세 압력 지속, 원/달러 환율 상승 우려</div></div></details></details><div class="sec-note">항목을 누르면 상세가 열려요 · 시각은 한국시간(KST) 기준 · 날짜는 뉴스 기반이라 변동될 수 있어요.</div></section>
 
   <section id="tipBox">
     <h3 class="sec">매달 환전한다면</h3>
@@ -336,7 +338,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-12 14:49:20 KST<br>환율 <span id="rateSrc">ECB</span><br>뉴스 2026년 06월 12일<br>
+    발행 2026-06-12 14:54:53 KST<br>환율 <span id="rateSrc">ECB</span><br>뉴스 2026년 06월 12일<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>

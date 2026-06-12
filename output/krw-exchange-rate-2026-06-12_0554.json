@@ -1,0 +1,73 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-12T05:54:41.764213+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,518–1,528 KRW/USD\n\nWHY: The won is currently WEAK (high KRW per USD), meaning your monthly $2,000 conversion is expensive right now. News reports the rate has surged to 17-year highs around 1,560 KRW/USD due to Middle East war fallout, with concerns it could reach 1,600 KRW/USD. Although there are signs of stabilization (rate dipped to 1,518 on June 12) and peace talks are progressing, the overall trend has been sharply upward and remains elevated.\n\nTIP: Consider waiting for further evidence that the won strengthens (rate drops below 1,500) before converting, or split your monthly purchase across multiple dates to average out the unfavorable rates."
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율, 10.9원 내린 1518원 개장",
+      "link": "https://m.news.nate.com/view/20260612n06793?mid=m02&list=recent&cpcd=",
+      "summary": "미국 달러 대비 원화 환율(원·달러 환율)은 12일 1518원에 개장했다. 직전 거래일보다 10.9원 하락했다. 이날 원·달러 환율은 1520원 미만을 기록할 것이란 전망이...",
+      "date": "2026-06-12T02:54:41.764213+00:00"
+    },
+    {
+      "title": "[중동전쟁 100일, 한국 경제 흔들다⑥] 원·달러 환율은 왜 뛰었나…전쟁이 흔든 금융시장",
+      "link": "https://www.newsian.co.kr/news/articleView.html?idxno=90701",
+      "summary": "［뉴시안= 송서영 기자］2026년 2월 말 시작된 중동전쟁이 6월 7일로 100일째를 맞는다. 전쟁은 중동에 국한된 군사 충돌이 아니었다. 국제유가와 천연가스 가격이 출렁...",
+      "date": "2026-06-12T00:54:41.764213+00:00"
+    },
+    {
+      "title": "고삐 풀린 환율 17년래 최고…실물경제 ‘휘청’",
+      "link": "https://www.kukinews.com/article/view/kuk202606080135",
+      "summary": "원·달러 환율이 금융위기 수준까지 치솟으며 실물경제에 부담을 줄 수 있다는 우려가 커지고 있다. 금융당국의 구두 개입에 상승세는 일단 진정됐지.",
+      "date": "2026-06-11T10:54:41.764213+00:00"
+    },
+    {
+      "title": "'중동 전쟁' 종전 합의 근접 소식···\"1510원 중심 등락 예상\" [환율전망]",
+      "link": "https://news.nate.com/view/20260612n05833",
+      "summary": "한눈에 보는 오늘 : 종합 - 뉴스 : [이투데이/배근미 기자]11일 원·달러환율 등락 범위 1506~1519원 전망\"중동 리스크 '피날레' 초입···추후 위험 선호 가능성\" 원·...",
+      "date": "2026-06-12T02:54:41.764213+00:00"
+    },
+    {
+      "title": "원·달러 환율, 4.7원 오른 1528.9원 마감(종합)",
+      "link": "https://www.newsis.com/view/NISX20260611_0003665794",
+      "summary": "[서울=뉴시스]김래현 기자 = 원·달러 환율이 상승폭을 키운 상태로 마감했다. 11일 서울 외환시장에 따르면 이날 원·달러 환율은 1.3원 오른 1525.5원으로 거래를 시작...",
+      "date": "2026-06-11T09:54:41.764213+00:00"
+    },
+    {
+      "title": "14년 만에 외환검사 카드 꺼낸 한은·금감원…환율 방어 ‘총력’",
+      "link": "https://m.ceoscoredaily.com/page/view/2026061115005445140",
+      "summary": "원·달러 환율이 1500원대에서 좀처럼 내려올 기미가 보이지 않자 정부와 금융당국 등은 환율 안정을 위해 전방위적 대응에 나섰다. 당국은 14년 만에 외국환은행을...",
+      "date": "2026-06-11T10:54:41.764213+00:00"
+    },
+    {
+      "title": "정부, 수출기업에 환율 안정역할 요청…“수출대금 조기 환전·유보자금 국내로”",
+      "link": "https://biz.heraldcorp.com/article/10769873",
+      "summary": "[헤럴드경제=양영경 기자] 정부가 최근 원·달러 환율이 큰 폭으로 상승하며 외환시장의 변동성이 확대되자 주요 수출기업들에게 환율 안정화 노력에 동참해 줄 것을...",
+      "date": "2026-06-11T09:54:41.764213+00:00"
+    },
+    {
+      "title": "복합 악재에 커지는 고환율 공포···‘1600원 시대’ 오나",
+      "link": "https://www.kfenews.co.kr/news/articleViewAmp.html?idxno=658750",
+      "summary": "한국금융경제신문=김선재 기자 | 원·달러 환율이 1560원대까지 치솟으면서 1600원대 진입에 대한 우려가 커지고 있다. 환율 고공행진은 가파른 코스피 상승에 따른...",
+      "date": "2026-06-11T11:54:41.764213+00:00"
+    },
+    {
+      "title": "원·달러 거래 24시간 시대…증권사별 비용 차이 따져야",
+      "link": "https://www.dhdaily.co.kr/news/articleView.html?idxno=26499",
+      "summary": "오는 7월부터 원·달러 거래가 주 5일 24시간 가능해지면서 증권사들의 환전 서비스 경쟁이 본격화될 전망이다. 소비자 입장에서는 '밤에도 환전할 수 있다'는 편의성...",
+      "date": "2026-06-11T09:54:41.764213+00:00"
+    },
+    {
+      "title": "[사설] 민생·기업 고전 고환율‧고물가‧고금리 잡아야",
+      "link": "https://www.dongbangilbo.co.kr/news/articleView.html?idxno=93056",
+      "summary": "【동방일보】 동방일보 = 경제 난국이다. 정부의 총력 대응에도 환율이 천정부지로 치솟고 있다. 원·달러 환율은 올해 들어 내리 오르며 달러당 1560원 대를 오르...",
+      "date": "2026-06-11T07:54:41.764213+00:00"
+    }
+  ]
+}
