@@ -517,7 +517,7 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .top{ padding:6px 2px 0; display:flex; align-items:flex-end; gap:6px; }
   .top-text{ flex:1 1 auto; min-width:0; }
   .ey{ font-size:13px; color:var(--muted); font-weight:600; }
-  .head{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.32; margin:3px 0 0; }
+  .head{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.32; margin:3px 0 0; word-break:keep-all; }
   .dog-track{ position:relative; flex:0 0 104px; height:34px; }
   .about-dog{ position:absolute; left:0; bottom:0; background:none; border:none; padding:2px;
               cursor:pointer; animation:roam 24s ease-in-out infinite; }
@@ -549,14 +549,10 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .badge-bad{ background:var(--bad-bg); color:var(--bad-fg); }
   .hero-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
   .hero-left{ min-width:0; }
-  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:1px; padding-top:21px; text-align:right; }
-  #rateMeta{ margin-top:-2px; }
-  .hr-verdict{ display:flex; align-items:center; gap:6px; }
-  .gauge-mini{ font-size:14.5px; font-weight:800; max-width:150px; text-align:right; line-height:1.15; }
-  .hero-meta .hd{ font-weight:800; margin-left:3px; }
-  .hero-meta .hd.up{ color:var(--up); } .hero-meta .hd.down{ color:var(--down); }
-  .hero-label{ font-size:12.5px; color:var(--muted); }
-  .hero-rate{ font-size:42px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; }
+  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; padding-top:2px; text-align:right; }
+  .gauge-mini{ font-size:14.5px; font-weight:800; max-width:160px; text-align:right; line-height:1.15; }
+  .hero-label{ font-size:12.5px; color:var(--muted); white-space:nowrap; }
+  .hero-rate{ font-size:42px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; white-space:nowrap; }
   .hero-chips{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
   .chip{ display:inline-block; font-size:12px; font-weight:700; padding:4px 9px;
          border-radius:8px; background:#f1f2f5; color:var(--muted); }
@@ -761,14 +757,12 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   <section class="hero">
     <div class="hero-row">
       <div class="hero-left">
-        <div class="hero-label">지금 원·달러 환율 (실시간 기준)</div>
+        <div class="hero-label">지금 원·달러 환율</div>
         <div class="hero-rate" id="rateNow">__RATE__</div>
       </div>
       <div class="hero-right">
-        <div class="hr-verdict">
-          <span id="gaugeMini" class="gauge-mini"></span>
-          <span id="rateDelta" class="chip"></span>
-        </div>
+        <span id="rateDelta" class="chip"></span>
+        <span id="gaugeMini" class="gauge-mini"></span>
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
     </div>
@@ -901,7 +895,7 @@ function render(rateNow, rateYest){
   const up = dr > 0, flat = (dr === 0);
   elDelta.textContent = flat ? '어제와 비슷' : (up?'▲':'▼') + won(Math.abs(dr)) + '원';  // '어제' 빼고 ▲N원
   elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
-  elMeta.textContent = '어제 ' + won(rateYest) + '원';
+  elMeta.textContent = '실시간 기준 · 어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;
