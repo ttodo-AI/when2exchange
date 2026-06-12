@@ -53,8 +53,10 @@
   .badge-bad{ background:var(--bad-bg); color:var(--bad-fg); }
   .hero-row{ display:flex; align-items:flex-start; justify-content:space-between; gap:12px; }
   .hero-left{ min-width:0; }
-  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:6px; padding-top:4px; text-align:right; }
-  .gauge-mini{ font-size:14px; font-weight:800; max-width:140px; text-align:right; line-height:1.2; }
+  .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; padding-top:3px; text-align:right; }
+  .gauge-mini{ font-size:14.5px; font-weight:800; max-width:150px; text-align:right; line-height:1.15; }
+  .hero-meta .hd{ font-weight:800; margin-left:3px; }
+  .hero-meta .hd.up{ color:var(--up); } .hero-meta .hd.down{ color:var(--down); }
   .hero-label{ font-size:12.5px; color:var(--muted); }
   .hero-rate{ font-size:42px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; }
   .hero-chips{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
@@ -264,10 +266,9 @@
     <div class="hero-row">
       <div class="hero-left">
         <div class="hero-label">지금 원·달러 환율 (실시간 기준)</div>
-        <div class="hero-rate" id="rateNow">1,518~1,528원</div>
+        <div class="hero-rate" id="rateNow">1,518~1,560원</div>
       </div>
       <div class="hero-right">
-        <span id="rateDelta" class="chip"></span>
         <span id="gaugeMini" class="gauge-mini"></span>
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
@@ -331,7 +332,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-12 13:11:38 KST · 환율 <span id="rateSrc">ECB</span> · 뉴스 2026년 06월 12일<br>
+    발행 2026-06-12 13:16:48 KST · 환율 <span id="rateSrc">ECB</span> · 뉴스 2026년 06월 12일<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -393,26 +394,22 @@ const won = n => Math.round(n).toLocaleString('ko-KR');
 
 function render(rateNow, rateYest){
   const elNow = document.getElementById('rateNow');
-  const elDelta = document.getElementById('rateDelta');
   const elMeta = document.getElementById('rateMeta');
-  const elList = document.getElementById('feelList');
   const elBox = document.getElementById('feelBox');
-  const elTitle = elBox.querySelector('h3');
 
   elNow.textContent = won(rateNow) + '원';
 
   if(rateYest == null){            // no day-over-day data: show rate only
-    elDelta.textContent = '';
     elMeta.textContent = '';
     elBox.style.display = 'none';
     return;
   }
-  const d = rateNow - rateYest;     // +면 달러 비싸짐(원화 약세)
-  const dr = Math.round(d);          // 표시 환율 편차와 환산 금액을 같은 정수로 통일(일관성)
+  const dr = Math.round(rateNow - rateYest);   // +면 달러 비싸짐(원화 약세)
   const up = dr > 0, flat = (dr === 0);
-  elDelta.textContent = flat ? '어제와 비슷' : `어제 ${up?'▲':'▼'} ${won(Math.abs(dr))}원`;
-  elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
-  elMeta.textContent = '어제 ' + won(rateYest) + '원';
+  // 어제 값 + 전일 대비를 한 줄로(중복 '어제' 제거).
+  elMeta.innerHTML = flat ? '어제와 비슷해요'
+    : '어제 ' + won(rateYest) + '원 <b class="hd ' + (up?'up':'down') + '">'
+      + (up?'▲':'▼') + won(Math.abs(dr)) + '</b>';
 
   curRate = rateNow;
   lastDelta = dr;
