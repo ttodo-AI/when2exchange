@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이번 달 환전, 지금 괜찮을까?</title>
+<meta property="og:title" content="이번 달 환전, 지금 괜찮을까?">
+<meta property="og:description" content="원/달러 환율 타이밍을 매일 체크해 드려요.">
+<style>
+  :root{ --bg:#f6f7fb; --card:#fff; --fg:#1c2230; --muted:#6b7385; --line:#e6e9f0;
+         --good:#1a9c4f; --good-bg:#e6f7ec; --mid:#b5860b; --mid-bg:#fdf6e3;
+         --bad:#d23f3f; --bad-bg:#fdeaea; --accent:#3b6ef6; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--fg);
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+        line-height:1.6; }
+  .wrap{ max-width:560px; margin:0 auto; padding:20px 16px 60px; }
+  .top{ text-align:center; padding:14px 0 4px; }
+  .top .ey{ color:var(--muted); font-size:14px; }
+  .top h1{ font-size:20px; margin:6px 0 0; }
+  .hero{ background:var(--card); border:1px solid var(--line); border-radius:20px;
+         padding:24px 20px; margin-top:16px; text-align:center;
+         box-shadow:0 6px 24px rgba(20,30,60,.06); }
+  .hero.good{ background:var(--good-bg); } .hero.mid{ background:var(--mid-bg); } .hero.bad{ background:var(--bad-bg); }
+  .hero .emoji{ font-size:40px; }
+  .hero .verdict{ font-size:22px; font-weight:800; margin:8px 0 4px; }
+  .hero.good .verdict{ color:var(--good);} .hero.mid .verdict{ color:var(--mid);} .hero.bad .verdict{ color:var(--bad);}
+  .hero .rate{ font-size:15px; color:var(--muted); }
+  .hero .rate b{ color:var(--fg); font-size:18px; }
+  .box{ background:var(--card); border:1px solid var(--line); border-radius:14px;
+        padding:16px 18px; margin-top:14px; }
+  .box h3{ margin:0 0 6px; font-size:13px; color:var(--muted); letter-spacing:.03em; }
+  .box p{ margin:0; font-size:15px; }
+  .tip{ border-left:4px solid var(--accent); }
+  .sec-title{ margin:26px 4px 8px; font-size:16px; font-weight:700; }
+  a.news{ display:block; background:var(--card); border:1px solid var(--line);
+          border-radius:14px; padding:14px 16px; margin-top:10px; text-decoration:none; color:inherit; }
+  a.news:active{ transform:scale(.997); }
+  .news-date{ font-size:12px; color:var(--muted); }
+  .news-title{ font-size:15px; font-weight:700; margin:3px 0 5px; }
+  .news-sum{ font-size:13.5px; color:#41485a; }
+  .news-link{ display:inline-block; margin-top:8px; font-size:13px; color:var(--accent); font-weight:600; }
+  .muted{ color:var(--muted); }
+  footer{ text-align:center; color:var(--muted); font-size:12px; margin-top:28px; line-height:1.7; }
+  .share{ margin-top:18px; text-align:center; }
+  .share button{ background:var(--accent); color:#fff; border:none; border-radius:999px;
+                 padding:11px 22px; font-size:14px; font-weight:700; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="ey">매달 환전하는 우리를 위한</div>
+    <h1>💱 이번 달, 지금 환전해도 될까?</h1>
+  </div>
+
+  <div class="hero bad">
+    <div class="emoji">🔴</div>
+    <div class="verdict">원화가 약해져서 달러 환전하기 좋지 않은 시점입니다</div>
+    <div class="rate">현재 원/달러 환율 <b>1,530원</b></div>
+  </div>
+
+  <div class="box">
+    <h3>왜 그럴까요?</h3>
+    <p>중동 긴장과 외국인 투자자들의 한국 주식 매도로 원화 가치가 떨어지고 달러가 비싸지고 있습니다. 이는 3월 이후 처음으로 이 정도 수준까지 떨어진 상황이에요.</p>
+  </div>
+  <div class="box tip">
+    <h3>매달 환전하는 분께 (월 약 $2,000)</h3>
+    <p>가능하면 환율이 내려올 때까지 기다리거나, 한 달치를 한꺼번에 환전하지 말고 매주 조금씩 환전해서 손실을 줄이는 방법을 추천합니다.</p>
+  </div>
+
+  <div class="sec-title">📰 오늘의 환율 뉴스</div>
+  <a class="news" href="https://biz.chosun.com/policy/policy_sub/2026/06/04/NAMI6MU53FBSFAVDZ2BERS3RIY/" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">원·달러 환율, 개장 후 1530원 돌파… 3월 31일 이후 처음 - 조선비즈</div><div class="news-sum">원·달러 환율이 1530원까지 올라가며 지난 3월 이후 처음으로 이 수준을 돌파했습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="https://www.pointe.co.kr/news/articleView.html?idxno=80267" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">원·달러 환율 1530원 돌파…외환당국 구두개입에 턱밑 마감</div><div class="news-sum">미국과 이란 간의 협상 낙관론이 사라지면서 환율이 글로벌 금융위기 이후 처음으로 1530원선을 넘었습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="http://www.pressna.com/news/newsview.php?ncode=1381200691444795" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">정부 입김 안 통하네… 원·달러 환율, 개장 후 1530원 돌파</div><div class="news-sum">미국과 이란의 군사 충돌 재개로 강한 달러 흐름이 심해지고 있습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="https://news.nate.com/view/20260604n11276" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">원·달러 환율, 개장 후 1530원 돌파…3월 31일 이후 처음</div><div class="news-sum">중동 긴장이 지속되면서 원·달러 환율이 3월 31일 이후 처음으로 1530원을 넘어섰습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="https://www.straightnews.co.kr/news/articleView.html?idxno=304089" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">원/달러 환율, 장중 1530원 돌파</div><div class="news-sum">중동 지역 긴장으로 국제유가가 올라가는 한편, 외국인 투자자의 한국 주식 매도로 자본이 빠져나가고 있습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="https://www.newsfreezone.co.kr/news/articleViewAmp.html?idxno=692957" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">&quot;원화 약세, 경상수지보다 외국인 수급이 좌우&quot;···키움증권 분석 |</div><div class="news-sum">중동 리스크보다 외국인의 한국 주식 매도에 따른 자본 유출이 원화 약세의 더 큰 원인이 되고 있습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+<a class="news" href="https://biz.chosun.com/policy/policy_sub/2026/06/04/E5NGRSGB5ZERBC32W7R7M6RTJA/" target="_blank" rel="noopener"><div class="news-date">06월 04일</div><div class="news-title">[경제 포커스] 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 - 조선비즈</div><div class="news-sum">한국 경제가 좋다는 평가에도 불구하고 원화는 달러, 위안화, 엔화 대비 모두 약세를 보이고 있습니다.</div><span class="news-link">원문 보기 ↗</span></a>
+
+  <div class="share">
+    <button onclick="if(navigator.share){navigator.share({title:document.title,url:location.href})}else{navigator.clipboard&&navigator.clipboard.writeText(location.href);this.textContent='링크 복사됨 ✓'}">친구에게 공유하기</button>
+  </div>
+
+  <footer>
+    2026년 06월 04일 기준 · 뉴스 기반 참고용이며 투자 조언이 아니에요.<br>
+    환율은 늘 바뀌니 실제 환전 전 한 번 더 확인하세요 🙂
+  </footer>
+</div>
+</body>
+</html>

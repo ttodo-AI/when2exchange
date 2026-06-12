@@ -1,0 +1,66 @@
+name: Build & publish share page
+
+# 한국시간(KST=UTC+9) 기준 하루 2회. cron은 UTC.
+on:
+  schedule:
+    - cron: '0 23 * * *'   # 08:00 KST -> full  (요인·일정까지 새로)
+    - cron: '0 9 * * *'    # 18:00 KST -> light (환율·판정·왜·체감만)
+  workflow_dispatch:        # 수동 실행
+    inputs:
+      mode:
+        description: 'build mode'
+        default: full
+        type: choice
+        options: [full, light]
+
+permissions:
+  contents: write   # site/·output/ 를 다시 커밋해 아카이브 누적
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Decide build mode
+        id: m
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event.schedule }}" = "0 23 * * *" ]; then
+            echo "mode=full" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=light" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build site
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python executions/build_site.py --mode ${{ steps.m.outputs.mode }}
+
+      - name: Commit refreshed site & data (persist archive)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site output
+          git commit -m "build(${{ steps.m.outputs.mode }}): $(date -u +%FT%TZ)" || echo "no changes"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - uses: actions/deploy-pages@v4

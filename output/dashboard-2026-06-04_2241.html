@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Dashboard</title>
+<style>
+  :root { --bg:#0f1115; --card:#1a1d24; --muted:#8b93a7; --fg:#e6e9f0;
+          --line:#2a2f3a; --accent:#6ea8fe; --good:#3fb950; --mid:#d29922; --low:#6e7681; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Malgun Gothic",sans-serif; }
+  header { padding:24px 20px 12px; border-bottom:1px solid var(--line); }
+  h1 { margin:0 0 4px; font-size:20px; }
+  .meta { color:var(--muted); font-size:13px; }
+  .controls { display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+              padding:14px 20px; position:sticky; top:0; background:var(--bg);
+              border-bottom:1px solid var(--line); z-index:5; }
+  .controls input, .controls select { background:var(--card); color:var(--fg);
+              border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:14px; }
+  #q { flex:1; min-width:180px; }
+  .controls label { color:var(--muted); font-size:13px; }
+  #count { color:var(--muted); font-size:13px; margin-left:auto; }
+  main { padding:18px 20px 60px; display:grid; gap:16px;
+         grid-template-columns:repeat(auto-fill,minmax(420px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px;
+          padding:16px; }
+  .badges { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:8px; }
+  .badge { font-size:12px; padding:3px 8px; border-radius:999px; border:1px solid var(--line);
+           color:var(--fg); white-space:nowrap; }
+  .badge.total { font-weight:700; }
+  .b-good { background:rgba(63,185,80,.15); border-color:var(--good); }
+  .b-mid  { background:rgba(210,153,34,.15); border-color:var(--mid); }
+  .b-low  { background:rgba(110,118,129,.15); border-color:var(--low); }
+  .title { font-size:15px; font-weight:600; margin:2px 0 6px; line-height:1.4; }
+  a.src { color:var(--accent); font-size:13px; text-decoration:none; }
+  a.src:hover { text-decoration:underline; }
+  .section { margin-top:12px; }
+  .section h4 { margin:0 0 6px; font-size:12px; letter-spacing:.04em;
+                text-transform:uppercase; color:var(--muted); }
+  .kv { font-size:13.5px; line-height:1.5; margin:2px 0; }
+  .kv b { color:var(--muted); font-weight:600; }
+  .reason { color:var(--muted); font-size:12.5px; }
+  .draft { white-space:pre-wrap; background:#11141a; border:1px solid var(--line);
+           border-radius:8px; padding:12px; font-size:13.5px; line-height:1.6; margin-top:6px; }
+  .copy { margin-top:8px; background:var(--accent); color:#06122b; border:none;
+          border-radius:8px; padding:7px 12px; font-size:13px; font-weight:600; cursor:pointer; }
+  .copy.done { background:var(--good); color:#03210c; }
+  .empty { color:var(--muted); padding:40px 20px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Content Dashboard</h1>
+  <div class="meta">Source: drafts-2026-06-04_2238.json &middot; Generated 2026-06-04 22:41 UTC &middot; 3 items</div>
+</header>
+<div class="controls">
+  <input id="q" type="search" placeholder="Filter by text (title / brief / draft)…">
+  <label>Min total <input id="min" type="number" min="0" max="20" value="0" style="width:64px"></label>
+  <label>Sort
+    <select id="sort">
+      <option value="total">Total score</option>
+      <option value="relevance">Relevance</option>
+      <option value="content_potential">Content potential</option>
+      <option value="title">Title</option>
+    </select>
+  </label>
+  <label><input id="dir" type="checkbox" checked> Desc</label>
+  <span id="count"></span>
+</div>
+<main id="grid"></main>
+<script>
+const DATA = [{"title": "\"원화 약세, 경상수지보다 외국인 수급이 좌우\"···키움증권 분석 |", "link": "https://www.newsfreezone.co.kr/news/articleViewAmp.html?idxno=692957", "total": 18, "relevance": 10, "relevance_reason": "Expert analysis explaining currency weakness drivers, directly addressing what affects personal finance decisions", "content_potential": 8, "content_reason": "Educational insight comparing geopolitical vs. capital flow factors, shareable analysis useful for followers' decisions", "hook": "경상수지 흑자인데 원화가 계속 떨어지는 이유? 외국인 수급이 답입니다", "point": "원화 약세의 진짜 원인은 무역 수지가 아니라 외국인의 자본 유입·유출 흐름이다. 이를 이해하면 환율 변동을 더 정확히 예측할 수 있다.", "example": "경상수지가 흑자더라도 외국인이 한국 주식·채권을 팔면 원화 수요 감소로 환율이 올라간다는 구체적 메커니즘 비교", "format": "Carousel (3-4장): 경상수지 vs 외국인 수급의 차이를 시각적으로 비교하고, 팔로워가 환율 뉴스를 읽을 때 어떤 지표를 봐야 하는지 알려주는 교육 콘텐츠", "post": "경상수지 흑자인데 왜 원화는 계속 떨어질까요? 🤔\n\n많은 분들이 '무역 흑자면 원화 강세 아닌가?' 하고 생각하시는데요.\n\n사실 환율을 움직이는 진짜 힘은 따로 있습니다.\n\n바로 외국인의 자본 흐름이에요.\n\n외국인 투자자들이 한국 주식이나 채권을 팔기 시작하면, 원화 수요가 줄어들면서 환율이 올라갑니다.\n\n경상수지가 아무리 흑자여도요.\n\n즉, 환율 뉴스를 볼 때 무역 수지만 보면 절반밖에 못 보는 거예요.\n\n외국인 순매수·순매도 동향, 자본수지 흐름까지 함께 확인하는 습관이 필요합니다. 📊\n\n다음번에 환율 기사 보실 때, '외국인이 지금 사고 있나, 팔고 있나'를 먼저 체크해보세요.\n\n훨씬 더 정확하게 흐름이 보일 거예요.\n\n#환율 #원화 #외국인수급 #경제공부 #키움증권"}, {"title": "[경제 포커스] 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 - 조선비즈", "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/E5NGRSGB5ZERBC32W7R7M6RTJA/", "total": 18, "relevance": 10, "relevance_reason": "Comparative currency analysis (won vs. dollar, yuan, yen) perfect for understanding exchange rate trends", "content_potential": 8, "content_reason": "Strong hook contrasting economic outlook with weak currency, highly relevant for budgeting and international spending decisions", "hook": "한국 경제는 좋다는데, 환율은 왜 자꾸 올라? 달러·위안화·엔화 모두 이기고 있어요", "point": "원화가 주요 통화 대비 전반적으로 약세인 상황은 해외 여행, 수입 구매, 달러 환전을 계획하는 개인의 지출 계획에 직접 영향을 미친다.", "example": "달러, 위안화, 엔화 대비 원화 약세 비율 구체화 (예: 지난 3개월간 달러 대비 5% 이상 약세) + 해외 쇼핑 시 실제 추가 비용 계산", "format": "Blog post 또는 장문 Carousel: 경제 뉴스와 개인 재정의 연결고리를 명확히 하고, '언제 환전/구매하면 좋을지' 실용적 조언 포함", "post": "한국 경제 좋다는데, 환율은 왜 자꾸 오를까요? 😅\n\n달러, 위안화, 엔화 대비 원화가 모두 약세입니다.\n\n이게 단순한 뉴스로 끝나는 얘기가 아니에요.\n\n해외여행 준비 중이신 분, 직구 자주 하시는 분, 달러 환전 고민 중인 분 모두 지금 직접적인 영향을 받고 있습니다.\n\n예를 들어볼게요.\n\n달러 대비 원화가 5% 약세라면, 100만 원짜리 해외 구매의 실질 비용은 105만 원이 되는 셈이에요.\n\n쇼핑 한 번에 몇만 원씩 더 나가는 거죠.\n\n그럼 어떻게 해야 할까요?\n\n지금 당장 필요한 환전이라면 분할 환전으로 리스크를 나누고, 급하지 않다면 환율 흐름을 조금 더 지켜보는 게 현명합니다. 💡\n\n경제 뉴스가 어렵게 느껴져도, 내 지갑에 미치는 영향만 파악해도 충분해요.\n\n#환율 #원화약세 #환전타이밍 #해외직구 #개인재정"}, {"title": "원·달러 환율, 개장 후 1530원 돌파… 3월 31일 이후 처음 - 조선비즈", "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/NAMI6MU53FBSFAVDZ2BERS3RIY/", "total": 16, "relevance": 9, "relevance_reason": "Direct currency exchange news highly relevant to audience interested in won-dollar rates and financial trends", "content_potential": 7, "content_reason": "Breaking news format with clear numbers, but limited actionable advice for personal finance decisions", "hook": "원·달러 환율 1530원 돌파! 3개월 만의 고점입니다", "point": "환율이 사상 최고 수준에 근접한 지금, 달러가 필요한 사람(유학생, 해외 구매자, 송금자)은 전략적 환전 타이밍을 고민해야 한다.", "example": "1530원 vs 최근 평균 환율 비교 + 100만 원을 달러로 환전했을 때의 손실액 계산 (예: 50원 차이 = 약 3,300달러 손실 규모)", "format": "Reel (15-30초): 빠르게 환율 변동을 시각화하고, '지금 환전해야 할까? 기다릴까?' 같은 실시간 고민에 답하는 빠른 팩트 체크", "post": "원·달러 환율이 1530원을 돌파했습니다. 📈\n\n3월 31일 이후 처음이에요.\n\n숫자로만 보면 와닿지 않을 수 있으니, 바로 계산해드릴게요.\n\n최근 평균 환율이 1480원이라고 가정하면, 지금과의 차이는 50원입니다.\n\n100만 원을 달러로 환전할 경우, 평균 환율 기준보다 약 22달러 정도 덜 받게 돼요.\n\n송금 금액이 크거나 환전을 자주 하신다면 차이가 꽤 납니다.\n\n그럼 지금 바로 환전해야 할까요, 기다려야 할까요? 🤔\n\n정답은 없지만, 단기 급등 구간에서는 한 번에 몰아서 환전하는 것보다 나눠서 하는 게 리스크를 줄이는 방법입니다.\n\n유학, 송금, 해외 구매 계획 있으신 분들은 지금 환율 흐름 꼭 챙겨보세요.\n\n#환율 #원달러환율 #1530원 #환전 #경제뉴스"}];
+const grid = document.getElementById('grid');
+const q = document.getElementById('q');
+const minEl = document.getElementById('min');
+const sortEl = document.getElementById('sort');
+const dirEl = document.getElementById('dir');
+const countEl = document.getElementById('count');
+
+function esc(s){ return (s==null?'':String(s)).replace(/[&<>"]/g, c =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function band(v,max){ if(v==null) return 'b-low'; const r=v/max;
+  return r>=0.8?'b-good':r>=0.6?'b-mid':'b-low'; }
+
+function render(){
+  const term = q.value.trim().toLowerCase();
+  const min = Number(minEl.value)||0;
+  const key = sortEl.value;
+  const desc = dirEl.checked;
+  let rows = DATA.filter(d => (d.total==null?0:d.total) >= min);
+  if(term){
+    rows = rows.filter(d => [d.title,d.hook,d.point,d.example,d.format,d.post]
+      .some(x => (x||'').toLowerCase().includes(term)));
+  }
+  rows.sort((a,b)=>{
+    let av=a[key], bv=b[key];
+    if(key==='title'){ av=(av||'').toLowerCase(); bv=(bv||'').toLowerCase();
+      return desc ? bv.localeCompare(av) : av.localeCompare(bv); }
+    av=av==null?-1:av; bv=bv==null?-1:bv;
+    return desc ? bv-av : av-bv;
+  });
+  countEl.textContent = rows.length + ' shown';
+  if(!rows.length){ grid.innerHTML = '<div class="empty">No items match.</div>'; return; }
+  grid.innerHTML = rows.map(d => `
+    <div class="card">
+      <div class="badges">
+        <span class="badge total ${band(d.total,20)}">Total ${d.total==null?'?':d.total}/20</span>
+        <span class="badge ${band(d.relevance,10)}">Relevance ${d.relevance==null?'?':d.relevance}/10</span>
+        <span class="badge ${band(d.content_potential,10)}">Content ${d.content_potential==null?'?':d.content_potential}/10</span>
+      </div>
+      <div class="title">${esc(d.title)}</div>
+      ${d.link?`<a class="src" href="${esc(d.link)}" target="_blank" rel="noopener">원문 보기 ↗</a>`:''}
+      ${(d.relevance_reason||d.content_reason)?`<div class="section">
+        ${d.relevance_reason?`<div class="reason">· 관련성: ${esc(d.relevance_reason)}</div>`:''}
+        ${d.content_reason?`<div class="reason">· 콘텐츠: ${esc(d.content_reason)}</div>`:''}
+      </div>`:''}
+      <div class="section">
+        <h4>Brief</h4>
+        ${d.hook?`<div class="kv"><b>Hook</b> · ${esc(d.hook)}</div>`:''}
+        ${d.point?`<div class="kv"><b>Point</b> · ${esc(d.point)}</div>`:''}
+        ${d.example?`<div class="kv"><b>Example</b> · ${esc(d.example)}</div>`:''}
+        ${d.format?`<div class="kv"><b>Format</b> · ${esc(d.format)}</div>`:''}
+      </div>
+      <div class="section">
+        <h4>Draft</h4>
+        <div class="draft">${esc(d.post)}</div>
+        <button class="copy" data-post="${esc(d.post)}">Copy draft</button>
+      </div>
+    </div>`).join('');
+}
+
+grid.addEventListener('click', e => {
+  const btn = e.target.closest('.copy');
+  if(!btn) return;
+  const text = btn.getAttribute('data-post')
+    .replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"');
+  navigator.clipboard.writeText(text).then(()=>{
+    btn.textContent='Copied ✓'; btn.classList.add('done');
+    setTimeout(()=>{ btn.textContent='Copy draft'; btn.classList.remove('done'); },1500);
+  });
+});
+[q,minEl,sortEl,dirEl].forEach(el => el.addEventListener('input', render));
+render();
+</script>
+</body>
+</html>

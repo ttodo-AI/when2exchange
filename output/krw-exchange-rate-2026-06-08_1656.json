@@ -1,0 +1,73 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-08T16:56:41.849180+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,555–1,600 KRW per USD\n\nWHY: The won is at its weakest level in 17 years (since 2009), with the exchange rate breaking through 1,550 KRW/USD and threatening 1,600. The news describes this as a severe won weakness driven by foreign investor outflows and strong global dollar demand, with analysts warning that won weakness pressure will continue in the near term.\n\nTIP: Since you must convert $2,000 monthly regardless, consider locking in forward contracts or dollar-cost averaging smaller amounts more frequently to reduce exposure to further won depreciation, rather than waiting for improvement."
+  },
+  "articles": [
+    {
+      "title": "[가장 보통의 투자] 달러가 오르면 왜 내 돈이 줄어들까",
+      "link": "https://www.bizhankook.com/bk/article/32470",
+      "summary": "원·달러 환율, 외환위기 후 최고치…환율 전망보다 중요한 것은 통화 비중 점검.",
+      "date": "2026-06-08T06:56:41.849180+00:00"
+    },
+    {
+      "title": "17년 만에 열린 환율 1550원 시대…李대통령 “일시적 현상” 진화 안간힘",
+      "link": "https://www.sisajournal.com/news/articleView.html?idxno=375732",
+      "summary": "원-달러 환율이 심리적 저항선을 차례로 돌파하며 외환시장에 공포감이 커지고 있다. 주말 사이 야간 거래에서 장중 1560원 선을 돌파하더니, 8일 정규 시장 개장.",
+      "date": "2026-06-08T06:56:41.849180+00:00"
+    },
+    {
+      "title": "빗나간 '상고하저' 환율 전망에···은행권, 자본비율 관리 '비상'",
+      "link": "https://www.seoulfn.com/news/articleView.html?idxno=630615",
+      "summary": "[서울파이낸스 정성화 기자] 원·달러 환율이 1600원선을 위협하는 수준까지 치솟으면서 금융지주들의 자본비율 관리에 비상이 걸렸다.당초 시장에서는 올해 하반기로.",
+      "date": "2026-06-08T07:56:41.849180+00:00"
+    },
+    {
+      "title": "원·달러 환율, 16.1원 오른 1555.2원 개장 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/08/A4RMWBS6YJCX3JL2ME5Z2E6I74/",
+      "summary": "원·달러 환율, 16.1원 오른 1555.2원 개장 2009년 3월 6일 이후 최고가 개장 미국 달러 대비 원화 환율원·달러 환율은 8일 1555.2원에 개장했다. 직전 거래일보다 16.1...",
+      "date": "2026-06-07T23:56:41.849180+00:00"
+    },
+    {
+      "title": "환율 1600원 턱밑, 한국경제 흔드는 ‘강달러 소용돌이’",
+      "link": "http://www.sisats.com/news/articleView.html?idxno=313867",
+      "summary": "(시사통신/현은지 기자) 원·달러 환율이 1550원을 넘어 1600원선에 근접하며 글로벌 금융위기 이후 17년3개월 만의 최고 수준으로 치솟았다.",
+      "date": "2026-06-08T07:56:41.849180+00:00"
+    },
+    {
+      "title": "원·달러 환율, 16.1원 오른 1555.2원 개장",
+      "link": "https://m.news.nate.com/view/20260608n06103?mid=m02&list=recent&cpcd=",
+      "summary": "한눈에 보는 오늘 : 경제 - 뉴스 : 서울 중구 하나은행 본점 위변조센터에서 직원이 달러를 정리하고 있다. /뉴스1미국 달러 대비 원화 환율(원·달러 환율)은 8일...",
+      "date": "2026-06-07T23:56:41.849180+00:00"
+    },
+    {
+      "title": "코스피 7,500 하회·환율 1,555원 위로…금융시장 '검은 월요일'",
+      "link": "https://www.yna.co.kr/amp/view/AKR20260608052300002",
+      "summary": "(서울=연합뉴스) 한지훈 기자 = 국내 금융시장은 8일 미국발 투자 심리 악화로 장중 변동성이 크게 확대되면서 '검은 월요일'을 방불케 했다.",
+      "date": "2026-06-08T00:56:41.849180+00:00"
+    },
+    {
+      "title": "“반도체 조정·외국인 매도 겹쳤다…원화 약세 부담 확대”",
+      "link": "https://www.news2day.co.kr/article/20260608500017",
+      "summary": "[뉴스투데이=이금용 기자] 원·달러 환율이 글로벌 금융위기 이후 처음으로 1550원을 넘어선 가운데 당분간 원화 약세 압력이 이어질 수 있다는 전망이 나왔다.",
+      "date": "2026-06-07T23:56:41.849180+00:00"
+    },
+    {
+      "title": "원·달러 환율, 17년 만에 최고...외환시장 불안 빠르게 확산",
+      "link": "https://www.newsfc.co.kr/news/articleView.html?idxno=79110",
+      "summary": "[금융소비자뉴스 정윤승 기자] 원·달러 환율이 금융위기 이후 최고 수준까지 치솟으면서 외환시장 불안이 빠르게 확산하고 있다.증권가에서는 단기적인 오버슈팅 성격...",
+      "date": "2026-06-08T01:56:41.849180+00:00"
+    },
+    {
+      "title": "[환율비상] 원·달러 환율 고공행진…공항 환전가는 1620원대, 고환율 장기화 우려 커진다",
+      "link": "http://www.nbnnews.co.kr/news/articleView.html?idxno=1033513",
+      "summary": "[내외뉴스통신] 원종성 기자최근 환율 상승의 배경으로는 외국인 투자자들의 국내 자산 매도와 글로벌 달러 강세가 동시에 작용하고 있다는 분석이 나온다.",
+      "date": "2026-06-08T02:56:41.849180+00:00"
+    }
+  ]
+}

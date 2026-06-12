@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이번 달 환전, 지금 괜찮을까?</title>
+<meta property="og:title" content="이번 달 환전, 지금 괜찮을까?">
+<meta property="og:description" content="원/달러 환율 타이밍을 매일 체크해 드려요.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root{ --bg:#f4f5f7; --card:#fff; --ink:#14171f; --muted:#6b7280; --line:#ebedf0;
+         --up:#e0383e; --up-bg:#fdecec; --down:#1f9d57; --down-bg:#e7f6ec;
+         --brand:#3b5bdb; --brand-bg:#eef1fd;
+         --good-fg:#1f7a47; --good-bg:#e7f6ec; --mid-fg:#9a6b00; --mid-bg:#fbf2dd;
+         --bad-fg:#c5333a; --bad-bg:#fdeaea; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--ink);
+        font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+        line-height:1.6; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums; }
+  .wrap{ max-width:480px; margin:0 auto; padding:18px 16px 48px; }
+  .top{ padding:6px 2px 0; }
+  .ey{ font-size:13px; color:var(--muted); font-weight:600; }
+  .head{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.32; margin:3px 0 0; }
+  .hero{ background:var(--card); border:1px solid var(--line); border-radius:18px;
+         padding:22px 20px; margin-top:14px; box-shadow:0 4px 18px rgba(20,30,60,.05); }
+  .badge{ display:inline-block; font-size:12.5px; font-weight:800; padding:5px 11px; border-radius:999px; }
+  .badge-good{ background:var(--good-bg); color:var(--good-fg); }
+  .badge-mid{ background:var(--mid-bg); color:var(--mid-fg); }
+  .badge-bad{ background:var(--bad-bg); color:var(--bad-fg); }
+  .hero-label{ font-size:12.5px; color:var(--muted); margin-top:14px; }
+  .hero-rate{ font-size:42px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; }
+  .hero-chips{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
+  .chip{ display:inline-block; font-size:12px; font-weight:700; padding:4px 9px;
+         border-radius:8px; background:#f1f2f5; color:var(--muted); }
+  .chip.up{ background:var(--up-bg); color:var(--up); }
+  .chip.down{ background:var(--down-bg); color:var(--down); }
+  .hero-meta{ font-size:11px; color:var(--muted); margin-top:8px; }
+  .verdict{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
+  .verdict-head{ font-size:16px; font-weight:800; letter-spacing:-.01em; }
+  .verdict-sub{ font-size:13px; color:var(--muted); margin-top:2px; }
+  .sec{ font-size:14px; font-weight:800; margin:26px 2px 11px; letter-spacing:-.01em;
+        display:flex; align-items:center; gap:7px; }
+  .sec::before{ content:""; width:3px; height:14px; border-radius:2px; background:var(--brand); }
+  .tabs{ display:flex; gap:3px; background:#eceef1; border-radius:10px; padding:3px; margin-bottom:10px; }
+  .tab{ flex:1; border:none; background:transparent; padding:8px 4px; border-radius:8px;
+        font-size:12px; font-weight:700; color:var(--muted); cursor:pointer; white-space:nowrap; }
+  .tab.active{ background:var(--card); color:var(--ink); box-shadow:0 1px 3px rgba(20,30,60,.1); }
+  .feel-grid{ display:grid; grid-template-columns:1fr 1fr; gap:9px; }
+  .feel-cell{ border:1px solid var(--line); border-radius:12px; padding:12px; background:var(--card); }
+  .feel-top{ display:flex; align-items:baseline; gap:5px; flex-wrap:wrap; }
+  .feel-ico{ font-size:15px; }
+  .feel-name{ font-size:13.5px; font-weight:700; }
+  .feel-tag{ font-size:11px; color:var(--muted); }
+  .feel-amt{ font-size:17px; font-weight:800; margin-top:8px; letter-spacing:-.01em; }
+  .feel-amt.up{ color:var(--up); } .feel-amt.down{ color:var(--down); }
+  .prose{ font-size:14.5px; line-height:1.72; color:#2b313d; margin:0; }
+  .prose .hl{ font-weight:700; text-decoration:underline; text-underline-offset:3px;
+              text-decoration-thickness:1.5px; text-decoration-color:rgba(59,91,219,.55); }
+  .tip{ background:var(--brand-bg); border-radius:12px; padding:13px 15px; }
+  .factor{ padding:14px 0; border-top:1px solid var(--line); }
+  .factor:first-of-type{ border-top:none; padding-top:2px; }
+  .factor-head{ display:flex; align-items:center; gap:8px; font-size:14.5px; font-weight:800; }
+  .rank{ flex:none; width:20px; height:20px; border-radius:6px; background:var(--brand); color:#fff;
+         font-size:12px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .factor-line{ font-size:13px; color:var(--brand); margin:6px 0 8px; font-weight:700; }
+  .factor-bullets{ margin:0; padding-left:17px; }
+  .factor-bullets li{ font-size:13.5px; line-height:1.62; margin:4px 0; color:#2b313d; }
+  .factor-src{ font-size:11.5px; color:var(--muted); margin-top:9px; display:flex;
+               align-items:center; gap:5px; flex-wrap:wrap; }
+  .src-chip{ display:inline-flex; align-items:center; justify-content:center; min-width:18px; height:18px;
+             padding:0 5px; border-radius:5px; background:#eef0f3; color:var(--muted);
+             font-size:11px; font-weight:700; text-decoration:none; }
+  .actions{ display:flex; gap:8px; margin-top:26px; }
+  .btn{ flex:1; text-align:center; padding:13px; border-radius:12px; font-size:14px; font-weight:800;
+        cursor:pointer; border:1px solid var(--line); text-decoration:none; }
+  .btn-primary{ background:var(--brand); color:#fff; border-color:var(--brand); }
+  .btn-secondary{ background:var(--card); color:var(--ink); }
+  footer{ text-align:center; color:var(--muted); font-size:11.5px; margin-top:22px; line-height:1.7; }
+  .views{ font-size:12px; color:var(--muted); margin-bottom:8px; }
+  .views b{ color:var(--ink); font-weight:800; }
+  .muted{ color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="ey">매달 환전하는 우리를 위한</div>
+    <h1 class="head">이번 달, 지금 환전해도 될까?</h1>
+  </div>
+
+  <section class="hero">
+    <span class="badge badge-bad">환전 비추천</span>
+    <div class="hero-label">지금 원·달러 환율</div>
+    <div class="hero-rate" id="rateNow">1,530원</div>
+    <div class="hero-chips">
+      <span id="rateDelta" class="chip"></span>
+      <span id="weekCmp" class="chip" style="display:none"></span>
+    </div>
+    <div id="rateMeta" class="hero-meta">실시간 환율 불러오는 중…</div>
+    <div class="verdict">
+      <div class="verdict-head">지금은 환전하기 아까워요</div>
+      <div class="verdict-sub" id="verdictSub">달러가 평소보다 비싼 편이에요</div>
+    </div>
+  </section>
+
+  <section id="feelBox">
+    <h3 class="sec">어제보다 이만큼 더 들어요</h3>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-set="student">미국 유학생</button>
+      <button class="tab" data-set="investor">해외 주식 투자자</button>
+      <button class="tab" data-set="traveler">미국 여행자</button>
+    </div>
+    <div id="feelList" class="feel-grid"><p class="muted">실시간 환율로 계산 중…</p></div>
+  </section>
+
+  <section>
+    <h3 class="sec">왜 이런 걸까요?</h3>
+    <p class="prose">미국 5월 고용이 17만2000명으로 예상치의 두 배를 넘어서자 연준(미국 중앙은행)의 금리 인하 기대가 사실상 사라지며 달러가 두 달 만에 최대 폭으로 강해졌고, 이 흐름에 <b class="hl">외국인이 코스피에서 19거래일 연속·누적 66조원어치 주식을 팔아 달러로 바꿔 빠져나가는 움직임</b>이 맞물려 원화 약세가 좀처럼 꺾이지 않고 있다. 여기에 미·이란 종전 불확실성으로 국제유가와 금값이 동반 사상 최고 수준까지 오르면서 <b class="hl">한국이 원유 수입 대금으로 달러를 더 많이 써야 하는 구조적 압박</b>까지 더해져, 환율이 1997년 외환위기 이후 최장인 13거래일 연속 1500원대를 벗어나지 못하고 있다.</p>
+  </section>
+
+  <section>
+    <h3 class="sec">매달 환전한다면</h3>
+    <div class="tip"><p class="prose">지정학적 긴장이 완화되거나 외국인 투자가 돌아올 때까지 기다릴 수 있다면 기다리고, 기다리기 어렵다면 월 $2,000을 주 단위로 나눠서 환전하면 한 번에 나쁜 환율로 큰 금액을 환전하는 손실을 줄일 수 있습니다.</p></div>
+  </section>
+
+  <section>
+    <h3 class="sec">오늘 환율을 움직인 요인 Top 4</h3>
+    <div class="factor"><div class="factor-head"><span class="rank">1</span>미국 통화정책</div><div class="factor-line">미국 5월 비농업 고용 17만2000명 발표(예상치의 2배)→연준 금리 인상 재부상→달러 강세·원화 약세 가속</div><ul class="factor-bullets"><li>미국 5월 비농업 고용이 17만2000명 증가해 시장 예상치(약 8만5000명)를 2배 이상 웃돌면서, 연준이 연내 금리를 인하하지 못할 것이라는 전망이 확산됐다</li><li>강한 고용 지표 발표 직후 미국 10년물 국채 금리가 4.53%로 재상승하며 달러화가 두 달여 만에 가장 큰 폭으로 상승했다</li></ul><div class="factor-src">근거 <a class="src-chip" href="https://www.seattlen.com/bbs/board.php?bo_table=hot&amp;wr_id=63427" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.mydailybyte.com/post/%EB%AF%B8%EA%B5%AD-%EA%B3%A0%EC%9A%A9-5%EC%9B%94" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4418549" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://m.joseilbo.com/news/view.htm?newsid=569563&amp;class2=&amp;class=2" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://www.g-enews.com/article/Global-Biz/2026/06/2026060620071559549a1f309431_1" target="_blank" rel="noopener">5</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">2</span>외국인 증시 수급</div><div class="factor-line">외국인 투자자 코스피 19일 연속 순매도·누적 66조원 매도→달러 수요 급증→원·달러 환율 1530원 이상 고착</div><ul class="factor-bullets"><li>외국인 투자자가 코스피 시장에서 19거래일 연속 순매도를 이어가며 단일 거래일에만 5.6조원을 던졌고, 누적 순매도 규모가 66조원(삼성전자·SK하이닉스 집중)에 달했다</li><li>외국인이 국내 주식을 팔고 달러로 바꿔 해외로 빼가는 과정에서 달러 수요가 폭발적으로 늘어 원·달러 환율이 1540원을 돌파, 코스피가 당일 5.54%(478.82포인트) 급락했다</li></ul><div class="factor-src">근거 <a class="src-chip" href="https://www.mt.co.kr/stock/2026/06/04/2026060411201651250" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.newspim.com/news/view/20260604001090" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://contents.premium.naver.com/btnote/btpick/contents/260604211727910wd" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.freezinenews.com/news/articleView.html?idxno=26533" target="_blank" rel="noopener">4</a><a class="src-chip" href="http://www.fieldnews.kr/news/articleView.html?idxno=29086" target="_blank" rel="noopener">5</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">3</span>한국 통화정책</div><div class="factor-line">한국은행 기준금리 2.50% 동결 속 금리 인상 시그널 확대→원화 방어력 약화·환율 1530원 장기화</div><ul class="factor-bullets"><li>한국은행 금통위가 기준금리를 2.50%로 동결했으나, 우리금융연구소는 올 하반기 2차례(2.50%→3.00%), 내년 상반기 2차례(3.50%)의 금리 인상을 전망해 시장의 금리 인상 불안이 커졌다</li><li>원·달러 환율이 13거래일 연속 1500원대에 머물며 1997년 외환위기 이후 최장 기록을 갈아치웠고, 신현송 한국은행 총재가 '환율 쏠림 용인 않겠다'고 밝혔음에도 환율이 잡히지 않았다</li></ul><div class="factor-src">근거 <a class="src-chip" href="https://www.kukinews.com/article/view/kuk202602260088" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://v.daum.net/v/xCMiEK6boO?f=p" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.etoday.co.kr/news/view/2591319" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://m.joseilbo.com/news/view.htm?newsid=569563&amp;class2=&amp;class=2" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://biz.newdaily.co.kr/site/data/html/2026/06/04/2026060400139.html" target="_blank" rel="noopener">5</a></div></div>
+<div class="factor"><div class="factor-head"><span class="rank">4</span>지정학 리스크</div><div class="factor-line">미·이란 종전 불확실성·중동 지정학 리스크 재고조→국제유가 급등·안전자산 달러 수요 집중→원화 추가 약세</div><ul class="factor-bullets"><li>미국과 이란 간 종전 불확실성이 지속되며 중동 지정학 리스크가 재고조됐고, 이것이 달러 강세와 국제유가 상승을 동시에 자극해 원·달러 환율이 17년 3개월 만에 1555원대에서 개장했다</li><li>국제 금 가격이 온스당 4457달러, 은도 동반 사상 최고 수준을 기록하며 인플레이션·지정학 리스크에 대한 안전자산 쏠림이 가속화됐다</li></ul><div class="factor-src">근거 <a class="src-chip" href="https://m.ytn.co.kr/news_view.amp.php?version=1&amp;param=0134_202606080936449588" target="_blank" rel="noopener">1</a><a class="src-chip" href="https://www.ziksir.com/news/articleView.html?idxno=136090" target="_blank" rel="noopener">2</a><a class="src-chip" href="https://www.startuptoday.co.kr/news/articleView.html?idxno=802913" target="_blank" rel="noopener">3</a><a class="src-chip" href="https://www.tokenpost.kr/news/economy/366033" target="_blank" rel="noopener">4</a><a class="src-chip" href="https://sateconomy.co.kr/news/view/1065617479954796" target="_blank" rel="noopener">5</a></div></div>
+  </section>
+
+  <div class="actions">
+    <button id="shareBtn" class="btn btn-primary" onclick="sharePage(this)">친구에게 공유하기</button>
+    <a class="btn btn-secondary" href="https://forms.gle/REPLACE_WITH_YOUR_FORM" target="_blank" rel="noopener">피드백 남기기</a>
+  </div>
+
+  <footer>
+    <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
+    발행 2026-06-08 15:31:37 KST · 환율 <span id="rateSrc">ECB</span> · 뉴스 2026년 06월 04일<br>
+    참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
+  </footer>
+</div>
+<script>
+// Live USD->KRW rate, fetched every time the page opens (no API key, CORS-friendly).
+const RATE_FALLBACK = 1530.0;     // build-time rate, used only if fetch fails
+// Comparison item sets per audience (toggle). All three are identical for now —
+// to be customized later (e.g. investor: 테슬라 1주 / 애플 1주).
+const BASE_ITEMS = [
+  { ico:'🏠', name:'월세', tag:'미국 자취 한 달', usd:1200 },
+  { ico:'☕', name:'스타벅스 아아', tag:'톨 사이즈', usd:3.65 },
+  { ico:'🤖', name:'클로드 코드 프로', tag:'월 구독', usd:20 },
+  { ico:'🍲', name:'북창동순두부', tag:'한 끼', usd:31 }
+];
+const ITEM_SETS = { student: BASE_ITEMS, investor: BASE_ITEMS, traveler: BASE_ITEMS };
+let activeSet = 'student';
+let lastDelta = null;   // 어제 대비 정수 편차 기억(탭 전환 시 재렌더용)
+const won = n => Math.round(n).toLocaleString('ko-KR');
+
+function render(rateNow, rateYest){
+  const elNow = document.getElementById('rateNow');
+  const elDelta = document.getElementById('rateDelta');
+  const elMeta = document.getElementById('rateMeta');
+  const elList = document.getElementById('feelList');
+  const elBox = document.getElementById('feelBox');
+  const elTitle = elBox.querySelector('h3');
+
+  elNow.textContent = won(rateNow) + '원';
+
+  if(rateYest == null){            // no day-over-day data: show rate only
+    elDelta.textContent = '';
+    elMeta.textContent = '실시간 환율 기준';
+    elBox.style.display = 'none';
+    return;
+  }
+  const d = rateNow - rateYest;     // +면 달러 비싸짐(원화 약세)
+  const dr = Math.round(d);          // 표시 환율 편차와 환산 금액을 같은 정수로 통일(일관성)
+  const up = d > 0, flat = Math.abs(d) < 0.05;
+  elDelta.textContent = flat ? '어제와 비슷' : `어제 ${up?'▲':'▼'} ${won(Math.abs(dr))}원`;
+  elDelta.className = 'chip ' + (up?'up':'down');
+  elMeta.textContent = '실시간 기준 · 어제 ' + won(rateYest) + '원';
+  elTitle.textContent = flat ? '어제와 거의 같아요' : (up ? '어제보다 이만큼 더 들어요' : '어제보다 이만큼 덜 들어요');
+
+  lastDelta = dr;
+  renderFeel(dr);
+}
+
+function renderFeel(dr){
+  // dr = 어제 대비 정수 편차. 각 품목 금액 = |dr| × 달러가 -> 표시 편차와 곱이 정확히 맞음.
+  const up = dr >= 0, dir = up?'up':'down', sign = up?'▲':'▼';
+  document.getElementById('feelList').innerHTML = ITEM_SETS[activeSet].map(it => `
+    <div class="feel-cell">
+      <div class="feel-top"><span class="feel-ico">${it.ico}</span><span class="feel-name">${it.name}</span> <span class="feel-tag">${it.tag} · $${it.usd}</span></div>
+      <div class="feel-amt ${dir}">${sign}${won(Math.abs(dr)*it.usd)}원</div>
+    </div>`).join('');
+}
+
+function renderWeek(rateNow, rates){
+  // 이번주(월~오늘) 평균 대비 현재 환율이 얼마나 높은지/낮은지.
+  const el = document.getElementById('weekCmp');
+  const mon = new Date(); mon.setHours(0,0,0,0);
+  mon.setDate(mon.getDate() - ((mon.getDay()+6)%7));   // 이번주 월요일
+  const vals = Object.keys(rates).filter(dt => new Date(dt) >= mon).map(dt => rates[dt].KRW);
+  if(!vals.length){ el.style.display='none'; return; }
+  const avg = vals.reduce((a,b)=>a+b,0)/vals.length;
+  const d = rateNow - avg, up = d > 0;
+  const pct = avg ? Math.abs(d/avg*100) : 0;
+  el.textContent = '이번주 평균 ' + (Math.abs(d)<0.05 ? '수준' : (up?'▲':'▼')+' '+won(Math.abs(d))+'원');
+  el.className = 'chip ' + (up?'up':'down');
+  el.style.display = 'inline-block';
+}
+
+function sharePage(btn){
+  const url = location.href;
+  const flash = (msg, ms) => { btn.textContent = msg; setTimeout(()=>btn.textContent='친구에게 공유하기', ms); };
+  // file:// 이나 localhost 경로는 친구가 못 여는 주소 -> 안내만.
+  if(!/^https?:\/\//i.test(url)){
+    flash('호스팅하면 공유돼요 (지금은 내 PC 파일)', 2600);
+    return;
+  }
+  if(navigator.share){ navigator.share({title:document.title, url}).catch(()=>{}); }
+  else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(()=>flash('링크 복사됨 ✓', 1500)); }
+}
+
+function wonKo(n){  // 35000 -> "3만 5천", 8000 -> "8천" (round to 1,000)
+  n = Math.round(n/1000)*1000;
+  const man = Math.floor(n/10000), cheon = (n%10000)/1000;
+  let s = '';
+  if(man) s += man + '만 ';
+  if(cheon) s += cheon + '천 ';
+  return (s.trim() || '0') + '원';
+}
+
+const ANCHOR_USD = 1000;  // 부제 "$N 바꾸면" 기준 금액
+function renderBaseline(rateNow, rates){
+  // 최근 3개월(90일) 평균 대비 지금 환율이 얼마나 비싼지/싼지 -> 히어로 부제.
+  const el = document.getElementById('verdictSub');
+  if(!el) return;
+  const since = new Date(); since.setDate(since.getDate()-90);
+  const vals = Object.keys(rates).filter(dt => new Date(dt) >= since).map(dt => rates[dt].KRW);
+  if(vals.length < 5) return;  // 데이터 부족 -> 빌드 시점 기본 문구 유지
+  const avg = vals.reduce((a,b)=>a+b,0)/vals.length;
+  const d = rateNow - avg, dr = Math.round(d);
+  if(Math.abs(d) < 1){ el.textContent = '최근 3개월 평균과 거의 같아요'; return; }
+  const extra = wonKo(Math.abs(dr)*ANCHOR_USD);
+  const usd = '$' + ANCHOR_USD.toLocaleString('en-US');
+  el.textContent = d > 0
+    ? `최근 3개월 평균보다 ${won(Math.abs(dr))}원 비싸요 — ${usd} 바꾸면 ${extra} 더 나가요`
+    : `최근 3개월 평균보다 ${won(Math.abs(dr))}원 싸요 — ${usd} 바꾸면 ${extra} 덜 나가요`;
+}
+
+async function loadViews(){
+  // Abacus hit counter: one key for the running total, one per day for "today".
+  const today = new Date().toISOString().slice(0,10);
+  try{
+    const [t, dd] = await Promise.all([
+      fetch(`https://abacus.jasoncameron.dev/hit/krw-hwanjeon-share/total`).then(r=>r.json()),
+      fetch(`https://abacus.jasoncameron.dev/hit/krw-hwanjeon-share/${today}`).then(r=>r.json())
+    ]);
+    document.getElementById('vTotal').textContent = (t.value||0).toLocaleString('ko-KR');
+    document.getElementById('vToday').textContent = (dd.value||0).toLocaleString('ko-KR');
+  }catch(e){
+    document.getElementById('views').style.display = 'none';
+  }
+}
+
+async function loadRate(){
+  // Frankfurter (ECB daily reference) — free, no key, CORS-enabled. Range gives us
+  // the two most recent business days so we can compute the day-over-day change.
+  try{
+    const end = new Date();
+    const start = new Date(Date.now() - 100*86400000);  // 3개월 평균 + 어제/이번주 모두 커버
+    const fmt = d => d.toISOString().slice(0,10);
+    const url = `https://api.frankfurter.dev/v1/${fmt(start)}..${fmt(end)}?base=USD&symbols=KRW`;
+    const r = await fetch(url);
+    if(!r.ok) throw new Error('http '+r.status);
+    const j = await r.json();
+    const dates = Object.keys(j.rates).sort();
+    if(!dates.length) throw new Error('no data');
+    const today = j.rates[dates[dates.length-1]].KRW;
+    const yest = dates.length > 1 ? j.rates[dates[dates.length-2]].KRW : null;
+    render(today, yest);
+    renderWeek(today, j.rates);
+    renderBaseline(today, j.rates);
+  }catch(e){
+    // Fallback to the build-time rate; can't compute "yesterday".
+    document.getElementById('rateMeta').textContent = '실시간 환율을 못 불러와 저장된 값으로 표시해요';
+    document.getElementById('rateSrc').textContent = '저장값';
+    render(RATE_FALLBACK, null);
+  }
+}
+// 품목군 토글: 탭 클릭 시 활성 세트만 바꿔 재렌더(환율 재요청 없음).
+document.getElementById('tabs').addEventListener('click', e => {
+  const b = e.target.closest('.tab');
+  if(!b) return;
+  activeSet = b.dataset.set;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === b));
+  if(lastDelta != null) renderFeel(lastDelta);
+});
+
+loadRate();
+loadViews();
+</script>
+</body>
+</html>

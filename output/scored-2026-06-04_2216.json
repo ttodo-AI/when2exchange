@@ -1,0 +1,78 @@
+{
+  "source_file": "output\\krw-exchange-rate-2026-06-04_2208.json",
+  "audience": "Korean readers (20s-30s) interested in personal finance, smart spending, currency exchange, and money-saving tips, following an Instagram/blog account.",
+  "scored_at": "2026-06-04T22:16:08.448393+00:00",
+  "count": 7,
+  "articles": [
+    {
+      "title": "\"원화 약세, 경상수지보다 외국인 수급이 좌우\"···키움증권 분석 |",
+      "link": "https://www.newsfreezone.co.kr/news/articleViewAmp.html?idxno=692957",
+      "date": "2026-06-04T01:08:45.830468+00:00",
+      "relevance": 10,
+      "relevance_reason": "Expert analysis explaining currency weakness drivers, directly addressing what affects personal finance decisions",
+      "content_potential": 8,
+      "content_reason": "Educational insight comparing geopolitical vs. capital flow factors, shareable analysis useful for followers' decisions",
+      "total": 18
+    },
+    {
+      "title": "[경제 포커스] 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/E5NGRSGB5ZERBC32W7R7M6RTJA/",
+      "date": "2026-06-04T04:08:45.830468+00:00",
+      "relevance": 10,
+      "relevance_reason": "Comparative currency analysis (won vs. dollar, yuan, yen) perfect for understanding exchange rate trends",
+      "content_potential": 8,
+      "content_reason": "Strong hook contrasting economic outlook with weak currency, highly relevant for budgeting and international spending decisions",
+      "total": 18
+    },
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파… 3월 31일 이후 처음 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/NAMI6MU53FBSFAVDZ2BERS3RIY/",
+      "date": "2026-06-04T05:08:45.830468+00:00",
+      "relevance": 9,
+      "relevance_reason": "Direct currency exchange news highly relevant to audience interested in won-dollar rates and financial trends",
+      "content_potential": 7,
+      "content_reason": "Breaking news format with clear numbers, but limited actionable advice for personal finance decisions",
+      "total": 16
+    },
+    {
+      "title": "정부 입김 안 통하네… 원·달러 환율, 개장 후 1530원 돌파",
+      "link": "http://www.pressna.com/news/newsview.php?ncode=1381200691444795",
+      "date": "2026-06-04T03:08:45.830468+00:00",
+      "relevance": 9,
+      "relevance_reason": "Timely won-dollar exchange rate update with government intervention angle relevant to smart spending audience",
+      "content_potential": 7,
+      "content_reason": "Visual element mentioned and policy context adds interest, but mainly news reporting without actionable insights",
+      "total": 16
+    },
+    {
+      "title": "원/달러 환율, 장중 1530원 돌파",
+      "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=304089",
+      "date": "2026-06-04T03:08:45.830468+00:00",
+      "relevance": 9,
+      "relevance_reason": "Won-dollar rate movement with analysis of multiple contributing factors investors care about",
+      "content_potential": 7,
+      "content_reason": "Mentions foreign investor behavior and market dynamics, useful context but limited savings/spending guidance",
+      "total": 16
+    },
+    {
+      "title": "원·달러 환율 1530원 돌파…외환당국 구두개입에 턱밑 마감",
+      "link": "https://www.pointe.co.kr/news/articleView.html?idxno=80267",
+      "date": "2026-06-04T07:08:45.830468+00:00",
+      "relevance": 9,
+      "relevance_reason": "Core topic of currency exchange with geopolitical context explaining rate movements",
+      "content_potential": 6,
+      "content_reason": "Good explanation of causes but lacks practical tips or personal finance angle for followers",
+      "total": 15
+    },
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파…3월 31일 이후 처음",
+      "link": "https://news.nate.com/view/20260604n11276",
+      "date": "2026-06-04T00:08:45.830468+00:00",
+      "relevance": 9,
+      "relevance_reason": "Direct currency exchange news with historical context comparing to March 31 baseline",
+      "content_potential": 6,
+      "content_reason": "Strong news hook with comparative data, but lacks personal finance application or shareability appeal",
+      "total": 15
+    }
+  ]
+}

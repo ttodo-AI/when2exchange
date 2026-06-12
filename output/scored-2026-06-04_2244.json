@@ -1,0 +1,78 @@
+{
+  "source_file": "output\\krw-exchange-rate-2026-06-04_2243.json",
+  "audience": "Korean readers (20s-30s) interested in personal finance, smart spending, currency exchange, and money-saving tips, following an Instagram/blog account.",
+  "scored_at": "2026-06-04T22:44:03.080924+00:00",
+  "count": 7,
+  "articles": [
+    {
+      "title": "원·달러 환율 1530원 돌파…외환당국 구두개입에 턱밑 마감",
+      "link": "https://www.pointe.co.kr/news/articleView.html?idxno=80267",
+      "date": "2026-06-04T07:43:46.619557+00:00",
+      "relevance": 9,
+      "relevance_reason": "원·달러 환율의 주요 변동 뉴스로 실시간 환전 의사결정에 직접 영향",
+      "content_potential": 8,
+      "content_reason": "지정학적 배경+정부 개입 등 맥락 제공으로 환율 이해도 증진, 공유 가치 높음",
+      "total": 17
+    },
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파… 3월 31일 이후 처음 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/NAMI6MU53FBSFAVDZ2BERS3RIY/",
+      "date": "2026-06-04T05:43:46.619557+00:00",
+      "relevance": 9,
+      "relevance_reason": "직접적인 원·달러 환율 뉴스로 환전·해외송금 계획 중인 20-30대 재무 관심층의 핵심 관심사",
+      "content_potential": 7,
+      "content_reason": "시의성 있는 환율 급등 정보지만 분석 깊이 부족해 단순 정보 전달 수준",
+      "total": 16
+    },
+    {
+      "title": "정부 입김 안 통하네… 원·달러 환율, 개장 후 1530원 돌파",
+      "link": "http://www.pressna.com/news/newsview.php?ncode=1381200691444795",
+      "date": "2026-06-04T03:43:46.619557+00:00",
+      "relevance": 9,
+      "relevance_reason": "원·달러 환율 최신 변동으로 환전 타이밍을 고민하는 독자층에게 직결",
+      "content_potential": 7,
+      "content_reason": "정부 대응 실패라는 드라마틱한 각도 있으나 실질적 조언 부족",
+      "total": 16
+    },
+    {
+      "title": "원/달러 환율, 장중 1530원 돌파",
+      "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=304089",
+      "date": "2026-06-04T03:43:46.619557+00:00",
+      "relevance": 9,
+      "relevance_reason": "실시간 환율 변동과 지정학적 배경을 다루어 환전 타이밍 결정에 유용",
+      "content_potential": 7,
+      "content_reason": "중동 긴장+외국인 매도 요인 언급으로 인과관계 제시하나 심화 분석 부족",
+      "total": 16
+    },
+    {
+      "title": "\"원화 약세, 경상수지보다 외국인 수급이 좌우\"···키움증권 분석 |",
+      "link": "https://www.newsfreezone.co.kr/news/articleViewAmp.html?idxno=692957",
+      "date": "2026-06-04T01:43:46.619557+00:00",
+      "relevance": 8,
+      "relevance_reason": "환율 변동의 근본 원인(외국인 수급)을 분석으로 독자의 이해도 향상",
+      "content_potential": 8,
+      "content_reason": "전문가 분석으로 신뢰도 높고 \"왜\"를 설명해 교육적 가치와 공유성 우수",
+      "total": 16
+    },
+    {
+      "title": "[경제 포커스] 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/E5NGRSGB5ZERBC32W7R7M6RTJA/",
+      "date": "2026-06-04T04:43:46.619557+00:00",
+      "relevance": 8,
+      "relevance_reason": "원화 약세 추세와 다국가 통화 비교로 환전 전략 수립에 참고 가능",
+      "content_potential": 8,
+      "content_reason": "거시경제와 개인 재정의 연결고리 제시로 인사이트 높고 팔로워 토론 유발 가능",
+      "total": 16
+    },
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파…3월 31일 이후 처음",
+      "link": "https://news.nate.com/view/20260604n11276",
+      "date": "2026-06-04T00:43:46.619557+00:00",
+      "relevance": 9,
+      "relevance_reason": "원·달러 환율 고점 돌파 뉴스로 해외 송금·환전 계획자의 주요 관심사",
+      "content_potential": 6,
+      "content_reason": "반복적인 속보성 뉴스로 독창성 낮고 비교분석 미흡",
+      "total": 15
+    }
+  ]
+}

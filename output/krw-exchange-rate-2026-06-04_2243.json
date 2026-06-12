@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-04T22:43:46.619557+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1530 KRW per USD\n\nWHY: The won has weakened significantly to 1530 KRW/USD—the highest level since March 31, 2026, and the first time it has breached this level since the global financial crisis. Multiple news sources confirm this is driven by geopolitical tensions (US-Iran conflict), foreign investor selloffs of Korean stocks, and capital outflows, all pushing the dollar stronger and making USD more expensive for your monthly conversion.\n\nTIP: Consider waiting if possible, as won weakness typically reverses when geopolitical tensions ease or foreign investment stabilizes; alternatively, dollar-cost averaging smaller amounts weekly may reduce the impact of timing a single large monthly conversion at an unfavorable rate."
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파… 3월 31일 이후 처음 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/NAMI6MU53FBSFAVDZ2BERS3RIY/",
+      "summary": "미국 달러 대비 원화 환율(원·달러 환율)은 4일 1530원에 개장했다. 직전 거래일보다 13.6원 상승했다. 원·달러 환율이 1530원 수준에서 거래를 시작한 것은 글로벌...",
+      "date": "2026-06-04T05:43:46.619557+00:00"
+    },
+    {
+      "title": "원·달러 환율 1530원 돌파…외환당국 구두개입에 턱밑 마감",
+      "link": "https://www.pointe.co.kr/news/articleView.html?idxno=80267",
+      "summary": "[포인트경제] 미국과 이란 간의 종전 협상을 둘러싼 낙관론이 희미해지면서 원·달러 환율이 글로벌 금융위기 이후 처음으로 1530원선을 넘어서며 출발했다.",
+      "date": "2026-06-04T07:43:46.619557+00:00"
+    },
+    {
+      "title": "정부 입김 안 통하네… 원·달러 환율, 개장 후 1530원 돌파",
+      "link": "http://www.pressna.com/news/newsview.php?ncode=1381200691444795",
+      "summary": "△4일 오전 서울 중구 하나은행 본점 딜링룸 전광판에 코스피와 원·달러 환욜이 표시되고 있다. 이날 환율은 미국과 이란의 군사적 충돌 재개에 강달러 기조가 강해지며...",
+      "date": "2026-06-04T03:43:46.619557+00:00"
+    },
+    {
+      "title": "원·달러 환율, 개장 후 1530원 돌파…3월 31일 이후 처음",
+      "link": "https://news.nate.com/view/20260604n11276",
+      "summary": "한눈에 보는 오늘 : 경제 - 뉴스 : 서울 중구 하나은행 본점 위변조센터에서 직원이 달러를 정리하고 있다. /뉴스1미국 달러 대비 원화 환율(원·달러 환율)은 4일 1530...",
+      "date": "2026-06-04T00:43:46.619557+00:00"
+    },
+    {
+      "title": "원/달러 환율, 장중 1530원 돌파",
+      "link": "https://www.straightnews.co.kr/news/articleView.html?idxno=304089",
+      "summary": "원/달러 환율이 장중 1530원선을 넘어서며 다시 고점을 높였다. 중동 지역 긴장이 이어지면서 국제유가가 상승세를 보이고 있는 데다 외국인 투자자의 국내 주식...",
+      "date": "2026-06-04T03:43:46.619557+00:00"
+    },
+    {
+      "title": "\"원화 약세, 경상수지보다 외국인 수급이 좌우\"···키움증권 분석 |",
+      "link": "https://www.newsfreezone.co.kr/news/articleViewAmp.html?idxno=692957",
+      "summary": "원·달러 환율이 1500원대 고공행진을 이어가는 배경으로 중동 지정학적 리스크보다 외국인의 국내 주식 매도에 따른 자본 유출이 더 큰 영향을 미치고 있다는 분석이...",
+      "date": "2026-06-04T01:43:46.619557+00:00"
+    },
+    {
+      "title": "[경제 포커스] 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/04/E5NGRSGB5ZERBC32W7R7M6RTJA/",
+      "summary": "경제 포커스 韓 경제 좋다는데...원화 가치, 달러-위안화-엔화 대비 모두 약세 올해 우리나라 경제가 예상보다 큰 폭으로 성장할 것이란 전망에 힘이 실리는 상황에서...",
+      "date": "2026-06-04T04:43:46.619557+00:00"
+    }
+  ]
+}
