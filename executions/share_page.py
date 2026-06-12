@@ -22,7 +22,7 @@ from datetime import datetime, timezone, timedelta
 
 VIEWS_NS = "krw-hwanjeon-share"  # namespace for the Abacus view counter
 # Google Form for reader feedback — replace with the real form link once created.
-FEEDBACK_URL = "https://forms.gle/REPLACE_WITH_YOUR_FORM"
+FEEDBACK_URL = "https://forms.gle/a35emZKoRhYQF1N86"
 # 헤더의 강아지를 누르면 뜨는 자기소개. 자유롭게 교체하세요.
 ABOUT_ME = (
     "🐶 멍멍! 제 주인은 매달 환전하느라 머리가 터지는 유학생이랍니다.\n\n"
@@ -65,8 +65,9 @@ def parse_args() -> argparse.Namespace:
 
 
 def find_latest(pattern: str):
+    # 파일명에 타임스탬프(YYYY-MM-DD_HHMM)가 있어 사전식 max = 최신. mtime은 git 체크아웃에서 뒤섞임.
     matches = glob.glob(os.path.join("output", pattern))
-    return max(matches, key=os.path.getmtime) if matches else None
+    return max(matches) if matches else None
 
 
 def parse_verdict(text: str) -> dict:
@@ -295,9 +296,9 @@ def main() -> None:
                     f'<div class="cal-scn"><b>{esc(s.get("cond",""))}</b> {esc(s.get("effect",""))}</div>'
                     for s in ev.get("scenarios", []) if s.get("effect")
                 )
-                why = esc(ev.get("why", ""))
-                why_html = f'<div class="cal-why">{why}</div>' if why else ""
-                detail = why_html + scn
+                evwhy = esc(ev.get("why", ""))
+                evwhy_html = f'<div class="cal-why">{evwhy}</div>' if evwhy else ""
+                detail = evwhy_html + scn
                 rows.append(
                     '<details class="cal-item"><summary class="cal-row" '
                     f'data-date="{esc(ev.get("date",""))}">'

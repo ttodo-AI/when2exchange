@@ -42,8 +42,9 @@ def run(name, script, extra=None):
 
 
 def latest(pattern):
+    # 파일명 타임스탬프 기준 사전식 max(=최신). mtime은 git 체크아웃 후 신뢰 불가.
     m = glob.glob(os.path.join(ROOT, "output", pattern))
-    return max(m, key=os.path.getmtime) if m else None
+    return max(m) if m else None
 
 
 def load(path, default):
