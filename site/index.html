@@ -263,8 +263,8 @@
   <section class="hero">
     <div class="hero-row">
       <div class="hero-left">
-        <div class="hero-label">지금 원·달러 환율</div>
-        <div class="hero-rate" id="rateNow">1,518~1,528원</div>
+        <div class="hero-label">지금 원·달러 환율 (실시간 기준)</div>
+        <div class="hero-rate" id="rateNow">1,518~1,560원</div>
       </div>
       <div class="hero-right">
         <span id="rateDelta" class="chip"></span>
@@ -332,7 +332,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-12 13:01:30 KST · 환율 <span id="rateSrc">ECB</span> · 뉴스 2026년 06월 12일<br>
+    발행 2026-06-12 13:03:59 KST · 환율 <span id="rateSrc">ECB</span> · 뉴스 2026년 06월 12일<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -404,7 +404,7 @@ function render(rateNow, rateYest){
 
   if(rateYest == null){            // no day-over-day data: show rate only
     elDelta.textContent = '';
-    elMeta.textContent = '실시간 환율 기준';
+    elMeta.textContent = '';
     elBox.style.display = 'none';
     return;
   }
@@ -413,7 +413,7 @@ function render(rateNow, rateYest){
   const up = dr > 0, flat = (dr === 0);
   elDelta.textContent = flat ? '어제와 비슷' : `어제 ${up?'▲':'▼'} ${won(Math.abs(dr))}원`;
   elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
-  elMeta.textContent = '실시간 기준 · 어제 ' + won(rateYest) + '원';
+  elMeta.textContent = '어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;
