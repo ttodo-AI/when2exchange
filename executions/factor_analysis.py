@@ -150,9 +150,12 @@ def rewrite_why(client, model: str) -> None:
         + "\n- ".join(f.get("bullets", []))
         for f in facs
     )
+    today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     prompt = (
-        "아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
+        f"오늘은 {today_kst}(한국시간)입니다. 아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
         f"{digest}\n\n"
+        "■ 시제: 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·'예정' 같은 미래형으로 "
+        "쓰지 말 것. 이미 나온 결과를 과거형으로 반영하라.\n\n"
         f"■ overall_why 작성 규칙: {WHY_RULES}\n\n"
         f"■ tldr 작성 규칙: {TLDR_RULES}\n\n"
         f"■ card_title 작성 규칙: {CARD_TITLE_RULES}\n\n"
@@ -245,9 +248,11 @@ def main() -> None:
             lines.append(f"[{gi}] {a['title']} :: {a['snippet'][:200]}")
     digest = "\n".join(lines)
 
+    today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     prompt = (
-        "당신은 원/달러(USD/KRW) 환율 애널리스트입니다. 아래 10개 '환율 영향 요인'별로 "
-        "최근 뉴스를 모았습니다. 오늘 원/달러에 실제로 가장 크게 영향을 준 요인 4개를 고르세요.\n\n"
+        f"당신은 원/달러(USD/KRW) 환율 애널리스트입니다. 오늘은 {today_kst}(한국시간)입니다. "
+        "아래 10개 '환율 영향 요인'별로 최근 뉴스를 모았습니다. "
+        "오늘 원/달러에 실제로 가장 크게 영향을 준 요인 4개를 고르세요.\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
         f"[요인별 뉴스]\n{digest}\n\n"
         "■ 작성 원칙 (가장 중요):\n"
@@ -256,6 +261,9 @@ def main() -> None:
         "- 각 불렛은 뉴스에 실제로 나온 구체적 사실(수치·기관명·국가·지표·날짜)을 담아 "
         "'무엇이 → 어떤 경로로 → 환율에 어떻게'를 인과로 설명.\n"
         "- 뉴스에 근거 없는 추측·일반론 금지. 근거 기사 번호를 반드시 표기.\n"
+        "- 시제 정확: 오늘 날짜 기준으로 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·"
+        "'발표 예정' 같은 미래형으로 쓰지 말 것. 발표 전에 작성된 옛 기사의 표현을 그대로 옮기지 말고, "
+        "이미 나온 결과를 반영해 과거형으로 쓸 것.\n"
         "- 모든 문장(headline·bullets·impact_reason·tldr·overall_why)은 '~다/~했다'로 "
         "끝나는 담백한 문어체 평서문으로 일관되게. 해요체(~요/~예요)·반말·과한 격식"
         "(~습니다)을 섞지 말 것.\n\n"

@@ -325,7 +325,9 @@ def main() -> None:
             if this_week:
                 groups += '<div class="cal-wk">이번주</div>' + "\n".join(_render_ev(e) for e in this_week)
             if next_week:
-                groups += '<div class="cal-wk">다음주</div>' + "\n".join(_render_ev(e) for e in next_week)
+                groups += ('<details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">'
+                           '다음주 <span class="cal-caret">▾</span></summary>'
+                           + "\n".join(_render_ev(e) for e in next_week) + '</details>')
             guide = esc(cj.get("guide", ""))
             guide_html = f'<div class="cal-guide">💡 {guide}</div>' if guide else ""
             cal_section = (
@@ -635,6 +637,9 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .cal-result{ font-size:13px; color:#2b313d; line-height:1.6; }
   .cal-wk{ font-size:11.5px; font-weight:800; color:var(--muted); margin:15px 0 1px; }
   .cal-wk:first-of-type{ margin-top:2px; }
+  .cal-wk-toggle{ cursor:pointer; list-style:none; display:flex; align-items:center; gap:5px; padding:4px 0; }
+  .cal-wk-toggle::-webkit-details-marker{ display:none; }
+  .cal-nextwk[open] > .cal-wk-toggle .cal-caret{ transform:rotate(180deg); }
   .cal-scn b{ color:var(--ink); display:block; }
   .arc-row{ display:flex; align-items:center; gap:9px; padding:9px 0; border-top:1px solid var(--line);
             text-decoration:none; color:inherit; }
