@@ -66,6 +66,45 @@ def search(client, query, limit):
     return out
 
 
+def fill_results(fc, client, events, today, model):
+    """이미 발표된(date < today) 일정마다 결과를 '따로 검색'해 실제 결과를 채운다. 없으면 빈 채로(창작 금지)."""
+    past = [e for e in events if (e.get("date") or "") < today]
+    if not past:
+        return
+    print(f"Searching actual results for {len(past)} past event(s)…", flush=True)
+    blocks = []
+    for i, e in enumerate(past):
+        arts = search(fc, f"{e['name']} 발표 결과 원/달러 환율", 6)
+        dig = "\n".join(f"  - ({a['date']}) {a['title']} :: {a['snippet'][:160]}" for a in arts[:6]) or "  (검색 결과 없음)"
+        blocks.append(f"[{i}] {e['name']} ({e['date']})\n{dig}")
+    prompt = (
+        "아래는 '이미 발표·종료된 경제 일정'과 각각에 대해 검색한 최신 뉴스다.\n"
+        "각 일정의 '실제 발표 결과(수치/방향)와 그 직후 원/달러 환율 반응'을 한 줄로 정리하라.\n"
+        "■ 규칙: 뉴스에 실제 결과가 나온 경우만 적는다. 없으면 빈 문자열(추측·창작 절대 금지). "
+        "'~다' 문어체, 수치·고유명사는 뉴스 근거.\n\n"
+        + "\n\n".join(blocks)
+        + '\n\nJSON만(코드펜스 없이): {"results":[{"i":0,"result":"..."}]}'
+    )
+    try:
+        resp = client.messages.create(model=model, max_tokens=1000,
+                                      messages=[{"role": "user", "content": prompt}])
+        text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+        s, e = text.find("{"), text.rfind("}")
+        parsed = json.loads(text[s:e + 1]) if s != -1 and e != -1 else {}
+    except Exception as exc:
+        print(f"  result search failed: {exc}", file=sys.stderr)
+        return
+    for r in parsed.get("results", []):
+        try:
+            idx = int(r.get("i"))
+        except (TypeError, ValueError):
+            continue
+        res = (r.get("result") or "").strip()
+        if 0 <= idx < len(past) and res:
+            past[idx]["result"] = res
+            print(f"  ✓ {past[idx]['name']}: {res[:50]}")
+
+
 def main() -> None:
     args = parse_args()
     load_dotenv()
@@ -177,6 +216,7 @@ def main() -> None:
             "scenarios": scns,
         })
     events.sort(key=lambda x: x["date"])  # chronological for the table
+    fill_results(fc, client, events, today, args.model)   # 지난 일정: 결과 전용 검색으로 채움(창작 금지)
 
     now = datetime.now(timezone.utc)
     payload = {
