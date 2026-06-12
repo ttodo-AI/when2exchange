@@ -21,6 +21,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 VIEWS_NS = "krw-hwanjeon-share"  # namespace for the Abacus view counter
+GA_ID = "G-4KP3H2RZEB"  # Google Analytics 4 측정 ID (빈/placeholder면 스크립트 생략)
 # Google Form for reader feedback — replace with the real form link once created.
 FEEDBACK_URL = "https://forms.gle/a35emZKoRhYQF1N86"
 # 헤더의 강아지를 누르면 뜨는 자기소개. 자유롭게 교체하세요.
@@ -126,6 +127,17 @@ def korean_copy(label: str, verdict_text: str, articles, monthly_usd, model: str
         return json.loads(text[s:e + 1]) if s != -1 and e != -1 else None
     except Exception:
         return None
+
+
+def ga_head() -> str:
+    # GA4 gtag 스니펫(<head>용). GA_ID가 placeholder/빈 값이면 빈 문자열.
+    if not GA_ID or "XXXX" in GA_ID:
+        return ""
+    return (
+        f'<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>'
+        '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}'
+        f'gtag("js",new Date());gtag("config","{GA_ID}");</script>'
+    )
 
 
 def build_logos() -> str:
@@ -414,6 +426,7 @@ def main() -> None:
         .replace("__DATE__", esc(gen_disp))
         .replace("__PUBLISHED__", esc(published))
         .replace("__VIEWS_NS__", VIEWS_NS)
+        .replace("__GA__", ga_head())
         .replace("__LOGOS__", build_logos())
     )
     out_path = args.out or os.path.join("output", f"share-{now.strftime('%Y-%m-%d_%H%M')}.html")
@@ -497,6 +510,7 @@ def make_term_annotator():
 SHARE_TEMPLATE = r"""<!DOCTYPE html>
 <html lang="ko">
 <head>
+__GA__
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>이번 달 환전, 지금 괜찮을까?</title>
@@ -552,7 +566,7 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
   .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; padding-top:2px; text-align:right; }
   .gauge-mini{ font-size:14.5px; font-weight:800; max-width:160px; text-align:right; line-height:1.15; }
   .hero-label{ font-size:12.5px; color:var(--muted); white-space:nowrap; }
-  .hero-rate{ font-size:42px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; white-space:nowrap; }
+  .hero-rate{ font-size:38px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; white-space:nowrap; }
   .hero-chips{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
   .chip{ display:inline-block; font-size:12px; font-weight:700; padding:4px 9px;
          border-radius:8px; background:#f1f2f5; color:var(--muted); }
@@ -1045,6 +1059,7 @@ function sharePage(btn){
     flash('호스팅하면 공유돼요 (지금은 내 PC 파일)', 2600);
     return;
   }
+  track('share_click');
   if(navigator.share){ navigator.share({title:document.title, url}).catch(()=>{}); }
   else if(navigator.clipboard){ navigator.clipboard.writeText(url).then(()=>flash('링크 복사됨 ✓', 1500)); }
 }
@@ -1223,6 +1238,9 @@ const GAUGE_WHY = {
   investor: '투자자는 사고 싶은 주식이 생긴 시점에 맞춰 그때 환전한다. 환율만 보는 게 아니라 주가도 함께 봐야 해서, 마음에 들 때 바로 환전하고 별로면 매수를 미루기도 한다. 오래 환율만 기다리지는 않는다. 그래서 세 경우 중 가장 짧게(단기) 봤을 때 지금이 평소보다 싼지를 더 크게 본다.',
   traveler: '여행자는 출국 날짜가 정해져 있고, 그 전에 정해둔 금액을 꼭 환전해야 한다. 무한정 미룰 수는 없지만, 출국 전까지는 그나마 나은 날을 고를 수 있다. 그래서 유학생과 투자자의 중간(중기) 기간을 기준으로 지금이 살 만한 수준인지를 본다.',
 };
+// GA4 커스텀 이벤트(gtag 없으면 무시).
+function track(name, params){ try{ if(window.gtag) gtag('event', name, params || {}); }catch(e){} }
+
 // 용어 클릭 -> 뜻 바텀시트. 다른 곳 누르면 닫힘.
 document.addEventListener('click', e => {
   const sheet = document.getElementById('defSheet'), bd = document.getElementById('defBackdrop');
@@ -1233,6 +1251,9 @@ document.addEventListener('click', e => {
       term = GAUGE_WHY_TITLE[activeSet] || GAUGE_WHY_TITLE.student;
       def = GAUGE_WHY[activeSet] || GAUGE_WHY.student;
     } else { term = t.dataset.term; def = t.dataset.def; }
+    track(t.classList.contains('about-dog') ? 'open_about'
+        : t.classList.contains('gauge-info') ? 'gauge_info'
+        : t.classList.contains('impact-info') ? 'impact_info' : 'term_click', {label: term});
     sheet.querySelector('.def-term').textContent = term;
     sheet.querySelector('.def-text').textContent = def;
     sheet.classList.add('on'); bd.classList.add('on');
@@ -1249,6 +1270,7 @@ if(_ctabs) _ctabs.addEventListener('click', e => {
   const b = e.target.closest('.ctab');
   if(!b) return;
   chartDays = +b.dataset.d;
+  track('chart_period', {period: b.textContent.trim()});
   document.querySelectorAll('#chartTabs .ctab').forEach(t => t.classList.toggle('active', t === b));
   if(chartRates) renderChart(chartNow, chartRates, chartDays);
 });
@@ -1258,6 +1280,7 @@ document.getElementById('tabs').addEventListener('click', e => {
   const b = e.target.closest('.tab');
   if(!b) return;
   activeSet = b.dataset.set;
+  track('select_persona', {persona: activeSet});
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === b));
   if(lastDelta != null) renderFeel(lastDelta);
   if(chartRates) renderGauge(chartNow, chartRates);   // 관점 바뀌면 매력도도 재계산
@@ -1278,6 +1301,13 @@ document.getElementById('tabs').addEventListener('click', e => {
     else { el.textContent = 'D-' + days; }
   });
 })();
+
+// 일정 펼침·피드백 클릭 추적.
+document.querySelectorAll('.cal-item').forEach(d => d.addEventListener('toggle', () => {
+  if(d.open) track('calendar_open', {event: ((d.querySelector('.cal-name')||{}).textContent || '').trim()});
+}));
+const _fb = document.querySelector('a[href*="forms.gle"]');
+if(_fb) _fb.addEventListener('click', () => track('feedback_click'));
 
 // 투자자 탭 회전 카드: 4초마다 다음 종목으로(페이드). 다른 탭이면 대기.
 function tickRot(){
