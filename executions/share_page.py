@@ -566,7 +566,7 @@ __GA__
   .hero-right{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; padding-top:2px; text-align:right; }
   .gauge-mini{ font-size:14.5px; font-weight:800; max-width:160px; text-align:right; line-height:1.15; }
   .hero-label{ font-size:12.5px; color:var(--muted); white-space:nowrap; }
-  .hero-rate{ font-size:38px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin-top:2px; white-space:nowrap; }
+  .hero-rate{ font-size:34px; font-weight:800; letter-spacing:-.02em; line-height:1.05; margin:2px 0 0 -2px; white-space:nowrap; }
   .hero-chips{ display:flex; gap:6px; flex-wrap:wrap; margin-top:10px; }
   .chip{ display:inline-block; font-size:12px; font-weight:700; padding:4px 9px;
          border-radius:8px; background:#f1f2f5; color:var(--muted); }
