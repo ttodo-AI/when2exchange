@@ -1,10 +1,10 @@
 {
   "source": "naver",
-  "rate": 1520.7,
+  "rate": 1521.6,
   "prev": 1519.0,
-  "fluctuations": 1.7,
-  "send": 1535.6,
-  "cashBuy": 1547.31,
+  "fluctuations": 2.6,
+  "send": 1536.5,
+  "cashBuy": 1548.22,
   "series": [
     {
       "date": "2026-03-17",
@@ -244,7 +244,7 @@
     },
     {
       "date": "2026-06-12",
-      "close": 1520.7
+      "close": 1521.6
     }
   ],
   "stocks": {
@@ -255,5 +255,5 @@
     "GOOGL": 358,
     "PLTR": 131
   },
-  "asof": "2026-06-12 13:16 KST"
+  "asof": "2026-06-12 13:20 KST"
 }
