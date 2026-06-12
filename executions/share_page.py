@@ -769,11 +769,6 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
 
   __CALENDAR_SECTION__
 
-  <section>
-    <h3 class="sec">왜 이런 걸까요?</h3>
-    <p class="prose">__WHY__</p>
-  </section>
-
   <section id="tipBox">
     <h3 class="sec">매달 환전한다면</h3>
     <div class="tip">
@@ -784,6 +779,7 @@ SHARE_TEMPLATE = r"""<!DOCTYPE html>
 
   <section>
     <h3 class="sec">__NEWS_TITLE__</h3>
+    <p class="prose">__WHY__</p>
     __NEWS__
   </section>
 
