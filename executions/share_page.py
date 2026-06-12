@@ -275,7 +275,7 @@ def main() -> None:
                     f'{src_html}'
                     '</div>'
                 )
-            note = '<div class="sec-note impact-note">🔥 영향도는 그날<br>뉴스 분석을 토대로 한 AI 추정이에요.</div>'
+            note = '<div class="sec-note impact-note">🔥 영향도는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div>'
             news_html = note + "\n".join(blocks)
             news_title = "오늘 환율을 움직인 요인 Top 4"
 
@@ -322,12 +322,12 @@ def main() -> None:
                 return (
                     '<details class="cal-item"><summary class="cal-row" '
                     f'data-date="{esc(ev.get("date",""))}">'
-                    f'<div class="cal-top"><span class="cal-dday">·</span>'
+                    f'<div class="cal-main"><div class="cal-name">{esc(ev.get("name",""))} '
+                    f'<span class="cal-star">{stars}</span></div>'
+                    f'<div class="cal-impact">{esc(ev.get("summary",""))}</div></div>'
+                    f'<div class="cal-side"><span class="cal-dday">·</span>'
                     f'<span class="cal-date">{esc(when)}</span>'
-                    f'<span class="cal-star">{stars}</span>'
                     f'<span class="cal-caret">▾</span></div>'
-                    f'<div class="cal-name">{esc(ev.get("name",""))}</div>'
-                    f'<div class="cal-impact">{esc(ev.get("summary",""))}</div>'
                     f'</summary><div class="cal-detail">{detail}</div></details>'
                 )
 
@@ -624,27 +624,28 @@ __GA__
                 display:inline-flex; align-items:center; justify-content:center; }
   .impact-info:active, .gauge-info:active{ background:#dfe2e7; }
   .sec-note{ font-size:11.5px; color:var(--muted); margin:-2px 2px 10px; }
-  .impact-note{ margin:-2px 2px 4px; line-height:1.4; }
+  .impact-note{ margin:12px 2px 8px; line-height:1.4; }
   .cal-guide{ background:var(--brand-bg); border-radius:12px; padding:12px 14px; margin-bottom:10px;
               font-size:13px; line-height:1.62; color:#2b313d; }
   .cal-item{ border-top:1px solid var(--line); }
   .cal-item:first-of-type{ border-top:none; }
-  .cal-row{ display:block; padding:11px 0; cursor:pointer; list-style:none; }
+  .cal-row{ display:flex; align-items:flex-start; gap:10px; padding:11px 0; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-top{ display:flex; align-items:center; gap:7px; margin-bottom:3px; }
-  .cal-name{ font-size:14px; font-weight:700; white-space:nowrap; overflow:hidden;
-             text-overflow:ellipsis; line-height:1.3; }
-  .cal-star{ color:var(--mid-fg); font-size:11px; }
+  .cal-main{ flex:1; min-width:0; overflow:hidden; }
+  .cal-name{ font-size:13.5px; font-weight:700; white-space:nowrap; overflow:hidden;
+             text-overflow:ellipsis; letter-spacing:-.02em; }
+  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
   .cal-impact{ font-size:12.5px; color:#41485a; margin-top:2px; line-height:1.5; }
-  .cal-dday{ min-width:42px; text-align:center; font-size:11px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:2px 6px; }
+  .cal-side{ flex:none; display:flex; flex-direction:column; align-items:flex-end; gap:3px; }
+  .cal-dday{ min-width:44px; text-align:center; font-size:11.5px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:8px; padding:3px 6px; }
   .cal-dday.today{ color:#fff; background:var(--brand); }
   .cal-dday.past{ color:var(--muted); background:#eceef1; }
   .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
-  .cal-caret{ font-size:9px; transition:transform .2s; margin-left:auto; }
+  .cal-caret{ font-size:9px; transition:transform .2s; }
   .cal-item[open] .cal-caret{ transform:rotate(180deg); }
   .cal-item[open] .cal-more{ background:var(--brand); color:#fff; }
-  .cal-detail{ padding:2px 0 13px; }
+  .cal-detail{ padding:2px 0 13px 58px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
   .cal-scn{ font-size:12.5px; color:#41485a; margin-top:6px; line-height:1.55;
             padding-left:13px; text-indent:-13px; }
@@ -689,7 +690,8 @@ __GA__
   .feel-tot{ white-space:nowrap; }
   .feel-chg{ font-size:11px; font-weight:600; white-space:nowrap; }
   .feel-chg.up{ color:var(--up); } .feel-chg.down{ color:var(--down); }
-  .prose{ font-size:14.5px; line-height:1.72; color:#2b313d; margin:0; }
+  .prose{ font-size:14.5px; line-height:1.72; color:#2b313d; margin:0;
+          word-break:keep-all; text-wrap:pretty; }
   .prose .hl{ font-weight:700; text-decoration:underline; text-underline-offset:3px;
               text-decoration-thickness:1.5px; text-decoration-color:rgba(59,91,219,.55); }
   .term{ border-bottom:1px dashed var(--brand); cursor:pointer; white-space:nowrap; }
