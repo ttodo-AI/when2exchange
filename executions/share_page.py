@@ -24,6 +24,9 @@ VIEWS_NS = "krw-hwanjeon-share"  # namespace for the Abacus view counter
 GA_ID = "G-4KP3H2RZEB"  # Google Analytics 4 측정 ID (빈/placeholder면 스크립트 생략)
 # Google Form for reader feedback — replace with the real form link once created.
 FEEDBACK_URL = "https://forms.gle/a35emZKoRhYQF1N86"
+# Cloudflare Worker 실시간 환율 프록시 URL(worker/rate-proxy.js 배포 후 채우기).
+# 비워두면 기존처럼 rate.json(빌드 시점 값)만 사용. 채우면 페이지 열 때마다 라이브로 덮어씀.
+RATE_PROXY_URL = "https://when2exchange-rate.gmljw0407.workers.dev/"
 # 헤더의 강아지를 누르면 뜨는 자기소개. 자유롭게 교체하세요.
 ABOUT_ME = (
     "🐶 멍멍! 제 주인은 매달 환전하느라 머리가 터지는 유학생이랍니다.\n\n"
@@ -424,6 +427,7 @@ def main() -> None:
         .replace("__CLS__", cls)
         .replace("__BADGE__", esc(badge))
         .replace("__FEEDBACK_URL__", FEEDBACK_URL)
+        .replace("__RATE_PROXY_URL__", RATE_PROXY_URL)
         .replace("__ABOUT__", esc(ABOUT_ME))
         .replace("__BUBBLE__", esc(DOG_BUBBLE))
         .replace("__HEADLINE__", esc(headline))
@@ -871,6 +875,8 @@ __GA__
 <script>
 // Live USD->KRW rate, fetched every time the page opens (no API key, CORS-friendly).
 const RATE_FALLBACK = __RATE_NUM__;     // build-time rate, used only if fetch fails
+const RATE_PROXY_URL = "__RATE_PROXY_URL__";  // Cloudflare Worker(실시간). 비면 rate.json만 사용
+let rateAsof = '', rateLive = false;    // 화면 라벨용: 갱신 시각 / 라이브 여부
 // Comparison item sets per audience (toggle). All three are identical for now —
 // to be customized later (e.g. investor: 테슬라 1주 / 애플 1주).
 const LOGO = __LOGOS__;   // {TICKER: data-URI} 빌드 때 삽입(자체 완결)
@@ -936,7 +942,8 @@ function render(rateNow, rateYest){
   const up = dr > 0, flat = (dr === 0);
   elDelta.textContent = flat ? '어제와 비슷' : (up?'▲':'▼') + won(Math.abs(dr)) + '원';  // '어제' 빼고 ▲N원
   elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
-  elMeta.textContent = '실시간 기준 · 어제 ' + won(rateYest) + '원';
+  const head = rateLive ? '실시간' : (rateAsof ? rateAsof + ' 기준' : '저장된 값');
+  elMeta.textContent = head + ' · 어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;
@@ -1225,34 +1232,57 @@ async function loadViews(){
   }
 }
 
+function shortAsof(s){
+  // "2026-06-12 14:58 KST" -> "오늘 14:58" (시각 없으면 '')
+  const m = s ? String(s).match(/(\d{1,2}:\d{2})/) : null;
+  return m ? '오늘 ' + m[1] : '';
+}
 async function loadRate(){
-  // Same-origin rate.json (네이버 매매기준율, 서버가 주기적으로 갱신). No key, no CORS.
+  // 1) 정적 rate.json: 과거 시계열·종목·폴백값(빌드 2회/일).
+  let rates = {}, today = RATE_FALLBACK, yest = null, srcName = 'ECB 기준';
   try{
     const r = await fetch('./rate.json', {cache:'no-store'});
     if(!r.ok) throw new Error('http '+r.status);
     const j = await r.json();
-    const rates = {};
     (j.series||[]).forEach(p => { if(p && p.date) rates[p.date] = {KRW: p.close}; });
-    const today = j.rate, yest = (j.prev != null ? j.prev : null);
-    const _l7 = Object.keys(rates).sort().slice(-7).map(k => rates[k].KRW);  // 최근 7영업일
-    avg1w = _l7.length ? _l7.reduce((a,b)=>a+b,0)/_l7.length : null;
+    today = j.rate; yest = (j.prev != null ? j.prev : null);
     if(j.stocks){   // 전일 종가($): SPY는 고정 카드, 나머지는 회전 카드가 stockPx에서 조회.
       stockPx = j.stocks;
       ITEM_SETS.investor.forEach(it => { if(it.stock && j.stocks[it.stock]) it.usd = j.stocks[it.stock]; });
     }
-    render(today, yest);
-    renderBaseline(today, rates);
-    renderGauge(today, rates);
-    chartRates = rates; chartNow = today;
-    renderChart(today, rates, chartDays);
-    renderTip();
-    const srcName = j.source === 'naver' ? '네이버 매매기준율' : 'ECB 기준';
-    document.getElementById('rateSrc').textContent = srcName + (j.asof ? ' · ' + j.asof : '');
+    srcName = j.source === 'naver' ? '네이버 매매기준율' : 'ECB 기준';
+    rateAsof = shortAsof(j.asof); rateLive = false;
   }catch(e){
     document.getElementById('rateMeta').textContent = '환율을 못 불러와 저장된 값으로 표시해요';
     document.getElementById('rateSrc').textContent = '저장값';
     render(RATE_FALLBACK, null);
+    return;
   }
+  // 2) Worker 라이브 환율: 있으면 '현재값'만 덮어씀. 실패하면 위 정적값 그대로.
+  if(RATE_PROXY_URL){
+    try{
+      const lr = await fetch(RATE_PROXY_URL, {cache:'no-store'});
+      if(lr.ok){
+        const lj = await lr.json();
+        if(lj && lj.rate){
+          today = lj.rate;
+          if(lj.prev != null) yest = lj.prev;
+          rateLive = true; rateAsof = shortAsof(lj.asof);
+          if(lj.source === 'naver') srcName = '네이버 매매기준율';
+        }
+      }
+    }catch(e){ /* 라이브 실패 → 정적값 유지 */ }
+  }
+  // 3) 렌더. 현재값(today)이 차트의 '현재 점'과 환전 매력도 게이지에 그대로 반영됨.
+  const _l7 = Object.keys(rates).sort().slice(-7).map(k => rates[k].KRW);  // 최근 7영업일
+  avg1w = _l7.length ? _l7.reduce((a,b)=>a+b,0)/_l7.length : null;
+  render(today, yest);
+  renderBaseline(today, rates);
+  renderGauge(today, rates);
+  chartRates = rates; chartNow = today;
+  renderChart(today, rates, chartDays);
+  renderTip();
+  document.getElementById('rateSrc').textContent = srcName;
 }
 // 환전 매력도 ⓘ: 지금 선택된 탭(페르소나)의 기준만 설명.
 const GAUGE_WHY_TITLE = {
