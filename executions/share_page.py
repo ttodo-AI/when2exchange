@@ -28,19 +28,40 @@ FEEDBACK_URL = "https://forms.gle/a35emZKoRhYQF1N86"
 # 비워두면 기존처럼 rate.json(빌드 시점 값)만 사용. 채우면 페이지 열 때마다 라이브로 덮어씀.
 RATE_PROXY_URL = "https://when2exchange-rate.gmljw0407.workers.dev/"
 # 헤더의 강아지를 누르면 뜨는 자기소개. 자유롭게 교체하세요.
-ABOUT_ME = (
-    "🐶 멍멍! 제 주인은 매달 환전하느라 머리가 터지는 유학생이랍니다.\n\n"
-    "매월 수천 달러씩 환전해야 하는데, 환율이 10원만 올라도 손이 벌벌 떨리더라고요. "
-    "'어제 환전 더 해둘걸…' 후회하는 매일을 보내고 있어요. 😢\n\n"
-    "매일 아침 눈뜨자마자 환율 앱부터 확인하고 관련 기사 찾다가, 타이밍을 놓쳐서 "
-    "나중에 보면 또 많이 올라있고… 시간과 돈을 아끼려고 이 환전 타이밍 분석 페이지를 "
-    "직접 만들었답니다!\n\n"
-    "환율이 1원 오르면 실제로 나에게 어떤 변화가 있는지를 (내 월세나 커피값으로) "
-    "한눈에 보고 싶었거든요.\n\n"
-    "어차피 제가 쓸 거라 서버 운영비는 계속 나가는데, 혼자만 쓰기 아까워서 슬쩍 "
+# 세 페르소나 공통 마무리(서버비·공유·피드백). 아래 ABOUT 각 본문 끝에 붙는다.
+_ABOUT_CLOSING = (
+    "\n\n어차피 제가 쓸 거라 서버 운영비는 계속 나가는데, 혼자만 쓰기 아까워서 슬쩍 "
     "공유해 봅니다! 고환율 시대에 이 페이지가 여러분의 시간도 조금이나마 아껴드렸으면 "
     "좋겠습니다. 피드백 있으면 언제나 환영입니다 🐾"
 )
+# 페르소나별 "왜 만들었게" — 셋 다 제작자(나)의 실제 경험. 탭 따라 바뀜.
+ABOUT = {
+    "student": (
+        "🐶 멍멍! 제 주인은 매달 환전하느라 머리가 터지는 유학생이랍니다.\n\n"
+        "매월 수천 달러씩 환전해야 하는데, 환율이 10원만 올라도 손이 벌벌 떨리더라고요. "
+        "'어제 환전 더 해둘걸…' 후회하는 매일을 보내고 있어요. 😢\n\n"
+        "매일 아침 눈뜨자마자 환율 앱부터 확인하고 관련 기사 찾다가, 타이밍을 놓쳐서 "
+        "나중에 보면 또 많이 올라있고… 시간과 돈을 아끼려고 이 환전 타이밍 분석 페이지를 "
+        "직접 만들었답니다!\n\n"
+        "환율이 1원 오르면 실제로 나에게 어떤 변화가 있는지를 (내 월세나 커피값으로) "
+        "한눈에 보고 싶었거든요." + _ABOUT_CLOSING
+    ),
+    "investor": (
+        "🐶 멍멍! 제 주인은 25년 4월, 브로드컴 3주로 해외주식을 시작했대요.\n\n"
+        "그때 환율이 비싸서 '좀 떨어지면 더 환전해야지' 하고 기다렸는데… "
+        "환율은 떨어졌지만 주식은 그새 훨씬 크게 올라버려 추가구매를 못했어요. 둘 다 놓친 거죠. 😢\n\n"
+        "그때 깨달았대요. 주식 살 땐 환율을 무작정 기다리는 게 아니라, 필요한 시점 근처에서 "
+        "'그나마 가장 쌀 때' 빨리 들어가야 한다는 걸요.\n\n"
+        "저처럼 환율 때문에 매수 타이밍을 고민하는 분들을 위해 이 페이지를 만들었어요." + _ABOUT_CLOSING
+    ),
+    "traveler": (
+        "🐶 멍멍! 제 주인은 미국에 놀러 오는 친구 때문에 이 부분을 만들었대요.\n\n"
+        "'미국 물가 비싸다는데 얼마나 비싼 거야? 지금 환전해도 돼? 지금이 비싼 편이야?' — "
+        "여행을 앞두면 이런 걸 짧은 시간에 감 잡기가 어렵잖아요.\n\n"
+        "그 친구한테 '지금 환율이 평소보다 어떤지, 환전해도 될 타이밍인지'를 한눈에 보여주고 "
+        "싶어서 여행자 관점도 넣었어요." + _ABOUT_CLOSING
+    ),
+}
 # 강아지 머리 위 말풍선 (클릭 유도).
 DOG_BUBBLE = "왜 만들었개? 🐶"
 # Short status badge text per verdict class (color comes from CSS).
@@ -428,7 +449,7 @@ def main() -> None:
         .replace("__BADGE__", esc(badge))
         .replace("__FEEDBACK_URL__", FEEDBACK_URL)
         .replace("__RATE_PROXY_URL__", RATE_PROXY_URL)
-        .replace("__ABOUT__", esc(ABOUT_ME))
+        .replace("__ABOUT_JSON__", json.dumps(ABOUT, ensure_ascii=False))
         .replace("__BUBBLE__", esc(DOG_BUBBLE))
         .replace("__HEADLINE__", esc(headline))
         .replace("__SUBTITLE__", esc(subtitle))
@@ -770,7 +791,7 @@ __GA__
       <h1 class="head">이번 달, 지금 환전해도 될까?</h1>
     </div>
     <div class="dog-track">
-    <button class="about-dog" data-term="만든 사람" data-def="__ABOUT__" aria-label="만든 사람 소개" title="눌러서 소개 보기">
+    <button class="about-dog" data-term="만든 사람" aria-label="만든 사람 소개" title="눌러서 소개 보기">
       <span class="dog-bubble">__BUBBLE__</span>
       <span class="dog-facing">
         <svg class="dog" viewBox="0 0 72 48" width="50" height="34" role="img">
@@ -1285,6 +1306,7 @@ async function loadRate(){
   document.getElementById('rateSrc').textContent = srcName;
 }
 // 환전 매력도 ⓘ: 지금 선택된 탭(페르소나)의 기준만 설명.
+const ABOUT = __ABOUT_JSON__;   // 페르소나별 "왜 만들었게"(셋 다 제작자 실제 경험)
 const GAUGE_WHY_TITLE = {
   student: '유학생은 왜 이렇게 볼까?',
   investor: '투자자는 왜 이렇게 볼까?',
@@ -1307,6 +1329,9 @@ document.addEventListener('click', e => {
     if(t.classList.contains('gauge-info')){
       term = GAUGE_WHY_TITLE[activeSet] || GAUGE_WHY_TITLE.student;
       def = GAUGE_WHY[activeSet] || GAUGE_WHY.student;
+    } else if(t.classList.contains('about-dog')){
+      term = '만든 사람';
+      def = ABOUT[activeSet] || ABOUT.student;   // 현재 탭의 '왜 만들었게'
     } else { term = t.dataset.term; def = t.dataset.def; }
     track(t.classList.contains('about-dog') ? 'open_about'
         : t.classList.contains('gauge-info') ? 'gauge_info'
