@@ -1,0 +1,73 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-13T11:15:34.213039+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,512–1,520 KRW/USD\n\nWHY: The won has strengthened significantly (weakened from earlier highs), with the rate recently closing at 1,512.1 KRW/USD after dropping 22.9 won in one day. Multiple sources indicate the rate is now in the 1,510–1,520 range, which is substantially lower than the rumored 1,600+ levels mentioned in earlier panic scenarios, meaning your dollars are relatively cheaper to acquire right now.\n\nTIP: Lock in this conversion while the won remains strong (rate in the 1,510–1,520 range), as geopolitical tensions and external factors have created volatility that could push the rate higher again."
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율, 10.9원 내린 1518원 개장 - 조선비즈",
+      "link": "https://biz.chosun.com/policy/policy_sub/2026/06/12/TQ4N7FHQXZDZDN5B3YCCF55OBM/",
+      "summary": "미국 달러 대비 원화 환율(원·달러 환율)은 12일 1518원에 개장했다. 직전 거래일보다 10.9원 하락했다. 이날 원·달러 환율은 1520원 미만을 기록할 것이란 전망이...",
+      "date": "2026-06-12T23:15:34.213039+00:00"
+    },
+    {
+      "title": "[곽세연의 프리즘] 꼬리와 몸통 |",
+      "link": "https://news.einfomax.co.kr/news/articleViewAmp.html?idxno=4419715",
+      "summary": "(서울=연합인포맥스) 잊을 만하면 한 번씩 돌아다니는 괴담이 있다. '인천공항 환전 일시 중단.' 공항 달러 환전 환율이 1,600원을 넘어서 달러가 동났다는 내용이다.",
+      "date": "2026-06-13T03:15:34.213039+00:00"
+    },
+    {
+      "title": "원·달러 환율, 9.1원 내린 1519.8원 마감",
+      "link": "https://news.nate.com/view/20260612n23467",
+      "summary": "한눈에 보는 오늘 : 경제 - 뉴스 : 서울 중구 명동 하나은행 위변조대응센터에서 직원이 달러를 정리하고 있다. /뉴스1미국 달러 대비 원화 환율(원·달러 환율)은 11일...",
+      "date": "2026-06-13T05:15:34.213039+00:00"
+    },
+    {
+      "title": "\"금리보다 환율인데\"…달러예금 관리 지침에 은행권 난색",
+      "link": "https://www.investchosun.com/site/data/html_dir/2026/06/12/2026061280111.html",
+      "summary": "금융당국이 환율 변동성에 대응해 시중은행의 역할을 주문하고 있지만, 은행권에서는 실질적으로 취할 수 있는 조치가 제한적이라는 목소리가 나온다.",
+      "date": "2026-06-13T05:15:34.213039+00:00"
+    },
+    {
+      "title": "정부 '달러쌓기 자제' 요청에…조선업계, 환헤지 전략 확대 움직임",
+      "link": "https://www.newsis.com/view/NISX20260612_0003666925",
+      "summary": "[서울=뉴시스]박현준 기자 = 원·달러 환율이 1500원대를 넘나들며 외환시장 변동성이 커지자 국내 조선업계의 외환 전략에도 변화 조짐이 나타나고 있다.",
+      "date": "2026-06-13T04:15:34.213039+00:00"
+    },
+    {
+      "title": "[중동전쟁 100일, 한국 경제 흔들다⑥] 원·달러 환율은 왜 뛰었나…전쟁이 흔든 금융시장",
+      "link": "http://www.newsian.co.kr/news/articleView.html?idxno=90701",
+      "summary": "［뉴시안= 송서영 기자］2026년 2월 말 시작된 중동전쟁이 6월 7일로 100일째를 맞는다. 전쟁은 중동에 국한된 군사 충돌이 아니었다. 국제유가와 천연가스 가격이 출렁...",
+      "date": "2026-06-12T21:15:34.213039+00:00"
+    },
+    {
+      "title": "[高환율⑧] 국민연금 886조, 왜 해외로 갔나… 고령화가 만든 달러 수요",
+      "link": "http://www.newsroad.co.kr/news/articleView.html?idxno=60332",
+      "summary": "국민연금이 해외자산을 사들이는 이유는 원·달러 환율이 오를 것이라고 예상해서가 아니다. 앞으로 보험료를 낼 사람은 줄고 연금을 받을 사람은 늘어나는 한국의 인구...",
+      "date": "2026-06-12T21:15:34.213039+00:00"
+    },
+    {
+      "title": "원·달러 환율, 22.9원 내린 1512.1원 마감",
+      "link": "https://www.msn.com/ko-kr/news/other/%EC%9B%90-%EB%8B%AC%EB%9F%AC-%ED%99%98%EC%9C%A8-22-9%EC%9B%90-%EB%82%B4%EB%A6%B0-1512-1%EC%9B%90-%EB%A7%88%EA%B0%90/ar-AA25aUm0",
+      "summary": "원·달러 환율이 1512.1원으로 하락, 16거래일 연속 1500원 이상 유지. 중동 갈등 완화와 정부의 개입이 영향을 미쳤지만, 외국인 순매도는 원화 약세 요인으로 작용.",
+      "date": "2026-06-12T15:15:34.213039+00:00"
+    },
+    {
+      "title": "'중동 전쟁' 종전 합의 근접 소식···\"1510원 중심 등락 예상\" [환율전망]",
+      "link": "https://news.nate.com/view/20260612n05833",
+      "summary": "한눈에 보는 오늘 : 종합 - 뉴스 : [이투데이/배근미 기자]11일 원·달러환율 등락 범위 1506~1519원 전망\"중동 리스크 '피날레' 초입···추후 위험 선호 가능성\" 원·...",
+      "date": "2026-06-12T22:15:34.213039+00:00"
+    },
+    {
+      "title": "“1560원 뚫리자 최후통첩”…한은·금감원, 외환공동검사 칼 뺐다",
+      "link": "https://www.msn.com/ko-kr/news/other/1560%EC%9B%90-%EB%9A%AB%EB%A6%AC%EC%9E%90-%EC%B5%9C%ED%9B%84%ED%86%B5%EC%B2%A9-%ED%95%9C%EC%9D%80-%EA%B8%88%EA%B0%90%EC%9B%90-%EC%99%B8%ED%99%98%EA%B3%B5%EB%8F%99%EA%B2%80%EC%82%AC-%EC%B9%BC-%EB%BA%90%EB%8B%A4/ar-AA25f5EB",
+      "summary": "한국은행과 금융감독원이 극심한 변동성을 보이고 있는 원·달러 환율 안정을 위해 10일부터 국내 시중은행을 대상으로 '외환공동검사'에 돌입한다. 최근 원·달러 환율...",
+      "date": "2026-06-12T13:15:34.213039+00:00"
+    }
+  ]
+}
