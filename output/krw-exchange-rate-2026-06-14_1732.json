@@ -1,0 +1,43 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-14T17:32:02.133036+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,500–1,523 KRW per USD\n\nWHY: The won is currently weak (high KRW/USD ratio around 1,500+), making dollars expensive to buy. News indicates this is near 28-year highs (since Feb 1998), and while high volatility is expected to continue, multiple sources suggest the high-dollar environment may be peaking—foreign investor rebalancing is \"in final stages\" and rate declines are being anticipated, which could strengthen the won.\n\nTIP: Consider splitting your monthly $2,000 purchase across weeks to average out volatility, or wait for pullbacks if won strength materializes, rather than buying the full amount at current elevated rates."
+  },
+  "articles": [
+    {
+      "title": "'롤러코스피' 불안하다면…안전자산 달러 투자해볼까",
+      "link": "https://www.hankyung.com/article/2026061452831",
+      "summary": "Cover Story 예금부터 ETF까지…달러 투자방법 총정리 弗예금 환차익엔 비과세 'NH 환테크 외화적금' 목표환율 도달땐 자동환전 증권사 '달러RP'도 인기",
+      "date": "2026-06-14T09:32:02.133036+00:00"
+    },
+    {
+      "title": "[환율 초비상] 달러 쌓는 기업들…달러예금 3년5개월 만에 최대",
+      "link": "https://www.ajunews.com/amp/20260614140017216",
+      "summary": "환율 변동성 커지자 달러 보유 경향 강해져 \"당분간 변동성 장세…1500원대 등락 전망\". 사진연합뉴스 [사진=연합뉴스]. 원·달러 환율이 1500원을 웃도는 고환율 장세가...",
+      "date": "2026-06-14T05:32:02.133036+00:00"
+    },
+    {
+      "title": "외국인 주식 비중조절·스페이스X 상장 달러수요 막바지... 환율 하락 기대",
+      "link": "https://www.g-enews.com/article/Finance/2026/06/202606121541355560bb91c46fcd_1",
+      "summary": "국내 외환시장에서 고환율을 자극하고 있는 주요인으로 꼽히는 외국인 투자자들의 국내주식 비중조절이 막바지에 달하고 있다. 이에 더해 스페이스X 기업공개(IPO)...",
+      "date": "2026-06-14T00:32:02.133036+00:00"
+    },
+    {
+      "title": "당국 달러 매도 요청에도…기업 달러예금 3년5개월만에 최대",
+      "link": "https://www.yna.co.kr/amp/view/AKR20260613048900002",
+      "summary": "이달 37억달러 늘어 544억달러…\"수출 호조로 달러 유입 늘고, 매도시점 늦추기도\". 6월 환율 평균 1,523원, 1998년 2월 이후 최고…\"높은 변동성 장세 이어질 것\".",
+      "date": "2026-06-13T20:32:02.133036+00:00"
+    },
+    {
+      "title": "환율 고공행진에 기업들 달러 더 쌓았다…달러예금 3년5개월 만에 최대",
+      "link": "https://www.econovill.com/news/articleView.html?idxno=742329",
+      "summary": "최근 원/달러 환율이 높은 수준에서 등락을 거듭하는 가운데 기업들이 달러 보유를 늘리고 있다.외환당국이 주요 수출기업에 수출대금 환전을 요청하며 시장 안정에...",
+      "date": "2026-06-14T01:32:02.133036+00:00"
+    }
+  ]
+}
