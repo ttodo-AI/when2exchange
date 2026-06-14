@@ -195,6 +195,56 @@ def rewrite_why(client, model: str) -> None:
     print(f"\n{why}")
 
 
+def verify_factors(client, model, result, digest):
+    """근거 자가검증: 생성된 요인 headline·bullets가 기사 원문에 실제로 있는지 한 번 더 확인하고,
+    기사에 없는 사실·틀린 수치는 기사에 맞게 정정/제거한다(환각·수치오류 방지). 문체·길이는 유지."""
+    factors = result.get("factors", [])
+    if not factors:
+        return result
+    payload = json.dumps(
+        [{"factor_id": f.get("factor_id"), "headline": f.get("headline", ""),
+          "bullets": f.get("bullets", []), "source_ids": f.get("source_ids", [])} for f in factors],
+        ensure_ascii=False,
+    )
+    prompt = (
+        "아래는 번호가 매겨진 [기사 원문]과, 이 기사들을 보고 작성한 [요인 분석]이다. "
+        "각 요인의 headline·bullets가 기사 원문에 실제로 근거하는지 엄격히 검증·정정하라.\n"
+        "■ 규칙:\n"
+        "- 기사에 없는 사실·인과·추측은 삭제하고, 기사에 분명히 있는 핵심 사실로 교체.\n"
+        "- 숫자(환율·%·날짜·기관명)는 기사와 정확히 일치해야 함. 틀리면 기사 값으로 정정.\n"
+        "- 근거가 약하면 단정을 낮출 것(평서문 '~다'는 유지하되 과장 제거).\n"
+        "- 문체(담백한 '~다' 평서문)·각 불렛 길이·불렛 2개·source_ids는 그대로 유지. 검증·정정만 하라.\n\n"
+        f"[기사 원문]\n{digest}\n\n[요인 분석]\n{payload}\n\n"
+        '정정된 factors만 JSON으로(코드펜스 없이): '
+        '{"factors":[{"factor_id":"F1","headline":"...","bullets":["..",".."],"source_ids":[0,3]}]}'
+    )
+    try:
+        resp = client.messages.create(model=model, max_tokens=2500,
+                                      messages=[{"role": "user", "content": prompt}])
+        text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+        s, e = text.find("{"), text.rfind("}")
+        fixed = json.loads(text[s:e + 1]) if s != -1 and e != -1 else {}
+        by_id = {c.get("factor_id"): c for c in fixed.get("factors", []) if isinstance(c, dict)}
+        changed = 0
+        for f in factors:
+            c = by_id.get(f.get("factor_id"))
+            if not c:
+                continue
+            if c.get("headline") and c["headline"] != f.get("headline"):
+                f["headline"] = c["headline"]; changed += 1
+            bl = [b for b in (c.get("bullets") or []) if isinstance(b, str) and b.strip()]
+            if bl:
+                if bl != f.get("bullets"):
+                    changed += 1
+                f["bullets"] = bl
+            if c.get("source_ids"):
+                f["source_ids"] = c["source_ids"]
+        print(f"  자가검증 완료(정정 {changed}건)")
+    except Exception as exc:   # 무슨 일이 있어도 빌드는 안 죽고 원본 유지
+        print(f"  자가검증 건너뜀({exc}) — 원본 유지", file=sys.stderr)
+    return result
+
+
 def main() -> None:
     args = parse_args()
     load_dotenv()
@@ -274,7 +324,8 @@ def main() -> None:
         "'리스크오프'→'위험을 피해 안전자산으로 돈이 몰림'. 최대한 직관적으로.\n"
         "- 각 불렛은 뉴스에 실제로 나온 구체적 사실(수치·기관명·국가·지표·날짜)을 담아 "
         "'무엇이 → 어떤 경로로 → 환율에 어떻게'를 인과로 설명.\n"
-        "- 뉴스에 근거 없는 추측·일반론 금지. 근거 기사 번호를 반드시 표기.\n"
+        "- 모든 문장(headline·bullets)은 아래 [요인별 뉴스] 기사에 실제로 나온 사실만 담을 것. "
+        "기사에 없는 수치·인과·일반론·추측은 절대 금지. 각 요인의 근거 기사 번호(source_ids)를 반드시 표기.\n"
         "- 시제 정확: 오늘 날짜 기준으로 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·"
         "'발표 예정' 같은 미래형으로 쓰지 말 것. 발표 전에 작성된 옛 기사의 표현을 그대로 옮기지 말고, "
         "이미 나온 결과를 반영해 과거형으로 쓸 것.\n"
@@ -314,6 +365,10 @@ def main() -> None:
     except json.JSONDecodeError as exc:
         sys.exit(f"error: JSON parse failed ({exc}):\n{text[:500]}")
 
+    # 2.5) 근거 자가검증: 불렛이 정말 기사에 있는지 한 번 더 확인·정정(환각·수치오류 방지).
+    print("Self-checking factors against sources…", flush=True)
+    result = verify_factors(client, args.model, result, digest)
+
     # 3) Resolve factor meta + source ids -> {title, link}, dedup sources.
     meta = {f["id"]: f for f in FACTORS}
     factors_out = []
@@ -327,6 +382,8 @@ def main() -> None:
                 if a["link"] and a["link"] not in seen:
                     seen.add(a["link"])
                     sources.append({"title": a["title"], "link": a["link"]})
+        if not sources:   # 근거 기사 0개 = 검토 필요(환각 위험)
+            print(f"  ⚠ 근거 기사 0개: {m['name']} — 검토 필요", file=sys.stderr)
         try:
             impact = max(1, min(5, int(fr.get("impact"))))
         except (TypeError, ValueError):
