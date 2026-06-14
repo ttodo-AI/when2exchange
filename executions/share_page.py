@@ -58,7 +58,7 @@ ABOUT = {
         "🐶 멍멍! 제 주인은 미국에 놀러 오는 친구 때문에 이 부분을 만들었대요.\n\n"
         "'미국 물가 비싸다는데 얼마나 비싼 거야? 지금 환전해도 돼? 지금이 비싼 편이야?' — "
         "여행을 앞두면 이런 걸 짧은 시간에 감 잡기가 어렵잖아요.\n\n"
-        "그 친구한테 '지금 환율이 평소보다 어떤지, 환전해도 될 타이밍인지'를 한눈에 보여주고 "
+        "그 친구한테 '지금 환율이 비싼지 싼지, 환전해도 될 타이밍인지'를 한눈에 보여주고 "
         "싶어서 여행자 관점도 넣었어요." + _ABOUT_CLOSING
     ),
 }
@@ -70,9 +70,9 @@ BADGE_KR = {"good": "환전 추천", "mid": "지금은 보통", "bad": "환전 �
 from dotenv import load_dotenv
 
 LABEL_KR = {
-    "GOOD": ("지금 환전하기 좋아요", "달러가 평소보다 싼 편이에요", "good", "🟢"),
-    "NEUTRAL": ("지금은 보통이에요", "평소와 비슷한 수준이에요", "mid", "🟡"),
-    "BAD": ("지금은 환전하기 아까워요", "달러가 평소보다 비싼 편이에요", "bad", "🔴"),
+    "GOOD": ("지금 환전하기 좋아요", "달러가 최근 3개월 중 싼 편이에요", "good", "🟢"),
+    "NEUTRAL": ("지금은 보통이에요", "최근 3개월 중 중간 수준이에요", "mid", "🟡"),
+    "BAD": ("지금은 환전하기 아까워요", "달러가 최근 3개월 중 비싼 편이에요", "bad", "🔴"),
 }
 
 
@@ -632,6 +632,7 @@ __GA__
   .gauge-top{ display:flex; align-items:baseline; justify-content:space-between; margin-bottom:9px; }
   .gauge-cap{ font-size:13px; font-weight:800; }
   .gauge-label{ font-size:13px; font-weight:800; }
+  .gauge-plain{ font-size:12px; font-weight:700; color:var(--muted); }
   .gauge-bar{ position:relative; height:12px; border-radius:6px;
               background:linear-gradient(90deg,#1f9d57 0%,#79c267 27%,#d9b441 50%,#e2873a 73%,#e0383e 100%); }
   .gauge-ptr{ position:absolute; top:-5px; width:3px; height:22px; border-radius:2px;
@@ -714,12 +715,16 @@ __GA__
   .sec{ font-size:14px; font-weight:800; margin:26px 2px 11px; letter-spacing:-.01em;
         display:flex; align-items:center; gap:7px; }
   .sec::before{ content:""; width:3px; height:14px; border-radius:2px; background:var(--brand); }
-  .persona{ margin-top:12px; }
-  .persona-q{ font-size:12px; color:var(--muted); font-weight:700; margin:0 2px 6px; }
+  .persona{ margin-top:14px; }
+  .persona-q{ font-size:12.5px; color:var(--ink); font-weight:700; margin:0 2px 6px; }
+  .persona-q-sub{ font-size:11.5px; font-weight:600; color:var(--brand); }
   .tabs{ display:flex; gap:3px; background:#eceef1; border-radius:10px; padding:3px; margin-bottom:10px; }
-  .tab{ flex:1; border:none; background:transparent; padding:8px 4px; border-radius:8px;
-        font-size:12px; font-weight:700; color:var(--muted); cursor:pointer; white-space:nowrap; }
-  .tab.active{ background:var(--card); color:var(--ink); box-shadow:0 1px 3px rgba(20,30,60,.1); }
+  .tab{ flex:1; border:none; background:transparent; padding:9px 4px; border-radius:8px;
+        font-size:13px; font-weight:700; color:var(--muted); cursor:pointer; white-space:nowrap; }
+  .tab.active{ background:var(--card); color:var(--ink); box-shadow:0 1px 3px rgba(20,30,60,.12); }
+  .verdict-now{ display:flex; align-items:baseline; gap:8px; margin:12px 2px 0; flex-wrap:wrap; }
+  .vn-text{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.2; }
+  .vn-tag{ font-size:11.5px; font-weight:700; color:var(--muted); background:#eef0f3; padding:2px 8px; border-radius:999px; }
   .feel-grid{ display:grid; grid-template-columns:1fr 1fr; gap:9px; }
   .feel-cell{ border:1px solid var(--line); border-radius:12px; padding:12px; background:var(--card); }
   .feel-top{ display:flex; align-items:baseline; gap:5px; flex-wrap:wrap; }
@@ -814,11 +819,17 @@ __GA__
   </div>
 
   <div class="persona">
+    <div class="persona-q">내 상황 고르면 딱 맞춰드릴개요 🐶</div>
     <div class="tabs" id="tabs">
-      <button class="tab active" data-set="student">미국 유학생</button>
-      <button class="tab" data-set="investor">해외 주식 투자자</button>
-      <button class="tab" data-set="traveler">미국 여행자</button>
+      <button class="tab active" data-set="student">🎓 유학생</button>
+      <button class="tab" data-set="investor">📈 투자자</button>
+      <button class="tab" data-set="traveler">✈️ 여행자</button>
     </div>
+  </div>
+
+  <div class="verdict-now" id="verdictNow" style="display:none">
+    <span class="vn-text" id="vnText"></span>
+    <span class="vn-tag" id="vnTag"></span>
   </div>
 
   <section class="hero">
@@ -829,7 +840,6 @@ __GA__
       </div>
       <div class="hero-right">
         <span id="rateDelta" class="chip"></span>
-        <span id="gaugeMini" class="gauge-mini"></span>
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
     </div>
@@ -862,7 +872,7 @@ __GA__
   __CALENDAR_SECTION__
 
   <section id="tipBox">
-    <h3 class="sec">매달 환전한다면</h3>
+    <h3 class="sec" id="tipTitle">매달 환전한다면</h3>
     <p class="prose" id="tipAdvice">한 번에 몰아 사기보다 나눠 사면, 환율이 출렁여도 평균 단가로 살 수 있어요.</p>
     <div class="tip">
       <div class="tip-hero" id="tipHero"></div>
@@ -936,6 +946,8 @@ const SET_W = {
   investor: { w:[0.50, 0.35, 0.15], prim:'short', lens:'투자자는 상대적으로 단기 관점',
               labels:['환차익 왕이득','줍줍하기 좋은 날','시드머니 평단가 수준','눈물의 고점 물타기','예수금 삭제 마술'] },
 };
+// 농담 라벨 옆에 붙는 평이한 뜻(5단계 공통). 재미는 살리되 의미를 바로 이해하게.
+const GAUGE_PLAIN = ['많이 싼 편', '싼 편', '중간', '비싼 편', '많이 비싼 편'];
 let activeSet = 'student';
 let lastDelta = null;   // 어제 대비 정수 편차 기억(탭 전환 시 재렌더용)
 let curRate = null;     // 현재 환율(여행자 탭 실제 금액 계산용)
@@ -971,19 +983,34 @@ function render(rateNow, rateYest){
   renderFeel(dr);   // 제목·셀은 renderFeel이 페르소나별로 처리
 }
 
-// 상황별 고정 조언 10개(수준×추세 + 신고가). 모두 사실만, AI 아님.
-const ADV = [
-  { adv:'지금 사상 최고 수준이라 큰돈을 한 번에 고정하면 위험해요. 꼭 필요한 만큼만 사고 나머진 나눠서요.', calc:'A' },
-  { adv:'평소보다 비싼데 더 오르는 중이에요. 한 번에 몰지 말고 나눠 사며 위험을 줄이세요.', calc:'A' },
-  { adv:'비싼 편이지만 잠잠해요. 서두르지 말고 나눠 사며 관망하세요.', calc:'B' },
-  { adv:'비쌌지만 내려오는 중이에요. 나눠 담으며 추가 하락을 노려도 좋아요.', calc:'C', ref:'high' },
-  { adv:'평범하지만 오르는 추세예요. 나눠 사며 평균 단가를 관리하세요.', calc:'A' },
-  { adv:'큰 변동이 없어요. 평소대로 매주 조금씩 사면 충분해요.', calc:'A' },
-  { adv:'내려오는 중이에요. 나눠 사다 더 빠지면 비중을 늘려도 돼요.', calc:'C', ref:'high' },
-  { adv:'평소보다 싸지만 반등하는 중이에요. 필요한 만큼은 지금, 나머지는 나눠서요.', calc:'C', ref:'low' },
-  { adv:'싼 편이고 잠잠해요. 이럴 때 평소보다 조금 더 담아둘 만해요.', calc:'B' },
-  { adv:'싸고 더 내리는 중이에요. 천천히 나눠 사며 바닥을 노려보세요.', calc:'C', ref:'low' },
-];
+// 상황 진단(공통, 사실): 수준 × 추세. 모든 페르소나 동일.
+const DIAG_LVL = ['최근 3개월 중 비싼 편', '최근 3개월 중 중간 수준', '최근 3개월 중 싼 편']; // lvl 0/1/2
+const DIAG_TREND = ['이고, 오르는 중이에요.', '이고, 큰 움직임은 없어요.', '이고, 내려오는 중이에요.']; // trend 0/1/2
+const DIAG_HIGH = '지금은 최근 3개월 중 가장 비싼 수준이에요.';
+// 행동 조언(페르소나별): [비쌈, 보통, 쌈]. 같은 상황이라도 누구냐에 따라 다르게.
+const ACT = {
+  student: [
+    '급하지 않으니 이번 달 쓸 만큼만 바꾸고, 더 내려가면 그때 더 환전하세요.',
+    '하던 대로 매달 조금씩 나눠 바꾸면 충분해요.',
+    '쌀 때라 이번 달 것에 더해 조금 더 당겨 담아둬도 좋아요.',
+  ],
+  investor: [
+    '환율만 보고 무한정 기다리지 마세요. 살 종목이 정해졌다면 한 번에 말고 나눠서 환전·매수를.',
+    '매수 시점에 맞춰 나눠 환전하면 환율 부담을 줄일 수 있어요.',
+    '환율도 싼 편이라 환전과 매수 타이밍을 같이 잡기 좋아요.',
+  ],
+  traveler: [
+    '출국까지 여유가 있으면 며칠 더 보고 나은 날에 나눠 사고, 임박했으면 그냥 나눠 사세요.',
+    '출국 전까지 한 번에 말고 몇 번 나눠 바꾸면 평균 단가가 안정돼요.',
+    '싼 편이라 출국에 쓸 돈을 지금 미리 환전해둬도 좋아요.',
+  ],
+};
+const ACT_HIGH = {
+  student: '지금 큰돈을 한 번에 고정하면 위험해요. 이번 달 꼭 필요한 만큼만, 나머진 나눠서요.',
+  investor: '환율이 정점이라 큰 금액을 한 번에 고정하긴 부담돼요. 환전도 매수도 나눠서 들어가세요.',
+  traveler: '환율이 정점이라 한 번에 말고 나눠서, 출국 전 더 나은 날을 노려보세요.',
+};
+const TIP_TITLE = { student: '매달 환전한다면', investor: '주식 살 돈을 환전한다면', traveler: '여행 갈 돈을 환전한다면' };
 const heroHTML = r => `<div class="th-label">${r.label}</div><div class="th-big ${r.dir}">${r.big}</div><div class="th-sub">${r.sub}</div>`;
 function calcA(cl, n){  // 매주 $250×4 분할 vs 오늘 $1,000 일괄
   const weekly = [curRate]; [5,10,15].forEach(o => { const i = n-1-o; if(i>=0) weekly.push(cl[i]); });
@@ -1017,26 +1044,38 @@ function calcC(v, ref){  // 오늘 vs 최근 3개월 최고/최저
            sub:`3개월 최저 ${won(lo)}원 · 오늘 ${won(today)}원` };
 }
 function renderTip(){
-  // 오늘 상황 판정(수준×추세 + 신고가) -> 고정 조언 + 그에 맞는 예시 계산. 전부 실측.
+  // 상황 진단(공통) + 행동 조언(페르소나별) + 페르소나 시간축에 맞는 예시 계산. 전부 실측.
   const adv = document.getElementById('tipAdvice'), hero = document.getElementById('tipHero');
   if(!adv || !hero || !chartRates || !curRate) return;
   const cl = Object.keys(chartRates).sort().map(k => chartRates[k].KRW), n = cl.length;
   if(n < 5) return;
   const v63 = cl.slice(-63), v22 = cl.slice(-22);
   const p = v63.filter(x => x <= curRate).length / v63.length;   // 3개월 백분위
-  // 추세: 최근(3거래일)과 2주가 '둘 다 같은 방향'일 때만 상승/하락. 엇갈리면(튀었다 내려옴 등) 횡보.
+  // 추세: 최근(3거래일)과 2주가 '둘 다 같은 방향'일 때만 상승/하락. 엇갈리면 횡보.
   const ref3 = (n > 3) ? cl[n-1-3] : cl[0];
   const ref2w = (n > 10) ? cl[n-1-10] : cl[0];
   const sUp = curRate > ref3*1.005, sDn = curRate < ref3*0.995;
   const mUp = curRate > ref2w*1.005, mDn = curRate < ref2w*0.995;
   const trend = (sUp && mUp) ? 0 : (sDn && mDn) ? 2 : 1;          // 0상승 1횡보 2하락
   const atHigh = curRate >= Math.max(...v63) - 0.3;
-  let idx;
-  if(atHigh && trend === 0) idx = 0;                             // 신고가·급등
-  else { const lvl = p >= 0.66 ? 0 : (p <= 0.34 ? 2 : 1); idx = 1 + lvl*3 + trend; }
-  const s = ADV[idx] || ADV[5];
-  adv.textContent = s.adv;
-  const r = s.calc === 'A' ? calcA(cl, n) : s.calc === 'B' ? calcB(v22) : calcC(v63, s.ref);
+  const lvl = p >= 0.66 ? 0 : (p <= 0.34 ? 2 : 1);               // 0비쌈 1보통 2쌈
+  const set = ACT[activeSet] ? activeSet : 'student';
+
+  // 진단(공통) + 행동(페르소나)
+  let diag, act;
+  if(atHigh && trend === 0){ diag = DIAG_HIGH; act = ACT_HIGH[set]; }
+  else { diag = '지금은 ' + DIAG_LVL[lvl] + DIAG_TREND[trend]; act = ACT[set][lvl]; }
+  adv.textContent = diag + ' ' + act;
+
+  // 제목(페르소나)
+  const ttl = document.getElementById('tipTitle');
+  if(ttl) ttl.textContent = TIP_TITLE[set] || TIP_TITLE.student;
+
+  // 예시 계산(페르소나 시간축): 유학생=3개월(장기) / 여행자=한 달(중기) / 투자자=분할(단기)
+  let r;
+  if(set === 'student') r = calcC(v63, lvl === 2 ? 'high' : 'low');
+  else if(set === 'traveler') r = calcB(v22);
+  else r = calcA(cl, n);
   hero.innerHTML = r ? heroHTML(r) : '';
 }
 function iconHTML(s){
@@ -1178,7 +1217,7 @@ function renderGauge(rateNow, rates){
   const a7 = (p7 != null) ? p7 : (p30 != null ? p30 : p90);   // 짧은 창 없으면 다음 창으로 대체
   const a30 = (p30 != null) ? p30 : p90;
   const pct = w.w[0]*a7 + w.w[1]*a30 + w.w[2]*p90;            // [1주,1달,3개월] 가중(합=1)
-  const labels = w.labels || ['평소보다 낮음','약간 낮음','평소 수준','약간 높음','평소보다 높음'];
+  const labels = w.labels || ['최근 3개월 중 낮음','약간 낮음','중간 수준','약간 높음','최근 3개월 중 높음'];
   const colors = ['#1f9d57','#79c267','#b58900','#e2873a','#e0383e'];
   // 백분위(pct)를 게이지 위치(disp)로 비선형 보간: 가운데(연초록~주황)를 넓게,
   // 빨강/찐초록은 양 끝 극단(상·하위 10%)에서만 나오도록. 바 크기는 그대로 균등.
@@ -1187,12 +1226,23 @@ function renderGauge(rateNow, rates){
   const disp = remap(pct);
   const zone = Math.min(4, Math.floor(disp*5));
   const lab = document.getElementById('gaugeLabel');
-  lab.textContent = labels[zone];
+  lab.innerHTML = labels[zone] + ' <span class="gauge-plain">· ' + GAUGE_PLAIN[zone] + '</span>';
   lab.style.color = colors[zone];
-  const mini = document.getElementById('gaugeMini');
-  if(mini){ mini.textContent = labels[zone]; mini.style.color = colors[zone]; }
   document.getElementById('gaugePtr').style.left = (disp*100).toFixed(1) + '%';
   wrap.style.display = 'block';
+
+  // 판정(헤드라인 답): 게이지와 '같은 zone'에서 도출 -> 실시간·일관·설명가능.
+  const vn = document.getElementById('verdictNow');
+  if(vn){
+    const vIdx = zone <= 1 ? 0 : (zone === 2 ? 1 : 2);   // 0좋음 1보통 2아까움
+    const VTXT = ['🟢 지금 환전하기 좋아요', '🟡 지금은 보통이에요', '🔴 지금은 환전이 아까워요'];
+    const VCOL = ['var(--good-fg)', 'var(--mid-fg)', 'var(--bad-fg)'];
+    const NM = { student:'유학생', investor:'투자자', traveler:'여행자' };
+    const vt = document.getElementById('vnText'), vtag = document.getElementById('vnTag');
+    vt.textContent = VTXT[vIdx]; vt.style.color = VCOL[vIdx];
+    vtag.textContent = (NM[activeSet] || '유학생') + ' 기준';
+    vn.style.display = 'flex';
+  }
 }
 
 function renderChart(rateNow, rates, days){
@@ -1314,7 +1364,7 @@ const GAUGE_WHY_TITLE = {
 };
 const GAUGE_WHY = {
   student: '유학생은 생활비를 매달 반복해서 환전한다. 큰 금액을 한 번에 바꿀 필요 없이 여러 달에 나눠 살 수 있어 당장 급하지 않다. 이번 달은 생활비만 바꾸고, 환율이 더 내려가면 나중에 더 환전하면 된다. 그래서 세 경우 중 가장 길게(장기) 봤을 때 지금이 비싼 시기인지를 더 크게 본다.',
-  investor: '투자자는 사고 싶은 주식이 생긴 시점에 맞춰 그때 환전한다. 환율만 보는 게 아니라 주가도 함께 봐야 해서, 마음에 들 때 바로 환전하고 별로면 매수를 미루기도 한다. 오래 환율만 기다리지는 않는다. 그래서 세 경우 중 가장 짧게(단기) 봤을 때 지금이 평소보다 싼지를 더 크게 본다.',
+  investor: '투자자는 사고 싶은 주식이 생긴 시점에 맞춰 그때 환전한다. 환율만 보는 게 아니라 주가도 함께 봐야 해서, 마음에 들 때 바로 환전하고 별로면 매수를 미루기도 한다. 오래 환율만 기다리지는 않는다. 그래서 세 경우 중 가장 짧게(단기) 봤을 때 지금이 최근 흐름보다 싼지를 더 크게 본다.',
   traveler: '여행자는 출국 날짜가 정해져 있고, 그 전에 정해둔 금액을 꼭 환전해야 한다. 무한정 미룰 수는 없지만, 출국 전까지는 그나마 나은 날을 고를 수 있다. 그래서 유학생과 투자자의 중간(중기) 기간을 기준으로 지금이 살 만한 수준인지를 본다.',
 };
 // GA4 커스텀 이벤트(gtag 없으면 무시).
@@ -1366,8 +1416,7 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === b));
   if(lastDelta != null) renderFeel(lastDelta);
   if(chartRates) renderGauge(chartNow, chartRates);   // 관점 바뀌면 매력도도 재계산
-  const tip = document.getElementById('tipBox');       // 여행자(일회성)는 '매달 환전' 팁 숨김
-  if(tip) tip.style.display = (activeSet === 'traveler') ? 'none' : '';
+  renderTip();                                         // 관점 바뀌면 조언·제목·예시도 재계산
 });
 
 // 경제 일정 D-Day — 보는 위치와 무관하게 '한국시간(KST) 오늘' 기준으로 고정.
