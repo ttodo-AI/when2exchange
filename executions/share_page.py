@@ -278,10 +278,12 @@ def main() -> None:
                 bullets = "".join(f"<li>{annotate(esc(strip_cite(b)))}</li>" for b in f.get("bullets", [])[:2])
                 links = [s for s in f.get("sources", []) if s.get("link")]
                 srcs = "".join(
-                    f'<a class="src-chip" href="{esc(s["link"])}" target="_blank" rel="noopener">{n}</a>'
+                    f'<a class="src-chip" href="{esc(s["link"])}" target="_blank" rel="noopener" '
+                    f'title="{esc(s.get("title",""))}">{n}</a>'
                     for n, s in enumerate(links, 1)
                 )
-                src_html = f'<div class="factor-src">관련기사 {srcs}</div>' if srcs else ""
+                src_html = (f'<div class="factor-src"><span class="src-lab">📰 관련 기사</span>{srcs}</div>'
+                            if srcs else "")
                 impact = int(f.get("impact") or 0)
                 gauge = "".join(
                     f'<span class="ig-seg{" on" if k < impact else ""}"></span>'
@@ -410,7 +412,7 @@ def main() -> None:
                 disp = f"{dt.month}/{dt.day}"
             except ValueError:
                 disp = e.get("date", "")
-            rate_html = ""
+            rate_html, chg_html = "", ""
             if e.get("rate") is not None:
                 try:
                     rate_html = f'{round(float(e["rate"])):,}원'
@@ -422,13 +424,14 @@ def main() -> None:
                         c = float(chg)
                         if round(c) != 0:
                             ar, cc = ("▲", "up") if c > 0 else ("▼", "down")
-                            rate_html += f' <i class="arc-chg {cc}">{ar}{abs(round(c))}</i>'
+                            chg_html = f'<span class="arc-chg {cc}">{ar}{abs(round(c))}</span>'
                     except (TypeError, ValueError):
                         pass
             rows.append(
                 f'<a class="arc-row" href="{esc(e["file"])}">'
                 f'<span class="arc-date">{esc(disp)}</span>'
                 f'<span class="arc-rate">{rate_html}</span>'
+                f'<span class="arc-chg-col">{chg_html}</span>'
                 f'<span class="arc-head">{esc(e.get("headline",""))}</span></a>'
             )
         if rows:
@@ -546,7 +549,7 @@ def make_term_annotator():
             token = f"\x00{len(spans)}\x00"
             spans.append(
                 f'<span class="term" data-term="{esc(term)}" data-def="{esc(GLOSSARY[term])}">'
-                f'{esc(term)}<span class="mag">🔍</span></span>'
+                f'{esc(term)}</span>'
             )
             html = html[:idx] + token + html[idx + len(term):]
         for i, span in enumerate(spans):
@@ -575,12 +578,13 @@ __GA__
   *{ box-sizing:border-box; }
   body{ margin:0; background:var(--bg); color:var(--ink);
         font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
-        line-height:1.6; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums; }
+        line-height:1.6; -webkit-font-smoothing:antialiased; font-variant-numeric:tabular-nums;
+        word-break:keep-all; overflow-wrap:break-word; }   /* 한글 단어 단위 줄바꿈 + 긴 단어만 예외적으로 끊어 넘침 방지 */
   .wrap{ max-width:480px; margin:0 auto; padding:18px 16px 48px; }
   .top{ padding:6px 2px 0; display:flex; align-items:flex-end; gap:6px; }
   .top-text{ flex:1 1 auto; min-width:0; }
   .ey{ font-size:13px; color:var(--muted); font-weight:600; }
-  .head{ font-size:17px; font-weight:800; letter-spacing:-.03em; line-height:1.32; margin:3px 0 0; word-break:keep-all; white-space:nowrap; }
+  .head{ font-size:17px; font-weight:800; letter-spacing:-.03em; line-height:1.32; margin:8px 0 0; word-break:keep-all; white-space:nowrap; }
   .dog-track{ position:relative; flex:0 0 104px; height:34px; }
   .about-dog{ position:absolute; left:0; bottom:0; background:none; border:none; padding:2px;
               cursor:pointer; animation:roam 24s ease-in-out infinite; }
@@ -622,6 +626,9 @@ __GA__
   .chip.up{ background:var(--up-bg); color:var(--up); }
   .chip.down{ background:var(--down-bg); color:var(--down); }
   .hero-meta{ font-size:11px; color:var(--muted); margin-top:8px; }
+  .live-dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--down);
+             margin-right:5px; vertical-align:middle; }
+  .meta-sep{ margin:0 5px; color:#c8ccd4; }
   .chip.flat{ background:#eceef1; color:var(--muted); }
   .feel-amt.flat{ color:var(--muted); }
   .verdict{ margin-top:16px; padding-top:14px; border-top:1px solid var(--line); }
@@ -629,7 +636,7 @@ __GA__
   .verdict-sub{ font-size:13px; color:var(--muted); margin-top:2px; }
   .verdict-sub2{ font-size:12.5px; color:var(--muted); margin-top:4px; font-weight:600; }
   .verdict-sub2.up{ color:var(--up); } .verdict-sub2.down{ color:var(--down); }
-  .chart-tabs{ display:flex; gap:3px; background:#eceef1; border-radius:9px; padding:3px; margin:10px 0 8px; }
+  .chart-tabs{ display:flex; gap:3px; background:#eceef1; border-radius:9px; padding:3px; margin:10px 0 4px; }
   .ctab{ flex:1; border:none; background:transparent; padding:6px 4px; border-radius:7px;
          font-size:11.5px; font-weight:700; color:var(--muted); cursor:pointer; }
   .ctab.active{ background:var(--card); color:var(--ink); box-shadow:0 1px 3px rgba(20,30,60,.1); }
@@ -639,14 +646,19 @@ __GA__
   .gauge-cap{ font-size:13px; font-weight:800; }
   .gauge-label{ font-size:13px; font-weight:800; }
   .gauge-plain{ font-size:12px; font-weight:700; color:var(--muted); }
-  .gauge-bar{ position:relative; height:12px; border-radius:6px;
+  .gauge-bar{ position:relative; height:12px; border-radius:6px; margin-top:34px;
               background:linear-gradient(90deg,#1f9d57 0%,#79c267 27%,#d9b441 50%,#e2873a 73%,#e0383e 100%); }
   .gauge-ptr{ position:absolute; top:-5px; width:3px; height:22px; border-radius:2px;
               background:var(--ink); transform:translateX(-50%); transition:left .4s; box-shadow:0 0 0 2px #fff; }
+  .gauge-ptr-tag{ position:absolute; bottom:calc(100% + 11px); transform:translateX(-50%); white-space:nowrap;
+                  font-size:11px; font-weight:800; color:#fff; background:var(--ink); padding:3px 8px;
+                  border-radius:7px; transition:left .4s; }
+  .gauge-ptr-tag::after{ content:''; position:absolute; left:50%; top:100%; transform:translateX(-50%);
+                         border:4px solid transparent; border-top-color:var(--ink); }
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
-  #chart{ position:relative; height:132px; margin-top:2px; }
+  #chart{ position:relative; height:140px; margin-top:0; }
   .chart-svg{ width:100%; height:100%; display:block; border-radius:8px; }
   .mk{ position:absolute; transform:translate(-50%,-50%); pointer-events:none; }
   .mk-dot{ display:block; width:6px; height:6px; border-radius:50%; background:var(--ink); margin:0 auto; }
@@ -661,11 +673,13 @@ __GA__
   .mk-el .mk-lab{ left:0; transform:none; }       /* 왼쪽 끝: 안쪽(오른쪽)으로 */
   .mk-er .mk-lab{ left:auto; right:0; transform:none; }  /* 오른쪽 끝: 안쪽(왼쪽)으로 */
   .chart-cap{ font-size:11.5px; color:var(--muted); margin-top:9px; text-align:center; }
+  .cap-delta{ font-weight:800; }
+  .cap-delta.up{ color:var(--up); } .cap-delta.down{ color:var(--down); }
   .tldr{ background:var(--brand-bg); border-radius:12px; padding:13px 16px; margin-top:12px; }
   .tldr-meta{ font-size:11px; color:var(--muted); font-weight:600; margin-bottom:6px; }
 .tldr-cap{ font-size:11.5px; font-weight:800; color:var(--brand); letter-spacing:.02em; margin-bottom:5px; }
   .tldr-list{ margin:0; padding-left:17px; }
-  .tldr-list li{ font-size:13.5px; line-height:1.6; margin:3px 0; color:#2b313d; }
+  .tldr-list li{ font-size:13.5px; line-height:1.68; margin:6px 0; color:#2b313d; }
   .impact{ margin-left:auto; display:inline-flex; gap:2px; align-items:center; }
   .ig-seg{ width:5px; height:11px; border-radius:1.5px; background:#e3e6ec; }
   .ig-seg.on{ background:var(--brand); }
@@ -729,10 +743,10 @@ __GA__
   .arc-row{ display:flex; align-items:center; gap:9px; padding:9px 0; border-top:1px solid var(--line);
             text-decoration:none; color:inherit; }
   .arc-row:first-of-type{ border-top:none; }
-  .arc-date{ flex:none; font-size:12.5px; font-weight:700; color:var(--muted); min-width:40px; }
-  .arc-badge{ flex:none; font-size:11px; padding:3px 8px; }
-  .arc-rate{ flex:none; font-size:12.5px; font-weight:800; min-width:62px; }
-  .arc-chg{ font-style:normal; font-weight:700; font-size:11px; }
+  .arc-date{ flex:none; font-size:12.5px; font-weight:700; color:var(--muted); min-width:38px; }
+  .arc-rate{ flex:none; font-size:12.5px; font-weight:800; min-width:56px; text-align:right; }
+  .arc-chg-col{ flex:none; min-width:44px; }
+  .arc-chg{ font-weight:700; font-size:11px; }
   .arc-chg.up{ color:var(--up); } .arc-chg.down{ color:var(--down); }
   .arc-head{ flex:1; min-width:0; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .sec{ font-size:14px; font-weight:800; margin:26px 2px 11px; letter-spacing:-.01em;
@@ -742,12 +756,13 @@ __GA__
   .persona-q{ font-size:12.5px; color:var(--ink); font-weight:700; margin:0 2px 6px; }
   .persona-q-sub{ font-size:11.5px; font-weight:600; color:var(--brand); }
   .tabs{ display:flex; gap:3px; background:#eceef1; border-radius:10px; padding:3px; margin-bottom:10px; }
-  .tab{ flex:1; border:none; background:transparent; padding:9px 4px; border-radius:8px;
+  .tab{ flex:1; display:flex; align-items:center; justify-content:center; border:none;
+        background:transparent; padding:10px 6px; border-radius:8px;
         font-size:13px; font-weight:700; color:var(--muted); cursor:pointer; white-space:nowrap; }
   .tab.active{ background:var(--card); color:var(--ink); box-shadow:0 1px 3px rgba(20,30,60,.12); }
   .verdict-now{ display:flex; align-items:baseline; gap:8px; margin:12px 2px 0; flex-wrap:wrap; }
   .vn-text{ font-size:20px; font-weight:800; letter-spacing:-.02em; line-height:1.2; }
-  .vn-tag{ font-size:11.5px; font-weight:700; color:var(--muted); background:#eef0f3; padding:2px 8px; border-radius:999px; }
+  .vn-tag{ font-size:12px; font-weight:800; color:var(--brand); background:var(--brand-bg); padding:3px 9px; border-radius:999px; }
   .feel-grid{ display:grid; grid-template-columns:1fr 1fr; gap:9px; }
   .feel-cell{ border:1px solid var(--line); border-radius:12px; padding:12px; background:var(--card); }
   .feel-top{ display:flex; align-items:baseline; gap:5px; flex-wrap:wrap; }
@@ -767,7 +782,7 @@ __GA__
           word-break:keep-all; text-wrap:pretty; }
   .prose .hl{ font-weight:700; text-decoration:underline; text-underline-offset:3px;
               text-decoration-thickness:1.5px; text-decoration-color:rgba(59,91,219,.55); }
-  .term{ border-bottom:1px dashed var(--brand); cursor:pointer; white-space:nowrap; }
+  .term{ border-bottom:1.5px dashed var(--brand); padding-bottom:.5px; cursor:pointer; white-space:nowrap; }
   .mag{ font-size:.72em; margin-left:1px; opacity:.65; }
   .def-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.35); opacity:0;
                  pointer-events:none; transition:opacity .2s; z-index:40; }
@@ -798,20 +813,23 @@ __GA__
   .factor-head{ display:flex; align-items:center; gap:8px; font-size:14.5px; font-weight:800; }
   .rank{ flex:none; width:20px; height:20px; border-radius:6px; background:var(--brand); color:#fff;
          font-size:12px; font-weight:800; display:flex; align-items:center; justify-content:center; }
-  .factor-line{ font-size:13px; color:var(--brand); margin:6px 0 8px; font-weight:700; }
+  .factor-name{ flex:1; min-width:0; }                 /* 영향도+ⓘ를 우측으로 칼정렬 */
+  .factor-line{ font-size:13px; color:var(--brand); margin:7px 0 9px; font-weight:700;
+                line-height:1.5; word-break:keep-all; }
   .factor-bullets{ margin:0; padding-left:17px; }
-  .factor-bullets li{ font-size:13.5px; line-height:1.62; margin:4px 0; color:#2b313d; }
-  .factor-src{ font-size:11.5px; color:var(--muted); margin-top:9px; display:flex;
-               align-items:center; gap:5px; flex-wrap:wrap; }
-  .src-chip{ display:inline-flex; align-items:center; justify-content:center; min-width:18px; height:18px;
-             padding:0 5px; border-radius:5px; background:#eef0f3; color:var(--muted);
-             font-size:11px; font-weight:700; text-decoration:none; }
+  .factor-bullets li{ font-size:13.5px; line-height:1.62; margin:7px 0; color:#2b313d; }
+  .factor-src{ margin-top:11px; display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+  .src-lab{ font-size:11.5px; color:var(--muted); font-weight:700; }
+  .src-chip{ display:inline-flex; align-items:center; justify-content:center; min-width:32px; height:31px;
+             padding:0 9px; border:1px solid var(--line); border-radius:999px; background:#f5f7fa;
+             color:#41485a; font-size:12.5px; font-weight:700; text-decoration:none; }
+  .src-chip:active{ background:#e9edf2; }
   .actions{ display:flex; gap:8px; margin-top:26px; }
-  .btn{ flex:1; text-align:center; padding:13px; border-radius:12px; font-size:14px; font-weight:800;
-        cursor:pointer; border:1px solid var(--line); text-decoration:none; }
+  .btn{ flex:1; display:flex; align-items:center; justify-content:center; padding:13px; border-radius:12px;
+        font-size:14px; font-weight:800; cursor:pointer; border:1px solid var(--line); text-decoration:none; }
   .btn-primary{ background:var(--brand); color:#fff; border-color:var(--brand); }
   .btn-secondary{ background:var(--card); color:var(--ink); }
-  footer{ text-align:center; color:var(--muted); font-size:11.5px; margin-top:22px; line-height:1.7; }
+  footer{ text-align:center; color:var(--muted); font-size:11.5px; margin-top:22px; line-height:1.8; letter-spacing:.01em; }
   .views{ font-size:12px; color:var(--muted); margin-bottom:8px; }
   .views b{ color:var(--ink); font-weight:800; }
   .muted{ color:var(--muted); }
@@ -883,7 +901,7 @@ __GA__
 
   <section class="gauge-wrap" id="gaugeWrap" style="display:none">
     <div class="gauge-top"><span class="gauge-cap">환전 매력도 <button class="gauge-info" id="gaugeInfo" aria-label="페르소나별 기준 설명">i</button></span><span id="gaugeLabel" class="gauge-label"></span></div>
-    <div class="gauge-bar"><span class="gauge-ptr" id="gaugePtr"></span></div>
+    <div class="gauge-bar"><span class="gauge-ptr-tag" id="gaugePtrTag"></span><span class="gauge-ptr" id="gaugePtr"></span></div>
     <div class="gauge-scale"><span>지금 사기 좋음</span><span>아까움</span></div>
   </section>
 
@@ -922,7 +940,7 @@ __GA__
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 __PUBLISHED__<br>환율 <span id="rateSrc">ECB</span><br>뉴스 __DATE__<br>
+    발행 __PUBLISHED__<br>환율 <span id="rateSrc">ECB</span><br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -1005,7 +1023,8 @@ function render(rateNow, rateYest){
   elDelta.textContent = flat ? '어제와 비슷' : (up?'▲':'▼') + won(Math.abs(dr)) + '원';  // '어제' 빼고 ▲N원
   elDelta.className = 'chip ' + (flat ? 'flat' : (up?'up':'down'));
   const head = rateLive ? '실시간' : (rateAsof ? rateAsof + ' 기준' : '저장된 값');
-  elMeta.textContent = head + ' · 어제 ' + won(rateYest) + '원';
+  const dot = rateLive ? '<span class="live-dot"></span>' : '';
+  elMeta.innerHTML = dot + head + '<span class="meta-sep">·</span>어제 ' + won(rateYest) + '원';
 
   curRate = rateNow;
   lastDelta = dr;
@@ -1256,9 +1275,11 @@ function renderGauge(rateNow, rates){
   const disp = remap(pct);
   const zone = Math.min(4, Math.floor(disp*5));
   const lab = document.getElementById('gaugeLabel');
-  lab.innerHTML = labels[zone] + ' <span class="gauge-plain">· ' + GAUGE_PLAIN[zone] + '</span>';
+  lab.textContent = labels[zone];                       // 헤더엔 농담 라벨만
   lab.style.color = colors[zone];
   document.getElementById('gaugePtr').style.left = (disp*100).toFixed(1) + '%';
+  const ptag = document.getElementById('gaugePtrTag'); // 평이한 뜻(중간/비싼 편…)은 바늘 위 배지로
+  if(ptag){ ptag.textContent = GAUGE_PLAIN[zone]; ptag.style.left = (disp*100).toFixed(1) + '%'; }
   wrap.style.display = 'block';
 
   // 판정(헤드라인 답): 게이지와 '같은 zone'에서 도출 -> 실시간·일관·설명가능.
@@ -1283,7 +1304,7 @@ function renderChart(rateNow, rates, days){
   const vals = keys.map(k => rates[k].KRW);
   const min = Math.min(...vals), max = Math.max(...vals), span = (max-min) || 1;
   // 데이터는 가운데 띠[yTop, yTop+yBand]에만 -> 위/아래 여백에 라벨이 들어가 선을 안 가림.
-  const W = 320, H = 96, padL = 8, padR = 30, yTop = 20, yBand = 56;  // 왼쪽 여백↓(평균은 우측)
+  const W = 320, H = 96, padL = 8, padR = 30, yTop = 26, yBand = 54;  // 상단 여백↑(최고점 숫자 숨통)
   const avg = vals.reduce((a,b)=>a+b,0)/vals.length;
   const X = i => padL + (vals.length>1 ? i/(vals.length-1) : 0) * (W-padL-padR);
   const Y = v => yTop + yBand*(1-(v-min)/span);
@@ -1312,9 +1333,9 @@ function renderChart(rateNow, rates, days){
   lab.textContent = above ? '평균 위 (비쌈)' : '평균 아래 (쌈)';
   lab.style.color = above ? 'var(--up)' : 'var(--down)';
   const dr = Math.round(rateNow - avg);
-  document.getElementById('chartCap').textContent =
+  document.getElementById('chartCap').innerHTML =
     dr === 0 ? '지금은 이 기간 평균과 거의 같아요'
-      : `지금은 이 기간 평균보다 ${dr>0?'▲':'▼'}${won(Math.abs(dr))}원 ${dr>0?'비싼':'싼'} 편이에요`;
+      : `지금은 이 기간 평균보다 <span class="cap-delta ${dr>0?'up':'down'}">${dr>0?'▲':'▼'} ${won(Math.abs(dr))}원</span> ${dr>0?'비싼':'싼'} 편이에요`;
   document.getElementById('chartWrap').style.display = 'block';
 }
 
@@ -1412,7 +1433,8 @@ document.addEventListener('click', e => {
     } else if(t.classList.contains('about-dog')){
       term = '만든 사람';
       def = ABOUT[activeSet] || ABOUT.student;   // 현재 탭의 '왜 만들었게'
-    } else { term = t.dataset.term; def = t.dataset.def; }
+    } else if(t.classList.contains('term')){ term = '🔍 ' + t.dataset.term; def = t.dataset.def; }
+    else { term = t.dataset.term; def = t.dataset.def; }
     track(t.classList.contains('about-dog') ? 'open_about'
         : t.classList.contains('gauge-info') ? 'gauge_info'
         : t.classList.contains('impact-info') ? 'impact_info' : 'term_click', {label: term});
