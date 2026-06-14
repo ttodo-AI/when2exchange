@@ -78,10 +78,13 @@ def fill_results(fc, client, events, today, model):
         dig = "\n".join(f"  - ({a['date']}) {a['title']} :: {a['snippet'][:160]}" for a in arts[:6]) or "  (검색 결과 없음)"
         blocks.append(f"[{i}] {e['name']} ({e['date']})\n{dig}")
     prompt = (
-        "아래는 '이미 발표·종료된 경제 일정'과 각각에 대해 검색한 최신 뉴스다.\n"
+        "아래는 '이미 발표·종료된 경제 일정'과, 각각에 대해 검색한 최신 뉴스다.\n"
         "각 일정의 '실제 발표 결과(수치/방향)와 그 직후 원/달러 환율 반응'을 한 줄로 정리하라.\n"
-        "■ 규칙: 뉴스에 실제 결과가 나온 경우만 적는다. 없으면 빈 문자열(추측·창작 절대 금지). "
-        "'~다' 문어체, 수치·고유명사는 뉴스 근거.\n\n"
+        "■ 그라운딩 규칙(엄수):\n"
+        "- 검색된 그 일정의 뉴스에 '명시적으로' 나온 결과만 적는다. 없거나 애매하면 빈 문자열(추측·창작 절대 금지).\n"
+        "- 수치(%, 지수, 환율 등)는 기사에 적힌 값과 정확히 일치해야 한다. 기사와 다르거나 확신이 없으면 그 항목은 빈 문자열로 둔다.\n"
+        "- 작성한 뒤, 각 결과가 정말 그 일정의 검색 기사에 있는지 스스로 한 번 더 검증하라. 근거가 불충분하면 비운다.\n"
+        "- '~다' 문어체, 수치·고유명사는 뉴스 근거.\n\n"
         + "\n\n".join(blocks)
         + '\n\nJSON만(코드펜스 없이): {"results":[{"i":0,"result":"..."}]}'
     )
@@ -103,6 +106,8 @@ def fill_results(fc, client, events, today, model):
         if 0 <= idx < len(past) and res:
             past[idx]["result"] = res
             print(f"  ✓ {past[idx]['name']}: {res[:50]}")
+    filled = sum(1 for e in past if (e.get("result") or "").strip())
+    print(f"  결과 채움 {filled}/{len(past)} (근거 부족분은 비움)")
 
 
 def main() -> None:
