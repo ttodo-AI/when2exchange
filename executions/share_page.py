@@ -335,6 +335,9 @@ def main() -> None:
                 t = (ev.get("time") or "").strip()
                 when = disp + (f" {t}" if t else "")
                 stars = "★" * int(ev.get("importance", 1))
+                has_result = bool((ev.get("result") or "").strip())   # 지난 일정에 실제 결과가 채워졌나
+                res_badge = ('<span class="cal-resbadge"><span class="rb-ico">📊</span>결과</span>'
+                             if has_result else '')
                 if ed and ed < kst_today:          # 이미 발표 -> 실제 결과
                     res = esc((ev.get("result") or "").strip())
                     detail = (f'<div class="cal-result">📊 {res}</div>' if res
@@ -348,14 +351,16 @@ def main() -> None:
                     evwhy = esc(ev.get("why", ""))
                     detail = (f'<div class="cal-why">{evwhy}</div>' if evwhy else "") + scn
                 return (
-                    '<details class="cal-item"><summary class="cal-row" '
-                    f'data-date="{esc(ev.get("date",""))}">'
-                    f'<div class="cal-head"><span class="cal-dday">·</span>'
-                    f'<span class="cal-date">{esc(when)}</span>'
-                    f'<span class="cal-caret">▾</span></div>'
+                    f'<details class="cal-item{" has-result" if has_result else ""}">'
+                    f'<summary class="cal-row" data-date="{esc(ev.get("date",""))}">'
+                    f'<div class="cal-body">'
+                    f'<div class="cal-head">{res_badge}<span class="cal-dday">·</span>'
+                    f'<span class="cal-date">{esc(when)}</span></div>'
                     f'<div class="cal-name">{esc(ev.get("name",""))} '
                     f'<span class="cal-star">{stars}</span></div>'
                     f'<div class="cal-impact">{esc(ev.get("summary",""))}</div>'
+                    f'</div>'
+                    f'<span class="cal-caret">▾</span>'
                     f'</summary><div class="cal-detail">{detail}</div></details>'
                 )
 
@@ -367,7 +372,7 @@ def main() -> None:
                 groups += '<div class="cal-wk">이번주</div>' + "\n".join(_render_ev(e) for e in this_week)
             if next_week:
                 groups += ('<details class="cal-nextwk"><summary class="cal-wk cal-wk-toggle">'
-                           '다음주 <span class="cal-caret">▾</span></summary>'
+                           '<span>다음주 일정</span><span class="cal-caret">▾</span></summary>'
                            + "\n".join(_render_ev(e) for e in next_week) + '</details>')
             guide_raw = (cj.get("guide", "") or "").strip()
             if guide_raw:
@@ -378,7 +383,8 @@ def main() -> None:
                     f'<div class="cg-sub"><span class="cal-dot">·</span>{esc(p)}</div>'
                     for p in parts[1:]
                 )
-                guide_html = f'<div class="cal-guide"><div class="cg-lead">💡 {lead}</div>{subs}</div>'
+                guide_html = (f'<div class="cal-guide"><div class="cg-lead">'
+                              f'<span class="cg-ico">💡</span><span>{lead}</span></div>{subs}</div>')
             else:
                 guide_html = ""
             cal_section = (
@@ -669,27 +675,38 @@ __GA__
   .impact-info:active, .gauge-info:active{ background:#dfe2e7; }
   .sec-note{ font-size:11.5px; color:var(--muted); margin:-2px 2px 10px; }
   .impact-note{ margin:12px 2px 8px; line-height:1.4; }
-  .cal-guide{ background:var(--brand-bg); border-radius:12px; padding:12px 14px; margin-bottom:10px;
-              font-size:13px; line-height:1.62; color:#2b313d; }
-  .cg-lead{ font-weight:700; }
-  .cg-sub{ margin-top:6px; padding-left:13px; text-indent:-13px; color:#41485a; }
-  .cal-item{ background:#f6f7f9; border:1px solid var(--line); border-radius:12px; margin-bottom:8px; }
-  .cal-item[open]{ background:#fff; }
-  .cal-row{ display:block; padding:12px 14px; cursor:pointer; list-style:none; }
+  .cal-guide{ background:var(--brand-bg); border-radius:13px; padding:15px 17px; margin-bottom:16px;
+              font-size:13px; line-height:1.64; color:#2b313d; word-break:keep-all; letter-spacing:-.01em; }
+  .cg-lead{ display:flex; gap:6px; font-weight:700; }
+  .cg-ico{ flex:none; }                                  /* 💡는 매달고 텍스트는 한 칼럼으로 왼쪽 정렬 */
+  .cg-sub{ margin-top:7px; padding-left:13px; text-indent:-13px; color:#41485a; }
+  .cal-item{ background:#f6f7f9; border:1px solid var(--line); border-radius:13px; margin-bottom:13px;
+             transition:border-color .15s, background .15s, opacity .15s; }
+  .cal-item:not([open]):hover{ border-color:#cdd2da; background:#f1f3f6; }
+  .cal-item:not([open]):active{ background:#e9ecf1; }
+  .cal-item[open]{ background:#fff; margin-bottom:9px; }   /* 펼치면 카드 간격 살짝 콤팩트(스크롤 피로↓) */
+  .cal-item.past:not([open]):not(.has-result){ opacity:.6; }   /* 결과 없는 과거: 많이 흐리게 */
+  .cal-item.past.has-result:not([open]){ opacity:.82; }         /* 결과 있는 과거: 살짝만 가라앉힘(배지로 클릭 유도) */
+  .cal-row{ display:flex; align-items:center; gap:10px; padding:14px 15px; cursor:pointer; list-style:none; }
   .cal-row::-webkit-details-marker{ display:none; }
-  .cal-head{ display:flex; align-items:center; gap:7px; margin-bottom:5px; }
-  .cal-dday{ flex:none; min-width:46px; text-align:center; font-size:11px; font-weight:800;
-             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:3px 6px; }
+  .cal-body{ flex:1; min-width:0; }
+  .cal-head{ display:flex; align-items:center; gap:7px; margin-bottom:7px; }
+  .cal-dday{ flex:none; display:inline-flex; align-items:center; justify-content:center; min-width:46px;
+             height:21px; line-height:1; font-size:11px; font-weight:800;
+             color:var(--brand); background:var(--brand-bg); border-radius:7px; padding:0 6px; }
   .cal-dday.today{ color:#fff; background:var(--brand); }
-  .cal-dday.past{ color:var(--muted); background:#eceef1; }
-  .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; }
-  .cal-caret{ margin-left:auto; flex:none; width:22px; height:22px; border-radius:50%;
+  .cal-resbadge{ flex:none; display:inline-flex; align-items:center; gap:4px; height:21px;
+                 font-size:11px; font-weight:800; color:var(--brand); background:var(--brand-bg);
+                 border-radius:7px; padding:0 8px; }
+  .rb-ico{ font-size:.92em; line-height:1; }
+  .cal-date{ font-size:12px; color:var(--muted); white-space:nowrap; line-height:21px; }
+  .cal-caret{ flex:none; width:22px; height:22px; border-radius:50%;
               display:inline-flex; align-items:center; justify-content:center; font-size:11px;
               color:var(--muted); background:#eceef1; transition:transform .2s, background .2s; }
   .cal-item[open] .cal-caret{ transform:rotate(180deg); color:#fff; background:var(--brand); }
-  .cal-name{ font-size:13.5px; font-weight:700; letter-spacing:-.02em; margin-bottom:3px;
+  .cal-name{ font-size:13.5px; font-weight:700; letter-spacing:-.02em; margin-bottom:5px;
              word-break:keep-all; }
-  .cal-star{ color:var(--mid-fg); font-size:11px; letter-spacing:0; }
+  .cal-star{ color:#d99a0b; font-size:12.5px; letter-spacing:1px; }
   .cal-impact{ font-size:12.5px; color:#41485a; line-height:1.5; }
   .cal-detail{ padding:2px 14px 13px; }
   .cal-why{ font-size:13px; color:#2b313d; line-height:1.62; }
@@ -697,11 +714,17 @@ __GA__
             padding-left:13px; text-indent:-13px; }
   .cal-dot{ color:var(--brand); font-weight:800; margin-right:5px; }
   .cal-result{ font-size:13px; color:#2b313d; line-height:1.6; }
-  .cal-wk{ font-size:11.5px; font-weight:800; color:var(--muted); margin:15px 0 1px; }
-  .cal-wk:first-of-type{ margin-top:2px; }
-  .cal-wk-toggle{ cursor:pointer; list-style:none; display:flex; align-items:center; gap:5px; padding:4px 0; }
+  .cal-wk{ font-size:14.5px; font-weight:800; color:var(--ink); margin:22px 0 9px; letter-spacing:-.01em; }
+  .cal-wk:first-of-type{ margin-top:4px; }
+  .cal-wk-toggle{ cursor:pointer; list-style:none; display:flex; align-items:center; line-height:1;
+                  justify-content:space-between; gap:8px; background:#fff; border:1px solid var(--line);
+                  border-radius:12px; padding:15px 16px; margin:8px 0 13px; transition:background .15s, border-color .15s; }
   .cal-wk-toggle::-webkit-details-marker{ display:none; }
-  .cal-nextwk[open] > .cal-wk-toggle .cal-caret{ transform:rotate(180deg); }
+  .cal-wk-toggle:hover{ background:#f6f8fb; border-color:#cdd6ea; }
+  .cal-wk-toggle:active{ background:#eef2f8; }
+  .cal-wk-toggle .cal-caret{ color:var(--brand); background:var(--brand-bg); }   /* 닫혔을 때도 블루(클릭 유도) */
+  .cal-nextwk[open] > .cal-wk-toggle{ margin-bottom:9px; }
+  .cal-nextwk[open] > .cal-wk-toggle .cal-caret{ transform:rotate(180deg); color:#fff; background:var(--brand); }
   .cal-scn b{ color:var(--ink); }
   .arc-row{ display:flex; align-items:center; gap:9px; padding:9px 0; border-top:1px solid var(--line);
             text-decoration:none; color:inherit; }
@@ -758,11 +781,17 @@ __GA__
   .def-term{ font-size:16px; font-weight:800; }
   .def-text{ font-size:14px; color:#2b313d; line-height:1.66; margin-top:6px; white-space:pre-line; }
   .def-hint{ font-size:11.5px; color:var(--muted); margin-top:12px; }
-  .tip{ background:var(--brand-bg); border-radius:12px; padding:13px 15px; }
+  .tip{ background:var(--brand-bg); border-radius:13px; padding:17px 16px 18px; margin-top:11px; }
   .th-label{ font-size:12px; color:var(--muted); font-weight:700; }
-  .th-big{ font-size:24px; font-weight:800; letter-spacing:-.02em; margin:2px 0 3px; line-height:1.15; }
+  .th-big{ font-size:25px; font-weight:800; letter-spacing:-.02em; margin:4px 0 7px; line-height:1.18; }
   .th-big.save{ color:var(--down); } .th-big.cost{ color:var(--up); }
-  .th-sub{ font-size:12px; color:var(--muted); }
+  .th-tail{ font-size:.76em; font-weight:700; }                 /* 서술어는 숫자의 76%로 완급 */
+  .th-sub{ font-size:12px; color:#9aa0ab; line-height:1.5; }
+  .th-ref{ color:#9aa0ab; }                                     /* 기준값=연한 회색(서브) */
+  .th-today{ color:var(--ink); font-weight:700; }               /* 오늘=진하게 */
+  .th-sep{ margin:0 6px; color:#c8ccd4; }
+  .th-delta{ font-weight:700; margin-left:3px; }
+  .th-delta.up{ color:var(--up); } .th-delta.down{ color:var(--down); }
   .tip-foot{ font-size:12.5px; color:#41485a; margin-top:12px; line-height:1.5; }
   .factor{ padding:14px 0; border-top:1px solid var(--line); }
   .factor:first-of-type{ border-top:none; padding-top:2px; }
@@ -995,7 +1024,7 @@ const ACT = {
     '쌀 때라 이번 달 것에 더해 조금 더 당겨 담아둬도 좋아요.',
   ],
   investor: [
-    '환율만 보고 무한정 기다리지 마세요. 살 종목이 정해졌다면 한 번에 말고 나눠서 환전·매수를.',
+    '환율만 보고 무한정 기다리지 마세요. 살 종목이 정해졌다면 한 번에 말고 나눠서 환전·매수하세요.',
     '매수 시점에 맞춰 나눠 환전하면 환율 부담을 줄일 수 있어요.',
     '환율도 싼 편이라 환전과 매수 타이밍을 같이 잡기 좋아요.',
   ],
@@ -1012,6 +1041,16 @@ const ACT_HIGH = {
 };
 const TIP_TITLE = { student: '매달 환전한다면', investor: '주식 살 돈을 환전한다면', traveler: '여행 갈 돈을 환전한다면' };
 const heroHTML = r => `<div class="th-label">${r.label}</div><div class="th-big ${r.dir}">${r.big}</div><div class="th-sub">${r.sub}</div>`;
+// 서브 한 줄: 기준값(연회색) · 오늘(진하게) + 오늘이 기준보다 얼마 비싼/싼지 미니 델타.
+function subLine(refLabel, ref, today, todayLabel, noDelta){
+  // noDelta: 큰 글자가 이미 환율차(▲N원)를 보여주는 경우(calcC) 서브 델타 생략(중복 방지).
+  const d = today - ref, a = Math.abs(d);
+  const arrow = d > 0 ? '▲' : (d < 0 ? '▼' : '');
+  const cls = d > 0 ? 'up' : (d < 0 ? 'down' : '');
+  const delta = (!noDelta && a >= 1) ? ` <span class="th-delta ${cls}">(${arrow}${won(a)}원)</span>` : '';
+  return `${refLabel} <span class="th-ref">${won(ref)}원</span><span class="th-sep">·</span>`
+       + `${todayLabel || '오늘'} <b class="th-today">${won(today)}원</b>${delta}`;
+}
 function calcA(cl, n){  // 매주 $250×4 분할 vs 오늘 $1,000 일괄
   const weekly = [curRate]; [5,10,15].forEach(o => { const i = n-1-o; if(i>=0) weekly.push(cl[i]); });
   if(weekly.length < 2) return null;
@@ -1019,29 +1058,19 @@ function calcA(cl, n){  // 매주 $250×4 분할 vs 오늘 $1,000 일괄
   const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '거의 같았어요'; dir = ''; }
-  else if(d > 0){ big = won(amt)+'원 아꼈어요'; dir = 'save'; }
-  else { big = won(amt)+'원 더 들었어요'; dir = 'cost'; }
-  return { label:'매주 $250씩 4주 나눠 샀다면', big, dir, sub:`나눠 사기 평균 ${won(avg)}원 · 오늘 한 번에 ${won(today)}원` };
+  else if(d > 0){ big = won(amt)+'원<span class="th-tail"> 아꼈어요</span>'; dir = 'save'; }
+  else { big = won(amt)+'원<span class="th-tail"> 더 들었어요</span>'; dir = 'cost'; }
+  return { label:'매주 $250씩 4주 나눠 샀다면', big, dir, sub:subLine('나눠 사기 평균', avg, today, '오늘 한 번에') };
 }
-function calcB(v){  // 오늘 vs 최근 한 달 평균 ($1,000 기준)
+function calcAvg(v, refLabel){  // 오늘 vs (전달받은 기간) 평균. $1,000 환전 시 '원' 차이.
   if(v.length < 5) return null;
   const avg = Math.round(v.reduce((a,b)=>a+b,0)/v.length), today = Math.round(curRate);
   const d = today - avg, amt = Math.round(Math.abs(d)*1000);
   let big, dir;
   if(amt < 100){ big = '평균과 비슷해요'; dir = ''; }
-  else if(d > 0){ big = won(amt)+'원 더 들어요'; dir = 'cost'; }
-  else { big = won(amt)+'원 덜 들어요'; dir = 'save'; }
-  return { label:'한 달 평균 환율로 $1,000 바꿀 때보다', big, dir, sub:`한 달 평균 ${won(avg)}원 · 오늘 ${won(today)}원` };
-}
-function calcC(v, ref){  // 오늘 vs 최근 3개월 최고/최저
-  if(v.length < 10) return null;
-  const today = Math.round(curRate);
-  if(ref === 'high'){ const hi = Math.round(Math.max(...v)), d = hi - today;
-    return { label:'최근 3개월 최고와 비교하면', big: d <= 0 ? '최고치 수준이에요' : '▼'+won(d)+'원 내려왔어요', dir:'',
-             sub:`3개월 최고 ${won(hi)}원 · 오늘 ${won(today)}원` }; }
-  const lo = Math.round(Math.min(...v)), d = today - lo;
-  return { label:'최근 3개월 최저와 비교하면', big: d <= 0 ? '최저치 수준이에요' : '▲'+won(d)+'원 위예요', dir:'',
-           sub:`3개월 최저 ${won(lo)}원 · 오늘 ${won(today)}원` };
+  else if(d > 0){ big = won(amt)+'원<span class="th-tail"> 더 들어요</span>'; dir = 'cost'; }
+  else { big = won(amt)+'원<span class="th-tail"> 덜 들어요</span>'; dir = 'save'; }
+  return { label:refLabel+' 환율로 $1,000 바꿀 때보다', big, dir, sub:subLine(refLabel, avg, today) };
 }
 function renderTip(){
   // 상황 진단(공통) + 행동 조언(페르소나별) + 페르소나 시간축에 맞는 예시 계산. 전부 실측.
@@ -1071,10 +1100,11 @@ function renderTip(){
   const ttl = document.getElementById('tipTitle');
   if(ttl) ttl.textContent = TIP_TITLE[set] || TIP_TITLE.student;
 
-  // 예시 계산(페르소나 시간축): 유학생=3개월(장기) / 여행자=한 달(중기) / 투자자=분할(단기)
+  // 예시 계산(페르소나 시간축, 모두 $1,000 기준 '원' 차이):
+  // 유학생=최근 3개월 평균(장기) / 여행자=한 달 평균(중기) / 투자자=분할 vs 일괄(단기)
   let r;
-  if(set === 'student') r = calcC(v63, lvl === 2 ? 'high' : 'low');
-  else if(set === 'traveler') r = calcB(v22);
+  if(set === 'student') r = calcAvg(v63, '최근 3개월 평균');
+  else if(set === 'traveler') r = calcAvg(v22, '한 달 평균');
   else r = calcA(cl, n);
   hero.innerHTML = r ? heroHTML(r) : '';
 }
@@ -1413,11 +1443,26 @@ document.getElementById('tabs').addEventListener('click', e => {
   if(!b) return;
   activeSet = b.dataset.set;
   track('select_persona', {persona: activeSet});
+  try{ localStorage.setItem('w2e_persona', activeSet); }catch(e){}   // 다음 방문에 기억
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === b));
   if(lastDelta != null) renderFeel(lastDelta);
   if(chartRates) renderGauge(chartNow, chartRates);   // 관점 바뀌면 매력도도 재계산
   renderTip();                                         // 관점 바뀌면 조언·제목·예시도 재계산
+  flashPersona();                                      // "바뀌었다" 체감(살짝 깜빡)
 });
+// 페르소나 전환 모션: 바뀐 영역이 살짝 떠오르며 페이드인(1안) + '○○ 기준' 배지 톡(2안). 투박한 깜빡 X.
+function flashPersona(){
+  ['verdictNow','tipBox','gaugeWrap'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el && el.animate) el.animate(
+      [{opacity:.45, transform:'translateY(5px)'}, {opacity:1, transform:'translateY(0)'}],
+      {duration:300, easing:'cubic-bezier(.2,.7,.2,1)'});
+  });
+  const tag = document.getElementById('vnTag');
+  if(tag && tag.animate) tag.animate(
+    [{transform:'scale(1.14)'}, {transform:'scale(1)'}],
+    {duration:320, easing:'ease-out'});
+}
 
 // 경제 일정 D-Day — 보는 위치와 무관하게 '한국시간(KST) 오늘' 기준으로 고정.
 (function(){
@@ -1425,9 +1470,10 @@ document.getElementById('tabs').addEventListener('click', e => {
   const diff = (a,b) => Math.round((Date.parse(a+'T00:00:00Z') - Date.parse(b+'T00:00:00Z'))/86400000);
   document.querySelectorAll('.cal-row').forEach(row => {
     const el = row.querySelector('.cal-dday'), date = row.dataset.date;
-    if(!date || isNaN(Date.parse(date+'T00:00:00Z'))){ el.textContent = ''; return; }
+    const item = row.closest('.cal-item');
+    if(!date || isNaN(Date.parse(date+'T00:00:00Z'))){ el.style.display = 'none'; return; }
     const days = diff(date, kstToday);
-    if(days < 0){ el.textContent = '지남'; el.classList.add('past'); }
+    if(days < 0){ el.style.display = 'none'; if(item) item.classList.add('past'); }  // 과거: 배지 빼고 카드 흐리게
     else if(days === 0){ el.textContent = 'D-DAY'; el.classList.add('today'); }
     else { el.textContent = 'D-' + days; }
   });
@@ -1457,6 +1503,18 @@ function tickRot(){
   }, 220);
 }
 setInterval(tickRot, 3500);
+
+// 진입 시 페르소나 적용: 공유링크 ?p=investor 우선, 없으면 지난 방문 기억값. (loadRate 전에 = 첫 렌더부터 맞춤)
+(function(){
+  const ok = ['student','investor','traveler'];
+  let saved = null; try{ saved = localStorage.getItem('w2e_persona'); }catch(e){}
+  const q = new URLSearchParams(location.search).get('p');
+  const pick = ok.includes(q) ? q : (ok.includes(saved) ? saved : null);
+  if(pick){
+    activeSet = pick;
+    document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.set === pick));
+  }
+})();
 
 loadRate();
 loadViews();
