@@ -1,0 +1,25 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-14T02:46:27.115635+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1500–1510 KRW/USD (expected level); currently higher before decline\n\nWHY: The news shows conflicting signals—one source predicts the won will *strengthen* (rates falling to 1500s, making dollars cheaper), while another warns rates recently hit 17-year highs (won weakening, making dollars expensive). Financial authorities have verbally intervened to calm volatility, suggesting current levels may be temporarily elevated but unstable.\n\nTIP: Given the volatility and conflicting outlook, consider splitting your $2,000 monthly purchase into 2–3 smaller transactions to average out timing risk rather than converting the full amount when rates are uncertain."
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 1500원대로 내려서며 변곡점 맞나…중동 변수 완화에 하락 압력 확대",
+      "link": "https://www.goodkyung.com/news/articleView.html?idxno=288093",
+      "summary": "원·달러 환율이 1500원대(1500~1510) 까지 내려설 수 있다는 전망이 나오고 있다. 미국과 이란 간 긴장 완화 기대감으로 글로벌 금융시장의 위험선호 심리.",
+      "date": "2026-06-13T09:46:27.115635+00:00"
+    },
+    {
+      "title": "고삐 풀린 환율 17년래 최고…실물경제 ‘휘청’",
+      "link": "https://www.kukinews.com/article/view/kuk202606080135",
+      "summary": "원·달러 환율이 금융위기 수준까지 치솟으며 실물경제에 부담을 줄 수 있다는 우려가 커지고 있다. 금융당국의 구두 개입에 상승세는 일단 진정됐지.",
+      "date": "2026-06-13T20:46:27.115635+00:00"
+    }
+  ]
+}
