@@ -425,6 +425,8 @@ def main() -> None:
                         if round(c) != 0:
                             ar, cc = ("▲", "up") if c > 0 else ("▼", "down")
                             chg_html = f'<span class="arc-chg {cc}">{ar}{abs(round(c))}</span>'
+                        else:
+                            chg_html = '<span class="arc-chg flat">유지</span>'   # 전일과 같음
                     except (TypeError, ValueError):
                         pass
             rows.append(
@@ -747,7 +749,7 @@ __GA__
   .arc-rate{ flex:none; font-size:12.5px; font-weight:800; min-width:56px; text-align:right; }
   .arc-chg-col{ flex:none; min-width:44px; }
   .arc-chg{ font-weight:700; font-size:11px; }
-  .arc-chg.up{ color:var(--up); } .arc-chg.down{ color:var(--down); }
+  .arc-chg.up{ color:var(--up); } .arc-chg.down{ color:var(--down); } .arc-chg.flat{ color:var(--muted); }
   .arc-head{ flex:1; min-width:0; font-size:13px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
   .sec{ font-size:14px; font-weight:800; margin:26px 2px 11px; letter-spacing:-.01em;
         display:flex; align-items:center; gap:7px; }
