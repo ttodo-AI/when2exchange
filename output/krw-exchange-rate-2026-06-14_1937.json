@@ -1,0 +1,25 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-14T19:37:47.437655+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,500 KRW/USD (high level)\n\nWHY: The news indicates the won is currently WEAK, with the USD/KRW exchange rate above 1,500—a high level that makes dollars expensive for Korean won holders. The articles mention heightened volatility and expect the rate to fluctuate around the 1,500 level, suggesting you're converting at an unfavorable time when you need more won per dollar.\n\nTIP: Consider dollar-cost averaging your monthly $2,000 conversion across multiple days, or explore the mentioned auto-conversion products (like NH's 환테크 외화적금) that allow you to set target rates and execute when the won strengthens."
+  },
+  "articles": [
+    {
+      "title": "'롤러코스피' 불안하다면…안전자산 달러 투자해볼까",
+      "link": "https://www.hankyung.com/article/2026061452831",
+      "summary": "Cover Story 예금부터 ETF까지…달러 투자방법 총정리 弗예금 환차익엔 비과세 'NH 환테크 외화적금' 목표환율 도달땐 자동환전 증권사 '달러RP'도 인기",
+      "date": "2026-06-14T09:37:47.437655+00:00"
+    },
+    {
+      "title": "[환율 초비상] 달러 쌓는 기업들…달러예금 3년5개월 만에 최대",
+      "link": "https://www.ajunews.com/amp/20260614140017216",
+      "summary": "환율 변동성 커지자 달러 보유 경향 강해져 \"당분간 변동성 장세…1500원대 등락 전망\". 사진연합뉴스 [사진=연합뉴스]. 원·달러 환율이 1500원을 웃도는 고환율 장세가...",
+      "date": "2026-06-14T05:37:47.437655+00:00"
+    }
+  ]
+}
