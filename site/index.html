@@ -65,6 +65,9 @@
   .chip.up{ background:var(--up-bg); color:var(--up); }
   .chip.down{ background:var(--down-bg); color:var(--down); }
   .hero-meta{ font-size:11px; color:var(--muted); margin-top:8px; }
+  .wknd-note{ margin-top:14px; padding:10px 12px; background:#f3f5f8; border-radius:10px;
+              font-size:12px; line-height:1.55; color:#5a6373; }
+  .wknd-note b{ color:var(--ink); font-weight:700; }
   .live-dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--down);
              margin-right:5px; vertical-align:middle; }
   .meta-sep{ margin:0 5px; color:#c8ccd4; }
@@ -329,6 +332,9 @@
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
     </div>
+    <div class="wknd-note" id="wkndNote" style="display:none">
+      📅 주말엔 외환시장이 쉬어 환율이 <b>금요일 종가</b>에서 멈춰 있어요. 새 거래가 없어 값이 안 바뀌고, <b>월요일 장이 열리면</b> 다시 움직여요.
+    </div>
   </section>
 
   <section><div class="tldr"><div class="tldr-meta">📅 2026년 06월 14일 기준 · 매일 오전 9시 업데이트</div><div class="tldr-cap">30초 요약</div><ul class="tldr-list"><li>미국·이란 종전 협상 기대로 달러 매도세가 강해져 환율이 1,510원대로 내려왔다.</li><li>실제 종전 서명이 없으면 1,500원 선이 깨지기 어렵다는 게 외환 전문가들의 판단이고, 이번 주 FOMC 결과가 그 다음 방향을 가를 핵심 변수다.</li><li>달러 환전을 서두를 필요는 없으나, FOMC 결과와 미·이란 협상 타결 여부에 따라 환율이 빠르게 움직일 수 있어 이 두 가지를 확인한 뒤 결정하는 편이 낫다.</li></ul></div></section>
@@ -387,7 +393,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-15 03:30:56 KST<br>환율 <span id="rateSrc">ECB</span><br>
+    발행 2026-06-15 04:09:22 KST<br>환율 <span id="rateSrc">ECB</span><br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
 </div>
@@ -450,6 +456,8 @@ let stockPx = {};       // 종목 전일 종가 맵 {TSLA:403, ...}
 let rotI = 0;           // 회전 종목 인덱스
 let chartRates = null, chartNow = null, chartDays = 63;  // 차트 기간 토글용(영업일 점 수)
 const won = n => Math.round(n).toLocaleString('ko-KR');
+// KST 기준 주말(토·일)이면 true. 주말엔 외환시장 휴장 -> 환율이 금요일 값에서 멈춤.
+function isKstWeekend(){ const d = new Date(Date.now() + 9*3600000).getUTCDay(); return d === 0 || d === 6; }
 
 function render(rateNow, rateYest){
   const elNow = document.getElementById('rateNow');
@@ -472,6 +480,15 @@ function render(rateNow, rateYest){
   const head = rateLive ? '실시간' : (rateAsof ? rateAsof + ' 기준' : '저장된 값');
   const dot = rateLive ? '<span class="live-dot"></span>' : '';
   elMeta.innerHTML = dot + head + '<span class="meta-sep">·</span>어제 ' + won(rateYest) + '원';
+
+  // 주말: 외환시장 휴장 -> 금요일 값 고정. 칩·메타를 바꾸고 아래에 '이유' 안내 노출.
+  const wknd = isKstWeekend();
+  const wn = document.getElementById('wkndNote');
+  if(wn) wn.style.display = wknd ? 'block' : 'none';
+  if(wknd){
+    elDelta.textContent = '주말 휴장'; elDelta.className = 'chip flat';
+    elMeta.innerHTML = '금요일 종가 기준';
+  }
 
   curRate = rateNow;
   lastDelta = dr;
