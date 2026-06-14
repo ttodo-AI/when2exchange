@@ -628,6 +628,9 @@ __GA__
   .chip.up{ background:var(--up-bg); color:var(--up); }
   .chip.down{ background:var(--down-bg); color:var(--down); }
   .hero-meta{ font-size:11px; color:var(--muted); margin-top:8px; }
+  .wknd-note{ margin-top:14px; padding:10px 12px; background:#f3f5f8; border-radius:10px;
+              font-size:12px; line-height:1.55; color:#5a6373; }
+  .wknd-note b{ color:var(--ink); font-weight:700; }
   .live-dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--down);
              margin-right:5px; vertical-align:middle; }
   .meta-sep{ margin:0 5px; color:#c8ccd4; }
@@ -892,6 +895,9 @@ __GA__
         <div id="rateMeta" class="hero-meta">실시간 …</div>
       </div>
     </div>
+    <div class="wknd-note" id="wkndNote" style="display:none">
+      📅 주말엔 외환시장이 쉬어 환율이 <b>금요일 종가</b>에서 멈춰 있어요. 새 거래가 없어 값이 안 바뀌고, <b>월요일 장이 열리면</b> 다시 움직여요.
+    </div>
   </section>
 
   __TLDR__
@@ -1005,6 +1011,8 @@ let stockPx = {};       // 종목 전일 종가 맵 {TSLA:403, ...}
 let rotI = 0;           // 회전 종목 인덱스
 let chartRates = null, chartNow = null, chartDays = 63;  // 차트 기간 토글용(영업일 점 수)
 const won = n => Math.round(n).toLocaleString('ko-KR');
+// KST 기준 주말(토·일)이면 true. 주말엔 외환시장 휴장 -> 환율이 금요일 값에서 멈춤.
+function isKstWeekend(){ const d = new Date(Date.now() + 9*3600000).getUTCDay(); return d === 0 || d === 6; }
 
 function render(rateNow, rateYest){
   const elNow = document.getElementById('rateNow');
@@ -1027,6 +1035,15 @@ function render(rateNow, rateYest){
   const head = rateLive ? '실시간' : (rateAsof ? rateAsof + ' 기준' : '저장된 값');
   const dot = rateLive ? '<span class="live-dot"></span>' : '';
   elMeta.innerHTML = dot + head + '<span class="meta-sep">·</span>어제 ' + won(rateYest) + '원';
+
+  // 주말: 외환시장 휴장 -> 금요일 값 고정. 칩·메타를 바꾸고 아래에 '이유' 안내 노출.
+  const wknd = isKstWeekend();
+  const wn = document.getElementById('wkndNote');
+  if(wn) wn.style.display = wknd ? 'block' : 'none';
+  if(wknd){
+    elDelta.textContent = '주말 휴장'; elDelta.className = 'chip flat';
+    elMeta.innerHTML = '금요일 종가 기준';
+  }
 
   curRate = rateNow;
   lastDelta = dr;
