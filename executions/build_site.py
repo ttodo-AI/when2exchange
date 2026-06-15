@@ -35,11 +35,14 @@ BADGE = {"good": "환전 추천", "mid": "지금은 보통", "bad": "환전 비�
 CLS = {"GOOD": "good", "NEUTRAL": "mid", "BAD": "bad"}
 
 
-def run(name, script, extra=None):
+def run(name, script, extra=None, soft=False):
     cmd = [sys.executable, os.path.join(HERE, script)] + (extra or [])
     print(f"\n{'='*56}\n  {name}\n{'='*56}", flush=True)
     r = subprocess.run(cmd, cwd=ROOT)
     if r.returncode != 0:
+        if soft:  # non-critical stage: warn and keep building
+            print(f"\n⚠️ {name} failed (exit {r.returncode}) — 건너뛰고 계속.", file=sys.stderr)
+            return
         sys.exit(f"\nbuild stopped: {name} failed (exit {r.returncode}).")
 
 
@@ -69,7 +72,9 @@ def main():
     run("Rate (site/rate.json)", "rate_fetch.py")
 
     if args.mode == "full":
-        run("Scout", "exchange_rate_watcher.py", scout_extra)
+        # Scout feeds only the timing-verdict context; factor_analysis/calendar
+        # do their own searches. So a Scout hiccup must NOT kill the build.
+        run("Scout", "exchange_rate_watcher.py", scout_extra, soft=True)
         run("Factor analysis", "factor_analysis.py")
         run("Rewrite why + tldr", "factor_analysis.py", ["--rewrite-why"])
         run("Econ calendar", "econ_calendar.py")

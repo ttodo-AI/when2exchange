@@ -121,8 +121,11 @@ def fetch(url: str, timeout: int = 10) -> str | None:
 
 
 def search_news(query: str):
-    """Google News RSS search -> list of {title, link, summary, date_raw, source}."""
-    xml = fetch(RSS.format(q=urllib.parse.quote(query)))
+    """Google News RSS search -> list of {title, link, summary, date_raw, source}.
+
+    `when:3d` keeps results recent (covers weekend gaps); main re-filters by --hours.
+    """
+    xml = fetch(RSS.format(q=urllib.parse.quote(f"{query} when:3d")))
     if not xml:
         return []
     try:
@@ -221,29 +224,35 @@ def main() -> None:
             pass
 
     raw_items = search_news(args.query)
-    if not raw_items:
-        sys.exit("error: Google News RSS returned no results for this query.")
-
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=args.hours)
 
-    articles = []
-    for item in raw_items:
+    def _mk(item):
         dt = parse_date(item.get("date_raw"), now)
-        if dt is not None and dt < cutoff:
-            continue
-        articles.append({
+        return dt, {
             "title": item["title"] or "(untitled)",
             "link": item["link"],
             "summary": item["summary"] or "",
             "source": item.get("source") or "",
             "date": dt.isoformat() if dt else (str(item["date_raw"]) if item["date_raw"] else None),
-        })
+        }
+
+    articles = []
+    for item in raw_items:
+        dt, art = _mk(item)
+        if dt is not None and dt < cutoff:
+            continue
+        articles.append(art)
         if len(articles) >= args.limit:
             break
 
-    if not articles:
-        sys.exit(f"error: no articles within the last {args.hours}h for this query.")
+    # Graceful fallback: never hard-fail the build. If nothing is within the
+    # window (or the search came back empty), keep the freshest items we got —
+    # Google News RSS is newest-first, so the top N are the most recent.
+    if not articles and raw_items:
+        articles = [_mk(it)[1] for it in raw_items[: args.limit]]
+        print(f"note: no items within {args.hours}h; using {len(articles)} most-recent instead.",
+              file=sys.stderr)
 
     if not args.no_body:
         for a in articles:
@@ -252,7 +261,7 @@ def main() -> None:
                 a["summary"] = body
 
     verdict = None
-    if not args.no_verdict:
+    if not args.no_verdict and articles:
         verdict = timing_verdict(articles, args.monthly_usd)
 
     out_path = args.out or os.path.join(
