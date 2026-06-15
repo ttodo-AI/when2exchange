@@ -1,0 +1,777 @@
+#!/usr/bin/env python3
+"""
+@when2exchange 데일리 인스타 캐러셀 PNG 생성기.
+
+`output/factors-*.json`(요인·tldr·card_title) + `site/rate.json`(환율·시계열)을 읽어,
+페르소나별 판정(share_page.py renderGauge 로직 포팅)을 계산하고,
+웹사이트(share_page.py)와 동일한 팔레트로 슬라이드를 Playwright로 1080x1350 PNG 렌더한다.
+
+표준 라이브러리 + playwright만 사용. 결과는 stdout, 에러는 stderr.
+  python executions/carousel.py [--cover-only] [--guides] [--out output/cards]
+"""
+import argparse
+import datetime as dt
+import glob
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+
+# ── 페르소나 가중치 [1주, 1달, 3개월] (share_page.py SET_W, 합=1) ───────────────
+SET_W = {
+    "student":  [0.10, 0.30, 0.60],
+    "traveler": [0.30, 0.50, 0.20],
+    "investor": [0.50, 0.35, 0.15],
+}
+PERSONA = [
+    ("student",  "🎓", "유학생"),
+    ("investor", "📈", "투자자"),
+    ("traveler", "✈️", "여행자"),
+]
+# vIdx 0/1/2 — light=신호등 불빛(선명), fg=글씨색(웹 good/mid/bad fg, 읽기 좋게)
+VERDICT = [
+    {"dot": "🟢", "light": "#1f9d57", "fg": "#1f7a47", "text": "지금 환전하기 좋아요"},
+    {"dot": "🟡", "light": "#ffb020", "fg": "#9a6b00", "text": "지금은 보통이에요"},
+    {"dot": "🔴", "light": "#e0383e", "fg": "#c5333a", "text": "지금은 환전이 아까워요"},
+]
+
+# 사이트 마스코트(슈나우저) 인라인 SVG — 투명 배경(동그라미 없음)
+DOG_SVG = (
+    '<svg class="dog" viewBox="0 0 72 48" role="img">'
+    '<rect x="16" y="30" width="4.6" height="12" rx="2.3" fill="#7f8893"/>'
+    '<rect x="24" y="30" width="4.6" height="12" rx="2.3" fill="#8b94a0"/>'
+    '<rect x="41" y="30" width="4.6" height="12" rx="2.3" fill="#7f8893"/>'
+    '<rect x="49" y="30" width="4.6" height="12" rx="2.3" fill="#8b94a0"/>'
+    '<rect x="11" y="16" width="46" height="18" rx="9" fill="#9aa3ad"/>'
+    '<rect x="46" y="7" width="21" height="21" rx="7" fill="#9aa3ad"/>'
+    '<path d="M48 9 q1 -7 7 -5 l-1 8 z" fill="#7f8893"/>'
+    '<path d="M53 12 q5 -2 9 1 q-4 0 -9 2 z" fill="#d3d8de"/>'
+    '<circle cx="58" cy="16.5" r="1.8" fill="#1c2230"/>'
+    '<path d="M60 19 h8 v4 q0 6 -5 7 q-4 -1 -3 -7 z" fill="#d3d8de"/>'
+    '<circle cx="67" cy="20" r="1.9" fill="#1c2230"/></svg>'
+)
+
+
+def _pct_in(vals, rate_now, n):
+    w = vals[-n:]
+    if len(w) < 2:
+        return None
+    return sum(1 for v in w if v <= rate_now) / len(w)
+
+
+def _remap(p):
+    xs = [0, 0.10, 0.30, 0.70, 0.90, 1]
+    ys = [0, 0.20, 0.40, 0.60, 0.80, 1]
+    for i in range(1, len(xs)):
+        if p <= xs[i]:
+            t = (p - xs[i - 1]) / (xs[i] - xs[i - 1])
+            return ys[i - 1] + t * (ys[i] - ys[i - 1])
+    return 1.0
+
+
+def persona_verdict(series, rate_now, persona):
+    """페르소나 판정 → VERDICT[vIdx]. share_page.py renderGauge 포팅."""
+    p7, p30, p90 = (_pct_in(series, rate_now, n) for n in (7, 22, 63))
+    if p90 is None:
+        return None
+    a7 = p7 if p7 is not None else (p30 if p30 is not None else p90)
+    a30 = p30 if p30 is not None else p90
+    w = SET_W[persona]
+    pct = w[0] * a7 + w[1] * a30 + w[2] * p90
+    zone = min(4, int(_remap(pct) * 5))
+    vidx = 0 if zone <= 1 else (1 if zone == 2 else 2)
+    return VERDICT[vidx]
+
+
+def validate_facts(factors, rate):
+    """LLM 내러티브의 환율 변동 주장 ↔ rate.json 실제 전일대비 대조. 모순 경고 리스트."""
+    r, p = rate.get("rate"), rate.get("prev")
+    if not (r and p):
+        return []
+    actual = r - p  # +면 상승, -면 하락
+    text = " ".join([
+        factors.get("card_title", ""),
+        " ".join(factors.get("tldr", []) or []),
+        factors.get("overall_why", "") or "",
+    ])
+    warns = []
+    # 1) "N원 (하락/상승)" 크기 주장 vs 실제
+    for m in re.finditer(r"(\d+)\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
+                         r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
+        claimed = int(m.group(1))
+        if abs(claimed - abs(actual)) > 3:
+            warns.append(
+                f"텍스트 '{claimed}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원 "
+                f"(차이 {abs(claimed - abs(actual)):.0f}원)"
+            )
+    # 2) 거의 보합인데 방향/변동을 주장
+    if abs(actual) < 1.0 and any(
+        w in text for w in ("하락", "급락", "상승", "급등", "강세", "약세")
+    ):
+        warns.append(f"실제 전일대비 {actual:+.1f}원(거의 보합)인데 텍스트가 변동/방향을 주장")
+    # 3) 핵심 정렬 점검 (경제 전문가): 임박한 ★★★ 이벤트가 요약에 반영됐나
+    today = dt.date.today()
+    cfs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
+    if cfs:
+        for e in json.load(open(cfs[-1], encoding="utf-8")).get("events", []):
+            try:
+                days = (dt.date.fromisoformat(e.get("date", "")) - today).days
+            except ValueError:
+                continue
+            if int(e.get("importance", 0)) >= 3 and 0 <= days <= 3:
+                km = re.search(r"(FOMC|CPI|금통위|고용|금리|소비자물가|연준)", e.get("name", ""))
+                kw = km.group(1) if km else e.get("name", "")[:5]
+                if kw and kw not in text:
+                    warns.append(
+                        f"[핵심정렬] 임박 ★★★ '{e.get('name','')}'이 요약에 안 보임 — 오늘 핵심 맞는지 확인"
+                    )
+    return warns
+
+
+def load_data():
+    fs = sorted(glob.glob(str(ROOT / "output" / "factors-*.json")))
+    factors = json.load(open(fs[-1], encoding="utf-8")) if fs else {}
+    rate = json.load(open(ROOT / "site" / "rate.json", encoding="utf-8"))
+    series = [pt["close"] for pt in rate.get("series", []) if "close" in pt]
+    return factors, rate, series
+
+
+# ── HTML (웹사이트 share_page.py 팔레트 그대로) ───────────────────────────────
+HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Pretendard',sans-serif;-webkit-font-smoothing:antialiased}
+  /* 웹 팔레트: --bg #f4f5f7 / --ink #14171f / --muted #6b7280 / --line #ebedf0
+     / --brand #3b5bdb / --brand-bg #eef1fd */
+  /* 세이프존: 상96 / 옆76 / 하150 */
+  .page{width:1080px;height:1350px;background:#f4f5f7;padding:96px 76px 150px;
+        display:flex;flex-direction:column;color:#14171f;position:relative}
+  .page.cover{justify-content:space-between}
+  svg.dog{width:auto;flex:none}
+
+  .m1{font-size:33px;font-weight:700;color:#6b7280;letter-spacing:-.02em;
+      display:flex;justify-content:space-between;align-items:baseline}
+  .m1 .kw{color:#3b5bdb}
+  .m1-date{color:#9aa1ad;font-weight:700;font-size:30px}
+  .m2{margin-top:8px;font-size:52px;font-weight:800;color:#14171f;letter-spacing:-.035em;
+      line-height:1.16;white-space:nowrap;display:flex;align-items:center;gap:14px;font-size:46px}
+  .m2 svg.dog{height:58px}
+  .m2 .kw{color:#3b5bdb}
+  /* 2안: 작은 회색 리드(브랜드 질문) + 큰 날짜·이슈 헤드라인 */
+  .hl2{margin-top:24px;font-size:88px;font-weight:900;letter-spacing:-.05em;
+       line-height:1.12;word-break:keep-all}
+  .hl2 .hl-date{font-size:42px;color:#9aa1ad;margin-right:16px}
+  .hl2 .hl-title{color:#14171f}
+  .hl2 .hl-kw{color:#3b5bdb}
+  .hl2 svg.dog{height:56px;margin-left:12px;vertical-align:-15px}
+
+  /* 환율 박스 (웹 .hero 그대로) */
+  .hero{margin-top:38px;background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
+        padding:48px 48px;box-shadow:0 6px 22px rgba(20,30,60,.05)}
+  .h-label{font-size:28px;font-weight:700;color:#6b7280}
+  .h-main{display:flex;align-items:baseline;margin-top:10px}
+  .h-rate{font-size:82px;font-weight:800;letter-spacing:-.035em;line-height:1.02;color:#14171f}
+  .h-won{font-size:30px;font-weight:800;margin-left:4px}
+  .h-delta{font-size:29px;font-weight:800;margin-left:18px;letter-spacing:-.02em}
+  .h-delta.up{color:#c5333a}
+  .h-delta.down{color:#1f7a47}
+  .h-asof{font-size:23px;font-weight:600;color:#9aa1ad;margin-top:12px}
+
+  /* 30초 요약 (웹 .tldr 그대로) */
+  .tldr{margin-top:24px;background:#eef1fd;border-radius:26px;padding:36px 48px}
+  .tldr-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:20px}
+  .tldr-cap{font-size:25px;font-weight:800;color:#3b5bdb;letter-spacing:.02em}
+  .tldr-upd{font-size:22px;font-weight:600;color:#9aa1ad}
+  .tldr-list{display:flex;flex-direction:column;gap:15px}
+  .tldr-li{font-size:28px;line-height:1.5;color:#2b313d;letter-spacing:-.02em;
+           word-break:keep-all;padding-left:27px;position:relative}
+  .tldr-li::before{content:'';position:absolute;left:5px;top:.6em;width:9px;height:9px;
+                   border-radius:50%;background:#3b5bdb;opacity:.55}
+
+  /* 페르소나 탭 (웹 .tabs 그대로 + 신호 색점) */
+  .ptabs{display:flex;gap:7px;background:#eceef1;border-radius:22px;padding:7px;margin-top:24px}
+  .ptab{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;
+        padding:26px 8px;border-radius:17px;font-size:37px;font-weight:800;
+        color:#14171f;letter-spacing:-.02em}
+  .ptab .pico{font-size:38px}
+  .ptab .pdot{width:22px;height:22px;border-radius:50%;flex:none;margin-left:2px}
+
+  .spacer{flex:1}
+  /* 미니 목차 (전체 섹션 인덱스) */
+  .toc-row{display:flex;align-items:center;justify-content:flex-end;gap:11px}
+  .toc-chip{font-size:25px;font-weight:700;color:#6b7280;background:#eceef1;
+            border-radius:999px;padding:11px 18px;letter-spacing:-.01em}
+  .toc-arrow{color:#3b5bdb;font-size:40px;font-weight:800;margin-right:5px}
+  .cmascot{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;
+           color:#aab2bd;font-size:29px;font-weight:700;letter-spacing:-.01em}
+  .cmascot svg.dog{height:92px}
+
+  /* 페르소나 신호 (slide 2용) */
+  .card{margin-top:40px;background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
+        padding:50px 46px 40px;box-shadow:0 6px 22px rgba(20,30,60,.05)}
+  .card-t{font-size:26px;font-weight:800;color:#6b7280;margin-bottom:36px}
+  .prow{display:flex;align-items:center;justify-content:space-between;padding:19px 0}
+  .prow+.prow{border-top:1.5px solid #ebedf0}
+  .pleft{font-size:36px;font-weight:800;letter-spacing:-.02em}
+  .pleft .pico{font-size:38px;margin-right:14px}
+  .pright{display:flex;align-items:center;font-size:32px;font-weight:800}
+  .pright .pdot2{width:25px;height:25px;border-radius:50%;margin-right:14px;flex:none}
+
+  /* 공통 슬라이드 헤더/타이틀/노트 */
+  .shead{font-size:26px;font-weight:700;color:#9aa1ad;display:flex;align-items:center;gap:11px}
+  .shead svg.dog{height:36px}
+  .stitle{margin-top:18px;font-size:50px;font-weight:800;color:#14171f;
+          letter-spacing:-.035em;line-height:1.22;word-break:keep-all}
+  .stitle .kw{color:#3b5bdb}
+  .snote{margin-top:30px;font-size:27px;font-weight:600;color:#6b7280;line-height:1.5;
+         letter-spacing:-.02em;word-break:keep-all}
+  .snote b{color:#14171f;font-weight:800}
+  .sfoot{display:flex;justify-content:flex-end;font-size:28px;font-weight:800;color:#3b5bdb}
+
+  /* 그래프 슬라이드 */
+  .gbig{margin-top:38px;background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
+        padding:38px 42px;box-shadow:0 6px 22px rgba(20,30,60,.05)}
+  .grow{display:flex;align-items:baseline;justify-content:space-between}
+  .glabel{font-size:28px;font-weight:800;color:#14171f}
+  .gnow{font-size:29px;font-weight:800;color:#3b5bdb}
+  svg.spark{width:100%;height:auto;display:block;margin:18px 0 12px}
+  .grange{display:flex;justify-content:space-between;font-size:23px;font-weight:700;
+          color:#9aa1ad;margin-top:12px}
+  .gsmall .grange{font-size:20px;margin-top:10px}
+  .gtag{margin-top:14px;font-size:27px;font-weight:700;color:#4e5968}
+  .gtag b{color:#14171f;font-weight:800}
+  .gsmall-wrap{display:flex;gap:24px;margin-top:24px}
+  .gsmall{flex:1;background:#fff;border:1.5px solid #ebedf0;border-radius:24px;padding:26px 28px}
+  .gsmall .glabel{font-size:25px}
+  .gsmall svg.spark{margin:12px 0 8px}
+  .gsmall .gtag{font-size:22px;margin-top:6px;word-break:keep-all}
+  svg.hchart{width:100%;height:auto;display:block;margin:16px 0 6px}
+  .gsmall svg.hchart{margin:12px 0 4px}
+  .hchart .c-lbl{font-weight:800;fill:#8b95a1}
+  .hchart .c-avg{font-weight:700;fill:#aab2bd}
+  .gtag .up{color:#c5333a;font-weight:800}
+  .gtag .dn{color:#1f7a47;font-weight:800}
+
+  /* 파란 배경 변형 (그래프 슬라이드 — 흰 카드 강조) */
+  .page.blue{background:#3b5bdb;color:#fff}
+  .page.blue .shead{color:#c3d0fa}
+  .page.blue .stitle{color:#fff}
+  .page.blue .stitle .kw{color:#fff;text-decoration:underline;text-underline-offset:7px;
+       text-decoration-thickness:4px;text-decoration-color:rgba(255,255,255,.45)}
+  .page.blue .snote{color:#dce3fb}
+  .page.blue .snote b{color:#fff}
+  .page.blue .sfoot{color:#fff}
+
+  /* 일정(이벤트) 슬라이드 */
+  .ev{display:flex;gap:26px;padding:25px 0}
+  .ev+.ev{border-top:1.5px solid #ebedf0}
+  .ev-d{flex:none;width:120px;text-align:center}
+  .ev-dd{display:block;font-size:31px;font-weight:800;color:#3b5bdb}
+  .ev-date{display:block;font-size:22px;font-weight:700;color:#9aa1ad;margin-top:3px}
+  .ev-main{flex:1;min-width:0}
+  .ev-name{font-size:31px;font-weight:800;color:#14171f;letter-spacing:-.02em;
+           line-height:1.3;word-break:keep-all}
+  .ev-star{color:#f5a623;font-size:25px;letter-spacing:-2px;margin-right:5px}
+  .ev-why{margin-top:9px;font-size:25px;font-weight:600;color:#6b7280;
+          line-height:1.45;word-break:keep-all}
+  /* 일정 v2: 가까운 일정 확장 카드 + 시나리오 */
+  .evbig{margin-top:34px;background:#fff;border:1.5px solid #ebedf0;border-radius:24px;
+         padding:34px 36px;box-shadow:0 4px 16px rgba(20,30,60,.04)}
+  .evbig-row{display:flex;gap:16px;align-items:flex-start}
+  .evbig-dd{flex:none;font-size:28px;font-weight:800;color:#3b5bdb;margin-top:2px}
+  .evbig-main{flex:1;min-width:0}
+  .evbig-title{font-size:32px;font-weight:800;color:#14171f;letter-spacing:-.02em;
+               line-height:1.3;word-break:keep-all}
+  .evbig-star{flex:none;color:#f5a623;font-size:23px;letter-spacing:-2px;margin-top:6px}
+  .scen{display:flex;gap:12px;margin-top:17px;align-items:flex-start}
+  .scen-arr{flex:none;width:28px;text-align:center;font-size:27px;font-weight:800;margin-top:-1px}
+  .scen-arr.up{color:#c5333a}
+  .scen-arr.dn{color:#1f7a47}
+  .scen-arr.fl{color:#b4bbc4}
+  .scen-t{font-size:30px;font-weight:600;color:#4e5968;line-height:1.45;
+          letter-spacing:-.02em;word-break:keep-all}
+  .scen-t b{color:#14171f;font-weight:800}
+  .evbig-sum{margin-top:13px;font-size:31px;font-weight:600;color:#4e5968;
+             line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
+  .evrow{display:flex;align-items:flex-start;gap:18px;padding:24px 6px}
+  .evrow+.evrow{border-top:1.5px solid #ebedf0}
+  .evrow-dd{flex:none;width:104px;font-size:28px;font-weight:800;color:#3b5bdb;
+            text-align:center;margin-top:2px}
+  .evrow-main{flex:1;min-width:0}
+  .evrow-name{font-size:31px;font-weight:800;color:#14171f;letter-spacing:-.02em;
+              line-height:1.3;word-break:keep-all}
+  .evrow-sum{margin-top:8px;font-size:29px;font-weight:600;color:#4e5968;
+             line-height:1.4;letter-spacing:-.02em;word-break:keep-all}
+  .evrow-star{flex:none;color:#f5a623;font-size:23px;letter-spacing:-2px;margin-top:4px}
+  .evlist-cap{font-size:27px;font-weight:800;color:#9aa1ad;margin:26px 2px 6px}
+
+  /* 요인 슬라이드 — 헤더 카드 + 본문 */
+  .fmid{flex:1;display:flex;flex-direction:column;justify-content:center}
+  .fhdr{background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
+        padding:38px 40px;box-shadow:0 6px 22px rgba(20,30,60,.05);
+        display:flex;align-items:center;gap:26px}
+  .fhdr-badge{flex:none;width:120px;height:120px;border-radius:30px;background:#eef1fd;
+              display:flex;align-items:center;justify-content:center;font-size:68px}
+  .fhdr-main{flex:1;min-width:0}
+  .fhdr-rank{font-size:27px;font-weight:800;color:#3b5bdb;letter-spacing:-.01em}
+  .fhdr-name{margin-top:5px;font-size:46px;font-weight:800;color:#14171f;letter-spacing:-.03em;
+             line-height:1.15;word-break:keep-all}
+  .fimp2{margin-top:16px;display:flex;align-items:center;gap:13px}
+  .fbar{display:flex;gap:6px}
+  .fbar i{width:40px;height:13px;border-radius:7px;background:#e3e7ec;display:block}
+  .fbar i.on{background:#3b5bdb}
+  .fimp2-t{font-size:24px;font-weight:800;color:#3b5bdb}
+  .fwhy{margin-top:38px;font-size:38px;font-weight:700;color:#14171f;line-height:1.4;
+        letter-spacing:-.025em;word-break:keep-all}
+  .fbul{margin-top:30px;display:flex;flex-direction:column;gap:20px}
+  .fbul-i{display:flex;gap:16px;font-size:30px;font-weight:600;color:#4e5968;line-height:1.45;
+          letter-spacing:-.02em;word-break:keep-all}
+  .fbul-i::before{content:'';flex:none;width:11px;height:11px;border-radius:50%;
+                  background:#3b5bdb;margin-top:.5em}
+  .fsrc{margin-top:30px;font-size:25px;font-weight:700;color:#9aa1ad}
+  /* 요인 B안 — 파란 배경 + 흰 카드 */
+  .fcardb{background:#fff;border-radius:36px;padding:58px 54px;
+          box-shadow:0 24px 64px rgba(15,23,55,.28);display:flex;flex-direction:column}
+  .fcardb.gray{border:1.5px solid #ebedf0;box-shadow:0 16px 44px rgba(20,30,60,.10)}
+  .fcardb-top{display:flex;align-items:center;gap:26px}
+  .fcardb .fimp2{margin-top:26px}
+  .fcardb .fwhy{margin-top:30px}
+
+  /* 30초 요약 슬라이드 (크게 읽히게) */
+  .sc-wrap{margin-top:44px;display:flex;flex-direction:column;gap:24px}
+  .sc{display:flex;gap:26px;align-items:flex-start;background:#fff;border:1.5px solid #ebedf0;
+      border-radius:24px;padding:36px 38px;box-shadow:0 4px 16px rgba(20,30,60,.04)}
+  .sc-n{flex:none;width:54px;height:54px;border-radius:15px;background:#3b5bdb;color:#fff;
+        font-size:29px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px}
+  .sc-t{font-size:32px;font-weight:600;color:#2b313d;line-height:1.5;
+        letter-spacing:-.02em;word-break:keep-all}
+
+  /* --guides */
+  .guides{position:absolute;inset:0;pointer-events:none;z-index:99}
+  .guides i{position:absolute;background:rgba(197,51,58,.15)}
+  .guides .gt{top:0;left:0;right:0;height:96px}
+  .guides .gb{bottom:0;left:0;right:0;height:150px}
+  .guides .gl{top:0;bottom:0;left:0;width:40px}
+  .guides .gr{top:0;bottom:0;right:0;width:40px}
+  .guides .safe{position:absolute;top:96px;bottom:150px;left:40px;right:40px;
+                border:3px dashed rgba(31,122,71,.8);border-radius:8px}
+</style></head><body>"""
+FOOT = "</body></html>"
+GUIDES = ('<div class="guides"><i class="gt"></i><i class="gb"></i><i class="gl"></i>'
+          '<i class="gr"></i><div class="safe"></div></div>')
+
+
+def cover_html(factors, rate, series, guides=False, version=2):  # 2안 확정
+    rate_now = rate.get("rate") or (series[-1] if series else 0)
+    title = factors.get("card_title", "오늘의 환율 브리핑")
+
+    prev = rate.get("prev")
+    delta = ""
+    if prev:
+        d = rate_now - prev
+        if abs(d) >= 0.05:
+            arrow, cls = ("▲", "up") if d > 0 else ("▼", "down")
+            delta = f'<span class="h-delta {cls}">{arrow} {abs(d):,.1f}원</span>'
+    asof = rate.get("asof", "")
+    today = dt.date.today()
+    wk = ["월", "화", "수", "목", "금", "토", "주일"][today.weekday()]
+    ptabs = "".join(
+        f'<div class="ptab"><span class="pico">{ico}</span>{name}'
+        f'<span class="pdot" style="background:'
+        f'{(persona_verdict(series, rate_now, key) or VERDICT[1])["light"]}"></span></div>'
+        for key, ico, name in PERSONA
+    )
+
+    wk = ["월", "화", "수", "목", "금", "토", "주일"][today.weekday()]
+    # 리드(질문+날짜 우측) / 헤드라인(제목, 환율박스 위)
+    lead = (
+        '<div class="m1"><span>이번 달, 오늘 환전해도 될까?</span>'
+        f'<span class="m1-date">{today.month}/{today.day} ({wk})</span></div>'
+    )
+    _w = title.split()
+    # 큰 두 줄: 앞부분(검정) → 줄바꿈 → 마지막 두 단어(파랑 키워드)
+    title_html = (
+        f'<span class="hl-kw">{title}</span>' if len(_w) <= 2
+        else " ".join(_w[:-2]) + f'<br><span class="hl-kw">{" ".join(_w[-2:])}</span>'
+    )
+    headline = f'<div class="hl2"><span class="hl-title">{title_html}</span>{DOG_SVG}</div>'
+    mid = (
+        headline
+        + '<div class="hero"><div class="h-label">매매기준율</div>'
+        + f'<div class="h-main"><span class="h-rate">{rate_now:,.1f}</span>'
+        + f'<span class="h-won">원</span>{delta}</div>'
+        + f'<div class="h-asof">{asof} 기준</div></div>'
+        + f'<div class="ptabs">{ptabs}</div>'
+    )
+    toc = (
+        '<div class="toc-row"><span class="toc-arrow">→</span>'
+        '<span class="toc-chip">⏱️ 30초요약</span><span class="toc-chip">📅 영향일정</span>'
+        '<span class="toc-chip">📈 환율흐름</span><span class="toc-chip">🔍 형성요인</span></div>'
+    )
+    return (HEAD + '<div class="page cover">'
+            + f'<div class="ctop">{lead}</div>'
+            + f'<div class="cmid">{mid}</div>'
+            + toc
+            + (GUIDES if guides else "") + "</div>" + FOOT)
+
+
+def _shead(today):
+    return f'<div class="shead">{DOG_SVG} 환전타이밍 · {today.month}/{today.day}</div>'
+
+
+def slide_signal(factors, rate, series, guides=False):
+    """슬라이드 2: 페르소나별 환전 신호(전체 판정 텍스트)."""
+    rate_now = rate.get("rate") or (series[-1] if series else 0)
+    today = dt.date.today()
+    rows = ""
+    for key, ico, name in PERSONA:
+        v = persona_verdict(series, rate_now, key) or VERDICT[1]
+        rows += (
+            f'<div class="prow"><div class="pleft"><span class="pico">{ico}</span>{name}</div>'
+            f'<div class="pright" style="color:{v["fg"]}">'
+            f'<span class="pdot2" style="background:{v["light"]}"></span>{v["text"]}</div></div>'
+        )
+    body = (
+        _shead(today)
+        + '<div class="stitle">오늘, <span class="kw">내 상황</span>별 환전 신호</div>'
+        + f'<div class="card" style="margin-top:46px">{rows}</div>'
+        + '<div class="snote">같은 환율도 <b>구매 시야</b>에 따라 기준이 달라요. '
+        + '유학·송금은 길게(3개월), 투자는 짧게(1주) 봐서 신호가 갈려요.</div>'
+        + '<div class="spacer"></div>'
+        + '<div class="sfoot">왜 이런 신호인지 다음 장에서 →</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def _spark(vals, W, H):
+    n = len(vals)
+    if n < 2:
+        return ""
+    lo, hi = min(vals), max(vals)
+    rng = (hi - lo) or 1
+    pad = 10
+    pts = [(pad + (W - 2 * pad) * i / (n - 1),
+            pad + (H - 2 * pad) * (1 - (v - lo) / rng)) for i, v in enumerate(vals)]
+    poly = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+    lx, ly = pts[-1]
+    return (f'<svg class="spark" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
+            f'<polyline points="{poly}" fill="none" stroke="#3b5bdb" stroke-width="4" '
+            f'stroke-linejoin="round" stroke-linecap="round"/>'
+            f'<circle cx="{lx:.1f}" cy="{ly:.1f}" r="8" fill="#3b5bdb"/></svg>')
+
+
+def _wtag(series, rate_now, n):
+    vals = series[-n:] if len(series) >= n else series[:]
+    p = _pct_in(series, rate_now, n)
+    tag = "중간" if p is None else ("높은 편" if p >= 0.66 else ("낮은 편" if p <= 0.34 else "중간"))
+    lo, hi = (min(vals), max(vals)) if vals else (0, 0)
+    return vals, lo, hi, tag
+
+
+def _mdy(s):
+    p = s.split("-")
+    return f"{int(p[1])}/{int(p[2])}"
+
+
+def _chart(pairs, rate_now, W, H):
+    """심플 라인 + 회색 평균 점선 + 오늘 점(파랑). 반환: (svg, avg)."""
+    vals = [c for _, c in pairs]
+    n = len(vals)
+    if n < 2:
+        return "", float(rate_now), rate_now, rate_now
+    lo, hi = min(vals), max(vals)
+    avg = sum(vals) / n
+    rng = (hi - lo) or 1
+    pad = 12
+
+    def X(i):
+        return pad + (W - 2 * pad) * i / (n - 1)
+
+    def Y(v):
+        return pad + (H - 2 * pad) * (1 - (v - lo) / rng)
+
+    poly = " ".join(f"{X(i):.1f},{Y(v):.1f}" for i, v in enumerate(vals))
+    yavg = Y(avg)
+    return (
+        f'<svg class="hchart" width="{W}" height="{H}" viewBox="0 0 {W} {H}">'
+        f'<line x1="{pad}" y1="{yavg:.1f}" x2="{W-pad}" y2="{yavg:.1f}" '
+        f'stroke="#c8cdd6" stroke-width="2.5" stroke-dasharray="9 7"/>'
+        f'<polyline points="{poly}" fill="none" stroke="#3b5bdb" stroke-width="4" '
+        f'stroke-linejoin="round" stroke-linecap="round"/>'
+        f'<circle cx="{X(n-1):.1f}" cy="{Y(vals[-1]):.1f}" r="9" fill="#3b5bdb" '
+        f'stroke="#fff" stroke-width="3"/></svg>',
+        avg, lo, hi,
+    )
+
+
+def _avg_txt(label, avg, rate_now):
+    delta = rate_now - avg
+    if abs(delta) < 0.5:
+        return "평균과 비슷해요"
+    if delta > 0:
+        return f'평균보다 <b>높은</b> 편이에요 <b class="up">▲{abs(delta):,.0f}원</b>'
+    return f'평균보다 <b>낮은</b> 편이에요 <b class="dn">▼{abs(delta):,.0f}원</b>'
+
+
+def slide_graph(factors, rate, series, guides=False):
+    """슬라이드 2: 1주/1달/3개월 흐름 (파란 배경)."""
+    rate_now = rate.get("rate") or (series[-1] if series else 0)
+    today = dt.date.today()
+    pairs_all = [(p["date"], p["close"]) for p in rate.get("series", [])
+                 if "close" in p and "date" in p]
+    hero_svg, avg30, lo30, hi30 = _chart(pairs_all[-22:], rate_now, 840, 156)
+    big = (
+        '<div class="gbig"><div class="grow"><span class="glabel">최근 1달</span>'
+        f'<span class="gnow">지금 {rate_now:,.1f}원</span></div>'
+        f'{hero_svg}'
+        f'<div class="grange"><span>저 {lo30:,.0f}원</span><span>고 {hi30:,.0f}원</span></div>'
+        f'<div class="gtag">{_avg_txt("한 달", avg30, rate_now)}</div></div>'
+    )
+    sm7, avg7, lo7, hi7 = _chart(pairs_all[-7:], rate_now, 360, 100)
+    sm90, avg90, lo90, hi90 = _chart(pairs_all[-63:], rate_now, 360, 100)
+    small = (
+        '<div class="gsmall-wrap">'
+        f'<div class="gsmall"><span class="glabel">최근 1주</span>{sm7}'
+        f'<div class="grange"><span>저 {lo7:,.0f}</span><span>고 {hi7:,.0f}</span></div>'
+        f'<div class="gtag">{_avg_txt("1주", avg7, rate_now)}</div></div>'
+        f'<div class="gsmall"><span class="glabel">최근 3개월</span>{sm90}'
+        f'<div class="grange"><span>저 {lo90:,.0f}</span><span>고 {hi90:,.0f}</span></div>'
+        f'<div class="gtag">{_avg_txt("3개월", avg90, rate_now)}</div></div></div>'
+    )
+    body = (
+        _shead(today)
+        + '<div class="stitle">오늘 환율, <span class="kw">최근 흐름</span> 속 어디쯤?</div>'
+        + big + small
+        + '<div class="snote">며칠 안에 쓸 돈이면 <b>1주</b>, 길게 모을 돈이면 <b>3개월</b>을 보세요!</div>'
+        + '<div class="spacer"></div>'
+        + '<div class="sfoot">오늘 이 흐름의 이유 →</div>'
+    )
+    return HEAD + '<div class="page blue">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def slide_summary(factors, rate, series, guides=False):
+    """슬라이드 2: 30초 요약 (tldr 3줄, 크게)."""
+    today = dt.date.today()
+    tldr = factors.get("tldr", []) or []
+    cards = "".join(
+        f'<div class="sc"><span class="sc-n">{i+1}</span><div class="sc-t">{t}</div></div>'
+        for i, t in enumerate(tldr[:3])
+    )
+    body = (
+        _shead(today)
+        + '<div class="stitle"><span class="kw">30초</span>로 보는 오늘 환율</div>'
+        + f'<div class="sc-wrap">{cards}</div>'
+        + '<div class="spacer"></div>'
+        + '<div class="sfoot">이번 주 주목할 일정 →</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def _dday(ed, today):
+    return {0: "오늘", 1: "내일", 2: "모레"}.get((ed - today).days, f"D-{(ed - today).days}")
+
+
+def slide_calendar(factors, rate, series, guides=False):
+    """가까운 일정은 시나리오(▲/▼)로 확장, 나머지는 compact + ★★★(최대 변수) 강조."""
+    today = dt.date.today()
+    fs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
+    cal = json.load(open(fs[-1], encoding="utf-8")) if fs else {"events": []}
+    evs = [e for e in cal.get("events", []) if e.get("date", "") >= today.isoformat()]
+    evs.sort(key=lambda e: e["date"])
+    near, rest = (evs[0] if evs else None), evs[1:3]
+
+    near_html = ""
+    if near:
+        ed = dt.date.fromisoformat(near["date"])
+        sc = ""
+        for s in (near.get("scenarios") or [])[:2]:
+            eff = s.get("effect", "")
+            if any(w in eff for w in ("내려", "하락", "내림")):
+                arr, cls = "▼", "dn"
+            elif any(w in eff for w in ("올라", "상승", "오름")):
+                arr, cls = "▲", "up"
+            else:
+                arr, cls = "↔", "fl"
+            sc += (f'<div class="scen"><span class="scen-arr {cls}">{arr}</span>'
+                   f'<div class="scen-t"><b>{s.get("cond","")}</b> {eff}</div></div>')
+        summ = (near.get("summary") or "").strip()
+        near_html = (
+            '<div class="evbig"><div class="evbig-row">'
+            f'<span class="evbig-dd">{_dday(ed, today)}</span><div class="evbig-main">'
+            f'<div class="evbig-title">{near.get("name","")}</div>'
+            f'<div class="evbig-sum">{summ}</div>{sc}</div>'
+            f'<span class="evbig-star">{"★"*max(1,int(near.get("importance",1)))}</span>'
+            '</div></div>'
+        )
+
+    rest_html = ""
+    for e in rest:
+        ed = dt.date.fromisoformat(e["date"])
+        imp = int(e.get("importance", 1))
+        rsum = (e.get("summary") or "").strip()
+        rest_html += (
+            f'<div class="evrow"><span class="evrow-dd">{_dday(ed, today)}</span>'
+            f'<div class="evrow-main"><div class="evrow-name">{e.get("name","")}</div>'
+            f'<div class="evrow-sum">{rsum}</div></div>'
+            f'<span class="evrow-star">{"★"*max(1,imp)}</span></div>'
+        )
+
+    body = (
+        _shead(today)
+        + '<div class="stitle">이번 주, 환율 <span class="kw">흔들 수 있는</span> 일정</div>'
+        + near_html
+        + (f'<div class="evlist-cap">다음 일정</div>{rest_html}' if rest_html else "")
+        + '<div class="spacer"></div>'
+        + '<div class="sfoot">오늘 환율은 어디쯤? →</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def slide_factor(f, rank, today, is_last=False, guides=False):
+    """요인 1장 (이모지+이름+짧은 why+출처). 심플."""
+    impact = max(1, min(5, int(f.get("impact", 3))))
+    bar = "".join(f'<i class="{"on" if i < impact else ""}"></i>' for i in range(5))
+    ilabel = {5: "매우 큼", 4: "큼", 3: "보통", 2: "작음", 1: "미미"}[impact]
+    head = (f.get("headline") or "").strip()
+    bullets = (f.get("bullets") or [])[:2]
+    bul = "".join(f'<div class="fbul-i">{b}</div>' for b in bullets)
+    nsrc = len(f.get("sources", []) or [])
+    foot = "오늘 환전, 내 상황은? →" if is_last else "다음 요인 →"
+    body = (
+        _shead(today)
+        + '<div class="fmid"><div class="fhdr">'
+        + f'<div class="fhdr-badge">{f.get("emoji","")}</div><div class="fhdr-main">'
+        + f'<div class="fhdr-rank">환율 형성 요인 {rank}위</div>'
+        + f'<div class="fhdr-name">{f.get("name","")}</div>'
+        + f'<div class="fimp2"><span class="fbar">{bar}</span>'
+        + f'<span class="fimp2-t">영향도 {ilabel}</span></div></div></div>'
+        + f'<div class="fwhy">{head}</div>'
+        + (f'<div class="fbul">{bul}</div>' if bul else "")
+        + (f'<div class="fsrc">📰 출처 {nsrc}곳</div>' if nsrc else "")
+        + '</div>'
+        + f'<div class="sfoot">{foot}</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def slide_factor_b(f, rank, today, is_last=False, guides=False):
+    """요인 B안: 파란 배경 + 흰 카드 한 장에 전부."""
+    impact = max(1, min(5, int(f.get("impact", 3))))
+    bar = "".join(f'<i class="{"on" if i < impact else ""}"></i>' for i in range(5))
+    ilabel = {5: "매우 큼", 4: "큼", 3: "보통", 2: "작음", 1: "미미"}[impact]
+    head = (f.get("headline") or "").strip()
+    bullets = (f.get("bullets") or [])[:2]
+    bul = "".join(f'<div class="fbul-i">{b}</div>' for b in bullets)
+    nsrc = len(f.get("sources", []) or [])
+    foot = "오늘 환전, 내 상황은? →" if is_last else "다음 요인 →"
+    body = (
+        _shead(today)
+        + '<div class="fmid"><div class="fcardb">'
+        + '<div class="fcardb-top">'
+        + f'<div class="fhdr-badge">{f.get("emoji","")}</div><div class="fhdr-main">'
+        + f'<div class="fhdr-rank">환율 형성 요인 {rank}위</div>'
+        + f'<div class="fhdr-name">{f.get("name","")}</div></div></div>'
+        + f'<div class="fimp2"><span class="fbar">{bar}</span>'
+        + f'<span class="fimp2-t">영향도 {ilabel}</span></div>'
+        + f'<div class="fwhy">{head}</div>'
+        + (f'<div class="fbul">{bul}</div>' if bul else "")
+        + (f'<div class="fsrc">📰 출처 {nsrc}곳</div>' if nsrc else "")
+        + '</div></div>'
+        + f'<div class="sfoot">{foot}</div>'
+    )
+    return HEAD + '<div class="page blue">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def slide_factor_c(f, rank, today, is_last=False, guides=False):
+    """요인 C안: 회색 배경 + 흰 카드 한 장 (B 구조 + A 색 리듬)."""
+    impact = max(1, min(5, int(f.get("impact", 3))))
+    bar = "".join(f'<i class="{"on" if i < impact else ""}"></i>' for i in range(5))
+    ilabel = {5: "매우 큼", 4: "큼", 3: "보통", 2: "작음", 1: "미미"}[impact]
+    head = (f.get("headline") or "").strip()
+    bullets = (f.get("bullets") or [])[:2]
+    bul = "".join(f'<div class="fbul-i">{b}</div>' for b in bullets)
+    nsrc = len(f.get("sources", []) or [])
+    foot = "오늘 환전, 내 상황은? →" if is_last else "다음 요인 →"
+    body = (
+        _shead(today)
+        + '<div class="fmid"><div class="fcardb gray">'
+        + '<div class="fcardb-top">'
+        + f'<div class="fhdr-badge">{f.get("emoji","")}</div><div class="fhdr-main">'
+        + f'<div class="fhdr-rank">환율 형성 요인 {rank}위</div>'
+        + f'<div class="fhdr-name">{f.get("name","")}</div></div></div>'
+        + f'<div class="fimp2"><span class="fbar">{bar}</span>'
+        + f'<span class="fimp2-t">영향도 {ilabel}</span></div>'
+        + f'<div class="fwhy">{head}</div>'
+        + (f'<div class="fbul">{bul}</div>' if bul else "")
+        + (f'<div class="fsrc">📰 출처 {nsrc}곳</div>' if nsrc else "")
+        + '</div></div>'
+        + f'<div class="sfoot">{foot}</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
+
+
+def render(html, out_path, scale=2):
+    from playwright.sync_api import sync_playwright
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        pg = b.new_page(viewport={"width": 1080, "height": 1350}, device_scale_factor=scale)
+        pg.set_content(html, wait_until="networkidle")
+        pg.wait_for_timeout(300)
+        pg.screenshot(path=str(out_path), clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
+        b.close()
+    return out_path
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=str(ROOT / "output" / "cards"))
+    ap.add_argument("--cover-only", action="store_true")
+    ap.add_argument("--guides", action="store_true")
+    args = ap.parse_args()
+
+    factors, rate, series = load_data()
+    if not series:
+        print("ERROR: rate.json series 비어있음", file=sys.stderr)
+        sys.exit(1)
+
+    warns = validate_facts(factors, rate)
+    if warns:
+        print("=" * 56, file=sys.stderr)
+        print("❌ 사실 검증 실패 — 게시 금지! (텍스트가 실제 환율과 모순)", file=sys.stderr)
+        for w in warns:
+            print("  • " + w, file=sys.stderr)
+        print("→ factor_analysis 재생성 또는 텍스트 수정 후 게시할 것", file=sys.stderr)
+        print("=" * 56, file=sys.stderr)
+
+    if dt.date.today().weekday() >= 5:  # 토(5)·일(6) = 외환시장 휴장
+        print("⚠️ 주말(외환시장 휴장) — 환율이 금요일 종가로 고정. 데일리 브리핑 대신 "
+              "주말 콘텐츠(토=주간 회고/track record, 일=다음주 예고) 권장.", file=sys.stderr)
+
+    out_dir = Path(args.out) / dt.date.today().isoformat()
+    print(f"표지: {render(cover_html(factors, rate, series), out_dir / '01-cover.png')}")
+    print(f"30초: {render(slide_summary(factors, rate, series), out_dir / '02-summary.png')}")
+    print(f"일정: {render(slide_calendar(factors, rate, series), out_dir / '03-event.png')}")
+    print(f"그래프: {render(slide_graph(factors, rate, series), out_dir / '04-graph.png')}")
+    today = dt.date.today()
+    facs = (factors.get("factors") or [])[:4]
+    for i, f in enumerate(facs):
+        render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),
+               out_dir / f"{5+i:02d}-factor{i+1}.png")
+    print(f"요인 {len(facs)}장")
+    if args.guides:
+        render(cover_html(factors, rate, series, guides=True), out_dir / "01-cover-guides.png")
+
+    rate_now = rate.get("rate") or series[-1]
+    print(f"환율: {rate_now:,.1f}원 / 페르소나 판정:")
+    for key, ico, name in PERSONA:
+        v = persona_verdict(series, rate_now, key) or VERDICT[1]
+        print(f"  {ico} {name}: {v['dot']} {v['text']}")
+
+
+if __name__ == "__main__":
+    main()
