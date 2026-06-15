@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-15T23:55:30.394848+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,511 KRW per USD\n\nWHY: The won is currently WEAK (high KRW per USD), meaning dollars are expensive right now. News reports expect the rate to improve (fall back to the 1,400 KRW range) later this month, and SK Securities explicitly advises against excessive dollar conversion at current levels. Waiting a few weeks could lower your conversion cost significantly.\n\nTIP: If possible, delay this month's conversion by 1–2 weeks to catch the anticipated decline toward 1,400 KRW/USD, rather than converting at today's elevated 1,511 level."
+  },
+  "articles": [
+    {
+      "title": "종전 합의에 환율 '이달 내 1400원대' 복귀 전망…외인 수급이 변수",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5nVTVfS2g0eWc2YWZ2X1BoUXM4RHhkT3lDWjc3ajZ5QVhhQmJwTy1uR1ZySUVHb1hTSjFNY0piTEo5UEVVdmw5QjFMa1hhRXpIQ2hEaQ?oc=5",
+      "summary": "종전 합의에 환율 '이달 내 1400원대' 복귀 전망…외인 수급이 변수 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-15T21:00:00+00:00"
+    },
+    {
+      "title": "[외환] 美·이란 종전에 1,500원 아래 시도…14.60원↓",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Pdnc3SF9LUXNiU0tOak0yZ3kyM0NUMmVkQzd3bmJEaTg4a3puMmxzV0RfX1pwaW5wazdMNmdacFh0d21QaUdEX1FOQ284UDladTZhNDlwUG1aczR2ZjJjSkxQYXpDdXRvNHdUNlptX3Jidw?oc=5",
+      "summary": "[외환] 美·이란 종전에 1,500원 아래 시도…14.60원↓ KB Think",
+      "source": "KB Think",
+      "date": "2026-06-15T00:25:40+00:00"
+    },
+    {
+      "title": "[생생뉴스] 변동성 커진 주식·환율…지역 경제에 미치는 영향은?",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAwRW1vb3BwNlcyMTN4V2FobGRaeTdxV3BiZGdESEdWc0hEU0I1bWt3RWpySlk1NVk4ZEVyQ2NxYVZSOERjRHk4WFdyQVZ5Nm42Tks2eS1qb1NLZTA?oc=5",
+      "summary": "[생생뉴스] 변동성 커진 주식·환율…지역 경제에 미치는 영향은? KBS 뉴스",
+      "source": "KBS 뉴스",
+      "date": "2026-06-15T02:17:00+00:00"
+    },
+    {
+      "title": "[이슈] 환율 더 오른다?…기업 달러예금 83조원 돌파, 3년 5개월 만에 최대",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UZldBb1RCZHhXRlYwcE1tajBQZHJIdUppeFRJZjFyVzZBYjQ4ZlVMVXBiVDNuQVF3eTY3RFpQUktUb25BU2ZnaWZpZFlpb1RYdFJoQkFPbkZ1M0RGUzZPcFcxODZKdndXYTNKdE04TFoxZ9IBckFVX3lxTE5UZldBb1RCZHhXRlYwcE1tajBQZHJIdUppeFRJZjFyVzZBYjQ4ZlVMVXBiVDNuQVF3eTY3RFpQUktUb25BU2ZnaWZpZFlpb1RYdFJoQkFPbkZ1M0RGUzZPcFcxODZKdndXYTNKdE04TFoxZw?oc=5",
+      "summary": "[이슈] 환율 더 오른다?…기업 달러예금 83조원 돌파, 3년 5개월 만에 최대 폴리뉴스 Polinews",
+      "source": "폴리뉴스 Polinews",
+      "date": "2026-06-15T06:36:29+00:00"
+    },
+    {
+      "title": "원화 약세의 늪…국장 탈출 개미·외인 차익실현에 갇힌 환율",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9fVHJybWlhNXpwLVp6c1BkRXdGZHRXTmYtUUxidTd2WWJkX3c0Y3pzcW5BZTFUamo1UHk0ZktZbU1waDBUX0pCR3o5VkdNSmVXa0RVc0VHVWlVSlpEZGlpVGc5ZUVQc2FROVl0N05aRFVfM3Fq0gF0QVVfeXFMT19UcnJtaWE1enAtWnpzUGRFd0ZkdFdOZi1RTGJ1N3ZZYmRfdzRjenNxbkFlMVRqajVQeTRmS1ltTXBoMFRfSkJHejlWR01KZVdrRFVzRUdVaVVKWkRkaWlUZzllRVBzYVE5WXQ3TlpEVV8zcWo?oc=5",
+      "summary": "원화 약세의 늪…국장 탈출 개미·외인 차익실현에 갇힌 환율 포인트데일리",
+      "source": "포인트데일리",
+      "date": "2026-06-15T07:55:22+00:00"
+    },
+    {
+      "title": "미·이란 종전 합의에 환율 1500원대 진입…남은 건 ‘고물가 시차’",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jcVJCa1BBTTFtR3pMTjVnNTdITGJaU1ZTdktHTEpaeTdPbm9ZU25Zb2FsQWFfM0xCNkhLN1NDTGlMLWdjSzRVVmFmN0Vhbkh0TmJIajNPNVdra3hUVEpWWWlteUFxZVg0NllB?oc=5",
+      "summary": "미·이란 종전 합의에 환율 1500원대 진입…남은 건 ‘고물가 시차’ the-biz.co.kr",
+      "source": "the-biz.co.kr",
+      "date": "2026-06-15T01:58:52+00:00"
+    },
+    {
+      "title": "원·달러 환율, 8.4원 내린 1511.4원 개장",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mR1dyOHVIbXV1bnlVODhOc3REX253OVk0b3ZIZmNXZjNVOGcwNW53NjVlVmdWSUhDamV4SWFla3JtVlhwenl6Qlp1T3dNVDg1MUVn?oc=5",
+      "summary": "원·달러 환율, 8.4원 내린 1511.4원 개장 네이트",
+      "source": "네이트",
+      "date": "2026-06-15T00:04:00+00:00"
+    },
+    {
+      "title": "SK증권 \"과도한 달러 환전 지양하라\" 조언",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SM2UtckhPZkFDMTRiOERiVEItXzN6MHh5ZWplaG1acUZ2MXZUM0g0WjMtSk5UN08yVG9QaWJwbDZOaFdSNWE2N1dzOC11U05YMWw5U19JTnVKZlpCeTVTbVFXTWo2bTZsX1oza01iQ19DOGU2?oc=5",
+      "summary": "SK증권 \"과도한 달러 환전 지양하라\" 조언 파이낸셜포스트",
+      "source": "파이낸셜포스트",
+      "date": "2026-06-15T01:41:33+00:00"
+    }
+  ]
+}
