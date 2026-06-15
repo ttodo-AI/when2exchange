@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-15T05:22:43.352999+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,511–1,560 KRW per USD\n\nWHY: The won is currently WEAK (high KRW per USD), meaning dollars are expensive right now. News reports show the rate has surged to 1,560 won per dollar, with banks on emergency alert and analysts advising against excessive dollar conversion. The rate is volatile and elevated, making this an unfavorable window for your monthly $2,000 purchase.\n\nTIP: Consider staggering smaller weekly conversions or waiting for a pullback below 1,500 won/USD if your monthly budget allows, since analysts expect the rate to eventually stabilize lower."
+  },
+  "articles": [
+    {
+      "title": "[외환] 美·이란 종전에 1,500원 아래 시도…14.60원↓",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Pdnc3SF9LUXNiU0tOak0yZ3kyM0NUMmVkQzd3bmJEaTg4a3puMmxzV0RfX1pwaW5wazdMNmdacFh0d21QaUdEX1FOQ284UDladTZhNDlwUG1aczR2ZjJjSkxQYXpDdXRvNHdUNlptX3Jidw?oc=5",
+      "summary": "[외환] 美·이란 종전에 1,500원 아래 시도…14.60원↓ KB Think",
+      "source": "KB Think",
+      "date": "2026-06-15T00:25:40+00:00"
+    },
+    {
+      "title": "원·달러 환율, 8.4원 내린 1511.4원 개장",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9mR1dyOHVIbXV1bnlVODhOc3REX253OVk0b3ZIZmNXZjNVOGcwNW53NjVlVmdWSUhDamV4SWFla3JtVlhwenl6Qlp1T3dNVDg1MUVn?oc=5",
+      "summary": "원·달러 환율, 8.4원 내린 1511.4원 개장 네이트",
+      "source": "네이트",
+      "date": "2026-06-15T00:04:00+00:00"
+    },
+    {
+      "title": "1500원대 환율 지속···당국, ‘환전 요청’에도 기업 달러예금 3년5개월만 최대",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5Tb3c3VHRTZlVjS0dzbUY1VjNleXdQazhKd3pWYUNsb1VjQUZOMTl4b2VxR1V0UjI1MFhEQnpqd1Zob2RydVNOWFlaOWFfZFFSTnBHckUtaGpTZ9IBX0FVX3lxTE9Yb1pwN0sxaXhaalJDekE1Tk11bDBhazR2cmZhMlRtcGV2TnJNX3c3dXhVMmozSFpwMTlrNVZrdVBTNVAxYlVWMjZzNTc4SmtYT1BVTE9CX0dlVDY3a3k0?oc=5",
+      "summary": "1500원대 환율 지속···당국, ‘환전 요청’에도 기업 달러예금 3년5개월만 최대 경향신문",
+      "source": "경향신문",
+      "date": "2026-06-14T05:35:00+00:00"
+    },
+    {
+      "title": "SK증권 \"과도한 달러 환전 지양하라\" 조언",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SM2UtckhPZkFDMTRiOERiVEItXzN6MHh5ZWplaG1acUZ2MXZUM0g0WjMtSk5UN08yVG9QaWJwbDZOaFdSNWE2N1dzOC11U05YMWw5U19JTnVKZlpCeTVTbVFXTWo2bTZsX1oza01iQ19DOGU2?oc=5",
+      "summary": "SK증권 \"과도한 달러 환전 지양하라\" 조언 파이낸셜포스트",
+      "source": "파이낸셜포스트",
+      "date": "2026-06-15T01:41:33+00:00"
+    },
+    {
+      "title": "원/달러 환율 급등에 은행권 비상: 하나금융·신한은행 긴급회의 소집, 1519원대 고환율 지속",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9fNk9POG00d0ZObzU2Mmt2VzNBUFpubU5nVnYtbWtJa1dSVF9pc3lSb1V5Ul9FVDNiVFBpR05NdjF3VmZ6RVJCQ0VB?oc=5",
+      "summary": "원/달러 환율 급등에 은행권 비상: 하나금융·신한은행 긴급회의 소집, 1519원대 고환율 지속 뉴스N연합",
+      "source": "뉴스N연합",
+      "date": "2026-06-14T20:55:00+00:00"
+    },
+    {
+      "title": "[취재후일담] 1560원 뚫은 원·달러 환율…언제쯤 진정될까",
+      "link": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxPT0l4WG0tY3F2aC1RbG5jbU9RZmh0WFNJcVN6eVk5b0lKbmlnOW9PT1h6NEpjU0c4LURId0V3bm5SU0NMVUpQSmtQN005Q0otSXpYZ2J2ZjBaX0s1OFlsZk1ZSkV6U05wVFVDZU9DU0NmdVZIUHdSdElHVXVOMXFUUVpBYnhIZjlxMWhvbmtTV05iTlBHUHVobmFlQkdDdEdfZm1Sc2FpMmtFeVZrUzM2MldDamREME1HcjlPeFNGQ29FTmFEYXdsZmdLdHBiaDRFY0FlR0NuSlhRdVFrQ3pheEtZckhfVzVEM0lzZHBTTG9GQW5Sb0lKVjdRUm4xYWNNNFI4ekZPdVVnYTkxckIwb0xtVkk2SGF2ak5ZQmYyWkRRczcyOHBrUTJZOXFuZjZlbWxMeXk4QjlJUGtxVDJpdndXRGVQTDdLVFNuajVEbjZJVHdGRlNFNUVVN1k?oc=5",
+      "summary": "[취재후일담] 1560원 뚫은 원·달러 환율…언제쯤 진정될까 MSN",
+      "source": "MSN",
+      "date": "2026-06-14T13:13:42+00:00"
+    }
+  ]
+}
