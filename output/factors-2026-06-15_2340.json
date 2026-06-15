@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-06-15T23:40:10.020439+00:00",
+  "card_title": "미·이란 종전 합의에 원화 강세",
+  "tldr": [
+    "미·이란 종전 합의 소식에 환율이 장중 1,504원까지 떨어졌다가 1,500원 선 위에서 마감됐어요.",
+    "전쟁이 끝나면 불안이 줄어 달러 대신 원화나 주식 같은 위험자산으로 돈이 이동하는데, 미국 물가가 4.2%로 크게 오른 게 확인되면서 금리를 올릴 수 있다는 걱정이 달러 수요를 붙잡았어요.",
+    "이번 주 열리는 FOMC에서 케빈 워시 신임 의장이 금리를 어떻게 결정하느냐에 따라 환율이 추가로 움직일 수 있어요."
+  ],
+  "overall_why": "미국과 이란이 106일 만에 종전에 합의했다는 소식에 위험자산을 사려는 분위기가 살아나면서 **원/달러 환율이 장중 1,504원까지 내려앉았다.** 그러나 5월 미국 소비자물가가 4.2% 오른 것으로 확인되면서 연준(미국 중앙은행)의 연말 금리 인상 가능성이 50%를 넘어섰고, 이번 주 케빈 워시 신임 연준 의장 체제의 첫 금리 결정 회의(FOMC)를 앞둔 불확실성까지 더해져 **환율은 1,500원 아래로는 결국 내려가지 못했다.**",
+  "factors": [
+    {
+      "name": "지정학 리스크",
+      "emoji": "⚔️",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 하락의 1순위 원인으로 미·이란 종전 합의를 지목했고, 장중 실제 환율 급락을 직접 이끈 사건으로 기술됨",
+      "headline": "미·이란 종전 합의가 전격 타결되면서 원/달러 환율이 장중 1,504원까지 급락했다",
+      "bullets": [
+        "미국과 이란이 106일 만에 종전에 합의했다는 소식이 전해지자 코스피가 5.2% 급등하고 원/달러 환율은 장중 1,504원까지 떨어졌다.",
+        "종전 합의에 위험선호 심리가 회복되면서 달러 약세·원화 강세로 이어졌으나, 환율은 결국 1,500원 아래로는 내려가지 못했다."
+      ],
+      "sources": [
+        {
+          "title": "미·이란 종전 합의 소식…원/달러 환율 1504원까지 하락",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9UNWpjejJPdTAxOTIxUXE1RE80Nm85czVGbW1BNlpKLXo1ZUhxazF6VkZNdVN0MHBYSTBtTEF5X2puTFptS1VlRGxSOXJyX19PbVdURTZQUGpqUDM5bFpSQzVucjVFVmhTTlY5ZkFhd0xVNHFuTmNr0gF3QVVfeXFMT1Q1amN6Mk91MDE5MjFRcTVETzQ2bzlzNUZtbUE2WkotejVlSHFrMXpWRk11U3QwcFhJMG1MQXlfam5MWm1LVWVEbFI5cnJfX09tV1RFNlBQampQMzlsWlJDNW5yNUVWaFNOVjlmQWF3TFU0cW5OY2s?oc=5"
+        },
+        {
+          "title": "환율, 미·이란 종전에 1500원선 재하락 시도…위험선호 회복에 원화 강세",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzQndTNGFHYVQ3a3BSeUxSSmVUQXRCU0hvcVRKVzhYTGtjcmcxb2dQRmZqZEE1RXRvUVRJUS1RRFV4d3BzSjJtTzNpSl9sc25PVWFpcHRSbExsZ1UyRElFS1FkbllmUHJaZlE?oc=5"
+        },
+        {
+          "title": "원/달러 환율 1,504원까지 하락…중동 종전 합의에 원화 강세",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hTFVlZ3RWY0lTQkxTbVdqaDRTSHo3bFFwakVQaDBhY1g2OGotbmszYVNvU3l3OFRxRnVZS29fUVREV0o3bWVyRm91UzhMUmphbU44OUJSTG50WVk2Mm5OWHZRdHJyTTBjOXVmZnlodU_SAXRBVV95cUxNNVdNaDlMREU5WFMwT2RfTUYwdlFjV2NOM1FFZVFhenBxeGE3enNxZWxKRWczWmlXSWtlWHJJcUhwQVJNRkNuV1ktaVE4NlJfeXl3cUJkdFpEcTRRZ0tvSVBYNjRtbmNkNDVXVndQZWJ2RnluMg?oc=5"
+        },
+        {
+          "title": "미·이란 종전 합의에 환율 급락…원·달러 장중 1504원까지 내려",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9VSzJTSklLc2piOS1LY2IzbGNnQjJnUVN5MC1Cak56ZW9wMU5CdDlEZlJlTFU3MzUxeFoyYUFDQ1FpaHVwWWl5X2VqRW9KdDJWLTB2MF9SNXNDaGtJOUVzWUotZVp4UGRmSGVyWGg5VdIBc0FVX3lxTE1WLTgwLWlhelNBMmdYRFFmYUhIZllHekdINjFjYXRKMW1wQU1scEpONF95bVFoaWt6Vkw4ajFvWFpXai0tcGlPQk1jd0J0UU51anZhdEJHeVV3VlNvTDdkN254NWcwaHN0WF9GVFhwWHFZaVk?oc=5"
+        },
+        {
+          "title": "이란戰 종전 합의에 증시 급등…환율·금리·유가 등은 급락",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fa3FwVTBxWUtSZFR5aVFmVlFERjU4VWY2ZmdDOF9CZjgycDY5XzE4YXFyaGhnZ2gwdHNiQXYtbEp5RW13RncyclF4TmEydlVraEJUU2Jfd0h6SUVpOVFUVEg0bFBleXN4bGFOX0JSaGxIUknSAXdBVV95cUxOS3B1SEFGd0lpUms2em56T3NHd2RMUG5kMnRWRUJDazhZcU5WQ2NzaEFITjVJUE5qTHpVc1drc0tSVXJxX19QRjUyMmE4alV2eEFJQWRXcUpaOTJsSkdJNHRfbmpFS1FGcjhBYUh6RktpRk1UbWVkbw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "FOMC 결과 대기 심리가 환율 추가 하락을 제한한 보조 요인으로 복수 매체에서 명시됨",
+      "headline": "이번 주 케빈 워시 신임 연준 의장의 첫 FOMC가 예정되면서 환율 추가 하락에 제동을 걸었다",
+      "bullets": [
+        "종전 합의에도 원/달러 환율이 1,500원 아래로 내려가지 못한 배경에는 이번 주 열리는 케빈 워시 체제 첫 FOMC에 대한 불확실성이 남아 있었다.",
+        "5월 미국 CPI가 4.2% 급등한 것으로 확인되면서 연준의 연말 금리 인상 가능성이 50%를 넘겼다는 분석이 나왔고, 이것이 달러 수요를 완전히 꺾지 못했다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 美·이란 종전 합의에 국채금리·달러 동반 하락...시장은 FOMC 대기",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1OWHUyMS02V2lLQ0xNSWxTQkVMVHFFLVhFM0pMNjRlQmVQVVhYSnQ5dnVzNHRwYWR0N3dxVVB5TUlBeTJkTUZCMVlIckFKRldVQUlDZU51aGM3bEZY?oc=5"
+        },
+        {
+          "title": "원화 반등에도 여전히 1500원대 … 이번주 연준 FOMC가 또 고비",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB0T0tSc2NhRU9US2NXaFNqTVNxeVVCUmJNY2FEb0J6bnNtZUVOdW1URXdBQ3BYdWFxT0xGNkFDcnVRSWhrZFVTY2hWdUNmM09mOHV4dQ?oc=5"
+        },
+        {
+          "title": "이번주 케빈 워시 첫 FOMC…한은 금리 경로 촉각",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDMWhaSWt0cnFyTzFWeUVCNm1abjd2M1ctRzg4b29uTld5UHFPd2x1cDJ4V0x0S1E5LXBvc2xxQ2NNYjIwZTFwakdIaWhyY2puMHBsT09pS3ZVbXJEdkE2VjEtaktnVmN1?oc=5"
+        },
+        {
+          "title": "CPI·PPI 이후, 이제 시장은 FOMC를 봅니다",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1RX0VuT3RDcWduOHdDQVhxUTd3TEZVaXhpb0tzaFNQUFhTRjhOMWM5Nmo3VnB3aXRWR2tKZHJrOWNGSnc2VXQtcnllSzYyWVUtRzVLaGxOUXZEYWZfWEhiby1TdEN0a1VVeGpTNXA3ckNNVUcyXzZqODQzV00yQQ?oc=5"
+        },
+        {
+          "title": "5월 CPI 4.2% 급등, 연준 연말 금리 인상 가능성 50% 돌파",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hdjZmY3NzaWJnNDNGR2F1OGdnYmFDSWxqcmNLVGthY3JrR3FuQVgwN3NPRzRYdmd2Ulp2a2hGbkRvWlM1cFFOSHhZY2RGYzA4UUp1akRWS19pbndlSk1weTQtQmtOODZjVUVTdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "5월 외국인 주식 순매도가 역대 최대(318억 달러)로 확인되며 원화 약세의 구조적 배경으로 여러 매체가 집중 보도했으나, 오늘 당일 환율 움직임을 직접 촉발한 요인은 아님",
+      "headline": "5월 외국인 국내 주식 순매도가 318억 달러로 사상 최대를 기록하며 원화 약세의 구조적 배경을 형성했다",
+      "bullets": [
+        "한국은행이 발표한 5월 금융·외환 시장 동향에 따르면 외국인은 지난달 국내 주식을 318억 달러어치 순매도해 역대 최대 유출 기록을 세웠고, 증권자금 기준으로는 261억 달러가 순유출됐다.",
+        "외국인 주식 자금 대규모 이탈 과정에서 원화 가치는 3% 하락했고, 환율은 1,520원대까지 올라갔던 것으로 집계됐다."
+      ],
+      "sources": [
+        {
+          "title": "5월 외국인 318억달러 '셀 코리아'…주식자금 유출 역대 최대",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ZY0p5SzlSUnFHOEtQVzlVZm5QMlNUSGtvcnJBak5rNUgwVl9hQnVVOUpBb2RGZ3RUWDhpLW9XS09iSEVGNXZqdnNLMA?oc=5"
+        },
+        {
+          "title": "차익실현에 5월 외국인 주식자금 48조원 순유출...역대 최대",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JMjlNNnI3TEpjMngwYlc3SXhVTjF1aDlscW5wSGVTcFBhWkR5WHNhbW5FVC14Wm9zZ2xKYU8xb3Yxalh6RXVpLXNZUmMxcF9OLUHSAVNBVV95cUxPcUh2VExMLVNyUUk3Yzg5T2Z1bDQ0UGdKcHczalR1YTNHdERhVHhEWEJ6UXhRODJJMkU5MDRKX2tFU3U0Ny1zclBrRlQzZGQzX3dpOA?oc=5"
+        },
+        {
+          "title": "외국인 주식 자금, 지난 5월 역대 최대 이탈…원화 가치는 3% 하락",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQclI4ZDBBbHdCUE1aSy1CTmRlbklwNEpOTXRNNktJRjhQNUlVN2h2Vmk5Zkw0Y1ZUOC00TmtxVi1acEIxNWtLVW5PMnRPSFJ0cS1VY2o1MjlSNEJFM1VVdDkxUHJ0Z3VDVEZIcEZaSmtHaGxHV3hRSGYtcUpHRXN1cQ?oc=5"
+        },
+        {
+          "title": "外人, 지난달 韓주식 역대 최대 318억달러 순매도…증권자금 261억달러 순유출",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE43cU1pX2d6MEJTcTk2WFhHektBNHNfcG1ORHdiOHI5V0VQWTFlVW5wdnJWZmY4Rm5GajdXeDB4ZWxvVUNNdjlSbXFPWDN5QWNvdDFqcWlUanhVbDBMdlQ5cVhOOVNLRmh5TWs2dDJWeWI?oc=5"
+        },
+        {
+          "title": "한은 “중동 불안에도 투자심리 견조···원화는 약세·외국인 자금 유출 확대”",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBDRC1FNUQ5S0VVYm9QcGExWWYtSTdZMWhkSHdMT3hIUHBoM01na2tQNnlnNmpmMmRUUXB2VFAxOXM1MWgwVmlvSW1uRDZBSFJpVVVMSXZoeGRaTU5uLVVwTHZNcmtzd3E0VWlLSkN1VGRJekdqbDlJ0gF3QVVfeXFMUENELUU1RDlLRVVib1BwYTFZZi1JN1kxaGRId0xPeEhQcGgzTWdra1A2eWc2amYyZFRRcHZUUDE5czUxaDBWaW9JbW5ENkFIUmlVVUxJdmh4ZFpNTm4tVXBMdk1ya3N3cTRVaUtKQ3VUZEl6R2psOUk?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 2,
+      "impact_reason": "한은 7월 금리 인상론이 배경 변수로 언급됐으나 오늘 환율 움직임의 직접 원인으로 지목한 매체는 없어 보조적 요인에 그침",
+      "headline": "한국은행의 7월 금리 인상 가능성이 제기되며 환율 추가 하락을 가로막는 요인으로 작용했다",
+      "bullets": [
+        "신현송 한은 총재가 연속으로 긴축 신호를 보내면서 시장에서는 7월 기준금리 인상, 심지어 0.5%포인트 올리는 빅스텝 가능성까지 거론됐다.",
+        "종전 합의로 환율이 안정세를 보였음에도 한은의 7월 인상론이 여전하다는 분석이 나오면서 환율 1,400원대 복귀 기대는 제한적이라는 평가가 이어졌다."
+      ],
+      "sources": [
+        {
+          "title": "106일 만의 미·이란 종전…환율 안정에도 한은 ‘7월 인상론’ 여전",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB5eldTemllUWgwZmt5UEdOYVMzSlMtV1d4RWI3dlJiOUN1RUJ0M2NsaUk0bEp3TnpZblB0WUZpcmFqcmc3NmVneGs5STdQNTd2bEtPaDBseE1JVzZHMnRLQ1JsLXBJd0pHX1dv?oc=5"
+        },
+        {
+          "title": "“환율 1500원대 굳어지나”…고환율에 금리 인상 변수까지",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43ODZVMXgxNnVqM2NDYkw1ZzJhTVQ3VEdBZGVYUWpaYzRwMmNXX2VrSEtqaGMzQ3JtWUd1YzNSdVpUUEtSQURtTmRSclhDT2U0M0dqbVAzSUt1bUZHT1Yzb1hHdWZJbDM4WlHSAWxBVV95cUxQS3pjT3JNM1hMU1NvcW05UFQzWmJVektLMi1qVzJkSEQ3ck4tQk5nd2dMS3o0QllSWXIyejhNamJIMWwwaVpBU0xmU1NPNDBjY2thWV9LQS1vbVBTX0JvdmpUYkdMVDl1NW5YUmk?oc=5"
+        },
+        {
+          "title": "신현송 한은 총재 연속 긴축 시그널에 금융시장 촉각",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12dkZ3ZURNeEIzNEhvMXFMcElNTm1HRGk4SXM5NlJkUmJtQU1ya01EWVB3Ny1SUm5lNmFiRlJ2SUZhQ1dJQ0NmVnNwTk1kdGZVSGtoOE1fQVdXcS1IZU9nWkJqaFdnMi1zcmNDQXpyZXfSAXRBVV95cUxQVnNSUEFvcy1YdWlKa1gtajZWb1NhdmtNNGYteHE3eUFQd2pLTFBoWVpnbkcyN1pzLWdURUV4bzFHaktjOERvUWN4SDRGR1FxNzZTVlVPdFRIVmljcE00Y1huTFJHM0I1dnhHUFdXcDFPUXJJUg?oc=5"
+        },
+        {
+          "title": "금리 인상 경고음 3번 울린 한국은행…7월 ‘빅스텝’ 가능성 제기",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WODd6RS1Od2lMd3AxdDBJMEZ1QW1OWm9KX1Bic1l0V0ZwLXpJdkNzUWZxT042RVBTUlEyckdhcmZIdExtai1lQnlpU3g3V1VfVlJoVA?oc=5"
+        }
+      ]
+    }
+  ]
+}
