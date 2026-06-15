@@ -3,7 +3,9 @@
 
 Modes (cost control):
   full  : Scout -> factor_analysis -> rewrite-why -> econ_calendar -> share_page
-  light : Scout -> share_page  (reuses the latest factors/calendar — cheap)
+  light : (no Scout) -> share_page  (rate+verdict refresh only; reuses latest
+          factors/calendar). Free — never touches Firecrawl, so a credit/news
+          outage can't blank the daily update.
 
 Outputs:
   site/index.html          latest page (always current)
@@ -71,8 +73,8 @@ def main():
         run("Factor analysis", "factor_analysis.py")
         run("Rewrite why + tldr", "factor_analysis.py", ["--rewrite-why"])
         run("Econ calendar", "econ_calendar.py")
-    else:
-        run("Scout (light)", "exchange_rate_watcher.py", scout_extra)
+    # light: Scout 생략. factor_analysis를 안 돌려 Scout 결과를 쓰지도 않으므로
+    # (요인/일정은 직전 full 산출물 재사용) Firecrawl 호출은 순수 낭비였음.
 
     # Render the page into site/index.html with the '지난 브리핑' archive list.
     run("Share page", "share_page.py",

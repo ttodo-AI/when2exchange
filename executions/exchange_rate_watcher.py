@@ -1,36 +1,53 @@
 #!/usr/bin/env python3
-"""KRW exchange-rate news watcher.
+"""KRW exchange-rate news watcher (free, no API key).
 
-Searches Firecrawl news for Korean-won exchange-rate articles, keeps those from
-the last N hours, and saves the top results (title / link / summary / date) to a
-local JSON file.
+Searches Google News RSS for Korean-won exchange-rate articles, keeps those from
+the last N hours, best-effort fetches each article body, and saves the top
+results (title / link / summary / date) to a local JSON file.
+
+Free by design: uses only the standard library (urllib + xml) to hit Google
+News RSS — no Firecrawl, no API key, so a credit outage can't break the build.
+The optional timing verdict still uses Claude if ANTHROPIC_API_KEY is set.
 
 Standalone script. Run directly:
     python executions/exchange_rate_watcher.py
     python executions/exchange_rate_watcher.py --query "원/달러 환율" --hours 24 --limit 10
 """
 import argparse
+import html
 import json
 import os
 import re
 import sys
+import urllib.parse
+import urllib.request
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
+from xml.etree import ElementTree as ET
 
 from dotenv import load_dotenv
 
 DEFAULT_QUERY = "원/달러 환율 전망 환전"
+UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+RSS = "https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="KRW exchange-rate news watcher (Firecrawl).")
+    p = argparse.ArgumentParser(description="KRW exchange-rate news watcher (Google News RSS, free).")
     p.add_argument("--query", default=DEFAULT_QUERY, help="Search terms (KR or EN).")
     p.add_argument("--hours", type=int, default=24, help="Look-back window in hours (default 24).")
     p.add_argument("--limit", type=int, default=10, help="Max articles to keep (default 10).")
     p.add_argument("--out", default=None, help="Output JSON path (default output/krw-exchange-rate-<ts>.json).")
     p.add_argument(
+        "--no-body",
+        action="store_true",
+        help="Skip fetching article bodies (use RSS snippet only). Faster, thinner.",
+    )
+    p.add_argument(
         "--full",
         action="store_true",
-        help="Scrape each kept article for a fuller summary (extra Firecrawl credits).",
+        help="(kept for compatibility) Body fetch is on by default now; this is a no-op.",
     )
     p.add_argument(
         "--monthly-usd",
@@ -46,36 +63,27 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
-def get(item, *keys):
-    """Read the first present key from a dict-or-object result item."""
-    for key in keys:
-        if isinstance(item, dict):
-            if key in item and item[key] not in (None, ""):
-                return item[key]
-        else:
-            val = getattr(item, key, None)
-            if val not in (None, ""):
-                return val
-    return None
-
-
 def parse_date(raw, now: datetime):
-    """Best-effort parse of a result date into an aware datetime, or None.
+    """Best-effort parse of a date string into an aware datetime, or None.
 
-    Handles ISO-8601 (with/without Z) and relative strings like "5 hours ago".
+    Handles RFC-822 (RSS pubDate), ISO-8601, and relative strings.
     """
     if raw is None:
         return None
-    if isinstance(raw, (int, float)):  # epoch seconds or ms
-        ts = raw / 1000 if raw > 1e11 else raw
-        return datetime.fromtimestamp(ts, tz=timezone.utc)
     text = str(raw).strip()
 
-    # Relative: "3 hours ago", "2 days ago", "방금", "1시간 전"
+    # RFC-822 e.g. "Mon, 15 Jun 2026 04:00:00 GMT" (Google News RSS pubDate)
+    try:
+        dt = parsedate_to_datetime(text)
+        if dt is not None:
+            return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError, IndexError):
+        pass
+
+    # Relative: "3 hours ago", "1시간 전", "방금"
     rel = re.search(r"(\d+)\s*(minute|hour|day|분|시간|일)", text, re.IGNORECASE)
     if rel and ("ago" in text.lower() or "전" in text):
-        n = int(rel.group(1))
-        unit = rel.group(2).lower()
+        n, unit = int(rel.group(1)), rel.group(2).lower()
         if unit in ("minute", "분"):
             return now - timedelta(minutes=n)
         if unit in ("hour", "시간"):
@@ -86,65 +94,74 @@ def parse_date(raw, now: datetime):
         return now
 
     # ISO-8601
-    iso = text.replace("Z", "+00:00")
     try:
-        dt = datetime.fromisoformat(iso)
+        dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
         return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
     except ValueError:
-        pass
-
-    # Common explicit formats
-    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d", "%Y.%m.%d", "%b %d, %Y", "%d %b %Y"):
-        try:
-            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc)
-        except ValueError:
-            continue
-    return None
-
-
-def extract_news(resp):
-    """Pull the news list out of whatever shape the SDK returns."""
-    # Try common containers in order.
-    for attr in ("news", "data", "results", "web"):
-        val = resp.get(attr) if isinstance(resp, dict) else getattr(resp, attr, None)
-        if isinstance(val, list) and val:
-            return val
-        if isinstance(val, dict):  # e.g. {"data": {"news": [...]}}
-            inner = val.get("news") or val.get("results")
-            if isinstance(inner, list) and inner:
-                return inner
-    if isinstance(resp, list):
-        return resp
-    return []
-
-
-def scrape_summary(client, url: str, max_chars: int = 700):
-    """Scrape an article and return a longer plain-text summary, or None on failure."""
-    if not url:
         return None
+
+
+def _strip_html(s: str) -> str:
+    s = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", s)
+    s = re.sub(r"(?s)<[^>]+>", " ", s)
+    s = html.unescape(s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def fetch(url: str, timeout: int = 10) -> str | None:
+    """GET a URL with a browser UA, following redirects. Returns text or None."""
     try:
-        doc = client.scrape(url, formats=["markdown"])
+        req = urllib.request.Request(url, headers={"User-Agent": UA,
+                                                    "Accept-Language": "ko,en;q=0.8"})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            charset = r.headers.get_content_charset() or "utf-8"
+            return r.read().decode(charset, errors="replace")
     except Exception:
         return None
-    md = doc.get("markdown") if isinstance(doc, dict) else getattr(doc, "markdown", None)
-    if not md:
+
+
+def search_news(query: str):
+    """Google News RSS search -> list of {title, link, summary, date_raw, source}."""
+    xml = fetch(RSS.format(q=urllib.parse.quote(query)))
+    if not xml:
+        return []
+    try:
+        root = ET.fromstring(xml)
+    except ET.ParseError:
+        return []
+    items = []
+    for it in root.iter("item"):
+        title = (it.findtext("title") or "").strip()
+        link = (it.findtext("link") or "").strip()
+        desc = _strip_html(it.findtext("description") or "")
+        pub = it.findtext("pubDate")
+        src_el = it.find("source")
+        source = (src_el.text or "").strip() if src_el is not None else ""
+        # Google often appends " - <source>" to the title; trim it.
+        if source and title.endswith(f" - {source}"):
+            title = title[: -len(f" - {source}")].strip()
+        items.append({"title": title, "link": link, "summary": desc,
+                      "date_raw": pub, "source": source})
+    return items
+
+
+def fetch_body(url: str, max_chars: int = 700):
+    """Best-effort article-body extract (follows Google redirect). None on failure."""
+    page = fetch(url, timeout=12)
+    if not page:
         return None
-    # Collapse whitespace and drop markdown link/image noise for a clean extract.
-    text = re.sub(r"!?\[[^\]]*\]\([^)]*\)", "", md)  # images/links
-    text = re.sub(r"[#>*`_]+", "", text)              # markdown markers
-    text = re.sub(r"\s+", " ", text).strip()
-    if not text:
+    # Prefer paragraph text; many Korean news pages put body in <p>.
+    paras = re.findall(r"(?is)<p[^>]*>(.*?)</p>", page)
+    chunks = [_strip_html(p) for p in paras]
+    chunks = [c for c in chunks if len(c) >= 40]
+    text = " ".join(chunks).strip()
+    if len(text) < 80:  # too thin to trust — likely a redirect/consent shell
         return None
     return text[:max_chars] + ("…" if len(text) > max_chars else "")
 
 
 def timing_verdict(articles, monthly_usd: float):
-    """Use Claude to judge KRW->USD exchange timing from the collected news.
-
-    The user must convert KRW into `monthly_usd` dollars every month, so a weak
-    won (high KRW/USD) makes their dollars more expensive. Returns a dict with a
-    label/headline_rate/reasoning, or None if no Anthropic key / call fails.
-    """
+    """Use Claude to judge KRW->USD exchange timing from the collected news."""
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         return None
@@ -203,54 +220,24 @@ def main() -> None:
         except (AttributeError, ValueError):
             pass
 
-    api_key = os.environ.get("FIRECRAWL_API_KEY")
-    if not api_key:
-        sys.exit("error: FIRECRAWL_API_KEY is not set (add it to .env).")
-
-    try:
-        from firecrawl import Firecrawl  # firecrawl-py v2
-    except ImportError:
-        try:
-            from firecrawl import FirecrawlApp as Firecrawl  # older SDK
-        except ImportError:
-            sys.exit("error: firecrawl-py not installed. Run: pip install -r requirements.txt")
-
-    client = Firecrawl(api_key=api_key)
-
-    # Ask for more than --limit so the 24h filter still leaves enough.
-    fetch_n = max(args.limit * 3, 20)
-    try:
-        resp = client.search(
-            query=args.query,
-            limit=fetch_n,
-            sources=["news"],
-            tbs="qdr:d",  # Google "past day" filter; we re-filter precisely below.
-        )
-    except TypeError:
-        # Older signatures may not accept sources/tbs.
-        resp = client.search(query=args.query, limit=fetch_n)
-    except Exception as exc:
-        sys.exit(f"error: Firecrawl search failed: {exc}")
+    raw_items = search_news(args.query)
+    if not raw_items:
+        sys.exit("error: Google News RSS returned no results for this query.")
 
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=args.hours)
-    raw_items = extract_news(resp)
-
-    if not raw_items:
-        sys.exit("error: Firecrawl returned no news results for this query.")
 
     articles = []
     for item in raw_items:
-        date_raw = get(item, "date", "published", "publishedAt", "publishedDate", "age")
-        dt = parse_date(date_raw, now)
-        # Keep if within window, or if no date could be parsed (tbs already scoped it).
+        dt = parse_date(item.get("date_raw"), now)
         if dt is not None and dt < cutoff:
             continue
         articles.append({
-            "title": get(item, "title", "name") or "(untitled)",
-            "link": get(item, "url", "link", "href"),
-            "summary": get(item, "description", "snippet", "summary", "markdown") or "",
-            "date": dt.isoformat() if dt else (str(date_raw) if date_raw else None),
+            "title": item["title"] or "(untitled)",
+            "link": item["link"],
+            "summary": item["summary"] or "",
+            "source": item.get("source") or "",
+            "date": dt.isoformat() if dt else (str(item["date_raw"]) if item["date_raw"] else None),
         })
         if len(articles) >= args.limit:
             break
@@ -258,11 +245,11 @@ def main() -> None:
     if not articles:
         sys.exit(f"error: no articles within the last {args.hours}h for this query.")
 
-    if args.full:
+    if not args.no_body:
         for a in articles:
-            full = scrape_summary(client, a["link"])
-            if full:
-                a["summary"] = full
+            body = fetch_body(a["link"])
+            if body and len(body) > len(a["summary"]):
+                a["summary"] = body
 
     verdict = None
     if not args.no_verdict:
@@ -293,7 +280,8 @@ def main() -> None:
         print("=" * 60 + "\n")
     for i, a in enumerate(articles, 1):
         when = a["date"] or "date unknown"
-        print(f"{i}. {a['title']}  ({when})")
+        src = f" · {a['source']}" if a.get("source") else ""
+        print(f"{i}. {a['title']}  ({when}{src})")
         if a["link"]:
             print(f"   {a['link']}")
         if a["summary"]:

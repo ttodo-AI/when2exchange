@@ -12,12 +12,22 @@ Standalone script. Run directly:
 """
 import argparse
 import glob
+import html
 import json
 import os
+import re
 import sys
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone, timedelta
+from xml.etree import ElementTree as ET
 
 from dotenv import load_dotenv
+
+# Free news search (Google News RSS, no API key). Standard library only.
+_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+_RSS = "https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
 
 # Fixed 10 drivers of USD/KRW. Each has a Korean news query tuned for FX relevance.
 FACTORS = [
@@ -63,13 +73,20 @@ WHY_RULES = (
 
 # Shared TL;DR rule (full run + --rewrite-why use the same wording).
 TLDR_RULES = (
-    "오늘 상황을 비전문가(대학생)도 이해할 핵심만 3줄. 각 한 문장, 쉬운 말, 채움말 금지. "
-    "순서는 '환율이 어떻게 됐는지 → 가장 큰 이유 → 실용 조언'. "
-    "첫 줄(환율)은 '얼마를 넘어서 얼마로 마감/개장했는지'처럼 돌파한 기준선과 그 시점의 "
-    "수준·시점을 명확히('기록하며' 같은 모호한 표현 금지). 환율 수치는 자료의 가장 최근 "
-    "값을 쓰고(며칠 전 값을 최신처럼 쓰지 말 것), 장중 고가/현재가를 구분. "
-    "인과관계는 중간 고리를 생략하지 말 것(예: 고용 호조 → 금리 기대 변화 → 달러 강세). "
-    "문장은 '~다/~했다'로 끝나는 담백한 문어체 평서문으로 일관(해요체·반말 금지)."
+    "오늘 상황을 비전문가(중학생)도 한 번에 이해할 핵심만 3줄. 각 한 문장, 짧고 쉬운 말, 채움말 금지. "
+    "순서: ① 환율이 어떻게 됐는지 → ② 가장 큰 이유 → ③ 지켜볼 것. "
+    "■ ① 변동 수치는 반드시 [현재 환율 맥락]의 *실제 전일대비 값*만 쓴다. 뉴스 기사 속 다른 수치"
+    "(예: '10원 급락')를 오늘 변동으로 옮기면 거짓이 되므로 절대 금지. 실제 변동이 ±1원 미만이면 "
+    "'전일과 비슷한 ○○원대로 큰 변동 없음'처럼 보합으로 정직하게. 며칠 전 값을 최신처럼 쓰지 말 것. "
+    "■ ② 인과의 *핵심 고리*만 풀어 준다(예: '달러는 불안할 때 찾는 안전한 돈이라'). 뻔한 중간 단계는 생략. "
+    "■ ③ *중립적 사실/지켜볼 것*만(예: '이번 주 FOMC 결과에 따라 더 움직일 수 있다'). "
+    "'서두르지 말라/지금 사라/기다려라' 같은 타이밍 조언은 금지 — 상황(여행·투자·송금)마다 달라 투자조언이 된다. "
+    "■ 쉬운 말: 어려운 전문용어는 풀 것(순매수→사들이다, 가시화→보이기 시작, 완화→누그러지다, 위험회피·긴축 등). "
+    "단 상승·하락·금리·환율·매수·매도는 일상어라 그대로 OK. "
+    "■ 핵심 정렬: 요약은 오늘 *가장 중요한 것*(실제 환율 상태 + 임박한 최대 이벤트)을 중심으로. "
+    "이미 지나갔거나 다음 주에야 올 이슈를 오늘 핵심처럼 쓰지 말 것. 큰 변동 없는 날은 "
+    "억지 드라마 대신 '보합 + 다가올 변수(예: 이번 주 FOMC)'를 핵심으로 정직하게. "
+    "문장은 친근한 해요체로 끝낸다(예: '~됐어요', '~샀어요', '~움직일 수 있어요'). 반말·과장·예보·낚시 금지."
 )
 
 # 지난 브리핑 목록에 쓰는 짧은 후크 제목. 다체가 아니라 클릭을 부르는 캐주얼 존댓말.
@@ -113,23 +130,40 @@ def get(item, *keys):
     return None
 
 
-def search_factor(client, query: str, limit: int):
-    """Firecrawl news search → list of {title, link, snippet, date}."""
+def _strip_html(s: str) -> str:
+    s = re.sub(r"(?s)<[^>]+>", " ", s)
+    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+
+
+def search_factor(query: str, limit: int):
+    """Google News RSS search (free, no key) → list of {title, link, snippet, date}.
+
+    `when:2d` keeps results recent (the Firecrawl version used qdr:d ~ past day).
+    """
+    url = _RSS.format(q=urllib.parse.quote(f"{query} when:2d"))
     try:
-        resp = client.search(query=query, limit=limit, sources=["news"], tbs="qdr:d")  # 오늘(최근 24h)만
-    except TypeError:
-        resp = client.search(query=query, limit=limit)
-    news = getattr(resp, "news", None)
-    if news is None and isinstance(resp, dict):
-        news = resp.get("news") or resp.get("data")
+        req = urllib.request.Request(url, headers={"User-Agent": _UA,
+                                                   "Accept-Language": "ko,en;q=0.8"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            xml = r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+        root = ET.fromstring(xml)
+    except Exception:
+        return []
     out = []
-    for it in news or []:
+    for it in root.iter("item"):
+        title = (it.findtext("title") or "").strip()
+        src_el = it.find("source")
+        source = (src_el.text or "").strip() if src_el is not None else ""
+        if source and title.endswith(f" - {source}"):
+            title = title[: -len(f" - {source}")].strip()
         out.append({
-            "title": get(it, "title", "name") or "",
-            "link": get(it, "url", "link") or "",
-            "snippet": get(it, "snippet", "description", "summary") or "",
-            "date": get(it, "date", "published") or "",
+            "title": title,
+            "link": (it.findtext("link") or "").strip(),
+            "snippet": _strip_html(it.findtext("description") or ""),
+            "date": (it.findtext("pubDate") or "").strip(),
         })
+        if len(out) >= limit:
+            break
     return out
 
 
@@ -254,20 +288,10 @@ def main() -> None:
         except (AttributeError, ValueError):
             pass
 
-    fc_key = os.environ.get("FIRECRAWL_API_KEY")
     an_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not fc_key:
-        sys.exit("error: FIRECRAWL_API_KEY is not set (.env).")
     if not an_key:
         sys.exit("error: ANTHROPIC_API_KEY is not set (.env).")
 
-    try:
-        from firecrawl import Firecrawl
-    except ImportError:
-        try:
-            from firecrawl import FirecrawlApp as Firecrawl
-        except ImportError:
-            sys.exit("error: firecrawl-py not installed. pip install -r requirements.txt")
     try:
         from anthropic import Anthropic
     except ImportError:
@@ -277,14 +301,12 @@ def main() -> None:
         rewrite_why(Anthropic(api_key=an_key), args.model)
         return
 
-    fc = Firecrawl(api_key=fc_key)
-
-    # 1) Search all 10 factors; build a globally-indexed article list.
+    # 1) Search all 10 factors (free Google News RSS); build a global article list.
     all_articles = []          # global idx -> article (+factor id)
     by_factor = {}             # factor id -> [global idx,...]
-    print("Searching 10 factors…", flush=True)
+    print("Searching 10 factors (Google News, free)…", flush=True)
     for f in FACTORS:
-        arts = search_factor(fc, f["query"], args.per_factor)
+        arts = search_factor(f["query"], args.per_factor)
         idxs = []
         for a in arts[: args.per_factor]:
             gi = len(all_articles)

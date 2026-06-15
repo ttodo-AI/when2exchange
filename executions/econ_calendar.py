@@ -13,12 +13,22 @@ Standalone script. Run directly:
 """
 import argparse
 import glob
+import html
 import json
 import os
+import re
 import sys
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone, timedelta
+from xml.etree import ElementTree as ET
 
 from dotenv import load_dotenv
+
+# Free news search (Google News RSS, no API key). Standard library only.
+_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+       "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
+_RSS = "https://news.google.com/rss/search?q={q}&hl=ko&gl=KR&ceid=KR:ko"
 
 QUERIES = [
     "이번 주 미국 경제지표 발표 일정 CPI 고용 FOMC 연준",
@@ -47,26 +57,43 @@ def get(item, *keys):
     return None
 
 
-def search(client, query, limit):
+def _strip_html(s: str) -> str:
+    s = re.sub(r"(?s)<[^>]+>", " ", s)
+    return re.sub(r"\s+", " ", html.unescape(s)).strip()
+
+
+def search(query, limit):
+    """Google News RSS search (free, no key) → list of {title, link, snippet, date}.
+
+    `when:7d` ~ the Firecrawl version's qdr:w (past week of news)."""
+    url = _RSS.format(q=urllib.parse.quote(f"{query} when:7d"))
     try:
-        resp = client.search(query=query, limit=limit, sources=["news"], tbs="qdr:w")
-    except TypeError:
-        resp = client.search(query=query, limit=limit)
-    news = getattr(resp, "news", None)
-    if news is None and isinstance(resp, dict):
-        news = resp.get("news") or resp.get("data")
+        req = urllib.request.Request(url, headers={"User-Agent": _UA,
+                                                   "Accept-Language": "ko,en;q=0.8"})
+        with urllib.request.urlopen(req, timeout=12) as r:
+            xml = r.read().decode(r.headers.get_content_charset() or "utf-8", "replace")
+        root = ET.fromstring(xml)
+    except Exception:
+        return []
     out = []
-    for it in news or []:
+    for it in root.iter("item"):
+        title = (it.findtext("title") or "").strip()
+        src_el = it.find("source")
+        source = (src_el.text or "").strip() if src_el is not None else ""
+        if source and title.endswith(f" - {source}"):
+            title = title[: -len(f" - {source}")].strip()
         out.append({
-            "title": get(it, "title", "name") or "",
-            "link": get(it, "url", "link") or "",
-            "snippet": get(it, "snippet", "description", "summary") or "",
-            "date": get(it, "date", "published") or "",
+            "title": title,
+            "link": (it.findtext("link") or "").strip(),
+            "snippet": _strip_html(it.findtext("description") or ""),
+            "date": (it.findtext("pubDate") or "").strip(),
         })
+        if len(out) >= limit:
+            break
     return out
 
 
-def fill_results(fc, client, events, today, model):
+def fill_results(client, events, today, model):
     """이미 발표된(date < today) 일정마다 결과를 '따로 검색'해 실제 결과를 채운다. 없으면 빈 채로(창작 금지)."""
     past = [e for e in events if (e.get("date") or "") < today]
     if not past:
@@ -74,7 +101,7 @@ def fill_results(fc, client, events, today, model):
     print(f"Searching actual results for {len(past)} past event(s)…", flush=True)
     blocks = []
     for i, e in enumerate(past):
-        arts = search(fc, f"{e['name']} 발표 결과 원/달러 환율", 6)
+        arts = search(f"{e['name']} 발표 결과 원/달러 환율", 6)
         dig = "\n".join(f"  - ({a['date']}) {a['title']} :: {a['snippet'][:160]}" for a in arts[:6]) or "  (검색 결과 없음)"
         blocks.append(f"[{i}] {e['name']} ({e['date']})\n{dig}")
     prompt = (
@@ -119,30 +146,19 @@ def main() -> None:
         except (AttributeError, ValueError):
             pass
 
-    fc_key = os.environ.get("FIRECRAWL_API_KEY")
     an_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not fc_key:
-        sys.exit("error: FIRECRAWL_API_KEY is not set (.env).")
     if not an_key:
         sys.exit("error: ANTHROPIC_API_KEY is not set (.env).")
 
-    try:
-        from firecrawl import Firecrawl
-    except ImportError:
-        try:
-            from firecrawl import FirecrawlApp as Firecrawl
-        except ImportError:
-            sys.exit("error: firecrawl-py not installed. pip install -r requirements.txt")
     try:
         from anthropic import Anthropic
     except ImportError:
         sys.exit("error: anthropic not installed. pip install -r requirements.txt")
 
-    fc = Firecrawl(api_key=fc_key)
     seen, articles = set(), []
-    print("Searching economic-calendar news…", flush=True)
+    print("Searching economic-calendar news (Google News, free)…", flush=True)
     for q in QUERIES:
-        for a in search(fc, q, args.per_query):
+        for a in search(q, args.per_query):
             if a["link"] and a["link"] not in seen:
                 seen.add(a["link"])
                 articles.append(a)
@@ -223,7 +239,7 @@ def main() -> None:
             "scenarios": scns,
         })
     events.sort(key=lambda x: x["date"])  # chronological for the table
-    fill_results(fc, client, events, today, args.model)   # 지난 일정: 결과 전용 검색으로 채움(창작 금지)
+    fill_results(client, events, today, args.model)   # 지난 일정: 결과 전용 검색으로 채움(창작 금지)
 
     now = datetime.now(timezone.utc)
     payload = {
