@@ -74,18 +74,20 @@ WHY_RULES = (
 # Shared TL;DR rule (full run + --rewrite-why use the same wording).
 TLDR_RULES = (
     "오늘 상황을 비전문가(중학생)도 한 번에 이해할 핵심만 3줄. 각 한 문장, 짧고 쉬운 말, 채움말 금지. "
-    "순서: ① 환율이 어떻게 됐는지 → ② 가장 큰 이유 → ③ 지켜볼 것. "
-    "■ ① 변동 수치는 반드시 [현재 환율 맥락]의 *실제 전일대비 값*만 쓴다. 뉴스 기사 속 다른 수치"
-    "(예: '10원 급락')를 오늘 변동으로 옮기면 거짓이 되므로 절대 금지. 실제 변동이 ±1원 미만이면 "
-    "'전일과 비슷한 ○○원대로 큰 변동 없음'처럼 보합으로 정직하게. 며칠 전 값을 최신처럼 쓰지 말 것. "
+    "순서: ① *어제 대비 오늘 새로 바뀐 점*(환율이 더 내렸는지·올랐는지·비슷한지, 새로 나온 지표 결과, "
+    "임박한 이벤트가 하루 더 다가옴 등)을 맨 앞에 → ② 그 배경·가장 큰 이유 → ③ 지켜볼 것. "
+    "■ 매일 새 느낌(가장 중요): 아래 [직전 발행 30초요약]과 첫 문장이 거의 같으면 실패다. 같은 사건"
+    "(예: 종전 협상·이번 주 FOMC)이 며칠째 이어져도, '서 있는 상황'을 처음부터 다시 설명하지 말고 "
+    "어제 대비 *달라진 점*을 ①에 앞세워 매일 다르게 읽히게 할 것. 단 진짜로 달라진 게 없으면 억지로 "
+    "지어내지 말고 '어제와 비슷한 ○○원대 보합'이라고 정직하게(드라마 금지). "
+    "■ 변동 수치는 반드시 [현재 환율 맥락]의 *실제 전일대비 값*만 쓴다. 거기에 정확한 전일대비 숫자가 "
+    "없으면 '어제보다 조금 더 내려/올라' 같은 *방향*으로만 표현하고 숫자를 지어내지 말 것. 뉴스 기사 속 "
+    "다른 수치(예: '10원 급락')를 오늘 변동으로 옮기면 거짓이므로 금지. 며칠 전 값을 최신처럼 쓰지 말 것. "
     "■ ② 인과의 *핵심 고리*만 풀어 준다(예: '달러는 불안할 때 찾는 안전한 돈이라'). 뻔한 중간 단계는 생략. "
     "■ ③ *중립적 사실/지켜볼 것*만(예: '이번 주 FOMC 결과에 따라 더 움직일 수 있다'). "
     "'서두르지 말라/지금 사라/기다려라' 같은 타이밍 조언은 금지 — 상황(여행·투자·송금)마다 달라 투자조언이 된다. "
     "■ 쉬운 말: 어려운 전문용어는 풀 것(순매수→사들이다, 가시화→보이기 시작, 완화→누그러지다, 위험회피·긴축 등). "
     "단 상승·하락·금리·환율·매수·매도는 일상어라 그대로 OK. "
-    "■ 핵심 정렬: 요약은 오늘 *가장 중요한 것*(실제 환율 상태 + 임박한 최대 이벤트)을 중심으로. "
-    "이미 지나갔거나 다음 주에야 올 이슈를 오늘 핵심처럼 쓰지 말 것. 큰 변동 없는 날은 "
-    "억지 드라마 대신 '보합 + 다가올 변수(예: 이번 주 FOMC)'를 핵심으로 정직하게. "
     "문장은 친근한 해요체로 끝낸다(예: '~됐어요', '~샀어요', '~움직일 수 있어요'). 반말·과장·예보·낚시 금지."
 )
 
@@ -179,6 +181,22 @@ def latest_rate_context() -> str:
         return "(현재 환율 데이터 없음)"
 
 
+def prev_tldr_context(exclude: str = "") -> str:
+    """직전(가장 최근 발행) factors의 30초요약 — 오늘 요약이 '어제 대비 새로 바뀐 점'을 앞세우도록
+    비교 기준을 준다. exclude는 지금 기반으로 쓰는 파일(rewrite 시 자기 자신)을 제외하기 위함."""
+    ex = os.path.abspath(exclude) if exclude else ""
+    files = [f for f in glob.glob(os.path.join("output", "factors-*.json"))
+             if os.path.abspath(f) != ex]
+    if not files:
+        return ""
+    try:
+        d = json.load(open(max(files, key=os.path.getmtime), encoding="utf-8"))
+        prev = [t for t in (d.get("tldr") or []) if t][:3]
+        return "\n".join(f"- {t}" for t in prev)
+    except (OSError, json.JSONDecodeError):
+        return ""
+
+
 def rewrite_why(client, model: str) -> None:
     """Reuse the latest factors file and regenerate overall_why + tldr (cheap, no search)."""
     files = glob.glob(os.path.join("output", "factors-*.json"))
@@ -193,9 +211,11 @@ def rewrite_why(client, model: str) -> None:
         for f in facs
     )
     today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    prev_block = prev_tldr_context(exclude=path)   # 직전 발행 요약(자기 자신 제외) — '어제 대비 변화' 기준
     prompt = (
         f"오늘은 {today_kst}(한국시간)입니다. 아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
         f"{digest}\n\n"
+        f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
         "■ 시제: 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·'예정' 같은 미래형으로 "
         "쓰지 말 것. 이미 나온 결과를 과거형으로 반영하라.\n"
         "■ 쉬운 말: 어려운 전문용어·한자어 금지(예: '하방압력'→'끌어내리는 힘', '횡보'→'큰 변화 없이 머묾', "
@@ -332,11 +352,13 @@ def main() -> None:
     digest = "\n".join(lines)
 
     today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    prev_block = prev_tldr_context()   # 직전 발행 요약 — '어제 대비 변화'를 앞세우는 비교 기준
     prompt = (
         f"당신은 원/달러(USD/KRW) 환율 애널리스트입니다. 오늘은 {today_kst}(한국시간)입니다. "
         "아래 10개 '환율 영향 요인'별로 최근 뉴스를 모았습니다. "
         "오늘 원/달러에 실제로 가장 크게 영향을 준 요인 4개를 고르세요.\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
+        f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
         f"[요인별 뉴스]\n{digest}\n\n"
         "■ 작성 원칙 (가장 중요):\n"
         "- 논리·정확도·구체성이 최우선. 두루뭉술한 채움말 절대 금지"
