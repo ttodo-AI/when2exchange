@@ -64,6 +64,8 @@ def main():
     p = argparse.ArgumentParser(description="Build & publish the share page into site/.")
     p.add_argument("--mode", choices=["full", "light"], default="full")
     p.add_argument("--query", default=None, help="Override the Scout search query.")
+    p.add_argument("--refresh-headline", action="store_true",
+                   help="그날 제목을 최신 factors로 강제 재생성(동결 무시). 평소엔 첫 퍼블리시 제목 유지.")
     args = p.parse_args()
 
     os.makedirs(DDIR, exist_ok=True)
@@ -91,18 +93,27 @@ def main():
     shutil.copyfile(os.path.join(SITE, "index.html"), os.path.join(DDIR, f"{today}.html"))
 
     # Upsert today's entry into the archive manifest (shown from tomorrow on).
-    # 그날 환율(매매기준율=종가) + 전일 대비 + 짧은 후크 제목.
-    headline = ""
-    ff = latest("factors-*.json")
-    if ff:
-        fj = load(ff, {})
-        tl = fj.get("tldr") or []
-        headline = (fj.get("card_title") or (tl[0] if tl else fj.get("overall_why", "")))[:30]
+    # 제목(headline)은 '그날 첫 퍼블리시' 시점에 한 번 정해 고정(동결)한다.
+    # 같은 날 이후 빌드(특히 light)는 환율만 갱신하고 제목은 그대로 유지 —
+    # 그래서 날짜별 제목이 그날 분석에 고정되고, 인접 날짜가 같은 제목이 되는 일이 없다.
+    # 강제로 다시 뽑으려면 --refresh-headline.
+    arc = load(ARCH, [])
+    prev = next((e for e in arc if isinstance(e, dict) and e.get("date") == today), None)
+
+    if prev and prev.get("headline") and not args.refresh_headline:
+        headline = prev["headline"]            # 동결: 그날 첫 제목 유지
+    else:
+        headline = ""                          # 그날 첫 퍼블리시(또는 강제 갱신) → 새로 생성
+        ff = latest("factors-*.json")
+        if ff:
+            fj = load(ff, {})
+            tl = fj.get("tldr") or []
+            headline = (fj.get("card_title") or (tl[0] if tl else fj.get("overall_why", "")))[:30]
     rj = load(os.path.join(SITE, "rate.json"), {})
     entry = {"date": today, "file": day_rel,
              "rate": rj.get("rate"), "chg": rj.get("fluctuations"), "headline": headline}
 
-    arc = [e for e in load(ARCH, []) if isinstance(e, dict) and e.get("date") != today]
+    arc = [e for e in arc if isinstance(e, dict) and e.get("date") != today]
     arc.append(entry)
     arc.sort(key=lambda e: e.get("date", ""), reverse=True)
     with open(ARCH, "w", encoding="utf-8") as fh:
