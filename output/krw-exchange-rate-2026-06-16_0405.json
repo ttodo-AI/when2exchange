@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-16T04:05:14.970054+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,513.6 KRW/USD\n\nWHY: The won is currently weak at 1,513.6 KRW per dollar, making dollars expensive for your monthly conversion. News indicates expectations for the won to strengthen back to the 1,400s range within this month, suggesting the current level is elevated and unfavorable for dollar purchases.\n\nTIP: Consider waiting a few days or weeks if possible, since market sentiment points to near-term won strengthening that would lower your conversion cost; if you must buy monthly regardless, dollar-cost averaging smooths out timing risk over time."
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율, 2.5원 오른 1513.6원 개장 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMF9nUjhJbFRGc3RZZUtHcC1QNktXS1YxZ3R1aGpEV1NmTDVkdGpnVEEtTkNsOGhGNTZxMHJoTl9GRDRaNVZkZUNhcnJQS2ZHNDR4WHpHVHMtSDB3ZXAwVXdHZWFrem81M2RUY290X2hWTXZuRUp0Um5rYzVyUXlTc0ItOGtNd9IBmgFBVV95cUxQT2lBMWRUYURjdmNMUDJSWFhzbW9wb1EtT2oxVEJ0dUUyWWFaQlhKelBQOEk1dG5PLVhxZmpZU0VfeEt5T2s2ZkZSVUVfMnNJS3BDbm9Od2c4OWRMQ0dWUW9QLS10LVFrcU40RWphclE4NVFiYnlpNDZjMmVRRWpPdzRJY0dQcWNlY2xNWXpETFc4OWlyN0tVVUtR?oc=5",
+      "summary": "원·달러 환율, 2.5원 오른 1513.6원 개장 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-16T00:03:00+00:00"
+    },
+    {
+      "title": "종전 합의에 환율 '이달 내 1400원대' 복귀 전망…외인 수급이 변수",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5nVTVfS2g0eWc2YWZ2X1BoUXM4RHhkT3lDWjc3ajZ5QVhhQmJwTy1uR1ZySUVHb1hTSjFNY0piTEo5UEVVdmw5QjFMa1hhRXpIQ2hEaQ?oc=5",
+      "summary": "종전 합의에 환율 '이달 내 1400원대' 복귀 전망…외인 수급이 변수 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-15T21:00:00+00:00"
+    },
+    {
+      "title": "[이슈] 환율 더 오른다?…기업 달러예금 83조원 돌파, 3년 5개월 만에 최대",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UZldBb1RCZHhXRlYwcE1tajBQZHJIdUppeFRJZjFyVzZBYjQ4ZlVMVXBiVDNuQVF3eTY3RFpQUktUb25BU2ZnaWZpZFlpb1RYdFJoQkFPbkZ1M0RGUzZPcFcxODZKdndXYTNKdE04TFoxZ9IBckFVX3lxTE5UZldBb1RCZHhXRlYwcE1tajBQZHJIdUppeFRJZjFyVzZBYjQ4ZlVMVXBiVDNuQVF3eTY3RFpQUktUb25BU2ZnaWZpZFlpb1RYdFJoQkFPbkZ1M0RGUzZPcFcxODZKdndXYTNKdE04TFoxZw?oc=5",
+      "summary": "[이슈] 환율 더 오른다?…기업 달러예금 83조원 돌파, 3년 5개월 만에 최대 폴리뉴스 Polinews",
+      "source": "폴리뉴스 Polinews",
+      "date": "2026-06-15T06:36:29+00:00"
+    },
+    {
+      "title": "원화 약세의 늪…국장 탈출 개미·외인 차익실현에 갇힌 환율",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9fVHJybWlhNXpwLVp6c1BkRXdGZHRXTmYtUUxidTd2WWJkX3c0Y3pzcW5BZTFUamo1UHk0ZktZbU1waDBUX0pCR3o5VkdNSmVXa0RVc0VHVWlVSlpEZGlpVGc5ZUVQc2FROVl0N05aRFVfM3Fq0gF0QVVfeXFMT19UcnJtaWE1enAtWnpzUGRFd0ZkdFdOZi1RTGJ1N3ZZYmRfdzRjenNxbkFlMVRqajVQeTRmS1ltTXBoMFRfSkJHejlWR01KZVdrRFVzRUdVaVVKWkRkaWlUZzllRVBzYVE5WXQ3TlpEVV8zcWo?oc=5",
+      "summary": "원화 약세의 늪…국장 탈출 개미·외인 차익실현에 갇힌 환율 포인트데일리",
+      "source": "포인트데일리",
+      "date": "2026-06-15T07:55:22+00:00"
+    }
+  ]
+}
