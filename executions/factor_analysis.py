@@ -14,6 +14,7 @@ import argparse
 import glob
 import html
 import json
+import math
 import os
 import re
 import sys
@@ -60,9 +61,10 @@ WHY_RULES = (
     "**가장 결정적인 구절 1~2곳만** 별표 두 개로 감쌀 것. 단어 하나·수치 하나를 "
     "일일이 감싸지 말고('달러화', '미·이란' 같은 짧은 조각 금지), 의미가 통하는 "
     "짧은 구절로. 과용은 절대 금지(많아야 2곳). "
-    "(7) 환율 수치는 자료에서 **가장 최근 시점**의 값을 쓸 것. 여러 날짜의 수치가 "
-    "섞여 있으면 며칠 전 값(예: 과거 개장가 1530원)을 '최고치'처럼 쓰지 말고, 가장 "
-    "최신 값(예: 오늘 개장가·장중 고가)을 반영. 장중 최고가와 현재가는 구분해서 표현. "
+    "(7) 현재가·어제 종가·전일대비는 *반드시* [현재 환율 맥락]의 값(정수)만 쓸 것 — 화면 상단 박스와 "
+    "동일한 단일 소스다. 오늘 장중 고가·저가(급등·급락)는 뉴스 근거가 있으면 사실로 덧붙여도 되나, "
+    "현재가·어제 종가와 혼동시키지 말고 다른 날·다른 출처 수치(예: 지난주 1,511원)를 오늘 상태로 "
+    "끌어오지 말 것. 맥락이 '보합/어제와 비슷'이면 변화를 지어내지 말 것. "
     "(8) 인과관계는 중간 고리를 건너뛰지 말 것. 예: '고용 호조 → 달러 강세'(X). "
     "'고용이 강하게 나오자 → 연준의 금리 인하 기대가 줄고(혹은 인상 우려가 커지고) → "
     "미국 금리가 올라 → 그 이자를 좇아 달러 수요가 늘어 → 달러가 강해졌다'처럼 핵심 "
@@ -80,9 +82,12 @@ TLDR_RULES = (
     "(예: 종전 협상·이번 주 FOMC)이 며칠째 이어져도, '서 있는 상황'을 처음부터 다시 설명하지 말고 "
     "어제 대비 *달라진 점*을 ①에 앞세워 매일 다르게 읽히게 할 것. 단 진짜로 달라진 게 없으면 억지로 "
     "지어내지 말고 '어제와 비슷한 ○○원대 보합'이라고 정직하게(드라마 금지). "
-    "■ 변동 수치는 반드시 [현재 환율 맥락]의 *실제 전일대비 값*만 쓴다. 거기에 정확한 전일대비 숫자가 "
-    "없으면 '어제보다 조금 더 내려/올라' 같은 *방향*으로만 표현하고 숫자를 지어내지 말 것. 뉴스 기사 속 "
-    "다른 수치(예: '10원 급락')를 오늘 변동으로 옮기면 거짓이므로 금지. 며칠 전 값을 최신처럼 쓰지 말 것. "
+    "■ 환율 숫자 규칙(매우 중요): *현재가·어제 종가·전일대비* 이 셋은 반드시 [현재 환율 맥락]의 값(정수)을 "
+    "그대로 쓴다 — 화면 상단 박스와 동일한 단일 소스라, 다른 값으로 쓰면 박스와 어긋나 거짓이 된다. "
+    "전일대비는 맥락의 방향·폭(예: '보합', '▲1원')을 그대로 따르고 '보합/어제와 비슷'이면 억지 변화를 지어내지 말 것. "
+    "단 *오늘 장중 고가·저가*(예: '장중 1,504원까지 급락했다가')는 뉴스 근거가 있으면 사실로 덧붙여도 좋다 — "
+    "단 그것이 *오늘*의 장중 움직임일 때만, 그리고 현재가·어제 종가와 혼동시키지 말 것. 다른 날·다른 출처 수치"
+    "(예: 지난주 1,511원)를 오늘 환율 상태로 끌어오지 말 것. "
     "■ ② 인과의 *핵심 고리*만 풀어 준다(예: '달러는 불안할 때 찾는 안전한 돈이라'). 뻔한 중간 단계는 생략. "
     "■ ③ *중립적 사실/지켜볼 것*만(예: '이번 주 FOMC 결과에 따라 더 움직일 수 있다'). "
     "'서두르지 말라/지금 사라/기다려라' 같은 타이밍 조언은 금지 — 상황(여행·투자·송금)마다 달라 투자조언이 된다. "
@@ -170,15 +175,43 @@ def search_factor(query: str, limit: int):
 
 
 def latest_rate_context() -> str:
-    files = glob.glob(os.path.join("output", "krw-exchange-rate-*.json"))
-    if not files:
-        return "(현재 환율 데이터 없음)"
+    """화면 상단 박스와 *동일한* 단일 소스(site/rate.json)에서 정확한 환율을 읽어 온다.
+    박스: 현재=rate, 어제=prev, 전일대비=Math.round(rate-prev). 요약·종합이 다른 숫자를
+    쓰면 박스와 어긋나 거짓이 되므로, 여기 정수값(JS Math.round과 동일)을 그대로 쓰게 한다."""
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "site", "rate.json")
     try:
-        d = json.load(open(max(files, key=os.path.getmtime), encoding="utf-8"))
-        v = d.get("timing_verdict") or {}
-        return f"판정 {v.get('label','?')} · {(' '.join((v.get('text','') or '').split()))[:200]}"
+        d = json.load(open(path, encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return "(현재 환율 데이터 없음)"
+    rnd = lambda x: int(math.floor(x + 0.5)) if isinstance(x, (int, float)) else None  # JS Math.round(half-up)
+    cur, prev = rnd(d.get("rate")), rnd(d.get("prev"))
+    WD = ["월", "화", "수", "목", "금", "토", "일"]
+    lines = []
+    if cur is not None:
+        lines.append(f"현재(최신 종가): {cur:,}원  ※ 화면 상단 박스의 '현재'와 동일")
+    if prev is not None:
+        dr = (cur - prev) if cur is not None else None
+        if dr == 0:
+            chg = "보합(어제와 비슷, 0원)"
+        elif dr is not None:
+            chg = f"{'▲' if dr > 0 else '▼'}{abs(dr):,}원 (어제보다 {'올라' if dr > 0 else '내려'})"
+        else:
+            chg = ""
+        lines.append(f"어제(전일 종가): {prev:,}원  ※ 박스의 '어제'와 동일" + (f" / 전일대비 {chg}" if chg else ""))
+    ser = [s for s in (d.get("series") or []) if s.get("date") and s.get("close") is not None][-5:]
+    flow = []
+    for s in ser:
+        try:
+            wd = WD[datetime.strptime(s["date"], "%Y-%m-%d").weekday()]
+            flow.append(f"{s['date']}({wd}) {rnd(s['close']):,}원")
+        except (ValueError, TypeError):
+            pass
+    if flow:
+        lines.append("최근 종가 흐름: " + ", ".join(flow))
+    if d.get("asof"):
+        lines.append(f"기준 시각: {d['asof']} (이 요일·직전 거래일 기준으로 '어제'를 판단)")
+    return "\n".join(lines) if lines else "(현재 환율 데이터 없음)"
 
 
 def prev_tldr_context(exclude: str = "") -> str:
@@ -215,7 +248,11 @@ def rewrite_why(client, model: str) -> None:
     prompt = (
         f"오늘은 {today_kst}(한국시간)입니다. 아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
         f"{digest}\n\n"
+        f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
         f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
+        "■ 환율 숫자: 현재가·어제 종가·전일대비는 위 [현재 환율 맥락]의 값만 쓴다(박스와 동일 소스). "
+        "오늘 장중 고가·저가의 급등·급락은 뉴스 근거가 있으면 사실로 덧붙여도 되나, 현재가·어제 종가와 "
+        "혼동시키지 말고 다른 날 수치를 오늘 상태로 끌어오지 말 것.\n"
         "■ 시제: 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·'예정' 같은 미래형으로 "
         "쓰지 말 것. 이미 나온 결과를 과거형으로 반영하라.\n"
         "■ 쉬운 말: 어려운 전문용어·한자어 금지(예: '하방압력'→'끌어내리는 힘', '횡보'→'큰 변화 없이 머묾', "
