@@ -19,6 +19,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+
+def _today():
+    """오늘(한국시간 KST). 빌드 머신이 다른 표준시여도 환율/일정과 날짜가 안 어긋나게."""
+    return dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date()
+
+
+def _brief_date(rate):
+    """이 브리핑의 날짜 = rate.json asof 날짜. 자정 넘겨 렌더해도 데이터 날짜와 안 어긋나게.
+    (asof 예: '2026-06-16 09:12 KST'). 못 읽으면 KST 오늘로 폴백."""
+    try:
+        return dt.date.fromisoformat((rate.get("asof", "") or "")[:10])
+    except ValueError:
+        return _today()
+
 # ── 페르소나 가중치 [1주, 1달, 3개월] (share_page.py SET_W, 합=1) ───────────────
 SET_W = {
     "student":  [0.10, 0.30, 0.60],
@@ -112,7 +126,7 @@ def validate_facts(factors, rate):
     ):
         warns.append(f"실제 전일대비 {actual:+.1f}원(거의 보합)인데 텍스트가 변동/방향을 주장")
     # 3) 핵심 정렬 점검 (경제 전문가): 임박한 ★★★ 이벤트가 요약에 반영됐나
-    today = dt.date.today()
+    today = _brief_date(rate)
     cfs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
     if cfs:
         for e in json.load(open(cfs[-1], encoding="utf-8")).get("events", []):
@@ -201,9 +215,14 @@ HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
 
   .spacer{flex:1}
   /* 미니 목차 (전체 섹션 인덱스) */
+  .toc-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:16px}
+  .toc-cue{display:flex;align-items:center;gap:8px;font-size:33px;font-weight:800;
+           color:#3b5bdb;letter-spacing:-.02em}
+  .toc-cue .toc-arrow{font-size:34px;font-weight:900}
   .toc-row{display:flex;align-items:center;justify-content:flex-end;gap:11px}
-  .toc-chip{font-size:25px;font-weight:700;color:#6b7280;background:#eceef1;
-            border-radius:999px;padding:11px 18px;letter-spacing:-.01em}
+  .toc-chip{font-size:27px;font-weight:700;color:#4b5563;background:#fff;
+            border:1.5px solid #e3e6ea;border-radius:999px;padding:12px 19px;
+            letter-spacing:-.01em;box-shadow:0 2px 8px rgba(20,30,60,.04)}
   .toc-arrow{color:#3b5bdb;font-size:40px;font-weight:800;margin-right:5px}
   .cmascot{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center;
            color:#aab2bd;font-size:29px;font-weight:700;letter-spacing:-.01em}
@@ -376,7 +395,7 @@ def cover_html(factors, rate, series, guides=False, version=2):  # 2안 확정
             arrow, cls = ("▲", "up") if d > 0 else ("▼", "down")
             delta = f'<span class="h-delta {cls}">{arrow} {abs(d):,.1f}원</span>'
     asof = rate.get("asof", "")
-    today = dt.date.today()
+    today = _brief_date(rate)  # 표지 날짜 = 브리핑(rate asof) 날짜
     wk = ["월", "화", "수", "목", "금", "토", "주일"][today.weekday()]
     ptabs = "".join(
         f'<div class="ptab"><span class="pico">{ico}</span>{name}'
@@ -407,9 +426,12 @@ def cover_html(factors, rate, series, guides=False, version=2):  # 2안 확정
         + f'<div class="ptabs">{ptabs}</div>'
     )
     toc = (
-        '<div class="toc-row"><span class="toc-arrow">→</span>'
+        '<div class="toc-wrap">'
+        '<div class="toc-cue">👉 넘겨서 30초요약부터 보기<span class="toc-arrow">→</span></div>'
+        '<div class="toc-row">'
         '<span class="toc-chip">⏱️ 30초요약</span><span class="toc-chip">📅 영향일정</span>'
         '<span class="toc-chip">📈 환율흐름</span><span class="toc-chip">🔍 형성요인</span></div>'
+        '</div>'
     )
     return (HEAD + '<div class="page cover">'
             + f'<div class="ctop">{lead}</div>'
@@ -425,7 +447,7 @@ def _shead(today):
 def slide_signal(factors, rate, series, guides=False):
     """슬라이드 2: 페르소나별 환전 신호(전체 판정 텍스트)."""
     rate_now = rate.get("rate") or (series[-1] if series else 0)
-    today = dt.date.today()
+    today = _brief_date(rate)
     rows = ""
     for key, ico, name in PERSONA:
         v = persona_verdict(series, rate_now, key) or VERDICT[1]
@@ -519,7 +541,7 @@ def _avg_txt(label, avg, rate_now):
 def slide_graph(factors, rate, series, guides=False):
     """슬라이드 2: 1주/1달/3개월 흐름 (파란 배경)."""
     rate_now = rate.get("rate") or (series[-1] if series else 0)
-    today = dt.date.today()
+    today = _brief_date(rate)
     pairs_all = [(p["date"], p["close"]) for p in rate.get("series", [])
                  if "close" in p and "date" in p]
     hero_svg, avg30, lo30, hi30 = _chart(pairs_all[-22:], rate_now, 840, 156)
@@ -554,7 +576,7 @@ def slide_graph(factors, rate, series, guides=False):
 
 def slide_summary(factors, rate, series, guides=False):
     """슬라이드 2: 30초 요약 (tldr 3줄, 크게)."""
-    today = dt.date.today()
+    today = _brief_date(rate)
     tldr = factors.get("tldr", []) or []
     cards = "".join(
         f'<div class="sc"><span class="sc-n">{i+1}</span><div class="sc-t">{t}</div></div>'
@@ -576,7 +598,7 @@ def _dday(ed, today):
 
 def slide_calendar(factors, rate, series, guides=False):
     """가까운 일정은 시나리오(▲/▼)로 확장, 나머지는 compact + ★★★(최대 변수) 강조."""
-    today = dt.date.today()
+    today = _brief_date(rate)
     fs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
     cal = json.load(open(fs[-1], encoding="utf-8")) if fs else {"events": []}
     evs = [e for e in cal.get("events", []) if e.get("date", "") >= today.isoformat()]
@@ -748,16 +770,16 @@ def main():
         print("→ factor_analysis 재생성 또는 텍스트 수정 후 게시할 것", file=sys.stderr)
         print("=" * 56, file=sys.stderr)
 
-    if dt.date.today().weekday() >= 5:  # 토(5)·일(6) = 외환시장 휴장
+    if _brief_date(rate).weekday() >= 5:  # 토(5)·일(6) = 외환시장 휴장
         print("⚠️ 주말(외환시장 휴장) — 환율이 금요일 종가로 고정. 데일리 브리핑 대신 "
               "주말 콘텐츠(토=주간 회고/track record, 일=다음주 예고) 권장.", file=sys.stderr)
 
-    out_dir = Path(args.out) / dt.date.today().isoformat()
+    out_dir = Path(args.out) / _brief_date(rate).isoformat()
     print(f"표지: {render(cover_html(factors, rate, series), out_dir / '01-cover.png')}")
     print(f"30초: {render(slide_summary(factors, rate, series), out_dir / '02-summary.png')}")
     print(f"일정: {render(slide_calendar(factors, rate, series), out_dir / '03-event.png')}")
     print(f"그래프: {render(slide_graph(factors, rate, series), out_dir / '04-graph.png')}")
-    today = dt.date.today()
+    today = _brief_date(rate)
     facs = (factors.get("factors") or [])[:4]
     for i, f in enumerate(facs):
         render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),

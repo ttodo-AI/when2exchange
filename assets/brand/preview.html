@@ -1,0 +1,215 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<title>프로필 미리보기</title>
+<style>
+  body{margin:0;background:#fff;font-family:system-ui,'Malgun Gothic',sans-serif;color:#191F28;
+       display:flex;flex-wrap:wrap;gap:48px;align-items:center;justify-content:center;padding:60px}
+  .item{text-align:center}
+  .cap{margin-top:14px;color:#8B95A1;font-size:15px}
+  .sq{width:340px;height:340px;border-radius:28px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.12)}
+  .circle{border-radius:50%;overflow:hidden;box-shadow:0 6px 22px rgba(0,0,0,.14)}
+  .c240{width:240px;height:240px}
+  .c96{width:96px;height:96px}
+  .c44{width:44px;height:44px}
+  .row{display:flex;gap:26px;align-items:center;justify-content:center}
+  svg{display:block;width:100%;height:100%}
+</style></head><body>
+
+<div class="item">
+  <div class="sq"><svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- background (full-bleed; IG는 원형 크롭) -->
+  <rect width="1080" height="1080" fill="#FFF1DF"/>
+
+  <!-- ears (pointy, 사이트 회색톤) -->
+  <polygon points="360,205 305,398 472,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="720,205 775,398 608,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="378,278 346,372 444,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+  <polygon points="702,278 734,372 636,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- head -->
+  <rect x="298" y="300" width="484" height="452" rx="146" fill="#9AA3AD"/>
+
+  <!-- beard / muzzle (슈나우저 시그니처 — 큰 회색 수염) -->
+  <path d="M348 598 Q336 556 392 556 L688 556 Q744 556 732 598
+           L718 718 Q694 792 540 798 Q386 792 362 718 Z" fill="#D3D8DE"/>
+
+  <!-- eyebrows (시그니처 — 덥수룩한 눈썹) -->
+  <ellipse cx="452" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(-11 452 482)"/>
+  <ellipse cx="628" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(11 628 482)"/>
+
+  <!-- eyes (눈썹 아래) -->
+  <circle cx="455" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="625" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="466" cy="518" r="9" fill="#FFFFFF"/>
+  <circle cx="636" cy="518" r="9" fill="#FFFFFF"/>
+
+  <!-- nose (수염 위) -->
+  <ellipse cx="540" cy="602" rx="44" ry="32" fill="#1C2230"/>
+
+  <!-- mouth -->
+  <path d="M540 634 Q540 664 512 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M540 634 Q540 664 568 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- signal-light signature (브랜드 신호등) -->
+  <circle cx="812" cy="858" r="20" fill="#15B86A"/>
+  <circle cx="868" cy="858" r="20" fill="#FFB020"/>
+  <circle cx="924" cy="858" r="20" fill="#F04452"/>
+</svg>
+</div>
+  <div class="cap">원본 (사각)</div>
+</div>
+
+<div class="item">
+  <div class="circle c240"><svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- background (full-bleed; IG는 원형 크롭) -->
+  <rect width="1080" height="1080" fill="#FFF1DF"/>
+
+  <!-- ears (pointy, 사이트 회색톤) -->
+  <polygon points="360,205 305,398 472,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="720,205 775,398 608,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="378,278 346,372 444,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+  <polygon points="702,278 734,372 636,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- head -->
+  <rect x="298" y="300" width="484" height="452" rx="146" fill="#9AA3AD"/>
+
+  <!-- beard / muzzle (슈나우저 시그니처 — 큰 회색 수염) -->
+  <path d="M348 598 Q336 556 392 556 L688 556 Q744 556 732 598
+           L718 718 Q694 792 540 798 Q386 792 362 718 Z" fill="#D3D8DE"/>
+
+  <!-- eyebrows (시그니처 — 덥수룩한 눈썹) -->
+  <ellipse cx="452" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(-11 452 482)"/>
+  <ellipse cx="628" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(11 628 482)"/>
+
+  <!-- eyes (눈썹 아래) -->
+  <circle cx="455" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="625" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="466" cy="518" r="9" fill="#FFFFFF"/>
+  <circle cx="636" cy="518" r="9" fill="#FFFFFF"/>
+
+  <!-- nose (수염 위) -->
+  <ellipse cx="540" cy="602" rx="44" ry="32" fill="#1C2230"/>
+
+  <!-- mouth -->
+  <path d="M540 634 Q540 664 512 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M540 634 Q540 664 568 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- signal-light signature (브랜드 신호등) -->
+  <circle cx="812" cy="858" r="20" fill="#15B86A"/>
+  <circle cx="868" cy="858" r="20" fill="#FFB020"/>
+  <circle cx="924" cy="858" r="20" fill="#F04452"/>
+</svg>
+</div>
+  <div class="cap">IG 프로필 (원형, 큰 사이즈)</div>
+</div>
+
+<div class="item">
+  <div class="row">
+    <div class="circle c96"><svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- background (full-bleed; IG는 원형 크롭) -->
+  <rect width="1080" height="1080" fill="#FFF1DF"/>
+
+  <!-- ears (pointy, 사이트 회색톤) -->
+  <polygon points="360,205 305,398 472,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="720,205 775,398 608,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="378,278 346,372 444,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+  <polygon points="702,278 734,372 636,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- head -->
+  <rect x="298" y="300" width="484" height="452" rx="146" fill="#9AA3AD"/>
+
+  <!-- beard / muzzle (슈나우저 시그니처 — 큰 회색 수염) -->
+  <path d="M348 598 Q336 556 392 556 L688 556 Q744 556 732 598
+           L718 718 Q694 792 540 798 Q386 792 362 718 Z" fill="#D3D8DE"/>
+
+  <!-- eyebrows (시그니처 — 덥수룩한 눈썹) -->
+  <ellipse cx="452" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(-11 452 482)"/>
+  <ellipse cx="628" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(11 628 482)"/>
+
+  <!-- eyes (눈썹 아래) -->
+  <circle cx="455" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="625" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="466" cy="518" r="9" fill="#FFFFFF"/>
+  <circle cx="636" cy="518" r="9" fill="#FFFFFF"/>
+
+  <!-- nose (수염 위) -->
+  <ellipse cx="540" cy="602" rx="44" ry="32" fill="#1C2230"/>
+
+  <!-- mouth -->
+  <path d="M540 634 Q540 664 512 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M540 634 Q540 664 568 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- signal-light signature (브랜드 신호등) -->
+  <circle cx="812" cy="858" r="20" fill="#15B86A"/>
+  <circle cx="868" cy="858" r="20" fill="#FFB020"/>
+  <circle cx="924" cy="858" r="20" fill="#F04452"/>
+</svg>
+</div>
+    <div class="circle c44"><svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- background (full-bleed; IG는 원형 크롭) -->
+  <rect width="1080" height="1080" fill="#FFF1DF"/>
+
+  <!-- ears (pointy, 사이트 회색톤) -->
+  <polygon points="360,205 305,398 472,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="720,205 775,398 608,360" fill="#8B94A0"
+           stroke="#8B94A0" stroke-width="34" stroke-linejoin="round"/>
+  <polygon points="378,278 346,372 444,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+  <polygon points="702,278 734,372 636,350" fill="#7F8893"
+           stroke="#7F8893" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- head -->
+  <rect x="298" y="300" width="484" height="452" rx="146" fill="#9AA3AD"/>
+
+  <!-- beard / muzzle (슈나우저 시그니처 — 큰 회색 수염) -->
+  <path d="M348 598 Q336 556 392 556 L688 556 Q744 556 732 598
+           L718 718 Q694 792 540 798 Q386 792 362 718 Z" fill="#D3D8DE"/>
+
+  <!-- eyebrows (시그니처 — 덥수룩한 눈썹) -->
+  <ellipse cx="452" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(-11 452 482)"/>
+  <ellipse cx="628" cy="482" rx="72" ry="34" fill="#D3D8DE" transform="rotate(11 628 482)"/>
+
+  <!-- eyes (눈썹 아래) -->
+  <circle cx="455" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="625" cy="528" r="29" fill="#1C2230"/>
+  <circle cx="466" cy="518" r="9" fill="#FFFFFF"/>
+  <circle cx="636" cy="518" r="9" fill="#FFFFFF"/>
+
+  <!-- nose (수염 위) -->
+  <ellipse cx="540" cy="602" rx="44" ry="32" fill="#1C2230"/>
+
+  <!-- mouth -->
+  <path d="M540 634 Q540 664 512 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+  <path d="M540 634 Q540 664 568 670" stroke="#1C2230" stroke-width="11"
+        fill="none" stroke-linecap="round"/>
+
+  <!-- signal-light signature (브랜드 신호등) -->
+  <circle cx="812" cy="858" r="20" fill="#15B86A"/>
+  <circle cx="868" cy="858" r="20" fill="#FFB020"/>
+  <circle cx="924" cy="858" r="20" fill="#F04452"/>
+</svg>
+</div>
+  </div>
+  <div class="cap">피드에서 보이는 작은 크기 (식별성 확인)</div>
+</div>
+
+</body></html>

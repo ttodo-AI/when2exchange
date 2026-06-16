@@ -342,7 +342,7 @@ def main() -> None:
                              if has_result else '')
                 if ed and ed < kst_today:          # 이미 발표 -> 실제 결과
                     res = esc((ev.get("result") or "").strip())
-                    detail = (f'<div class="cal-result">📊 {res}</div>' if res
+                    detail = (f'<div class="cal-result"><span class="cal-rico">📊</span><span>{res}</span></div>' if res
                               else f'<div class="cal-why">{esc(ev.get("why",""))}</div>')
                 else:                              # 예정 -> 왜 + 시나리오
                     scn = "".join(
@@ -663,7 +663,12 @@ __GA__
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
-  #chart{ position:relative; height:140px; margin-top:0; }
+  #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer; }
+  .cross-line{ position:absolute; top:0; bottom:0; width:1px; background:#6b7280; transform:translateX(-50%); pointer-events:none; }
+  .cross-dot{ position:absolute; width:9px; height:9px; border-radius:50%; background:var(--brand);
+              border:2px solid #fff; transform:translate(-50%,-50%); pointer-events:none; box-shadow:0 0 0 4px rgba(59,91,219,.15); }
+  .cross-lab{ position:absolute; top:0; white-space:nowrap; background:var(--ink); color:#fff;
+              font-size:11px; font-weight:800; padding:3px 7px; border-radius:7px; pointer-events:none; }
   .chart-svg{ width:100%; height:100%; display:block; border-radius:8px; }
   .mk{ position:absolute; transform:translate(-50%,-50%); pointer-events:none; }
   .mk-dot{ display:block; width:6px; height:6px; border-radius:50%; background:var(--ink); margin:0 auto; }
@@ -732,7 +737,8 @@ __GA__
   .cal-scn{ font-size:12.5px; color:#41485a; margin-top:6px; line-height:1.55;
             padding-left:13px; text-indent:-13px; }
   .cal-dot{ color:var(--brand); font-weight:800; margin-right:5px; }
-  .cal-result{ font-size:13px; color:#2b313d; line-height:1.6; }
+  .cal-result{ display:flex; gap:6px; font-size:13px; color:#2b313d; line-height:1.6; }
+  .cal-rico{ flex:none; }                                /* 📊는 매달고 결과 텍스트는 한 칼럼으로(줄바꿈 정렬) */
   .cal-wk{ font-size:14.5px; font-weight:800; color:var(--ink); margin:22px 0 9px; letter-spacing:-.01em; }
   .cal-wk:first-of-type{ margin-top:4px; }
   .cal-wk-toggle{ cursor:pointer; list-style:none; display:flex; align-items:center; line-height:1;
@@ -978,9 +984,9 @@ const ITEM_SETS = {
     { ico:'🐷', name:'시드머니', tag:'투자할 돈', usd:1000 },
     { ico:'📈', name:'S&P500', tag:'SPY · 1주', usd:600, stock:'SP500' },
     { rot:[
-        { ico:'🚗', name:'테슬라',  tk:'TSLA',  usd:400 },
+        { ico:'🚀', name:'스페이스X', tk:'SPCX', usd:300 },
         { ico:'🎮', name:'엔비디아', tk:'NVDA',  usd:180 },
-        { ico:'📦', name:'아마존',  tk:'AMZN',  usd:230 },
+        { ico:'🚗', name:'테슬라',  tk:'TSLA',  usd:400 },
         { ico:'🔍', name:'구글',    tk:'GOOGL', usd:200 },
         { ico:'🔮', name:'팔란티어', tk:'PLTR',  usd:90 },
       ] },
@@ -1011,6 +1017,7 @@ let avg1w = null;       // 최근 7영업일 평균(투자자 탭 손해/이득 
 let stockPx = {};       // 종목 전일 종가 맵 {TSLA:403, ...}
 let rotI = 0;           // 회전 종목 인덱스
 let chartRates = null, chartNow = null, chartDays = 63;  // 차트 기간 토글용(영업일 점 수)
+let CG = null;  // 차트 탭 스크럽용 기하정보(점 좌표 역산)
 const won = n => Math.round(n).toLocaleString('ko-KR');
 // KST 기준 주말(토·일)이면 true. 주말엔 외환시장 휴장 -> 환율이 금요일 값에서 멈춤.
 function isKstWeekend(){ const d = new Date(Date.now() + 9*3600000).getUTCDay(); return d === 0 || d === 6; }
@@ -1340,7 +1347,7 @@ function renderChart(rateNow, rates, days){
   const iHi = vals.indexOf(max), iLo = vals.indexOf(min), iNow = vals.length-1;
   // 최고/최저는 위치로 자명 -> 숫자만. 지금은 히어로에 크게 있으니 점만.
   let marks = mk(iHi,max,'mk-hi',won(max)) + mk(iLo,min,'mk-lo',won(min));
-  if(iNow!==iHi && iNow!==iLo) marks += mk(iNow,rateNow,'mk-now','');
+  if(iNow!==iHi && iNow!==iLo) marks += mk(iNow,vals[iNow],'mk-now','');  // 점은 선 끝(마지막 종가)에 붙임
   marks += `<div class="mk mk-avg" style="right:1%;top:${(avgY/H*100).toFixed(1)}%"><span class="mk-lab">평균 ${won(avg)}</span></div>`;
   document.getElementById('chart').innerHTML = `
     <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" class="chart-svg">
@@ -1348,7 +1355,9 @@ function renderChart(rateNow, rates, days){
       <rect x="0" y="${avgY.toFixed(1)}" width="${W}" height="${(H-avgY).toFixed(1)}" fill="var(--down-bg)"/>
       <line x1="0" y1="${avgY.toFixed(1)}" x2="${W}" y2="${avgY.toFixed(1)}" stroke="#9aa3ad" stroke-width="1" stroke-dasharray="4 3" vector-effect="non-scaling-stroke"/>
       <path d="${line}" fill="none" stroke="var(--ink)" stroke-width="2" vector-effect="non-scaling-stroke"/>
-    </svg>` + marks;
+    </svg>` + marks
+    + `<div class="cross" id="chartCross" style="display:none"><div class="cross-line"></div><div class="cross-dot"></div><div class="cross-lab"></div></div>`;
+  CG = { keys, vals, W, H, padL, padR, yTop, yBand, min, span };
   const lab = document.getElementById('chartNow');
   lab.textContent = above ? '평균 위 (비쌈)' : '평균 아래 (쌈)';
   lab.style.color = above ? 'var(--up)' : 'var(--down)';
@@ -1478,6 +1487,42 @@ if(_ctabs) _ctabs.addEventListener('click', e => {
   document.querySelectorAll('#chartTabs .ctab').forEach(t => t.classList.toggle('active', t === b));
   if(chartRates) renderChart(chartNow, chartRates, chartDays);
 });
+
+// 차트 탭/드래그 → 그 시점 종가 보기(크로스헤어). 종가 기준이라 라벨은 날짜+환율.
+(function(){
+  const el = document.getElementById('chart');
+  if(!el) return;
+  let pressing = false;
+  function show(ev){
+    if(!CG) return;
+    const box = el.getBoundingClientRect();
+    let fx = (ev.clientX - box.left) / box.width;
+    fx = Math.min(1, Math.max(0, fx));
+    const n = CG.vals.length, denom = (CG.W - CG.padL - CG.padR) || 1;
+    let i = Math.round((fx*CG.W - CG.padL) / denom * (n-1));
+    i = Math.min(n-1, Math.max(0, i));
+    const v = CG.vals[i];
+    const xp = (CG.padL + (n>1 ? i/(n-1) : 0) * denom) / CG.W * 100;
+    const yp = (CG.yTop + CG.yBand * (1 - (v - CG.min) / (CG.span || 1))) / CG.H * 100;
+    const cross = document.getElementById('chartCross');
+    if(!cross) return;
+    cross.style.display = 'block';
+    cross.querySelector('.cross-line').style.left = xp.toFixed(1) + '%';
+    const dot = cross.querySelector('.cross-dot');
+    dot.style.left = xp.toFixed(1) + '%'; dot.style.top = yp.toFixed(1) + '%';
+    const lab = cross.querySelector('.cross-lab');
+    const p = CG.keys[i].split('-');
+    lab.textContent = (+p[1]) + '/' + (+p[2]) + ' · ' + won(v);
+    lab.style.left = xp.toFixed(1) + '%';
+    lab.style.transform = xp < 14 ? 'translateX(0)' : (xp > 86 ? 'translateX(-100%)' : 'translateX(-50%)');
+    ev.preventDefault();
+  }
+  el.addEventListener('pointerdown', e => { pressing = true; try{ el.setPointerCapture(e.pointerId); }catch(_){} show(e); });
+  el.addEventListener('pointermove', e => { if(pressing) show(e); });
+  function hide(){ pressing = false; const c = document.getElementById('chartCross'); if(c) c.style.display = 'none'; }
+  window.addEventListener('pointerup', hide);
+  window.addEventListener('pointercancel', hide);
+})();
 
 // 품목군 토글: 탭 클릭 시 활성 세트만 바꿔 재렌더(환율 재요청 없음).
 document.getElementById('tabs').addEventListener('click', e => {
