@@ -60,6 +60,19 @@ def load(path, default):
         return default
 
 
+def day_close_chg(rj, day):
+    """'지난 브리핑' 배지용: 그날의 *실제 종가*와 *직전 거래일 대비 등락*을 rate.json series에서 도출.
+    빌드시점 값(rj.rate/fluctuations)이 아니라 종가 시계열을 써서 배지가 그날 실제 종가와 일치한다.
+    직전 거래일은 series에서 day보다 앞선 마지막 날 → 주말·휴장은 series에 없어 자동으로 건너뛴다.
+    series에 그날이 아직 없으면(장중) 현재가(rj.rate)로 폴백."""
+    series = [s for s in (rj.get("series") or []) if s.get("date") and s.get("close") is not None]
+    by_date = {s["date"]: s["close"] for s in series}
+    close = by_date.get(day, rj.get("rate"))
+    prev = next((by_date[d] for d in sorted(by_date, reverse=True) if d < day), None)
+    chg = round(close - prev, 1) if isinstance(close, (int, float)) and isinstance(prev, (int, float)) else None
+    return (round(close, 1) if isinstance(close, (int, float)) else close), chg
+
+
 def main():
     p = argparse.ArgumentParser(description="Build & publish the share page into site/.")
     p.add_argument("--mode", choices=["full", "light"], default="full")
@@ -92,6 +105,13 @@ def main():
     day_rel = f"d/{today}.html"
     shutil.copyfile(os.path.join(SITE, "index.html"), os.path.join(DDIR, f"{today}.html"))
 
+    # 주말(토·일)은 외환시장 휴장 → 독립 브리핑이 없어야 하므로 '지난 브리핑'에 새 항목을 만들지 않는다.
+    # (메인 페이지는 위에서 이미 갱신됐고, 금요일 종가로 표시된다.)
+    if datetime.now(timezone(timedelta(hours=9))).weekday() >= 5:
+        print(f"\nBuilt site/index.html + {day_rel}  (mode={args.mode}) — 주말 휴장, '지난 브리핑' 미갱신.")
+        print(f"Open: file:///{os.path.join(SITE, 'index.html').replace(os.sep, '/')}")
+        return
+
     # Upsert today's entry into the archive manifest (shown from tomorrow on).
     # 제목(headline)은 '그날 첫 퍼블리시' 시점에 한 번 정해 고정(동결)한다.
     # 같은 날 이후 빌드(특히 light)는 환율만 갱신하고 제목은 그대로 유지 —
@@ -110,8 +130,9 @@ def main():
             tl = fj.get("tldr") or []
             headline = (fj.get("card_title") or (tl[0] if tl else fj.get("overall_why", "")))[:30]
     rj = load(os.path.join(SITE, "rate.json"), {})
+    day_rate, day_chg = day_close_chg(rj, today)   # 빌드시점 값이 아니라 그날 실제 종가/직전거래일 등락
     entry = {"date": today, "file": day_rel,
-             "rate": rj.get("rate"), "chg": rj.get("fluctuations"), "headline": headline}
+             "rate": day_rate, "chg": day_chg, "headline": headline}
 
     arc = [e for e in arc if isinstance(e, dict) and e.get("date") != today]
     arc.append(entry)
