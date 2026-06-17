@@ -13,6 +13,7 @@ import argparse
 import datetime as dt
 import glob
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -99,33 +100,53 @@ def persona_verdict(series, rate_now, persona):
     return VERDICT[vidx]
 
 
+# 제목 desync 방지: 원/달러 환율류 숫자(1,513원·1513·1520선)는 표지 제목 금지(factor_analysis와 동일).
+_RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
+
+
 def validate_facts(factors, rate):
-    """LLM 내러티브의 환율 변동 주장 ↔ rate.json 실제 전일대비 대조. 모순 경고 리스트."""
-    r, p = rate.get("rate"), rate.get("prev")
-    if not (r and p):
-        return []
-    actual = r - p  # +면 상승, -면 하락
+    """발행 전 게이트. card_title·요약 ↔ 실제 환율/일정 대조 → (blocks=게시 금지, warns=확인).
+    factor_analysis.validate_briefing와 같은 기준(표지·웹 공유). 엔진이 JSON에 박은 checks도 상속."""
+    blocks, warns = [], []
+    title = (factors.get("card_title", "") or "").strip()
     text = " ".join([
-        factors.get("card_title", ""),
+        title,
         " ".join(factors.get("tldr", []) or []),
         factors.get("overall_why", "") or "",
     ])
-    warns = []
-    # 1) "N원 (하락/상승)" 크기 주장 vs 실제
-    for m in re.finditer(r"(\d+)\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
-                         r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
-        claimed = int(m.group(1))
-        if abs(claimed - abs(actual)) > 3:
-            warns.append(
-                f"텍스트 '{claimed}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원 "
-                f"(차이 {abs(claimed - abs(actual)):.0f}원)"
-            )
-    # 2) 거의 보합인데 방향/변동을 주장
-    if abs(actual) < 1.0 and any(
-        w in text for w in ("하락", "급락", "상승", "급등", "강세", "약세")
-    ):
-        warns.append(f"실제 전일대비 {actual:+.1f}원(거의 보합)인데 텍스트가 변동/방향을 주장")
-    # 3) 핵심 정렬 점검 (경제 전문가): 임박한 ★★★ 이벤트가 요약에 반영됐나
+    # 0) 표지 제목에 환율 숫자 = 박스/배지와 desync (BLOCK)
+    if _RATE_NUM_RE.search(title):
+        blocks.append(f"표지 제목에 환율 숫자 → 박스와 desync: '{title}' (숫자 빼고 원인·이슈로)")
+    # 0b) 엔진(factor_analysis)이 생성 때 박아 둔 검증 결과 상속
+    ck = factors.get("checks") or {}
+    for b in (ck.get("blocks") or []):
+        blocks.append(f"[엔진] {b}")
+    for w in (ck.get("warnings") or []):
+        warns.append(f"[엔진] {w}")
+    # 0c) 요인 근거 기사 0개 = 환각 위험 (직접 체크 — 엔진 checks 없는 파일도 방어)
+    empties = [f.get("name", "?") for f in (factors.get("factors") or [])
+               if not (f.get("sources") or [])]
+    if empties:
+        blocks.append(f"근거 기사 0개 요인: {', '.join(empties)} (환각 위험)")
+
+    r, p = rate.get("rate"), rate.get("prev")
+    if r and p:
+        actual = r - p  # +면 상승, -면 하락
+        # 1) "N원 (하락/상승)" 크기 주장 vs 실제 (BLOCK)
+        for m in re.finditer(r"(\d+)\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
+                             r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
+            claimed = int(m.group(1))
+            if abs(claimed - abs(actual)) > 3:
+                blocks.append(
+                    f"텍스트 '{claimed}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원 "
+                    f"(차이 {abs(claimed - abs(actual)):.0f}원)"
+                )
+        # 2) 거의 보합인데 방향/변동을 주장 (WARN)
+        if abs(actual) < 1.0 and any(
+            w in text for w in ("하락", "급락", "상승", "급등", "강세", "약세")
+        ):
+            warns.append(f"실제 전일대비 {actual:+.1f}원(거의 보합)인데 텍스트가 변동/방향을 주장")
+    # 3) 핵심 정렬 점검: 임박한 ★★★ 이벤트가 요약에 반영됐나 (WARN)
     today = _brief_date(rate)
     cfs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
     if cfs:
@@ -141,7 +162,7 @@ def validate_facts(factors, rate):
                     warns.append(
                         f"[핵심정렬] 임박 ★★★ '{e.get('name','')}'이 요약에 안 보임 — 오늘 핵심 맞는지 확인"
                     )
-    return warns
+    return blocks, warns
 
 
 def load_data():
@@ -170,6 +191,12 @@ HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
       display:flex;justify-content:space-between;align-items:baseline}
   .m1 .kw{color:#3b5bdb}
   .m1-date{color:#9aa1ad;font-weight:700;font-size:30px}
+  /* heat=high 배지(신호등 빨강) + 후킹 문구 — 잠잠한 날엔 안 보임 */
+  .cbadge{display:inline-flex;align-self:flex-start;margin-bottom:22px;font-size:28px;
+          font-weight:800;color:#fff;background:#e0383e;border-radius:999px;
+          padding:13px 26px;letter-spacing:-.01em}
+  .chook{margin-bottom:18px;font-size:31px;font-weight:800;color:#e0383e;
+         letter-spacing:-.02em;word-break:keep-all;text-align:right}
   .m2{margin-top:8px;font-size:52px;font-weight:800;color:#14171f;letter-spacing:-.035em;
       line-height:1.16;white-space:nowrap;display:flex;align-items:center;gap:14px;font-size:46px}
   .m2 svg.dog{height:58px}
@@ -383,9 +410,11 @@ GUIDES = ('<div class="guides"><i class="gt"></i><i class="gb"></i><i class="gl"
           '<i class="gr"></i><div class="safe"></div></div>')
 
 
-def cover_html(factors, rate, series, guides=False, version=2):  # 2안 확정
+def cover_html(factors, rate, series, guides=False, version=2, badge=None, hook=""):  # 2안 확정
     rate_now = rate.get("rate") or (series[-1] if series else 0)
     title = factors.get("card_title", "오늘의 환율 브리핑")
+    # heat=high면 빨강 배지(엔진이 title_badge에 박음, --badge로 덮어쓰기). 후킹 문구는 큐레이션(--hook).
+    badge = factors.get("title_badge", "") if badge is None else badge
 
     prev = rate.get("prev")
     delta = ""
@@ -425,16 +454,19 @@ def cover_html(factors, rate, series, guides=False, version=2):  # 2안 확정
         + f'<div class="h-asof">{asof} 기준</div></div>'
         + f'<div class="ptabs">{ptabs}</div>'
     )
+    badge_html = (f'<div class="cbadge">{badge} · 예보 아님</div>' if badge else "")
+    hook_html = (f'<div class="chook">{hook}</div>' if hook else "")
     toc = (
         '<div class="toc-wrap">'
-        '<div class="toc-cue">👉 넘겨서 30초요약부터 보기<span class="toc-arrow">→</span></div>'
+        + hook_html
+        + '<div class="toc-cue">👉 넘겨서 30초요약부터 보기<span class="toc-arrow">→</span></div>'
         '<div class="toc-row">'
         '<span class="toc-chip">⏱️ 30초요약</span><span class="toc-chip">📅 영향일정</span>'
         '<span class="toc-chip">📈 환율흐름</span><span class="toc-chip">🔍 형성요인</span></div>'
         '</div>'
     )
     return (HEAD + '<div class="page cover">'
-            + f'<div class="ctop">{lead}</div>'
+            + f'<div class="ctop">{badge_html}{lead}</div>'
             + f'<div class="cmid">{mid}</div>'
             + toc
             + (GUIDES if guides else "") + "</div>" + FOOT)
@@ -749,50 +781,247 @@ def render(html, out_path, scale=2):
     return out_path
 
 
+# 인스타 캡션 톤·구조 고정용 예시(2026-06-16 작성분). 사실은 매일 바뀌고 톤만 따른다.
+CAPTION_EXAMPLE = """🐶 오늘 환전해도 될까?
+
+원/달러 환율은 어제와 거의 같은 **1,516원, 제자리**예요.
+미·이란 종전 합의로 달러 수요가 줄었지만, 미국 물가(CPI)가 4.2%로 높게 나오면서 달러를 다시 떠받치고 있거든요. 그래서 1,500원대에서 안 내려오고 있어요.
+
+내일은 미국이 금리를 정하는 회의(FOMC)가 있어요. 케빈 워시 새 의장의 첫 회의라, 결과에 따라 환율이 다시 움직일 수 있어요. 👀
+
+⸻
+
+매달 달러로 바꾸는 분들을 위해, 매일 아침 '오늘 환전해도 될까?'를 쉽게 정리해드려요. 유학생·여행자·투자자, 상황별 신호도 함께요.
+팔로우하고 매일 같이 확인해요 🐾
+
+* 예보가 아니라 오늘까지의 사실 정리예요. 투자 조언이 아니에요.
+
+#환율 #환전 #원달러환율 #환전타이밍 #달러환율"""
+
+
+# 한 번 풀이한 용어는 다음부터 '이미 아시겠지만'을 붙인다 — 그 추적용 원장.
+TERM_LEDGER = ROOT / "output" / "explained_terms.json"
+# 캡션에서 풀이할 만한 환율·경제 용어(반복 감지용). 캡션에 등장하면 '설명함'으로 기록.
+GLOSS_TERMS = [
+    "약보합", "강보합", "보합", "횡보", "급락", "급등", "원화 약세", "원화 강세",
+    "약세", "강세", "순매수", "순매도", "FOMC", "CPI", "PPI", "연준", "DXY",
+    "위험회피", "위험선호", "긴축", "완화", "기준금리",
+]
+
+
+def _load_ledger():
+    try:
+        return json.load(open(TERM_LEDGER, encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def _update_ledger(caption, ledger):
+    seen = set(ledger)
+    for t in GLOSS_TERMS:
+        if t in caption:
+            seen.add(t)
+    out = sorted(seen)
+    try:
+        TERM_LEDGER.parent.mkdir(parents=True, exist_ok=True)
+        TERM_LEDGER.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def build_caption(factors, rate, model="claude-sonnet-4-6"):
+    """오늘 캐러셀과 함께 쓸 인스타 캡션을 생성한다(어제 톤 고정 + 헤드라인 환율 용어 풀이 포함).
+    숫자는 rate.json(현재/어제/전일대비) 단일 소스만. 실패해도 카드 생성은 막지 않게 best-effort.
+    이미 풀이했던 용어는 '이미 아시겠지만'을 붙여 재설명한다(원장 TERM_LEDGER)."""
+    try:
+        from dotenv import load_dotenv
+        from anthropic import Anthropic
+    except ImportError:
+        return None
+    load_dotenv()
+    key = os.environ.get("ANTHROPIC_API_KEY")
+    if not key:
+        return None
+    rnd = lambda x: int(x + 0.5) if isinstance(x, (int, float)) else None  # JS Math.round(half-up, 양수)
+    cur, prev = rnd(rate.get("rate")), rnd(rate.get("prev"))
+    dr = (cur - prev) if (cur is not None and prev is not None) else None
+    chg = ("보합(어제와 비슷, 0원)" if dr == 0 else
+           f"{'▲' if dr > 0 else '▼'}{abs(dr):,}원 (어제보다 {'올라' if dr > 0 else '내려'})" if dr is not None else "")
+    ctx = (f"현재 {cur:,}원" if cur is not None else "") + \
+          (f" / 어제 {prev:,}원 / 전일대비 {chg}" if prev is not None else "")
+    facs = factors.get("factors") or []
+    fac_lines = "\n".join(f"- {f.get('emoji','')} {f.get('name','')}: {f.get('headline','')}" for f in facs[:4])
+    ledger = _load_ledger()
+    known = ", ".join(ledger) if ledger else "(아직 없음)"
+    prompt = (
+        "너는 인스타그램 계정 @when2exchange(환전타이밍)의 캡션 작가다. "
+        "아래 [예시 캡션]의 톤·구조·길이를 그대로 따라 [오늘 데이터]로 새 캡션을 써라.\n\n"
+        f"[예시 캡션 — 톤·구조만 참고, 사실은 무시]\n{CAPTION_EXAMPLE}\n\n"
+        f"[오늘 데이터]\n"
+        f"표지 헤드라인: {factors.get('card_title','')}\n"
+        f"환율(단일 소스, 이 숫자만 쓸 것): {ctx}\n"
+        f"30초요약:\n- " + "\n- ".join(factors.get("tldr", []) or []) + "\n"
+        f"종합: {factors.get('overall_why','')}\n"
+        f"오늘의 요인:\n{fac_lines}\n\n"
+        "■ 규칙:\n"
+        "- 구조 순서 고정: ①🐶 오늘 환전해도 될까? ②환율+상태(**볼드**, 표지 헤드라인의 상태 표현을 그대로 살릴 것 "
+        "— 예: 헤드라인이 '약보합'이면 '**1,513원, 약보합**') ③(표지 헤드라인에 환율 용어가 있으면 "
+        "그 뜻을 *한 줄로 쉽게 풀이* — 예: '약보합=큰 변화 없이 살짝 약세') ④쉬운말 인과 2~3문장(거든요/예요) "
+        "⑤다음에 지켜볼 이벤트 한 문장 👀 ⑥⸻ ⑦계정 소개+팔로우 🐾 ⑧* 예보 아님·투자조언 아님 ⑨해시태그 5개\n"
+        "- 환율 숫자(현재·어제·전일대비)는 위 [오늘 데이터]의 값만. 다른 숫자 지어내기 금지.\n"
+        "- 해요체, 쉬운 말, 채움말·과장·예보·낚시 금지. 중학생도 이해하게.\n"
+        "- 헤드라인의 환율 용어(약보합·강보합·보합·급락·급등 등)는 반드시 한 줄 풀이를 넣을 것.\n"
+        f"- [이미 설명한 단어] 목록: {known}. 오늘 이 목록의 단어를 다시 풀이/설명하게 되면 그 풀이 "
+        "앞에 '이미 아시겠지만'을 자연스럽게 붙여 반복 학습임을 알린다(예: '이미 아시겠지만, 보합은 …'). "
+        "목록에 없는 새 단어는 평소대로 처음 설명하듯 풀이한다.\n"
+        "- 해시태그는 #환율 #환전 #원달러환율 #환전타이밍 + 오늘 토픽 1개(예: #FOMC).\n"
+        "- 캡션 본문만 출력(설명·코드펜스 없이)."
+    )
+    try:
+        resp = Anthropic(api_key=key).messages.create(
+            model=model, max_tokens=900, messages=[{"role": "user", "content": prompt}])
+        caption = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+    except Exception as exc:
+        print(f"캡션 생성 건너뜀({exc})", file=sys.stderr)
+        return None
+    if caption:
+        _update_ledger(caption, ledger)   # 오늘 풀이한 용어를 원장에 누적 → 다음부터 '이미 아시겠지만'
+    return caption
+
+
+def _heat_brief(factors, rate):
+    """표지 제목 추천(에이전트가 5개 제안)을 돕는 근거 — heat·임박일정·어제 제목."""
+    today = _brief_date(rate)
+    r, p = rate.get("rate"), rate.get("prev")
+    move = (f"{r - p:+.0f}원" if isinstance(r, (int, float)) and isinstance(p, (int, float)) else "?")
+    cfs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
+    imminent = []
+    if cfs:
+        for e in json.load(open(cfs[-1], encoding="utf-8")).get("events", []):
+            try:
+                d = (dt.date.fromisoformat(e.get("date", "")) - today).days
+            except ValueError:
+                continue
+            if int(e.get("importance", 0)) >= 3 and 0 <= d <= 5:
+                imminent.append((e, d))
+    imminent.sort(key=lambda x: x[1])
+    event_hot = any(d <= 1 for _, d in imminent)
+    move_hot = isinstance(r, (int, float)) and isinstance(p, (int, float)) and abs(r - p) >= 10
+    heat = "high" if (event_hot or move_hot) else "normal"
+    # 어제 제목(직전 factors)
+    fs = sorted(glob.glob(str(ROOT / "output" / "factors-*.json")))
+    prev_title = ""
+    if len(fs) >= 2:
+        try:
+            prev_title = (json.load(open(fs[-2], encoding="utf-8")).get("card_title") or "").strip()
+        except (OSError, json.JSONDecodeError):
+            pass
+    lines = ["─" * 48, f"📌 제목 추천 근거  (heat={heat}, 전일대비 {move})"]
+    if prev_title:
+        lines.append(f"  · 어제 제목(차별화 기준): {prev_title}")
+    for e, d in imminent[:4]:
+        dd = "오늘(D-0)" if d == 0 else ("내일(D-1)" if d == 1 else f"D-{d}")
+        lines.append(f"  · 임박 ★★★: {e.get('name','')} = {dd}")
+    facs = factors.get("factors") or []
+    if facs:
+        lines.append(f"  · 오늘 1순위 요인: {facs[0].get('emoji','')} {facs[0].get('name','')} — {facs[0].get('headline','')}")
+    if heat == "high":
+        lines.append("  → heat=high: 표지에 빨강 배지(--badge '⚡ 이번주 최대 변수, 오늘') + 후킹(--hook) 권장")
+    lines.append("─" * 48)
+    return "\n".join(lines)
+
+
+def _gate(factors, rate, force):
+    """발행 게이트. blocks 있으면 게시 금지(--force로만 강행). warns는 출력만."""
+    blocks, warns = validate_facts(factors, rate)
+    for w in warns:
+        print("  ⚠ " + w, file=sys.stderr)
+    if blocks:
+        print("=" * 56, file=sys.stderr)
+        print("❌ 검증 실패 — 게시 금지! (사실/정직성 위반)", file=sys.stderr)
+        for b in blocks:
+            print("  • " + b, file=sys.stderr)
+        print("=" * 56, file=sys.stderr)
+        if not force:
+            print("→ 제목/텍스트 수정 후 다시. (강행하려면 --force)", file=sys.stderr)
+            sys.exit(2)
+        print("⚠️ --force: 검증 실패에도 강행함.", file=sys.stderr)
+
+
 def main():
+    for stream in (sys.stdout, sys.stderr):   # Windows cp949 이모지 깨짐 방지
+        try:
+            stream.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT / "output" / "cards"))
-    ap.add_argument("--cover-only", action="store_true")
+    ap.add_argument("--slides", action="store_true",
+                    help="본문(2~8p)만 렌더 + 제목 추천 근거 출력(표지 제외).")
+    ap.add_argument("--cover", action="store_true", help="표지(1p)만 렌더.")
+    ap.add_argument("--cover-only", action="store_true", help="(별칭) --cover와 동일.")
+    ap.add_argument("--title", default=None, help="표지 제목 덮어쓰기(고른 제목).")
+    ap.add_argument("--badge", default=None, help="heat 배지 문구(예: '⚡ 이번주 최대 변수, 오늘').")
+    ap.add_argument("--hook", default="", help="표지 후킹 문구(주목 유도, 행동지시 금지).")
     ap.add_argument("--guides", action="store_true")
+    ap.add_argument("--no-caption", action="store_true", help="인스타 캡션 생성 생략")
+    ap.add_argument("--force", action="store_true", help="검증 실패에도 강행(주의).")
     args = ap.parse_args()
 
     factors, rate, series = load_data()
     if not series:
         print("ERROR: rate.json series 비어있음", file=sys.stderr)
         sys.exit(1)
-
-    warns = validate_facts(factors, rate)
-    if warns:
-        print("=" * 56, file=sys.stderr)
-        print("❌ 사실 검증 실패 — 게시 금지! (텍스트가 실제 환율과 모순)", file=sys.stderr)
-        for w in warns:
-            print("  • " + w, file=sys.stderr)
-        print("→ factor_analysis 재생성 또는 텍스트 수정 후 게시할 것", file=sys.stderr)
-        print("=" * 56, file=sys.stderr)
+    if args.title is not None:
+        factors["card_title"] = args.title.strip()
 
     if _brief_date(rate).weekday() >= 5:  # 토(5)·일(6) = 외환시장 휴장
         print("⚠️ 주말(외환시장 휴장) — 환율이 금요일 종가로 고정. 데일리 브리핑 대신 "
               "주말 콘텐츠(토=주간 회고/track record, 일=다음주 예고) 권장.", file=sys.stderr)
 
     out_dir = Path(args.out) / _brief_date(rate).isoformat()
-    print(f"표지: {render(cover_html(factors, rate, series), out_dir / '01-cover.png')}")
-    print(f"30초: {render(slide_summary(factors, rate, series), out_dir / '02-summary.png')}")
-    print(f"일정: {render(slide_calendar(factors, rate, series), out_dir / '03-event.png')}")
-    print(f"그래프: {render(slide_graph(factors, rate, series), out_dir / '04-graph.png')}")
     today = _brief_date(rate)
-    facs = (factors.get("factors") or [])[:4]
-    for i, f in enumerate(facs):
-        render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),
-               out_dir / f"{5+i:02d}-factor{i+1}.png")
-    print(f"요인 {len(facs)}장")
-    if args.guides:
-        render(cover_html(factors, rate, series, guides=True), out_dir / "01-cover-guides.png")
+    mode_cover = args.cover or args.cover_only
+    do_slides = not mode_cover           # cover 단독이 아니면 본문 렌더
+    do_cover = not args.slides           # slides 단독이 아니면 표지 렌더
+
+    # 본문(2~8p) — 제목 없이도 만들 수 있어 게이트 불필요.
+    if do_slides:
+        print(f"30초: {render(slide_summary(factors, rate, series), out_dir / '02-summary.png')}")
+        print(f"일정: {render(slide_calendar(factors, rate, series), out_dir / '03-event.png')}")
+        print(f"그래프: {render(slide_graph(factors, rate, series), out_dir / '04-graph.png')}")
+        facs = (factors.get("factors") or [])[:4]
+        for i, f in enumerate(facs):
+            render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),
+                   out_dir / f"{5+i:02d}-factor{i+1}.png")
+        print(f"요인 {len(facs)}장")
+
+    # 표지(1p) — 제목이 들어가는 곳 → 검증 게이트(실패 시 게시 금지).
+    if do_cover:
+        _gate(factors, rate, args.force)
+        print(f"표지: {render(cover_html(factors, rate, series, badge=args.badge, hook=args.hook), out_dir / '01-cover.png')}")
+        if args.guides:
+            render(cover_html(factors, rate, series, guides=True, badge=args.badge, hook=args.hook),
+                   out_dir / "01-cover-guides.png")
+
+    # slides 모드면 제목 추천 근거를 띄워 준다(에이전트가 5개 제안 → 사용자 선택 → --cover).
+    if args.slides:
+        print(_heat_brief(factors, rate))
 
     rate_now = rate.get("rate") or series[-1]
     print(f"환율: {rate_now:,.1f}원 / 페르소나 판정:")
     for key, ico, name in PERSONA:
         v = persona_verdict(series, rate_now, key) or VERDICT[1]
         print(f"  {ico} {name}: {v['dot']} {v['text']}")
+
+    # 인스타 캡션도 카드와 함께 생성(어제 톤 고정 + 헤드라인 용어 풀이). caption.txt로 저장.
+    if not args.no_caption and not args.slides:
+        cap = build_caption(factors, rate)
+        if cap:
+            cap_path = out_dir / "caption.txt"
+            cap_path.write_text(cap, encoding="utf-8")
+            print("\n" + "=" * 56 + f"\n📝 인스타 캡션  ({cap_path})\n" + "=" * 56)
+            print(cap)
 
 
 if __name__ == "__main__":

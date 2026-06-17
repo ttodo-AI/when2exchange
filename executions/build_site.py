@@ -20,6 +20,7 @@ import argparse
 import glob
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -52,6 +53,50 @@ def latest(pattern):
     return max(m) if m else None
 
 
+# 표지·캐러셀과 동일 기준의 desync 방지(제목 환율 숫자 금지).
+_RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
+
+
+def gate(force=False):
+    """웹 배포 전 검증(share_page 직전). card_title·요약 ↔ 실제 환율 + 엔진 checks 상속.
+    캐러셀(carousel.validate_facts)·엔진(factor_analysis.validate_briefing)과 같은 기준."""
+    ff = latest("factors-*.json")
+    if not ff:
+        return
+    fj = load(ff, {})
+    rj = load(os.path.join(SITE, "rate.json"), {})
+    blocks, warns = [], []
+    title = (fj.get("card_title") or "").strip()
+    text = " ".join([title, " ".join(fj.get("tldr") or []), fj.get("overall_why") or ""])
+    if _RATE_NUM_RE.search(title):
+        blocks.append(f"card_title에 환율 숫자 → 박스와 desync: '{title}'")
+    ck = fj.get("checks") or {}
+    blocks += [f"[엔진] {b}" for b in (ck.get("blocks") or [])]
+    warns += [f"[엔진] {w}" for w in (ck.get("warnings") or [])]
+    empties = [f.get("name", "?") for f in (fj.get("factors") or [])
+               if not (f.get("sources") or [])]
+    if empties:
+        blocks.append(f"근거 기사 0개 요인: {', '.join(empties)} (환각 위험)")
+    r, p = rj.get("rate"), rj.get("prev")
+    if isinstance(r, (int, float)) and isinstance(p, (int, float)):
+        actual = r - p
+        for m in re.finditer(r"(\d+)\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
+                             r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
+            if abs(int(m.group(1)) - abs(actual)) > 3:
+                blocks.append(f"'{m.group(1)}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원")
+    for w in warns:
+        print("  ⚠ " + w, file=sys.stderr)
+    if blocks:
+        print("=" * 56, file=sys.stderr)
+        print("❌ 웹 배포 검증 실패 — 배포 중단!", file=sys.stderr)
+        for b in blocks:
+            print("  • " + b, file=sys.stderr)
+        print("=" * 56, file=sys.stderr)
+        if not force:
+            sys.exit("→ 제목/텍스트 수정(또는 factor_analysis 재생성) 후 다시. 강행: --force")
+        print("⚠️ --force: 검증 실패에도 배포 강행.", file=sys.stderr)
+
+
 def load(path, default):
     try:
         with open(path, encoding="utf-8") as fh:
@@ -79,6 +124,8 @@ def main():
     p.add_argument("--query", default=None, help="Override the Scout search query.")
     p.add_argument("--refresh-headline", action="store_true",
                    help="그날 제목을 최신 factors로 강제 재생성(동결 무시). 평소엔 첫 퍼블리시 제목 유지.")
+    p.add_argument("--force", action="store_true",
+                   help="검증 실패에도 배포 강행(주의 — 박스/제목 모순 가능).")
     args = p.parse_args()
 
     os.makedirs(DDIR, exist_ok=True)
@@ -95,6 +142,9 @@ def main():
         run("Econ calendar", "econ_calendar.py")
     # light: Scout 생략. factor_analysis를 안 돌려 Scout 결과를 쓰지도 않으므로
     # (요인/일정은 직전 full 산출물 재사용) Firecrawl 호출은 순수 낭비였음.
+
+    # 배포 전 검증 게이트 — 표지/캐러셀과 같은 기준(제목 desync·환율 모순·엔진 checks).
+    gate(force=args.force)
 
     # Render the page into site/index.html with the '지난 브리핑' archive list.
     run("Share page", "share_page.py",

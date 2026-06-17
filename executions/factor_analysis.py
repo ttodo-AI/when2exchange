@@ -20,7 +20,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 from xml.etree import ElementTree as ET
 
 from dotenv import load_dotenv
@@ -110,8 +110,233 @@ CARD_TITLE_RULES = (
     "단 큰 이슈가 없는 잠잠한 날은 억지 드라마 금지, 차분히(예: '큰 이슈 없이 보합'). "
     "오늘의 핵심 사실에 근거(과장·낚시 금지). 이모지·따옴표 없이 글자만. "
     "예: 'FOMC 앞두고 원화 약세 가속', '중동 리스크 완화에 환율 급락', "
-    "'미국 고용 깜짝에 달러 강세', '외국인 매도에 환율 출렁'."
+    "'미국 고용 깜짝에 달러 강세', '외국인 매도에 환율 출렁'. "
+    "■ 그날 '결과'(급락/급등/강세/약세)는 [현재 환율 맥락]의 *실제 전일대비(종가)* 방향·강도와 일치해야 한다. "
+    "전일대비가 작으면(±5원 미만) '급락/급등'으로 단정 금지(보합/소폭). 장중 드라마를 담고 싶으면 '장중'을 "
+    "명시할 것 — 모범: '장중 1504 찍고 반등'(장중=명시, 종가는 배지가 따로 보여줌)."
 )
+
+# 환율 레벨·움직임 그라운딩 — 헤드라인·불릿 공통. 장중 수치는 *유지하되 '장중'으로 명시*,
+# 그날 종가·전일대비(배지·현재가)는 [현재 환율 맥락] 단일 소스. 둘을 뒤섞지 않는다.
+LEVEL_RULE = (
+    "■ 환율 레벨·움직임 규칙(매우 중요): 헤드라인·불릿에서 '그날 환율 레벨/마감/전일대비'를 말할 땐 "
+    "반드시 [현재 환율 맥락]의 *종가·전일대비*(정수)와 일치시킨다 — 화면 배지와 동일한 단일 소스다. "
+    "기사 속 장중 고점·저점(예: '장중 1,504원까지 급락')은 *사실이니 빼지 말고 살리되, 반드시 '장중'으로 "
+    "명시*하고 그날 종가·결론으로 둔갑시키지 말 것. 다른 날·다른 기준 수치(예: 어제 장중 고점 1,530원)를 "
+    "'오늘 종가/움직임'으로 끌어오지 말 것. 실제 전일대비(종가)가 작으면(±5원 미만) 그날 결론을 "
+    "'급락/급등'으로 단정하지 말고 '보합/소폭'으로 쓰되, 장중 급등락은 '장중'으로 따로 적는다. "
+    "단 이 규칙은 headline·bullets·요약에만 적용되고, *card_title(지난 브리핑 제목)에는 환율 숫자를 "
+    "절대 넣지 않는다*(CARD_TITLE_RULES대로 원인·이슈로만 — 숫자는 목록 배지가 따로 보여준다)."
+)
+
+
+# ── 검증·heat·차별화 (제목 엔진 = 카드뉴스·웹 공유 첫인상 보호) ─────────────────
+# 날짜/D-day·이벤트 정렬 점검에 쓰는 핵심 이벤트 키워드.
+EVENT_KW = ["FOMC", "CPI", "PPI", "금통위", "고용", "비농업", "소비자물가",
+            "생산자물가", "연준", "한국은행", "금리결정", "GDP", "PCE", "ECB"]
+# 제목/요약에서 금지되는 예보·협박·낚시 표현(§6 인과정직·§0 광고주 톤).
+FORECAST_BAN = ["오를 것", "내릴 것", "오를 전망", "내릴 전망", "급등 예고", "급락 예고",
+                "폭등", "폭락 예고", "마지막 기회", "지금 사", "지금 팔", "무조건",
+                "반드시 사", "후회", "수익 보장", "이득 보장"]
+# 제목 desync 방지: 원/달러 환율류 숫자(1,513원·1513·1520선 등)는 제목 금지.
+_RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
+
+
+def _output_dir() -> str:
+    return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "output")
+
+
+def load_calendar_events() -> list:
+    """최신 calendar-*.json의 events. carousel/검증이 D-day·정렬 점검에 쓴다."""
+    files = sorted(glob.glob(os.path.join(_output_dir(), "calendar-*.json")))
+    if not files:
+        return []
+    try:
+        return json.load(open(files[-1], encoding="utf-8")).get("events", []) or []
+    except (OSError, json.JSONDecodeError):
+        return []
+
+
+def prev_card_title(exclude: str = "") -> str:
+    """직전 발행 factors의 card_title — 오늘 제목이 어제와 차별화되도록 비교 기준."""
+    ex = os.path.abspath(exclude) if exclude else ""
+    files = [f for f in glob.glob(os.path.join("output", "factors-*.json"))
+             if os.path.abspath(f) != ex]
+    if not files:
+        return ""
+    try:
+        d = json.load(open(max(files, key=os.path.getmtime), encoding="utf-8"))
+        return (d.get("card_title") or "").strip()
+    except (OSError, json.JSONDecodeError):
+        return ""
+
+
+def imminent_events(cal_events, today, max_days=7):
+    """importance≥3(★★★) 이면서 오늘~max_days 안에 있는 일정 → [(event, d-day), …] 가까운 순."""
+    out = []
+    for e in cal_events:
+        try:
+            d = (date.fromisoformat(e.get("date", "")) - today).days
+        except ValueError:
+            continue
+        if int(e.get("importance", 0)) >= 3 and 0 <= d <= max_days:
+            out.append((e, d))
+    out.sort(key=lambda x: x[1])
+    return out
+
+
+def compute_heat(rate, cal_events, today):
+    """이슈 강도. high = ★★★ 임박(D-0~1) or 실제 |전일대비|≥10원. → (level, reason, badge)."""
+    reasons, event_hot, move_hot = [], False, False
+    for e, d in imminent_events(cal_events, today, max_days=1):
+        event_hot = True
+        reasons.append(f"{(e.get('name') or '')[:14]} D-{d}")
+    r, p = rate.get("rate"), rate.get("prev")
+    if isinstance(r, (int, float)) and isinstance(p, (int, float)) and abs(r - p) >= 10:
+        move_hot = True
+        reasons.append(f"전일대비 {r - p:+.0f}원")
+    level = "high" if (event_hot or move_hot) else "normal"
+    badge = "⚡ 오늘 주목" if level == "high" else ""
+    return level, "; ".join(reasons), badge
+
+
+def dday_prompt_context(cal_events, today) -> str:
+    """제목 생성용 — 임박 ★★★ 일정의 정확한 D-day(당일/내일 오표기 방지)."""
+    ev = imminent_events(cal_events, today, max_days=5)
+    if not ev:
+        return "(임박한 ★★★ 일정 없음)"
+    wd = ["월", "화", "수", "목", "금", "토", "일"]
+    lines = []
+    for e, d in ev[:4]:
+        dd = "오늘(D-0)" if d == 0 else ("내일(D-1)" if d == 1 else
+                                        ("모레(D-2)" if d == 2 else f"D-{d}"))
+        ed = date.fromisoformat(e["date"])
+        lines.append(f"- {e.get('name','')}: {e['date']}({wd[ed.weekday()]}) = {dd}")
+    return "\n".join(lines)
+
+
+def title_engine_context(rate, cal_events, today, exclude=""):
+    """제목 생성 프롬프트에 끼울 동적 블록(어제 제목·D-day·heat) + heat 메타."""
+    level, reason, badge = compute_heat(rate, cal_events, today)
+    prev = prev_card_title(exclude)
+    block = (
+        f"[어제 제목] {prev or '(없음)'}\n"
+        f"[임박 ★★★ 일정(D-day 정확)]\n{dday_prompt_context(cal_events, today)}\n"
+        f"[오늘 이슈 강도] heat={level}" + (f" ({reason})" if reason else "")
+    )
+    return block, {"heat": level, "heat_reason": reason, "title_badge": badge}
+
+
+# 동적 제목 규칙(어제 차별화·날짜 정확·heat 후크) — 위 context 블록과 함께 쓴다.
+CARD_TITLE_DYNAMIC = (
+    "■ 제목 추가 규칙(매우 중요):\n"
+    "- [어제 제목]과 첫인상이 비슷하면 실패다. 같은 핵심 이슈가 며칠 이어져도, 어제와 *오늘 진짜 "
+    "달라진 사실*(제자리↔되돌림, D-day가 하루 더 임박 등)로 각도를 바꿔라. 진짜 다른 게 없으면 "
+    "억지 차별화 말고 차분히(드라마 금지).\n"
+    "- 시간 표현은 [임박 ★★★ 일정]의 *실제 D-day*와 일치시켜라. 결정이 내일이면 '당일/오늘'이라 "
+    "쓰지 말 것(예: 결정 D-1이면 '코앞'·'하루 앞', D-0이어야 '오늘/당일'). 날짜를 틀리면 기각된다.\n"
+    "- heat=high면 사건의 *임박·크기*를 키운 후크 허용(허용: '이번주 최대 변수, 오늘' / "
+    "'결과에 환율 갈림길' / '오늘 밤 FOMC 결정' / 질문형). 단 방향 단정·예보·협박·낚시는 금지. "
+    "heat=normal이면 담백하게.\n"
+    "- 제목엔 환율 숫자(1,513원·1520선 등) 절대 금지(목록·박스와 어긋남)."
+)
+
+
+def validate_briefing(payload, rate, cal_events, prev_title, today):
+    """발행 전 사실·정직성 게이트. (blocks=게시 금지, warns=확인 권고) 두 리스트 반환.
+    factor_analysis(생성)·carousel(표지)·build_site(웹배포) 셋이 같은 기준을 공유한다."""
+    blocks, warns = [], []
+    title = (payload.get("card_title") or "").strip()
+    tldr = [t for t in (payload.get("tldr") or []) if t]
+    text = " ".join([title, " ".join(tldr), payload.get("overall_why") or ""])
+
+    # 1) 제목 환율 숫자 = desync 위험
+    if _RATE_NUM_RE.search(title):
+        blocks.append(f"제목에 환율 숫자 포함 → 박스와 desync: '{title}' (숫자 빼고 원인·이슈로)")
+    # 2) 빈 값·길이
+    if not title:
+        blocks.append("card_title 비어 있음")
+    elif len(title) > 24:
+        warns.append(f"제목 {len(title)}자(>24, 잘릴 수 있음): '{title}'")
+    if len(tldr) < 3:
+        warns.append(f"tldr {len(tldr)}개(<3)")
+    if len(payload.get("factors") or []) < 4:
+        warns.append(f"factors {len(payload.get('factors') or [])}개(<4)")
+    # 3) 환율 변동 주장 ↔ 실제 전일대비 모순
+    r, p = rate.get("rate"), rate.get("prev")
+    if isinstance(r, (int, float)) and isinstance(p, (int, float)):
+        actual = r - p
+        for m in re.finditer(r"(\d+)\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
+                             r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
+            if abs(int(m.group(1)) - abs(actual)) > 3:
+                blocks.append(f"텍스트 '{m.group(1)}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원")
+        if abs(actual) < 1.0 and any(w in text for w in
+                                     ("하락", "급락", "상승", "급등", "강세", "약세")):
+            warns.append(f"실제 전일대비 {actual:+.1f}원(보합)인데 방향/변동 주장")
+    # 4) 날짜/D-day 정확성 — 이벤트별 '당일/내일' 표기 ↔ 실제 D-day (수동 점검 자동화)
+    dday_by_kw = {}
+    for e, d in imminent_events(cal_events, today, max_days=7):
+        for kw in EVENT_KW:
+            if kw in e.get("name", ""):
+                dday_by_kw.setdefault(kw, d)
+    for kw, d in dday_by_kw.items():
+        if re.search(rf"오늘\s*(?:밤|예정|발표)?\s*{kw}|{kw}\s*(?:당일|오늘)", text) and d != 0:
+            blocks.append(f"'{kw} 당일/오늘'로 썼으나 실제 D-{d}(오늘 아님) — 날짜 점검")
+        if re.search(rf"내일\s*{kw}|{kw}\s*내일", text) and d != 1:
+            blocks.append(f"'{kw} 내일'로 썼으나 실제 D-{d} — 날짜 점검")
+    # 4b) 임박 ★★★(D-0~2)이 요약에 아예 없으면 경고
+    for e, d in imminent_events(cal_events, today, max_days=2):
+        km = re.search(r"(FOMC|CPI|금통위|고용|금리|소비자물가|연준)", e.get("name", ""))
+        kw = km.group(1) if km else (e.get("name", "")[:5])
+        if kw and kw not in text:
+            warns.append(f"임박 ★★★ '{e.get('name','')}'(D-{d})이 요약에 안 보임")
+        break
+    # 5) 어제 제목과 과유사
+    if prev_title and title:
+        a = set(re.findall(r"[가-힣A-Za-z]+", title))
+        b = set(re.findall(r"[가-힣A-Za-z]+", prev_title))
+        if a and b and len(a & b) / len(a | b) >= 0.6:
+            warns.append(f"어제 제목과 유사: 오늘 '{title}' ↔ 어제 '{prev_title}' (차별점 점검)")
+    # 6) 예보·협박·낚시 금지어
+    for w in FORECAST_BAN:
+        if w in text:
+            blocks.append(f"예보/낚시 금지어 '{w}' 포함(§6·§0)")
+    # 7) 요인 근거 기사 0개 = 환각 위험 (BLOCK)
+    empties = [f.get("name", "?") for f in (payload.get("factors") or [])
+               if not (f.get("sources") or [])]
+    if empties:
+        blocks.append(f"근거 기사 0개 요인: {', '.join(empties)} (환각 위험 — 출처 확인)")
+    # 8) 시제 모순: 이미 지난 ★★★ 이벤트를 '앞두고/예정' 같은 미래형으로 표기 (BLOCK)
+    dd_all = {}
+    for e in cal_events:
+        try:
+            d = (date.fromisoformat(e.get("date", "")) - today).days
+        except ValueError:
+            continue
+        if int(e.get("importance", 0)) >= 3:
+            for kw in EVENT_KW:
+                if kw in e.get("name", ""):
+                    dd_all.setdefault(kw, []).append(d)
+    for kw, ds in dd_all.items():
+        past_only = any(d < 0 for d in ds) and not any(d >= 0 for d in ds)
+        if past_only and re.search(rf"{kw}[^.。]{{0,12}}(앞두|예정|열린다|열릴|개최|앞둔)", text):
+            blocks.append(f"이미 지난 '{kw}'을 미래형(앞두고/예정)으로 표기 — 시제 점검")
+    # 9) 주말(외환시장 휴장)
+    if today.weekday() >= 5:
+        warns.append("주말(외환시장 휴장) — 변동 주장 주의")
+    return blocks, warns
+
+
+def print_validation(blocks, warns, where="검증"):
+    """검증 결과를 stderr에 일관 포맷으로 출력. blocks 있으면 게시 금지 배너."""
+    if blocks:
+        print("=" * 56, file=sys.stderr)
+        print(f"❌ {where} 실패 — 게시 금지! (사실/정직성 위반)", file=sys.stderr)
+        for b in blocks:
+            print("  • " + b, file=sys.stderr)
+        print("=" * 56, file=sys.stderr)
+    for w in warns:
+        print("  ⚠ " + w, file=sys.stderr)
 
 
 def parse_args() -> argparse.Namespace:
@@ -244,15 +469,18 @@ def rewrite_why(client, model: str) -> None:
         for f in facs
     )
     today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    today_date = datetime.now(timezone(timedelta(hours=9))).date()
     prev_block = prev_tldr_context(exclude=path)   # 직전 발행 요약(자기 자신 제외) — '어제 대비 변화' 기준
+    cal_events = load_calendar_events()
+    rate_obj = load_rate_obj()
+    title_ctx, heat_meta = title_engine_context(rate_obj, cal_events, today_date, exclude=path)
     prompt = (
         f"오늘은 {today_kst}(한국시간)입니다. 아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
         f"{digest}\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
         f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
-        "■ 환율 숫자: 현재가·어제 종가·전일대비는 위 [현재 환율 맥락]의 값만 쓴다(박스와 동일 소스). "
-        "오늘 장중 고가·저가의 급등·급락은 뉴스 근거가 있으면 사실로 덧붙여도 되나, 현재가·어제 종가와 "
-        "혼동시키지 말고 다른 날 수치를 오늘 상태로 끌어오지 말 것.\n"
+        f"[제목 차별화·날짜·heat 맥락]\n{title_ctx}\n\n"
+        f"{LEVEL_RULE}\n"
         "■ 시제: 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·'예정' 같은 미래형으로 "
         "쓰지 말 것. 이미 나온 결과를 과거형으로 반영하라.\n"
         "■ 쉬운 말: 어려운 전문용어·한자어 금지(예: '하방압력'→'끌어내리는 힘', '횡보'→'큰 변화 없이 머묾', "
@@ -260,7 +488,7 @@ def rewrite_why(client, model: str) -> None:
         "대학생이 한 번에 이해하게 직관적으로 풀어 쓸 것.\n\n"
         f"■ overall_why 작성 규칙: {WHY_RULES}\n\n"
         f"■ tldr 작성 규칙: {TLDR_RULES}\n\n"
-        f"■ card_title 작성 규칙: {CARD_TITLE_RULES}\n\n"
+        f"■ card_title 작성 규칙: {CARD_TITLE_RULES}\n{CARD_TITLE_DYNAMIC}\n\n"
         'JSON만 출력(코드펜스 없이): {"card_title":"...","overall_why":"...","tldr":["문장","문장","문장"]}'
     )
     resp = client.messages.create(
@@ -278,13 +506,19 @@ def rewrite_why(client, model: str) -> None:
         data["card_title"] = parsed["card_title"].strip()
     if tldr:
         data["tldr"] = tldr
+    data["heat"] = heat_meta["heat"]
+    data["heat_reason"] = heat_meta["heat_reason"]
+    data["title_badge"] = heat_meta["title_badge"]
+    blocks, warns = validate_briefing(data, rate_obj, cal_events, prev_card_title(exclude=path), today_date)
+    data["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
     now = datetime.now(timezone.utc)
     out = os.path.join("output", f"factors-{now.strftime('%Y-%m-%d_%H%M')}.json")
     json.dump(data, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    print(f"Rewrote overall_why + tldr (reused {os.path.basename(path)}) -> {out}\n")
+    print(f"Rewrote overall_why + tldr (reused {os.path.basename(path)}) -> {out}  (heat={heat_meta['heat']})\n")
     for t in tldr:
         print(f"  · {t}")
     print(f"\n{why}")
+    print_validation(blocks, warns, where="제목/사실 검증")
 
 
 def verify_factors(client, model, result, digest):
@@ -299,13 +533,18 @@ def verify_factors(client, model, result, digest):
         ensure_ascii=False,
     )
     prompt = (
-        "아래는 번호가 매겨진 [기사 원문]과, 이 기사들을 보고 작성한 [요인 분석]이다. "
-        "각 요인의 headline·bullets가 기사 원문에 실제로 근거하는지 엄격히 검증·정정하라.\n"
+        "아래는 번호가 매겨진 [기사 원문], 그날의 [현재 환율 맥락](종가·전일대비, 화면 배지와 동일 소스), "
+        "그리고 이 기사들을 보고 작성한 [요인 분석]이다. 각 요인의 headline·bullets를 엄격히 검증·정정하라.\n"
         "■ 규칙:\n"
         "- 기사에 없는 사실·인과·추측은 삭제하고, 기사에 분명히 있는 핵심 사실로 교체.\n"
         "- 숫자(환율·%·날짜·기관명)는 기사와 정확히 일치해야 함. 틀리면 기사 값으로 정정.\n"
+        "- 그날 환율 '레벨/마감/전일대비'를 말하는 문장은 [현재 환율 맥락]의 종가·전일대비와 일치해야 한다. "
+        "기사 속 장중 고점·저점(예: '장중 1,504원')은 *유지하되 '장중'으로 명시*하고, 그날 종가/움직임으로 "
+        "둔갑한 표현(예: 실제 전일대비는 −4원인데 '10원 급락'으로 단정, 또는 어제 장중 고점을 오늘 레벨로 사용)은 "
+        "맥락의 종가·전일대비에 맞게 정정한다. 전일대비가 작은데 '급락/급등'으로 단정했으면 '소폭/보합'으로 낮춘다.\n"
         "- 근거가 약하면 단정을 낮출 것(평서문 '~다'는 유지하되 과장 제거).\n"
         "- 문체(담백한 '~다' 평서문)·각 불렛 길이·불렛 2개·source_ids는 그대로 유지. 검증·정정만 하라.\n\n"
+        f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
         f"[기사 원문]\n{digest}\n\n[요인 분석]\n{payload}\n\n"
         '정정된 factors만 JSON으로(코드펜스 없이): '
         '{"factors":[{"factor_id":"F1","headline":"...","bullets":["..",".."],"source_ids":[0,3]}]}'
@@ -389,13 +628,18 @@ def main() -> None:
     digest = "\n".join(lines)
 
     today_kst = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    today_date = datetime.now(timezone(timedelta(hours=9))).date()
     prev_block = prev_tldr_context()   # 직전 발행 요약 — '어제 대비 변화'를 앞세우는 비교 기준
+    cal_events = load_calendar_events()
+    rate_obj = load_rate_obj()
+    title_ctx, heat_meta = title_engine_context(rate_obj, cal_events, today_date)
     prompt = (
         f"당신은 원/달러(USD/KRW) 환율 애널리스트입니다. 오늘은 {today_kst}(한국시간)입니다. "
         "아래 10개 '환율 영향 요인'별로 최근 뉴스를 모았습니다. "
         "오늘 원/달러에 실제로 가장 크게 영향을 준 요인 4개를 고르세요.\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
         f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
+        f"[제목 차별화·날짜·heat 맥락]\n{title_ctx}\n\n"
         f"[요인별 뉴스]\n{digest}\n\n"
         "■ 작성 원칙 (가장 중요):\n"
         "- 논리·정확도·구체성이 최우선. 두루뭉술한 채움말 절대 금지"
@@ -410,6 +654,7 @@ def main() -> None:
         "'무엇이 → 어떤 경로로 → 환율에 어떻게'를 인과로 설명.\n"
         "- 모든 문장(headline·bullets)은 아래 [요인별 뉴스] 기사에 실제로 나온 사실만 담을 것. "
         "기사에 없는 수치·인과·일반론·추측은 절대 금지. 각 요인의 근거 기사 번호(source_ids)를 반드시 표기.\n"
+        f"{LEVEL_RULE}\n"
         "- 시제 정확: 오늘 날짜 기준으로 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·"
         "'발표 예정' 같은 미래형으로 쓰지 말 것. 발표 전에 작성된 옛 기사의 표현을 그대로 옮기지 말고, "
         "이미 나온 결과를 반영해 과거형으로 쓸 것.\n"
@@ -424,7 +669,7 @@ def main() -> None:
         "bullets(가장 중요한 핵심 사실 2개, 각 1문장·구체적·짧게), source_ids(근거 기사 번호 3~5개).\n"
         f"tldr: {TLDR_RULES}\n"
         f"그리고 overall_why: {WHY_RULES}\n"
-        f"그리고 card_title: {CARD_TITLE_RULES}\n\n"
+        f"그리고 card_title: {CARD_TITLE_RULES}\n{CARD_TITLE_DYNAMIC}\n\n"
         "아래 정확한 JSON만 출력(코드펜스 없이):\n"
         '{"card_title":"...","tldr":["문장","문장","문장"],'
         '"factors":[{"factor_id":"F1","impact":5,"impact_reason":"...","headline":"...",'
@@ -493,13 +738,21 @@ def main() -> None:
         "tldr": tldr,
         "overall_why": result.get("overall_why", ""),
         "factors": factors_out,
+        "heat": heat_meta["heat"],
+        "heat_reason": heat_meta["heat_reason"],
+        "title_badge": heat_meta["title_badge"],
     }
+    # 발행 전 검증(웹·캐러셀과 동일 기준) → checks를 JSON에 박아 하류 게이트가 상속.
+    blocks, warns = validate_briefing(payload, rate_obj, cal_events, prev_card_title(), today_date)
+    payload["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
+
     out_path = args.out or os.path.join("output", f"factors-{now.strftime('%Y-%m-%d_%H%M')}.json")
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, ensure_ascii=False, indent=2)
 
-    print(f"\nSaved {len(factors_out)} top factors to {out_path}\n")
+    print(f"\nSaved {len(factors_out)} top factors to {out_path}  (heat={heat_meta['heat']})\n")
+    print_validation(blocks, warns, where="제목/사실 검증")
     if tldr:
         print("3줄 요약:")
         for t in tldr:
