@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-17T04:06:27.458049+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,512.4 KRW/USD\n\nWHY: The won is currently weak at 1,512.4 KRW per USD (up 0.8 won from previous close), meaning you need more won to get your $2,000. News indicates this high exchange rate has persisted despite the Middle East situation easing, and structural factors suggest the won will remain weak \"for some time\" rather than strengthen soon.\n\nTIP: Consider setting up a standing order or hedging strategy to spread your monthly conversions across multiple days/weeks, as waiting for a stronger won (lower KRW/USD rate) may be more cost-effective than converting all at once during sustained weakness."
+  },
+  "articles": [
+    {
+      "title": "[기업 환전략] '해외서 벌어 현지서 쓴다'…자동차 자연헤지 |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBzSXZfVHF3MFoxeHhCZjdDcEtvLXhIU1FHNVZvTGloWi1fNktYa1ZMZHZPekR0a2NRM3IweUVtUUdrNy1GUGstTmVOR0tLRnI5anFfUU1LUExFSzlYajZNY1hYcXlRVWxaVnc0OXhXbXFCZE9j?oc=5",
+      "summary": "[기업 환전략] '해외서 벌어 현지서 쓴다'…자동차 자연헤지 | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-17T02:24:03+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.8원 오른 1512.4원 개장 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTVhPeVFlam9BYzd4eGZhc2M5LS1WTldqQ2F5d3JTNmQzb1pvUHhsd0JqSlc1MFV4cFN2b0sxRmUwUFBFYnBldzR4SlphZE1qTm9PUW9aeWtEZGs5WHNZcDl0Vm5kaFVwN2tGRnR2SlRCNXh0dmNoN2ZpeUtVWW9PYTMxQnJld9IBmgFBVV95cUxQRkNVSGcwbl9UTjdTV1dZVGFUSEZmWWRPNmowd2l1ZE8tYTVBX19yNms3ekJ1dmw0NUE0em9odkpqMDJtc3NHQkU2SmZaMkZOUlhlQ05KOUdYaGU0aEFGSzRfWjFoRmxFcVFidmx4YXlsQ3poOWphU3N3OGU5YmVybl9nQ3p2aDR3Z0VkVHZFSUdsSm9VcDZuVkZn?oc=5",
+      "summary": "원·달러 환율, 0.8원 오른 1512.4원 개장 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-17T00:03:00+00:00"
+    },
+    {
+      "title": "'중동사태' 종료에도 1500원대…고환율 '정상화' 언제쯤?",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE93SWoxVWR1Z0ZmVHBpUkhnYVVfblltTkZhbnZjS1Q1VjZhNl9VeGRVb2FEX3hnbVJXTXZMRGEtQy04TzR5WGxBZ1FMc1htRWtRbXRvQnpldm92VXl5aTlKNg?oc=5",
+      "summary": "'중동사태' 종료에도 1500원대…고환율 '정상화' 언제쯤? 메트로신문",
+      "source": "메트로신문",
+      "date": "2026-06-16T05:01:59+00:00"
+    },
+    {
+      "title": "자본연 \"'경상수지 흑자→원화 강세' 단절 구조 당분간 지속\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE91VTFqMkQwMzRmVk5uWXpaZDJ4bG9NNUE3cWs1bDhud0ZfM0Nld3A1NUQ4WURDSF9oUVdkSnZZWFpRMmt0LXQ3bjRaYzJpbDRlN3RPNnFPUEZfNE1HajRnblc0cnFnQkM3VWtlX2ZmcGZmdw?oc=5",
+      "summary": "자본연 \"'경상수지 흑자→원화 강세' 단절 구조 당분간 지속\" KB Think",
+      "source": "KB Think",
+      "date": "2026-06-16T04:14:27+00:00"
+    },
+    {
+      "title": "미래에셋 스페이스X 금전 보상안 분석: 부회장단 사과문 요지와 금감원 무기한 검사 쟁점",
+      "link": "https://news.google.com/rss/articles/CBMiggRBVV95cUxPX2ZxTFBwLXZkekE0cnJqVGp3ajlTUV84aFdSNmZDT2trX0xqRk1PVUhKTmFKazZlUTRtS3JCdEg0MlJZU29aMXVmREgxbUJSY3kxNDQtdlZHODFxNVpUMHZ3MWJhNHhTMVdjZ3JMdG1HbVN3TGVqVXB0WnRBUVk5TDJnd2RKTTBneTNjU1l5a0JUQS1yT2lZaUg5ZDdMWTExQ3RHNFZSLTJCcUktN2Z0cTA4dXBsVFFYNmgzdzRyaS0wM3pwdWtLVXNxQlJYSHRYR1Q2eVVwNHZrcURHektRWDRjQzc2UmRDWTl6OGVuLTVIOXZPb21BcEVURDNtOVA5X2MyYU5BLUVHLURDQ3VUNXE4QzF3TGVUbVZSNFJETlVEa2NLamgzRGZ6V1ctOWpWNkFUa2gxc041TXV0LVdWSVUzNUdFRmRQX1FfWXdsY3pURXVwZUpmMHo0azRtclU5TS1EMC01c21qQXFXTGV3b2V2elFtYW9YS2VwYTB1c3MzSjlZbjg2LTUwcmFUbExWYXNZbmxYRTBnVF9zX1I4R3o5ajlIREUyckJ5SXZYODZPYWtYS2lPbFpkU1Rtbm9lbFpuZGNBLUNjTGhqcXpMSHc2UURMZnpKTGIzaGJ6cUZ1cnFibDlZMFFmRjRsbmhBVTdrSHBKSWlocTZUc3pfTUFR?oc=5",
+      "summary": "미래에셋 스페이스X 금전 보상안 분석: 부회장단 사과문 요지와 금감원 무기한 검사 쟁점 티스토리",
+      "source": "티스토리",
+      "date": "2026-06-16T23:12:38+00:00"
+    }
+  ]
+}
