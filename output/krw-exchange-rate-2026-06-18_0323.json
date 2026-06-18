@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-18T03:23:43.859671+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,500 KRW per USD (high level)\n\nWHY: The news indicates the won is currently WEAK, with the exchange rate stuck in the \"high 1,500 won per dollar\" range and expected to remain elevated (\"고환율 장기화\"). Upcoming US FOMC meetings and potential increases in US stock investment could push the rate even higher, making dollars more expensive for KRW holders.\n\nTIP: Since you need $2,000 monthly regardless, consider splitting purchases across multiple weeks or using forward contracts to average out the unfavorable rate rather than converting a lump sum at this weak-won peak."
+  },
+  "articles": [
+    {
+      "title": "[외환-마감] 워시 첫 FOMC 앞두고 상승…1.80원↑",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSN0lkVTBnSjBsRjR2Z2xuNXN3UF95REVSc25EYzdKQnRyekRDanhoQnJ1Z21OTlJNVXBLS3l5bFRxLWctb0hYeERVOEd2NVI5R2VkaGZ3NlR6NV9FU09TRlNhV3NBWkhaMXB2b0c2cjRCdw?oc=5",
+      "summary": "[외환-마감] 워시 첫 FOMC 앞두고 상승…1.80원↑ KB Think",
+      "source": "KB Think",
+      "date": "2026-06-17T07:24:22+00:00"
+    },
+    {
+      "title": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50MDNCTVNWMkhIWnBNbTdycjJjek9WeWR6Mmg3UlQ3RXRpcldRVHkwLTN1M2sta3o4VE55LWpSLWMtQ1MydGdjaWtsWXUza1JuVW5wWmMxVHpETWx0OTlDVEJqUjRVNjJkV1lSYnpid1HSAXBBVV95cUxOdDAzQk1TVjJISFpwTW03cnIyY3pPVnlkejJoN1JUN0V0aXJXUVR5MC0zdTNrLWt6OFROeS1qUi1jLUNTMnRnY2lrbFl1M2tSblVucFpjMVR6RE1sdDk5Q1RCalI0VTYyZFdZUmJ6YndR?oc=5",
+      "summary": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나 소년한국일보",
+      "source": "소년한국일보",
+      "date": "2026-06-17T23:42:11+00:00"
+    },
+    {
+      "title": "한은 \"美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBkSG5IUUdLVDRsaE5NUmNyVXZ0S1NoUnl1SW9sUWw5XzJUd1VpUm9CNVJCbkNuTTV5eEd6aXJoZzNHS0N1bFA1Z1EyMnBsMUFQRVZZ?oc=5",
+      "summary": "한은 \"美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승\" 네이트",
+      "source": "네이트",
+      "date": "2026-06-18T03:13:00+00:00"
+    },
+    {
+      "title": "[단독] 미래에셋 '고객 케어 프로그램' 가동…환전 수수료·경과 이자 포함될 듯",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5iaXhxanRieE9DQUxMdTE5VVdRbWRZbFJpNF90LUNhclR3ZC11aG1HM3JKaTVJQ210MXdWUkFlT3BqSHZPQkpNM1llUGZoVXYxLXZz?oc=5",
+      "summary": "[단독] 미래에셋 '고객 케어 프로그램' 가동…환전 수수료·경과 이자 포함될 듯 네이트",
+      "source": "네이트",
+      "date": "2026-06-17T09:07:12+00:00"
+    }
+  ]
+}
