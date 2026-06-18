@@ -119,8 +119,8 @@ def fill_results(client, events, today, model):
         resp = client.messages.create(model=model, max_tokens=1000,
                                       messages=[{"role": "user", "content": prompt}])
         text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
-        s, e = text.find("{"), text.rfind("}")
-        parsed = json.loads(text[s:e + 1]) if s != -1 and e != -1 else {}
+        s = text.find("{")
+        parsed = json.JSONDecoder().raw_decode(text[s:])[0] if s != -1 else {}
     except Exception as exc:
         print(f"  result search failed: {exc}", file=sys.stderr)
         return
@@ -207,11 +207,12 @@ def main() -> None:
     except Exception as exc:
         sys.exit(f"error: Claude call failed: {exc}")
     text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
-    s, e = text.find("{"), text.rfind("}")
-    if s == -1 or e == -1:
+    s = text.find("{")
+    if s == -1:
         sys.exit(f"error: could not parse JSON:\n{text[:400]}")
     try:
-        result = json.loads(text[s:e + 1])
+        # raw_decode: 첫 JSON 객체만 파싱(모델이 뒤에 설명·둘째 객체를 붙여도 'Extra data' 안 남).
+        result, _ = json.JSONDecoder().raw_decode(text[s:])
     except json.JSONDecodeError as exc:
         sys.exit(f"error: JSON parse failed ({exc}):\n{text[:400]}")
 

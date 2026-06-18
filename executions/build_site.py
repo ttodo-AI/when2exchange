@@ -139,7 +139,9 @@ def main():
         run("Scout", "exchange_rate_watcher.py", scout_extra, soft=True)
         run("Factor analysis", "factor_analysis.py")
         run("Rewrite why + tldr", "factor_analysis.py", ["--rewrite-why"])
-        run("Econ calendar", "econ_calendar.py")
+        # 캘린더는 보조 단계 — LLM 출력 파싱 등으로 한 번 실패해도 직전 calendar-*.json을 재사용하고
+        # 빌드를 계속한다(데일리 업데이트가 통째로 막히지 않게). soft=True.
+        run("Econ calendar", "econ_calendar.py", soft=True)
     # light: Scout 생략. factor_analysis를 안 돌려 Scout 결과를 쓰지도 않으므로
     # (요인/일정은 직전 full 산출물 재사용) Firecrawl 호출은 순수 낭비였음.
 
