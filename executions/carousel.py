@@ -188,15 +188,13 @@ HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
   svg.dog{width:auto;flex:none}
 
   .m1{font-size:33px;font-weight:700;color:#6b7280;letter-spacing:-.02em;
-      display:flex;justify-content:space-between;align-items:baseline}
+      display:flex;justify-content:space-between;align-items:center}
   .m1 .kw{color:#3b5bdb}
   .m1-date{color:#9aa1ad;font-weight:700;font-size:30px}
-  /* heat=high 배지(신호등 빨강) + 후킹 문구 — 잠잠한 날엔 안 보임 */
-  .cbadge{display:inline-flex;align-self:flex-start;margin-bottom:22px;font-size:28px;
-          font-weight:800;color:#fff;background:#e0383e;border-radius:999px;
-          padding:13px 26px;letter-spacing:-.01em}
-  .chook{margin-bottom:18px;font-size:31px;font-weight:800;color:#e0383e;
-         letter-spacing:-.02em;word-break:keep-all;text-align:right}
+  .m1-right{display:inline-flex;align-items:center;gap:14px}
+  /* heat=high = 날짜 옆 작은 빨강 칩(신호등 빨강). 잠잠한 날엔 안 보임 */
+  .m1-heat{font-size:24px;font-weight:800;color:#fff;background:#e0383e;
+           border-radius:999px;padding:7px 16px;letter-spacing:-.01em}
   .m2{margin-top:8px;font-size:52px;font-weight:800;color:#14171f;letter-spacing:-.035em;
       line-height:1.16;white-space:nowrap;display:flex;align-items:center;gap:14px;font-size:46px}
   .m2 svg.dog{height:58px}
@@ -276,6 +274,13 @@ HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
          letter-spacing:-.02em;word-break:keep-all}
   .snote b{color:#14171f;font-weight:800}
   .sfoot{display:flex;justify-content:flex-end;font-size:28px;font-weight:800;color:#3b5bdb}
+  /* 마지막 페이지 닫는 블록(팔로우 CTA + 면책) */
+  .endwrap{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
+  .endmsg{font-size:35px;font-weight:800;color:#14171f;letter-spacing:-.025em;word-break:keep-all}
+  .endbtn{font-size:35px;font-weight:800;color:#fff;background:#3b5bdb;border-radius:999px;
+          padding:25px 46px;letter-spacing:-.01em;margin-top:2px}
+  .endlink{font-size:27px;font-weight:700;color:#6b7280;letter-spacing:-.01em}
+  .enddisc{font-size:22px;font-weight:600;color:#9aa1ad;letter-spacing:-.01em;margin-top:6px}
 
   /* 그래프 슬라이드 */
   .gbig{margin-top:38px;background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
@@ -434,10 +439,12 @@ def cover_html(factors, rate, series, guides=False, version=2, badge=None, hook=
     )
 
     wk = ["월", "화", "수", "목", "금", "토", "주일"][today.weekday()]
-    # 리드(질문+날짜 우측) / 헤드라인(제목, 환율박스 위)
+    # 리드(질문 + 우측: heat 칩·날짜). heat=high면 날짜 옆 작은 빨강 칩으로 강조.
+    heat_chip = (f'<span class="m1-heat">{badge}</span>' if badge else "")
     lead = (
         '<div class="m1"><span>이번 달, 오늘 환전해도 될까?</span>'
-        f'<span class="m1-date">{today.month}/{today.day} ({wk})</span></div>'
+        f'<span class="m1-right">{heat_chip}'
+        f'<span class="m1-date">{today.month}/{today.day} ({wk})</span></span></div>'
     )
     _w = title.split()
     # 큰 두 줄: 앞부분(검정) → 줄바꿈 → 마지막 두 단어(파랑 키워드)
@@ -454,26 +461,25 @@ def cover_html(factors, rate, series, guides=False, version=2, badge=None, hook=
         + f'<div class="h-asof">{asof} 기준</div></div>'
         + f'<div class="ptabs">{ptabs}</div>'
     )
-    badge_html = (f'<div class="cbadge">{badge} · 예보 아님</div>' if badge else "")
-    hook_html = (f'<div class="chook">{hook}</div>' if hook else "")
+    # 표지 악센트 1개 — heat는 날짜 옆 작은 칩으로(큰 배지 X). 후킹 문구는 캡션으로.
     toc = (
         '<div class="toc-wrap">'
-        + hook_html
-        + '<div class="toc-cue">👉 넘겨서 30초요약부터 보기<span class="toc-arrow">→</span></div>'
+        + '<div class="toc-cue">넘겨서 30초요약부터 보기<span class="toc-arrow">→</span></div>'
         '<div class="toc-row">'
         '<span class="toc-chip">⏱️ 30초요약</span><span class="toc-chip">📅 영향일정</span>'
         '<span class="toc-chip">📈 환율흐름</span><span class="toc-chip">🔍 형성요인</span></div>'
         '</div>'
     )
     return (HEAD + '<div class="page cover">'
-            + f'<div class="ctop">{badge_html}{lead}</div>'
+            + f'<div class="ctop">{lead}</div>'
             + f'<div class="cmid">{mid}</div>'
             + toc
             + (GUIDES if guides else "") + "</div>" + FOOT)
 
 
 def _shead(today):
-    return f'<div class="shead">{DOG_SVG} 환전타이밍 · {today.month}/{today.day}</div>'
+    wk = ["월", "화", "수", "목", "금", "토", "일"][today.weekday()]
+    return f'<div class="shead">{DOG_SVG} 환전타이밍 · {today.month}/{today.day}({wk})</div>'
 
 
 def slide_signal(factors, rate, series, guides=False):
@@ -495,7 +501,12 @@ def slide_signal(factors, rate, series, guides=False):
         + '<div class="snote">같은 환율도 <b>구매 시야</b>에 따라 기준이 달라요. '
         + '유학·송금은 길게(3개월), 투자는 짧게(1주) 봐서 신호가 갈려요.</div>'
         + '<div class="spacer"></div>'
-        + '<div class="sfoot">왜 이런 신호인지 다음 장에서 →</div>'
+        + '<div class="endwrap">'
+        + '<div class="endmsg">🐶 맞든 틀리든, 매일 정직하게 알려드릴개요</div>'
+        + '<div class="endbtn">팔로우하고 매일 환율 받기 🐾</div>'
+        + '<div class="endlink">지금 내 상황 실시간 분석 → 프로필 링크</div>'
+        + '<div class="enddisc">* 예측 아니라 오늘까지의 사실 정리예요 · 투자조언 아님</div>'
+        + '</div>'
     )
     return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
 
@@ -576,7 +587,7 @@ def slide_graph(factors, rate, series, guides=False):
     today = _brief_date(rate)
     pairs_all = [(p["date"], p["close"]) for p in rate.get("series", [])
                  if "close" in p and "date" in p]
-    hero_svg, avg30, lo30, hi30 = _chart(pairs_all[-22:], rate_now, 840, 156)
+    hero_svg, avg30, lo30, hi30 = _chart(pairs_all[-22:], rate_now, 840, 210)
     big = (
         '<div class="gbig"><div class="grow"><span class="glabel">최근 1달</span>'
         f'<span class="gnow">지금 {rate_now:,.1f}원</span></div>'
@@ -584,8 +595,8 @@ def slide_graph(factors, rate, series, guides=False):
         f'<div class="grange"><span>저 {lo30:,.0f}원</span><span>고 {hi30:,.0f}원</span></div>'
         f'<div class="gtag">{_avg_txt("한 달", avg30, rate_now)}</div></div>'
     )
-    sm7, avg7, lo7, hi7 = _chart(pairs_all[-7:], rate_now, 360, 100)
-    sm90, avg90, lo90, hi90 = _chart(pairs_all[-63:], rate_now, 360, 100)
+    sm7, avg7, lo7, hi7 = _chart(pairs_all[-7:], rate_now, 360, 140)
+    sm90, avg90, lo90, hi90 = _chart(pairs_all[-63:], rate_now, 360, 140)
     small = (
         '<div class="gsmall-wrap">'
         f'<div class="gsmall"><span class="glabel">최근 1주</span>{sm7}'
@@ -995,6 +1006,9 @@ def main():
             render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),
                    out_dir / f"{5+i:02d}-factor{i+1}.png")
         print(f"요인 {len(facs)}장")
+        # 마지막 페이지(닫기) — 페르소나별 환전 신호 + 팔로우 CTA. 마지막 요인의 "내 상황은? →"가 여기로.
+        signal_no = 5 + len(facs)
+        print(f"마무리: {render(slide_signal(factors, rate, series), out_dir / f'{signal_no:02d}-signal.png')}")
 
     # 표지(1p) — 제목이 들어가는 곳 → 검증 게이트(실패 시 게시 금지).
     if do_cover:

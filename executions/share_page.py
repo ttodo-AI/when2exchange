@@ -24,6 +24,9 @@ VIEWS_NS = "krw-hwanjeon-share"  # namespace for the Abacus view counter
 GA_ID = "G-4KP3H2RZEB"  # Google Analytics 4 측정 ID (빈/placeholder면 스크립트 생략)
 # Google Form for reader feedback — replace with the real form link once created.
 FEEDBACK_URL = "https://forms.gle/a35emZKoRhYQF1N86"
+
+# Instagram 계정 링크 — 실제 핸들 확정되면 교체(마케팅 채팅서 계정 생성 후).
+INSTAGRAM_URL = "https://www.instagram.com/when2exchange/"
 # Cloudflare Worker 실시간 환율 프록시 URL(worker/rate-proxy.js 배포 후 채우기).
 # 비워두면 기존처럼 rate.json(빌드 시점 값)만 사용. 채우면 페이지 열 때마다 라이브로 덮어씀.
 RATE_PROXY_URL = "https://when2exchange-rate.gmljw0407.workers.dev/"
@@ -357,9 +360,9 @@ def main() -> None:
                     f'<summary class="cal-row" data-date="{esc(ev.get("date",""))}">'
                     f'<div class="cal-body">'
                     f'<div class="cal-head">{res_badge}<span class="cal-dday">·</span>'
-                    f'<span class="cal-date">{esc(when)}</span></div>'
-                    f'<div class="cal-name">{esc(ev.get("name",""))} '
+                    f'<span class="cal-date">{esc(when)}</span>'
                     f'<span class="cal-star">{stars}</span></div>'
+                    f'<div class="cal-name">{esc(ev.get("name",""))}</div>'
                     f'<div class="cal-impact">{esc(ev.get("summary",""))}</div>'
                     f'</div>'
                     f'<span class="cal-caret">▾</span>'
@@ -459,6 +462,7 @@ def main() -> None:
         .replace("__CLS__", cls)
         .replace("__BADGE__", esc(badge))
         .replace("__FEEDBACK_URL__", FEEDBACK_URL)
+        .replace("__INSTAGRAM_URL__", INSTAGRAM_URL)
         .replace("__RATE_PROXY_URL__", RATE_PROXY_URL)
         .replace("__ABOUT_JSON__", json.dumps(ABOUT, ensure_ascii=False))
         .replace("__BUBBLE__", esc(DOG_BUBBLE))
@@ -835,11 +839,15 @@ __GA__
              padding:0 9px; border:1px solid var(--line); border-radius:999px; background:#f5f7fa;
              color:#41485a; font-size:12.5px; font-weight:700; text-decoration:none; }
   .src-chip:active{ background:#e9edf2; }
-  .actions{ display:flex; gap:8px; margin-top:26px; }
+  .actions{ display:flex; gap:8px; margin-top:8px; }
   .btn{ flex:1; display:flex; align-items:center; justify-content:center; padding:13px; border-radius:12px;
         font-size:14px; font-weight:800; cursor:pointer; border:1px solid var(--line); text-decoration:none; }
   .btn-primary{ background:var(--brand); color:#fff; border-color:var(--brand); }
   .btn-secondary{ background:var(--card); color:var(--ink); }
+  .btn-insta{ display:flex; align-items:center; justify-content:center; gap:8px; width:100%; margin-top:26px;
+        padding:13px; border-radius:12px; font-size:14px; font-weight:800; color:#fff; text-decoration:none;
+        border:none; background:linear-gradient(95deg,#7c3aed,#d6249f 45%,#fd5949 72%,#fdc468); }
+  .btn-insta svg{ flex:none; }
   footer{ text-align:center; color:var(--muted); font-size:11.5px; margin-top:22px; line-height:1.8; letter-spacing:.01em; }
   .views{ font-size:12px; color:var(--muted); margin-bottom:8px; }
   .views b{ color:var(--ink); font-weight:800; }
@@ -947,6 +955,10 @@ __GA__
 
   __ARCHIVE_SECTION__
 
+  <a class="btn-insta" id="instaBtn" href="__INSTAGRAM_URL__" target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1.1" fill="#fff" stroke="none"/></svg>
+    매일 환율, 인스타로 받기
+  </a>
   <div class="actions">
     <button id="shareBtn" class="btn btn-primary" onclick="sharePage(this)">친구에게 공유하기</button>
     <a class="btn btn-secondary" href="__FEEDBACK_URL__" target="_blank" rel="noopener">피드백 남기기</a>
@@ -1572,6 +1584,8 @@ document.querySelectorAll('.cal-item').forEach(d => d.addEventListener('toggle',
 }));
 const _fb = document.querySelector('a[href*="forms.gle"]');
 if(_fb) _fb.addEventListener('click', () => track('feedback_click'));
+const _ig = document.getElementById('instaBtn');
+if(_ig) _ig.addEventListener('click', () => track('instagram_click'));
 
 // 투자자 탭 회전 카드: 4초마다 다음 종목으로(페이드). 다른 탭이면 대기.
 function tickRot(){

@@ -146,6 +146,15 @@ def _output_dir() -> str:
     return os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "output")
 
 
+def load_rate_obj() -> dict:
+    """site/rate.json 전체 객체(heat·검증이 rate/prev/series를 직접 본다)."""
+    path = os.path.join(os.path.dirname(_output_dir()), "site", "rate.json")
+    try:
+        return json.load(open(path, encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def load_calendar_events() -> list:
     """최신 calendar-*.json의 events. carousel/검증이 D-day·정렬 점검에 쓴다."""
     files = sorted(glob.glob(os.path.join(_output_dir(), "calendar-*.json")))
