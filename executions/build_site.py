@@ -188,6 +188,15 @@ def main():
 
     arc = [e for e in arc if isinstance(e, dict) and e.get("date") != today]
     arc.append(entry)
+    # 과거 항목도 매 빌드마다 series '최종 종가'로 rate/chg 재도출 — 그날 장중에 스탬프된
+    # 값이 종가로 갱신되도록(예: 6/17이 장중 1,516으로 굳었다가 종가 1,525.5로 정정).
+    # 제목(headline)은 동결 유지, 숫자만 종가로 자가치유. series에 그날이 있을 때만.
+    series_dates = {s["date"] for s in (rj.get("series") or []) if s.get("date")}
+    for e in arc:
+        if e.get("date") in series_dates and e.get("date") != today:
+            r, c = day_close_chg(rj, e["date"])
+            if r is not None:
+                e["rate"], e["chg"] = r, c
     arc.sort(key=lambda e: e.get("date", ""), reverse=True)
     with open(ARCH, "w", encoding="utf-8") as fh:
         json.dump(arc, fh, ensure_ascii=False, indent=2)
