@@ -1436,6 +1436,10 @@ async function loadRate(){
       }
     }catch(e){ /* 라이브 실패 → 정적값 유지 */ }
   }
+  // 차트·게이지·크로스헤어의 '오늘' 점을 빌드시점 종가가 아니라 현재 라이브값(today)으로 덮는다
+  // (series 마지막 날짜 = 오늘). 이래야 그래프의 현재 점이 상단 박스 현재값과 일치한다.
+  { const _sk = Object.keys(rates).sort();
+    if(_sk.length && today != null) rates[_sk[_sk.length-1]] = {KRW: today}; }
   // 3) 렌더. 현재값(today)이 차트의 '현재 점'과 환전 매력도 게이지에 그대로 반영됨.
   const _l7 = Object.keys(rates).sort().slice(-7).map(k => rates[k].KRW);  // 최근 7영업일
   avg1w = _l7.length ? _l7.reduce((a,b)=>a+b,0)/_l7.length : null;
