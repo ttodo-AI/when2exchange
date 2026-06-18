@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-18T13:44:17.049341+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,500 KRW per USD\n\nWHY: The won is currently weak, with the USD/KRW rate in the 1,500 range and rising (up 13.70 won today following hawkish Fed signals). News indicates this high-rate environment is likely to persist longer term, meaning you're paying more Korean won than usual for each US dollar.\n\nTIP: Consider setting up a standing order to spread your $2,000 monthly purchases across multiple smaller transactions throughout the month, rather than converting in one lump sum, to average out unfavorable rate levels."
+  },
+  "articles": [
+    {
+      "title": "한은 “美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승” - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeEFOVHRPLVhOeTVpN1JGV19XaGs5MldraG4zWnlMM2g0Y1dmVVg1cDRmb2ZuYXl1WFE1MkgxcHRJakw5czZZZzVUNE9pOU1sOWFvMFh3Qk1UM2wtOUtZREU2SnBxci1fNTJpWUthNUluRno3ZkNKR0I1UG1naDExZ2tjbVNNUdIBmgFBVV95cUxPYmhSUTczU2xLNUotdDJObnl5Zld4ZG1nblRkUXN1NmFoZE5MYUVneTMxTWFTMzN5UHJVMTd2d2o4bFJ1STZMcE5vOGpXOC1PUXRBajdHeXMyUzM0a3ZBNkstOHNNcHdobmlFNy1JQjEtNnBVbmRPaThsaUtHQzZKdTlkSXdhR0FPMkhWbWZZcUxGZHhEREVsYTVR?oc=5",
+      "summary": "한은 “美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승” - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-18T03:12:00+00:00"
+    },
+    {
+      "title": "[외환-마감] '매파' FOMC 소화하며 상승…13.70원↑",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9sN0c2UkxwUUNoenJrRDE3eHBJOUtudjZDQ3ljY1F0RE5nT1lMdEFHdjFvY3M4MDBLYms5dVBZbFIweXVCZlg1R1VzNmRGUHNDa0cxNnlfX1BLOEREZ2g5clhDUWtJYm5XYnNnVVZaQmVEUQ?oc=5",
+      "summary": "[외환-마감] '매파' FOMC 소화하며 상승…13.70원↑ KB Think",
+      "source": "KB Think",
+      "date": "2026-06-18T07:10:30+00:00"
+    },
+    {
+      "title": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50MDNCTVNWMkhIWnBNbTdycjJjek9WeWR6Mmg3UlQ3RXRpcldRVHkwLTN1M2sta3o4VE55LWpSLWMtQ1MydGdjaWtsWXUza1JuVW5wWmMxVHpETWx0OTlDVEJqUjRVNjJkV1lSYnpid1HSAXBBVV95cUxOdDAzQk1TVjJISFpwTW03cnIyY3pPVnlkejJoN1JUN0V0aXJXUVR5MC0zdTNrLWt6OFROeS1qUi1jLUNTMnRnY2lrbFl1M2tSblVucFpjMVR6RE1sdDk5Q1RCalI0VTYyZFdZUmJ6YndR?oc=5",
+      "summary": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나 소년한국일보",
+      "source": "소년한국일보",
+      "date": "2026-06-17T23:42:11+00:00"
+    }
+  ]
+}

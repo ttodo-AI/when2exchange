@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-06-18T13:45:12.258994+00:00",
+  "card_title": "워시 첫 FOMC 결과에 원화 약세 확정",
+  "tldr": [
+    "오늘 FOMC 결과가 나왔고, 금리는 동결됐지만 추가 인상 신호가 나오면서 환율이 전일보다 10원 오른 1,536원에 마쳤어요.",
+    "연준이 금리를 더 올릴 수 있다고 하면 달러를 가진 사람이 더 높은 이자를 받게 돼 달러를 팔지 않으니, 달러 가치가 오르고 원화 가치는 내려가요.",
+    "한국은행도 7월에 금리를 올릴 수 있다는 전망이 커지고 있어, 한은 결정이 환율 흐름에 영향을 줄 수 있어요."
+  ],
+  "overall_why": "워시 연준 의장 체제 첫 FOMC에서 금리를 동결하면서도 추가 인상 가능성을 시사하자, **달러를 팔지 않고 붙잡으려는 힘이 강해지며** 환율이 장중 1,527.1원까지 치솟았고 종가도 전일보다 10원 오른 1,536원에 마쳤다. 해외에서 번 달러가 국내로 돌아오지 않는 구조까지 겹쳐, **1,400원대 복귀 전망은 더 멀어졌다**는 분석이 나온다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승의 1순위 원인으로 FOMC 매파 신호를 지목했고, 장중 13.7원 급등 등 직접적 수치가 기사에 명시됨",
+      "headline": "워시 연준 의장의 금리 인상 시사 발언에 원/달러 환율이 장중 13.7원 급등해 1,527.1원을 기록했고, 오늘 종가는 전일 대비 10원 오른 1,536원이다",
+      "bullets": [
+        "케빈 워시 체제 첫 FOMC에서 연준이 금리를 동결하면서도 추가 인상 가능성을 시사하자, 시장이 '기대보다 매파적'으로 해석해 장중 환율이 13.7원 오른 1,527.1원까지 치솟았다.",
+        "금리 인하 기대가 사라지면서 달러 강세가 이어졌고, 환율 1,400원대 복귀 전망도 멀어졌다는 분석이 나왔다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 미국 금리 인상 시사에 13.7원 오른 1,527.1원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbtIBYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbg?oc=5"
+        },
+        {
+          "title": "서울환시 \"FOMC 기대보다 매파적…달러-원 상방압력 가중\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kMS12VHpiTTRSMHU0U0gzWHFqMmU5U0hodXpueDE4cjlsVGVncXdmcThPeTlzMXhFUjBWZFZtRjVOYkphZFlfLUJpMHItdHZ5TkpvRlZxeHZ4RDhyYURHSDhjVkpDM0VJcmpUZFZRR3pKQWV60gF0QVVfeXFMTmQxLXZUemJNNFIwdTRTSDNYcWoyZTlTSGh1em54MThyOWxUZWdxd2ZxOE95OXMxeEVSMFZkVm1GNU5iSmFkWV8tQmkwci10dnlOSm9GVnF4dnhEOHJhREdIOGNWSkMzRUlyalRkVlFHekpBZXo?oc=5"
+        },
+        {
+          "title": "'매파 연준' 달러·원 환율 급등 1527.1원…코스피 9천 돌파(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LUU8yQ1lYM3BqRk56VE9reHkzNnBlSjBLb25IWllQTFg0OE5ycFVLdXZwM3dZbTIyeGFYR2NNd2dhaFV6enAycTNFOVpXcHJyTHg5NHFfb1BBN1JNUlZOUG9UaFE?oc=5"
+        },
+        {
+          "title": "연준 매파 목소리에 환율 '출렁'…고개 드는 강달러 공포",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1BYVpoMmdQSGljdGROU2VyY2w5c3k3V3JWR0xZc2pSMW5NNU9yeUE4MjJUY0w3ejdVTlVoTXh4Mm1SSmNtcFQ3Z181NHdpbnh5OS1ma2g0QdIBmwJBVV95cUxOaHlhSWJCcFUwX0U2SDRIV3M5dGpzTjJtb05Cb3ZsaTREWXFlWGpmZDV4R1FzaVJlVmNOazZQWjhFNFhMSDV6eTlaa3VRTzhMcmY3cHhtWlRlbVE4aW5Ycml0d2o1LTk3SU1nenFJV3BRSVZRcjNFaHdLLTBSVG81QmdhcVVsNzF1V28ycVdCUXpqcEZ1X192STFhWDRnSFEydHNhd2UxX0xHc3I3LUs5eGJOeTNqd3A0WWozX1ZJOEtGVlhWMXFFdXBvMk5QZHNRd25YeFRCcHRoSzVhaTlOek9GV3BONnNRUTJBNWRtRExGeS1QdTY1NGVpc09wNDVVZF9za01xMUN1VWIzUEdCWV9ZYzNpdGlqR2ZN?oc=5"
+        },
+        {
+          "title": "美연준 '매파적 금리 동결'에···원·달러 환율, 1520원 재돌파",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lZDFrNGk1NVhLaEFyaUFjWmZjRUk4MzdIOWhMWEhHY05lOTFRTTFVdnd6c1FSclhxUWRyUzZmUUxBMWZyc2FXaWxuMTY5SVBKczNsSTdOZGN4VVktVEtSODBLdS1EZDlOVlE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "FOMC 결과에 연동된 달러 강세가 환율 상승을 직접 구동했으며 복수 기사가 달러 강세를 환율 급등의 경로로 명시함",
+      "headline": "연준 긴축 신호에 달러 가치가 오르면서 원/달러 환율이 1,520원대를 재돌파했다",
+      "bullets": [
+        "연준의 매파적 금리 동결 이후 달러 강세가 확대되면서 국내 금값도 0.6% 하락하는 등 달러 가치 상승 효과가 여러 자산에 동시에 나타났다.",
+        "FOMC 결과 발표 전 달러-원은 상승폭을 확대하며 1,515.50원에 마감했고, 발표 후 장중 10원 이상 급등 출발하며 1,520원대를 재돌파하는 흐름이 이어졌다."
+      ],
+      "sources": [
+        {
+          "title": "원·달러 환율 1,527원 돌파...연준 긴축 신호에 달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWRDI1WFE5MVRueW1YV05kdjlwZkxSS2VuanQxLUt1d1pvMHRUSWktQTQyMTJ1NkMzSmtCcDBXcndsN2lqZkRRNmJfblNNSk5MTGVpbFFLZVJlY1d2UkJZVEdWMzV2V0dFVHdKNNIBcEFVX3lxTE1kY3FZUk4yVTlZWU1wTXFCT3QxZXlDVTFXTmxKU2owUkZoSC15UkFBcXM3M1RwVWh0RmdmMnFNNnFEYjN2MEpMU2pqUHhsMDV1QW1remhSaGQ0aldyUEZJbzNrMFo5SzE2WlBsVjBzZFk?oc=5"
+        },
+        {
+          "title": "환율 1520원대 재진입…FOMC 매파 해석에 달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ONzN2ckdrdTZJMWFDMFU3S0k3ZS1OSUR1cDFUaWNYSWRQTlFfUzRxUTVOWjJoa190SlZpZjlWY1BkM3dadmxEZmdHWmlnR2Qzb2JhQ3dUN3BrX0h4WHc?oc=5"
+        },
+        {
+          "title": "[오늘의 금시세] 연준 매파 동결→달러 강세 확대…국내 금값 0.6% 하락",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lbm5KM1BReWdwcFNmT3RLS29XYlJ5SDN1QVk2ZGFyNDd2VFVEeW5rbkJsZkJqRG5XcEQxaFBvVXZETzd5RGlYLVFKdUtzRDZQalF1OEdyNXRqbGJSdHRtZEo3dlh6WDlUTzU3ZDdqbHhVZw?oc=5"
+        },
+        {
+          "title": "美연준 '매파적 금리 동결'에···원·달러 환율, 1520원 재돌파",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lZDFrNGk1NVhLaEFyaUFjWmZjRUk4MzdIOWhMWEhHY05lOTFRTTFVdnd6c1FSclhxUWRyUzZmUUxBMWZyc2FXaWxuMTY5SVBKczNsSTdOZGN4VVktVEtSODBLdS1EZDlOVlE?oc=5"
+        },
+        {
+          "title": "[외환] 매파 FOMC에 10원 이상 급등 출발",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE12ZmdudjFtMVp1MEhuX2ZNSnZjelVjU2N6WWU1clAwbWsxSmtDTjRfbHAwX3oxUGNOcGVFUjlMTkR4Ny1RSEFOajg3X2NEeHI5V3dPODNISWJqYzFKVlpkQzVOdjctWVp0TWpXMkppdWZvdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한은 7월 금리 인상 전망이 부각됐으나 실제 결정이 아닌 예상 단계라 환율 방향에 보조적으로 작용함",
+      "headline": "미국 연준 긴축 신호 이후 한국은행의 7월 금리 인상 가능성이 커졌고, 한미 금리 격차 축소 기대가 원화 약세 압력을 일부 상쇄하는 요인으로 거론됐다",
+      "bullets": [
+        "중동전쟁으로 물가 상방 압력이 커진 상황에서 연준이 금리 인상을 시사하자, 한국은행도 7월 금융통화위원회에서 기준금리를 올릴 수밖에 없다는 전망이 빠르게 확산됐다.",
+        "금통위 의사록에서 '물가 상방 압력이 공식 지표보다 크다'는 내용이 확인됐고, 내년 기준금리 4.00% 전망까지 등장하며 한은 긴축 재개 신호가 구체화됐다."
+      ],
+      "sources": [
+        {
+          "title": "중동전쟁에 바뀐 금리 경로…美 매파적 동결·韓 내달 인상 전망",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuWHFBc3FJeDFRQzVRRng1a1dwb0JYS0VSa0Z1ZHhLclRKMVF3ZmU5V0NFVm5sWEhWRjBqRnAzY1hTcGdfUUx1Q0ZNdlVyQTBHZE9ST1FhUDV4bEHSAWBBVV95cUxQVTBjdFdoUERDLUk3WkhzUWZPWTRhUWpCZ1lrbERrdXV4dmNYemMwbldaNmV2Y1cyMU5GZXVLLUYxbGc2NldmR3Y2QTdUc0F0a0ZVM2lZMmhUMFVuM1ZTLVM?oc=5"
+        },
+        {
+          "title": "미국 FOMC 이후 한국은행도 긴축 ...7월 금통위, 기준금리 인상 가능성 커지나",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBHSzdQX3A5TURVVFByb3o4ZFNleFc0MG8wRlk0SE5uUEI0djVtYnl0d3hQOVZIMC1fZ0ZRODczZHBhdmZ5OEhIcXRGbjBobWpQSlpyZWRQYWdoaUw2Z1dTZmlTV2g4QWV2N1ZEWVlWekdGYUJNUEtvWDlzcjdYdw?oc=5"
+        },
+        {
+          "title": "'금리 인상' 시사한 연준…한은도 내달 긴축 대열 합류 전망",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBOZEVkU3hELXkxQTYtYnFBcXRodUJSdDB4dTFoZ2t1aWNIQmtzZVlRQlhCYjktcGprQ3MtRUJZemNsdWlkMjhsYl83Qy1RR2pqZ2RxaDYzb1Z1NFFXUXE2Si1uRnFNT05nWEtySXN6dkFsYVdLVHdJcNIBeEFVX3lxTFBOZEVkU3hELXkxQTYtYnFBcXRodUJSdDB4dTFoZ2t1aWNIQmtzZVlRQlhCYjktcGprQ3MtRUJZemNsdWlkMjhsYl83Qy1RR2pqZ2RxaDYzb1Z1NFFXUXE2Si1uRnFNT05nWEtySXN6dkFsYVdLVHdJcA?oc=5"
+        },
+        {
+          "title": "금통위 의사록 \"물가 상방압력, 공식지표보다 크다\"…금리인상 예고 > 뉴스포커스",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHSEV2VGtKRHdWUUJqX2tEWUpreEpOTGluNjF4SE5sYVJLTHNySXM4WlEtRnpzcTh2WmkzMl8zMEx2eHRHS2I0blFJTkdlc0pTb0M1UFdpb2xLMzIwcDVEZjhSVDlrOG4tbTY4YUV3UHg1M2c?oc=5"
+        },
+        {
+          "title": "[실전재테크]\"7월 올린다, 내년 4.00% 전망도\"…기준금리 알고 대응해야",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ncW1PT1Z3d0VSMlhZTG4yWC14MVo5NTlMYW8yUU9ETFRtUndwNTNhT0hhM09nRUFsQmhVOFhjd1JTeDdnYTBiYlRoRWJOSjNQTzZPdDNFRTZrT3NkU2dBUVpianJ1OS1oRkE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 2,
+      "impact_reason": "수출 달러가 국내로 환류되지 않는 구조적 원인이 고환율 지속의 배경으로 언급됐으나 오늘 급등의 직접 원인은 아님",
+      "headline": "31개월 흑자에도 수출로 번 달러가 국내로 돌아오지 않아 원화 약세가 구조적으로 이어지고 있다",
+      "bullets": [
+        "한국은행이 짚은 원화 약세의 새 변수로, 해외에서 번 달러가 빅테크 투자 등으로 국내로 들어오지 않고 빠져나가는 현상이 지목됐다.",
+        "31개월 연속 흑자임에도 환율이 1,500원대를 유지하는 이유로 달러의 해외 체류가 꼽혔고, 이 구조는 고환율 장기화의 배경으로 작용하고 있다."
+      ],
+      "sources": [
+        {
+          "title": "‘해외서 번 돈, 국내로 안온다’…한은이 짚은 원화 약세의 새 변수",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGNXNNMGU3OU1rTkxsOTlrUEhGVFBMSVN6OWp1SUp0N1l1MjRKdTRqamdZaUVSNXRfR1REN2g5Nm1XNTk0RFlvWnV4NVJObjZQekpCNFEtNlUwQjI1eXdINXM0UFJneFB1dF83R25QQXNfZl90?oc=5"
+        },
+        {
+          "title": "31개월 흑자인데 환율 1500원…달러, 빅테크로 빠져나간다",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAtSExHWGF2VERhV0RZcFNiTmtNX3c5eUM5RDZwV2piQ1B1MVU2djFqUHNhTzlRTnd3Qmdtcl9JRnYtcjByNU9kSGNhV3BCeFRXVkRFM3FMUmVIZ05PNmNzbHMxbXNud1pkUU5ZTFl3?oc=5"
+        },
+        {
+          "title": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50MDNCTVNWMkhIWnBNbTdycjJjek9WeWR6Mmg3UlQ3RXRpcldRVHkwLTN1M2sta3o4VE55LWpSLWMtQ1MydGdjaWtsWXUza1JuVW5wWmMxVHpETWx0OTlDVEJqUjRVNjJkV1lSYnpid1HSAXBBVV95cUxOdDAzQk1TVjJISFpwTW03cnIyY3pPVnlkejJoN1JUN0V0aXJXUVR5MC0zdTNrLWt6OFROeS1qUi1jLUNTMnRnY2lrbFl1M2tSblVucFpjMVR6RE1sdDk5Q1RCalI0VTYyZFdZUmJ6YndR?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 6월 FOMC 기준금 D-0; 전일대비 +10원",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  }
+}
