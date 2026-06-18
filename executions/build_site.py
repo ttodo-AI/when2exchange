@@ -172,10 +172,15 @@ def main():
     arc = load(ARCH, [])
     prev = next((e for e in arc if isinstance(e, dict) and e.get("date") == today), None)
 
-    if prev and prev.get("headline") and not args.refresh_headline:
-        headline = prev["headline"]            # 동결: 그날 첫 제목 유지
+    # 동결은 light 빌드에만 적용. full 빌드는 그날 새 분석(factors)을 했으므로 제목을 갱신한다 —
+    # 큰 이벤트(FOMC 등)가 끝난 뒤 full이 돌면, 그 전 light가 박아둔 '관망/경계' 제목을
+    # 실제 '결과' 제목으로 교체(예: 'FOMC 경계감' → '워시 매파 신호에 원화 약세').
+    keep_frozen = (prev and prev.get("headline")
+                   and not args.refresh_headline and args.mode != "full")
+    if keep_frozen:
+        headline = prev["headline"]            # 동결: 그날 제목 유지(light)
     else:
-        headline = ""                          # 그날 첫 퍼블리시(또는 강제 갱신) → 새로 생성
+        headline = ""                          # full·강제갱신·첫 퍼블리시 → 새 factors로 생성
         ff = latest("factors-*.json")
         if ff:
             fj = load(ff, {})
