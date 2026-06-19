@@ -1,0 +1,76 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-19T04:29:25.373835+00:00",
+  "window_hours": 24,
+  "count": 9,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1537.4 KRW/USD (approaching 1540)\n\nWHY: The won is currently weak, with the exchange rate rising sharply (up 10.3–13.7 won recently) due to hawkish Fed signals and anticipated U.S. rate increases. News forecasts the rate will fluctuate around 1530 won per dollar, but current levels near 1537–1540 are on the stronger side of that range, meaning you need more won to get your $2,000.\n\nTIP: Consider waiting for a pullback toward the 1520–1530 range if your monthly budget allows; alternatively, adopt a consistent fixed monthly buy regardless of timing to average out volatility over time."
+  },
+  "articles": [
+    {
+      "title": "미 FOMC 여진에 달러 실수요까지⋯\"1530원대서 등락할 것\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9XZ3lWeXdVUTRrN2E3cmZ1cnRveElkNVVjX3Z6c3lJRzlncHhENlI0QkpPNGZRcWtXa1V5VVVUS0N5eEM1ZmM0MFdBTXVhRjVZXzlWVQ?oc=5",
+      "summary": "미 FOMC 여진에 달러 실수요까지⋯\"1530원대서 등락할 것\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-06-18T22:59:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 10.3원 오른 1537.4원 개장",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5weWRvQ1hMWG9kM1dlY3dKcXRQaTQwWG0xOFQyeXE1MHp5TllZYnFmcjZSaEp5dUhQYUNpdlJXbzJaUnN1M1F4YXlmWDJvMjE4V2pB?oc=5",
+      "summary": "원·달러 환율, 10.3원 오른 1537.4원 개장 네이트",
+      "source": "네이트",
+      "date": "2026-06-19T00:04:00+00:00"
+    },
+    {
+      "title": "[외환-마감] '매파' FOMC 소화하며 상승…13.70원↑",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9sN0c2UkxwUUNoenJrRDE3eHBJOUtudjZDQ3ljY1F0RE5nT1lMdEFHdjFvY3M4MDBLYms5dVBZbFIweXVCZlg1R1VzNmRGUHNDa0cxNnlfX1BLOEREZ2g5clhDUWtJYm5XYnNnVVZaQmVEUQ?oc=5",
+      "summary": "[외환-마감] '매파' FOMC 소화하며 상승…13.70원↑ KB Think",
+      "source": "KB Think",
+      "date": "2026-06-18T07:10:30+00:00"
+    },
+    {
+      "title": "美 금리인상 신호에 환율 다시 1540원 턱밑 … 원화 약세 압력 확대",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ubER0eU84cnhpa3NXc0w2U0o0SUR4U3pMYWFYRTR5c2dXc2RPYnFtUXZLTXFiNFc1S0JILXk3bmZ0c3hocnBLMDBDX1gxWl94cU56UXZGWGYzZE5FMFRmRGFpeDBEM3g4S3dkX0E4ZWY3dnh0N1d5clRwVdIBgAFBVV95cUxNOXJDR1ROX2V5b2pYOFZqNk9vNWQ0Sy00cnNyVGRYRHZjenRxU2l6QXNqWGxGVWJnbmV0Qkc0anFxY0pCUHktRGJOaENvNFlvbnoxaEEwbmNQbmZBdTg4RjVaOExqUkRBUllkNUtsLXhKa2dpbHBXZl9zSkdUQ0ZDeg?oc=5",
+      "summary": "美 금리인상 신호에 환율 다시 1540원 턱밑 … 원화 약세 압력 확대 뉴데일리",
+      "source": "뉴데일리",
+      "date": "2026-06-19T00:04:08+00:00"
+    },
+    {
+      "title": "달러·원 환율 1537.4원 출발…연준 매파 기조에 상승세",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9XQUhFSllIZnhEWlI4T3l0SWJrYkc2VE5Ka1dLaWM2QmxPTmpzZlhQUEdLYkpPcXVDVkc5TWFiS3h2TkJRS0Q1QmJjMFN5VjlTMXlxR1piZ05GOHdZZjB5TklyS00zS1Rm?oc=5",
+      "summary": "달러·원 환율 1537.4원 출발…연준 매파 기조에 상승세 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-19T00:29:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 10.3원 오른 1537.4원 출발",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mWTNhSUtNQjVDdk5nUGlXd2EycnJIbEJoS2JGeU9yR1VXek1xby1Xb2tpZmRjMEh2UXBORlllVlFPYmViOFFzMVF5YmEwcndmbVk4X0liZDBvZmVTSTE4atIBeEFVX3lxTFBaZFlGTVI4bFNYY0NZT09JNF9QZkVXdlQ1NGExWWQ2NG9jaEVVd083OE1RZFkwaFhyWnlRakdHT0txZGdrLUQ1MUJ1cDd6Uks1SmlOT2VCY1lBOVVFOFFvVFJGRjFtaWR5dlhGeEFpTjRPNllDN2ZHSw?oc=5",
+      "summary": "원·달러 환율, 10.3원 오른 1537.4원 출발 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-06-19T00:31:54+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] '거함' 연준 선회의 파장 |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Fd0VWR0plUmhtZVFpSDRxV2YzVWcxZ1M1V0dOcHRXUS1MSmd1Z0FTZC14N0dIc2NtWW1hb1BGazVxVkhUNXk0WDRDYzBJaFZTTmFrYUdESUtiQ1F0MW1abGtYOFlSaGtqV3c4ZW9iNmpjbkI4?oc=5",
+      "summary": "[신윤우의 외환분석] '거함' 연준 선회의 파장 | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-19T00:47:39+00:00"
+    },
+    {
+      "title": "'300억弗' 서울환시 본격 투하된다…SK하이닉스 ADR 상장 급물살",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9LV2x3SFRVNEpPZTAzY1M0bEZaYjJWSHgxcW9UVVFzSHZFNzFxVTB6aTlEQTlwa2NnZ0RoYXAtanpTZVltak1PZ21VV25KUHFMZkYwcjNwUzd1eDllODRfV2JaNlpNUEVYNjFxSUNBWk1PZw?oc=5",
+      "summary": "'300억弗' 서울환시 본격 투하된다…SK하이닉스 ADR 상장 급물살 KB Think",
+      "source": "KB Think",
+      "date": "2026-06-19T01:00:01+00:00"
+    },
+    {
+      "title": "外人 투자 촉진하는 SK하이닉스 美 상장…NPS급 환시 '게임체인저' 되나 |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBvT3IzVWZkZ0lUVktTNG45YjE1ZTJwRkJma2RlM2dCMllSRkZpOWF3QTVqWUtWelRyV0E5bUpVYjBpNGZZVl82N1BmZ05sVU10UFJDdEkteHRVWFFXZUFWdjRFOVlPNEJ4a3paOW1EaktaNGFL?oc=5",
+      "summary": "外人 투자 촉진하는 SK하이닉스 美 상장…NPS급 환시 '게임체인저' 되나 | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-19T01:28:05+00:00"
+    }
+  ]
+}

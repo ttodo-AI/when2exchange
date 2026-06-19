@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-06-19T04:30:20.814442+00:00",
+  "card_title": "워시 첫 FOMC 매파 충격에 원화 약세",
+  "tldr": [
+    "FOMC에서 금리 인상 신호가 나온 뒤 환율이 장중 1,527원까지 올랐고, 야간엔 1,540원도 넘어섰어요.",
+    "연준이 금리를 올릴 것으로 예상되면 미국 이자가 더 높아지니 달러를 사려는 사람이 늘어 달러 값이 오르고 원화 값은 내려가요.",
+    "한은도 7월에 금리를 올릴 가능성이 높아졌는데, 두 나라의 금리 차이가 얼마나 좁혀지느냐에 따라 환율이 추가로 움직일 수 있어요."
+  ],
+  "overall_why": "케빈 워시 체제의 첫 FOMC에서 연준이 **금리 인상을 시사하자** 미국 금리 상승 기대가 커지며 달러를 사려는 수요가 몰렸고, 원/달러 환율은 장중 1,527.1원까지 올랐다가 야간엔 1,540원을 넘어섰다. 미·이란 종전 MOU로 전쟁 불안이 줄어 원화를 지지하는 힘도 있었지만, **달러 강세 압력이 훨씬 강하게 작용**해 종가는 전일(1,538원)보다 1원 오른 1,539원에 마쳤다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승의 1순위 원인으로 연준의 매파적 FOMC 결과를 지목했으며, 장중 1,527원 급등과 야간 1,540원 돌파 등 구체적 수치로 직접 연결됨",
+      "headline": "케빈 워시 연준 의장이 이끈 첫 FOMC에서 금리 인상을 시사하자, 달러 강세가 커지며 원/달러 환율이 장중 1,527.1원까지 올랐다",
+      "bullets": [
+        "워시 체제 첫 FOMC에서 연준이 기대보다 매파적인 금리 인상 신호를 내놓자, 원/달러 환율이 장중 13.7원 오른 1,527.1원을 기록했다.",
+        "야간 시장에서는 매파적 FOMC 여파가 이어지며 달러·원 환율이 1,540원을 돌파하는 등 원화 약세가 심화됐다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 미국 금리 인상 시사에 13.7원 오른 1,527.1원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbtIBYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbg?oc=5"
+        },
+        {
+          "title": "매파 연준 쇼크…환율 1527원 다시 뚫었다",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBlVlFPOXRBeDZLSVVXVU9YUUd0Ml82bEsxVzF3bHg1UzFqNWJoc3lleWNzWjNIVXk5R3F6ZktrcWY3UnR6YXFKd291dXp0MXhJanfSAVNBVV95cUxQN1A1cGF3aElrM2Q1VzI3SEYwbVNBdGlnUjcwNVNELW8zYTRxNzkxNVhleWt2Z0lYcHVqTUJBQ2VqOHhNMFdVc2Z6QXJ5akNlRWJ6TQ?oc=5"
+        },
+        {
+          "title": "서울환시 \"FOMC 기대보다 매파적…달러-원 상방압력 가중\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5kMS12VHpiTTRSMHU0U0gzWHFqMmU5U0hodXpueDE4cjlsVGVncXdmcThPeTlzMXhFUjBWZFZtRjVOYkphZFlfLUJpMHItdHZ5TkpvRlZxeHZ4RDhyYURHSDhjVkpDM0VJcmpUZFZRR3pKQWV60gF0QVVfeXFMTmQxLXZUemJNNFIwdTRTSDNYcWoyZTlTSGh1em54MThyOWxUZWdxd2ZxOE95OXMxeEVSMFZkVm1GNU5iSmFkWV8tQmkwci10dnlOSm9GVnF4dnhEOHJhREdIOGNWSkMzRUlyalRkVlFHekpBZXo?oc=5"
+        },
+        {
+          "title": "[야간마감] 달러-원 1540원 돌파…매파 FOMC 여파에 원화 약세 심화",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TQ0JFd0Y5WHAwWWdxYnhWYTVPNUF4SXpQSV95cFhLdWU5RFE2bkNNenp2dlJsaC1tVmxKMTJadURDOGlVQTBBNmVXVmlCQXdJdVg2dUFyamY?oc=5"
+        },
+        {
+          "title": "'매파 연준' 달러·원 환율 급등 1527.1원…코스피 9천 돌파(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LUU8yQ1lYM3BqRk56VE9reHkzNnBlSjBLb25IWllQTFg0OE5ycFVLdXZwM3dZbTIyeGFYR2NNd2dhaFV6enAycTNFOVpXcHJyTHg5NHFfb1BBN1JNUlZOUG9UaFE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "연준 매파 전환에 대응해 한국은행도 7월 금리 인상 가능성이 높아졌다는 보도가 복수 매체에서 나왔으나, 환율에 직접 작용한 것은 연준 결정의 반사 효과로 보조적 요인에 해당함",
+      "headline": "연준의 금리 인상 시사 이후 한국은행도 7월 금통위에서 기준금리를 올릴 가능성이 높아졌다는 전망이 나왔다",
+      "bullets": [
+        "금통위 의사록에서 '물가 상방 압력이 공식 지표보다 크다'는 내용이 공개되며, 한은의 금리 인상이 불가피하다는 분석이 나왔다.",
+        "미국과 한국이 나란히 금리 인상 쪽으로 방향을 틀면서 한미 금리 차이가 좁혀질 수 있다는 전망이 나왔으나, 연준 매파 기조에 따른 달러 강세로 원화 약세 압력은 지속됐다."
+      ],
+      "sources": [
+        {
+          "title": "중동전쟁에 바뀐 금리 경로…美 매파적 동결·韓 내달 인상 전망",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuWHFBc3FJeDFRQzVRRng1a1dwb0JYS0VSa0Z1ZHhLclRKMVF3ZmU5V0NFVm5sWEhWRjBqRnAzY1hTcGdfUUx1Q0ZNdlVyQTBHZE9ST1FhUDV4bEHSAWBBVV95cUxQVTBjdFdoUERDLUk3WkhzUWZPWTRhUWpCZ1lrbERrdXV4dmNYemMwbldaNmV2Y1cyMU5GZXVLLUYxbGc2NldmR3Y2QTdUc0F0a0ZVM2lZMmhUMFVuM1ZTLVM?oc=5"
+        },
+        {
+          "title": "美 연준 매파 전환에 한은도 인상에 무게…한미 금리차 줄어드나",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHMnBVc3pfMEthRG41QXdhRmxHRmhET3h3cG1kVGRMelZ3YWhrUDdxWHJEVEFWSlBkVUxvWXRZak8xUmhZNjJvd3NrZTctQ1k3ZmQ3cnMxRjVyUThWbTg3eGpjdVRHU1lxeFA0YmtOdTN6dw?oc=5"
+        },
+        {
+          "title": "중동전쟁이 뒤흔든 금리 경로…한미, 나란히 ‘인상 모드’로 선회",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE12YXc0dTVqYmhBOGtNTnNJVm1zamltZUVZOVJ6WVQzZExUaFlRUk5QZUFUVW1jdGJpN295cVJza2l0REtXMFlyQlFyR19QUi1CWUNGZWloRVAxR09xNk9SelM1dENuQUVaVVFr0gFvQVVfeXFMTzFjYkhLQkZmRThkaHVEalJLRVI3bzZvLVFwdmprU2tMbkp5WW9KZlFKcGFxbVBoVExib3BuUndlQ1MtMUVNTVYxNGVBbExKdmtvT25QaHBESnZmMk13blotQndLalNuQXBRb3hpcXJJ?oc=5"
+        },
+        {
+          "title": "금통위 의사록 \"물가 상방압력, 공식지표보다 크다\"…금리인상 예고 > 뉴스포커스",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBHSEV2VGtKRHdWUUJqX2tEWUpreEpOTGluNjF4SE5sYVJLTHNySXM4WlEtRnpzcTh2WmkzMl8zMEx2eHRHS2I0blFJTkdlc0pTb0M1UFdpb2xLMzIwcDVEZjhSVDlrOG4tbTY4YUV3UHg1M2c?oc=5"
+        },
+        {
+          "title": "종전·연준 금리 인상 시사…한국 환율과 금리에 미칠 영향",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE82a1RKdDJqY2pFalJZNjZfejhOa3NRTnJ4TlF1RTNOMl94VUxhWDN0NUZUYWE1cXRNV1VxZ0JVVGxGZ1Fmd1YzUTFVUi04elgtUGpn?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "지정학 리스크",
+      "emoji": "⚔️",
+      "impact": 2,
+      "impact_reason": "미·이란 종전 합의가 달러를 팔려는 힘으로 작용했다는 보도가 있었으나, 연준 매파 신호에 묻혀 환율 하락을 막는 데 그쳐 보조적 요인으로 작용함",
+      "headline": "미국과 이란의 종전 MOU 소식으로 전쟁 불안이 줄었지만, 연준 매파 충격에 상쇄되며 원/달러 환율은 여전히 1,500원대를 벗어나지 못했다",
+      "bullets": [
+        "미·이란 종전 MOU 소식이 전해지며 전쟁 불안이 줄었지만, 원/달러 환율은 여전히 1,500원대를 벗어나지 못했다.",
+        "중동 리스크가 꺾이면 환율도 내려갈 수 있다는 분석이 나왔으나, 연준 금리 인상 시사라는 더 강한 달러 강세 요인에 눌려 실제 환율 하락으로 이어지지 않았다."
+      ],
+      "sources": [
+        {
+          "title": "미-이란 종전에도 원·달러 환율 여전히 1500원대…고환율 장기화하나",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE50MDNCTVNWMkhIWnBNbTdycjJjek9WeWR6Mmg3UlQ3RXRpcldRVHkwLTN1M2sta3o4VE55LWpSLWMtQ1MydGdjaWtsWXUza1JuVW5wWmMxVHpETWx0OTlDVEJqUjRVNjJkV1lSYnpid1HSAXBBVV95cUxOdDAzQk1TVjJISFpwTW03cnIyY3pPVnlkejJoN1JUN0V0aXJXUVR5MC0zdTNrLWt6OFROeS1qUi1jLUNTMnRnY2lrbFl1M2tSblVucFpjMVR6RE1sdDk5Q1RCalI0VTYyZFdZUmJ6YndR?oc=5"
+        },
+        {
+          "title": "중동 리스크 꺾이면 환율도 내려갈까…생활물가가 보는 변수",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9hN0ZZRGdTbFVjd2c2WXhSQi04MXZUaG9XX3JHeVNCRVNza1NxMExsMnVYYm9nUlN2bmJUOXY0WUpIQ3hzemczaGNlR3pBTDdjTzVOQ0VfNNIBXEFVX3lxTE9JYTNad0NmZ0h0NEd3TmJMYTRRMGZpRVpuT1N2Q3diYWRaN0h1NG85WnBpMUV2a2Nad2ZJSUNjU1gtMU9MSXU0Vm5fNTRMdkg0ZHU2dFdJTFZYcWtl?oc=5"
+        },
+        {
+          "title": "[금 시세] 국제 금값 하락 흐름… 미·이란 종전 MOU와 유가 안정 기대 주목",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQQU9ydERyaUNxclV5bkJmblF3eml0RWswNGQ4RHNrb2xlNnJyZ1pQLUVjUmlnS3laSkhyVXU1LU9MMXZseFFJSjlUR1F4cktrYkxHTGNQTFo3Y0g4QjRObEtjVXlVenQ0QkFOaw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "외국인이 코스피에서 118조 원을 팔았음에도 비중이 40%를 넘어섰다는 보도가 있었으나, 수급보다 연준 이슈가 환율을 주도해 보조적 요인으로 분류됨",
+      "headline": "외국인이 코스피에서 대규모 매도를 이어갔음에도 반도체 랠리로 비중이 오히려 커지며, 환율에 혼재된 신호를 줬다",
+      "bullets": [
+        "외국인이 118조 원어치를 팔았는데도 코스피에서 차지하는 비중이 40%를 넘어섰는데, 이는 삼성전자·SK하이닉스 등 반도체 주가가 오르면서 남은 보유 주식의 가치가 커진 탓이었다.",
+        "코스피가 사상 처음으로 9,000포인트를 돌파했으나, 외국인 순매수 확산 여부가 불확실해 환율을 끌어내리는 힘은 제한적이었다."
+      ],
+      "sources": [
+        {
+          "title": "118조 팔았는데 비중은 40% 돌파... 반도체 랠리에 몸집 커진 외국인",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5VOS14NThEcWpXZjJaTWNsQXNMMkFQZjRvQUxWcFFvSHpfTWdMTVlWR0NfUEtFdDQ0X01vR1BLUmNFSU5ELTFsY3phUW1IMC1VdkU1a2lBRmk2WUN3Y1hXcGk1SVA?oc=5"
+        },
+        {
+          "title": "코스피, 8800선 탈환…‘9000피’ 열쇠는 외국인 수급 확산",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5kUE4xclpmV0hON0p2YjRxQXUyOEZ1QkluRjcybm1fMnE4TDF2dVVMcE9wSFJ2d3dkcVkxMXRvNEVHMHN4Sm9oNWNmZWdVOXF2aV9vS2R3Q1pkYmhuLTd0VE5mM2Q2Z3g10gFsQVVfeXFMTTJXWkdiVHlzUWplR2M0cGJjNGM2NURIRmV2aGpkemlzNmo4NWxSR09xaWNwQ3ZzRVBNRlJQVWlERWVGRnVjTlN1X3BBVXVkWmx4MVI1R2VjVmRpVE9YS2hqc19LZG5EUFFXcHlY?oc=5"
+        },
+        {
+          "title": "삼성전자·SK하이닉스 '활활'...코스피 9000 '코앞' > 뉴스",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE42NHdIWUtmSkFPMDhmeHVabWxsRmc5dTZIdWM1b2QzT0FRX1F4NnBuT21QcEVtT0hIaHNfaFNQZUpoX0VVT3o0RE5mZTgtT1lSR3Z0eEZ3eFMwb0xfd1FlN3RfbnN2U2t1ZGVtcg?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "실제 전일대비 +0.5원(보합)인데 방향/변동 주장"
+    ]
+  }
+}
