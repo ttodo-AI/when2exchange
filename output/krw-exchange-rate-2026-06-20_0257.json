@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-20T02:57:53.415833+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,527 KRW/USD (approached 1,540 during the day)\n\nWHY: The won is currently WEAK at ~1,527–1,540 KRW per USD, meaning you need more Korean won to buy your $2,000. News reports expect upward pressure on the rate next week, with forecasts suggesting the 1,500–1,530 range will persist or worsen, driven by a hawkish Fed and yen weakness.\n\nTIP: Consider waiting a few weeks or spreading your monthly $2,000 purchase across multiple dates to reduce timing risk, since the won is expected to stay weak in the near term."
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 매파 연준에 엔화 약세까지…환율 1530원대에 상방 압력 커질 듯",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBUSGI5b1AtbERBTFdPdmd4ZXlyTzNPNWJNZlduNGtrUXZjWnhXT2I1WDd0dEhZOVlxYk1JcjFkcGVFUFFXYVNXWXhUMGlvSExlcDI1bGVWLXZ6dHVVWldOOEVKVThveEJ5TDB6YQ?oc=5",
+      "summary": "[다음주 환율전망] 매파 연준에 엔화 약세까지…환율 1530원대에 상방 압력 커질 듯 굿모닝경제",
+      "source": "굿모닝경제",
+      "date": "2026-06-19T22:00:00+00:00"
+    },
+    {
+      "title": "[외환-마감] 수출네고·스무딩 추정 물량에 보합",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9jTEpMZ3JFVFNySWlGc0tfTnlLZVVoMDFNSVhNcUNPdnNNLXItQTdua0Q5dDZBUlY0RkQxS2JQcVFkMDhzajJiVzNmUEJtSnlwdDB6UmtWdjdFLTVGTjVjU29SVWRVcHhBQm5aVUZGUmRFVHhX0gF0QVVfeXFMT2NMSkxnckVUU3JJaUZzS19OeUtlVWgwMU1JWE1xQ092c00tci1BN25rRDl0NkFSVjRGRDFLYlBxUWQwOHNqMmJXM2ZQQm1KeXB0MHpSa1Z2N0UtNUZONWNTb1JVZFVweEFCblpVRkZSZEVUeFc?oc=5",
+      "summary": "[외환-마감] 수출네고·스무딩 추정 물량에 보합 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-19T09:52:31+00:00"
+    },
+    {
+      "title": "'구천피' 축포 속 '고환율' 우려↑…학계·시장 \"1500원대 지속될 듯\" |",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBPemkzS3poYmxmNzFzN2JBcFFzeDRPdkdRbmZoM0g4Ulh1N002c0pseXMtcUlPS19aS0hnNjI3MlRKSEMzeHFZVUZ5RUFmRGEtZzBzRnBVcS12S2FKUjVESWk5eTJTMlJhWHBlYTJ3?oc=5",
+      "summary": "'구천피' 축포 속 '고환율' 우려↑…학계·시장 \"1500원대 지속될 듯\" | 뉴스드림",
+      "source": "뉴스드림",
+      "date": "2026-06-19T10:45:29+00:00"
+    },
+    {
+      "title": "1540원 턱밑까지 간 원·달러 환율…1527.0원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBRaTRBSjlta1J2aXBYTzlJY3JUMC11QVl6djVGNzFwbUZubDBEaHUtQk1OMGQ0bzBTOE1jZnJ5cjNKVTl5MHpJNFZpZWNudVdoTzZPem9xZEFsekJWM1NldFJkWGwwRWFINUQzcncyNEpzdkhXLXEzcdIBeEFVX3lxTFBRaTRBSjlta1J2aXBYTzlJY3JUMC11QVl6djVGNzFwbUZubDBEaHUtQk1OMGQ0bzBTOE1jZnJ5cjNKVTl5MHpJNFZpZWNudVdoTzZPem9xZEFsekJWM1NldFJkWGwwRWFINUQzcncyNEpzdkhXLXEzcQ?oc=5",
+      "summary": "1540원 턱밑까지 간 원·달러 환율…1527.0원 마감(종합) 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-06-19T06:39:13+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.1원 내린1527원 마감 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWjlOSGRxOHdRajR0Qmw0S3F0ekNhV21MQmFjSUtxQTdqdl9xdTFPcENmTmU0Qm1LU2hsejlYeVp0Yy1odG9MWjhsUUFHWXB6U2NqNk55ZGhlSnRwR0U1UUpSeDlnNXR2a0g3X0ZhV0pHcUZub3lLa3B1R19UdXhEWDhWYWdDUdIBmgFBVV95cUxOMXZmWEEyaGI1Y2FtWEJ1QVFYS1JPTFl2WnFzMS1ta2VPUDFUQWZBZ200R2t3RnRKTU0tZ2JzTXVGWVRLUWg2V0diRHV5ZlhDVTByMmRBY1NJUk13VkJPY25CZ3JYUTZNQWhVbzN0bjBOeS1LZC1ZZ3hDcVVuNzB5NGY4OS0xS0tYTGozMUpMRHdCejZSWm52ZEZ3?oc=5",
+      "summary": "원·달러 환율, 0.1원 내린1527원 마감 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-19T06:47:00+00:00"
+    },
+    {
+      "title": "\"1540원 코앞까지\"…원·달러 환율, 장중 급등 후 1527원 마감",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBQejdtTUpNZ0VQZkI3S0l4eDBWaThpc2ZxRTFxTGh1dmEzR05SMzBKd0NfMmZERmM5TVR0SEFOdW5hY0lxQURlMU9DQmZxVHUydXhfYjRDbXRWUnZDdG1yZl9mM1UyYnZyWHVQc2JZb0pFQQ?oc=5",
+      "summary": "\"1540원 코앞까지\"…원·달러 환율, 장중 급등 후 1527원 마감 중앙이코노미뉴스",
+      "source": "중앙이코노미뉴스",
+      "date": "2026-06-19T07:03:03+00:00"
+    }
+  ]
+}

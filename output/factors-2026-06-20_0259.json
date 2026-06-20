@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-06-20T02:58:51.489941+00:00",
+  "card_title": "FOMC 매파 여진 속 당국 개입에 보합",
+  "tldr": [
+    "어제(1,538원)보다 5원 내린 1,533원에 머물렀지만, 장중에는 1,540원 턱밑까지 오르는 등 변동이 컸어요.",
+    "연준이 금리를 올릴 수 있다고 신호를 보내면 미국 이자가 높아지니 달러를 사려는 사람이 늘고, 그만큼 원화 값이 눌려요.",
+    "한국은행도 7월 금리 인상 가능성이 높아졌는데, 두 나라 금리 차이가 얼마나 좁혀지느냐에 따라 환율이 추가로 움직일 수 있어요."
+  ],
+  "overall_why": "연준(미국 중앙은행)이 금리 인상 가능성을 시사한 충격이 가시지 않아 달러를 사려는 수요가 계속 강했고, 환율은 장중 1,540원 턱밑까지 치솟았다. 다만 외환 당국이 시장에 개입한 것으로 추정되는 움직임이 나오며 상승폭이 꺾였고, 한국은행도 7월 금리 인상이 사실상 불가피해졌다는 분석이 나오면서 **한미 금리 차 축소 기대가 원화 가치 하락을 일부 막는 힘으로** 작용해 전일 대비 5원 내린 1,533원에 머물렀다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 이번 환율 상승의 1순위 원인으로 미국 FOMC 매파적 신호를 지목했으며, 전일 13.7원 급등의 직접 원인으로 보도됨",
+      "headline": "연준 의장 워시 주재 첫 FOMC에서 금리 인상 신호가 나오자 달러 수요가 늘어 환율이 전일 대비 13.7원 오른 1,527.1원에 마감했다",
+      "bullets": [
+        "워시 연준 의장 주재 FOMC가 '매파적 동결'을 결정하며 금리 인상 가능성을 시사하자 달러 수요가 늘어 환율이 전일 대비 13.7원 상승했으며, 시장에서는 1,400원대 복귀가 사실상 어려워졌다는 평가가 나왔다.",
+        "뉴욕 장 앞두고 환율은 장중 1,540원을 돌파하기도 했으며, 코스피는 사상 첫 9,000포인트를 돌파했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 미국 금리 인상 시사에 13.7원 오른 1,527.1원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbtIBYEFVX3lxTE81TXEyZ1VUOTVkNGlEWUtSM1A4TmJ2YUh0cWpWcXZTMzhlMmZfeWwzRnZlMlRKT3R1ZnpabmFWaWRUZ0x6Zk1BTi1BVHR2RERWTk5nNUlGbmJNSlc0Q2tGbg?oc=5"
+        },
+        {
+          "title": "[외환-마감] '매파' FOMC 소화하며 상승…13.70원↑",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBRODhWMm4xVkZrNEVobGF4Qzg3T3dtUHptX0U1RVlnOWZJbE1nMTNYU09iSmZlUmxzTzdQdm80YVBNM3RlbVZpQjkyVEZienc0RzBPMUYxMFBiUklhVGZQNmZfSS1jMUFseUV0c3VxV0lZc1ZI0gF0QVVfeXFMUFE4OFYybjFWRms0RWhsYXhDODdPd21Qem1fRTVFWWc5ZklsTWcxM1hTT2JKZmVSbHNPN1B2bzRhUE0zdGVtVmlCOTJURmJ6dzRHME8xRjEwUGJSSWFUZlA2Zl9JLWMxQWx5RXRzdXFXSVlzVkg?oc=5"
+        },
+        {
+          "title": "“생각보다 매파적” 워시 첫 FOMC…금리 인상 신호에 원·달러 환율 상승 [김혜란의 FX]",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5Idjg5dFFOazZQRzhYdGtnZDdLSVViZnZScWN0MFRVaWJqUGZzdzJEMlQzekVOaEpxZU9PdTUtOGtBZUZGNllBMzBZT0owNC13SEHSAVNBVV95cUxQeW1HeURJQWxnb3RIU0lqOWE0a2U2MFFQY2t6bjRQTHJfSDEzb2U3ejNXT1BvaThoY1pnT1hkZEQtaEJLSnkwZTRlRFpEVEF2WEZIbw?oc=5"
+        },
+        {
+          "title": "“환율 1400원대 복귀, 물건너가나”…워시 체제 첫 FOMC, 외환시장 영향은",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBXR1oySVg3RE81RS1fMjR3cWpIUGx3NjVpS3BoY3pEd2hOTnF4WGRhQ3NvMkxpWVBfcGZFeHpia2tKWUJtVndfTmlfb0FEQWNCX1lWZA?oc=5"
+        },
+        {
+          "title": "달러-원, 뉴욕장 앞두고 한때 1,540원 돌파",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1GQVZVUEtKSzF1VTc3c0V2cE4tR1hWczNzUjZ3ZXN6Y1F4SEwtZXBGOGdPTE91b3JWVWpsMUdJaE1wVWdDY3J3OGk1akZhb0ZiaE54RzI2SUFBUm1mcXdqNXBZQ3hlR1JLejlkZlhRRmo1QQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "FOMC 여진으로 달러 강세가 전 세계 통화 대비 이어졌고, 오늘 장 초반 1,530원대 상승 출발의 직접 배경으로 복수 기사가 지목함",
+      "headline": "FOMC 매파 충격 여진으로 달러 강세가 이어지며 환율이 1,530원대로 상승 출발했다",
+      "bullets": [
+        "연준의 매파적 전환 이후 유로·파운드·엔화 등 주요 통화 대비 달러 강세가 이어졌으며, 달러 인덱스가 12개월 최고치를 시험했다는 보도가 나왔다.",
+        "외환 시장에서 달러 강세가 지속된다는 전망 속에 환율이 1,530원대로 상승 출발했고, 장중 1,540원 턱밑까지 치솟은 뒤 외환 당국 개입으로 추정되는 움직임에 1,520원대로 내려왔다가 1,527.1원에 마감했다."
+      ],
+      "sources": [
+        {
+          "title": "환율 장중 1,540원 육박 후 1,520원대로 하락…당국 개입 추정",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQtIBYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQg?oc=5"
+        },
+        {
+          "title": "원·달러 환율 1,540원 턱밑 돌파 후 후퇴…외환위기 이후 최장기 1,500원대",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BUzRTTVJxNDE3NkJWdUozLWlmTXp5ZjVyN1BzcjkzMmNLbnZkdmFXeFZQekFtcHVRNFFtdE5DaFJTYlA3Z0JnczBRZURjWTlwSkJPczlsbEZCSXFlMDB2cWtHeHlEMl9DUkMzWtIBcEFVX3lxTE1rRFUzVU1MWTc3MkxLMUVfOEJLTkQzRllXSFp0SE51TEpLamxkVGtpRXpsZGVjcFF0alplMUw5TFQyQnFjTmNuNjVUOGxuZDZLNjFfSnlWZGc0ckZ5VFlLakcweWl5ZzhxeHRUR1pHZ0I?oc=5"
+        },
+        {
+          "title": "유가 하락 이긴 달러 강세…환율 상승세 언제까지 이어질까",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR3lYZVJjdEpqNVZ3X0dFLWhRSUZIUVdvbEl1eXJJM2MtZmQ0LU1YbngzTDBjaHZzSDNBa3NiMFVIandPaXIyNG03cnVtRkhXY3NhZWRfRmxGR3NLblhxcnJIWXNKMUdhTEt2eERyMEhWS1hUOWtxMXdkUWNUVGZRTQ?oc=5"
+        },
+        {
+          "title": "[외환] 매파 FOMC 여진에 달러 강세…8.10원↑",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBOODladjZYMjZ6RDNQUUd3U2taM1RLOHpmT05jeFF5eFoxdVh2Y1dLN09zdHR4aG1manVVWGhWMm14ZlJwYkRkUXEtVXJSaFhEazRyV3Ezam4yRzEyM2txQUV5bDMyaEZwM3NhR3drbXU2Qk9Wb0Fr?oc=5"
+        },
+        {
+          "title": "환율, 달러 강세에 1530원대로 상승",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtSXVIZWNGWGVic18wRlJfay1SYl9qdFBNcjJKb0lxVGFJLXcyaUlRVGxWMmVFWmJ5WlFQSzljdlJRNS1uTjdnSFNHVmNHTms?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한은 7월 금리 인상 가능성이 부각되며 한미 금리 차 축소 기대가 환율 하락 방향의 보조 요인으로 작용했으나, 아직 인상이 확정되지 않아 영향이 제한적임",
+      "headline": "연준 매파 전환에 한국은행도 7월 금리 인상 가능성이 높아져 한미 금리 차 축소 기대가 환율을 일부 끌어내리는 힘으로 작용했다",
+      "bullets": [
+        "미국 연준의 금리 인상 신호 이후 한국은행도 7월 기준금리 인상이 사실상 불가피해졌다는 분석이 나왔으며, 이는 한미 금리 차를 좁히는 방향으로 작용해 원화 가치 하락을 일부 제한할 수 있다.",
+        "글로벌 주요국이 나란히 긴축으로 방향을 틀면서 한은이 금리를 얼마나, 얼마나 빨리 올리느냐에 따라 환율 추가 움직임이 갈릴 것이라는 전망이 나왔다."
+      ],
+      "sources": [
+        {
+          "title": "글로벌 긴축 전환…한은 금리 어디까지 오르나",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5PRm5naEo0Z2VZWUo5MXNnTVRIZXJfSmZCLXUwTlE1Q3Z6TWNGN3NtaS1sMEI3bGNPME1lYm9ZZ1NBbjl1ZE0xTExwdnUwLTZqNjA5YjNIenNUUVk3MVJaZFBlS1VidVpk?oc=5"
+        },
+        {
+          "title": "美 연준 매파 전환에 한은도 인상에 무게…한미 금리차 줄어드나",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHMnBVc3pfMEthRG41QXdhRmxHRmhET3h3cG1kVGRMelZ3YWhrUDdxWHJEVEFWSlBkVUxvWXRZak8xUmhZNjJvd3NrZTctQ1k3ZmQ3cnMxRjVyUThWbTg3eGpjdVRHU1lxeFA0YmtOdTN6dw?oc=5"
+        },
+        {
+          "title": "美 연준 금리 동결… 한국은행, 기준금리 인상 불가피",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kZ3hmYk9heWI2UW1zM0E3ejZNOGNtZk5hdkF2Y3FxTmFJbHFvZFpDNGJJVkZ4cXItSHJuT3pENVU0aWZiTTFkdGRPaWJyTElOMDdmcWhra3c?oc=5"
+        },
+        {
+          "title": "韓·美, 높아진 물가에 나란히 기준금리 인상 ‘깜빡이’",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hc2RYWG1nVVFEZFNhQVdlOEhObndJdjg1c3RxenUzSzUwLXBTSVExMlJ6amFocDUwWTE4ck9VeXNXNHpwNml3eEcycE1YN0RkYUlMTFNOVEl0RkhqVHA0V3p4MkNXNndsWnhPOEpKdnHSAXBBVV95cUxPYXNkWFhtZ1VRRGRTYUFXZThITm53SXY4NXN0cXp1M0s1MC1wU0lRMTJSemphaHA1MFkxOHJPVXlzVzR6cDZpd3hHMnBNWDdEZGFJTExTTlRJdEZIalRwNFd6eDJDVzZ3bFp4TzhKSnZx?oc=5"
+        },
+        {
+          "title": "美 FOMC 매파적 동결…주요국 기조 전환 속 한은 금리 인상 '초읽기'",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Mbm9SMVdYX0xLQ2JKYTlsNHBJc0k2aUdOWDQ2dmpBc0VTVnBMbzRrZDFwN3JLbXZEeEFOa3hERXdLTFJDWE1qVjZFSFJmc21BM29v?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "무역·관세·당국개입",
+      "emoji": "🏛️",
+      "impact": 2,
+      "impact_reason": "외환 당국 개입으로 추정되는 움직임이 장중 1,540원 돌파 후 1,520원대로 끌어내리는 데 기여했으나, 최종 종가에 미친 영향은 보조적 수준",
+      "headline": "환율이 장중 1,540원 턱밑까지 치솟은 뒤 외환 당국 개입으로 추정되는 움직임에 1,520원대로 내려왔고 결국 1,527.1원에 마감했다",
+      "bullets": [
+        "환율이 장중 1,540원에 육박하자 외환 당국이 개입한 것으로 시장에서 추정했으며, 이후 환율은 1,520원대로 빠르게 하락했다.",
+        "당국 개입 추정 이후에도 매파 FOMC 여진이 남아 있어 외환위기 이후 가장 오랫동안 1,500원대가 이어지고 있다는 평가가 나왔다."
+      ],
+      "sources": [
+        {
+          "title": "환율 장중 1,540원 육박 후 1,520원대로 하락…당국 개입 추정",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQtIBYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQg?oc=5"
+        },
+        {
+          "title": "원·달러 환율 1,540원 턱밑 돌파 후 후퇴…외환위기 이후 최장기 1,500원대",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BUzRTTVJxNDE3NkJWdUozLWlmTXp5ZjVyN1BzcjkzMmNLbnZkdmFXeFZQekFtcHVRNFFtdE5DaFJTYlA3Z0JnczBRZURjWTlwSkJPczlsbEZCSXFlMDB2cWtHeHlEMl9DUkMzWtIBcEFVX3lxTE1rRFUzVU1MWTc3MkxLMUVfOEJLTkQzRllXSFp0SE51TEpLamxkVGtpRXpsZGVjcFF0alplMUw5TFQyQnFjTmNuNjVUOGxuZDZLNjFfSnlWZGc0ckZ5VFlLakcweWl5ZzhxeHRUR1pHZ0I?oc=5"
+        },
+        {
+          "title": "환율, 장중 1540원 육박 후 '외환 당국 개입'에 1520원대로 하락...코스피는 9천선 턱걸이",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12TGV5WERjV0IxQ2o5R3l3RDlJRlJZZXpwdjlRckJMRkh1MTBmZGIwTnJ6dXoxMEFxWWZSZUVUVXV5Ukl0VE93bFJ5c3U3bFNmQTRfSkt2NzY3VWQ0UTBLOGJwWG4?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  }
+}
