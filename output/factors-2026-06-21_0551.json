@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-06-21T05:51:31.905541+00:00",
+  "card_title": "달러 강세, 경상흑자도 못 막은 원화 보합",
+  "tldr": [
+    "어제(1,538원)보다 5원 내려 1,533원에 마감했지만, 장중엔 1,540원 턱밑까지 오르는 등 1,500원대 중반에서 벗어나지 못했어요.",
+    "연준이 금리를 더 올릴 거라는 기대가 커지면 미국 이자가 높아져 달러를 사려는 사람이 늘고 원화 값은 내려가는데, 경상흑자 같은 원화 강세 재료도 지금은 그 흐름을 되돌리지 못하고 있어요.",
+    "국민연금 리밸런싱 유예 종료 시점과 한은의 연내 금리 인상 가능성이 얼마나 구체화되느냐에 따라 환율 방향이 추가로 달라질 수 있어요."
+  ],
+  "overall_why": "연준(미국 중앙은행)이 하반기에도 금리를 더 올릴 것이라는 전망이 굳어지면서 **달러 인덱스가 1년 만에 최고치**를 기록했고, 유가 하락·중동 긴장 완화·282억 달러 경상흑자라는 원화 강세 재료가 모두 그 힘에 눌렸다. 여기에 코스피 급등에 따른 국민연금 리밸런싱(자산 비중 재조정) 유예 종료 우려까지 겹쳐 **달러를 사려는 수요가 꺾이지 않으면서** 환율은 어제보다 5원 내린 1,533원에 머물렀다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승의 1순위 원인으로 연준 매파 전환을 지목했고, 달러 인덱스를 1년 만에 최고치로 밀어 올린 직접 원인으로 보도됨",
+      "headline": "연준의 매파적 기조가 달러를 1년 만에 최고 수준으로 끌어올려 원·달러 환율이 1,530원대에 머물렀다",
+      "bullets": [
+        "연준의 매파적 기조 유지로 달러 인덱스가 1년래 최고치를 기록했고, 원·달러 환율은 장중 1,540원 턱밑까지 치솟았다가 1,527원으로 마감한 흐름이 보도됐다",
+        "하반기 연준 긴축이 강해질 것이라는 전망이 확산되면서 달러 강세가 지속되고 환율 1,500원대 고착화 우려가 커졌다고 복수 매체가 보도했다"
+      ],
+      "sources": [
+        {
+          "title": "[이번주 환율] 美 연준 매파 전환에 다시 1530원대…중동 리스크 완화 효과 제한",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TaXpObmROYkJPVWJzYjE5UkllanNJaTZIQ2ZWWWFOQVNQZ1J3eFVZYlBLRXdfSUItSlZTYUpweWxKTk4zZ0lKNmdJcWxoTndVMWM4WDlRc3BvZjl3RHRkUThaMm1PMVVEYXpoM09pVlM?oc=5"
+        },
+        {
+          "title": "종전에도 고환율 안 꺾이네…미 금리 인상 가능성 등으로 1500원대 고착",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE42OTZkYlNQeDJNWkxmdW1VT0hQd21qY3JIaE1QVjJ0UnRtZGxibXJOY1U0WHVLSWQ4TE9sQjRnX3pseVl1UkN5RFIzMDNUcVF3bXJiLUVBTTdrT3NrN2EwdjBEaGd2enBJTTZBX2hudXFQdw?oc=5"
+        },
+        {
+          "title": "매파 연준에 중동 변수 재부상 … 환율 1540원 눈앞, 채권시장도 '출렁'",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNem1xWVE5bGl1YTJWN1FvN2FxZXhiQi1mMnY2Vlh6bW1WaUw1Y0g4S2F6Q1NtWmhoMEVPSWFQTlZtWTNNLVFTXzY3U29nRTd4YXE5b3FBSG5MVEo3OW5GY185VXI3aGVZdzFjY1RDdTdab1BGeXZtNWNwZjNOZVgyYtIBgAFBVV95cUxNem1xWVE5bGl1YTJWN1FvN2FxZXhiQi1mMnY2Vlh6bW1WaUw1Y0g4S2F6Q1NtWmhoMEVPSWFQTlZtWTNNLVFTXzY3U29nRTd4YXE5b3FBSG5MVEo3OW5GY185VXI3aGVZdzFjY1RDdTdab1BGeXZtNWNwZjNOZVgyYg?oc=5"
+        },
+        {
+          "title": "\"하반기 연준 긴축 강해질 듯…달러 요인으로 환율 안정 어려워\"",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1iWnZtVlliOVMtV29hSnNuTFpMdnBxOW1LaXFTU2hjcGZkTmpJZGlaZUxTUER3aEFTRGFvTnYyc2M3SUN4T2dlTl9sRndweEZrRnZzYmRaa2d6Q3VXbUNiYlZqUzMybDlVSkNod3owVjI?oc=5"
+        },
+        {
+          "title": "[외환-주간] 연준발 강달러는 언제까지…물가·이란·당국에 시선",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE94Yi1nbm0xTzhKbjFNOWZtZVdNb25ZSHRISEcwNm0xWDlmWDBRNlJZWjRHOWkxRDJ5RGlxVC1GUG43dlJBU2lidnBZZzdXX2R2aHlfNkpsMGVGSEZmSDQ1SnNoQ2VBd3pLZlNUY1JsRHVWUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "달러 인덱스 1년 최고치 기록이 원화 약세를 직접 심화시킨 보조 축으로, 복수 기사가 독립 요인으로 부각",
+      "headline": "달러 강세가 유가 하락·중동 긴장 완화 등 원화 강세 요인을 압도해 환율 하락을 막았다",
+      "bullets": [
+        "유가 급락과 중동 종전 호재가 나왔음에도 달러 강세가 이를 압도해 원·달러 환율이 1,500원대에서 내려오지 못하고 있다고 복수 매체가 보도했다",
+        "경상수지 흑자가 282억 달러에 달함에도 환율이 1,527원에 머문 것은 경상흑자가 원화 강세로 이어지는 연결고리가 약해졌기 때문이라고 분석됐다"
+      ],
+      "sources": [
+        {
+          "title": "유가 급락·종전 호재도 소용없다…원·달러 환율 1500원대 고착화 왜?",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBabjNxWDBTR0hsdFZZaHZrQlllYjhoVG01ZnBmanY0QUNwYW9jOEdGMTY1YmQwMFptcDIwSFlpNHhDVzRjVk53VWM3ZVlvbG1WXzFDZEhOeWRUZWhDcVlwLTc4ZENXd3pQRTkyNnVtWVBjYW5KNFZrZg?oc=5"
+        },
+        {
+          "title": "유가 하락 이긴 달러 강세…환율 상승세 언제까지 이어질까",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR3lYZVJjdEpqNVZ3X0dFLWhRSUZIUVdvbEl1eXJJM2MtZmQ0LU1YbngzTDBjaHZzSDNBa3NiMFVIandPaXIyNG03cnVtRkhXY3NhZWRfRmxGR3NLblhxcnJIWXNKMUdhTEt2eERyMEhWS1hUOWtxMXdkUWNUVGZRTQ?oc=5"
+        },
+        {
+          "title": "유가 급락·종전 호재도 소용없다…원·달러 환율 1500원대 고착화 왜?",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZX294YncyUXgxeEtvZGpGUTA3X1Q1aFR4MkpHb1ppdUxzME02bGpad1NkUDNTMW13TWJDUVd6UkNhVVlDSG0zYjRmSnFrODU5ajlLZzdSa0pWYzh5?oc=5"
+        },
+        {
+          "title": "경상흑자 282억달러에도 환율 1527원…약해진 '원화 강세' 연결고리",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE82eWU1MkgzX1dqT0g0NVFMejRkOVBRVU0xR0hZVTBUT1lqbzFpV1M3UFd2WmVabGVDbzZBbWw4Nm11UWtidmU3UjdtbW1nUTh3MHhJeWJMN0EzeUNSYUJRcA?oc=5"
+        },
+        {
+          "title": "환율 장중 1,540원 육박 후 1,520원대로 하락…당국 개입 추정",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQtIBYEFVX3lxTE1CQkpiT0FoNURyblkzMUR6RVlTQ181R2FBQ05hYkRsSkJnTUhnVllJTGZpOHZLMWV0MTloU0NBSmtGbW1iTkZHM1ViWS1MSzVyUjRKdXZ1Um4taEpuLThwQg?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한은의 연내 두 차례 금리 인상 가능성이 보도됐으나, 미·한 금리 차이 좁히기 기대감이 환율 상승을 일부 억제하는 보조 요인에 그침",
+      "headline": "글로벌 금리 인상 도미노 속에 한은의 연내 추가 인상 가능성이 높아졌다",
+      "bullets": [
+        "글로벌 기준금리 인상 흐름 속에 한은도 연내 두 차례 금리를 올릴 가능성이 높아졌다고 보도됐다",
+        "기준금리 인상을 앞두고 한은이 금융안정 상황을 주시하고 있다는 보도가 나왔다"
+      ],
+      "sources": [
+        {
+          "title": "글로벌 기준금리 인상기조 시작...한은도 연내 두 차례 인상 가능성↑",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ1U3QlFIeHBKdmdOaVd4dmFrR3ZYNjJ2aUlxZVdaRTl2R09peWU3YlgycE0zZW1lYkxYa0h4c0JVLUtoeVpoVlpaNS0zcDJZWTJsNlpvOXB2YVREZlFmcGVpb1l5WkxSOEEyYXNuNExRMmhGZGRxUElTYlp6bUJxc2d5OXg?oc=5"
+        },
+        {
+          "title": "주요국 연내 금리인상 도미노…‘물가·환율 대응’ 차질 없어야",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UcDNqQ3J4ZTFuMkpFZ3lNNEpLOVMySjkwWVFrT2ZnWW13S3ktcEN1T3Y2X3dxWGdMMExFNnNwc1RaTGp4TjhnTVlFT0Z6UjBQcFEtRjdxZl8zRzVqVjBORks1NXZkNC13RmNtTXNR?oc=5"
+        },
+        {
+          "title": "기준금리 인상 앞두고 금융안정 상황 주시[한은 미리보기]",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNak16U2JMY0JXN2lPVWRmSXFXaWdTRHNmVDAzUjVKWTRTSEpzeW1oMEhnaVRWbHhRdkVaLWRuQjk0cFFPSHZJaDhzSVNYa1JBVHpwZVlJS3VnQk0tTjVlODlnaDhHaG5oXzJGLWNrUnExcFFzMDhuYUY1UXZQaEtrMQ?oc=5"
+        },
+        {
+          "title": "기준금리 인상 앞두고 금융안정 상황 주시[한은 미리보기]",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XRlZRR09IQllfbng5eGxvYWNRT25TVXlrR2k0R3RnZkt6MFZuTVpQTjdFV3RaTEdrRjJXMEJCd3FDbWtxNUtjNVlSb3luYV85SXRWZWl6cElvX0FGRG15NQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "국민연금 리밸런싱 유예 종료 등 외국인 수급 변수가 언급됐으나 오늘 환율 움직임의 보조 배경으로만 작용",
+      "headline": "국민연금 리밸런싱 유예 종료 변수와 외국인 이탈 우려가 고환율 고착화 논의에 더해졌다",
+      "bullets": [
+        "코스피가 1만을 앞두고 국민연금의 리밸런싱 유예 종료가 임박해 달러 매수 압력이 커질 수 있다는 분석이 나왔다",
+        "달러 강세와 외국인 이탈이 맞물려 환율이 1,520원을 돌파했다는 보도가 나왔고, 고환율 고착화 우려가 제기됐다"
+      ],
+      "sources": [
+        {
+          "title": "코스피 1만 앞두고 국민연금 매도 변수 부상…리밸런싱 유예 종료에 환율 압박까지",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1UVzdmSWNKR0VIS21jRjZQN0Y3VUwxUWd6M0VjZ0cyZ1laRnFhVWNGaG1YX2gzOG9IOUl6Qmw0dGNHWjl1NjNUb0tTSE9GQzdKRlU4dGhUT2lHNlJBZWZHbG9RT2k0RHBQdU52c1VwUl9qOVZuOFFV?oc=5"
+        },
+        {
+          "title": "강달러·외국인 이탈에 환율 1520원 돌파..고환율 고착화 우려",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11RzhJUzRObFJTcHFUZ3h2UWo0ckxmU0xUNXI2bkhCcm9xRVRiZ2NhSGIya1QtWmR5b1VYSTRtZ0NLWFg5UXpGRDRPc0E4aldHMUE?oc=5"
+        },
+        {
+          "title": "유가 급락·종전 호재도 소용없다…원·달러 환율 1500원대 고착화 왜?",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBZX294YncyUXgxeEtvZGpGUTA3X1Q1aFR4MkpHb1ppdUxzME02bGpad1NkUDNTMW13TWJDUVd6UkNhVVlDSG0zYjRmSnFrODU5ajlLZzdSa0pWYzh5?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  }
+}

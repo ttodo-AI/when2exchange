@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-21T05:50:39.567437+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1500–1530 KRW/USD\n\nWHY: The won is currently weak, with the KRW/USD rate holding stubbornly in the 1500s range due to a strong dollar driven by Federal Reserve policy, oil prices, and sustained dollar demand. Multiple sources indicate this elevated level is persisting, meaning you need more won to get your $2,000 than you would in a stronger-won environment.\n\nTIP: Consider dollar-cost averaging your monthly $2,000 conversion across multiple days or splitting buys, since the rate appears stuck at unfavorable levels and waiting for won strength may offer better value over time."
+  },
+  "articles": [
+    {
+      "title": "[외환-주간] 연준발 강달러는 언제까지…물가·이란·당국에 시선",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA4MXUzNWNIbzZKOWsxZzA1dlh2ZEtDVDdZbUVoWk1zOGRPd3ROQ1dqT25uU0RnRG9qRG9PR1JETlV2Z1FrMUVvaEI3V2xRU2VwdkQ3Wk5DTHFOOFdZZ2p1VHFDTnI1VEQ3enJ4ZlFDSEM?oc=5",
+      "summary": "[외환-주간] 연준발 강달러는 언제까지…물가·이란·당국에 시선 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-21T04:03:07+00:00"
+    },
+    {
+      "title": "전쟁 프리미엄 걷혀도 강달러 벽…1500원대 버티기[주간외환전망]",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ0JxVGdvdklZUnpvTEsxMlNCeFNBNDBJNlBrb08tZDBVdDA5YWRMUnhCaWV2TGwwY0JCOTl3ejhZVTM5V19zRDRZU25lYlBrbFJwWVp4OU5MOEs0RzY5YVhQNmU0bGY4MW5qNlNTNXcxbUg2OTdodTF0QXE0dXFJSg?oc=5",
+      "summary": "전쟁 프리미엄 걷혀도 강달러 벽…1500원대 버티기[주간외환전망] 이데일리",
+      "source": "이데일리",
+      "date": "2026-06-20T22:00:04+00:00"
+    },
+    {
+      "title": "1500원대 이어가는 달러·원 환율",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9CSmNEZDgtd25vNkV5bW9NQVdNYWVfQmRfU2VUTjc2bjBTVG1qVTlSZklIRXJLWXN1ajcwSzhxeHFveHVnOGk2UnJGVQ?oc=5",
+      "summary": "1500원대 이어가는 달러·원 환율 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-21T05:00:00+00:00"
+    },
+    {
+      "title": "종전에도 1500원대…환율 발목 잡는 '연준·유가·달러 수요' > 뉴스포커스",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5fdGprUGJ3RUpoWkRPVEdKRlFWTlY1R0d3bVBoREt3V2JvNDZURHoydzF0T2VMZzNGdlVTRzdhX1JVZmMyNHpEUWllZ2k?oc=5",
+      "summary": "종전에도 1500원대…환율 발목 잡는 '연준·유가·달러 수요' > 뉴스포커스 SeattleN",
+      "source": "SeattleN",
+      "date": "2026-06-21T03:50:24+00:00"
+    },
+    {
+      "title": "‘1530원’ 환율 습격? 영점 조정?…시험대 오른 K증시 기초체력",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE00bm1CSzY3bk8wNk5oOXhHSHJtN3VadUxIVnZSMDlnNko1YU90N1BSU3Q2RGdxYmZZcTl6akRKcUU0UVhFaS1SOGVCdE04WGM2aW5XcG4yWElQTFBMeExPdEJ1RQ?oc=5",
+      "summary": "‘1530원’ 환율 습격? 영점 조정?…시험대 오른 K증시 기초체력 쿠키뉴스",
+      "source": "쿠키뉴스",
+      "date": "2026-06-20T12:47:47+00:00"
+    }
+  ]
+}
