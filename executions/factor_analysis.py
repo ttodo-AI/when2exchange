@@ -348,6 +348,28 @@ def print_validation(blocks, warns, where="검증"):
         print("  ⚠ " + w, file=sys.stderr)
 
 
+def fix_title_number(client, model, title):
+    """card_title에 환율 숫자(1,500원·1520선 등)가 있으면 게이트가 배포를 막는다. 숫자를 빼고
+    원인·이슈만 살려 다시 쓴다(LLM 한 번, 실패 시 정규식 제거). 숫자 없으면 그대로 둠."""
+    title = (title or "").strip()
+    if not title or not _RATE_NUM_RE.search(title):
+        return title
+    try:
+        r = client.messages.create(model=model, max_tokens=80, messages=[{"role": "user", "content":
+            "다음 '지난 브리핑' 제목에서 환율 숫자(예: 1,500원·1520선·1530)를 빼고, 그날의 원인·이슈만 "
+            "살려 한국어 18자 이내 한 줄로 다시 써줘. 숫자·따옴표·이모지 없이 제목 글자만 출력:\n" + title}])
+        t = "".join(b.text for b in r.content if getattr(b, "type", None) == "text").strip().strip('"\'')
+        if t and not _RATE_NUM_RE.search(t):
+            print(f"  제목 숫자 자동제거: '{title}' → '{t[:30]}'", file=sys.stderr)
+            return t[:30]
+    except Exception as exc:
+        print(f"  제목 숫자 재작성 실패({exc}) — 정규식 제거로 폴백", file=sys.stderr)
+    # 폴백: 숫자 토큰 + 잔여 조사(원대/선/돌파 등) 제거
+    t = _RATE_NUM_RE.sub("", title)
+    t = re.sub(r"\s*(원대|대|선|선에서|돌파|까지)\s*", " ", t)
+    return re.sub(r"\s{2,}", " ", t).strip(" ,·") or title
+
+
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Find the day's Top 4 USD/KRW drivers.")
     p.add_argument("--per-factor", type=int, default=15, help="News results per factor (default 15).")
@@ -512,7 +534,7 @@ def rewrite_why(client, model: str) -> None:
         sys.exit("error: rewrite produced empty overall_why.")
     data["overall_why"] = why
     if parsed.get("card_title"):
-        data["card_title"] = parsed["card_title"].strip()
+        data["card_title"] = fix_title_number(client, model, parsed["card_title"])
     if tldr:
         data["tldr"] = tldr
     data["heat"] = heat_meta["heat"]
@@ -743,7 +765,7 @@ def main() -> None:
     now = datetime.now(timezone.utc)
     payload = {
         "generated_at": now.isoformat(),
-        "card_title": (result.get("card_title") or "").strip(),
+        "card_title": fix_title_number(client, args.model, result.get("card_title") or ""),
         "tldr": tldr,
         "overall_why": result.get("overall_why", ""),
         "factors": factors_out,
