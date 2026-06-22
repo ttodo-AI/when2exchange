@@ -1,0 +1,140 @@
+{
+  "generated_at": "2026-06-22T04:13:28.846347+00:00",
+  "card_title": "워시 연준 매파 충격에 원화 약세 지속",
+  "tldr": [
+    "FOMC 결과가 나왔어요. 워시 의장 체제 첫 회의에서 금리를 동결했지만 올해 안에 올릴 수 있다는 강한 신호를 보냈고, 오늘 환율은 어제보다 5원 오른 1,538원이에요.",
+    "미국이 금리를 올릴 것 같으면 그 이자를 받으려는 돈이 달러로 몰려 달러 값이 오르고, 상대적으로 원화 가치가 내려가 환율이 올라요.",
+    "이번 주 발표될 미국 PCE 물가지표와 PMI 결과에 따라 환율이 추가로 움직일 수 있어요."
+  ],
+  "overall_why": "케빈 워시 체제의 첫 FOMC가 금리 동결과 함께 **연내 인상을 강하게 시사하는 매파적 결론**을 내놓자, 미국 금리 상승 기대에 달러 수요가 늘면서 달러 인덱스가 1년 만에 최고치를 기록했다. 원화는 이 강달러 압력에 어제(1,533원)보다 5원 오른 1,538원에 머물렀고, 외국인 자금 이탈 우려와 국민연금 리밸런싱 변수가 하락을 막는 추가 힘으로 작용하며 **6월 평균 환율이 1998년 외환위기 이후 28년 만에 최고 수준**을 이어가고 있다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 이번 주 환율 1,530원대 상승의 1순위 원인으로 워시 연준 체제의 매파적 FOMC 결론을 지목했고, 오늘 환율도 그 흐름을 직접 이어받았다.",
+      "headline": "워시 연준 의장 체제 첫 FOMC에서 나온 매파적 결론이 달러 강세를 유지시키며 환율을 1,530원대에 묶어두고 있다.",
+      "bullets": [
+        "케빈 워시 의장 체제의 첫 FOMC에서 금리를 동결하면서도 연내 인상을 강하게 시사하는 매파적 결론이 나와, 시장이 경악했다고 복수 매체가 보도했다.",
+        "주요국의 연내 금리 인상 도미노 우려 속에 연준의 매파적 기조가 달러 강세를 지지하며 미·이란 종전 합의에 따른 환율 하락 효과를 제한하고, 원·달러 환율은 1,530원대 공방을 이어가고 있다."
+      ],
+      "sources": [
+        {
+          "title": "[이번주 환율] 美 연준 매파 전환에 다시 1530원대…중동 리스크 완화 효과 제한",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5TaXpObmROYkJPVWJzYjE5UkllanNJaTZIQ2ZWWWFOQVNQZ1J3eFVZYlBLRXdfSUItSlZTYUpweWxKTk4zZ0lKNmdJcWxoTndVMWM4WDlRc3BvZjl3RHRkUThaMm1PMVVEYXpoM09pVlM?oc=5"
+        },
+        {
+          "title": "케빈 워시 체제 첫 FOMC…시장이 경악한 매파적 결론",
+          "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxOdERacnVCSGdlRjdCWlVMcktRelVFSnlMa0E4RVppNXFyYVZfU09kOUY4eUw4cEVtQ3F4Z3JkeXFPUVBOZ1EwNUlsaGppZWtRM2RVOUNmdTdSeERIUGpWcVVuREtQQ054S19jYVdsczYwSUtkcU1ZUllhd24ySU5seDhiOUo2UFpfZHJHSzJLRFhIbUdaRDZMbG9uQUd0VjZ6cDIzUjZuS3NMVXJIYnh5WDRKZ0kzOWhxMEJYOW5NdlRFNzlBTFpUR1NiekFEYnJwSUZoczNGTkZKMlRMNDBlcUFuSzJTNERaaHpJamRZWmtGS01JdlgzQ212WWNuZmZOT3lRV1d6aFRZQXJHTXNOM21MMWQ0YTJlSWxtTVg4X1R0bGdmQVZyZE9EZERyOXBCaTBCV08tNHYxNU9nYTZkNU5ZcWNPcWFLZy11MDJrX25mZjhf?oc=5"
+        },
+        {
+          "title": "주요국 연내 금리인상 도미노…‘물가·환율 대응’ 차질 없어야",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UcDNqQ3J4ZTFuMkpFZ3lNNEpLOVMySjkwWVFrT2ZnWW13S3ktcEN1T3Y2X3dxWGdMMExFNnNwc1RaTGp4TjhnTVlFT0Z6UjBQcFEtRjdxZl8zRzVqVjBORks1NXZkNC13RmNtTXNR?oc=5"
+        },
+        {
+          "title": "[박근종 칼럼] 미국 ‘연내 금리 인상’ 시사, 환율·물가·성장 차질 없도록 인플레 철통 방어를",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1kLVM0WkMydDE4aURDWENJVmJxc0h0c1BYUk84NjhzalJmR3p1UEpBSjB0RlhCWlVFdG9BRHRzQkIwUF83cXFCVVdWd2U0clRmN2FlbXg1X096ZWJCdkJuWGNlM09WdkFhQnREaU9WSksycDhMd2Y00gF3QVVfeXFMTWQtUzRaQzJ0MThpRENYQ0lWYnFzSHRzUFhSTzg2OHNqUmZHenVQSkFKMHRGWEJaVUV0b0FEdHNCQjBQXzdxcUJVV1Z3ZTRyVGY3YWVteDVfT3plYkJ2Qm5YY2UzT1Z2QWFCdERpT1ZKSzJwOEx3ZjQ?oc=5"
+        },
+        {
+          "title": "[주간환율전망] 대외변수에 취약한 원화···1530원대 공방",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9uTmpzOGMtcmdIV0xsQThteS1qUUNudmF3ZkNvUDNhaGFocGlyX0gzWE9VMGFibmNSLXFuVnhyZXZqTktaVUROZ1FUUzNIbElJbk9Md1psSVlWUTQ3R0huYVlwaUNTcEpwN2c?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "달러 인덱스가 1년 만에 최고치를 기록했다는 사실이 복수 매체에서 오늘 원화 약세의 직접 배경으로 언급됐다.",
+      "headline": "연준 매파 기조에 달러 인덱스가 1년 만에 최고치를 기록하며 원화를 24거래일째 1,500원대에 묶어두고 있다.",
+      "bullets": [
+        "연준의 매파적 기조 유지로 달러 인덱스가 1년래 최고치를 찍으며 EUR/USD가 하락하는 등 주요 통화 대비 달러 강세가 뚜렷해졌다.",
+        "원화는 강달러에 힘을 쓰지 못하며 24거래일째 1,500원대를 이어가고 있고, 6월 평균 환율은 1,521원으로 1998년 외환위기 이후 28년 만에 최고 수준을 기록했다."
+      ],
+      "sources": [
+        {
+          "title": "연준의 매파적 기조 유지에 달러, 1년 만에 최고치…엔화, 161엔 안팎 ‘개입 경계선’ 근접",
+          "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNZVBRemoxSEpScV9fNF9DVzBhOGVmTVFaS0ktZjNJWkFJMmFDN0hfNnlyTXB3N1hNVkVVRFFCV0lJYl9mazkxTmM5WE1fa00zeTBHbHgydW1XZHFBWnJuY3NLbzd3MmNrOHhCeVMxNkdGM3RLZUluRUE2Z2VqODFGUmN6TUVQd2RsRUN2Y29oMmtUVFM0b2tQOGlCelhGRG9MczFydTdsajZXSTlFU080bVZpU1JUcms4SnEwNkR3TElzVEJzUlQ3Z3BnYWJhUzM5cTVUbDd5V3A4NU9MajRUbTViN1FoMWFyOGNzN0lrNnFiczhWcVZpR3NySURXaVhNZWRCRmh5X2dBbElGVWlhUmhWLXJ0QzAtbzNhUUJ6SGVjZkt5cXpjcnhYMjVUWDEwUFZKOFZ1cU9vWUJYT0pqWGRENDFETWtDdGxqX2ktME0?oc=5"
+        },
+        {
+          "title": "매파적 Fed에 달러 인덱스 1년래 최고치…EUR/USD 하락",
+          "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQRWlRLW02bTFoMHlFTGdoeWluRHVCUHNJMm5ERzR2LUdWZUIzWmJKRm1vcE4xWEc3b2FVYXdjVzdTN3YyNUJNVUlCNm02Qk5nOXB0azl4OEdXeUNqZ3k1YnZ4NV9RRk9CVk9tWXd0Y0drZDhubVNZWldDdWZUUlgtRXphX04wdG82UG8zQWxLTDVrWUkwdDJDeE5fNUVGbDZPOVBuTWxjUTNzTVU1TnJIbGNBSlBEcEQzNGpFT1JxSGVVR05MUzV6NGZpTFpHUE9YTEVqWTlEZnRQWEYtZm9yS2Y4NWxtRGpCVU9QbUlZYU9MUklVeHBOZ3h1Ym9feHhJQ0VHNHItdkVnOHBYMWI1V3V4TWNzZ0h5TGZzYklsaFluWng2MTN2eHFRVmg?oc=5"
+        },
+        {
+          "title": "[오늘의 금시세] 연준 매파 기조→달러 강세 지속…국내 금값 소폭 반등",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1kV3JRQ1pFUWpOTUN4Qm15N0JORXRMNkRDaDhLMjF6czhTYlQxTWNqMENQUW90QmxZUy1XWUpXVU1fTkluVHZacmtSM1prNmdEb0J6ZmFZS3MzQTdZM194ZWtCU0J6ekhtVGV0OWpGX3BlZw?oc=5"
+        },
+        {
+          "title": "'원화 약세' 굳어진 6월, 환율은 외환위기 28년만에 최고 수준",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE45dktCN3dXbWEyN2FtdUJCMVJMaGdrdkZYc1daRm91Y19WSjFLLXhzUXhyTEZGLWItR3p4ejhhQkdiVTJ2NV92T2cxZjY4SlI3R0F6SkN5Q3BDaFRsX0dkLWNwVllKcUpFcVZn0gFvQVVfeXFMUHU2cHl3UFU0R2tnT0sydGxOdDlnQy1rQW1hMjd2VUZqQ1BrdzlnSmJXdmVEakRGRkttOGZJcjVMazh6Q3k5SktQX3JCYTlCVHFmZFpHaUlTMVNxdUJneEZYbXRwMHJhaDlzQTBacXNV?oc=5"
+        },
+        {
+          "title": "환율 24거래일째 1500원대…강달러에 힘 못 쓰는 원화",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWN0VDUWtBU1h0YXdzaGU4c3Nzb3VJUFltNjlxbm9pNmNjSWFFc1ZvcFFicWQzZDBxV01KVkNlbGxKRHlhQnQ4c0RjZjN6QjBUNFp0VjYtaHlpbklUN0FZdQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 3,
+      "impact_reason": "견조한 미국 경제지표가 연준의 매파적 기조를 뒷받침하는 근거로 제시되며 달러 강세를 유지시키는 보조 요인으로 작용했다.",
+      "headline": "견조한 미국 경제지표가 연준 매파 기조를 뒷받침하며 달러 강세를 추가로 지지했다.",
+      "bullets": [
+        "노르데아는 '견조한 미국 지표와 매파적 연준이 달러 강세를 지지한다'고 분석했으며, 이후 점진적 약세 전환 가능성은 열어뒀다.",
+        "이번 주 발표될 PCE 물가지표와 잠정 PMI가 주요 외환 통화쌍의 향방을 결정할 변수로 시장의 주목을 받고 있다."
+      ],
+      "sources": [
+        {
+          "title": "전쟁 물러서자 금리 돌아왔다…금값 흔든 진짜 주인은?",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBvNHJLNm4wc29FRWIxc2VNeDRJZ2V2SWh0RWxHYloxZHpqRmhpUUl5ZTRyMUtyTXBnOENBcWszY0lRby1ZMFBPaEpBM0pKWGlwalJhX29n?oc=5"
+        },
+        {
+          "title": "노르데아 “견조한 미국 지표·매파적 연준, 달러 강세 지지…이후 점진적 약세 전환”",
+          "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxPVEl5U1NYejNEdFlMWmt5OHVWUXFkcGJyMFVFVDBIVjFPeW92RGFZcWRnSnU5Z29WUHBhWk9uMzdNLVcya0dkUnNyUHlUbTRJZDBFUzkxZ0Z1UFZjR3E1Y3VrLU5aLVJObzdEOHBqQkxsNWtxbjQxM2tvd3JIU1BDeTU5VWM2UmtENWwyNDVRUDdzdy1jQm9iUnplWXliN3djS2h0MU5ERTBseDI4Q2pUalpkUFpSenZVY2xTQzRsWlNCOWJVMFhKOEtkM3RFdEo1Tmt3V19DdlZ5NGRLUEFGcUJnMjhNbTFjRkMxU3d4UGEzZlc1dWw5SWhHemhuSjVnRURNeDdMdG94OHlDVkM1TDlGcmtvaW5XRHVHQzAwQmNBUlRkM3JTVENMSDliZUZReFNjYlVGM1ZHV2NHd1k3QVdEVExjZVQ5X2c?oc=5"
+        },
+        {
+          "title": "연준의 매파적 기조 유지에 달러, 1년 만에 최고치…엔화, 161엔 안팎 ‘개입 경계선’ 근접",
+          "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNZVBRemoxSEpScV9fNF9DVzBhOGVmTVFaS0ktZjNJWkFJMmFDN0hfNnlyTXB3N1hNVkVVRFFCV0lJYl9mazkxTmM5WE1fa00zeTBHbHgydW1XZHFBWnJuY3NLbzd3MmNrOHhCeVMxNkdGM3RLZUluRUE2Z2VqODFGUmN6TUVQd2RsRUN2Y29oMmtUVFM0b2tQOGlCelhGRG9MczFydTdsajZXSTlFU080bVZpU1JUcms4SnEwNkR3TElzVEJzUlQ3Z3BnYWJhUzM5cTVUbDd5V3A4NU9MajRUbTViN1FoMWFyOGNzN0lrNnFiczhWcVZpR3NySURXaVhNZWRCRmh5X2dBbElGVWlhUmhWLXJ0QzAtbzNhUUJ6SGVjZkt5cXpjcnhYMjVUWDEwUFZKOFZ1cU9vWUJYT0pqWGRENDFETWtDdGxqX2ktME0?oc=5"
+        },
+        {
+          "title": "주요 외환 통화쌍, 워시 연준 의장 체제 대비… PCE 물가지표·잠정 PMI·각국 중앙은행 인사 발언 주목",
+          "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQcUpKdkVGZHdQV0QtZWozcXJrMTJWT2tUMmd5YlBLUkY4V0ozdS1leEhSV3drVXViNEJZWGR3djYtd3F3cUpiN2xZRGlFM25uSUlkWEZ0X3owbXItZXI1bUtIMjIySEdUOUc2cnItc2RHTDBGdjluRTFWSTd1VGYtd2U2VndoYUY3WGZKM3UxTWZoelpURUhGM050V291b3JCR2MtTUtOdjZ1emNfdnVUZVZWWUQ5N1pYS1FmSTNuZS01NGtDLWlYTEJDMGtIOHhVUVliT1ljSHI4a29PeXZWeHRncjdEMjEwUm56c1VWcmgySm5lTmY0TV9VbGZNQWVLMms0ZEoyNGdKS1o0R1ZsenFhN3pkdmNxTDREUUFLMTFWVkZRTzBPdm9xQ2M3WVBKRlZfc29VZFI4VlJNT0NLQkRoZVU3QlQ0c2c?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "외국인 이탈이 환율 상승 요인 중 하나로 언급됐으나, 오늘 직접적인 수급 수치 없이 보조적 배경 요인으로 거론된 수준이다.",
+      "headline": "외국인 자금 이탈 우려와 국민연금 리밸런싱 변수가 환율 하락을 막는 보조 요인으로 작용했다.",
+      "bullets": [
+        "강달러와 외국인 이탈이 맞물려 환율이 1,520원을 돌파한 것으로 분석됐으며, 고환율 고착화 우려가 커지고 있다.",
+        "코스피가 1만 포인트에 근접한 가운데 국민연금의 리밸런싱 유예 종료에 따른 매도 가능성이 환율에 추가 압박을 줄 변수로 부상했다."
+      ],
+      "sources": [
+        {
+          "title": "코스피 1만 앞두고 국민연금 매도 변수 부상…리밸런싱 유예 종료에 환율 압박까지",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1UVzdmSWNKR0VIS21jRjZQN0Y3VUwxUWd6M0VjZ0cyZ1laRnFhVWNGaG1YX2gzOG9IOUl6Qmw0dGNHWjl1NjNUb0tTSE9GQzdKRlU4dGhUT2lHNlJBZWZHbG9RT2k0RHBQdU52c1VwUl9qOVZuOFFV?oc=5"
+        },
+        {
+          "title": "종전 합의에도 안심 못한다…환율 1500원대 고착화 우려 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IMG5lRFVzUXZLQWxfcTVyU3pSLThKQzExVnV5SmdUUmRKOWE0Z29VZ0ZHbXZCc2RiN3pLTnVoTi0wV2xiOFVtVmZEdDdOR3JFbmJzNmN6UkZPLVFkM3FoNWNGTFZBVWRaTHpn0gFwQVVfeXFMTkV2cGxzZXIyM1cxR1Z3NWxlb2tSekJqdUVJUmU1Q1Rzb1QzYTFRWmVaSVprX0d5amp2X3VTRVdZWDJhRGhfOWQ5OHVDaU9PWUJuQ1VDZlV6bmxLd3h0Q3ZtQ1l4SXFIeTlpS2tLQ2pmYg?oc=5"
+        },
+        {
+          "title": "강달러·외국인 이탈에 환율 1520원 돌파..고환율 고착화 우려",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE11RzhJUzRObFJTcHFUZ3h2UWo0ckxmU0xUNXI2bkhCcm9xRVRiZ2NhSGIya1QtWmR5b1VYSTRtZ0NLWFg5UXpGRDRPc0E4aldHMUE?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  }
+}
