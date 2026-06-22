@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-22T04:33:10.107515+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1520–1530 KRW/USD\n\nWHY: The won is currently weak (high KRW per USD), meaning dollars are expensive for you right now. However, the exchange rate has been stable in the 1500s for 24 consecutive trading days and is expected to continue fluctuating in the 1520–1530 range due to Middle East uncertainty, suggesting no imminent dramatic improvement.\n\nTIP: Since you need $2,000 every month regardless, consider splitting your conversion into smaller purchases throughout the month to average out volatility rather than waiting for a better rate that may not materialize soon."
+  },
+  "articles": [
+    {
+      "title": "중동 전쟁 불씨 '불확실성' 반영⋯\"1530원대 초반서 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5VMlYwb2NsNnZsQXkxdm94QXpnZmpyVjZqNmNYalBTUlM5cmpXRlhJcWNYaEtmZjd6UWVDTnR1MjlRVV9DNmsyd3V4R09oeFA5ZDdZcg?oc=5",
+      "summary": "중동 전쟁 불씨 '불확실성' 반영⋯\"1530원대 초반서 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-06-21T23:04:00+00:00"
+    },
+    {
+      "title": "미·이란 종전에도 환율 1520원대…전쟁 때보다 더 올랐다",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWGt0V2V0QVJLWVJjQy1nYW5OQ0FwZDRXU2ZYRWttZHlpZGsxRlg1S0JLaTZFMkhuREdPNWtwNXVWdndXSkNvRmN5Q3B0eDhiZDhXSUZBbUhodUR4eThTTThXODgzV2hCRDZ1SUctZHo4anZrYWNCeF80alUyRHVLZDNrM2FHRlEzWVl3Vg?oc=5",
+      "summary": "미·이란 종전에도 환율 1520원대…전쟁 때보다 더 올랐다 한국일보",
+      "source": "한국일보",
+      "date": "2026-06-21T06:34:00+00:00"
+    },
+    {
+      "title": "24거래일 연속 1500원대 이어가는 달러·원 환율",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1uUFNUdU9qeVZXa3BzQ2tJTHgzR2tnZGxfbFE0UnNhTV9DUkNzaHgwcjdualYzeVctbDBwS0RWblZpcjE2ZUtLMUJwcw?oc=5",
+      "summary": "24거래일 연속 1500원대 이어가는 달러·원 환율 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-21T05:00:00+00:00"
+    }
+  ]
+}
