@@ -667,7 +667,8 @@ __GA__
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
-  #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer; }
+  #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer;
+          user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
   .cross-line{ position:absolute; top:0; bottom:0; width:1px; background:#6b7280; transform:translateX(-50%); pointer-events:none; }
   .cross-dot{ position:absolute; width:9px; height:9px; border-radius:50%; background:var(--brand);
               border:2px solid #fff; transform:translate(-50%,-50%); pointer-events:none; box-shadow:0 0 0 4px rgba(59,91,219,.15); }
