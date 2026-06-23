@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-23T03:32:32.315594+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,500 KRW/USD\n\nWHY: The won is currently weak (high KRW per USD at 1,500 midrange), making dollars expensive to purchase. Multiple sources expect the won to strengthen (rate to fall toward 1,450 KRW/USD) in the coming months as Middle East tensions ease and geopolitical risk premiums unwind.\n\nTIP: Consider waiting a few weeks or months if possible, or dollar-cost average your $2,000 monthly buy into smaller weekly/bi-weekly purchases to smooth out the unfavorable current rate."
+  },
+  "articles": [
+    {
+      "title": "李대통령 \"환율 1,500원 중반은 펀더멘털 대비 과도한 수준\"(종합)",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzY0ZENmxXb2hBSDBXUk9ad1V5UU5RZHVjdUJGbVprVkFtaWI3dU9kR1ZvTkVvLTB6VTJuUjM1Uzc5LW42cU9UbHh3aUNPd1FGUHB4MktNX1ZzUlh1RFpDTFZiTzdob0VORmlTYlJVc2JMUQ?oc=5",
+      "summary": "李대통령 \"환율 1,500원 중반은 펀더멘털 대비 과도한 수준\"(종합) KB Think",
+      "source": "KB Think",
+      "date": "2026-06-23T01:58:28+00:00"
+    },
+    {
+      "title": "한경협 \"미·이란 합의로 하반기 환율 안정…1450원선 하락 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnbmh0M09Hbm1BUUlHb2k2YWNYLVk5RE5ZaG16eC1nOGxkcEZRRVNXb0hMNWNfZFZnMGM3UnRveDZiVF9tdGFEVWwxVUtfU2pJems5TTd0bXd0bmJEX2M5TdIBeEFVX3lxTE1ZLXJFcTZRYnpKSGxMMkpOcV9NS05TVXJOQl9WTHJuX00tbzlqbmpwQU5vdWt5NlNNd0IwUDg2MnlWNi1VSzMxNlFYUmc2ZVd6YlRhV2hSS2dWcFhlSEQyUWNSb0dUNWk5N3ZrUjkySTFPRHZ4cXQyUA?oc=5",
+      "summary": "한경협 \"미·이란 합의로 하반기 환율 안정…1450원선 하락 전망\" 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-06-22T05:00:00+00:00"
+    },
+    {
+      "title": "전쟁은 끝나가는데 환율은 그대로…1500원대 버티는 이유",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8xN1BENWY5Tk5RSVNMeGE5STlxSm9relhoOUZTcDJqY1hKMlNiNEpsREN6akVOaHp2eDYwSXpJTWdidzRCRGllX1VDdm53YVhnWnFLVVlvS2zSAVhBVV95cUxPMTdQRDVmOU5OUUlTTHhhOUk5cUpva3pYaDlGU3AyamNYSjJTYjRKbERDempFTmh6dng2MEl6SU1nYnc0QkRpZV9VQ3Zud2FYZ1pxS1VZb0ts?oc=5",
+      "summary": "전쟁은 끝나가는데 환율은 그대로…1500원대 버티는 이유 아주경제",
+      "source": "아주경제",
+      "date": "2026-06-22T07:43:57+00:00"
+    },
+    {
+      "title": "[경제 브리핑] 중동 긴장 완화에 환율 안정 기대...1년 내 1450원 전망",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1oVk5wOFlUYjlHb2FPREJKTXZBVEJOTGVvVzg1NXcwdWdjTTFST09NblU0cDRTWWpIQzM0b1RsV0V1T1BlZkN3QTJENzRNRG9MWnZfQXRPVzJJUVdCZV9nLUptMzNSd3pCX3pNeUE5MTTSAXBBVV95cUxNaFZOcDhZVGI5R29hT0RCSk12QVRCTkxlb1c4NTV3MHVnY00xUk9PTW5VNHA0U1lqSEMzNG9UbFdFdU9QZWZDd0EyRDc0TURvTFp2X0F0T1cySVFXQmVfZy1KbTMzUnd6Ql96TXlBOTE0?oc=5",
+      "summary": "[경제 브리핑] 중동 긴장 완화에 환율 안정 기대...1년 내 1450원 전망 반론보도닷컴",
+      "source": "반론보도닷컴",
+      "date": "2026-06-22T05:30:00+00:00"
+    }
+  ]
+}
