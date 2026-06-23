@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-06-23T01:24:01.836836+00:00",
+  "card_title": "워시 발언·외국인 매도에 원화 약세",
+  "tldr": [
+    "어제(1,539원)보다 2원 내린 1,537원에 마감됐지만, 장중엔 1,540원선을 넘어설 만큼 달러 강세 압력이 이어졌어요.",
+    "연준 이사가 금리를 더 올릴 수 있다고 발언하자 미국 금리가 오르고 달러가 강해졌고, 외국인이 국내 주식 2조 원어치를 팔아 달러로 바꾼 것도 원화를 끌어내렸어요.",
+    "이번 금요일(27일) 발표되는 미국 PCE 물가지표 결과에 따라 금리 인상 기대가 더 커지거나 줄어들 수 있어, 환율이 추가로 움직일 수 있어요."
+  ],
+  "overall_why": "연준 이사 워시가 추가 금리 인상 가능성을 시사하자 미국 2년물 국채 금리가 16개월 만에 최고치를 기록했고, **그 이자를 좇아 달러로 돈이 몰리며** 달러 인덱스가 강세를 보였다. 여기에 외국인이 코스피에서 약 2조 원어치 주식을 팔아 달러로 바꾸면서 원화 약세 압력이 더해졌고, 장중 1,540원선을 넘어섰다가 전일보다 2원 내린 1,537원에 마감됐다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승 압력의 1순위 원인으로 연준 워시 이사의 매파 발언과 미국 2년물 금리 16개월 최고치 상승을 지목했다.",
+      "headline": "연준 워시 이사의 매파적 발언이 달러 강세를 심화시켜 원/달러 환율을 장중 1,540원 턱밑까지 밀어 올렸다.",
+      "bullets": [
+        "연준 이사 워시의 긴축 공포 발언을 계기로 미국 2년물 국채 금리가 16개월 만에 최고치를 기록하며 달러 강세가 심화됐다.",
+        "CME에 따르면 7월 FOMC에서 금리를 25bp 올릴 확률이 36.3%로 집계되어, 시장이 추가 인상 가능성을 가격에 반영하고 있다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 美 2년물 금리 16개월래 최고…'매파 워시'에 달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1YWlNYNnh6cS1LNHFUY1VEcjVMNGZKcl9IRGc3cUNFYUlfX2JONHNoQVBpM0xBWHVXM2M1RTNoNHlQcmNsR1hjTHZmb0p3OXE4cm54Vy0xOVl2VUsxWUxjX2xsdUxwWmZEYmpQaTZDNXE2bGlWVGZIWA?oc=5"
+        },
+        {
+          "title": "[야간마감] 워시발 긴축 공포에 달러·원 1540원 턱밑…강달러 지속",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5PandxWFNHb2U5eURxa1k1SERPM0N5cXlkdXFjdGU0N0hjTWtXdnp4bzJ1T2w2cmNmVk83c0wtMG4zVzh6cVczUUNNdE1qLXFHWmE0eXZtejU?oc=5"
+        },
+        {
+          "title": "속보 | CME \"7월 FOMC 금리 동결 확률 63.7%... 25bp 인상 확률 36.3%\"",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9HR0RwY0JsaFFTTVdsMTNxQnRSb2pGbHhCazBqaFY5QmxqaXI0WkJDNDFZZ1RMOGEyNF9vZkxpYjB6MTBsaFpuSFJVa1R3bGdq?oc=5"
+        },
+        {
+          "title": "美연준 긴축 경계에 단기금리 상승…장기금리는 기관 매수로 '제한'",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1zTFgtQTl0aHpsUFl0X09iaExDNXdYYlNzQ0RRZzZvMFVwa3VvTUVMd3otZ0RyeTZuWk0wTFhUTHJISTlydW1XNFVEZHJqVEdTWTNsUWdTTEc1TjBwRENGdWh5VXo4R2U1V1dnV0NFNTFZdXJxMmhJUg?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "달러 인덱스(DXY) 강세가 복수 매체에서 오늘 환율 상승의 직접 원인으로 명시됐다.",
+      "headline": "달러 인덱스 강세가 원화 가치를 끌어내려 환율이 장중 1,540원대를 넘어섰고, 전일대비 소폭 하락한 1,537원에 마감됐다.",
+      "bullets": [
+        "달러 인덱스(DXY) 강세를 배경으로 원/달러 환율이 장중 1,540원선을 돌파해 15일 만에 재진입했다고 복수 매체가 보도했다.",
+        "달러 강세 압력으로 환율이 10거래일 만에 1,530원대로 올라섰으며, 전일(1,539원) 대비 2원 내린 1,537원에 마감됐다."
+      ],
+      "sources": [
+        {
+          "title": "달러-원, '매파 연준' 달러 강세에 상승폭 약간 확대…1,538.90원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB1ODhwU3RvbzVWVHc2ZS1RaGp1VWV3VmdzbTFQTW9MNkY2TTBIbjM3bEt5U1VrcUpiOXNFTzBjckRWdkpjdmNOUkYtQXdLVzhTLUJwRC1sc2JtQmE2c3puLdIBYEFVX3lxTFB1ODhwU3RvbzVWVHc2ZS1RaGp1VWV3VmdzbTFQTW9MNkY2TTBIbjM3bEt5U1VrcUpiOXNFTzBjckRWdkpjdmNOUkYtQXdLVzhTLUJwRC1sc2JtQmE2c3puLQ?oc=5"
+        },
+        {
+          "title": "[외환] 'DXY 강세·外人 주식 매도'에 1,540원선 웃돌아…3.00원↑",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xQUtIOWp1czRXWFU0QVdobHA4UnlnMjFzQzU5TU9CNDFOVEZXMldJekJqRnl6R3lFR1M2RW1XdWNKVVJxLThCN2FHWDFtcFFiU3RQZm54YVRYYXZ4cTVQMEt5bFBGLVY5UmZmZHhRWnk2QQ?oc=5"
+        },
+        {
+          "title": "원·달러 환율 1540원대 돌파…15일 만에 재진입",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE10NTBpTWxoVXNNWFR1OF9tMkNKWkRJeXluZ1F0dkFkU1BhS2VaQTlBc3VWcWlVdWdsNGhyQVNZQW9qSnYxYUZYR05SMG5NMjczTDVpZ3d1cEhnSVVFV3ZJOTlmUk5aOHBh?oc=5"
+        },
+        {
+          "title": "환율, 달러 강세에 열흘 만에 1,530원대로…장중 1,540원 육박",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1WbXVyYXdwTThOSHZIck9DelNDbExfamt3cXF6VDJJcFhESTJPLTJhUkROSEowajhRSmxOS0ZvNENfbmR1SjV2SUZrTQ?oc=5"
+        },
+        {
+          "title": "환율 1539원 마감…달러 강세·외국인 2조 매도에 원화 약세",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aMHhXOEY2VUVza1kzME5jaDhCRGVGbE1hdVpVNkhaUUo0YjBEdEVqVkE1RmpoSUJCUFBmbG0yUWdsTnBaM3NQWEVIMUw4Sjh3RjdiRUYyN2lRUFU5eFE5RzY1dnZKV0oxTlE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "외국인의 국내 주식 2조 원 순매도가 달러 환전 수요를 높여 환율 상승 압력을 더한 보조 요인으로 복수 기사에 명시됐다.",
+      "headline": "외국인이 코스피에서 2조 원어치 주식을 팔아 달러로 환전하면서 원화 약세 압력을 더했다.",
+      "bullets": [
+        "외국인이 코스피에서 약 2조 원어치 주식을 순매도했고, 이 대금이 달러로 환전되며 달러 수요가 늘어 환율 상승 압력이 커졌다.",
+        "코스피가 9,100선 사상 최고치를 기록하는 와중에도 외국인은 주식을 팔아 달러를 거두어들여, 지수 강세와 환율 상승 압력이 동시에 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "[외환] 'DXY 강세·外人 주식 매도'에 1,540원선 웃돌아…3.00원↑",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xQUtIOWp1czRXWFU0QVdobHA4UnlnMjFzQzU5TU9CNDFOVEZXMldJekJqRnl6R3lFR1M2RW1XdWNKVVJxLThCN2FHWDFtcFFiU3RQZm54YVRYYXZ4cTVQMEt5bFBGLVY5UmZmZHhRWnk2QQ?oc=5"
+        },
+        {
+          "title": "환율, '달러 강세·외국인 2조 매도'에 1530원대 재진입... 코스피는 9,100선 최고치",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5IN1lNNVJzQW5HSVY3SF9FNjJYNlY1V2wtNTMycVRTVnhxbmk5blhaNEhXWHVwTGZKQy15cHlrMnFkRVVEaXRYWXNpbTY4ZWNtOEEwNTV4R0lZaGJIX3draUhMX0k?oc=5"
+        },
+        {
+          "title": "환율 1539원 마감…달러 강세·외국인 2조 매도에 원화 약세",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5aMHhXOEY2VUVza1kzME5jaDhCRGVGbE1hdVpVNkhaUUo0YjBEdEVqVkE1RmpoSUJCUFBmbG0yUWdsTnBaM3NQWEVIMUw4Sjh3RjdiRUYyN2lRUFU5eFE5RzY1dnZKV0oxTlE?oc=5"
+        },
+        {
+          "title": "[마감시황] 코스피, 개인·기관 '쌍끌이'에 9100선…또 사상 최고치",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hZ2dTNDJjTzlIajNxanJ5VmkyVzJWeFJoTmU5NWprbHhhbGpyNDl6emgwNkVqSlBOaHBIWm5vMERRRXNSVTFfLWdCLUdoSDFhdFBnemhFVVZqZ0JuQTBPTm5XNFhrc2syY3Jobnl1bk0?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 2,
+      "impact_reason": "이번 주 금요일 PCE 발표를 앞둔 경계감이 달러 강세를 지지하는 배경 요인으로 언급됐으나, 당일 직접 지표 발표는 없어 영향이 보조적이었다.",
+      "headline": "FOMC 종료 이후에도 연준 핵심 지표인 PCE 발표를 앞두고 금리 인상 경계감이 유지되어 달러 강세 흐름을 뒷받침했다.",
+      "bullets": [
+        "FOMC는 이미 종료됐지만 연준이 정책 판단의 핵심 기준으로 삼는 PCE 물가 지표 발표가 남아 있어, 금리 인상 기대가 꺾이지 않고 시장 심리를 지지했다.",
+        "미국 단기 금리 상승 속에 장기 금리는 기관 매수로 상승이 제한됐고, 유로화도 소폭 반등에 그쳐(EURUSD 1.1467) 달러 강세 기조가 유지됐다."
+      ],
+      "sources": [
+        {
+          "title": "FOMC는 끝났지만, 연준이 보는 진짜 물가 PCE가 남았습니다",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE8xMmxuSk5VeXFmTzJCeW5DYmFweDJGM0JKbG1MNk9FSlNwOE04T1ZOeS1pS0ktMGZaOGxyVkR3VHVudGlxbHUwa1lKRXNzRmlNdWdCQTdkYkU5ZkE1QXk4RURPdnE2SEJrc0UtVGVTbXRTenhNVnI5Z0lFLWtOZw?oc=5"
+        },
+        {
+          "title": "전쟁 물러서자 금리 돌아왔다…금값 흔든 진짜 주인은?",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBvNHJLNm4wc29FRWIxc2VNeDRJZ2V2SWh0RWxHYloxZHpqRmhpUUl5ZTRyMUtyTXBnOENBcWszY0lRby1ZMFBPaEpBM0pKWGlwalJhX29n?oc=5"
+        },
+        {
+          "title": "연준의 매파적 전환 속 유로의 미미한 반등: EURUSD 1.1467, 달러 강세는 지속될까?",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TcDlLcUpBR3hXbFd4Q1V0cDRyMHBtWUpiZktCdTQ0QWJzbkZMNVlXdDlWcmFQazNCTzBNcVJDS2FoVEREVVJ1RU9Pbkhmcm9fSGtseUYwSVJIOHowSW4xTFZQNkxQckRRbUVKODhB?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  }
+}
