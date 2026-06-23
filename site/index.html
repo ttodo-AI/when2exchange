@@ -100,7 +100,8 @@
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
-  #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer; }
+  #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer;
+          user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
   .cross-line{ position:absolute; top:0; bottom:0; width:1px; background:#6b7280; transform:translateX(-50%); pointer-events:none; }
   .cross-dot{ position:absolute; width:9px; height:9px; border-radius:50%; background:var(--brand);
               border:2px solid #fff; transform:translate(-50%,-50%); pointer-events:none; box-shadow:0 0 0 4px rgba(59,91,219,.15); }
@@ -390,7 +391,7 @@
 <div class="factor"><div class="factor-head"><span class="rank">4</span><span class="factor-name">미국 경제지표</span><span class="impact" title="오늘 영향도 2/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg"></span><span class="ig-seg"></span><span class="ig-seg"></span></span><button class="impact-info" data-term="미국 경제지표 · 영향도 2/5" data-def="이번 주 금요일 PCE 발표를 앞둔 경계감이 달러 강세를 지지하는 배경 요인으로 언급됐으나, 당일 직접 지표 발표는 없어 영향이 보조적이었다.">i</button></div><div class="factor-line">FOMC 종료 이후에도 연준 핵심 지표인 PCE 발표를 앞두고 금리 인상 경계감이 유지되어 달러 강세 흐름을 뒷받침했다.</div><ul class="factor-bullets"><li>FOMC는 이미 종료됐지만 연준이 정책 판단의 핵심 기준으로 삼는 PCE 물가 지표 발표가 남아 있어, 금리 인상 기대가 꺾이지 않고 시장 심리를 지지했다.</li><li>미국 단기 금리 상승 속에 장기 금리는 기관 매수로 상승이 제한됐고, 유로화도 소폭 반등에 그쳐(EURUSD 1.1467) 달러 강세 기조가 유지됐다.</li></ul><div class="factor-src"><span class="src-lab">📰 관련 기사</span><a class="src-chip" href="https://news.google.com/rss/articles/CBMifkFVX3lxTE8xMmxuSk5VeXFmTzJCeW5DYmFweDJGM0JKbG1MNk9FSlNwOE04T1ZOeS1pS0ktMGZaOGxyVkR3VHVudGlxbHUwa1lKRXNzRmlNdWdCQTdkYkU5ZkE1QXk4RURPdnE2SEJrc0UtVGVTbXRTenhNVnI5Z0lFLWtOZw?oc=5" target="_blank" rel="noopener" title="FOMC는 끝났지만, 연준이 보는 진짜 물가 PCE가 남았습니다">1</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBvNHJLNm4wc29FRWIxc2VNeDRJZ2V2SWh0RWxHYloxZHpqRmhpUUl5ZTRyMUtyTXBnOENBcWszY0lRby1ZMFBPaEpBM0pKWGlwalJhX29n?oc=5" target="_blank" rel="noopener" title="전쟁 물러서자 금리 돌아왔다…금값 흔든 진짜 주인은?">2</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1TcDlLcUpBR3hXbFd4Q1V0cDRyMHBtWUpiZktCdTQ0QWJzbkZMNVlXdDlWcmFQazNCTzBNcVJDS2FoVEREVVJ1RU9Pbkhmcm9fSGtseUYwSVJIOHowSW4xTFZQNkxQckRRbUVKODhB?oc=5" target="_blank" rel="noopener" title="연준의 매파적 전환 속 유로의 미미한 반등: EURUSD 1.1467, 달러 강세는 지속될까?">3</a></div></div>
   </section>
 
-  <section><h3 class="sec">지난 브리핑</h3><a class="arc-row" href="d/2026-06-22.html"><span class="arc-date">6/22</span><span class="arc-rate">1,538원</span><span class="arc-chg-col"><span class="arc-chg up">▲4</span></span><span class="arc-head">달러 강세 지속에 원화 약세 장기화</span></a>
+  <section><h3 class="sec">지난 브리핑</h3><a class="arc-row" href="d/2026-06-22.html"><span class="arc-date">6/22</span><span class="arc-rate">1,538원</span><span class="arc-chg-col"><span class="arc-chg up">▲6</span></span><span class="arc-head">달러 강세 지속에 원화 약세 장기화</span></a>
 <a class="arc-row" href="d/2026-06-19.html"><span class="arc-date">6/19</span><span class="arc-rate">1,533원</span><span class="arc-chg-col"><span class="arc-chg down">▼5</span></span><span class="arc-head">워시 첫 FOMC 매파 충격에 원화 약세</span></a>
 <a class="arc-row" href="d/2026-06-18.html"><span class="arc-date">6/18</span><span class="arc-rate">1,538원</span><span class="arc-chg-col"><span class="arc-chg up">▲12</span></span><span class="arc-head">워시 첫 FOMC 결과에 원화 약세 확정</span></a>
 <a class="arc-row" href="d/2026-06-17.html"><span class="arc-date">6/17</span><span class="arc-rate">1,526원</span><span class="arc-chg-col"><span class="arc-chg up">▲14</span></span><span class="arc-head">FOMC 경계에 원화 약보합</span></a>
@@ -409,7 +410,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-23 10:24:43 KST<br>환율 <span id="rateSrc">ECB</span><br>
+    발행 2026-06-23 11:04:36 KST<br>환율 <span id="rateSrc">ECB</span><br>
     표시 환율은 시장 기준이라, 실제 환전가는 은행·앱 수수료로 조금 더 비싸요.<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
