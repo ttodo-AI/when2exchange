@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-24T15:27:20.611793+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,530–1,540 KRW/USD\n\nWHY: The won is currently weak, with the USD/KRW rate hovering in the high 1,500s (1,530–1,540 range)—meaning you need more won to buy your $2,000. News articles describe this as \"high exchange rate\" (고환율) driven by sustained dollar strength, foreign selling pressure, and US rate-hike expectations, with no near-term reversal expected.\n\nTIP: If possible, consider splitting your monthly $2,000 conversion or timing larger purchases for when the won strengthens (lower KRW/USD), since you face a recurring obligation and the trend is currently unfavorable."
+  },
+  "articles": [
+    {
+      "title": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQdIBb0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQQ?oc=5",
+      "summary": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각 ntoday.co.kr",
+      "source": "ntoday.co.kr",
+      "date": "2026-06-24T12:35:15+00:00"
+    },
+    {
+      "title": "잇단 대내외 악재에 환율 상승 지속⋯\"1540원 방어선 사수\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5kXzkteWdEN3N4RTdBUmRQZ0VrdzBwT005eXRlSWhFVkNYa3V3R1VONlo5enNkUFk4Y1lib3VlSm85Q2Z2NXY3UWd2QllfbjBoWkxabg?oc=5",
+      "summary": "잇단 대내외 악재에 환율 상승 지속⋯\"1540원 방어선 사수\" [환율전망] v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-06-23T23:06:00+00:00"
+    },
+    {
+      "title": "달러·원 환율 1530원대로 하락",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1zZ0VFOXd2WE8ybGFTZ2lJX0RPY0RET2dZZXVFWVNoTTlhWmpXaTk3QW15aXBlekwwcE1ZSzhZeXIyUW4xcmZoVV9zNzM3NExnd1dVM0xwVE5JemQwekoxWEQ5aXNuN3RV?oc=5",
+      "summary": "달러·원 환율 1530원대로 하락 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-24T00:41:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 4.2원 내린 1534.9원 개장 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcDhtUUJTQ3lZSHZOU2FjN2NTN29Cak1PckNpakEtbGUzNmQ3TjhWMTZ0SFFjRExmUEVfRHY1SWdZMXVxREdyMk9GNFVQQ1BBMTc0YTBOdkk4N2RTV28tbnFPN0hFaXBHVmJJRkFKancyUlRXd3Q4ek55Z0FfOFZ1LTJkd1JUQdIBmgFBVV95cUxNNDJuX21VR19tZzhYMmlPWW9US0J4Ti1mV0swclIxdDIzOHdJM0MtRW9sYzhDUEYxU1lndnU1ekg0NHBVVnN2YlR0VWZBRm9qMnFRTEhZZ2pnY3lwVlh2Mjd6OFRwU2VLRUFGcV9hTU9mMHNrWFZxWWRzei1BRjhUQ3lSUUFvZ3V5bTNpcE14SEkxaHpwWjdEX0RR?oc=5",
+      "summary": "원·달러 환율, 4.2원 내린 1534.9원 개장 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-24T00:04:00+00:00"
+    },
+    {
+      "title": "당국 미세조정 경계감에…달러·원 1530원대 소폭 하락",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4wQW1TWDlwMkZCTG1vWDl1ZnJiMFR0enZBM3JmbnVqRnltUUVlcUFQTnA5eDdVVTNDNE04S043N1FKNGdQN24zRm1DMjIxcUJLMHlsNDJZRXFwbnpxdHdQOA?oc=5",
+      "summary": "당국 미세조정 경계감에…달러·원 1530원대 소폭 하락 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-24T00:39:43+00:00"
+    },
+    {
+      "title": "[모닝 리포트] 증시 위험회피에 환율 상승 압력…1531~1541원 전망",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBVMGhyT2RhOWlOcG5KSnNCMVFyWHpNMXR1NHRTbWhBMDZlT1o0LW5MZVEtYWNCamtnODJhV2NUdEZhNHdKMmhCUWI3NzctZGFkQnRr?oc=5",
+      "summary": "[모닝 리포트] 증시 위험회피에 환율 상승 압력…1531~1541원 전망 네이트",
+      "source": "네이트",
+      "date": "2026-06-23T23:10:00+00:00"
+    },
+    {
+      "title": "대통령도 우려한 고환율…종전 국면에도 1500원대 '요지부동'",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZOUpKY2R4eUJIZ3Z3OE9QYnExcGpWa0lUS1JJQ0lNZnB6bGk5YnMwdkhRWW5oTm9CMnlxUTlJTTBQN0tOUmRVczJoYndfa3A2SjA4MnJCNW5hQQ?oc=5",
+      "summary": "대통령도 우려한 고환율…종전 국면에도 1500원대 '요지부동' 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-23T21:00:00+00:00"
+    },
+    {
+      "title": "수출 호조·흑자에도 1500원대 맴도는 환율… 정부의 깊어지는 고민",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ITjIzakVybk9mQ3VxN05GVzc3Q21JVFFsNFhSeFlXV0RYVlYxVzJxcHhPTS1XT0tKWkcyczhfeTVuN1J3YnQ5VWJEVWxkYUVac1JXQ3E4aWRfUkpQQ1FGSEt4R0ZpZTl2?oc=5",
+      "summary": "수출 호조·흑자에도 1500원대 맴도는 환율… 정부의 깊어지는 고민 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-23T21:34:00+00:00"
+    },
+    {
+      "title": "외국인 매도·美 금리 인상 가능성에 ‘高환율’ - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT0paZktUS3VpLVc5S0xYSHhiLTRQWDlxd2NTRGhEa0Rud1B5b0gtb1JDUFAycG1Ydm9IRFpOcndCZmJGbUxUVDFnYTZIWHo3UkE5bWs5QnNvZHMzaDBUQUtwS3pMdXhLNTBHaFlkV2YwamJ6YXR2RXI1MmEyNnNJRnBqSzQ3WFBW0gGcAUFVX3lxTE04NVZiaWl1TWIxNHVBR2dxWUExOXU5MGVleUpubV9jWjhHOUF1Y2JkbGRrZ2ZIa3N3Wk9MWkZ5R3ZvN2t1N0JQMUFlZ2djNFFteUdqRld0WTlhd0s5SUl2cXQ0QlM2Y3dBc21hdGdQX0VWbXZucW9oVnlNenh0YlU0NGZQTEhLbk5QR0dOZGtNMFhKbFhFbURnWTJ0Tw?oc=5",
+      "summary": "외국인 매도·美 금리 인상 가능성에 ‘高환율’ - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-06-23T15:32:00+00:00"
+    },
+    {
+      "title": "잇단 대내외 악재에 환율 상승 지속···\"1540원 방어선 사수\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xWnJXQl92VDdoQXJ5WE4wZmRoWU1HbkV1U3FNRWN6MU4zakExQjBLZmxHTjc1TlpPVXVhLUFLN2gyQ1RLdGM5SkhOcTF3ZnlwVWlkOWp1QXRPRXlwS1BRcg?oc=5",
+      "summary": "잇단 대내외 악재에 환율 상승 지속···\"1540원 방어선 사수\" [환율전망] 네이트",
+      "source": "네이트",
+      "date": "2026-06-23T23:06:00+00:00"
+    }
+  ]
+}

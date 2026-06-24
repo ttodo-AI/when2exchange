@@ -1,0 +1,146 @@
+{
+  "generated_at": "2026-06-24T15:28:15.358491+00:00",
+  "card_title": "외국인 주식 매도에 달러 강세 겹쳐 원화 약세",
+  "tldr": [
+    "어제보다 9원 오른 1,543원으로 마감하며 2008~2009년 금융위기 이후 17년 만의 최고 수준을 이어갔어요.",
+    "외국인이 올해만 국내 주식을 800억 달러어치 팔고 달러로 바꿔 나가는 흐름이 환율을 끌어올리는 가장 직접적인 힘이에요.",
+    "모레(6월 27일) 발표되는 미국 5월 PCE 물가지표 결과에 따라 달러 강세가 더 세질지, 잦아들지 가늠할 수 있어요."
+  ],
+  "overall_why": "전 세계적으로 달러 가치가 오르는 가운데, 외국인이 국내 주식을 대거 팔고 그 돈을 달러로 바꿔 빠져나가면서 환율이 어제보다 9원 오른 1,543원으로 마감했다. 경상수지 흑자와 반도체 수출 호조처럼 **원화에 유리한 조건이 갖춰져 있음에도** 달러 수요가 워낙 강해 1,500원대에서 내려오지 못하고 있으며, 한국은행은 집값·가계부채를 이유로 금리 인상 가능성까지 경고해 불확실성이 더 커진 상태다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승의 1순위 원인으로 강달러를 지목하며 17년 만에 최고치 돌파를 직접 연결해 보도했다.",
+      "headline": "달러 강세가 환율을 금융위기 이후 17년 만의 최고치인 1,540원대로 끌어올렸다.",
+      "bullets": [
+        "달러 가치가 전 세계적으로 오르면서 원/달러 환율이 1,540원대를 돌파했고, 여러 매체가 2008~2009년 금융위기 이후 처음 보는 수준이라고 보도했다.",
+        "종전·수출 호조라는 원화에 유리한 조건이 갖춰졌음에도 달러 강세가 워낙 강해 환율이 1,500원대에서 내려오지 못하고 있다."
+      ],
+      "sources": [
+        {
+          "title": "환율 1,540원대 마감, 금융위기 후 최고…강달러·외국인 순매도",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81ZjBUZ2hSdmhqVFpBX2c3THIxcFg4TkVpcExVRTRmZ2J3MDFWQmhCS0g5SWsydjRhUUhORGNiTTlxZnM3eFpzd2M4UWQwc1ZYUWVhQk1jR3lCUVc2ekdmUNIBYEFVX3lxTE81ZjBUZ2hSdmhqVFpBX2c3THIxcFg4TkVpcExVRTRmZ2J3MDFWQmhCS0g5SWsydjRhUUhORGNiTTlxZnM3eFpzd2M4UWQwc1ZYUWVhQk1jR3lCUVc2ekdmUA?oc=5"
+        },
+        {
+          "title": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQdIBb0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQQ?oc=5"
+        },
+        {
+          "title": "“금융위기 때 봤던 숫자”…환율 1540원 뚫고 17년만 최고",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5US1dQajdGRlczQnV1LXdwbTVSOVZ3TnBKSEc2Q01iWnBwbVk1UklkZ3FMUHRxT1RwNlBzeS1ybmtGOFAtLXdqNHZrRl9yb29WNkJOZHo2MDljd3c?oc=5"
+        },
+        {
+          "title": "'강달러·외국인 매도' 원·달러 환율 1540원 돌파…17년 만에 최고",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ka0tNYkg5eXJTWnVxTEZQM1BUYzR1bU5QalJ1VmVpZEotcW45Sk1SYnpHVkZEOVlyQmNONFFvMXNuQW5idThTR01sQ1c5SmJwUkJwU3NhdENMSDdBU2Vublc4b2loMklRcFVNc2VnZw?oc=5"
+        },
+        {
+          "title": "미국 달러 강세에 원/달러 환율 1,540원 돌파… 글로벌 금융위기 이후 최고치",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1yR1lTU1VFdy1PNHJ2djgxNkhpdXMwdkJrRmo4U2gzX3JsSU9LTWxMR01WbUtTeUJkQy01SGNoanlKR1lKTGdqYnpJd29vU21UQjF3UEVZc2kwUTFZS0U1dmZkS3Z2bVYyQVNTM3pFQV9ick0?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 4,
+      "impact_reason": "외국인의 국내 주식 대규모 순매도가 오늘 종가 상승의 직접적 보조 원인으로 여러 매체에서 명시됐다.",
+      "headline": "외국인이 국내 주식을 대거 팔고 달러를 빼가면서 환율 상승을 부추겼다.",
+      "bullets": [
+        "한국은행 금융안정보고서에 따르면 올해 외국인은 국내 국고채를 176억 달러어치 사들인 반면 국내 주식은 800억 달러어치 팔았다.",
+        "연합인포맥스는 외국인 주식 '팔자'가 환율을 1,540원대로 끌어올린 직접 원인이라고 보도했으며, 당일 환율은 2.70원 오른 1,540원대로 마감했다."
+      ],
+      "sources": [
+        {
+          "title": "한은 \"외국인, 국고채 176억달러 담을때 주식 800억달러 팔아\"",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PdVpaRHdTTmRrQnozOGZMYVdKejFoZjM0WWRrWkZxZWY1UXNUeGprUGdfbTVKTEI5ZnRWYmdUYnQ2YWFkV1h1bHIwdDFkMHFDUmh2d2JOWEIzNlhaQ1dOStIBYEFVX3lxTE1PdVpaRHdTTmRrQnozOGZMYVdKejFoZjM0WWRrWkZxZWY1UXNUeGprUGdfbTVKTEI5ZnRWYmdUYnQ2YWFkV1h1bHIwdDFkMHFDUmh2d2JOWEIzNlhaQ1dOSg?oc=5"
+        },
+        {
+          "title": "한은 \"외국인, 국고채 176억 담고 주식은 800억 팔아\"",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BX2JuaUtyeHZuVHFlUElMQWhvTms2c1JOTVZDSFROVHF4WF9HeE43a21IeU9nMmpqclU5X2Z2bzJrdEh5VkN2a0wwaUw1VnY0Yi1vTENqTUlTdVA0bWJ0SkZnSU51aDA?oc=5"
+        },
+        {
+          "title": "[외환-마감] 외인 주식 '팔자'에 1,540원대로…2.70원↑",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Ta01jQm5xYUtXUkRqOXYtYU5nSlNRcGVRbjhoX1FseGI1el9UUWV4QVpLelJJZkJ5N0V5bnZLLUQzRHc2UFRhRlhhTGplOEtJQU1BNTFmMWdUSmpmWWpOeDl0cllCT3FJMU4zSjFENGxCWEdo0gF0QVVfeXFMT1NrTWNCbnFhS1dSRGo5di1hTmdKU1FwZVFuOGhfUWx4YjV6X1RRZXhBWkt6UklmQnk3RXludkstRDNEdzZQVGFGWGFMamU4S0lBTUE1MWYxZ1RKamZZak54OXRyWUJPcUkxTjNKMUQ0bEJYR2g?oc=5"
+        },
+        {
+          "title": "한국은행 \"올해 외국인 채권 176억 달러 담고, 주식 800억 달러 팔아\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2ajcxeVB3cUpxUUh1WkE2UmlIVHU0TTNSSmpUNVBSbUV4WUtyZGdHenZQTDhEMk55eGVTNmtfUG84RzZoOWI5Ujlac2Q2ckx5a2VSQ2o1MVFjcm1NX1pQaFZlc2NfSDRKMzd2NXNUVXpYcFNq0gF0QVVfeXFMUHZqNzF5UHdxSnFRSHVaQTZSaUhUdTRNM1JKalQ1UFJtRXhZS3JkZ0d6dlBMOEQyTnl4ZVM2a19QbzhHNmg5YjlSOVpzZDZyTHlrZVJDajUxUWNybU1fWlBoVmVzY19INEozN3Y1c1RVelhwU2o?oc=5"
+        },
+        {
+          "title": "[금융안정보고서]외국인 증권투자 ‘극과 극’…국고채 사고 국내 주식 팔았다",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNzhIY0psZlpXelBzRklnZ2xXbjNaUm50clROTjZaSDhaXzQ3aDk2VUpWam5kQThSZWZ2Ty1kaEpjQU5iX01lRjIxQjkycmlHR2ZNUE55WEtRcVhjbzFpcTdfV1p6TDF2MkQ1Ykx4eUlZenhXSmZXMHN1a1ItRlpsTzFlZzc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한국은행이 금리 인상 신호를 공식화해 환율 방향에 구조적 배경으로 작용했으나, 오늘 하루 환율 급등의 직접 원인보다는 보조 요인에 해당한다.",
+      "headline": "한국은행이 가계부채·집값을 이유로 금리 인상 가능성을 공식 경고해 통화정책 불확실성이 부각됐다.",
+      "bullets": [
+        "한국은행 금융안정보고서에서 코스피 랠리와 집값 상승으로 금융 불균형이 누적되고 있다고 경고하며 금리 인상 신호를 켰다.",
+        "금리를 올리면 빚투(빚 내어 투자) 부실 위험이 커지고, 안 올리면 환율과 집값이 추가로 오를 수 있어 한국은행이 딜레마에 빠진 상황이다."
+      ],
+      "sources": [
+        {
+          "title": "한은의 딜레마…금리 올리면 빚투 터지고 안 올리면 환율·집값 뛴다",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDaVprYkZaYnhDdjFJNWNTbWp4ZVNYN29mOG8yeXd3UFZVSnNJbmpvekc4SmlPUEIxbTg0NUZRNURBYWZWU3VzbF91TlRaRzFYNlJHdndhTE5UQkVKLUpFVkQzM1g0azhCX2RhTGZhUXhzaUgx?oc=5"
+        },
+        {
+          "title": "한은, 금리인상 신호 켰다…가계부채·집값에 \"금융불균형 누증 우려\"",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBsNHZ0ai1qaFhCQUpHUjFBdHdxV0gtdk1kYlVhTWQtZGoxTHc3R1VzaUl4bGhCekFJV0NadkVZdHVOcjBGeXhVNmdNQU5ubWV2NmQ4?oc=5"
+        },
+        {
+          "title": "한은의 경고 “코스피 랠리에 집값까지 들썩⋯금융불균형 커진다”[금안보고서]",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9ZWHdwbDNydnlvOTFSZVVZU3JHZU5WWXo4WXYweWV3cF84MnJoX2VPb3lLc1dLQ25XcHlHZmZmUFZvMG8zTEtqamJPSkdwS001ZkREaEVYZDVvN2owTmdmWTBFOHZ5cEYyMkRnYzNB?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 2,
+      "impact_reason": "수출 호조·경상수지 흑자라는 원화 강세 요인이 있음에도 환율이 내려오지 않는 구조적 배경을 설명하는 보조 맥락으로 작용했다.",
+      "headline": "역대급 경상수지 흑자와 반도체 수출 호조에도 환율이 1,500원대에서 내려오지 못하는 구조적 이유가 주목받았다.",
+      "bullets": [
+        "한겨레 등 복수 매체는 막대한 경상수지 흑자가 쌓이고 있음에도 환율이 요지부동인 이유로 달러 강세와 외국인 주식 매도를 꼽았다.",
+        "한경협은 하반기 원/달러 환율이 1,450원으로 하향 안정될 수 있다고 전망했지만, 중동 리스크 완화 같은 전제 조건이 필요하다고 밝혔다."
+      ],
+      "sources": [
+        {
+          "title": "막대한 경상수지 흑자에도…환율은 왜 이렇게 높을까",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE4ta2JQMWREa1hBMHBfLWpEZXNPQmtZMlE2OE1vVi1PWUY4b1NEd1E5akl4SEwwZUNlYXlpcGc5NGZFT1BUNlVmNnpaM0tVd1hDQUJwbDdiOThzVkc3OUdpRWtUZDlRTzNaNjRLMkl2dnlEZw?oc=5"
+        },
+        {
+          "title": "대통령도 우려한 고환율…종전 국면에도 1500원대 '요지부동' |",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1HbTU5UWJEOHBFc3lrT2VQdWJ5SlBmT01VdjRURUxnd0s3ZU8xdUNyMWVNcXR1dnliVTNiMmY1V1RrRzNaeFBoeVcyT2c2cU93RnZESDV2ZVhpdWJLSm1uN0V2WTdhRlVvbkpQeldJRQ?oc=5"
+        },
+        {
+          "title": "종전·반도체 호황에도…1500원대 ‘요지부동’ 고환율 왜?",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE93RzQ5TVU5SmFHdThtTXlMQ2FrUHQtMXBkQzNEdmdiSlNGLUZCVjNjOEZjQzVkUnhFQnJ6VlQ2QnljX1pzRVJ6QTNSTDY2cC1NMENpeFhJd2V1ZGhpdmRjNFViV3cxR3lYSkpDMVJoSXd1QQ?oc=5"
+        },
+        {
+          "title": "한경협 \"하반기 원·달러 1450원으로 하향 안정…중동 리스크 완화 기대\"",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00aG9kX1d2ZjBIRWZlOXhwbll3ZGFaRDdXa25mOEJoRFdHZVladnB3THhqZFBUZVhkRy1kaklCak5JRXdYOC1pNnJfWWdEVnFuY3NFUXNidkFWdVM1aHNYTkFMM0gycFVHRTE2YQ?oc=5"
+        },
+        {
+          "title": "중동 리스크 완화에 환율 안정 기대…1450원까지 하락 가능",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XWXFfekpJQ1RIQnVaSDQ3SXUxTW5IMFZUN0VXM05YQUlyOUNGemN4T0ZuVk5OQTh0Zll3NDVPbUVCa1Y4OElsZmg2OFdCVGxRN0VodGZsWXVTQXJsZExhS0dxZmVzVXdoWkp1Nm5GLUgxSlBZOU1ITQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "제목 25자(>24, 잘릴 수 있음): '외국인 주식 매도에 달러 강세 겹쳐 원화 약세'"
+    ]
+  }
+}
