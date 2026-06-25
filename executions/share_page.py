@@ -666,6 +666,12 @@ __GA__
                          border:4px solid transparent; border-top-color:var(--ink); }
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
+  .gauge-short{ font-size:12.5px; font-weight:700; color:var(--muted); margin-top:13px; text-align:center; }
+  .gauge-short .up{ color:var(--up); } .gauge-short .down{ color:var(--down); }
+  .gauge-note{ margin-top:10px; padding:10px 12px; border-radius:10px; font-size:12.5px;
+               font-weight:600; line-height:1.55; background:#f5f7fa; color:#41485a; }
+  .gauge-note.bad{ background:#fdecec; color:#a3242a; }
+  .gauge-note.good{ background:#eafaf0; color:#1c7d46; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
   #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer;
           user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
@@ -926,6 +932,8 @@ __GA__
     <div class="gauge-top"><span class="gauge-cap">환전 매력도 <button class="gauge-info" id="gaugeInfo" aria-label="페르소나별 기준 설명">i</button></span><span id="gaugeLabel" class="gauge-label"></span></div>
     <div class="gauge-bar"><span class="gauge-ptr-tag" id="gaugePtrTag"></span><span class="gauge-ptr" id="gaugePtr"></span></div>
     <div class="gauge-scale"><span>지금 사기 좋음</span><span>아까움</span></div>
+    <div class="gauge-short" id="gaugeShort"></div>
+    <div class="gauge-note" id="gaugeNote" style="display:none"></div>
   </section>
 
   <section class="chart-wrap" id="chartWrap" style="display:none">
@@ -1333,6 +1341,36 @@ function renderGauge(rateNow, rates){
     vt.textContent = VTXT[vIdx]; vt.style.color = VCOL[vIdx];
     vtag.textContent = (NM[activeSet] || '유학생') + ' 기준';
     vn.style.display = 'flex';
+  }
+
+  // ── 단기 신호(A): 오늘 vs 최근 5영업일 평균. 백분위는 신고가 행진 때 100%로 포화되지만,
+  // 평균 대비 '원' 차이는 매일 움직여 비싼 구간 '안에서도' 오늘이 그나마 나은지 보여준다.
+  const ks = Object.keys(rates).sort();
+  const v5 = ks.slice(-5).map(dt => rates[dt].KRW);
+  const gs = document.getElementById('gaugeShort');
+  if(gs && v5.length >= 2){
+    const avg5 = v5.reduce((a,b)=>a+b,0)/v5.length;
+    const d5 = Math.round(rateNow - avg5);
+    const dir = d5>0 ? 'up' : (d5<0 ? 'down' : '');
+    const read = d5>0 ? '며칠 새 더 오른 날' : (d5<0 ? '며칠 흐름보단 내린 날' : '며칠 평균과 비슷');
+    gs.innerHTML = d5===0
+      ? '최근 닷새 평균과 거의 같아요'
+      : `최근 닷새 평균보다 <span class="${dir}">${d5>0?'▲':'▼'} ${Math.abs(d5)}원</span> · ${read}`;
+  }
+  // ── 따뜻한 조언(B): 비싼(빨강) 구간이 길어질 수 있음을 정직하게 알리고 분할 환전을 권한다.
+  const note = document.getElementById('gaugeNote');
+  if(note){
+    if(zone >= 3){
+      note.className = 'gauge-note bad';
+      note.innerHTML = '최근 들어 비싼 구간이라, 한동안 빨강이 이어질 수 있어요. 급하지 않으면 한 번에 몰아 사지 말고 나눠서 조금씩 환전해보개요. 🐾';
+      note.style.display = 'block';
+    } else if(zone === 0){
+      note.className = 'gauge-note good';
+      note.innerHTML = '최근 흐름 중에선 드물게 싼 편이에요. 환전 계획이 있으면 한 번 살펴보개요. 🐾';
+      note.style.display = 'block';
+    } else {
+      note.style.display = 'none';
+    }
   }
 }
 
