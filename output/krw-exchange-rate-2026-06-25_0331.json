@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-25T03:31:54.610653+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1543 KRW/USD\n\nWHY: The won is currently very weak, with the USD/KRW rate at a 17-year high of 1543 won per dollar. News describes a \"strong dollar\" (강달러) in an uptrend (\"high-flying\" 고공행진), meaning you need significantly more won to get $2,000 than in recent history.\n\nTIP: If possible, consider dollar-cost averaging smaller amounts across multiple weeks in July, as SK Hainetix's $3 billion US listing may inject supply and potentially ease won weakness."
+  },
+  "articles": [
+    {
+      "title": "강달러 속 기술주 중심 증시 훈풍⋯\"1540원 하회 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBFRmRUQUprRHQ0cFVxQ05GS1dsM210eVQ1TkhZY2hmVjFvUGFXcndGM2RyekVsNlQ3OFBNcFpiN2kwbGtjY3I1QlJURWZUNG90ekJYUA?oc=5",
+      "summary": "강달러 속 기술주 중심 증시 훈풍⋯\"1540원 하회 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-06-24T23:13:00+00:00"
+    },
+    {
+      "title": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQdIBb0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQQ?oc=5",
+      "summary": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각 ntoday.co.kr",
+      "source": "ntoday.co.kr",
+      "date": "2026-06-24T12:35:15+00:00"
+    },
+    {
+      "title": "원·달러 환율, 1543원 개장…금융위기 이후 17년 만에 최고",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBibG9FQThQVGtKdFkxank4dzVzVHZNRE5aV1pucEFMaFFoZGlJcnpzN000eTRCZ2xtT0loMDdyR1NxTm1Tekt3Q1M3d0dNVnVDN0hXUTRqUGoxS09IcUhIYnpCVW9GUVFydDN3MnFaMWx2elZjc09vWA?oc=5",
+      "summary": "원·달러 환율, 1543원 개장…금융위기 이후 17년 만에 최고 네이트",
+      "source": "네이트",
+      "date": "2026-06-25T00:06:00+00:00"
+    },
+    {
+      "title": "7월 서울환시 뒤흔들 300억弗…SK하이닉스 美상장 자금이 온다 |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rWldsekJpclduQVZNU2U3VTdYOVhlanlkWUhyaVVmSVUwN1Q2Q0hyV2ZsSkNLd21ZRFNwRXBval9hX3NHVk5pYnJPN1gtaGNXbkNYYmh1d0hNWGZuRjMwcmR2Q2xWNHAySWRhb01zemZIWXct?oc=5",
+      "summary": "7월 서울환시 뒤흔들 300억弗…SK하이닉스 美상장 자금이 온다 | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-06-25T01:23:54+00:00"
+    }
+  ]
+}
