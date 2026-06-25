@@ -161,6 +161,33 @@ def load(path, default):
         return default
 
 
+def heal_latest_factors():
+    """light가 재사용(또는 방금 생성)한 factors의 예보어·정밀 델타숫자를 코드로 중화하고
+    checks를 재계산한다(API 0). full엔 멱등, light 재사용분 desync를 무인으로 해소 →
+    게이트 하드실패(=사람이 수동으로 고치던 일)를 없앤다."""
+    ff = latest("factors-*.json")
+    if not ff:
+        return
+    fj = load(ff, None)
+    if not isinstance(fj, dict):
+        return
+    try:
+        from factor_analysis import sanitize_copy, validate_briefing
+    except Exception as e:  # noqa: BLE001
+        print(f"⚠️ factors 자가치유 건너뜀(import 실패): {e}", file=sys.stderr)
+        return
+    rj = load(os.path.join(SITE, "rate.json"), {})
+    cal = latest("calendar-*.json")
+    events = (load(cal, {}) or {}).get("events", []) if cal else []
+    today = datetime.now(timezone(timedelta(hours=9))).date()
+    sanitize_copy(fj, rj, today)
+    blocks, warns = validate_briefing(fj, rj, events, "", today)
+    fj["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
+    with open(ff, "w", encoding="utf-8") as fh:
+        json.dump(fj, fh, ensure_ascii=False, indent=2)
+    print(f"🩹 factors 자가치유 적용({os.path.basename(ff)}) — 잔여 blocks={len(blocks)}", flush=True)
+
+
 def day_close_chg(rj, day):
     """'지난 브리핑' 배지용: 그날의 *실제 종가*와 *직전 거래일 대비 등락*을 rate.json series에서 도출.
     빌드시점 값(rj.rate/fluctuations)이 아니라 종가 시계열을 써서 배지가 그날 실제 종가와 일치한다.
@@ -212,6 +239,8 @@ def main():
             print(f"\n⏭ Econ calendar 생략 — {why_cal}", flush=True)
     # light: Scout·factor·calendar 생략(직전 full 산출물 재사용). rate/verdict만 새로고침.
 
+    # 예보어·델타숫자 자가치유(API 0) — light 재사용분 desync까지 무인 해소 후 게이트.
+    heal_latest_factors()
     # 배포 전 검증 게이트 — 표지/캐러셀과 같은 기준(제목 desync·환율 모순·엔진 checks).
     gate(force=args.force)
 

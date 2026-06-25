@@ -272,7 +272,7 @@ def main() -> None:
                 items = "".join(f"<li>{emphasize(t)}</li>" for t in tldr)
                 tldr_html = (
                     '<section><div class="tldr">'
-                    '<div class="tldr-meta">📅 __TLDR_DATE__ 기준 · 매일 오전 9시 업데이트</div>'
+                    '<div class="tldr-meta">📅 __TLDR_DATE__ 기준 · 매일 오전 업데이트</div>'
                     '<div class="tldr-cap">30초 요약</div>'
                     f'<ul class="tldr-list">{items}</ul></div></section>'
                 )

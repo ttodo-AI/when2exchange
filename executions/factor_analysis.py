@@ -134,7 +134,10 @@ LEVEL_RULE = (
     "'오늘 종가/움직임'으로 끌어오지 말 것. 실제 전일대비(종가)가 작으면(±5원 미만) 그날 결론을 "
     "'급락/급등'으로 단정하지 말고 '보합/소폭'으로 쓰되, 장중 급등락은 '장중'으로 따로 적는다. "
     "단 이 규칙은 headline·bullets·요약에만 적용되고, *card_title(지난 브리핑 제목)에는 환율 숫자를 "
-    "절대 넣지 않는다*(CARD_TITLE_RULES대로 원인·이슈로만 — 숫자는 목록 배지가 따로 보여준다)."
+    "절대 넣지 않는다*(CARD_TITLE_RULES대로 원인·이슈로만 — 숫자는 목록 배지가 따로 보여준다). "
+    "또 '오를 것/내릴 것/오를 전망' 같은 예보·단정 표현은 금지(원인·현상만 적는다), "
+    "tldr·overall_why엔 '전일대비 ±N원' 같은 정밀 숫자를 박지 말 것 — 박스가 보여주고 "
+    "장중에 환율이 움직이면 그 숫자가 어긋난다(방향은 숫자 없이 원인으로 설명)."
 )
 
 
@@ -146,8 +149,131 @@ EVENT_KW = ["FOMC", "CPI", "PPI", "금통위", "고용", "비농업", "소비자
 FORECAST_BAN = ["오를 것", "내릴 것", "오를 전망", "내릴 전망", "급등 예고", "급락 예고",
                 "폭등", "폭락 예고", "마지막 기회", "지금 사", "지금 팔", "무조건",
                 "반드시 사", "후회", "수익 보장", "이득 보장"]
+# 예보·낚시 금지어 → 안전 표현 치환(자가치유, API 0). validate_briefing 직전에 적용해
+# 게이트 차단(=사람이 수동으로 고치던 일)을 무인으로 푼다.
+_FORECAST_FIX = [
+    (r"오를\s*것", "상승 흐름"), (r"내릴\s*것", "하락 흐름"),
+    (r"오를\s*전망", "상승 흐름"), (r"내릴\s*전망", "하락 흐름"),
+    (r"급등\s*예고", "상승 흐름"), (r"급락\s*예고", "하락 흐름"),
+    (r"폭락\s*예고", "하락 흐름"), (r"폭등", "강한 상승"),
+    (r"마지막\s*기회", ""), (r"무조건", ""), (r"반드시\s*사\S*", ""),
+    (r"지금\s*사\S*", ""), (r"지금\s*팔\S*", ""),
+    (r"수익\s*보장", ""), (r"이득\s*보장", ""), (r"후회", ""),
+]
+# 정밀 전일대비(±N원 + 방향)는 환율 박스가 보여주므로 본문에선 '숫자만' 떼낸다(방향어는 유지).
+# → light가 옛 텍스트를 재사용해도 '2원 내린' ↔ 실제 상승 같은 desync가 원천 차단됨.
+_DELTA_NUM_RE = re.compile(
+    r"\d+\s*원\s*(?:넘게|이상|가까이|가량)?\s*"
+    r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)")
+
+
+def _heal_text(s: str) -> str:
+    if not s:
+        return s
+    for pat, rep in _FORECAST_FIX:
+        s = re.sub(pat, rep, s)
+    s = _DELTA_NUM_RE.sub(lambda m: m.group(1), s)   # 숫자만 제거, 방향어 유지
+    return re.sub(r"\s{2,}", " ", s).strip()
+
+
+def _heal_intraday_close(s: str, rate: dict, today) -> str:
+    """장중(마감 전)에 '오늘 N원 마감/종가' 단정을 '현재 N원'으로 바꾼다(거짓 종가 방지, API 0).
+    어제/전일/야간 종가나 현재가와 2원 넘게 다른 숫자는 그대로 둔다(check-A와 동일 판정).
+    마감 후(또는 시각 불명)면 종가 표현이 정상이므로 손대지 않는다."""
+    if not s or not isinstance(rate, dict):
+        return s
+    if market_closed(rate.get("asof", ""), today) is not False:
+        return s
+    cur = rate.get("rate")
+    if not isinstance(cur, (int, float)):
+        return s
+    cur_i = int(cur + 0.5)
+
+    def _repl(m):
+        try:
+            n = int(m.group(1).replace(",", ""))
+        except ValueError:
+            return m.group(0)
+        pre = s[max(0, m.start() - 6):m.start()]
+        if abs(n - cur_i) > 2 or re.search(r"(어제|전일|지난|어젯|야간)", pre):
+            return m.group(0)            # 과거 종가·다른 숫자는 유지
+        return f"현재 {m.group(1)}원"     # '마감/종가' 단정 → 현재가 표현
+
+    return re.sub(r"(?:오늘\s*)?(\d[\d,]*)\s*원\s*(?:에|으로|선에서?)?\s*(?:마쳤|마감|종가)[가-힣]*",
+                  _repl, s)
+
+
+def sanitize_copy(payload: dict, rate: dict = None, today=None) -> dict:
+    """예보 금지어·정밀 델타숫자·장중 거짓종가를 코드로 중화(API 0). validate 직전·build_site에서 호출.
+    멱등(여러 번 적용해도 동일) — full엔 무해, light 재사용분 desync를 무인으로 해소.
+    rate·today를 주면 장중 거짓종가(check-A)까지 자가치유한다."""
+    def h(x):
+        x = _heal_text(x)
+        if rate is not None and today is not None:
+            x = _heal_intraday_close(x, rate, today)
+        return x
+    if payload.get("card_title"):
+        payload["card_title"] = h(payload["card_title"])
+    if payload.get("overall_why"):
+        payload["overall_why"] = h(payload["overall_why"])
+    if payload.get("tldr"):
+        payload["tldr"] = [h(t) for t in payload["tldr"] if t]
+    for f in (payload.get("factors") or []):
+        for k in ("headline", "impact_reason"):
+            if f.get(k):
+                f[k] = h(f[k])
+        if f.get("bullets"):
+            f["bullets"] = [h(b) for b in f["bullets"] if b]
+    return payload
 # 제목 desync 방지: 원/달러 환율류 숫자(1,513원·1513·1520선 등)는 제목 금지.
 _RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
+# check A: 오늘 종가 단정 단어(앞에 어제/전일/지난/야간 없을 때만).
+_CLOSE_WORD_RE = re.compile(r"(마쳤|마감(?:했|됐|을|한|하)|종가|거래를 마)")
+
+
+def market_closed(asof, today):
+    """서울 외환시장 마감 여부. 주말=마감. 평일=asof 시각 ≥15:30. 시각 불명=None."""
+    if today.weekday() >= 5:
+        return True
+    m = re.search(r"(\d{1,2}):(\d{2})", asof or "")
+    if not m:
+        return None
+    return (int(m.group(1)), int(m.group(2))) >= (15, 30)
+
+
+def check_intraday_close(text, asof, today, rate=None):
+    """장중(마감 전)인데 '오늘 종가/마감'을 단정하면 메시지 반환(없으면 None). carousel과 동일 로직.
+    오늘 환율 숫자(±2)에 마감/종가가 붙은 경우만 잡고, 그 숫자 앞 어제/전일/야간은 제외."""
+    if market_closed(asof, today) is not False:
+        return None
+    cur = (rate or {}).get("rate")
+    if not isinstance(cur, (int, float)):
+        return None
+    cur_i = int(cur + 0.5)
+    for m in re.finditer(r"(\d[\d,]*)\s*원\s*(?:에|으로|선에서?)?\s*(마쳤|마감|종가)", text):
+        try:
+            n = int(m.group(1).replace(",", ""))
+        except ValueError:
+            continue
+        if abs(n - cur_i) > 2:
+            continue
+        if re.search(r"(어제|전일|지난|어젯|야간)", text[max(0, m.start() - 6):m.start()]):
+            continue
+        return (f"장중(마감 전, asof {asof})인데 오늘({cur_i:,}원) '{m.group(2)}' 단정 "
+                "— 15:30 전이면 '현재 ○○원'으로")
+    return None
+
+
+def market_status_block(rate, today):
+    """프롬프트 주입용 시장 상태 — 장중이면 '오늘 마감/종가' 금지 지시(check A 예방)."""
+    closed = market_closed(rate.get("asof", ""), today)
+    if closed is False:
+        return ("[시장 상태] 장중(마감 전, 15:30 전 — asof " + str(rate.get("asof", "")) + "). "
+                "오늘 환율을 '종가/마감/마쳤다'로 쓰지 말 것. '현재 ○○원'·'지금 ○○원'으로. "
+                "단 *어제·전일·야간* 거래의 종가는 그대로 OK.")
+    if closed is True:
+        return "[시장 상태] 장 마감 후 — 오늘 종가/마감 표현 사용 가능."
+    return ""
 
 
 def _output_dir() -> str:
@@ -338,7 +464,11 @@ def validate_briefing(payload, rate, cal_events, prev_title, today):
         past_only = any(d < 0 for d in ds) and not any(d >= 0 for d in ds)
         if past_only and re.search(rf"{kw}[^.。]{{0,12}}(앞두|예정|열린다|열릴|개최|앞둔)", text):
             blocks.append(f"이미 지난 '{kw}'을 미래형(앞두고/예정)으로 표기 — 시제 점검")
-    # 9) 주말(외환시장 휴장)
+    # 9) check A: 장중(마감 전)인데 '오늘 종가/마감' 단정 = 거짓 (BLOCK)
+    msg = check_intraday_close(text, rate.get("asof", ""), today, rate)
+    if msg:
+        blocks.append(msg)
+    # 10) 주말(외환시장 휴장)
     if today.weekday() >= 5:
         warns.append("주말(외환시장 휴장) — 변동 주장 주의")
     return blocks, warns
@@ -517,6 +647,7 @@ def rewrite_why(client, model: str) -> None:
         f"오늘은 {today_kst}(한국시간)입니다. 아래는 오늘 원/달러 환율을 움직인 Top4 요인과 핵심 사실입니다.\n\n"
         f"{digest}\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
+        f"{market_status_block(rate_obj, today_date)}\n\n"
         f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
         f"[제목 차별화·날짜·heat 맥락]\n{title_ctx}\n\n"
         f"{LEVEL_RULE}\n"
@@ -548,6 +679,7 @@ def rewrite_why(client, model: str) -> None:
     data["heat"] = heat_meta["heat"]
     data["heat_reason"] = heat_meta["heat_reason"]
     data["title_badge"] = heat_meta["title_badge"]
+    sanitize_copy(data, rate_obj, today_date)   # 예보어·델타숫자·장중거짓종가 자가치유(API 0)
     blocks, warns = validate_briefing(data, rate_obj, cal_events, prev_card_title(exclude=path), today_date)
     data["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
     now = datetime.now(timezone.utc)
@@ -681,6 +813,7 @@ def main() -> None:
         "구체적 FX 이슈(특정 수급·발언·해외 시장 이벤트·거래 동향 등)를 새로 담을 것. F11·F12는 "
         "평소 impact가 낮아 잘 안 뽑히는 보조 버킷이다.\n\n"
         f"[현재 환율 맥락]\n{latest_rate_context()}\n\n"
+        f"{market_status_block(rate_obj, today_date)}\n\n"
         f"[직전 발행 30초요약(어제/직전)]\n{prev_block or '(없음 — 비교 대상 없음)'}\n\n"
         f"[제목 차별화·날짜·heat 맥락]\n{title_ctx}\n\n"
         f"[요인별 뉴스]\n{digest}\n\n"
@@ -802,6 +935,7 @@ def main() -> None:
         "title_badge": heat_meta["title_badge"],
     }
     # 발행 전 검증(웹·캐러셀과 동일 기준) → checks를 JSON에 박아 하류 게이트가 상속.
+    sanitize_copy(payload, rate_obj, today_date)   # 예보어·델타숫자·장중거짓종가 자가치유(API 0)
     blocks, warns = validate_briefing(payload, rate_obj, cal_events, prev_card_title(), today_date)
     payload["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
 
