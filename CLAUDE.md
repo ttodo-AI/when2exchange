@@ -19,8 +19,12 @@ executions/   Standalone Python scripts. Each does one job and prints its
 CLAUDE.md is the orchestration layer. On **every** request:
 
 1. Read this file first.
-2. Map the request to a workflow in the table below (match by name or by goal).
-3. Open that workflow's directive, then run the execution script it names.
+2. **Read `docs/WORKLOG.md`** — the living work log (할 일 / 진행 중 / 최근 완료).
+   Pick up wherever the last chat left off, and **keep it updated** as you work
+   (move items 진행 중 → 완료, add new todos). This is what makes work survive a
+   lost chat.
+3. Map the request to a workflow in the table below (match by name or by goal).
+4. Open that workflow's directive, then run the execution script it names.
 
 | Workflow | Directive | Execution script |
 |----------|-----------|------------------|
