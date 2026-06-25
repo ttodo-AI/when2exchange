@@ -24,7 +24,7 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -51,6 +51,44 @@ def latest(pattern):
     # 파일명 타임스탬프 기준 사전식 max(=최신). mtime은 git 체크아웃 후 신뢰 불가.
     m = glob.glob(os.path.join(ROOT, "output", pattern))
     return max(m) if m else None
+
+
+# ── API 감축 가드 (full 하루 1회 / 캘린더 주간+트리거) ──────────────────────────
+def today_factors_exist(today: date) -> bool:
+    """오늘 날짜로 생성된 factors-*.json이 이미 있나 (full 중복 실행 방지)."""
+    return any(f"factors-{today.isoformat()}" in os.path.basename(p)
+               for p in glob.glob(os.path.join(ROOT, "output", "factors-*.json")))
+
+
+def should_run_calendar(today: date):
+    """econ_calendar를 돌릴지 결정 (주간+트리거). → (bool, 이유).
+    매일 안 돌리되: 캘린더 없음 / 월요일(주 시작) / 3일 이상 묵음 / ★★★ 이벤트가
+    어제~오늘이면(결과 채우기) 재생성. 그 외엔 최신 calendar 재사용(콜 절약)."""
+    cfs = sorted(glob.glob(os.path.join(ROOT, "output", "calendar-*.json")))
+    if not cfs:
+        return True, "캘린더 없음"
+    m = re.search(r"calendar-(\d{4}-\d{2}-\d{2})", os.path.basename(cfs[-1]))
+    cal_date = m.group(1) if m else None
+    if cal_date != today.isoformat():
+        if today.weekday() == 0:
+            return True, "주 시작(월요일)"
+        try:
+            if (today - date.fromisoformat(cal_date)).days >= 3:
+                return True, f"{(today - date.fromisoformat(cal_date)).days}일 묵음"
+        except (ValueError, TypeError):
+            return True, "캘린더 날짜 파싱 실패"
+    # ★★★ 이벤트가 방금(어제~오늘) 지났으면 결과를 채우러 1회 재생성
+    try:
+        for e in json.load(open(cfs[-1], encoding="utf-8")).get("events", []):
+            try:
+                d = (date.fromisoformat(e.get("date", "")) - today).days
+            except ValueError:
+                continue
+            if int(e.get("importance", 0)) >= 3 and -1 <= d <= 0:
+                return True, f"★★★ '{(e.get('name') or '')[:12]}' 방금 지남(결과 갱신)"
+    except (OSError, json.JSONDecodeError):
+        pass
+    return False, "최신 calendar 재사용"
 
 
 # 표지·캐러셀과 동일 기준의 desync 방지(제목 환율 숫자 금지).
@@ -84,6 +122,24 @@ def gate(force=False):
                              r"(하락|내려|내린|떨어|급락|상승|올라|오른|급등)", text):
             if abs(int(m.group(1)) - abs(actual)) > 3:
                 blocks.append(f"'{m.group(1)}원 {m.group(2)}' ↔ 실제 전일대비 {actual:+.1f}원")
+    # check A: 장중(마감 전)인데 '오늘 종가/마감' 단정 = 거짓 (carousel·factor_analysis와 동일)
+    today = datetime.now(timezone(timedelta(hours=9))).date()
+    asof = rj.get("asof", "")
+    tm = re.search(r"(\d{1,2}):(\d{2})", asof or "")
+    cur = rj.get("rate")
+    if (today.weekday() < 5 and tm and (int(tm.group(1)), int(tm.group(2))) < (15, 30)
+            and isinstance(cur, (int, float))):
+        cur_i = int(cur + 0.5)
+        for m in re.finditer(r"(\d[\d,]*)\s*원\s*(?:에|으로|선에서?)?\s*(마쳤|마감|종가)", text):
+            try:
+                n = int(m.group(1).replace(",", ""))
+            except ValueError:
+                continue
+            if abs(n - cur_i) > 2 or re.search(r"(어제|전일|지난|어젯|야간)",
+                                               text[max(0, m.start() - 6):m.start()]):
+                continue
+            blocks.append(f"장중(마감 전, {asof})인데 오늘({cur_i:,}원) '{m.group(2)}' 단정 — '현재 ○○원'으로")
+            break
     for w in warns:
         print("  ⚠ " + w, file=sys.stderr)
     if blocks:
@@ -126,10 +182,13 @@ def main():
                    help="그날 제목을 최신 factors로 강제 재생성(동결 무시). 평소엔 첫 퍼블리시 제목 유지.")
     p.add_argument("--force", action="store_true",
                    help="검증 실패에도 배포 강행(주의 — 박스/제목 모순 가능).")
+    p.add_argument("--force-full", action="store_true",
+                   help="오늘 factors가 이미 있어도 factor_analysis 강제 재실행(큰 이벤트 후 갱신용).")
     args = p.parse_args()
 
     os.makedirs(DDIR, exist_ok=True)
     scout_extra = ["--query", args.query] if args.query else None
+    today_d = datetime.now(timezone(timedelta(hours=9))).date()
 
     run("Rate (site/rate.json)", "rate_fetch.py")
 
@@ -137,13 +196,21 @@ def main():
         # Scout feeds only the timing-verdict context; factor_analysis/calendar
         # do their own searches. So a Scout hiccup must NOT kill the build.
         run("Scout", "exchange_rate_watcher.py", scout_extra, soft=True)
-        run("Factor analysis", "factor_analysis.py")
-        run("Rewrite why + tldr", "factor_analysis.py", ["--rewrite-why"])
-        # 캘린더는 보조 단계 — LLM 출력 파싱 등으로 한 번 실패해도 직전 calendar-*.json을 재사용하고
-        # 빌드를 계속한다(데일리 업데이트가 통째로 막히지 않게). soft=True.
-        run("Econ calendar", "econ_calendar.py", soft=True)
-    # light: Scout 생략. factor_analysis를 안 돌려 Scout 결과를 쓰지도 않으므로
-    # (요인/일정은 직전 full 산출물 재사용) Firecrawl 호출은 순수 낭비였음.
+        # #3 full 하루 1회: 오늘 factors가 이미 있으면 재분석 생략(중복 API 방지). 큰 이벤트
+        # 후 갱신은 --force-full. (factor_analysis가 why/tldr/card_title까지 한 콜에 만들어
+        #  #1 별도 rewrite-why 패스는 폐지 — 중복 콜이었음. light/refresh는 --rewrite-why 유지.)
+        if today_factors_exist(today_d) and not args.force_full:
+            print("\n⏭ Factor analysis 생략 — 오늘 factors 이미 있음(재사용). 강제: --force-full",
+                  flush=True)
+        else:
+            run("Factor analysis", "factor_analysis.py")
+        # #2 캘린더 주간+트리거: 매일 안 돌리고, 묵었거나 ★★★ 직후에만 재생성(콜 절약).
+        do_cal, why_cal = should_run_calendar(today_d)
+        if do_cal:
+            run("Econ calendar", "econ_calendar.py", soft=True)   # 실패해도 직전 재사용
+        else:
+            print(f"\n⏭ Econ calendar 생략 — {why_cal}", flush=True)
+    # light: Scout·factor·calendar 생략(직전 full 산출물 재사용). rate/verdict만 새로고침.
 
     # 배포 전 검증 게이트 — 표지/캐러셀과 같은 기준(제목 desync·환율 모순·엔진 checks).
     gate(force=args.force)
