@@ -188,6 +188,32 @@ def heal_latest_factors():
     print(f"🩹 factors 자가치유 적용({os.path.basename(ff)}) — 잔여 blocks={len(blocks)}", flush=True)
 
 
+def publish_today_json():
+    """미니앱·웹이 런타임에 fetch할 단일 데이터 파일 발행(site/today.json).
+    빌드시 박던 요인·일정·요약을 외부화 → .ait 재배포 없이 매일 갱신 반영(웹=앱 동일 소스).
+    환율·시계열·종목은 site/rate.json에 이미 발행되므로 여기엔 안 담는다."""
+    lf, lc = latest("factors-*.json"), latest("calendar-*.json")
+    fj = load(lf, {}) if lf else {}
+    cj = load(lc, {}) if lc else {}
+    rj = load(os.path.join(SITE, "rate.json"), {})
+    today = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "asof": rj.get("asof", ""),
+        "card_title": fj.get("card_title", ""),
+        "overall_why": fj.get("overall_why", ""),
+        "tldr": fj.get("tldr", []),
+        "heat": fj.get("heat", ""),
+        "title_badge": fj.get("title_badge", ""),
+        "factors": fj.get("factors", []),
+        "calendar": {"guide": cj.get("guide", ""), "events": cj.get("events", [])},
+    }
+    out = os.path.join(SITE, "today.json")
+    with open(out, "w", encoding="utf-8") as fh:
+        json.dump(today, fh, ensure_ascii=False, indent=2)
+    print(f"published {os.path.relpath(out, ROOT)} "
+          f"(factors={len(today['factors'])}, events={len(today['calendar']['events'])})", flush=True)
+
+
 def day_close_chg(rj, day):
     """'지난 브리핑' 배지용: 그날의 *실제 종가*와 *직전 거래일 대비 등락*을 rate.json series에서 도출.
     빌드시점 값(rj.rate/fluctuations)이 아니라 종가 시계열을 써서 배지가 그날 실제 종가와 일치한다.
@@ -247,6 +273,9 @@ def main():
     # Render the page into site/index.html with the '지난 브리핑' archive list.
     run("Share page", "share_page.py",
         ["--out", os.path.join(SITE, "index.html"), "--archive", ARCH])
+
+    # 런타임 fetch용 데이터 외부화 — 웹·미니앱이 같은 today.json을 읽어 동일 정보 보장.
+    publish_today_json()
 
     # Snapshot today's page (last build of the day wins).
     today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
