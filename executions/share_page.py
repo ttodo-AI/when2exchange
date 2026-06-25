@@ -666,10 +666,13 @@ __GA__
                          border:4px solid transparent; border-top-color:var(--ink); }
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
-  .gauge-short{ font-size:12.5px; font-weight:700; color:var(--muted); margin-top:13px; text-align:center; }
+  .gauge-short{ display:flex; justify-content:space-between; align-items:baseline;
+                margin-top:14px; padding-top:12px; border-top:1px solid var(--line); font-size:13px; }
+  .gauge-short .gs-k{ color:var(--muted); font-weight:700; }
+  .gauge-short .gs-v{ font-weight:800; color:var(--ink); }
   .gauge-short .up{ color:var(--up); } .gauge-short .down{ color:var(--down); }
-  .gauge-note{ margin-top:10px; padding:10px 12px; border-radius:10px; font-size:12.5px;
-               font-weight:600; line-height:1.55; background:#f5f7fa; color:#41485a; }
+  .gauge-note{ margin-top:11px; padding:11px 13px; border-radius:10px; font-size:12.5px;
+               font-weight:600; line-height:1.6; background:#f5f7fa; color:#41485a; }
   .gauge-note.bad{ background:#fdecec; color:#a3242a; }
   .gauge-note.good{ background:#eafaf0; color:#1c7d46; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
@@ -1346,16 +1349,14 @@ function renderGauge(rateNow, rates){
   // ── 단기 신호(A): 오늘 vs 최근 5영업일 평균. 백분위는 신고가 행진 때 100%로 포화되지만,
   // 평균 대비 '원' 차이는 매일 움직여 비싼 구간 '안에서도' 오늘이 그나마 나은지 보여준다.
   const ks = Object.keys(rates).sort();
-  const v5 = ks.slice(-5).map(dt => rates[dt].KRW);
+  const v7 = ks.slice(-7).map(dt => rates[dt].KRW);   // 최근 한 주(7거래일) — 차트 '1주' 탭과 동일
   const gs = document.getElementById('gaugeShort');
-  if(gs && v5.length >= 2){
-    const avg5 = v5.reduce((a,b)=>a+b,0)/v5.length;
-    const d5 = Math.round(rateNow - avg5);
-    const dir = d5>0 ? 'up' : (d5<0 ? 'down' : '');
-    const read = d5>0 ? '며칠 새 더 오른 날' : (d5<0 ? '며칠 흐름보단 내린 날' : '며칠 평균과 비슷');
-    gs.innerHTML = d5===0
-      ? '최근 닷새 평균과 거의 같아요'
-      : `최근 닷새 평균보다 <span class="${dir}">${d5>0?'▲':'▼'} ${Math.abs(d5)}원</span> · ${read}`;
+  if(gs && v7.length >= 2){
+    const avg7 = v7.reduce((a,b)=>a+b,0)/v7.length;
+    const d7 = Math.round(rateNow - avg7);
+    const dir = d7>0 ? 'up' : (d7<0 ? 'down' : '');
+    const val = d7===0 ? '평균과 비슷' : `평균보다 <b class="${dir}">${d7>0?'▲':'▼'}${Math.abs(d7)}원</b>`;
+    gs.innerHTML = `<span class="gs-k">최근 한 주 흐름</span><span class="gs-v">${val}</span>`;
   }
   // ── 따뜻한 조언(B): 비싼(빨강) 구간이 길어질 수 있음을 정직하게 알리고 분할 환전을 권한다.
   const note = document.getElementById('gaugeNote');
