@@ -99,6 +99,12 @@
                          border:4px solid transparent; border-top-color:var(--ink); }
   .gauge-scale{ display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:7px; }
   .gauge-basis{ font-size:12px; font-weight:700; color:var(--muted); margin-top:8px; text-align:center; }
+  .gauge-short{ font-size:12.5px; font-weight:700; color:var(--muted); margin-top:13px; text-align:center; }
+  .gauge-short .up{ color:var(--up); } .gauge-short .down{ color:var(--down); }
+  .gauge-note{ margin-top:10px; padding:10px 12px; border-radius:10px; font-size:12.5px;
+               font-weight:600; line-height:1.55; background:#f5f7fa; color:#41485a; }
+  .gauge-note.bad{ background:#fdecec; color:#a3242a; }
+  .gauge-note.good{ background:#eafaf0; color:#1c7d46; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
   #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer;
           user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
@@ -359,6 +365,8 @@
     <div class="gauge-top"><span class="gauge-cap">환전 매력도 <button class="gauge-info" id="gaugeInfo" aria-label="페르소나별 기준 설명">i</button></span><span id="gaugeLabel" class="gauge-label"></span></div>
     <div class="gauge-bar"><span class="gauge-ptr-tag" id="gaugePtrTag"></span><span class="gauge-ptr" id="gaugePtr"></span></div>
     <div class="gauge-scale"><span>지금 사기 좋음</span><span>아까움</span></div>
+    <div class="gauge-short" id="gaugeShort"></div>
+    <div class="gauge-note" id="gaugeNote" style="display:none"></div>
   </section>
 
   <section class="chart-wrap" id="chartWrap" style="display:none">
@@ -391,7 +399,7 @@
 <div class="factor"><div class="factor-head"><span class="rank">4</span><span class="factor-name">그 외 환율 이슈</span><span class="impact" title="오늘 영향도 2/5"><span class="ig-seg on"></span><span class="ig-seg on"></span><span class="ig-seg"></span><span class="ig-seg"></span><span class="ig-seg"></span></span><button class="impact-info" data-term="그 외 환율 이슈 · 영향도 2/5" data-def="강한 동인이 3개로 충분해 4번째는 보조 버킷에서, 오늘 장중 1,550원 직전 급등 후 마감 때 소폭 되돌아오는 움직임과 '1,550원 저항선·당국 개입 경계감'이라는 구체적 FX 수급 이슈가 확인됐다.">i</button></div><div class="factor-line">환율은 장중 1,550원에 근접했다가 전일대비 내린 1,541원으로 마감하며, 당국 개입 경계감이 저항선으로 작동했다.</div><ul class="factor-bullets"><li>블록미디어는 야간 거래에서 달러-원이 1,530원대로 하락 마감하며 '1,550원 저항선'에서 당국 개입 경계감이 발동했다고 보도했다.</li><li>서울경제는 시장 전문가의 말을 인용해 '1,550원도 열어둬야 한다'는 전망을 전하면서, 환율이 금융위기 이후 17년 만에 최고 수준을 이어갔다고 보도했다.</li></ul><div class="factor-src"><span class="src-lab">📰 관련 기사</span><a class="src-chip" href="https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxX1EtTVY4ZW9ocExoYk9CSjBOT3RXMEtVZnZjaDllSW92UG44UUV4M0hOVllwNWJkdEExRDVtUmMyUWtORko5N0lKWUNPeVdGamNWTkJ4MmE?oc=5" target="_blank" rel="noopener" title="[야간마감] 달러-원 1530원대 하락 마감… ‘1550원 저항선’ 당국 개입 경계감 발동">1</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PZUhTU1dzb3Z1ZDk2bTNVdEgycVVRUVFWT0ttTGlDT25DcDFnUG9LLUl4aW9BejJ1OUkyN2lIMmc2TGZXY2tXQm9NUnhQd0Z0TXfSAVNBVV95cUxPaVp0RFI5RVFpVmhBZWkweUZCeFNKSXJCS2VzNjBIaVN2blVwQ1VobTVvVWFIdzNEUzNTbnVpa2o3MnN4b1hPcWtHa0h6aFoxRGF0bw?oc=5" target="_blank" rel="noopener" title="환율 1540원대 마감, 금융위기 이후 최고…“1550원도 열어둬야” [김혜란의 FX]">2</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMimAJBVV95cUxPWlFEamdaNEJyUnlvWTltbS0wYk9ZVmxvdzd0eUtZZEpsWURmODMwYUFQdk12RFlhU2h0azFfZUZERkFrMU9RTW5jX3k3ZERDYlRRNFRNQUZxcF9Td1J0QzJadWNVWThzOVdlNC1hZE5kNEZlM0lKT2tNdVRsbVprN3d3Mi1CTTFhT0JVTXJLckR0S05OUFNrRm5QeDhZYlpPd0IzTVZtdzJ0dm1RSjlhYXl5M1Z0SHhIY04zUnNVYUl6Sk1Bck0xTzE1OHlnczNHVEJ3YXpPR1kxYnlLVm5PRllxS2FRRGR1bXlOMlJSVnZYV3NIXzVsZnpLRk5ndFhlT196clZ1TFBkSjByOHJPemtJa3VmSVJB0gGbAkFVX3lxTE5hVXFURWltcWFydzNQZDVpaXBtQnBFWkF4d1JOakJETlNsQV9RcHhTeVJaQjI3Vl9rRGJMd3Rjb2tQV2k1VjlNd3ZiWW9xTThkUlRzZG5qRE0xSENaUWc2RW0wZ0c3anVLTk13RGU0Rm9SZDk1R2x0Nk0zWURXM190TlBFUnNWbXRaaENwN21IdmlQTWY1WTlmYS0zdGlKcUxtM3ljcFphbkwycVRmb2lNSXR1NFd0YnBpQnQ2UUtJdllLOEtwV3Axbk1SVzVsLTVhbEZlS3BUTFlGbkRLX25rWkZac1FlSS10MTN1eVN3VHFjUXFVaUtOQ3Z6eUdNRlJSdmxWenl5RURqeHZqdFB5WlNudVpONGJQdzQ?oc=5" target="_blank" rel="noopener" title="대통령 발언도 못 막은 환율…&quot;시간 지나면 내려? 지나친 낙관&quot;">3</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMiRkFVX3lxTE9qOWhPbGo1NlRSNVBScU1LS3RqRWpVRkk1MklwTy1ycUlVZTFmUFRvUkRDSm9yeEZ6dlFrclJGOURUbTdUV3c?oc=5" target="_blank" rel="noopener" title="원·달러 환율 1,541.8원 마감…금융위기 이후 17년 만에 최고치">4</a><a class="src-chip" href="https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Sd1ptZTh2ZUdLbFRKcVZDeFMzU0JWYUh5ZUF0TGwwRS01bmN4ZHRzRnF4Q1pDS1hxbTBLTnhQM1lFRWJ1S0dlNU8yWU9NWktUdDRV?oc=5" target="_blank" rel="noopener" title="환율 1540원대 마감…금융위기 이후 최고">5</a></div></div>
   </section>
 
-  <section><h3 class="sec">지난 브리핑</h3><a class="arc-row" href="d/2026-06-25.html"><span class="arc-date">6/25</span><span class="arc-rate">1,544원</span><span class="arc-chg-col"><span class="arc-chg flat">유지</span></span><span class="arc-head">달러인덱스 1년 최고, 원화 보합 마감</span></a>
+  <section><h3 class="sec">지난 브리핑</h3><a class="arc-row" href="d/2026-06-25.html"><span class="arc-date">6/25</span><span class="arc-rate">1,545원</span><span class="arc-chg-col"><span class="arc-chg up">▲2</span></span><span class="arc-head">달러인덱스 1년 최고, 원화 보합 마감</span></a>
 <a class="arc-row" href="d/2026-06-23.html"><span class="arc-date">6/23</span><span class="arc-rate">1,534원</span><span class="arc-chg-col"><span class="arc-chg down">▼5</span></span><span class="arc-head">달러 강세·외국인 매도에 원화 보합</span></a>
 <a class="arc-row" href="d/2026-06-22.html"><span class="arc-date">6/22</span><span class="arc-rate">1,538원</span><span class="arc-chg-col"><span class="arc-chg up">▲6</span></span><span class="arc-head">달러 강세 지속에 원화 약세 장기화</span></a>
 <a class="arc-row" href="d/2026-06-19.html"><span class="arc-date">6/19</span><span class="arc-rate">1,533원</span><span class="arc-chg-col"><span class="arc-chg down">▼5</span></span><span class="arc-head">워시 첫 FOMC 매파 충격에 원화 약세</span></a>
@@ -412,7 +420,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-26 04:47:17 KST<br>환율 <span id="rateSrc">ECB</span><br>
+    발행 2026-06-26 05:14:50 KST<br>환율 <span id="rateSrc">ECB</span><br>
     표시 환율은 시장 기준이라, 실제 환전가는 은행·앱 수수료로 조금 더 비싸요.<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
@@ -778,6 +786,36 @@ function renderGauge(rateNow, rates){
     vt.textContent = VTXT[vIdx]; vt.style.color = VCOL[vIdx];
     vtag.textContent = (NM[activeSet] || '유학생') + ' 기준';
     vn.style.display = 'flex';
+  }
+
+  // ── 단기 신호(A): 오늘 vs 최근 5영업일 평균. 백분위는 신고가 행진 때 100%로 포화되지만,
+  // 평균 대비 '원' 차이는 매일 움직여 비싼 구간 '안에서도' 오늘이 그나마 나은지 보여준다.
+  const ks = Object.keys(rates).sort();
+  const v5 = ks.slice(-5).map(dt => rates[dt].KRW);
+  const gs = document.getElementById('gaugeShort');
+  if(gs && v5.length >= 2){
+    const avg5 = v5.reduce((a,b)=>a+b,0)/v5.length;
+    const d5 = Math.round(rateNow - avg5);
+    const dir = d5>0 ? 'up' : (d5<0 ? 'down' : '');
+    const read = d5>0 ? '며칠 새 더 오른 날' : (d5<0 ? '며칠 흐름보단 내린 날' : '며칠 평균과 비슷');
+    gs.innerHTML = d5===0
+      ? '최근 닷새 평균과 거의 같아요'
+      : `최근 닷새 평균보다 <span class="${dir}">${d5>0?'▲':'▼'} ${Math.abs(d5)}원</span> · ${read}`;
+  }
+  // ── 따뜻한 조언(B): 비싼(빨강) 구간이 길어질 수 있음을 정직하게 알리고 분할 환전을 권한다.
+  const note = document.getElementById('gaugeNote');
+  if(note){
+    if(zone >= 3){
+      note.className = 'gauge-note bad';
+      note.innerHTML = '최근 들어 비싼 구간이라, 한동안 빨강이 이어질 수 있어요. 급하지 않으면 한 번에 몰아 사지 말고 나눠서 조금씩 환전해보개요. 🐾';
+      note.style.display = 'block';
+    } else if(zone === 0){
+      note.className = 'gauge-note good';
+      note.innerHTML = '최근 흐름 중에선 드물게 싼 편이에요. 환전 계획이 있으면 한 번 살펴보개요. 🐾';
+      note.style.display = 'block';
+    } else {
+      note.style.display = 'none';
+    }
   }
 }
 
