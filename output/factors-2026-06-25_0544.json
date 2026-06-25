@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-06-25T05:44:35.114492+00:00",
+  "card_title": "달러인덱스 1년 최고, 원화 보합 마감",
+  "tldr": [
+    "어제(1,544원)보다 3원 내린 1,541원에 마감했지만, 장중에는 1,550원 직전까지 오르며 17년 만의 최고 수준 근처를 다시 건드렸어요.",
+    "달러를 사려는 힘이 강한 건 연준 금리 인상 우려로 달러 가치가 1년 만에 최고 수준으로 올랐고, 외국인이 국내 주식을 팔아 달러로 바꾸는 흐름도 계속되고 있기 때문이에요.",
+    "모레(6월 27일) 미국 5월 PCE(물가 지표) 결과가 나오면 달러 강세가 더 세질지, 누그러질지 가늠할 수 있어요."
+  ],
+  "overall_why": "미국 연준의 연내 금리 인상 가능성이 거론되면서 달러 수요가 커졌고, 달러인덱스(달러 전반의 강도를 나타내는 지수)가 1년 만에 최고치를 찍으며 원/달러 환율을 장중 1,550원 턱밑까지 밀어 올렸다. 여기에 **외국인이 올해 국내 주식을 800억 달러어치 팔고 달러로 빠져나간** 흐름이 달러 매수 압력을 더했지만, 1,550원 근처에서 당국 개입 경계감이 작동하며 종가는 전일보다 3원 내린 1,541원으로 마감했다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 상승의 1순위 원인으로 '달러 강세·DXY 1년 최고'를 지목했고, 야간 거래에서도 DXY 강세로 상승폭이 확대됐다고 보도됐다.",
+      "headline": "달러인덱스(DXY)가 1년 만에 최고치를 기록하며 원/달러 환율을 장중 1,550원 근처까지 밀어 올렸다.",
+      "bullets": [
+        "달러인덱스가 1년 만에 최고치를 찍었다고 헤럴드경제가 보도했으며, 야간 거래에서도 DXY 강세에 연동해 원/달러가 1,542.70원까지 상승폭을 확대했다.",
+        "미국 연준의 연내 금리 인상 가능성이 거론되면서 달러에 수요가 몰렸고, 엔화도 1달러=161엔대 후반으로 밀리는 등 아시아 통화 전반이 달러에 눌렸다."
+      ],
+      "sources": [
+        {
+          "title": "달러인덱스 1년 만에 최고치…환율 1550원 위협",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oaU52YkZDMDVCUWoyUS15MVJYWVd1MGMxVkNPRmxBUWRyU2pPbktMVEswbU9yZHFTZDJOMDctOEJ6OFlpZXVRZHRiRzY3Z1BzYUJ4SjB3?oc=5"
+        },
+        {
+          "title": "달러-원, DXY 강세에 야간 거래서 상승폭 확대…1,542.70원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1acHMwUkg3RzhWTUN3a1NiTWpaUnpPcFhCT1RoMUs5dFE0NlRtWjZLd1ZTMEx6VzU4aDJiU2RfamUtSWxvZmVHT0t0Q250SEhiQ3c?oc=5"
+        },
+        {
+          "title": "엔화, 美 연내 금리인상 전망에 1달러=161엔대 후반 하락 출발",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zUkp3aUxiWHR4c182RTMzS1RKa0tNcEh5MUh0SlViZzhBYnliYml6VE94NXhwUVhZbGwzam8tRGVrS2htX2tSbjk0UDlCVW41aURpZTFiU05CdHAwZ3cxQllRR0N1Umx3eE9wVU9ZZVFtY3k5Mm9UWdIBeEFVX3lxTE0zUkp3aUxiWHR4c182RTMzS1RKa0tNcEh5MUh0SlViZzhBYnliYml6VE94NXhwUVhZbGwzam8tRGVrS2htX2tSbjk0UDlCVW41aURpZTFiU05CdHAwZ3cxQllRR0N1Umx3eE9wVU9ZZVFtY3k5Mm9UWQ?oc=5"
+        },
+        {
+          "title": "美연준, 연내 금리인상?...달러 '절상' vs 유로·파운드 '절하'",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55VHhTRmZIT1VDczdyc1FISW8wWnMwUGw5bUp2VXJxazVDdGFEX3IzQVE0RS16Z2tibTNqRWViRmMtZjQwVlhCZXVocV9XMXoyWnE4WFQyUlBlajRvUmJhNXd0enZFSDA0ZWthRTJ0blJDMVXSAXNBVV95cUxOeVR4U0ZmSE9VQ3M3cnNRSElvMFpzMFBsOW1KdlVycWs1Q3RhRF9yM0FRNEUtemdrYm0zakVlYkZjLWY0MFZYQmV1aHFfVzF6MlpxOFhUMlJQZWo0b1JiYTV3dHp2RUgwNGVrYUUydG5SQzFV?oc=5"
+        },
+        {
+          "title": "환율, 1,540원대 출발…달러 강세·외국인 순매도에 오름세",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1HN1l2ck82Ym5yTHk5ZEsxWTFqVDh6b0lCMmVXVWJOaEVxSGx5S0dBaG8wM3lKbTN3dW5zV1Y0NG1rWXpFelpzZG5zcVdFcnc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 4,
+      "impact_reason": "한국은행이 외국인의 올해 주식 순매도 규모를 800억 달러로 공식 확인했고, 오늘도 외국인 '팔자'가 환율 상승의 직접 동인으로 복수 매체에서 지목됐다.",
+      "headline": "외국인이 올해 국내 주식 800억 달러어치를 팔아 달러를 회수하는 흐름이 환율을 끌어올리는 배경으로 작용했다.",
+      "bullets": [
+        "한국은행은 올해 외국인이 국고채를 176억 달러 사들이는 동안 국내 주식은 800억 달러어치 팔았다고 금융안정보고서에서 밝혔다.",
+        "외국인 주식 순매도가 이어지면서 외환시장에서 달러 매수 압력이 높아졌고, 장중 1,540원대 후반까지 환율이 올랐다."
+      ],
+      "sources": [
+        {
+          "title": "한은 \"외국인, 국고채 176억달러 담을때 주식 800억달러 팔아\"",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PdVpaRHdTTmRrQnozOGZMYVdKejFoZjM0WWRrWkZxZWY1UXNUeGprUGdfbTVKTEI5ZnRWYmdUYnQ2YWFkV1h1bHIwdDFkMHFDUmh2d2JOWEIzNlhaQ1dOStIBYEFVX3lxTE1PdVpaRHdTTmRrQnozOGZMYVdKejFoZjM0WWRrWkZxZWY1UXNUeGprUGdfbTVKTEI5ZnRWYmdUYnQ2YWFkV1h1bHIwdDFkMHFDUmh2d2JOWEIzNlhaQ1dOSg?oc=5"
+        },
+        {
+          "title": "한국은행 \"올해 외국인 채권 176억 달러 담고, 주식 800억 달러 팔아\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB2ajcxeVB3cUpxUUh1WkE2UmlIVHU0TTNSSmpUNVBSbUV4WUtyZGdHenZQTDhEMk55eGVTNmtfUG84RzZoOWI5Ujlac2Q2ckx5a2VSQ2o1MVFjcm1NX1pQaFZlc2NfSDRKMzd2NXNUVXpYcFNq0gF0QVVfeXFMUHZqNzF5UHdxSnFRSHVaQTZSaUhUdTRNM1JKalQ1UFJtRXhZS3JkZ0d6dlBMOEQyTnl4ZVM2a19QbzhHNmg5YjlSOVpzZDZyTHlrZVJDajUxUWNybU1fWlBoVmVzY19INEozN3Y1c1RVelhwU2o?oc=5"
+        },
+        {
+          "title": "[금융안정보고서]외국인 증권투자 ‘극과 극’…국고채 사고 국내 주식 팔았다",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNzhIY0psZlpXelBzRklnZ2xXbjNaUm50clROTjZaSDhaXzQ3aDk2VUpWam5kQThSZWZ2Ty1kaEpjQU5iX01lRjIxQjkycmlHR2ZNUE55WEtRcVhjbzFpcTdfV1p6TDF2MkQ1Ykx4eUlZenhXSmZXMHN1a1ItRlpsTzFlZzc?oc=5"
+        },
+        {
+          "title": "[외환-마감] 외인 주식 '팔자'에 1,540원대로…2.70원↑",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9Ta01jQm5xYUtXUkRqOXYtYU5nSlNRcGVRbjhoX1FseGI1el9UUWV4QVpLelJJZkJ5N0V5bnZLLUQzRHc2UFRhRlhhTGplOEtJQU1BNTFmMWdUSmpmWWpOeDl0cllCT3FJMU4zSjFENGxCWEdo0gF0QVVfeXFMT1NrTWNCbnFhS1dSRGo5di1hTmdKU1FwZVFuOGhfUWx4YjV6X1RRZXhBWkt6UklmQnk3RXludkstRDNEdzZQVGFGWGFMamU4S0lBTUE1MWYxZ1RKamZZak54OXRyWUJPcUkxTjNKMUQ0bEJYR2g?oc=5"
+        },
+        {
+          "title": "[외환] '强달러·外人 주식 순매도'에 상승…1,540원대 후반",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FdlIzN05UdGZoaU1JcXFNWEFUZHd6QzkxLVRQN2xTeXUxNmRpR0VJQXB1R0JEWmNjQ2sxeEZxNkcyN2F3SndEaW5OaWtTQlYxS2ZuUDBpRTFfSjkxSFFfWk41c25LTFp4Mm9pdFVyQ3NfUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 3,
+      "impact_reason": "미국 연준의 연내 금리 인상 가능성이 시장에서 거론되며 달러 강세의 배경 동인으로 작동했고, 여러 기사에서 환율 고공행진의 구조적 원인으로 언급됐다.",
+      "headline": "미국 연준의 연내 금리 인상 가능성이 시장에서 거론되며 달러를 끌어올리는 배경으로 작용했다.",
+      "bullets": [
+        "조선비즈 등 복수 매체가 미국 금리 인상 가능성을 고환율의 원인으로 지목했고, 이 기대가 달러 수요를 키워 유로·파운드·엔화 등 주요 통화가 동시에 달러 대비 약세를 보였다.",
+        "연준 금리 인상 전망이 강해지면 글로벌 자금이 달러로 몰리는 구조가 작동하며, 달러인덱스 1년 최고치와 맞닿아 있다는 분석이 나왔다."
+      ],
+      "sources": [
+        {
+          "title": "외국인 매도·美 금리 인상 가능성에 ‘高환율’ - 조선비즈",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNT0paZktUS3VpLVc5S0xYSHhiLTRQWDlxd2NTRGhEa0Rud1B5b0gtb1JDUFAycG1Ydm9IRFpOcndCZmJGbUxUVDFnYTZIWHo3UkE5bWs5QnNvZHMzaDBUQUtwS3pMdXhLNTBHaFlkV2YwamJ6YXR2RXI1MmEyNnNJRnBqSzQ3WFBW0gGcAUFVX3lxTE04NVZiaWl1TWIxNHVBR2dxWUExOXU5MGVleUpubV9jWjhHOUF1Y2JkbGRrZ2ZIa3N3Wk9MWkZ5R3ZvN2t1N0JQMUFlZ2djNFFteUdqRld0WTlhd0s5SUl2cXQ0QlM2Y3dBc21hdGdQX0VWbXZucW9oVnlNenh0YlU0NGZQTEhLbk5QR0dOZGtNMFhKbFhFbURnWTJ0Tw?oc=5"
+        },
+        {
+          "title": "美연준, 연내 금리인상?...달러 '절상' vs 유로·파운드 '절하'",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55VHhTRmZIT1VDczdyc1FISW8wWnMwUGw5bUp2VXJxazVDdGFEX3IzQVE0RS16Z2tibTNqRWViRmMtZjQwVlhCZXVocV9XMXoyWnE4WFQyUlBlajRvUmJhNXd0enZFSDA0ZWthRTJ0blJDMVXSAXNBVV95cUxOeVR4U0ZmSE9VQ3M3cnNRSElvMFpzMFBsOW1KdlVycWs1Q3RhRF9yM0FRNEUtemdrYm0zakVlYkZjLWY0MFZYQmV1aHFfVzF6MlpxOFhUMlJQZWo0b1JiYTV3dHp2RUgwNGVrYUUydG5SQzFV?oc=5"
+        },
+        {
+          "title": "엔화, 美 연내 금리인상 전망에 1달러=161엔대 후반 하락 출발",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zUkp3aUxiWHR4c182RTMzS1RKa0tNcEh5MUh0SlViZzhBYnliYml6VE94NXhwUVhZbGwzam8tRGVrS2htX2tSbjk0UDlCVW41aURpZTFiU05CdHAwZ3cxQllRR0N1Umx3eE9wVU9ZZVFtY3k5Mm9UWdIBeEFVX3lxTE0zUkp3aUxiWHR4c182RTMzS1RKa0tNcEh5MUh0SlViZzhBYnliYml6VE94NXhwUVhZbGwzam8tRGVrS2htX2tSbjk0UDlCVW41aURpZTFiU05CdHAwZ3cxQllRR0N1Umx3eE9wVU9ZZVFtY3k5Mm9UWQ?oc=5"
+        },
+        {
+          "title": "종전도 못 꺾은 강달러…달러·원 환율 고공행진에 금융시장 촉각",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQdIBb0FVX3lxTE03Q0s4aXNCamlVYnI5SzRIUERQYVhUbUtFM2tUNnJwUlFqbkIzV2NFZjFQTXgzMm1vT09zNk1KXzNxSnlyb0otRFJKUEdZdGhLdWxyTDlkRXhUT2xYMDV4SV8xaFZvN1dmNXRjRUpiQQ?oc=5"
+        },
+        {
+          "title": "종전, 수출 호조에도 환율 1500원대 요지부동, 왜?",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wVUg1TmVOTW1HVk5ZNXAwSDhEOVpIRWo5QzR4X09RbUhLZmh0QWV5ekJxd205OFgySHZnOWhzVUhBWGxQUGJWdGctS19uWndtUHc4?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "강한 동인이 3개로 충분해 4번째는 보조 버킷에서, 오늘 장중 1,550원 직전 급등 후 마감 때 소폭 되돌아오는 움직임과 '1,550원 저항선·당국 개입 경계감'이라는 구체적 FX 수급 이슈가 확인됐다.",
+      "headline": "환율은 장중 1,550원에 근접했다가 전일대비 3원 내린 1,541원으로 마감하며, 당국 개입 경계감이 저항선으로 작동했다.",
+      "bullets": [
+        "블록미디어는 야간 거래에서 달러-원이 1,530원대로 하락 마감하며 '1,550원 저항선'에서 당국 개입 경계감이 발동했다고 보도했다.",
+        "서울경제는 시장 전문가의 말을 인용해 '1,550원도 열어둬야 한다'는 전망을 전하면서, 환율이 금융위기 이후 17년 만에 최고 수준을 이어갔다고 보도했다."
+      ],
+      "sources": [
+        {
+          "title": "[야간마감] 달러-원 1530원대 하락 마감… ‘1550원 저항선’ 당국 개입 경계감 발동",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxX1EtTVY4ZW9ocExoYk9CSjBOT3RXMEtVZnZjaDllSW92UG44UUV4M0hOVllwNWJkdEExRDVtUmMyUWtORko5N0lKWUNPeVdGamNWTkJ4MmE?oc=5"
+        },
+        {
+          "title": "환율 1540원대 마감, 금융위기 이후 최고…“1550원도 열어둬야” [김혜란의 FX]",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1PZUhTU1dzb3Z1ZDk2bTNVdEgycVVRUVFWT0ttTGlDT25DcDFnUG9LLUl4aW9BejJ1OUkyN2lIMmc2TGZXY2tXQm9NUnhQd0Z0TXfSAVNBVV95cUxPaVp0RFI5RVFpVmhBZWkweUZCeFNKSXJCS2VzNjBIaVN2blVwQ1VobTVvVWFIdzNEUzNTbnVpa2o3MnN4b1hPcWtHa0h6aFoxRGF0bw?oc=5"
+        },
+        {
+          "title": "대통령 발언도 못 막은 환율…\"시간 지나면 내려? 지나친 낙관\"",
+          "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPWlFEamdaNEJyUnlvWTltbS0wYk9ZVmxvdzd0eUtZZEpsWURmODMwYUFQdk12RFlhU2h0azFfZUZERkFrMU9RTW5jX3k3ZERDYlRRNFRNQUZxcF9Td1J0QzJadWNVWThzOVdlNC1hZE5kNEZlM0lKT2tNdVRsbVprN3d3Mi1CTTFhT0JVTXJLckR0S05OUFNrRm5QeDhZYlpPd0IzTVZtdzJ0dm1RSjlhYXl5M1Z0SHhIY04zUnNVYUl6Sk1Bck0xTzE1OHlnczNHVEJ3YXpPR1kxYnlLVm5PRllxS2FRRGR1bXlOMlJSVnZYV3NIXzVsZnpLRk5ndFhlT196clZ1TFBkSjByOHJPemtJa3VmSVJB0gGbAkFVX3lxTE5hVXFURWltcWFydzNQZDVpaXBtQnBFWkF4d1JOakJETlNsQV9RcHhTeVJaQjI3Vl9rRGJMd3Rjb2tQV2k1VjlNd3ZiWW9xTThkUlRzZG5qRE0xSENaUWc2RW0wZ0c3anVLTk13RGU0Rm9SZDk1R2x0Nk0zWURXM190TlBFUnNWbXRaaENwN21IdmlQTWY1WTlmYS0zdGlKcUxtM3ljcFphbkwycVRmb2lNSXR1NFd0YnBpQnQ2UUtJdllLOEtwV3Axbk1SVzVsLTVhbEZlS3BUTFlGbkRLX25rWkZac1FlSS10MTN1eVN3VHFjUXFVaUtOQ3Z6eUdNRlJSdmxWenl5RURqeHZqdFB5WlNudVpONGJQdzQ?oc=5"
+        },
+        {
+          "title": "원·달러 환율 1,541.8원 마감…금융위기 이후 17년 만에 최고치",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9qOWhPbGo1NlRSNVBScU1LS3RqRWpVRkk1MklwTy1ycUlVZTFmUFRvUkRDSm9yeEZ6dlFrclJGOURUbTdUV3c?oc=5"
+        },
+        {
+          "title": "환율 1540원대 마감…금융위기 이후 최고",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Sd1ptZTh2ZUdLbFRKcVZDeFMzU0JWYUh5ZUF0TGwwRS01bmN4ZHRzRnF4Q1pDS1hxbTBLTnhQM1lFRWJ1S0dlNU8yWU9NWktUdDRV?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  }
+}
