@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-26T03:39:19.892592+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,547.3 KRW/USD (as of 2026-06-26 open)\n\nWHY: The won is at a 17-year weakness high, meaning you need significantly more KRW to buy your $2,000. However, news indicates this peak is temporary—a $30 billion SK Hynix dollar inflow arriving in July is expected to strengthen the won and push rates down to the 1,400s, suggesting better timing is coming soon.\n\nTIP: If possible, defer or reduce this month's conversion and wait for July when the SK Hynix capital influx should weaken the dollar-to-won rate, saving you thousands of won."
+  },
+  "articles": [
+    {
+      "title": "달러·원 환율 1542.7원 마감, 17년 만의 최고치 경신",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12clNoZVRnQmJsM0lCR1JRMW94d0ttbUFyWFowNmNLYklfcG1fM3FJN3ZHYWZtT3RMVFM4c0ZkeDYyMjU0YTRtQUQ4c0s3bE4wVGxEbWc1OXZIWXY4el9TRkJHR1d1eVVn?oc=5",
+      "summary": "달러·원 환율 1542.7원 마감, 17년 만의 최고치 경신 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-25T07:08:00+00:00"
+    },
+    {
+      "title": "유가 '전쟁 전'으로 뚝…\"이대로 가면 연말 물가 잡힌다\"",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKQ21mVW1XZi00S3RENHBJQ2dDcnlLa3BRVGlpd3M1aVNxLWNLWU0wRGxwZkJxTWVSdTROOHhZdjZ1Vjc2a1RDaVFVejh4S2pTa1Z3blhydzZFUQ?oc=5",
+      "summary": "유가 '전쟁 전'으로 뚝…\"이대로 가면 연말 물가 잡힌다\" 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-25T21:00:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 4.6원 오른 1547.3원 개장",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE00cVZxNjN5RUVsSjlzSE0xWEhCZ1B6ZVd4ZlMydUttMWxTcEQ0NUVvLUhIZlJHT3diTFRRNnN0V0ZDa0FJekVZU0Z0T29DeVBpVTRfNzNtTmd2NGFlajJoMUVjbHlEWktyLU5GUkU1elNrRG9rbDdmMg?oc=5",
+      "summary": "원·달러 환율, 4.6원 오른 1547.3원 개장 네이트",
+      "source": "네이트",
+      "date": "2026-06-26T00:04:00+00:00"
+    },
+    {
+      "title": "\"달러 팔아라, 1400원대 간다\"...'SK하이닉스발 300억달러' 7월에 상륙",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vQ2xlOFdlZTF1WmVYRFV0WGhYVDREbFFmdUVWSmx5Ukk2Ny1YTnNkU0M5QVZfa01zc1RyQWNKdVY0U01CVmhNdUlTMUdiZGZvaG5HTXpPaW1IUQ?oc=5",
+      "summary": "\"달러 팔아라, 1400원대 간다\"...'SK하이닉스발 300억달러' 7월에 상륙 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "date": "2026-06-25T06:58:54+00:00"
+    },
+    {
+      "title": "코스피 5% 급등에도 환율 1540원대…“반도체 랠리 본격화”",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KZFB5bjNVQUV3QnEtRzlLVVRIN1lEUFlRZzZnTlowWnJXUVR0REJEUHRGMEpBMXlISWxlRGxQRTZWOTNJd1YybE1acm1LeDBOd0NnUHAxOTh6czBsZi1HR0lNUWVwdHM5dnFkWA?oc=5",
+      "summary": "코스피 5% 급등에도 환율 1540원대…“반도체 랠리 본격화” 스페셜경제",
+      "source": "스페셜경제",
+      "date": "2026-06-25T07:09:39+00:00"
+    },
+    {
+      "title": "SK하닉 ADR 상장시 300억달러 들어온다…고환율 진정 효과 기대",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE02VVY1WmpLRUJCNERhdHZnWUVoSTlzM3FHSWQ1VUlycVVFZ0lXOGZaemo1c1dIMEYyZ1pvZ3pSbEQwd0ZGUklHRWlTRUh0VlVnaVAw?oc=5",
+      "summary": "SK하닉 ADR 상장시 300억달러 들어온다…고환율 진정 효과 기대 네이트",
+      "source": "네이트",
+      "date": "2026-06-25T06:32:00+00:00"
+    }
+  ]
+}

@@ -345,7 +345,7 @@
     <div class="hero-row">
       <div class="hero-left">
         <div class="hero-label">지금 원·달러 환율</div>
-        <div class="hero-rate" id="rateNow">1,542.7원</div>
+        <div class="hero-rate" id="rateNow">1,547.3원</div>
       </div>
       <div class="hero-right">
         <span id="rateDelta" class="chip"></span>
@@ -423,7 +423,7 @@
 
   <footer>
     <div class="views" id="views">조회 오늘 <b id="vToday">–</b> · 누적 <b id="vTotal">–</b></div>
-    발행 2026-06-26 12:11:20 KST<br>환율 <span id="rateSrc">ECB</span><br>
+    발행 2026-06-26 12:39:29 KST<br>환율 <span id="rateSrc">ECB</span><br>
     표시 환율은 시장 기준이라, 실제 환전가는 은행·앱 수수료로 조금 더 비싸요.<br>
     참고용이며 투자 조언이 아니에요. 실제 환전 전 한 번 더 확인하세요
   </footer>
@@ -436,7 +436,7 @@
 </div>
 <script>
 // Live USD->KRW rate, fetched every time the page opens (no API key, CORS-friendly).
-const RATE_FALLBACK = 1542.7;     // build-time rate, used only if fetch fails
+const RATE_FALLBACK = 1547.3;     // build-time rate, used only if fetch fails
 const RATE_PROXY_URL = "https://when2exchange-rate.gmljw0407.workers.dev/";  // Cloudflare Worker(실시간). 비면 rate.json만 사용
 let rateAsof = '', rateLive = false;    // 화면 라벨용: 갱신 시각 / 라이브 여부
 // Comparison item sets per audience (toggle). All three are identical for now —
