@@ -1,0 +1,27 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-26T03:10:21.560501+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,542.7 KRW/USD\n\nWHY: The won has weakened to a 17-year high of 1,542.7 KRW per USD, meaning you need significantly more won to purchase $2,000 each month. This is the worst exchange rate in nearly two decades, making your monthly dollar obligation unusually expensive right now.\n\nTIP: Since you must convert $2,000 monthly regardless, consider locking in forward contracts or splitting purchases across weeks to average out the impact, rather than converting the full amount on a single day during this unfavorable rate environment."
+  },
+  "articles": [
+    {
+      "title": "달러·원 환율 1542.7원 마감, 17년 만의 최고치 경신",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE12clNoZVRnQmJsM0lCR1JRMW94d0ttbUFyWFowNmNLYklfcG1fM3FJN3ZHYWZtT3RMVFM4c0ZkeDYyMjU0YTRtQUQ4c0s3bE4wVGxEbWc1OXZIWXY4el9TRkJHR1d1eVVn?oc=5",
+      "summary": "달러·원 환율 1542.7원 마감, 17년 만의 최고치 경신 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-25T07:08:00+00:00"
+    },
+    {
+      "title": "유가 '전쟁 전'으로 뚝…\"이대로 가면 연말 물가 잡힌다\"",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBKQ21mVW1XZi00S3RENHBJQ2dDcnlLa3BRVGlpd3M1aVNxLWNLWU0wRGxwZkJxTWVSdTROOHhZdjZ1Vjc2a1RDaVFVejh4S2pTa1Z3blhydzZFUQ?oc=5",
+      "summary": "유가 '전쟁 전'으로 뚝…\"이대로 가면 연말 물가 잡힌다\" 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-25T21:00:00+00:00"
+    }
+  ]
+}
