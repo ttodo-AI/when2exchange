@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-27T03:25:24.066784+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,530–1,550 KRW/USD\n\nWHY: The won is currently very weak, with the exchange rate hovering at multi-year highs around 1,530–1,550 KRW per USD—meaning you need significantly more won to buy $2,000. While news suggests the second half of 2026 may see rates fall (driven by semiconductor dollar inflows and potential won stabilization), current levels are near post-financial-crisis peaks, making this an unfavorable entry point for your monthly conversion.\n\nTIP: Consider staggering your conversions across multiple days in coming weeks if the won strengthens, or set a target rate (e.g., 1,450–1,480) rather than converting the full amount at today's weak levels."
+  },
+  "articles": [
+    {
+      "title": "하반기 환율 하락 전망 속 ‘외국인 매도’·‘美 금리’ 변수",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE11R2F5SThxSXpDaDFfN1diMDBGNERmV2ZvS2dBeTlHNlV0YUh5UF9LR1pxS1RoWk9janhNQTBKWXlVcHN0WlVqamJWdTZMNHZqYUFPNXJWeGxJUQ?oc=5",
+      "summary": "하반기 환율 하락 전망 속 ‘외국인 매도’·‘美 금리’ 변수 농민신문",
+      "source": "농민신문",
+      "date": "2026-06-27T02:00:00+00:00"
+    },
+    {
+      "title": "“믿을 건 삼전닉스뿐?” 반도체는 어떻게 환율을 잡을 수 있을까 [Deep Spot]",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1ocTJvQXBRVzhhVVlSSTk5clZrV2tORGYwU2VnQ3UtSkhadGZOX3NtLW01d3lDMDZndjA4Tl9OWDR6blpfYW1wa0M3amR6Qmw5WkRqcGdn?oc=5",
+      "summary": "“믿을 건 삼전닉스뿐?” 반도체는 어떻게 환율을 잡을 수 있을까 [Deep Spot] 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-06-27T01:08:02+00:00"
+    },
+    {
+      "title": "환율 한달반째 1500원대 고공행진…“美 금리인상 전망에 강달러 계속”",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9ndF9qUDgtak9TUTk5WjJqa2hRc05pMl9SUng2MzZId3J6M3c5aEhZa0pQeHo2R01saUZxVU1ibUVmRF9fWm9iMGlBMkZaQ2c?oc=5",
+      "summary": "환율 한달반째 1500원대 고공행진…“美 금리인상 전망에 강달러 계속” v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-06-26T08:04:00+00:00"
+    },
+    {
+      "title": "SK하이닉스 300억달러 ADR 발행, 1500원대 고환율 해소할까?",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBsZUhDdEJoWnBLSWV1NUhqOXRGZkFzeDlkQ08wMzVDVE5jek4wTGllWVNJZzNSY3RLZWxvb3NJNk5JUGRtSHN1Y0Y4aEttdjdjSEx1aGE5OUNKc1B6UUdxNVFmemQ3UTBO?oc=5",
+      "summary": "SK하이닉스 300억달러 ADR 발행, 1500원대 고환율 해소할까? 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-26T22:57:00+00:00"
+    },
+    {
+      "title": "\"환율 하반기엔 크게 떨어진다\" vs \"내년에도 1500원대\"",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNnc5UTVjT19PUUk0VVAzbGlsZEthVlhmX1d3UXpqTVpieFBtTHZ4XzhkbEhkOFhMa1pZN0dULUpkbWtiZFh4QmtkUzk4VzhnTTZvbENqWnpadWlPV2hfU3lHQnYzOER3MWdIVWFlclFGWGhYc1JwZDduYTc0UDlxaQ?oc=5",
+      "summary": "\"환율 하반기엔 크게 떨어진다\" vs \"내년에도 1500원대\" 이데일리",
+      "source": "이데일리",
+      "date": "2026-06-26T08:18:00+00:00"
+    },
+    {
+      "title": "원·달러 환율 1550원 코앞…반전의 키는 美연준 매파 손으로",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UVVA5ZGNVX3lRYjhaLVlwd3c2cXFaal84RXVIQVJfeHAzQU1QdUVqa0FIcEg2b3d5RUFzSVh0blAybUtvVjB3N3AwcU1icjlYZWdqYXdqTUtETnJUUVNBYzBwaHYzV1k20gFsQVVfeXFMT2JTMVpRRzdFLTVEQWNrR1l5a3hIeUFpWTZ6cndFWnV6VE1iRkQxdDdIdGM1MzZSTGYyYW1manBPZDRMMGRoNzZ5U0lmbC1JME9CX0lJa0g0WGpld21zMVNFaFdwVEg2NjQtMXBh?oc=5",
+      "summary": "원·달러 환율 1550원 코앞…반전의 키는 美연준 매파 손으로 직썰",
+      "source": "직썰",
+      "date": "2026-06-26T06:00:00+00:00"
+    },
+    {
+      "title": "원/달러 환율 장중 1,550원 육박…당국 개입 추정 물량에 1,532원 마감",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zdHdnQTJVU21pUExGbjBERkRQcDBBSHJTaVBjdzJqZTNpQ00tQmlBTU9sWElWNUYycXVOdm1iY1dORW5KanNodS1CV1hmaENuUlNkbkIzMFprdTNZWjBFRmt2WUdiUmlQc1M5VtIBcEFVX3lxTE1xN3RnRzA2Mm56R3dua0VXNE1FdmJnM0lqcURLUUUtX1hPdm1STUUyV21HSXBlS1dTZHZHcEZscXdoVjdWcmlYSTZodDhULU5WS2VYV0Y2dkpwZ05HR1VwejV1ZWNOUnNsc1lSTnByZGQ?oc=5",
+      "summary": "원/달러 환율 장중 1,550원 육박…당국 개입 추정 물량에 1,532원 마감 데일리굿뉴스",
+      "source": "데일리굿뉴스",
+      "date": "2026-06-26T08:28:22+00:00"
+    },
+    {
+      "title": "하반기엔 고환율 꺾이나…반도체·대규모 달러 공급에 '주목'",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1nX2ZnZ1h4N0s2cHBpMnludldBM050MlhQanhpM3JJY0YySzRZRXJXMU5aTGVyVkdzOHVHMVZsTWhFT0N1MWpGajQ3cGFLdmxJOWF6eA?oc=5",
+      "summary": "하반기엔 고환율 꺾이나…반도체·대규모 달러 공급에 '주목' v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-06-26T22:02:03+00:00"
+    },
+    {
+      "title": "금리인상 경계·외인 매도세에 환율 1542원대 마감…금융위기 이후 최고치(종합)",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1NZ2xfSWFESGxuUFpaZGtXV2FqeXFnMDZuTGpQc3dmSDNyMkEtXzgxRVNaNU5CcC1SdUVQb09sbS14ZzBfRlJXWmRVUUdsbGF0d2xkSTZoZ0s2b2ZaWXhQdFdiY3BxRU9yM1Vr0gFrQVVfeXFMTU1nbF9JYURIbG5QWlpka1dXYWp5cWcwNm5MalBzd2ZIM3IyQS1fODFFU1o1TkJwLVJ1RVBvT2xtLXhnMF9GUldaZFVRR2xsYXR3bGRJNmhnSzZvZlpZeFB0V2JjcHFFT3IzVWs?oc=5",
+      "summary": "금리인상 경계·외인 매도세에 환율 1542원대 마감…금융위기 이후 최고치(종합) 경제투데이",
+      "source": "경제투데이",
+      "date": "2026-06-26T08:50:40+00:00"
+    },
+    {
+      "title": "환율 1,550원 넘보다 1,530원대로 급락…당국 개입 추정",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1tMGhBbHdmNkR4cDdqTEE4VnRpU1lKVnFkalQ0OUVTT0QtenRsMmdLTlllWU1SamRkZVJXTWRPWWF4YlJ5a1NRTkZtWVFuRHVtQzJV?oc=5",
+      "summary": "환율 1,550원 넘보다 1,530원대로 급락…당국 개입 추정 네이트",
+      "source": "네이트",
+      "date": "2026-06-26T07:39:00+00:00"
+    }
+  ]
+}
