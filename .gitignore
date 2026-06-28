@@ -5,5 +5,9 @@ __pycache__/
 venv/
 .claude/
 
+# Node / 미니앱 빌드 산출물 (npm 패키지·빌드 결과 — 커밋 금지, 재생성 가능)
+node_modules/
+miniapp/dist/
+
 # 내부 전용 문서(J-1·수익화 등 민감 정보 포함) — 공개 레포에 푸시 금지, 로컬 전용
 docs/
