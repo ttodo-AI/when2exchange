@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-28T03:46:53.854924+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,500–1,550 KRW per USD\n\nWHY: The won is at a 28-year weak point, with the Q2 average breaking 1,500 KRW/USD for the first time since the 1998 IMF crisis. Multiple sources indicate the rate is threatening 1,550, driven by hawkish Fed policy and foreign investor exodus, meaning you are paying significantly more won per dollar than historical norms.\n\nTIP: If possible, consider staggering your $2,000 purchase across multiple dates within the month rather than converting in one lump sum, to average out the current unfavorable rates."
+  },
+  "articles": [
+    {
+      "title": "2분기 평균 환율 1,500원 넘었다…외환위기 이후 처음",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBiM1hfc1JUb1lxdzE0aUZZNDBmNFVQUE1uSFpjazl4eldlUFFURWJCRHZYV3NkSjB0MW1MZUZ0Tk1EdzJZVk5YeTdVQ3I1bktmOV9OdXRJbjJxeXdrcjVRUdIBYEFVX3lxTFBiM1hfc1JUb1lxdzE0aUZZNDBmNFVQUE1uSFpjazl4eldlUFFURWJCRHZYV3NkSjB0MW1MZUZ0Tk1EdzJZVk5YeTdVQ3I1bktmOV9OdXRJbjJxeXdrcjVRUQ?oc=5",
+      "summary": "2분기 평균 환율 1,500원 넘었다…외환위기 이후 처음 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-06-27T20:49:00+00:00"
+    },
+    {
+      "title": "“환전할 때마다 놀란다”...1500원 환율 굳히는 외국인 ‘엑소더스’",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1VOXdRQzRmRVRMSV8za3JYdXN1ODdpLVUtZTZjQ2l1QzB6TjFGazZNWENubWJyaDQxR0kzZ0hnd2F6dUhFcmVxdkY3azNWTlpTa0wwamxFTG9aeWc?oc=5",
+      "summary": "“환전할 때마다 놀란다”...1500원 환율 굳히는 외국인 ‘엑소더스’ 에너지경제신문",
+      "source": "에너지경제신문",
+      "date": "2026-06-28T02:50:51+00:00"
+    },
+    {
+      "title": "2분기 평균 환율 1500원 넘어…IMF 외환위기 이후 처음",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoTVQ5ZUFGdWhnMHBoYlQzR1I3RnZRUlV5Nzk1WHNKdmIyUE5uSmoyX3pCNmk0TWVRRE10MU80dVA3Wm9FSGxDbENWenJaUHN5enVWOW5VVTRKOC1EMVJhb1JRVE1kMmFKOEgtdUdxRC1VQQ?oc=5",
+      "summary": "2분기 평균 환율 1500원 넘어…IMF 외환위기 이후 처음 한겨레",
+      "source": "한겨레",
+      "date": "2026-06-28T02:48:00+00:00"
+    },
+    {
+      "title": "1550원 위협하는 환율, 매파 연준과 중동 변수에 요동치는 이유",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aN28yd2VBSVJoaHVSRUdyMHJvdHBVV3BXWW43dm1TNlJfdV9SX0VGY3lUcWpPd2p4QWRCZmt5Y2REempEQ0VwbXV3cXdqZnVYNkhaLXNTd2xwZ0hZUGY5YXJKY3VPS0dI?oc=5",
+      "summary": "1550원 위협하는 환율, 매파 연준과 중동 변수에 요동치는 이유 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-06-27T22:30:00+00:00"
+    },
+    {
+      "title": "1550원선 위협받는 환율…'매파 연준·외인 매도·중동 변수'에 요동",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1peGFaZDE3cWwyVElPdEtJbE10b3VweDVvSlZOdFVFSFYwa1p3RDdfZHhzNEtaNjVLb1NQQVM4Q3lrU1pFSGFDNmRGZkFxSGNVRG1Kb09vYUNlUQ?oc=5",
+      "summary": "1550원선 위협받는 환율…'매파 연준·외인 매도·중동 변수'에 요동 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-27T21:50:00+00:00"
+    },
+    {
+      "title": "원·달러 환율 1500원대 굳어지나…물가·내수 부담 커진다",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBSdzRuMWdNNVRtMkpuNUoxOWI4bUY2R25zaXI3Xzg3d3M0RkpIM2NGSncweUxJY084OVpsNko5SHVXZFpDM1VBclFyeUZjbUlpMWNj?oc=5",
+      "summary": "원·달러 환율 1500원대 굳어지나…물가·내수 부담 커진다 네이트",
+      "source": "네이트",
+      "date": "2026-06-28T03:13:00+00:00"
+    },
+    {
+      "title": "2분기 평균 환율 1500원 넘어서…외환위기 이후 28년만",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PMThBNjNrdmlYcHRUYzIwZUg2MEx3dkhjUWtkcFltQkRnZGgxalc0YUVEOXlNc2E2dnJtYm5sMUJDNlBKWFl2QlA2TTNaUjRuZTVHVQ?oc=5",
+      "summary": "2분기 평균 환율 1500원 넘어서…외환위기 이후 28년만 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-06-28T00:53:26+00:00"
+    },
+    {
+      "title": "환율 1550원선 위협…NDF 점검 넘어 거시건전성 카드 꺼낼까",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4zc0NNQVVvUEF0eTdTSUpQTUZmSS1va0tPSDJpVGhlN09sajZPY2lFZ1EwYnFwUDVlWnhLdmJhb0dUeDhLb3RIRk9OU1dPcTdmLTUwNXNSc0JZQTNteExuZ1RtQ1V5bTdkX2NZQlB3Z21BLU9fRmctZtIBeEFVX3lxTE4zc0NNQVVvUEF0eTdTSUpQTUZmSS1va0tPSDJpVGhlN09sajZPY2lFZ1EwYnFwUDVlWnhLdmJhb0dUeDhLb3RIRk9OU1dPcTdmLTUwNXNSc0JZQTNteExuZ1RtQ1V5bTdkX2NZQlB3Z21BLU9fRmctZg?oc=5",
+      "summary": "환율 1550원선 위협…NDF 점검 넘어 거시건전성 카드 꺼낼까 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-06-27T22:00:00+00:00"
+    },
+    {
+      "title": "환율 '1500원 시대' 현실화…28년 만의 고환율 경고",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pbFVHdTRaQTgtUWlETDBoVDJvV01mOENvUXhKUF8wMk5fMEVqdzJRTmFtVG5LX2V3U2xGSjB5UU10MXlHOXZQeFpFVDhEOGtoN2lPbGo3ZzlydTdaeWdJRmg2YV9yb24xejFtSUJsZnpkTEVvcmxNSw?oc=5",
+      "summary": "환율 '1500원 시대' 현실화…28년 만의 고환율 경고 네이트",
+      "source": "네이트",
+      "date": "2026-06-27T23:51:00+00:00"
+    },
+    {
+      "title": "2분기 평균 원·달러 1500원 돌파…외환위기 이후 28년 만",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE54UnpmYlRVYnBQOG1aUXhFdF9laUVwQ0tLTXF3a3VUMDIxbzJocXlXVzVVWl85OHlVbUZBdVZOS3h4c3Q5M0VDd09OQlAwSHRyYW9n?oc=5",
+      "summary": "2분기 평균 원·달러 1500원 돌파…외환위기 이후 28년 만 네이트",
+      "source": "네이트",
+      "date": "2026-06-28T00:39:00+00:00"
+    }
+  ]
+}
