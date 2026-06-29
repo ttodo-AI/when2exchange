@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-29T03:53:46.911517+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1500–1530 KRW/USD\n\nWHY: The won is at a 28-year weakest level, with the exchange rate now at 1500+ won per dollar—the highest since the IMF crisis. Multiple sources confirm this is a \"new normal\" with the rate expected to hover around 1530 won in the near term, meaning your KRW converts to fewer dollars than it would at a stronger won level.\n\nTIP: Consider dollar-cost averaging or waiting for news of semiconductor strength or a won-strengthening catalyst, as several sources hint that authorities and global banks expect the rate to eventually fall, potentially making future conversions cheaper."
+  },
+  "articles": [
+    {
+      "title": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까 [딥스폿-외환당국·글로벌IB 환율하락 전망 배경 ]",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HTGt1ZWN1b0dmM05oNHRLT2dsdWo3NXJoZ2xrSGhrR2UyNGVKSGxaWE1sclJlaUI5U1JEZEtERFNUdHlwSFlhVFV3dGNfM3NFVkhqUk5R?oc=5",
+      "summary": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까 [딥스폿-외환당국·글로벌IB 환율하락 전망 배경 ] 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-06-29T02:37:27+00:00"
+    },
+    {
+      "title": "‘뉴노멀’ 된 1500원대 환율",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12RWQxWjZXTnZEMEp0ZEFEUGx3NnBhUHdoLWZ4eHFFM0RsYXZXVzc3UWJtWE05OG5FazV4UXZvUlpBV0tGZHgtUHJONDI1Uk13eU5ESG1oLWJJMDZQcEd4NjRpQUU0OUxCS1NpSXF3NEZqWTVN?oc=5",
+      "summary": "‘뉴노멀’ 된 1500원대 환율 부산일보",
+      "source": "부산일보",
+      "date": "2026-06-28T09:15:56+00:00"
+    },
+    {
+      "title": "2분기 평균 환율 1500원 넘어…IMF 외환위기 이후 처음",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoTVQ5ZUFGdWhnMHBoYlQzR1I3RnZRUlV5Nzk1WHNKdmIyUE5uSmoyX3pCNmk0TWVRRE10MU80dVA3Wm9FSGxDbENWenJaUHN5enVWOW5VVTRKOC1EMVJhb1JRVE1kMmFKOEgtdUdxRC1VQQ?oc=5",
+      "summary": "2분기 평균 환율 1500원 넘어…IMF 외환위기 이후 처음 한겨레",
+      "source": "한겨레",
+      "date": "2026-06-28T10:12:00+00:00"
+    },
+    {
+      "title": "2분기 평균 환율 ‘1500원’ 돌파… 28년 3개월 만에 처음(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAyUjBMcjlZbFpleHJQZ3ZTSmRsVGNzZXFvV2JLT3FNbXBmaW5DQlUxYmFTUnM3elMtVG5qMHN5SFU1OW5DbW1SN1drX1JiQUxNa3VOSE5GNVFydzFMMnZMNWdOVFpueUh4T0E?oc=5",
+      "summary": "2분기 평균 환율 ‘1500원’ 돌파… 28년 3개월 만에 처음(종합) 천지일보",
+      "source": "천지일보",
+      "date": "2026-06-28T06:20:06+00:00"
+    },
+    {
+      "title": "공항 환전창구 갔다가 '헉'…고환율 언제까지",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1aaEk4OGY1WXFiNUxkcVFSbkRDcTRhcnZleVJLUlRMaVdmYUpXalhNSGhmYUF0YTdYMlhnSF9iTVV4LTQ1TUhicjdnUmg5cEE0a0lpYUhqUWpuMlRiLWRaSHlOSWxDeFNackVBOHNuZmhveE9jYWhuNA?oc=5",
+      "summary": "공항 환전창구 갔다가 '헉'…고환율 언제까지 네이트",
+      "source": "네이트",
+      "date": "2026-06-28T04:23:00+00:00"
+    },
+    {
+      "title": "\"실시간 환전 좋지만 변동성 우려\"…7월부터 원·달러 24시간 거래",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBScjltUDlpakJWbUJGOU90Rnd4b0twakhKSjNlQ0Y2LU1WV09EN191Z1puU0hxbE92czM4TzMzcHgxNF8waGJGYnMxWEdFZjg4c3c?oc=5",
+      "summary": "\"실시간 환전 좋지만 변동성 우려\"…7월부터 원·달러 24시간 거래 매일경제 마켓",
+      "source": "매일경제 마켓",
+      "date": "2026-06-28T08:20:34+00:00"
+    },
+    {
+      "title": "\"중동 협상 소식에도 안 믿는 시장⋯1530원 중후반서 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ndDFULW9JRGdQS1BhTC1Qb3JXUjVJenFfOEJLNkVPV1lUOWlZUkNVY19WclJOb3ZBUW5raDNhZVF4cTZvM1Q3X3FPM0tRNFMyN1pINQ?oc=5",
+      "summary": "\"중동 협상 소식에도 안 믿는 시장⋯1530원 중후반서 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-06-28T23:02:00+00:00"
+    },
+    {
+      "title": "환율 1500원대 고착화되나… 2분기 평균 환율 외환위기 이후 최고치",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE82UUN3M2xnNWtmdElFWHFkeHRXRGJSdjVzUUhmbXNuZEd1VU85NlRYVU9MRnhKNzVYWlFjM20tcnl0V01xZjJzRXhVc25aamNTTk9fdEZVUjJTeFU?oc=5",
+      "summary": "환율 1500원대 고착화되나… 2분기 평균 환율 외환위기 이후 최고치 강원일보",
+      "source": "강원일보",
+      "date": "2026-06-28T08:03:23+00:00"
+    },
+    {
+      "title": "外人 주식 매도·강달러…2분기 평균 환율 1500원 넘을 듯",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jdW4wb2ZpeWV1dlNBazFiNzRBY0FoUERIcEdmYmtBUDVLbG5sakpLZm1xZXJTc0NSOHpVd1NwZVFtTGUzTWZHNUxrZTh4WjVzNlHSAVNBVV95cUxOd1JPM09DRFA5b2F2TXdWR0IyUERma0g4VzRMd2JqREtjalVUUEFKeVc0VU1UdGpiWi1QQTZzSFozbEU4REhYOHNjdWE5T19KTndjaw?oc=5",
+      "summary": "外人 주식 매도·강달러…2분기 평균 환율 1500원 넘을 듯 서울경제",
+      "source": "서울경제",
+      "date": "2026-06-28T05:06:25+00:00"
+    },
+    {
+      "title": "[모닝 리포트] 중동 긴장 재고조에 환율 상승 압력…\"1530원 중후반 등락 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1VWEYzQ01PQm5Pd3N0U3lOZUEzckRUY2M3WVZVS3h4ZlBsSWdyandDVVFhUmlpZlFDN0IwYXY5VHgzSW50YVFtOGtEMjhaQjhEQVNvaVpHZmRMNVY1dWlpWlZQNlE4ODdkOFNaSjFleVJneUY5ZG1NRg?oc=5",
+      "summary": "[모닝 리포트] 중동 긴장 재고조에 환율 상승 압력…\"1530원 중후반 등락 전망\" 네이트",
+      "source": "네이트",
+      "date": "2026-06-29T00:37:00+00:00"
+    }
+  ]
+}
