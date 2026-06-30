@@ -675,6 +675,20 @@ __GA__
                font-weight:600; line-height:1.6; background:#f5f7fa; color:#41485a; }
   .gauge-note.bad{ background:#fdecec; color:#a3242a; }
   .gauge-note.good{ background:#eafaf0; color:#1c7d46; }
+  .sigcal{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
+  .sc-head, .sc-row{ display:grid; grid-template-columns:40px repeat(5,1fr); align-items:center; }
+  .sc-head{ margin-top:8px; }
+  .sc-head span{ text-align:center; font-size:11px; font-weight:700; color:var(--muted); }
+  .sc-row{ margin-top:6px; }
+  .sc-wk{ font-size:11px; font-weight:700; color:var(--muted); text-align:left; }
+  .sc-cell{ height:30px; border-radius:7px; margin:0 2px; background:#eef0f3; display:flex;
+            align-items:center; justify-content:center; font-size:11px; font-weight:800; color:#fff; }
+  .sc-g{ background:#1f9d57; } .sc-y{ background:#e3a812; } .sc-r{ background:#e0383e; }
+  .sc-none{ background:#eef0f3; }
+  .sc-today{ outline:2px solid var(--ink); outline-offset:2px; }
+  .sc-legend{ display:flex; align-items:center; justify-content:center; gap:5px; margin-top:13px; font-size:11.5px; font-weight:700; color:var(--muted); }
+  .sc-legend .sc-dot{ width:11px; height:11px; border-radius:3px; display:inline-block; }
+  .sc-legend .sc-dot:not(:first-child){ margin-left:12px; }
   .chart-wrap{ background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-top:12px; }
   #chart{ position:relative; height:140px; margin-top:0; touch-action:none; cursor:pointer;
           user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
@@ -937,6 +951,13 @@ __GA__
     <div class="gauge-scale"><span>지금 사기 좋음</span><span>아까움</span></div>
     <div class="gauge-short" id="gaugeShort"></div>
     <div class="gauge-note" id="gaugeNote" style="display:none"></div>
+  </section>
+
+  <section class="sigcal" id="sigCal" style="display:none">
+    <div class="gauge-top"><span class="gauge-cap">신호등 달력</span><span id="sigCalWho" class="gauge-label"></span></div>
+    <div class="sc-head"><span class="sc-wk"></span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span></div>
+    <div id="sigCalBody"></div>
+    <div class="sc-legend"><span class="sc-dot sc-g"></span>좋음<span class="sc-dot sc-y"></span>보통<span class="sc-dot sc-r"></span>아까움</div>
   </section>
 
   <section class="chart-wrap" id="chartWrap" style="display:none">
@@ -1375,6 +1396,56 @@ function renderGauge(rateNow, rates){
   }
 }
 
+// 공용 판정 엔진(게이지와 동일): 특정 거래일(idx)의 zone 0~4. keys=정렬된 날짜.
+function zoneForDay(rates, keys, idx, w){
+  const cur = rates[keys[idx]].KRW;
+  const pctIn = n => {
+    const s = Math.max(0, idx-n+1);
+    const vals = keys.slice(s, idx+1).map(k => rates[k].KRW);
+    if(vals.length < 2) return null;
+    return vals.filter(v => v <= cur).length / vals.length;
+  };
+  const p7=pctIn(7), p30=pctIn(22), p90=pctIn(63);
+  if(p90 == null) return null;
+  const a7=(p7!=null)?p7:((p30!=null)?p30:p90), a30=(p30!=null)?p30:p90;
+  const pct = w.w[0]*a7 + w.w[1]*a30 + w.w[2]*p90;
+  const remap = p => { const xs=[0,0.10,0.30,0.70,0.90,1], ys=[0,0.20,0.40,0.60,0.80,1];
+    for(let i=1;i<xs.length;i++){ if(p<=xs[i]){ const t=(p-xs[i-1])/(xs[i]-xs[i-1]); return ys[i-1]+t*(ys[i]-ys[i-1]); } } return 1; };
+  return Math.min(4, Math.floor(remap(pct)*5));
+}
+
+// 신호등 달력: 최근 3주(월~금) 일별 판정색. 같은 엔진·페르소나별 — "매일 빨강 아님"을 정직하게 보여줌.
+function renderSigCal(rates){
+  const body = document.getElementById('sigCalBody'); if(!body) return;
+  const keys = Object.keys(rates).sort();
+  if(keys.length < 5) return;
+  const w = SET_W[activeSet] || SET_W.student;
+  const NM = { student:'유학생', investor:'투자자', traveler:'여행자' };
+  const who = document.getElementById('sigCalWho'); if(who) who.textContent = (NM[activeSet]||'유학생')+' 기준';
+  const colorOf = {};
+  for(let i=0;i<keys.length;i++){ const z=zoneForDay(rates,keys,i,w); colorOf[keys[i]] = z==null?null:(z<=1?'g':(z===2?'y':'r')); }
+  const last = keys[keys.length-1];
+  const [ly,lm,ld] = last.split('-').map(Number);
+  const lastDate = new Date(ly, lm-1, ld);
+  const dow = (lastDate.getDay()+6)%7;   // 월=0
+  const pad = n => (n<10?'0':'')+n;
+  const fmt = d => d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+  let rows='';
+  for(let wk=2; wk>=0; wk--){
+    const mon = new Date(lastDate); mon.setDate(lastDate.getDate()-dow-wk*7);
+    let cells='';
+    for(let d=0; d<5; d++){
+      const day = new Date(mon); day.setDate(mon.getDate()+d);
+      const k = fmt(day), c = colorOf[k];
+      const lab = c ? Math.round(rates[k].KRW).toLocaleString() : '';
+      cells += '<span class="sc-cell '+(c?('sc-'+c):'sc-none')+(k===last?' sc-today':'')+'">'+lab+'</span>';
+    }
+    rows += '<div class="sc-row"><span class="sc-wk">'+(mon.getMonth()+1)+'/'+mon.getDate()+'</span>'+cells+'</div>';
+  }
+  body.innerHTML = rows;
+  document.getElementById('sigCal').style.display = 'block';
+}
+
 function renderChart(rateNow, rates, days){
   // 선택 기간 라인 + 평균선, 평균 위(비쌈)=빨강/아래(쌈)=초록 구간, 현재 점.
   days = days || 63;
@@ -1486,6 +1557,7 @@ async function loadRate(){
   render(today, yest);
   renderBaseline(today, rates);
   renderGauge(today, rates);
+  renderSigCal(rates);
   chartRates = rates; chartNow = today;
   renderChart(today, rates, chartDays);
   renderTip();
@@ -1590,6 +1662,7 @@ document.getElementById('tabs').addEventListener('click', e => {
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === b));
   if(lastDelta != null) renderFeel(lastDelta);
   if(chartRates) renderGauge(chartNow, chartRates);   // 관점 바뀌면 매력도도 재계산
+  if(chartRates) renderSigCal(chartRates);            // 신호등 달력도 페르소나별 재계산
   renderTip();                                         // 관점 바뀌면 조언·제목·예시도 재계산
   flashPersona();                                      // "바뀌었다" 체감(살짝 깜빡)
 });
