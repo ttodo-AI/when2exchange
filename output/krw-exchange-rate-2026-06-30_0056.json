@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-30T00:56:11.425779+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,540 KRW/USD\n\nWHY: The won is at a 28-year weak point (high KRW per USD), making dollars expensive to buy right now. However, news suggests downward pressure on the exchange rate (\"환율 하락 압력\") with stabilization expected around 1,540, indicating the won may strengthen soon—meaning waiting could lower your conversion cost.\n\nTIP: If the won continues strengthening toward 1,500, delaying your conversion could save you money; if it weakens further past 1,540, convert immediately rather than wait longer."
+  },
+  "articles": [
+    {
+      "title": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBjbE5EcElWczJfb3JkZ1REeWpwM0ZMZmlZbTNRZS12enB4eVJZNkFINWhzVk5hdlZraVR1OGNTWVdGek9Md2lpdGtLazBRc2tIZDJiUQ?oc=5",
+      "summary": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-06-29T05:14:05+00:00"
+    },
+    {
+      "title": "하이닉스 ADR, 1500원대 환율 ‘구원투수’ 되나",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOclc3WmtscWoyOS11cVVIaExuSktNS2U3aVNKTUtuN2VaOWU3R2Ruc1VLaktIQkktZVpxSmRtNFRTZG93YVlrbGJucFZTVm8tQUhjWjltZFRsMHRISTVkY1FMcVAtNmtDZi1mVk03N3R3b3QwTDdPNTdZTUNHNVdpQQ?oc=5",
+      "summary": "하이닉스 ADR, 1500원대 환율 ‘구원투수’ 되나 이데일리",
+      "source": "이데일리",
+      "date": "2026-06-29T20:00:04+00:00"
+    },
+    {
+      "title": "[모닝 리포트] 반기 말 네고에 환율 하락 압력…\"1540원 중심 흐름\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9rMkxPLVdFWDdZYmltc1ZKWnNEN0lEZ25KVEp6ek53bFExbU0taUVtQ3ZlbXhqV0ZjNUE3Ri1vN0x6MFJaZ3pZc3V5NHBLWDVpTUFj?oc=5",
+      "summary": "[모닝 리포트] 반기 말 네고에 환율 하락 압력…\"1540원 중심 흐름\" 네이트",
+      "source": "네이트",
+      "date": "2026-06-30T00:14:00+00:00"
+    }
+  ]
+}
