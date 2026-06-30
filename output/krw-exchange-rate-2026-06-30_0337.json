@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-06-30T03:37:19.399896+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1540 KRW/USD (with recent highs near 1400s referenced as historical benchmark)\n\nWHY: The news indicates the won is currently WEAK (high KRW per USD), making dollars expensive to buy. While one article mentions \"1400원 다시 볼 수 있을까\" (could we see 1400 won again), the consensus is for \"고환율 지속\" (sustained high exchange rates) around 1540 won, suggesting the won will likely remain weak or weaken further near-term.\n\nTIP: Consider splitting your monthly $2,000 purchase into smaller weekly or bi-weekly amounts to average out the unfavorable rate, rather than buying all at once when the won is weak."
+  },
+  "articles": [
+    {
+      "title": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1JcWlDZWhaWXo0WmFrLXdJSkZ4M0NreXd0eUxMSEx5dUoxa2xVZzVzU2tHU2N0Y29sUzJGYzd5MHlHRUpNeTVBNXY1UQ?oc=5",
+      "summary": "28년 만에 최고치…반도체가 ‘환율’을 잡을 수 있을까 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-06-29T05:14:05+00:00"
+    },
+    {
+      "title": "“환율 1400원 다시 볼 수 있을까”...시장 전망은 ‘고환율 지속’",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBITlcyaUM0X0hoOXlyNC1MTXdIN3lDNUowQmFOQjBpOEZxeS12dTRqUTZGUDFUUVNRbkxfSkxJU1R5ZWtCdDgtNlFQYy1yTGhuNlhDNjd4S1BmWFU?oc=5",
+      "summary": "“환율 1400원 다시 볼 수 있을까”...시장 전망은 ‘고환율 지속’ 에너지경제신문",
+      "source": "에너지경제신문",
+      "date": "2026-06-30T01:41:24+00:00"
+    },
+    {
+      "title": "[모닝 리포트] 반기 말 네고에 환율 하락 압력…\"1540원 중심 흐름\"",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9OSFFxcHBIakg4N2J5NzNsU0hQaTZUOVdXNlR3QVFuS3hxQkIyUHRTWFlPWDF1OUVTZm5LQzFqVTM5TXk5VGNFMTgyeVJ0Wk5DLUQ4NTdKU29lVGdZ?oc=5",
+      "summary": "[모닝 리포트] 반기 말 네고에 환율 하락 압력…\"1540원 중심 흐름\" 뉴스핌",
+      "source": "뉴스핌",
+      "date": "2026-06-30T00:12:00+00:00"
+    },
+    {
+      "title": "하이닉스 ADR, 1500원대 환율 ‘구원투수’ 되나",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOclc3WmtscWoyOS11cVVIaExuSktNS2U3aVNKTUtuN2VaOWU3R2Ruc1VLaktIQkktZVpxSmRtNFRTZG93YVlrbGJucFZTVm8tQUhjWjltZFRsMHRISTVkY1FMcVAtNmtDZi1mVk03N3R3b3QwTDdPNTdZTUNHNVdpQQ?oc=5",
+      "summary": "하이닉스 ADR, 1500원대 환율 ‘구원투수’ 되나 이데일리",
+      "source": "이데일리",
+      "date": "2026-06-29T20:00:04+00:00"
+    }
+  ]
+}
