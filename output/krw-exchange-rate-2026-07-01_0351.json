@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-01T03:51:47.515769+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,528 KRW/USD (June average); risk of 1,600+ KRW/USD\n\nWHY: The won is currently weak (high KRW per USD), making your monthly $2,000 conversion expensive. News indicates further weakening pressure ahead—analysts warn the rate could breach 1,600 KRW/USD if interest rate hikes don't materialize, with only modest long-term recovery expected by year-end (1,430–1,530 range).\n\nTIP: If possible, consider dollar-cost averaging smaller amounts or waiting for signs of won strength (rate dipping toward 1,430) before converting your full monthly allocation."
+  },
+  "articles": [
+    {
+      "title": "올해 2분기 평균 환율 1501.6원, IMF 위기 이후 28년 만에 1500원 넘어",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNSHliYUpoUnhqLXY3ZV8teUx0NXQxcHJKYkc3NEREVk1mYV9IY2s4Y1ZQRzZmVGpnVFFqUlU3Uzk5ZEgyQkZudmN6N2hxUHlKMWVwc1NTNTBydHVySkVoNzhWUzFvYm8tdmMzV3dvR01NRHc5dnMwT19mSzlCUE9ieUtTT1hJX01iaF94M0FR?oc=5",
+      "summary": "올해 2분기 평균 환율 1501.6원, IMF 위기 이후 28년 만에 1500원 넘어 조선일보",
+      "source": "조선일보",
+      "date": "2026-06-30T06:48:13+00:00"
+    },
+    {
+      "title": "신한은행 \"SK하이닉스 ADR, 오히려 7월 원화 약세 요인일 수도\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE4xWGJSMENHTXdrSmpldkNHZE04T2pWQmFXcTMxWjUyUXhnSUp1VFhjeWpnUGdOalN6TlZJMXVDUXFMN1JTMTRzYU1qQ3pMeFBGeE9KRnVHTTczU2x6eUlCMm54STFJVmtoMGY3c29aX1U3UQ?oc=5",
+      "summary": "신한은행 \"SK하이닉스 ADR, 오히려 7월 원화 약세 요인일 수도\" KB Think",
+      "source": "KB Think",
+      "date": "2026-06-30T04:59:04+00:00"
+    },
+    {
+      "title": "“7월 금리 올려도 역부족…추가 인상 시그널 없인 환율 1600원 넘을수도”",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jeFkxZFBzbzdMeTVPYzVha2VuaFJDejNDbERZcy1CVnEyNkRWOFFwZ0FPeGJwbVQyRHg4Z1J4YzcwT285bFUwN0FoODhraDVSby1B0gFTQVVfeXFMTmN4WTFkUHNvN0x5NU9jNWFrZW5oUkN6M0NsRFlzLUJWcTI2RFY4UXBnQU94YnBtVDJEeDhnUnhjNzBPbzlsVTA3QWg4OGtoNVJvLUE?oc=5",
+      "summary": "“7월 금리 올려도 역부족…추가 인상 시그널 없인 환율 1600원 넘을수도” 서울경제",
+      "source": "서울경제",
+      "date": "2026-06-30T09:17:49+00:00"
+    },
+    {
+      "title": "[Why&Next]\"6월 평균 1528원\"…연말 환율 '1430원 vs 1530원', 핵심 변수는",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1kclREazhRMk1CdkhIRGVlVFdMdVZoQTI1TWFaSkFfdHV2UGlGU29Vc3QtbmQ4dUpqd2FpY25DRVVaWmZvcTR6OVp1YWRDUzZiZnlYUWlOcnFWSG05ZW1uRzd2QVdQUHNGNGc?oc=5",
+      "summary": "[Why&Next]\"6월 평균 1528원\"…연말 환율 '1430원 vs 1530원', 핵심 변수는 네이트",
+      "source": "네이트",
+      "date": "2026-07-01T03:06:00+00:00"
+    },
+    {
+      "title": "“전고점 1560원 돌파가 분수령…환율, 중장기 경로는 완만한 하락”",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Eam9rNWRIOUdtclZCQ1lUQndSbGEyRkxXMGVTSWJjaEtRTVpCMlVsdDN3eGliWTlfTmZESFRoNEY3dW85MHFnMldHNEctRkY5R2RtZm1n?oc=5",
+      "summary": "“전고점 1560원 돌파가 분수령…환율, 중장기 경로는 완만한 하락” 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-07-01T00:50:01+00:00"
+    },
+    {
+      "title": "사상 최대 배당까지…대만달러 약세 압박 [아시아 환율 비상]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE93N1dWM18weVVxRW5LRnlyWTh4LVdsbmp4dTZ4blQzWFU3UG5iRUZDWENMNEVvV1NpQ1hKWmt5UUlwbTVyZjdvUUE5cE5QeUJWY21J?oc=5",
+      "summary": "사상 최대 배당까지…대만달러 약세 압박 [아시아 환율 비상] 네이트",
+      "source": "네이트",
+      "date": "2026-06-30T06:54:00+00:00"
+    }
+  ]
+}
