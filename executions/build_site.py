@@ -61,22 +61,19 @@ def today_factors_exist(today: date) -> bool:
 
 
 def should_run_calendar(today: date):
-    """econ_calendar를 돌릴지 결정 (주간+트리거). → (bool, 이유).
-    매일 안 돌리되: 캘린더 없음 / 월요일(주 시작) / 3일 이상 묵음 / ★★★ 이벤트가
-    어제~오늘이면(결과 채우기) 재생성. 그 외엔 최신 calendar 재사용(콜 절약)."""
+    """econ_calendar를 돌릴지 결정 → (bool, 이유).
+    calendar는 full 빌드(하루 1회)에서만 호출되므로, '오늘자'가 아니면 무조건 재생성한다.
+    guide 문구는 생성 시점의 상대시점('이번 주/다음 주/목요일')·가격대를 박제하는데,
+    rate·factors는 매일 갱신되고 D-Day 칩은 rate.asof(=오늘)로 재계산되므로,
+    calendar를 매일 새로 뽑지 않으면 guide 기준(생성일)과 D-Day 기준(오늘)이 어긋난다.
+    → 오늘자면 재사용(★★★ 결과 채움만 예외), 아니면 재생성해 기준을 하나로 맞춘다."""
     cfs = sorted(glob.glob(os.path.join(ROOT, "output", "calendar-*.json")))
     if not cfs:
         return True, "캘린더 없음"
     m = re.search(r"calendar-(\d{4}-\d{2}-\d{2})", os.path.basename(cfs[-1]))
     cal_date = m.group(1) if m else None
     if cal_date != today.isoformat():
-        if today.weekday() == 0:
-            return True, "주 시작(월요일)"
-        try:
-            if (today - date.fromisoformat(cal_date)).days >= 3:
-                return True, f"{(today - date.fromisoformat(cal_date)).days}일 묵음"
-        except (ValueError, TypeError):
-            return True, "캘린더 날짜 파싱 실패"
+        return True, "오늘자 아님(재생성) — guide·D-Day 기준 일치"
     # ★★★ 이벤트가 방금(어제~오늘) 지났으면 결과를 채우러 1회 재생성
     try:
         for e in json.load(open(cfs[-1], encoding="utf-8")).get("events", []):
@@ -180,7 +177,7 @@ def heal_latest_factors():
     cal = latest("calendar-*.json")
     events = (load(cal, {}) or {}).get("events", []) if cal else []
     today = datetime.now(timezone(timedelta(hours=9))).date()
-    sanitize_copy(fj, rj, today)
+    sanitize_copy(fj, rj, today, events)
     blocks, warns = validate_briefing(fj, rj, events, "", today)
     fj["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
     with open(ff, "w", encoding="utf-8") as fh:
@@ -205,7 +202,10 @@ def publish_today_json():
         "heat": fj.get("heat", ""),
         "title_badge": fj.get("title_badge", ""),
         "factors": fj.get("factors", []),
-        "calendar": {"guide": cj.get("guide", ""), "events": cj.get("events", [])},
+        # today_kst = calendar 생성일(=guide 문구의 '오늘' 기준). 클라가 D-Day 기준(rate.asof=오늘)과
+        # 비교해, 어긋나면(=guide가 묵음) 상대시점 문구가 오도하지 않도록 guide를 숨긴다.
+        "calendar": {"guide": cj.get("guide", ""), "events": cj.get("events", []),
+                     "today_kst": cj.get("today_kst", "")},
     }
     out = os.path.join(SITE, "today.json")
     with open(out, "w", encoding="utf-8") as fh:

@@ -203,12 +203,48 @@ def _heal_intraday_close(s: str, rate: dict, today) -> str:
                   _repl, s)
 
 
-def sanitize_copy(payload: dict, rate: dict = None, today=None) -> dict:
-    """예보 금지어·정밀 델타숫자·장중 거짓종가를 코드로 중화(API 0). validate 직전·build_site에서 호출.
-    멱등(여러 번 적용해도 동일) — full엔 무해, light 재사용분 desync를 무인으로 해소.
-    rate·today를 주면 장중 거짓종가(check-A)까지 자가치유한다."""
+def _past_only_kws(cal_events, today):
+    """★★★ 이벤트 중 '모두 과거(앞으로 예정 없음)'인 EVENT_KW 집합 — 시제 자가치유용.
+    validate_briefing 시제 점검(#8)과 동일 기준."""
+    if not cal_events or today is None:
+        return set()
+    dd = {}
+    for e in cal_events:
+        try:
+            d = (date.fromisoformat(e.get("date", "")) - today).days
+        except (ValueError, TypeError):
+            continue
+        if int(e.get("importance", 0)) >= 3:
+            for kw in EVENT_KW:
+                if kw in (e.get("name", "") or ""):
+                    dd.setdefault(kw, []).append(d)
+    return {kw for kw, ds in dd.items() if any(x < 0 for x in ds) and not any(x >= 0 for x in ds)}
+
+
+def _heal_tense(s: str, past_kws) -> str:
+    """지난 이벤트를 미래형으로 쓴 시제 오류를 '깨끗이 고쳐지는 케이스만' 보수적으로 중화(API 0).
+    'X(을/를) 앞두고'→'X 뒤', 'X …예정' 제거. past-only kw 주변(12자)에서만 적용 —
+    진짜 미래 이벤트는 안 건드린다. 드문 형태(앞둔/열린다/개최 등)는 게이트가 계속 막게 둔다."""
+    if not s or not past_kws:
+        return s
+    for kw in past_kws:
+        k = re.escape(kw)
+        s = re.sub(rf"({k}[^.。]{{0,12}}?)\s*(?:을|를)?\s*앞두고서?", r"\1 뒤", s)
+        s = re.sub(rf"({k}[^.。]{{0,10}})\s*(?:발표\s*)?예정(?:이다|입니다|인|된)?", r"\1", s)
+    s = re.sub(r"\s{2,}", " ", s)
+    s = re.sub(r"\s+([.。,;:!?])", r"\1", s)   # 부호 앞 공백 정리(…발표 . → …발표.)
+    return s.strip()
+
+
+def sanitize_copy(payload: dict, rate: dict = None, today=None, cal_events=None) -> dict:
+    """예보 금지어·정밀 델타숫자·장중 거짓종가·지난이벤트 미래형을 코드로 중화(API 0).
+    validate 직전·build_site에서 호출. 멱등(여러 번 적용해도 동일) — full엔 무해, light
+    재사용분 desync를 무인으로 해소. rate·today→장중거짓종가, cal_events·today→시제까지 치유."""
+    past_kws = _past_only_kws(cal_events, today)
     def h(x):
         x = _heal_text(x)
+        if past_kws:
+            x = _heal_tense(x, past_kws)
         if rate is not None and today is not None:
             x = _heal_intraday_close(x, rate, today)
         return x
@@ -679,7 +715,7 @@ def rewrite_why(client, model: str) -> None:
     data["heat"] = heat_meta["heat"]
     data["heat_reason"] = heat_meta["heat_reason"]
     data["title_badge"] = heat_meta["title_badge"]
-    sanitize_copy(data, rate_obj, today_date)   # 예보어·델타숫자·장중거짓종가 자가치유(API 0)
+    sanitize_copy(data, rate_obj, today_date, cal_events)   # 예보어·델타·장중종가·시제 자가치유(API 0)
     blocks, warns = validate_briefing(data, rate_obj, cal_events, prev_card_title(exclude=path), today_date)
     data["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
     now = datetime.now(timezone.utc)
@@ -935,7 +971,7 @@ def main() -> None:
         "title_badge": heat_meta["title_badge"],
     }
     # 발행 전 검증(웹·캐러셀과 동일 기준) → checks를 JSON에 박아 하류 게이트가 상속.
-    sanitize_copy(payload, rate_obj, today_date)   # 예보어·델타숫자·장중거짓종가 자가치유(API 0)
+    sanitize_copy(payload, rate_obj, today_date, cal_events)   # 예보어·델타·장중종가·시제 자가치유(API 0)
     blocks, warns = validate_briefing(payload, rate_obj, cal_events, prev_card_title(), today_date)
     payload["checks"] = {"passed": not blocks, "blocks": blocks, "warnings": warns}
 
