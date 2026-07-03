@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-03T02:55:44.422654+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1550 KRW/USD (recently breached)\n\nWHY: The won is currently weak (high KRW per USD), making dollars expensive right now. Multiple analysts forecast the won will strengthen significantly over the next 3 months, with Citi predicting rates falling to 1500 KRW/USD and some forecasts opening the door to 1600 KRW/USD possibilities—meaning you would get more won per dollar if you wait.\n\nTIP: Consider delaying or staggering your July conversion if possible, since waiting 2–3 months could substantially reduce your KRW cost per $2,000 as the won strengthens."
+  },
+  "articles": [
+    {
+      "title": "외인 10일째 '셀 코리아'…\"환율, 1600원 가능성도 열어둬야\" [분석+]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ENjNaZE95Vm83LTRLb0U4NXdSV2MzTWFRNnl2dHJXU2NVc3pUY1pfdG04bGZNMDd5b0RHU1NCemRtTzVsdlZMeGNtNm0tVXRvZ1N4NtIBVEFVX3lxTE9ENjNaZE95Vm83LTRLb0U4NXdSV2MzTWFRNnl2dHJXU2NVc3pUY1pfdG04bGZNMDd5b0RHU1NCemRtTzVsdlZMeGNtNm0tVXRvZ1N4Ng?oc=5",
+      "summary": "외인 10일째 '셀 코리아'…\"환율, 1600원 가능성도 열어둬야\" [분석+] 한국경제",
+      "source": "한국경제",
+      "date": "2026-07-02T21:30:01+00:00"
+    },
+    {
+      "title": "\"하반기 환율 상단 1600원까지 열어둬야\"... 시장 전망 잇따라",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Ed0RCdjJLOEJ6MjJsdzdFb0x4WXBFdW5lcHAxQlZSakhfYV9EMjNnLWxndnJKZkpNcUh2Z1pTSVlJODBSNnlfNml0dE5Ec2g1SlExdVM0VUxMS0xINE5ZQU5yZHZkY3lUWUI1cEV5NFc3VjDSAXNBVV95cUxPRHdEQnYySzhCejIybHc3RW9MeFlwRXVuZXBwMUJWUmpIX2FfRDIzZy1sZ3ZySmZKTXFIdmdaU0lZSTgwUjZ5XzZpdHRORHNoNUpRMXVTNFVMTEtMSDROWUFOcmR2ZGN5VFlCNXBFeTRXN1Yw?oc=5",
+      "summary": "\"하반기 환율 상단 1600원까지 열어둬야\"... 시장 전망 잇따라 한국일보",
+      "source": "한국일보",
+      "date": "2026-07-02T07:30:00+00:00"
+    },
+    {
+      "title": "씨티 \"향후 3개월 안에 원·달러 환율 1500원대 하락 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBQZFVsQXBKaDdDb2laM0dlVkJ1VWZ6MlRyRklzbThfay1KYzlxRERyYVlvdXFqWlpyR09IODIzWngyYXRpLUpsc0xsV2hhZFZjSS1N?oc=5",
+      "summary": "씨티 \"향후 3개월 안에 원·달러 환율 1500원대 하락 전망\" 네이트",
+      "source": "네이트",
+      "date": "2026-07-03T02:22:00+00:00"
+    },
+    {
+      "title": "외환시장 6일부터 24시간 체제로…1550원 뚫은 환율에 약일까 독일까",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WRF9GY3pvcG1mYXhkc2JOanJ1b1pHNVI5a01IVnZFOXFtbjlQZjhzQ2gzNWZFc1ptTEdpYTVJd0ZlQ0dIY3lsYW1EOExXeUxFMThTcS1pNklIMG5VNkI3UWxFZ01oWExFeS01OFlURmpWZHhWc19GU9IBeEFVX3lxTE1WRF9GY3pvcG1mYXhkc2JOanJ1b1pHNVI5a01IVnZFOXFtbjlQZjhzQ2gzNWZFc1ptTEdpYTVJd0ZlQ0dIY3lsYW1EOExXeUxFMThTcS1pNklIMG5VNkI3UWxFZ01oWExFeS01OFlURmpWZHhWc19GUw?oc=5",
+      "summary": "외환시장 6일부터 24시간 체제로…1550원 뚫은 환율에 약일까 독일까 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-02T06:04:35+00:00"
+    },
+    {
+      "title": "씨티 “원·달러 환율 1500원 수준까지 하락 전망”…국민연금 환헤지 변수",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9GQUZQMU1McV9TaVd4d0IzellMLURtU2h3Z3dmdnNsSWNHZHpQSzFFUkdoR1dnbVQ3ZnlremVGS0o1ck1GdEV5SXpMTGdIWUo0MFowZGxteEI2ZlZWejZGcVRsazIwT2hqZ1lXQ29KUUVyZC1B?oc=5",
+      "summary": "씨티 “원·달러 환율 1500원 수준까지 하락 전망”…국민연금 환헤지 변수 이투데이",
+      "source": "이투데이",
+      "date": "2026-07-03T02:39:00+00:00"
+    }
+  ]
+}
