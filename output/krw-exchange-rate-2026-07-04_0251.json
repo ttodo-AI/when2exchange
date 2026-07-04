@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-04T02:51:59.201479+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1550–1600 KRW per USD (current); expected to weaken to 1500 within 3 months\n\nWHY: The won is currently weak (high KRW per USD), making your $2,000 monthly conversion expensive. Multiple analysts, including Citi, forecast the won will strengthen to around 1500 KRW/USD within 3 months as semiconductor exports stabilize, meaning you would need fewer won to buy the same dollars later.\n\nTIP: If possible, consider delaying or scaling back conversions this month and waiting 2–3 months for the won to strengthen, which would reduce your monthly won cost significantly."
+  },
+  "articles": [
+    {
+      "title": "\"같은 학비인데 수백만원 더 내\"…고환율에 신음하는 유학생들[1600원 환율 오나①]",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBtNDBTUUxaY1FwMTU5Q2g5dHIwbkZ2OG1mZXJMYTVWcFF1TFNnaE9pcHptQkNjMEhrU1J1SW8zMUcyQXNJMHRnMS10M1ExMVlJSjV3UmdKbXpYaGhjVTdEM3RBMlVDTHl1aVkzZG5wcWlYME4xTlV6X9IBeEFVX3lxTFBtNDBTUUxaY1FwMTU5Q2g5dHIwbkZ2OG1mZXJMYTVWcFF1TFNnaE9pcHptQkNjMEhrU1J1SW8zMUcyQXNJMHRnMS10M1ExMVlJSjV3UmdKbXpYaGhjVTdEM3RBMlVDTHl1aVkzZG5wcWlYME4xTlV6Xw?oc=5",
+      "summary": "\"같은 학비인데 수백만원 더 내\"…고환율에 신음하는 유학생들[1600원 환율 오나①] 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-03T23:00:00+00:00"
+    },
+    {
+      "title": "“시장에 달러가 넘쳐 난다” 마이너스 프리미엄까지, 고환율 시대 무슨 일?",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE44S3hzc3pZc1Q4eUdEQ2lBQ193X0RZU29DMVV2UkxiU2h1SFI2dGVTM2NRbE80aEJnWXlYdG1nUHJObHNZVDF6djl0MjJURzhFTThrZy1R?oc=5",
+      "summary": "“시장에 달러가 넘쳐 난다” 마이너스 프리미엄까지, 고환율 시대 무슨 일? 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-07-03T21:16:37+00:00"
+    },
+    {
+      "title": "원·달러 환율 전망 엇갈려...\"1600원 열어둬야\" vs \"3개월 내 1500원선\"",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwd3QxWjJpTEpHWGhsWHc3WDEyRFpDMWc5LTRtVU9aR0pOR21CXzJDM1RDNDRnUG1vS1VPODRjbEdFRzBHRXZIWnR5T0JrQ1VkV0ZVRDU1WnlreWhMcDIzZzg2Yw?oc=5",
+      "summary": "원·달러 환율 전망 엇갈려...\"1600원 열어둬야\" vs \"3개월 내 1500원선\" 녹색경제신문",
+      "source": "녹색경제신문",
+      "date": "2026-07-03T08:01:43+00:00"
+    },
+    {
+      "title": "씨티 “환율 석달 내 1500원선 회복” 전망한 근거가…“반도체 수출이 버팀목”",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE43UXZhV0ZXOEwyWVNlZ0RPZURfMVp1UXlVd3NIWF92Z19yWWxtSzZ6SUdaNFp4TGJVaGU5ZzBYSVdPb19kckxpVS1tbm92WFZkQWc?oc=5",
+      "summary": "씨티 “환율 석달 내 1500원선 회복” 전망한 근거가…“반도체 수출이 버팀목” 매일경제 마켓",
+      "source": "매일경제 마켓",
+      "date": "2026-07-03T04:28:56+00:00"
+    },
+    {
+      "title": "[NBN심층분석] 원·달러 외환시장 24시간 거래, 1550원대 환율 안정시킬까 변동성 키울까?",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1QeTZtSDdzSUdHQTFLUWZnR0VaOFlVMW01VU1HTGpNek9mdjZLMEhsR2RKRXRXb2J2bVR2U29DMlhBM1ZHTFFvUnBYb3ZvSW5TM1BVbTJhRmRvYzNUaDNVdEZ3Snh0QWxfQjhOMdIBcEFVX3lxTE5wTUhmMGFLdndLX203UERHSDJfVmF5RXk5MVZTZkZ5YmdzZVQ2ZF9xWDRoZmZZRHN4LXpnTnZSaFE2a2lGUVhkNkJ6b3FraXZJOWlBN21UUW5PakRRTmtGc20tVF81RWNCQWZmdVg4STA?oc=5",
+      "summary": "[NBN심층분석] 원·달러 외환시장 24시간 거래, 1550원대 환율 안정시킬까 변동성 키울까? 내외뉴스통신",
+      "source": "내외뉴스통신",
+      "date": "2026-07-03T07:08:31+00:00"
+    },
+    {
+      "title": "고환율에 엇갈린 희비…\"여행 일주일 더\" vs \"곧 폐업\"",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHalJMbFJzS3ZHY2JFQ05yT1cxSFJIOU1ZUVBUSUFHUmVFQnNLWVU3QTdORGRqTFBDN1hid2ZZS09NeTJENEFneXZibTlJaFFvaXprMGJ5NUVUVnktTk9FcGFjRmUwWlBBS0VyTkFGVnAxc0RTTUctR9IBeEFVX3lxTFBHalJMbFJzS3ZHY2JFQ05yT1cxSFJIOU1ZUVBUSUFHUmVFQnNLWVU3QTdORGRqTFBDN1hid2ZZS09NeTJENEFneXZibTlJaFFvaXprMGJ5NUVUVnktTk9FcGFjRmUwWlBBS0VyTkFGVnAxc0RTTUctRw?oc=5",
+      "summary": "고환율에 엇갈린 희비…\"여행 일주일 더\" vs \"곧 폐업\" 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-04T00:00:00+00:00"
+    },
+    {
+      "title": "\"한국씨티은행 예상… 원/달러 환율 1,500원으로 하락 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85R0VsdWdlYUs4TE04RTcwbUJEMFhvMTJSN1ZpZk1NeFJHSFR3UVJZREdqX1UyM05hS1JWTVFhNW1uT1h6eEVKLXJIa2FMRGJfY0xPOUYxT0dVUUNtZW4xQi1fbl81RGFX?oc=5",
+      "summary": "\"한국씨티은행 예상… 원/달러 환율 1,500원으로 하락 전망\" 공감신문",
+      "source": "공감신문",
+      "date": "2026-07-03T06:11:44+00:00"
+    },
+    {
+      "title": "한국씨티은행, 원/달러 환율 1,500원 전망… 외환시장 안정 조치 주목",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBSLVVrWmpCckllb1ZQRXBmb3NuaTFMZjZPdjJOWTZtUFk4aFhSNWMtTkk3Q2ZxRWozbzZaWlJKNk5GZjFVcnhpZVVFNXZjY2JEY0FOQ2o2Rk54ZjNr0gFcQVVfeXFMUFItVWtaakJySWVvVlBFcGZvc25pMUxmNk92Mk5ZNm1QWThoWFI1Yy1OSTdDZnFFajNvNlpaUko2TkZmMVVyeGllVUU1dmNjYkRjQU5DajZGTnhmM2s?oc=5",
+      "summary": "한국씨티은행, 원/달러 환율 1,500원 전망… 외환시장 안정 조치 주목 tokenpost.kr",
+      "source": "tokenpost.kr",
+      "date": "2026-07-03T08:24:02+00:00"
+    }
+  ]
+}
