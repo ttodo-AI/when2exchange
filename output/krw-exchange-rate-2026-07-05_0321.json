@@ -1,0 +1,20 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-05T03:21:59.782753+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,600 KRW/USD (or higher)\n\nWHY: The headline indicates the won is weakening toward 1,600 KRW per dollar despite five rounds of verbal intervention and maximum foreign currency supply measures by authorities. A weak won (high KRW/USD ratio) makes your monthly $2,000 conversion more expensive in won terms, and the trend appears to be deteriorating further.\n\nTIP: Consider accelerating conversions or using forward contracts if available, since the won weakness appears persistent despite government efforts to support it."
+  },
+  "articles": [
+    {
+      "title": "환율 '1600원' 전망도…5차례 구두개입·외화공급 총동원에도 '백약무효'",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14UHBzMnZ3ZlFzblkzcWpzVGhTV0FHa1NneUtGYl91eVVocXhPbnlhdGZUX1dycjBqelNrLVJXcmRZeG04cGh3dVIzOGpPVXF6dThVaUlla2F0Zw?oc=5",
+      "summary": "환율 '1600원' 전망도…5차례 구두개입·외화공급 총동원에도 '백약무효' 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-04T22:15:00+00:00"
+    }
+  ]
+}
