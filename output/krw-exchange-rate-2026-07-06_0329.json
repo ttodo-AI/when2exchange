@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-06T03:29:48.544227+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,520–1,532 KRW/USD\n\nWHY: The won is currently weak, with the exchange rate in the 1,500+ range (specifically 1,527.6–1,532 KRW per USD mentioned in recent reports). News indicates dollar supply is recovering and the rate is expected to fluctuate around the \"1520 mid-range,\" suggesting the won remains at elevated weakness. This means you are paying MORE Korean won per US dollar than ideal.\n\nTIP: Consider waiting for the won to strengthen (rate to fall below 1,500) before your monthly conversion if your cash-flow allows, since a stronger won would reduce your KRW cost to buy the same $2,000."
+  },
+  "articles": [
+    {
+      "title": "실수요 앞세운 달러 공급 회복⋯\"1520원 중반서 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE14WUVNbC1xWU5CcFZnSTVMSExUb1VRaksyVmhWV0R1bUNZTE40RDVQRDYwZlprUWhHZGxUcUpLeHZPbUFEZ0pMVE9SSzF5YjE0bXBDQw?oc=5",
+      "summary": "실수요 앞세운 달러 공급 회복⋯\"1520원 중반서 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-07-05T23:06:00+00:00"
+    },
+    {
+      "title": "1천500원대 환율 여름휴가…대구 해외여행객 ‘지갑’ 닫힐까",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5aYWo3MEtILS0xamxmUGlRUUstWWxLWkRXd3hWX0RCRXBQWXlya0ZMWXlzWXJReXROcEZNUmNxVzlzb1NrUDM5bGNWODhXaUdBX0twNDRkeXVsbXJLeVRBeWZQTFA4REZm?oc=5",
+      "summary": "1천500원대 환율 여름휴가…대구 해외여행객 ‘지갑’ 닫힐까 대구일보",
+      "source": "대구일보",
+      "date": "2026-07-05T05:12:08+00:00"
+    },
+    {
+      "title": "외화시장엔 달러 넘치는데…현물환선 '품귀현상' 왜?",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDa0htM0E3Zm5aUERpM3dPS0JqVWZYQWU2U1VwOTV4TUtwS3VVUWZyVEt2ekdjOW15WmNJakpjZEpFT0hCUVZpRW5XeTdKQlFyd0dV?oc=5",
+      "summary": "외화시장엔 달러 넘치는데…현물환선 '품귀현상' 왜? 네이트",
+      "source": "네이트",
+      "date": "2026-07-06T02:31:00+00:00"
+    },
+    {
+      "title": "[필드뒷얘기] “환율 말하면 ‘좌우’ 낙인”…애널리스트에 씌워진 재갈",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jVEF0enFoZDBDZmRlQmpYSHRGenJxZWtGbDhSQmNaeVFQNVBqUjFjWl9ta3NjaGlOb08yS1AxanNOd1FGZXhhQ3VvUTBDdWkwZ0VLRjI0aHV0NlJiV2NnTlpPQWRPb1hvaDhqd1VSVVbSAXBBVV95cUxNY1RBdHpxaGQwQ2ZkZUJqWEh0RnpycWVrRmw4UkJjWnlRUDVQalIxY1pfbWtzY2hpTm9PMktQMWpzTndRRmV4YUN1b1EwQ3VpMGdFS0YyNGh1dDZSYldjZ05aT0FkT29Yb2g4andVUlVW?oc=5",
+      "summary": "[필드뒷얘기] “환율 말하면 ‘좌우’ 낙인”…애널리스트에 씌워진 재갈 DFT 대한금융신문",
+      "source": "DFT 대한금융신문",
+      "date": "2026-07-05T21:06:35+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 24시 개장 첫발…당국 경계 속 수급은",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9EY293bzhJNlFUVTByNFlBcW5rVjBJYnFyYm0zc1BKcnJvaURCdFllWlhmN3lqdVJLSnEzWmo2X0tLc3FKeFFMelQ2QlM4Yjk3Z0tKX05Iekotc21DNFZ5T1hsWUtJZXdjaWhSQk9sVHZNdw?oc=5",
+      "summary": "[신윤우의 외환분석] 24시 개장 첫발…당국 경계 속 수급은 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-05T22:43:31+00:00"
+    },
+    {
+      "title": "외환시장 24시간 개방 첫날… 원·달러 환율, 16.9원 내린 1527.6원 개장 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZk9zWTBrRlNlQTRwR0pTVktnbkpFTjZhUVdPRjFFdjI4cUtNa1FkVzlYd2pUbEV1U0wtODJ5UTJPTTBsekpqeDZ5c1YwQUxzRnEzcTN3bFJ4UnpNcXNoRGpjVjRYT0xGcU5UYV9QU0pZQ3B3WkZBaExFcEF4QURrMFRFSGhud9IBmgFBVV95cUxQRWJuN0dSbUo4MWFQbWsxcFIwamE3Sk5XbjBieXhqU21UZzJWSlRHVDkzTGZwRV9Qdm9EM3ExQzY5cFU5Ti10aDMwR21sOUU5RDk3YW9fUXNTWnN0V0hHTHBlOGozT3BncUtvdXZueTBMSzhyQWlEb1htMnAyQ1BSUUI0Tlo3dzJWcWM4VFpQanF2Vm9UOS1mYmNR?oc=5",
+      "summary": "외환시장 24시간 개방 첫날… 원·달러 환율, 16.9원 내린 1527.6원 개장 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-06T01:50:00+00:00"
+    },
+    {
+      "title": "외환시장 24시간 거래 첫날…달러·원 환율 1532원 출발",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBHX2l2UjhqNW1PaXFmSHVYV25jbkVxMnBmZzhWdjhRNkVDOEdfaE5YdzVWd1g0YWpKYWs1aFI4eDFnV1haTXZRYnEwV1Ewa2JjZTRYai1PY0pnWmplb2hPWlZjOVllaFE1?oc=5",
+      "summary": "외환시장 24시간 거래 첫날…달러·원 환율 1532원 출발 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-07-06T01:05:00+00:00"
+    },
+    {
+      "title": "‘24시간 원화시장’ 막 오른다…1500원 고환율의 기세 꺾을까 |",
+      "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxOVTljQXVCWmF6SE5mSk1nRnBxa2xpLUhtSlFlNm5rQ216ZEdCdzR0ZjFZMk96bEZ1UW1FdzNTWmV5Z2pQb09mZkJrVE9SbVBCeW1GMnNBQ3NfQzNEOERQSW5sY19qaU8wVmtHaVRkcmV2UnB1UFJiVE1iTG10c1Y0S2N6SE42dXRZQ25OU2dQaDROUWdqWU82dWNkampEeEFlZ0pwdXZnOV9YWGN4Ykp5cThDQ0w4M2dwY21QTDRxclIxRWxpZWxOTGtfUlV2VDhuRTZ3TU5TYzd1ajAyb0tMb1d5S1lhaFBjeFluTnozZ3VXOUwxUkh6VlNpYzJSMjV1YlJwVUhzd3BhMV9scnRkTDVydkplQVVlTWJHVlRQX2p6YklVQXpIX1RfLXB0VkZNN21nX3l3UnNMWmFMMEhPWU1za1NDQQ?oc=5",
+      "summary": "‘24시간 원화시장’ 막 오른다…1500원 고환율의 기세 꺾을까 | HeraldK.com",
+      "source": "HeraldK.com",
+      "date": "2026-07-05T03:36:57+00:00"
+    }
+  ]
+}
