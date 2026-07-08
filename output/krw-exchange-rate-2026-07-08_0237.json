@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-08T02:37:54.991073+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,520 KRW/USD\n\nWHY: The won is currently fluctuating below 1,520 KRW/USD, with geopolitical tensions pushing it weaker but authorities monitoring to prevent further depreciation. However, Hana Securities forecasts the won will gradually strengthen (lower KRW/USD) as external headwinds pass their peak, suggesting the rate may improve soon.\n\nTIP: Since a stronger won is expected ahead, consider waiting a few weeks if possible, but maintain your monthly conversion discipline regardless—timing the exact bottom is difficult, and consistency matters more than perfection for fixed obligations."
+  },
+  "articles": [
+    {
+      "title": "[외환] 1,520원 아래 등락…지정학적 긴장 vs 당국 경계",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE93eHJqZmx2aHRqLXFhbzZyM3Radi1HX2lRV29UeEE4VXNrSlJIdWtwbUlGUTFwSHhCYkE1T3dpclhmRVpaelhVdnRiWFZQbXlJLXRKNjBhRF8tZnUwZF96a1RvdHdZSmNEYmxWVHpmanFDQQ?oc=5",
+      "summary": "[외환] 1,520원 아래 등락…지정학적 긴장 vs 당국 경계 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-08T00:20:33+00:00"
+    },
+    {
+      "title": "SK하이닉스 대량 환전 예고편 켜졌다…선물환 매도 출회 중",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE14VTROeUdHdlJ1RXZYLXkySHJVbHVOTmNlTlJyWmpMM29kYnp2WDIyMFc4M1c1N3h4a3lvUnZkWjdnbXBydTJrWl8zQ05hak9DTEF4N2FXdXZVTVltdEVpLTlUR2ZpM3VVaFhDTUVTcETSAXRBVV95cUxQa1hQSEFJZTZCQjhvejgwS1o4YXgxdU5HSVNSVVVxR1RFUV9Ka3RmMjlfcmVkMFNBbTU1ZWlMTExSVmpvZGZDdDFYZktRblhVeUJ0d251elo0WWJ5MDNWRUM1U3ZneEFwQlBTaGpmMDJxT3Bzcw?oc=5",
+      "summary": "SK하이닉스 대량 환전 예고편 켜졌다…선물환 매도 출회 중 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-08T01:25:32+00:00"
+    },
+    {
+      "title": "한화證 “원·달러 환율, 대외 악재 정점 통과…점진적인 하락 전망”",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMEdhV1pwR1J6Z3ZUNzJoT0dpZWpTZlRqRzJvcEhtaGt3SHVNZFV2SVpNSmNJbmU1el9MRmszaHYyXzVKUWViX2lDdTlRSmpRc1UwX0ZfV0U4Nm03MmZBckF0Nnk5NmVvSmpPTERHRDFGeVNUb2swQldvamFCRllqRw?oc=5",
+      "summary": "한화證 “원·달러 환율, 대외 악재 정점 통과…점진적인 하락 전망” 이데일리",
+      "source": "이데일리",
+      "date": "2026-07-07T05:01:40+00:00"
+    }
+  ]
+}
