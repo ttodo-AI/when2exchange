@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-09T02:56:53.591244+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,498.5 KRW/USD\n\nWHY: The won is currently weak at around 1,498–1,500 KRW per USD, meaning you need more won to get your $2,000. News headlines indicate the high exchange rate is persisting despite export growth, and the market is searching for direction around the 1,500 level with no clear strengthening signal yet.\n\nTIP: Consider waiting for won strength (lower KRW/USD rate) before converting, or if you must convert monthly, split purchases across multiple dates to average out the weak won period."
+  },
+  "articles": [
+    {
+      "title": "수출 늘어도 고환율 계속… ‘환율 공식’ 안 통한다",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8tdXVWLXhBd2I4Rkt0WG5LS3ZpekRtSlVfbWZ6MU5CTElpSjVlNGl0WnZSOGE5Ti1Pc1hzMV9kdjViVndPRzJtWTE1TEtUT3lSSnRXVWNkdkpjd1lnNFVCR0JQQkJpdElWd2RHaDhWbHZLZVlz?oc=5",
+      "summary": "수출 늘어도 고환율 계속… ‘환율 공식’ 안 통한다 부산일보",
+      "source": "부산일보",
+      "date": "2026-07-08T09:51:03+00:00"
+    },
+    {
+      "title": "중동 긴장 속 하이닉스 수급 기대…환율 1500원에서 방향성 탐색[외환브리핑]",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWjhPX2NycXBwUV94eE1pTjI1RXFNMkk2dmdzYl91dS1BS0s2cm5ZR1QzMXFvejlwQlRUN2dIek0tRnFPX2hRRDJYQU1Ua0tIck9zNThqangxVzl4bVZmVmlYRS1GWUtSMllack1aQ3hEVEM3eUdlVC1pa0d1eElUYQ?oc=5",
+      "summary": "중동 긴장 속 하이닉스 수급 기대…환율 1500원에서 방향성 탐색[외환브리핑] 이데일리",
+      "source": "이데일리",
+      "date": "2026-07-08T23:17:59+00:00"
+    },
+    {
+      "title": "SK하이닉스 美 ADR에 외환시장 출렁...원·달러 '1498.5원' 마감",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5HdVhSS0NQNVhSM0xtWWFaTW1uNFl4cVdsSU50enlhTWFuVFF6aDkwakdwSnVMbzhYakU0MGxvc2ZKaUpwVjE0MU5RSGV5OEZQU3lDaXdfaEJPSWpZbDg3SFhlNWE1Vk8yVzJCQ0JB?oc=5",
+      "summary": "SK하이닉스 美 ADR에 외환시장 출렁...원·달러 '1498.5원' 마감 뉴스후플러스",
+      "source": "뉴스후플러스",
+      "date": "2026-07-08T22:30:00+00:00"
+    }
+  ]
+}
