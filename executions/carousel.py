@@ -102,6 +102,106 @@ def persona_verdict(series, rate_now, persona):
 
 # 제목 desync 방지: 원/달러 환율류 숫자(1,513원·1513·1520선)는 표지 제목 금지(factor_analysis와 동일).
 _RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
+# check A: 오늘 종가 단정 단어(어제/전일/지난/야간이 앞에 없을 때만 = '오늘'의 마감 단정).
+_CLOSE_WORD_RE = re.compile(r"(마쳤|마감(?:했|됐|을|한|하)|종가|거래를 마)")
+
+
+def market_closed(asof, today):
+    """서울 외환시장 마감 여부. 주말=마감(금요일 종가). 평일=asof 시각 ≥15:30. 시각 불명=None(판단보류)."""
+    if today.weekday() >= 5:
+        return True
+    m = re.search(r"(\d{1,2}):(\d{2})", asof or "")
+    if not m:
+        return None
+    return (int(m.group(1)), int(m.group(2))) >= (15, 30)
+
+
+def check_intraday_close(text, asof, today, rate=None):
+    """장중(마감 전)인데 '오늘 종가/마감'을 단정하면 메시지 반환(없으면 None). check A 공용 로직.
+    오늘 환율 숫자(±2)에 마감/종가가 붙은 경우만 잡고, 그 숫자 앞 어제/전일/야간은 제외(전일 종가는 정당)."""
+    if market_closed(asof, today) is not False:   # 마감 후/불명이면 통과
+        return None
+    cur = (rate or {}).get("rate")
+    if not isinstance(cur, (int, float)):
+        return None
+    cur_i = int(cur + 0.5)
+    for m in re.finditer(r"(\d[\d,]*)\s*원\s*(?:에|으로|선에서?)?\s*(마쳤|마감|종가)", text):
+        try:
+            n = int(m.group(1).replace(",", ""))
+        except ValueError:
+            continue
+        if abs(n - cur_i) > 2:   # 오늘 환율과 다른 숫자 = 어제·딴날 종가일 수 있음 → 패스
+            continue
+        if re.search(r"(어제|전일|지난|어젯|야간)", text[max(0, m.start() - 6):m.start()]):
+            continue             # '어제 1,544원 마감' = 전일 종가라 정당
+        return (f"장중(마감 전, asof {asof})인데 오늘({cur_i:,}원) '{m.group(2)}' 단정 "
+                "— 15:30 전이면 '현재 ○○원'으로")
+    return None
+
+
+# ── 이벤트 날짜 자동 검증 (내가 안 짚어도 스스로) ──────────────────────────
+_WD_KO = "월화수목금토일"     # date.weekday(): 0=월 … 6=일
+# 검증 일정표(backbone)와 대조할 지표: (캘린더 이름 패턴) → event_schedule kw
+_BACKBONE_KW = [
+    (re.compile(r"소비자물가|CPI"), "CPI"),
+    (re.compile(r"고용보고서|비농업|고용지표"), "고용"),
+    (re.compile(r"PCE|개인소비지출"), "PCE"),
+    (re.compile(r"FOMC.*(금리\s*결정|정례회의|금리결정)"), "FOMC"),   # ※ '의사록'은 결정과 다른 날 → 제외
+]
+# 미국 지표 = 주말(토/일) 발표 불가. FOMC 의사록·결정도 미 평일→KST 평일
+_US_INDICATOR = re.compile(r"소비자물가|CPI|고용보고서|비농업|PCE|개인소비지출|FOMC")
+
+
+def _load_backbone():
+    try:
+        return json.load(open(ROOT / "data" / "event_schedule.json",
+                              encoding="utf-8")).get("events", [])
+    except Exception:
+        return []
+
+
+def check_event_dates(cal_path, extra_text, today):
+    """이벤트 날짜를 스스로 검증(WARN): ① 검증 일정표 대조 ② 미국 지표 주말발표 불가
+    ③ '7월 11일(금)' 요일 라벨 ↔ 실제 요일 불일치. 근거 없이 지어낸 날짜를 자동으로 잡는다."""
+    warns = []
+    backbone = _load_backbone()
+    events, guide = [], ""
+    if cal_path:
+        try:
+            cj = json.load(open(cal_path, encoding="utf-8"))
+            events, guide = cj.get("events", []), cj.get("guide", "") or ""
+        except Exception:
+            pass
+    for e in events:
+        name, ds = e.get("name", ""), e.get("date", "")
+        try:
+            d = dt.date.fromisoformat(ds)
+        except ValueError:
+            continue
+        # ② 미국 지표가 주말 발표 = 불가능(예: CPI 7/11(토))
+        if _US_INDICATOR.search(name) and d.weekday() >= 5:
+            warns.append(f"[날짜검증] '{name}' {ds}={_WD_KO[d.weekday()]}요일 — "
+                         "미국 지표는 주말 발표 없음(날짜 오류 의심)")
+        # ① 검증 일정표(backbone)와 대조 — 같은 kw·같은 달인데 날짜 다르면
+        for pat, kw in _BACKBONE_KW:
+            if pat.search(name):
+                for be in backbone:
+                    if be.get("kw") == kw and be.get("date", "")[:7] == ds[:7] \
+                            and be.get("date") != ds:
+                        warns.append(f"[날짜검증] '{name}' 캘린더 {ds} ↔ 검증 일정표 "
+                                     f"{be['date']} 불일치 — data/event_schedule.json 우선 확인")
+                break
+    # ③ '7월 11일(금)' 요일 라벨이 실제 요일과 맞나 (본문+캘린더 guide 스캔)
+    for m in re.finditer(r"(\d{1,2})월\s*(\d{1,2})일\s*\(([월화수목금토일])\)",
+                         (extra_text or "") + " " + guide):
+        mm, dd, lbl = int(m.group(1)), int(m.group(2)), m.group(3)
+        try:
+            real = _WD_KO[dt.date(today.year, mm, dd).weekday()]
+        except ValueError:
+            continue
+        if real != lbl:
+            warns.append(f"[날짜검증] '{mm}월 {dd}일({lbl})' — 실제로는 {real}요일(요일 라벨 오류)")
+    return warns
 
 
 def validate_facts(factors, rate):
@@ -162,6 +262,12 @@ def validate_facts(factors, rate):
                     warns.append(
                         f"[핵심정렬] 임박 ★★★ '{e.get('name','')}'이 요약에 안 보임 — 오늘 핵심 맞는지 확인"
                     )
+    # 4) check A: 장중(마감 전)인데 '오늘 종가/마감' 단정 = 거짓 (BLOCK)
+    msg = check_intraday_close(text, rate.get("asof", ""), today, rate)
+    if msg:
+        blocks.append(msg)
+    # 5) 이벤트 날짜 자동 검증 — 검증 일정표 대조 + 주말발표·요일 라벨 sanity (WARN)
+    warns += check_event_dates(cfs[-1] if cfs else None, text, today)
     return blocks, warns
 
 
@@ -281,6 +387,17 @@ HEAD = """<!doctype html><html lang="ko"><head><meta charset="utf-8">
           padding:25px 46px;letter-spacing:-.01em;margin-top:2px}
   .endlink{font-size:27px;font-weight:700;color:#6b7280;letter-spacing:-.01em}
   .enddisc{font-size:22px;font-weight:600;color:#9aa1ad;letter-spacing:-.01em;margin-top:6px}
+  /* '왜 주목?' 페이지(heat=high 전용) — 주목 이유 카드 + 후킹 */
+  .atn-wrap{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+  .atn{display:flex;gap:26px;align-items:flex-start;background:#fff;border:1.5px solid #ebedf0;
+       border-radius:24px;padding:34px 36px;box-shadow:0 4px 16px rgba(20,30,60,.04)}
+  .atn-emoji{flex:none;font-size:48px;line-height:1.1}
+  .atn-head{font-size:34px;font-weight:800;color:#14171f;letter-spacing:-.025em;
+            line-height:1.3;word-break:keep-all}
+  .atn-sub{margin-top:9px;font-size:28px;font-weight:600;color:#4e5968;line-height:1.45;
+           letter-spacing:-.02em;word-break:keep-all}
+  .atn-hook{margin-top:32px;font-size:32px;font-weight:800;color:#e0383e;letter-spacing:-.025em;
+            line-height:1.4;word-break:keep-all}
 
   /* 그래프 슬라이드 */
   .gbig{margin-top:38px;background:#fff;border:1.5px solid #ebedf0;border-radius:28px;
@@ -446,11 +563,22 @@ def cover_html(factors, rate, series, guides=False, version=2, badge=None, hook=
         f'<span class="m1-right">{heat_chip}'
         f'<span class="m1-date">{today.month}/{today.day} ({wk})</span></span></div>'
     )
-    _w = title.split()
-    # 큰 두 줄: 앞부분(검정) → 줄바꿈 → 마지막 두 단어(파랑 키워드)
+    # 큰 두 줄 분할: 콤마(,)가 있고 *뒷줄이 너무 길지 않으면* 콤마에서 끊는다(자연스러운 호흡).
+    # 아니면 마지막 두 단어를 뒷줄(파랑 키워드)로. 예: 'FOMC 매파 동결, 달러 더 세졌다'
+    # → '동결,' 뒤가 짧으니 'FOMC 매파 동결,' / '달러 더 세졌다'.
+    head, tail = "", title
+    if ", " in title:
+        h, t = title.split(", ", 1)
+        t = t.strip()
+        if t and len(t.replace(" ", "")) <= 9:   # 뒷줄 공백 제외 9자 이하만 콤마 분할
+            head, tail = h + ",", t
+    if not head:                                  # 콤마 분할 안 했으면 마지막 두 단어를 뒷줄로
+        _w = title.split()
+        if len(_w) > 2:
+            head, tail = " ".join(_w[:-2]), " ".join(_w[-2:])
     title_html = (
-        f'<span class="hl-kw">{title}</span>' if len(_w) <= 2
-        else " ".join(_w[:-2]) + f'<br><span class="hl-kw">{" ".join(_w[-2:])}</span>'
+        f'<span class="hl-kw">{tail}</span>' if not head
+        else f'{head}<br><span class="hl-kw">{tail}</span>'
     )
     headline = f'<div class="hl2"><span class="hl-title">{title_html}</span>{DOG_SVG}</div>'
     mid = (
@@ -480,6 +608,28 @@ def cover_html(factors, rate, series, guides=False, version=2, badge=None, hook=
 def _shead(today):
     wk = ["월", "화", "수", "목", "금", "토", "일"][today.weekday()]
     return f'<div class="shead">{DOG_SVG} 환전타이밍 · {today.month}/{today.day}({wk})</div>'
+
+
+def slide_attention(factors, rate, guides=False):
+    """'왜 주목?' 페이지 — heat=high인 날, 오늘 주목해야 할 이유 + 후킹. factors['attention'] 읽음."""
+    today = _brief_date(rate)
+    att = factors.get("attention") or {}
+    rows = "".join(
+        f'<div class="atn"><div class="atn-emoji">{r.get("emoji","")}</div>'
+        f'<div class="atn-main"><div class="atn-head">{r.get("head","")}</div>'
+        f'<div class="atn-sub">{r.get("sub","")}</div></div></div>'
+        for r in (att.get("reasons") or [])[:3]
+    )
+    hook = att.get("hook", "")
+    body = (
+        _shead(today)
+        + '<div class="stitle">이번 주, <span class="kw">왜 주목</span>하개? 🐶</div>'
+        + f'<div class="atn-wrap">{rows}</div>'
+        + (f'<div class="atn-hook">{hook}</div>' if hook else "")
+        + '<div class="spacer"></div>'
+        + '<div class="enddisc">* 예측이 아니라 지켜볼 포인트예요 · 투자조언 아님</div>'
+    )
+    return HEAD + '<div class="page">' + body + (GUIDES if guides else "") + "</div>" + FOOT
 
 
 def slide_signal(factors, rate, series, guides=False):
@@ -644,7 +794,14 @@ def slide_calendar(factors, rate, series, guides=False):
     today = _brief_date(rate)
     fs = sorted(glob.glob(str(ROOT / "output" / "calendar-*.json")))
     cal = json.load(open(fs[-1], encoding="utf-8")) if fs else {"events": []}
-    evs = [e for e in cal.get("events", []) if e.get("date", "") >= today.isoformat()]
+    def _valid_iso(s):   # LLM이 '2026-07-00' 같은 무효 날짜를 넣으면 스킵(크래시 방지)
+        try:
+            dt.date.fromisoformat(s)
+            return True
+        except (ValueError, TypeError):
+            return False
+    evs = [e for e in cal.get("events", [])
+           if _valid_iso(e.get("date", "")) and e.get("date", "") >= today.isoformat()]
     evs.sort(key=lambda e: e["date"])
     near, rest = (evs[0] if evs else None), evs[1:3]
 
@@ -793,7 +950,7 @@ def render(html, out_path, scale=2):
 
 
 # 인스타 캡션 톤·구조 고정용 예시(2026-06-16 작성분). 사실은 매일 바뀌고 톤만 따른다.
-CAPTION_EXAMPLE = """🐶 오늘 환전해도 될까?
+CAPTION_EXAMPLE = """🐶 오늘 환전하개?
 
 원/달러 환율은 어제와 거의 같은 **1,516원, 제자리**예요.
 미·이란 종전 합의로 달러 수요가 줄었지만, 미국 물가(CPI)가 4.2%로 높게 나오면서 달러를 다시 떠받치고 있거든요. 그래서 1,500원대에서 안 내려오고 있어요.
@@ -802,7 +959,7 @@ CAPTION_EXAMPLE = """🐶 오늘 환전해도 될까?
 
 ⸻
 
-매달 달러로 바꾸는 분들을 위해, 매일 아침 '오늘 환전해도 될까?'를 쉽게 정리해드려요. 유학생·여행자·투자자, 상황별 신호도 함께요.
+매달 달러로 바꾸는 분들을 위해, 매일 아침 '오늘 환전해도 될까?'를 쉽게 정리해드려요.
 팔로우하고 매일 같이 확인해요 🐾
 
 * 예보가 아니라 오늘까지의 사실 정리예요. 투자 조언이 아니에요.
@@ -875,10 +1032,10 @@ def build_caption(factors, rate, model="claude-sonnet-4-6"):
         f"종합: {factors.get('overall_why','')}\n"
         f"오늘의 요인:\n{fac_lines}\n\n"
         "■ 규칙:\n"
-        "- 구조 순서 고정: ①🐶 오늘 환전해도 될까? ②환율+상태(**볼드**, 표지 헤드라인의 상태 표현을 그대로 살릴 것 "
+        "- 구조 순서 고정: ①🐶 오늘 환전하개? ②환율+상태(**볼드**, 표지 헤드라인의 상태 표현을 그대로 살릴 것 "
         "— 예: 헤드라인이 '약보합'이면 '**1,513원, 약보합**') ③(표지 헤드라인에 환율 용어가 있으면 "
         "그 뜻을 *한 줄로 쉽게 풀이* — 예: '약보합=큰 변화 없이 살짝 약세') ④쉬운말 인과 2~3문장(거든요/예요) "
-        "⑤다음에 지켜볼 이벤트 한 문장 👀 ⑥⸻ ⑦계정 소개+팔로우 🐾 ⑧* 예보 아님·투자조언 아님 ⑨해시태그 5개\n"
+        "⑤다음에 지켜볼 이벤트 한 문장 👀 ⑥⸻ ⑦계정 소개+팔로우 🐾 (페르소나 '유학생·여행자·투자자' 나열 금지) ⑧* 예보 아님·투자조언 아님 ⑨해시태그 5개\n"
         "- 환율 숫자(현재·어제·전일대비)는 위 [오늘 데이터]의 값만. 다른 숫자 지어내기 금지.\n"
         "- 해요체, 쉬운 말, 채움말·과장·예보·낚시 금지. 중학생도 이해하게.\n"
         "- 헤드라인의 환율 용어(약보합·강보합·보합·급락·급등 등)는 반드시 한 줄 풀이를 넣을 것.\n"
@@ -1006,9 +1163,13 @@ def main():
             render(slide_factor_c(f, i + 1, today, is_last=(i == len(facs) - 1)),
                    out_dir / f"{5+i:02d}-factor{i+1}.png")
         print(f"요인 {len(facs)}장")
+        # '왜 주목?' 페이지 — heat=high이고 attention 필드 있는 날만(마무리 직전). 요인 → 왜주목 → 마무리.
+        nxt = 5 + len(facs)
+        if factors.get("attention", {}).get("reasons"):
+            print(f"왜주목: {render(slide_attention(factors, rate), out_dir / f'{nxt:02d}-attention.png')}")
+            nxt += 1
         # 마지막 페이지(닫기) — 페르소나별 환전 신호 + 팔로우 CTA. 마지막 요인의 "내 상황은? →"가 여기로.
-        signal_no = 5 + len(facs)
-        print(f"마무리: {render(slide_signal(factors, rate, series), out_dir / f'{signal_no:02d}-signal.png')}")
+        print(f"마무리: {render(slide_signal(factors, rate, series), out_dir / f'{nxt:02d}-signal.png')}")
 
     # 표지(1p) — 제목이 들어가는 곳 → 검증 게이트(실패 시 게시 금지).
     if do_cover:

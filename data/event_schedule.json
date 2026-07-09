@@ -1,0 +1,33 @@
+{
+  "_about": "FX 이벤트 고정 일정표 backbone. 공시된 실제 날짜만(추측 금지). econ_calendar/카드가 이걸 ground-truth로 써서 날짜·이름 오류(PCE 날짜 이동·'첫 발언' 오라벨 등)를 없앤다. date = 한국시간(KST) 기준 — 미 8:30am ET 지표는 한국 당일 밤 발표(같은 날짜), FOMC 결정(2pm ET)은 한국시간 다음날 새벽이라 +1일로 저장. 매달 갱신 필요.",
+  "_verified": "2026-07-01 · Fed FOMC calendar, BLS, BEA 공식 스케줄. 출처는 _sources 참고.",
+  "_sources": [
+    "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "https://www.bls.gov/schedule/news_release/cpi.htm",
+    "https://www.bls.gov/schedule/news_release/empsit.htm",
+    "https://www.bea.gov/news/schedule"
+  ],
+  "events": [
+    {"date": "2026-07-02", "kw": "고용", "name": "미국 6월 고용보고서(비농업·실업률)", "importance": 3,
+     "note": "현지 7/2 오전 8:30 ET 발표 = 한국시간 7/2 밤. 강하면 달러↑·환율↑."},
+    {"date": "2026-07-14", "kw": "CPI", "name": "미국 6월 CPI(소비자물가)", "importance": 3,
+     "note": "현지 7/14 = 한국시간 7/14 밤. 높으면 금리인상 기대↑·달러↑."},
+    {"date": "2026-07-30", "kw": "FOMC", "name": "미국 7월 FOMC 금리결정(워시 2번째 회의)", "importance": 3,
+     "note": "현지 회의 7/28~29, 결정 발표 7/29 오후 2시 ET = 한국시간 7/30 새벽. ※워시 '첫' FOMC는 6/18이었음."},
+    {"date": "2026-07-30", "kw": "PCE", "name": "미국 6월 PCE(개인소비지출 물가)", "importance": 2,
+     "note": "현지 7/30 = 한국시간 7/30 밤. 연준이 중시하는 물가지표."},
+    {"date": "2026-08-26", "kw": "PCE", "name": "미국 7월 PCE(개인소비지출 물가)", "importance": 2,
+     "note": "현지 8/26 = 한국시간 8/26 밤."},
+    {"date": "2026-09-17", "kw": "FOMC", "name": "미국 9월 FOMC 금리결정(+점도표)", "importance": 3,
+     "note": "현지 회의 9/15~16, 결정 9/16 ET = 한국시간 9/17 새벽."},
+    {"date": "2026-10-29", "kw": "FOMC", "name": "미국 10월 FOMC 금리결정", "importance": 3,
+     "note": "현지 회의 10/27~28, 결정 10/28 ET = 한국시간 10/29 새벽."},
+    {"date": "2026-12-10", "kw": "FOMC", "name": "미국 12월 FOMC 금리결정(+점도표)", "importance": 3,
+     "note": "현지 회의 12/8~9, 결정 12/9 ET = 한국시간 12/10 새벽."}
+  ],
+  "bok_mpc": {
+    "_note": "한국은행 금통위(기준금리 결정). 2026 하반기 정확한 날짜는 웹에서 검증 실패(공식 hwp/pdf) → 지어내지 않음. 아래는 확정된 과거분만. 사용자가 bok.or.kr 공식 2026 일정표에서 7·8·10·11월 날짜를 채워줄 것.",
+    "confirmed_past": ["2026-02-26", "2026-04-10", "2026-05-28"],
+    "future_todo": "2026 하반기(7·8·10·11월) 날짜 확인 필요 — 패턴은 '2·4째주 목요일', 연 8회."
+  }
+}

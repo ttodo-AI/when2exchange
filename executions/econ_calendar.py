@@ -36,6 +36,80 @@ QUERIES = [
     "주요 경제 일정 이번주 달러 원화 지표 발표 예정",
 ]
 
+# ── 이벤트 날짜 검증 (반복되는 미 지표 날짜오류 방지) ──────────────────────
+# LLM이 CPI를 7/11(토·발표불가)로, FOMC 요일을 (수)로 자주 틀린다. data/event_schedule.json
+# (웹검증한 실제 날짜)을 ① 프롬프트에 확정날짜로 주입 ② 생성 후 대조·자동보정한다.
+_WD_KO = "월화수목금토일"     # weekday(): 0=월 … 6=일
+_BACKBONE_KW = [
+    (re.compile(r"소비자물가|CPI"), "CPI"),
+    (re.compile(r"고용보고서|비농업|고용지표"), "고용"),
+    (re.compile(r"PCE|개인소비지출"), "PCE"),
+    (re.compile(r"FOMC.*(금리\s*결정|정례회의|금리결정)"), "FOMC"),   # '의사록'은 결정과 다른 날 → 제외
+]
+_US_INDICATOR = re.compile(r"소비자물가|CPI|고용보고서|비농업|PCE|개인소비지출|FOMC")
+
+
+def _load_backbone():
+    p = os.path.join(os.path.dirname(__file__), "..", "data", "event_schedule.json")
+    try:
+        with open(p, encoding="utf-8") as fh:
+            return json.load(fh).get("events", [])
+    except Exception:
+        return []
+
+
+def _iso(s):
+    try:
+        return datetime.strptime(s, "%Y-%m-%d").date()
+    except (TypeError, ValueError):
+        return None
+
+
+def confirmed_dates_block(backbone, today_str):
+    """검증 일정표 중 대상 창(-10~+20일)에 드는 확정 일정을 프롬프트용 문자열로."""
+    td = _iso(today_str)
+    if not (backbone and td):
+        return ""
+    rows = []
+    for be in backbone:
+        d = _iso(be.get("date", ""))
+        if d and -10 <= (d - td).days <= 20:
+            rows.append(f"- {be.get('name','')} = {be['date']}({_WD_KO[d.weekday()]})")
+    if not rows:
+        return ""
+    return ("\n■ 공식 확정 날짜(아래 지표는 이 날짜를 그대로 사용. 뉴스가 달라도 이걸 우선):\n"
+            + "\n".join(rows) + "\n")
+
+
+def verify_fix_dates(events, backbone, guide, today_str):
+    """생성된 이벤트 날짜를 검증 일정표와 대조: 다르면 자동 보정, 주말발표·요일라벨은 경고.
+    (fixes, warns) 반환. events는 제자리 수정."""
+    fixes, warns = [], []
+    for e in events:
+        d = _iso(e.get("date", ""))
+        if not d:
+            continue
+        if _US_INDICATOR.search(e.get("name", "")) and d.weekday() >= 5:
+            warns.append(f"'{e['name']}' {e['date']}={_WD_KO[d.weekday()]} — 미 지표 주말발표 없음(오류 의심)")
+        for pat, kw in _BACKBONE_KW:
+            if pat.search(e.get("name", "")):
+                for be in backbone:
+                    if be.get("kw") == kw and be.get("date", "")[:7] == e["date"][:7] \
+                            and be["date"] != e["date"]:
+                        fixes.append(f"{e['name']}: {e['date']} → {be['date']}(일정표 확정)")
+                        e["date"] = be["date"]
+                break
+    for m in re.finditer(r"(\d{1,2})월\s*(\d{1,2})일\s*\(([월화수목금토일])\)", guide or ""):
+        mm, dd, lbl = int(m.group(1)), int(m.group(2)), m.group(3)
+        td = _iso(today_str)
+        try:
+            real = _WD_KO[datetime(td.year if td else 2026, mm, dd).weekday()]
+        except ValueError:
+            continue
+        if real != lbl:
+            warns.append(f"guide '{mm}월 {dd}일({lbl})' — 실제 {real}요일(요일 라벨 오류)")
+    return fixes, warns
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Build this week's FX economic calendar.")
@@ -173,10 +247,14 @@ def main() -> None:
     kst = timezone(timedelta(hours=9))
     today = datetime.now(kst).strftime("%Y-%m-%d")
 
+    backbone = _load_backbone()
+    confirmed = confirmed_dates_block(backbone, today)
+
     prompt = (
         f"오늘은 {today}(한국시간)입니다. 아래 뉴스에서, 이번 주 월요일부터 다음 주 일요일까지"
         "(약 -7일 ~ +12일) 사이의, 원/달러(USD/KRW) 환율에 영향이 큰 주요 경제 일정을 뽑아주세요.\n\n"
-        f"[뉴스]\n{digest}\n\n"
+        f"[뉴스]\n{digest}\n"
+        f"{confirmed}\n"
         "■ 규칙:\n"
         "- 날짜·시각은 반드시 뉴스에 근거. 불확실하면 그 일정은 빼라(추측 금지).\n"
         "- 이번 주에 이미 발표·종료된 일정도 포함한다. 그 경우 result에 '실제 결과와 환율 영향'을 "
@@ -240,6 +318,16 @@ def main() -> None:
             "scenarios": scns,
         })
     events.sort(key=lambda x: x["date"])  # chronological for the table
+
+    # 이벤트 날짜 자동 검증·보정 — 검증 일정표 대조(자동보정) + 주말발표·요일라벨 경고
+    fixes, date_warns = verify_fix_dates(events, backbone, result.get("guide") or "", today)
+    for f in fixes:
+        print("  [날짜보정]", f, file=sys.stderr)
+    for w in date_warns:
+        print("  [날짜경고]", w, file=sys.stderr)
+    if fixes:
+        events.sort(key=lambda x: x["date"])   # 보정 후 재정렬
+
     fill_results(client, events, today, args.model)   # 지난 일정: 결과 전용 검색으로 채움(창작 금지)
 
     now = datetime.now(timezone.utc)
