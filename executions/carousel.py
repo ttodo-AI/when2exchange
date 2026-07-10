@@ -139,6 +139,26 @@ def check_intraday_close(text, asof, today, rate=None):
     return None
 
 
+# check B: 장중엔 '오늘 추세가 이렇게 끝났다'를 제목에 단정하지 않는다.
+# 실제 사고(2026-07-10): 10:02 장중 +1.5원을 보고 '원화 강세 흐름 멈췄다'로 발행했는데
+# 종가는 1,502원(-5.0원) — 강세가 오히려 이어져 제목이 사후에 거짓이 됐다.
+_TREND_CLAIM_RE = re.compile(r"(멈췄|멈춤|꺾였|꺾임|반전|돌아섰|되돌렸|전환됐|끝났|마무리)")
+
+
+def check_intraday_trend(title, asof, today):
+    """장중(마감 전)인데 제목이 오늘 추세를 단정하면 메시지 반환(없으면 None).
+    '어제·전일·간밤'을 가리키는 단정은 정당하므로 제외."""
+    if market_closed(asof, today) is not False:   # 마감 후/불명이면 통과
+        return None
+    m = _TREND_CLAIM_RE.search(title or "")
+    if not m:
+        return None
+    if re.search(r"(어제|전일|지난|간밤|야간)", title[:m.start()]):
+        return None
+    return (f"장중(마감 전, asof {asof})인데 제목이 오늘 추세를 단정('{m.group(1)}…') "
+            "— 종가에서 뒤집힐 수 있어요. 마감(15:30) 후 제작하거나 '장중' 표현으로")
+
+
 # ── 이벤트 날짜 자동 검증 (내가 안 짚어도 스스로) ──────────────────────────
 _WD_KO = "월화수목금토일"     # date.weekday(): 0=월 … 6=일
 # 검증 일정표(backbone)와 대조할 지표: (캘린더 이름 패턴) → event_schedule kw
@@ -264,6 +284,10 @@ def validate_facts(factors, rate):
                     )
     # 4) check A: 장중(마감 전)인데 '오늘 종가/마감' 단정 = 거짓 (BLOCK)
     msg = check_intraday_close(text, rate.get("asof", ""), today, rate)
+    if msg:
+        blocks.append(msg)
+    # 4b) check B: 장중인데 제목이 오늘 추세를 단정 = 종가에서 뒤집힘 (BLOCK)
+    msg = check_intraday_trend(title, rate.get("asof", ""), today)
     if msg:
         blocks.append(msg)
     # 5) 이벤트 날짜 자동 검증 — 검증 일정표 대조 + 주말발표·요일 라벨 sanity (WARN)
