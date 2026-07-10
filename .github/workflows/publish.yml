@@ -47,9 +47,14 @@ jobs:
 
       - name: Build site
         env:
-          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+          # 뉴스 검색은 Google News RSS(무료)로 이전됨 — Firecrawl 미사용.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python executions/build_site.py --mode ${{ steps.m.outputs.mode }}
+
+      # 모트(해자): 오늘 신호를 track_record.jsonl에 1줄 append. 빌드(rate.json 갱신) 후,
+      # 커밋 전에 실행돼야 새 줄이 함께 커밋된다. 이미 기록된 날이면 자동 스킵(2회/일 안전).
+      - name: Log daily exchange signal (track record)
+        run: python executions/track_record.py --today
 
       - name: Commit refreshed site & data (persist archive)
         run: |
