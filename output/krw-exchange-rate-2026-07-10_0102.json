@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-10T01:02:58.770648+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1400-1500 KRW/USD\n\nWHY: The won has strengthened (weakened to 1400s) due to SK Hynix's ADR success and Korean-Japanese authorities' coordination, making dollars cheaper to buy right now. However, news outlets show conflicting outlooks—some expect the won to strengthen further to 1400 levels, while others warn of potential weakness toward 1800, and Middle East risks add uncertainty to the trend.\n\nTIP: Given the volatility and mixed signals, maintain your fixed $2,000 monthly conversion schedule rather than trying to time the market—dollar-cost averaging will smooth out the strong/weak won swings over time."
+  },
+  "articles": [
+    {
+      "title": "중동발 악재 삼킨 SK하이닉스 ADR…환율 1400원대 터치",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB3cmZjQko1SU5LOVZrTUNhRFRUX3RXWUdtdGMxekFYSjNrWDRXN3VyWW84ZlFvZ2hIMlNqanFiclphbDV3dUl3YnRZSVBGdmt3MWhpTHY0TVBKUXB1ZWJSLUpVUUstUkFhejdJ0gFvQVVfeXFMT2EwR0RKUFBDTzVLOENrWC1KZTVmOE9ydGxnU3FraS1LaFBCNUZyb2JzanJQb0lDblZsdVZrUmNodi1RUnRKTlRiYTRNMzJDY2hUWHA3TmoxSUR4d3k3TG9PM3FrVGJnS1J6WVlQdUlB?oc=5",
+      "summary": "중동발 악재 삼킨 SK하이닉스 ADR…환율 1400원대 터치 투데이신문",
+      "source": "투데이신문",
+      "date": "2026-07-09T02:04:53+00:00"
+    },
+    {
+      "title": "하이닉스 환전·韓日 당국 공조 속…원·달러 환율 하락 전망 '솔솔'",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5QWThXQWpvV1gxTzByWFFzMGhGdmtvYjNIZ1pyTHBKTnNNRXJfbGtWN1lnS2VDY203Vmt6QUhrUjMzMUZJamF0NGxsLXVXb0JSUzNR?oc=5",
+      "summary": "하이닉스 환전·韓日 당국 공조 속…원·달러 환율 하락 전망 '솔솔' 네이트",
+      "source": "네이트",
+      "date": "2026-07-09T08:49:00+00:00"
+    },
+    {
+      "title": "숨통 트인 원·달러 환율...중동 리스크 등 변수",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8xS05hYnRYTWRCcTFGVWRmR194ZGlWc3ZHbmtualNoRzA0U1E0bU52VW5yWHR0NGpxNzR1WUQwTkVsU1REM0tpU3ZfbzlJWHlVZU5BVlF1bjYwUVhVWmhYVE82M0xNaUVfMGRHYk1ITdIBb0FVX3lxTE8xS05hYnRYTWRCcTFGVWRmR194ZGlWc3ZHbmtualNoRzA0U1E0bU52VW5yWHR0NGpxNzR1WUQwTkVsU1REM0tpU3ZfbzlJWHlVZU5BVlF1bjYwUVhVWmhYVE82M0xNaUVfMGRHYk1ITQ?oc=5",
+      "summary": "숨통 트인 원·달러 환율...중동 리스크 등 변수 자유일보",
+      "source": "자유일보",
+      "date": "2026-07-09T07:11:47+00:00"
+    },
+    {
+      "title": "43조원이 서울 외환시장에 풀린다, 앞으로 한 달, 왜 '달러 환전'과 '미국주식'을 함께 봐야 할까요",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNjVxX2RsYXF4VkRhMHFoYjY2cWNkM1lNNWJIVWM1TlpEWDJGZ0ZKbVJFSzRja3AwQ3AzR21yWGZvRWktQkZtb2FETDNpd0VIclBrUFcwb0l1bkdYUU9nTGcyTVZnTFYwQ1J5ZGR5dE9tWFFDMzJSaFJmRU05aEU3R3JSWHBReGp6TEJGNg?oc=5",
+      "summary": "43조원이 서울 외환시장에 풀린다, 앞으로 한 달, 왜 '달러 환전'과 '미국주식'을 함께 봐야 할까요 네이버 프리미엄콘텐츠",
+      "source": "네이버 프리미엄콘텐츠",
+      "date": "2026-07-09T07:39:00+00:00"
+    },
+    {
+      "title": "환율 하루 만에 1500원대 반등…\"1400원대 안착\" vs \"1800원 우려\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0zSDdRczlwcGtRNE0yMU5ZNnpseDRPcDY2UzRWcmVxTVVSMUwxOFc5TXM4WWhwaThfWkpWeFpxR3pqcFVXalEzRENkeXczdDE4T2hN?oc=5",
+      "summary": "환율 하루 만에 1500원대 반등…\"1400원대 안착\" vs \"1800원 우려\" 네이트",
+      "source": "네이트",
+      "date": "2026-07-09T08:31:00+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR 흥행…41조 조달 넘어 본주 재평가 시험대",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBuSmdfLW1yQ19HZ204d0VfbEE0XzFrN0o4T1haU2EyTEN4RDY2MWh1X2NBZ1lBR1BZMWM2d2YtVTd1NG9Lc3ZiUTRFeTJVdkRHQS1YTkREclhSNTlU?oc=5",
+      "summary": "SK하이닉스 ADR 흥행…41조 조달 넘어 본주 재평가 시험대 supple.kr",
+      "source": "supple.kr",
+      "date": "2026-07-09T21:00:00+00:00"
+    },
+    {
+      "title": "한은 \"美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승\"",
+      "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxObU1UMHp5SXJBNk11WTN6a1J2d0V1LXRRMW93YjJLQi1lUDNtNllzY3lJeDdUVzNudTEzcUlJdHlOcHU4bTdHSnBCUmtvZ2hHMzhhc1BmS2NZZXR0bFZVeWxhNkVKVjFnYmtNeG15blkyVnQ1eVNzSTkzUkZtNm9zSUZqbFdUV2xJZzlqV09Bc2ZfNnRfcUtGSzVTemMzeHBLOUJYcWNaUDlLOE8tWUtEWTZwbUpseVhLTC1UbGMtbUhUZjNfcHVYMmJEbHczTHc2Wnlldkl1Z2lFN0dKWjR5TEZLZzUxRlhoWHhSXzVlcWtmWWNOR1NqWXZhRkkwdVdpNk1oZjZEQmhHSS1PWkFEREpoSUs5OUJ2cUVKcnlrMmtBNm8zSmtTUm85MUkyNmg5ZFE?oc=5",
+      "summary": "한은 \"美 주식 투자 3% 늘면 원·달러 환율 0.7%P 상승\" MSN",
+      "source": "MSN",
+      "date": "2026-07-09T07:03:36+00:00"
+    }
+  ]
+}
