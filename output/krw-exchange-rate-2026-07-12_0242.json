@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-12T02:42:44.256473+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,400–1,500 KRW/USD\n\nWHY: The won has strengthened significantly—the exchange rate has fallen below 1,500 KRW/USD and is settling into the 1,400 won range, driven by a massive dollar inflow from SK Hynix's ADR listing (~40 trillion won equivalent). This means you need fewer Korean won to buy your $2,000, making it relatively cheaper to convert right now.\n\nTIP: Lock in this conversion while the won remains strong; if the dollar inflow effect fades, the rate could weaken back toward 1,500+ won/USD, raising your monthly cost."
+  },
+  "articles": [
+    {
+      "title": "SK하닉 ADR 흥행에 환율도 ‘뚝’…1400원대 안착하나",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9kM1B4Yk56YUp2RDNqQjFjS1ZRS0NmTnBkRktGNHo3YlZxSUJoZnN2UUZDUUMwSzVBVHh1dXZZVG9zSTdNMjlmN2JXVFJfTVE?oc=5",
+      "summary": "SK하닉 ADR 흥행에 환율도 ‘뚝’…1400원대 안착하나 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-07-12T01:48:38+00:00"
+    },
+    {
+      "title": "﻿SK하이닉스 40조 달러 유입…외환시장 '통화스와프급' 변화 온다",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1SRFhZZV94bEdpN2EzelF2UjBkWnZaSTRWNGdNaU45M2EwcU51d1d3Mkt4cXpLcFZfTUlBWEh5OFVyRG40ak5wR3FYV0Zhd21ONURMbzVlQk1OcVJYRDNBYnpvQ3NhRzd1?oc=5",
+      "summary": "﻿SK하이닉스 40조 달러 유입…외환시장 '통화스와프급' 변화 온다 ebn.co.kr",
+      "source": "ebn.co.kr",
+      "date": "2026-07-12T02:18:24+00:00"
+    },
+    {
+      "title": "SK하이닉스, 외환시장에 통화스와프급 달러 폭탄",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE85b1N4RHkxT2VVVGpTbUNaVlhEVEZDUkpYVlpBOUJ2dFBzc3JtVEFWVzBFRGl6dktTUk55amVYYXZwbkViOVpFaWMyUUlKUHZ2RDIwMEhxdnF5QQ?oc=5",
+      "summary": "SK하이닉스, 외환시장에 통화스와프급 달러 폭탄 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "date": "2026-07-12T02:03:59+00:00"
+    },
+    {
+      "title": "환율 1,500원 깨지며 달러예금 8.8조↑…3년반 만에 최대",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9BUjZZMm54RmZfLWJkbkk4T3o5V1o1UWd6R0V3V1V0dGtHZ1NXbW9SQ2JZZUtuc3BiSU53bm85QXpfTk5MeG1MWGl4V2hEV2ZYNThqV2p5ekJDS1p6anc5YQ?oc=5",
+      "summary": "환율 1,500원 깨지며 달러예금 8.8조↑…3년반 만에 최대 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-07-11T20:55:01+00:00"
+    },
+    {
+      "title": "SK하닉 상장에 1400원대 진입한 환율…미국 CPI·금통위 주시[주간외환전망]",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5rdWh3N1NqcFVrcXdpUVF2VkJHcjhhdmZYcFdYMjYwU0c4NlB0VjBBaEJrQV9FNnRoSHFaQjdjblRDSC1XWnZuR0swZWU4eWY4c25nazZrdS0yZDllSjRET0ZHNnR6Q3FacGRzNUNHeHZKeTRrV1VsSW1GNA?oc=5",
+      "summary": "SK하닉 상장에 1400원대 진입한 환율…미국 CPI·금통위 주시[주간외환전망] 이데일리TV",
+      "source": "이데일리TV",
+      "date": "2026-07-11T22:00:00+00:00"
+    },
+    {
+      "title": "환율 하락에 달러 '줍줍'…은행 달러예금 8조8000억원 ↑",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zVzRsb3prbm90N1NoSUs0VWZrU0d3bnduOWxtZ1RvM09wMUszdXR1TDhlc1BEdWc1NjBsSkZ3REdEQmYwVmFFcnN3dXBTQmxMSDBteENB0gGQAkFVX3lxTE5JeVQtdGdzQThObnAzamdqQk00SkhSOXpNV0wta1YwSS1meGNPMjFKX2Rndm1GOVVrTExITHQ4TVJlR0d1RzJNZ29FeU5rREJON1hQa2VHREJoc1NVdmhkc0dyZkRiTUI2aXhEZHA1bHlJZ2hSR2FxLTdZN1dtNU5PY3V1cUlKNC1NRnNSYVk1a1drYUtQOXRmMlF1dmlWUndKMGtlRmdNVEh1ZmtGTE5pM1pPelhEVC1HbkctNWRIa1V2OW5XQWdLYmZCYVRBZUhYNEhIcGRjVGx0cEllYk02WjR5VTJmbmpzdGxEa3ZXdWxjZ1lVMHlUVmY4d3NRaElqaDY4YVI3VzBoakVBdHQ1?oc=5",
+      "summary": "환율 하락에 달러 '줍줍'…은행 달러예금 8조8000억원 ↑ 데일리안",
+      "source": "데일리안",
+      "date": "2026-07-12T01:33:00+00:00"
+    },
+    {
+      "title": "환율 1500원 밑돌자 달러예금 9조 급증…SK하이닉스發 달러 공급 기대↑",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBndlV1c2xxOEpHUEJZSW1pWXRYMmtVM25MVWtlZkRJb2o5SWVmT0VwUlpQbG45cXl6S0UxLW00QzZQS2xIalpvaThxcVhVT3NVblBEUElmME1HYzFZejZFVkZyQkhlRjI1NlBZdjlXMTk?oc=5",
+      "summary": "환율 1500원 밑돌자 달러예금 9조 급증…SK하이닉스發 달러 공급 기대↑ 신아일보",
+      "source": "신아일보",
+      "date": "2026-07-12T02:20:25+00:00"
+    }
+  ]
+}
