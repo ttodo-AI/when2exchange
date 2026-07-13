@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-13T02:43:48.802228+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,400 KRW/USD (expected near-term)\n\nWHY: The news consistently reports that SK Hynix's $25.6–26.5 billion capital inflow from US listing is creating strong downward pressure on the KRW/USD rate (weakening the won, making dollars cheaper). Multiple sources describe this as a \"currency swap-level\" dollar supply event that should push the rate toward the 1,400 level, suggesting the won is currently stronger than usual.\n\nTIP: Lock in this month's $2,000 conversion now while the won strength is boosted by the Hynix inflow; the stabilizing effect may be temporary if oil prices or other variables shift direction."
+  },
+  "articles": [
+    {
+      "title": "[주간환율전망] 하이닉스 40조 유입 기대에···환율 하방 압력",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1sVjRVMTZXMmpPM1c3bzVkRGRWdFMwajk4ZDA4NU96clRPS0tHZHZuN1R5Zzg4a01BcEoyemltVVhaLUJTbTNqTVFjR2ZreFk3ejViS20xeTJfRUNNQkRMeDh3bjlyalE?oc=5",
+      "summary": "[주간환율전망] 하이닉스 40조 유입 기대에···환율 하방 압력 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-07-13T00:58:29+00:00"
+    },
+    {
+      "title": "환율 안정 찾았지만 안심은 일러…\"유가가 방향 결정\"",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4RlR5aS1QMGplZXhGNkQ4TXlEWGYtY1JmRG42Z1oweTYtaGU4M1VBTGp1TE9sZG1jeTN5eVRBUVZSQUN1emZ2OXZVWmVXRlZYOGRqVG52QzdhemZNVHNENnJ1TloxN2dLNFdUWG1mNA?oc=5",
+      "summary": "환율 안정 찾았지만 안심은 일러…\"유가가 방향 결정\" 뉴스웍스",
+      "source": "뉴스웍스",
+      "date": "2026-07-12T23:35:23+00:00"
+    },
+    {
+      "title": "통화스와프급 달러 폭탄…환율 구원투수 된 ‘하이닉스 40조’",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QVWJJOTNEMnUxQVYyTXJ1NVJiWTAzUFNMYjgwOUhWOXR4eEFMa0tLZFFzN0hlMFYyenZBOHlFa1RVUWdianJTcUViX21HcEJLc2JYN09n?oc=5",
+      "summary": "통화스와프급 달러 폭탄…환율 구원투수 된 ‘하이닉스 40조’ 중앙일보",
+      "source": "중앙일보",
+      "date": "2026-07-12T08:41:44+00:00"
+    },
+    {
+      "title": "SK하이닉스發 265억달러 유입…환율 안정 ’변수’ 되나",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fN0J3U21QT3Zpck5WTFJ6MGxsN3JBWkIyTXZWQXl0VUlIcmdYSXpTMV96N3VCQ1RneWpBemczMHlrWXBPUnI0RVVUX3g2bnQ2M05BWWFMVjM2ejVEdURER1pvQU5pSmxSMWNtWlV30gFuQVVfeXFMTl83QndTbVBPdmlyTlZMUnowbGw3ckFaQjJNdlZBeXRVSUhyZ1hJelMxX3o3dUJDVGd5akF6ZzMweWtZcE9ScjRFVVRfeDZudDYzTkFZYUxWMzZ6NUR1RERHWm9BTmlKbFIxY21aVXc?oc=5",
+      "summary": "SK하이닉스發 265억달러 유입…환율 안정 ’변수’ 되나 뉴시안",
+      "source": "뉴시안",
+      "date": "2026-07-12T22:02:23+00:00"
+    },
+    {
+      "title": "미국서 40조 조달한 하이닉스…환율 ‘연쇄하락 고리’ 기대감",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DR1d0YXNMS2xFSTRmZkpmUjhHQVpseFpwQnYwdVBJdWZ1N2N5RjBodGM4ZHFaTmtYTmtzOG45MTVXOW41QjR6Q0xtRktpSDVNOTRTRmRIUkd4QVp6SUFmWnJrUnJoTGM?oc=5",
+      "summary": "미국서 40조 조달한 하이닉스…환율 ‘연쇄하락 고리’ 기대감 한겨레",
+      "source": "한겨레",
+      "date": "2026-07-12T13:10:00+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR 자금, 환시에 '통화스와프급' 달러 매도 예상...환율 안정화 기대",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8zWE5SOXVCXzAyV2JzcFRzWlZDRXl4X3lORjRTNGZBazRnbFdZamJJaDVZVGE3YXFXdFZmVTVuY2R6U0N3bjdGbkR5cWtQdHQtbzNMMTNkZTU4R01KZDh4M1AxVXgzeGZWZHJmTnlHQmZiRWRMSVR2eVBmMDI?oc=5",
+      "summary": "SK하이닉스 ADR 자금, 환시에 '통화스와프급' 달러 매도 예상...환율 안정화 기대 비욘드포스트",
+      "source": "비욘드포스트",
+      "date": "2026-07-12T22:03:30+00:00"
+    },
+    {
+      "title": "[주간환율전망] 'SK하이닉스 효과' 하방 우위···美물가·중동전쟁 변수",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBTLTNWX0llTDk1TVRhVkJNd2lBS29QaDhzazBVTlNKcEhXSlJmS0N0WVNKOWZHcnhMTVBwUW1nZHRkZnlyV3RRQjBWb25mTEw1SjdtNXBqZ2M3dTZUajZlRTVyUGxQbVdMdkE?oc=5",
+      "summary": "[주간환율전망] 'SK하이닉스 효과' 하방 우위···美물가·중동전쟁 변수 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-07-12T09:30:00+00:00"
+    },
+    {
+      "title": "SK하이닉스, 나스닥 효과…원·달러 환율 1400원대 기대감",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5KY2gtR3k1eTZQdkpOTjdhak5yNE55cTJoN3FXMmw5Y0lCSEY4VnA2TmJTZnJlVHhhZFZjemNaM0x5YnoyblJHMDJNY0FmdUMxRGlmQThVMkx4TUpiRGN5WDNoSmlFaDRhNWdOZA?oc=5",
+      "summary": "SK하이닉스, 나스닥 효과…원·달러 환율 1400원대 기대감 스페셜경제",
+      "source": "스페셜경제",
+      "date": "2026-07-12T06:47:52+00:00"
+    },
+    {
+      "title": "[오늘의 PICK! ] SK하이닉스 美 상장이 만든 ‘1석 3조’…AI 투자·환율 안정·국내 산업 활성화",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwVi1PRDI1WTExM3Uya1ZKd2s2ODk5NnFqOTNscTFTZDJFSFEycG5DWnhueHN2YXpWQzhxcnFYYWhGZ3QwTGVkMmZPQk9kck9jRWNTV0xSaXViVndySk9CZ09xdXZZd3NQVEtTSFFB?oc=5",
+      "summary": "[오늘의 PICK! ] SK하이닉스 美 상장이 만든 ‘1석 3조’…AI 투자·환율 안정·국내 산업 활성화 코리아포스트 한글판",
+      "source": "코리아포스트 한글판",
+      "date": "2026-07-12T09:56:59+00:00"
+    },
+    {
+      "title": "SK하이닉스 發 ‘256억 달러 유입’ 기대감…원·달러 1400원대 문 열까",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKLTBEUEpsbGNvNlJHeG82dkkxaF9qYnJTV3B0NHJlcjhCejhFamdRSjlKV01Fb1RMalc0eFpwVmp1LU5MRkZDVzlmdFBNLVQzTEZOQ1VhZlRjM2daZnZWS1pfYzVYZ1pIeWVLeDBsdzBnZw?oc=5",
+      "summary": "SK하이닉스 發 ‘256억 달러 유입’ 기대감…원·달러 1400원대 문 열까 메가경제",
+      "source": "메가경제",
+      "date": "2026-07-12T02:46:25+00:00"
+    }
+  ]
+}
