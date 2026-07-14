@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-14T02:27:09.945077+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,497–1,500 KRW/USD\n\nWHY: The won is currently around 1,500 KRW per dollar—moderately weak but stabilizing. SK Hynix's $26.5 billion inflow is expected to strengthen the won (lower the rate) going forward, suggesting the exchange rate may improve for your dollar purchases soon, but the immediate effect is still uncertain and foreign selling is currently pressuring rates upward.\n\nTIP: Given stabilization is expected within days/weeks from the large capital inflow, consider waiting a few days if possible before your monthly conversion, as the won may strengthen and reduce your conversion cost."
+  },
+  "articles": [
+    {
+      "title": "[외환 돋보기] SK하이닉스 265억달러 유입...환율시장 새 변수로",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwR1NJbDRqZG8yOVp3b3M3YjM0dUhoMzA0M3BEMTdPMldGZ1RhajdzLVNvTmlHVFI5UmJzMUlOdVpoRlB5NU1ZWV9NMG9hRVNYRGN3SUN1WFB2TU5tWk1nTGJOTHZjb09LZ2ltY29B0gFuQVVfeXFMUDBHU0lsNGpkbzI5WndvczdiMzR1SGgzMDQzcEQxN08yV0ZnVGFqN3MtU29OaUdUUjlSYnMxSU51WmhGUHk1TVlZX00wb2FFU1hEY3dJQ3VYUHZNTm1aTWdMYk5MdmNvT0tnaW1jb0E?oc=5",
+      "summary": "[외환 돋보기] SK하이닉스 265억달러 유입...환율시장 새 변수로 fnnews1.com",
+      "source": "fnnews1.com",
+      "date": "2026-07-13T03:42:49+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR 40조원 조달 환율 하락 압력",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0xWHdoZkFraU5MaUVuVmRSVDVCcDVXanVrM3pvRGV2WmJsYURId0MxZEl0VmxLMjhVUEZJbzFuYzNMY19lX3k3VTJxaExCZVNrV0t5blF6bW00dmtlTjNzaUQ4WFBDX0VNR2FEUUdR?oc=5",
+      "summary": "SK하이닉스 ADR 40조원 조달 환율 하락 압력 세이프머니",
+      "source": "세이프머니",
+      "date": "2026-07-13T07:16:34+00:00"
+    },
+    {
+      "title": "나스닥 상장 SK하이닉스, 265억 달러 국내 유입…고환율 안정화 효과 기대감",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1wUXVVWEU5XzhEcmVaM21LcU9DeHlxeHlUbkhjNTlWUmtjS1BTWmpKTXdzb1UxaHFBMFpHUzhhUTd5N2lUbzdxbnpzU3EtNC1GQ1E?oc=5",
+      "summary": "나스닥 상장 SK하이닉스, 265억 달러 국내 유입…고환율 안정화 효과 기대감 더나은미래",
+      "source": "더나은미래",
+      "date": "2026-07-13T04:44:00+00:00"
+    },
+    {
+      "title": "외국인 매도에 환율 다시 1500원대…시장 \"ADR 자금 유입 땐 안정될 것\"",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRHkzZUt0cmhTNXRoUXI0YXVzc1dEaUQ4OHlCWThHRFBZMmlpQk9OaFVueGItNDBSRzJuXzFpeXRoQnFQaHdQMzY0LXgxWGwxcjlxeFhVZ19QOWVfb3NtQUY5Yko2VS0wajBpT09BRVNIUS0tQkszZ2U2S3puM0VDbg?oc=5",
+      "summary": "외국인 매도에 환율 다시 1500원대…시장 \"ADR 자금 유입 땐 안정될 것\" edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-13T10:11:38+00:00"
+    },
+    {
+      "title": "원·달러 환율, 1497.21원…1500원 내외서 등락 전망",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95d1I4emxKeGk4N2l4dkpVMkxjdk1BUHlOTnpVUlBITjlEVWFEUVVmVUJGa1RadTJDX3pLTmVmbWhGaVdOMWMwLUNKYS1SZ2Jvd2w0?oc=5",
+      "summary": "원·달러 환율, 1497.21원…1500원 내외서 등락 전망 네이트",
+      "source": "네이트",
+      "date": "2026-07-13T22:52:00+00:00"
+    }
+  ]
+}
