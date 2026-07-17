@@ -1,0 +1,27 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-17T02:34:59.673080+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,480.4 KRW/USD\n\nWHY: The won is currently strong (only 1,480.4 KRW per USD), meaning you need fewer won to buy your $2,000—but the news indicates this strength may not last. SK Hainikx's dollar selling is expected to continue through next month, which will likely weaken the won further (raising the KRW/USD rate), making future conversions more expensive.\n\nTIP: Consider waiting a few weeks if possible, as the won is expected to weaken (become cheaper for dollar purchases) as SK Hainikx continues selling dollars through late August."
+  },
+  "articles": [
+    {
+      "title": "'달러 팔자' SK하이닉스 물량 연일 출회…내달 말까지 지속 전망",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mYktjQVNnS0xzZU5lcnluMTFncjVvM25rSklEQkNFdmtoRHd1Y2tYeV9vUkV4b0Z3MUZtOWthTlBUNHN5Z3cyUmYxYUdaVUdpdlZ3MGNqX1dYbThEaVg5RGtQbjlQTDk5ejdCaG1EdmI0RlFy0gF0QVVfeXFMTmZiS2NBU2dLTHNlTmVyeW4xMWdyNW8zbmtKSURCQ0V2a2hEd3Vja1h5X29SRXhvRncxRm05a2FOUFQ0c3lndzJSZjFhR1pVR2l2VncwY2pfV1htOERpWDlEa1BuOVBMOTl6N0JobUR2YjRGUXI?oc=5",
+      "summary": "'달러 팔자' SK하이닉스 물량 연일 출회…내달 말까지 지속 전망 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-16T07:32:28+00:00"
+    },
+    {
+      "title": "美 인플레 우려 둔화 속 원·달러, 1480.4원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrdEIxMklwdVNfR3RYTVJ2YnAxS2lkbUFOOXNkVVpMSUcxT0l4a3Z5aFgzQU83cW1ncmYta2RFWUExTXREXzVscm1xTjBtTEhVTUxLdDlyZFl1dGZVaEFMNTAzajRTVTZvRmNIVVNWSkJ1T1N2RDZkYdIBeEFVX3lxTFBrdEIxMklwdVNfR3RYTVJ2YnAxS2lkbUFOOXNkVVpMSUcxT0l4a3Z5aFgzQU83cW1ncmYta2RFWUExTXREXzVscm1xTjBtTEhVTUxLdDlyZFl1dGZVaEFMNTAzajRTVTZvRmNIVVNWSkJ1T1N2RDZkYQ?oc=5",
+      "summary": "美 인플레 우려 둔화 속 원·달러, 1480.4원 마감(종합) 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-16T06:35:53+00:00"
+    }
+  ]
+}
