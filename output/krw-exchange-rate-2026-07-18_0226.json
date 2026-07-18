@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-18T02:26:04.068393+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,480–1,484 KRW/USD\n\nWHY: The won has strengthened significantly to its lowest level in two months (1,484 KRW/USD closing), meaning you need fewer won to buy your $2,000. This improvement is driven by SK Hynix dollar inflows and weakening US inflation concerns. However, the articles note this dollar-selling pressure from Hynix is expected to continue through late August, suggesting potential for even better rates ahead.\n\nTIP: While current rates are favorable, consider splitting your monthly conversion across the next few weeks to capture the ongoing dollar-selling trend from Hynix flows, rather than converting all $2,000 at once today."
+  },
+  "articles": [
+    {
+      "title": "[경제 포커스] SK 하이닉스 ADR이 1400원대로 끌어내린 환율, 어디까지 떨어질까 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOV3RyejJVcW44bjV0YWpkZ3R2QkdRcEhoeVQwaFRPRE1vWlZkb1c1bGNxdUsyYkp6YUhiQXlWcEpNaThaR0F0UjAwMjBXd3dJUWNhLW1XeXlUUnBPSVdtblJMSHhxcDByLTR4cTBUVjNVeURldzhOSk4yYXkyMlF0SHdQRFctd9IBmgFBVV95cUxNMzFiQU9QOEhmMk93V0NXUXZmOU9tbU1OaGY0YjdPTWZnYkJfQ0FTYUlSS0J6S3l6M2JPQS1aU2UyRF9oTnIyYjBMeXRSOHhQZExsX1ZObnZDRE1vNE1ScU1CVVNOVEFQbFBkTVJOMUNVd1NFUUFFYTFOdnRGaFNsSnNDbE9nbnZrRWJmbWU0OGpNSDRFUmhscVF3?oc=5",
+      "summary": "[경제 포커스] SK 하이닉스 ADR이 1400원대로 끌어내린 환율, 어디까지 떨어질까 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-15T11:48:00+00:00"
+    },
+    {
+      "title": "[외환] 美 인플레 안도에 1,480원대 유지",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1SUGhZdVRiV3RjeGh4OVFNNVNGWmdrS2ttdE95VXlMVHFjS0xQYkNKRFZxYkVic01KSFNuVjlFTDFlVHRYOGVzTVZucVNLMXZRbUZTTTlBeEtmVW9BUXNhYWNNbTdBTWMtUXM0Mnhzdm9wQQ?oc=5",
+      "summary": "[외환] 美 인플레 안도에 1,480원대 유지 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-15T21:35:11+00:00"
+    },
+    {
+      "title": "[외환-마감] 약달러·외인 매수에 하이닉스까지…1,480원대로 하락",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aX19EQ3lrQjBGNi1xWTgxbXNCNmxZQjBSX2pRMzJaMDJlMDhSc3BDNlBxUFI0dzF4LXpYZ2hMZFFjcmlsZDJhSHlMckN4d0MtZE1SYm5iYUFic25VbUxydS00eGo4bjRQVVlqTzBMbGJzQ1l30gF0QVVfeXFMT1pfX0RDeWtCMEY2LXFZODFtc0I2bFlCMFJfalEzMlowMmUwOFJzcEM2UHFQUjR3MXgtelhnaExkUWNyaWxkMmFIeUxyQ3h3Qy1kTVJibmJhQWJzblVtTHJ1LTR4ajhuNFBVWWpPMExsYnNDWXc?oc=5",
+      "summary": "[외환-마감] 약달러·외인 매수에 하이닉스까지…1,480원대로 하락 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-15T09:43:44+00:00"
+    },
+    {
+      "title": "[외환] 원·달러 환율 1484원 마감···두 달 만에 최저 종가",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9lX2RISWZnSUFJc21sb0NHY1ZGMHR6R1dSWV92NUJTVXF2SXJmNVNwejJpc2hsY290TlR6cFZlSE1WTUVYLTlWc1ZRbUk4WEFOMkpXTHg4V2FGYkFMZVFmSldXSUVvcFE?oc=5",
+      "summary": "[외환] 원·달러 환율 1484원 마감···두 달 만에 최저 종가 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-07-15T08:00:00+00:00"
+    },
+    {
+      "title": "[외환+] 하이닉스 환전에 수급 우위···원·달러 환율, 1484원 마감",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YbUpBaVhHNHFXT1NTeXdHanY1QXJrVG1namwza1ZIQml5NzF6WDhaVno0c3hJSnlaUEFEaDAzbFhvMWdZN2tUX3JjRnozYm1qRV94eGpWRWt5bHd0d3dsMU5CRGRFeXhBU1E?oc=5",
+      "summary": "[외환+] 하이닉스 환전에 수급 우위···원·달러 환율, 1484원 마감 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-07-15T07:29:50+00:00"
+    },
+    {
+      "title": "[SK하이닉스 ADR] 40조 달러 유입 확정…장단기 환율 이중 변수 : 네이버 블로그",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQ2pmVUpDX1RGMDBncjdfQXFfVlFQYWp4aXdtc0lzRjg3bEdHMUdFZnloNi04eDd1bmxhd083eWt5cldLZ0pRc2ppaS1rUlF1TVdZUDc5N2xRSHQ3cE9zV3B1U1RJSjh5dlA5ZFhZSDU1ZFNyZDhSVzFTRFg5ZFhPbm1jdUpqMTZxcmxYclZDUQ?oc=5",
+      "summary": "[SK하이닉스 ADR] 40조 달러 유입 확정…장단기 환율 이중 변수 : 네이버 블로그 Naver Blog",
+      "source": "Naver Blog",
+      "date": "2026-07-16T01:08:21+00:00"
+    },
+    {
+      "title": "하이닉스 달러가 쏟아진다",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBtX2VZS0FYeU9kNU1ka1dJYXNsLUZHdWZwV2Nha3pZTjJudUF2QlNuUGJadXN1YkpRQ1UyZzNielVXR3lBRzNTODRGMk1yelNuR1RIN3VzSDZWX0pzT2dUdHBGbXZnckNT?oc=5",
+      "summary": "하이닉스 달러가 쏟아진다 OBC 뉴스",
+      "source": "OBC 뉴스",
+      "date": "2026-07-15T08:58:39+00:00"
+    },
+    {
+      "title": "'달러 팔자' SK하이닉스 물량 연일 출회…내달 말까지 지속 전망",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5mYktjQVNnS0xzZU5lcnluMTFncjVvM25rSklEQkNFdmtoRHd1Y2tYeV9vUkV4b0Z3MUZtOWthTlBUNHN5Z3cyUmYxYUdaVUdpdlZ3MGNqX1dYbThEaVg5RGtQbjlQTDk5ejdCaG1EdmI0RlFy0gF0QVVfeXFMTmZiS2NBU2dLTHNlTmVyeW4xMWdyNW8zbmtKSURCQ0V2a2hEd3Vja1h5X29SRXhvRncxRm05a2FOUFQ0c3lndzJSZjFhR1pVR2l2VncwY2pfV1htOERpWDlEa1BuOVBMOTl6N0JobUR2YjRGUXI?oc=5",
+      "summary": "'달러 팔자' SK하이닉스 물량 연일 출회…내달 말까지 지속 전망 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-16T07:32:28+00:00"
+    },
+    {
+      "title": "미 인플레 피크아웃에 강달러 꺾일까⋯\"1480원 초중반 하락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9UY002aFNtUzhoVDlMUm1sbEtLNkVjR3V2U3BVenUyMWV0UjJ3bGJ6YVZ5UjlqeFZOTmpVNW9icG1VVzY1d1VhdjlRQU1DSms3MzZISg?oc=5",
+      "summary": "미 인플레 피크아웃에 강달러 꺾일까⋯\"1480원 초중반 하락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-07-15T23:36:00+00:00"
+    },
+    {
+      "title": "美 인플레 우려 둔화 속 원·달러, 1480.4원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBrdEIxMklwdVNfR3RYTVJ2YnAxS2lkbUFOOXNkVVpMSUcxT0l4a3Z5aFgzQU83cW1ncmYta2RFWUExTXREXzVscm1xTjBtTEhVTUxLdDlyZFl1dGZVaEFMNTAzajRTVTZvRmNIVVNWSkJ1T1N2RDZkYdIBeEFVX3lxTFBrdEIxMklwdVNfR3RYTVJ2YnAxS2lkbUFOOXNkVVpMSUcxT0l4a3Z5aFgzQU83cW1ncmYta2RFWUExTXREXzVscm1xTjBtTEhVTUxLdDlyZFl1dGZVaEFMNTAzajRTVTZvRmNIVVNWSkJ1T1N2RDZkYQ?oc=5",
+      "summary": "美 인플레 우려 둔화 속 원·달러, 1480.4원 마감(종합) 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-16T06:35:53+00:00"
+    }
+  ]
+}
