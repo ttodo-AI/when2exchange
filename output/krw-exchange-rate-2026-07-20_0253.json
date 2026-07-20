@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-20T02:53:27.526644+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,488–1,490 KRW per USD\n\nWHY: The won is currently WEAK (high KRW per USD), making dollars expensive for your monthly $2,000 conversion. News indicates the rate is rising toward 1,490 and expected to climb further due to Middle East tensions and semiconductor sector weakness, so timing your purchase now locks in an unfavorable rate.\n\nTIP: Consider spreading your $2,000 monthly purchase across multiple smaller transactions, or wait for any temporary dips below 1,480 KRW/USD if your budget allows, since the trend suggests rates may rise further in the near term."
+  },
+  "articles": [
+    {
+      "title": "중동 불안에 반도체 조정 리스크까지⋯\"1480원대서 상승 흐름\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4yUFZXZmxsTngyYVQ5ZVFua204Xzl0djlsTzIwLUd5bjh5X2Z5dWFUWFVyU29QcHA2RDFvY1RoVlZWeHBLTjExbXpHX2J2TjdsTmhCQQ?oc=5",
+      "summary": "중동 불안에 반도체 조정 리스크까지⋯\"1480원대서 상승 흐름\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-07-19T22:59:00+00:00"
+    },
+    {
+      "title": "하이닉스 달러, 원화 띄웠다",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBPWlUyV1VHWjkwQ3gzSGJ4Y0pqUmwtU1hfbjh2QmdvRmJVa1pGV2hocUVmdnNXVjYyMVdhS0cyMURtSjNIbjc0TjVOYjNTR1dJRURHaEZ3TGhzcXMxRTQweGtFUXZxeWNK?oc=5",
+      "summary": "하이닉스 달러, 원화 띄웠다 OBC 뉴스",
+      "source": "OBC 뉴스",
+      "date": "2026-07-19T04:54:13+00:00"
+    },
+    {
+      "title": "[경제 포커스] SK 하이닉스 ADR이 1400원대로 끌어내린 환율, 어디까지 떨어질까",
+      "link": "https://news.google.com/rss/articles/CBMizANBVV95cUxPQVZ6dmJaclc2SWxuQ2NPVTNIaWx1WndjZ3hOc0wzOUw4TkdwZXlfX0VUeENEQnFkWWRaOUpPZ01CeDhsZlNMTUViNDZQNHFlQ0Q0a0VzZWs2dHhpWXJ4aWtBSk9SelY3amx2NjVKY3hqMEgtc3ZJTVBXUlFDSXF1cmZVYzNqbGxsXzZ5dG5ueVFRSGhtNGxGRWJVSXdyQV95OTdhemxmT2U4SDI0SU15RWRFVmJERXVFZU9sVGxrU2tWdG1NamM4MVhCQmxqYy1FNWZhaDd6VXFRNXFiZEdfZFNfMFRGWE8xWWhmOGluNlhfZUVXNEIySjRVS1E0OGVNTnV3S3E3czlaYkVnbjZtYldKb2ItX2JQUTdMUEVuM0EyNjNSQ3ZxME85Z1hCM243Z1ByMVF1N1BmdkQ3R0lKb3lfaE95Mi1Nd0F3cFVNcEdsS3N3SUpGLVFhdlgxLWViVHJoZDZuVWxBUi1mLXFpWXBuVWtUQVlsRlo4ajR6bTB6TXdUWm9WdnA3alBnUk84X1J0QnV5VkxuMmprV2xHU3lzZGd5N00yNmpzd3dDTGdqZzMtZjh4cG9OU3VSaks2X0ppazhnMkp3SjdE?oc=5",
+      "summary": "[경제 포커스] SK 하이닉스 ADR이 1400원대로 끌어내린 환율, 어디까지 떨어질까 MSN",
+      "source": "MSN",
+      "date": "2026-07-19T12:59:29+00:00"
+    },
+    {
+      "title": "원·달러 환율, 9.8원 오른 1488.3원",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcVhCSGc4OWloVWZVdmxTQi1MZzR6ZlFkSUhYeW5XVjk0Z2hmd3B2Wk9oSjZHY3I5bGs4amF6SWJZamlaTENJWHdOMmF0blM1d1czVlJiTjJsQXpoZE9qZmNzdWcySXJfWE9KQ1U0TnJLcFlCajFaV1lsSlB2VW9ZeDBMNnhxUQ?oc=5",
+      "summary": "원·달러 환율, 9.8원 오른 1488.3원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-20T00:31:00+00:00"
+    },
+    {
+      "title": "[이슈] 유가·반도체 겹악재에도…'환율 상단' 누르는 달러 공급",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBmMHZrSHlfSUVpeXZOdThiNWVxTTlaX0dMb0Uyc2Y5VUlweHJnVVlTZF8yWk5yUEVWM1hJbXVVNFptamk4UWM3S21NdXF1cHZGVlUyWC1tcS04VURWSXNBR2QwdG1ISnBFMVpLaEJJWjBzVm8?oc=5",
+      "summary": "[이슈] 유가·반도체 겹악재에도…'환율 상단' 누르는 달러 공급 오늘경제",
+      "source": "오늘경제",
+      "date": "2026-07-20T01:22:58+00:00"
+    },
+    {
+      "title": "중동 불안과 반도체 주 조정 지속…환율 1490원대로 상승 위협[외환브리핑]",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbUpUamdDSUVPVHBlTGI0WGN4X3Mtby10dWVTclBzbEJwZXRBQlRENThuMHdaOTRrRHM1SlpMLVA4bjFrLTZfbWFsTFNoV1otUmlJZ0d6UUp6SEdlODhSZ2o1aG52d2syZXIzY2hubV9mUXRuVjJwUWh2MGR2SWlWWg?oc=5",
+      "summary": "중동 불안과 반도체 주 조정 지속…환율 1490원대로 상승 위협[외환브리핑] edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-19T23:20:03+00:00"
+    }
+  ]
+}
