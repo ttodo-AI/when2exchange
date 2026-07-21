@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-21T02:36:48.308025+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,470–1,476 KRW/USD\n\nWHY: The won has strengthened significantly, with the exchange rate dropping from the 1,500+ level to the 1,470s, meaning you need fewer Korean won to buy $2,000 USD. News highlights the won at a \"G20 currency appreciation #1\" position, driven by strong corporate inflows (SK Hynix), and forecasts point toward further strength toward the 1,400s, suggesting the current rate is relatively favorable before potential further strengthening.\n\nTIP: Lock in this conversion soon, as continued won strength (lower KRW/USD) will make your monthly $2,000 purchase even more expensive in the coming months."
+  },
+  "articles": [
+    {
+      "title": "'수급 파워'로 내려가는 환율…하단 뚫는 ADR 환전에 1,450원 가시권",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvQUJQSnZUVEJLYkFjajhqWHREd0VlQkVYUTM3a2ItQjBoMlJKd1l6LWdldlhJYTFsMFpDWmZxRFhoUUxhajR1VG40TnRzR1UwOE4zdUxIanNGVzR4YWtIVF9nWW9CWnUycW5NVTdKaXc?oc=5",
+      "summary": "'수급 파워'로 내려가는 환율…하단 뚫는 ADR 환전에 1,450원 가시권 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-21T01:41:42+00:00"
+    },
+    {
+      "title": "원·달러 환율, 2.4원 내린 1476원 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPU2ZyV1VRbkRnMEJpZWRfMWR2TGdyQ3pCalFwWWpIMUFsMUpHZjdWei01aENyTEVNVXVzTWcxSzIyR0dKWUt2S2tYTmhTR0liV2RHVG9zOHRiXzEzeGVkdTJlUnJFRnpydi1YSHhLSE1rWXhWeEVKWVhxdVpIZkxyNWVueV92UdIBmgFBVV95cUxQUkc1cThjMzliZHBMR3RYb2MxcG1Wa01ReHh6WDlhTC1Qc2VyT05VOWZkUGF3ZE5hdFJrRUwyUlhiT3ZISUJUa1dvZTU0T3ZES1laNk1LaDFPN2JBMmFidFBFLV9fR1VKc3U0YUZncTFzSnpkVXRaS3pycFBvcTZFQ2pPWWU2SVFvbnE0RkIxbXdjR3JVdHVUSzV3?oc=5",
+      "summary": "원·달러 환율, 2.4원 내린 1476원 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-21T00:27:00+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 기죽은 '사자'들",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBSenRRcXJ2TEpaNDBmVVY4M2ZaRWI1MDAyc25JZnlwS1dSTGpWa1V4TVBiWi1pMjNnWVpPamdYNklSVXZfREh1Mm1xV3VCdENaMks3R0VzVWVWMHgxRENpUV9mSGNaaXFqd1B1c1hfc1J2QQ?oc=5",
+      "summary": "[신윤우의 외환분석] 기죽은 '사자'들 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-20T23:02:15+00:00"
+    },
+    {
+      "title": "달러-원, 커스터디 매수 약해지자 1,400원대 안착…주도 세력 바뀐 환시",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAwY3hlYWczX1p2NXZPakZZWndONlQ3VDlPRjJaUXJPd2FuR1ZFSjZBVldBa2czeXFXeWwtZlFMa0U2Smoybnp3VHlYVnBLb0UxTTByNEFYWWc2MVRTU0h4U016RVRJdkZoRFZwWW9mS0zSAXRBVV95cUxOdm9CNlE3NGNQUEhrTFB0OHluWWJod3JhN2ZyZTctakFMb09XMjZiRmdOU3pPckNBWkh5Sk5ESTI2SU1sRGhpSTg3c0RxQVFyV0o2Q1R2OXhRd1JqOTNOOW9ubjlsUXFQRHZKajJ4WG1lcWwwWg?oc=5",
+      "summary": "달러-원, 커스터디 매수 약해지자 1,400원대 안착…주도 세력 바뀐 환시 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-21T01:41:07+00:00"
+    },
+    {
+      "title": "환율, 1470원대 진입…변수 남았지만 1400원 중반대 안착 전망",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpSXlKckJDUjJpM2VmUHd3a1lFaTgyV3RYRWlrck5xcUYwSlVWZjZzTHh6MjNSR2E4cGk3WnRWOWFlbmk2ZHdwekdJaml3Ty05VFg4?oc=5",
+      "summary": "환율, 1470원대 진입…변수 남았지만 1400원 중반대 안착 전망 네이트",
+      "source": "네이트",
+      "date": "2026-07-21T01:39:00+00:00"
+    },
+    {
+      "title": "주유소 기름값 소폭 하락…오늘 주유하면 얼마 아낄까",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8zajBmVUo5M3pVcWZnTzFzaXpyTnpVNHpCZ0hMeS0tTTh3Xy1FeUlDMG5lYU9fc09pdGJRcjlqRl9iSXBYUmtHVE5VLWRHcEs4SmxKMkNn?oc=5",
+      "summary": "주유소 기름값 소폭 하락…오늘 주유하면 얼마 아낄까 위키트리",
+      "source": "위키트리",
+      "date": "2026-07-21T00:33:00+00:00"
+    },
+    {
+      "title": "1500원대 무너진 원·달러…强달러 여지는 '여전'",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vcUtOZnFGcEtHdzZvTmdyS21JOVMtYXp0VlZiQTZSdFZuQWdULUVuaVo4WEJLak9QY2VIVmlzanFWVE1FZ1J3eFJ0emQ2QTBXYVN1UUhMek1IaHNkVG52dVVhMS1zamFFaVNoTUotTFNZYWhaa2xpMdIBeEFVX3lxTE9vcUtOZnFGcEtHdzZvTmdyS21JOVMtYXp0VlZiQTZSdFZuQWdULUVuaVo4WEJLak9QY2VIVmlzanFWVE1FZ1J3eFJ0emQ2QTBXYVN1UUhMek1IaHNkVG52dVVhMS1zamFFaVNoTUotTFNZYWhaa2xpMQ?oc=5",
+      "summary": "1500원대 무너진 원·달러…强달러 여지는 '여전' 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-07-20T21:00:00+00:00"
+    },
+    {
+      "title": "\"2분기 GDP·7월 CPI 방향성 엇갈릴 것…통화정책 긴장 지속\"",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94STg0eVBoa2dBd0ZOVGZhc0xNbkxaMktVeF9odm95RkFCZ3N0ZDlNYWplRmJraDBham9iVkhwX2J3UGZlREh5Mk54aGlOdGIzV3lhRENnSWhfc0HSAWBBVV95cUxQWmxCWS1xTE52VXlTTXVvRjFsc19qeGlUX2RrbUtVNXhYanprRVdyTFpPOXpWS3hGd1dqMkN5YjJ4dEJPanRCM09uQ2J4QTVoajhRc2h5U2pMS3ZZV0ZyMTM?oc=5",
+      "summary": "\"2분기 GDP·7월 CPI 방향성 엇갈릴 것…통화정책 긴장 지속\" 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-07-20T06:57:37+00:00"
+    },
+    {
+      "title": "원화, G20 통화 절상률 1위…SK하이닉스가 안정시킨 환율 [분석+]",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5BazJDZ3o5WEpUbkR6cFYyWHlmSWFuU183elZrZll5QXhnalFDM0pCOHpqTUwxUlZSR3h3eEo3dGstUUNwUjM4ekRwVEVuRjZ2?oc=5",
+      "summary": "원화, G20 통화 절상률 1위…SK하이닉스가 안정시킨 환율 [분석+] 블루밍비트",
+      "source": "블루밍비트",
+      "date": "2026-07-20T13:06:05+00:00"
+    },
+    {
+      "title": "SK하이닉스 환전 유입 지속에…환율 1470원대 후반 [김혜란의 FX]",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WY2tLNk1LQW83VFlxaDBENmpOcmVZTWM2amtoQ1RFUkFEUFRvU2V6aHJ0TWJJaXUyQWFlcWd4TDRUaWgwUVlPajlVSUJLenJtd1HSAVNBVV95cUxNZHNjdy0yTF9QcGdOclFfYnJZYi1CTTZ2TlRpNF9uNW5Ldml6ZDg1VERsdTVNQXZ3dFk0TmtOWTJwc2lkR3VNdHB0MDlvbFBpWDBlcw?oc=5",
+      "summary": "SK하이닉스 환전 유입 지속에…환율 1470원대 후반 [김혜란의 FX] 서울경제",
+      "source": "서울경제",
+      "date": "2026-07-20T07:18:11+00:00"
+    }
+  ]
+}
