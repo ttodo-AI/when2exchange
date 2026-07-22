@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-22T02:35:22.092721+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,470–1,473 KRW/USD\n\nWHY: The won has strengthened significantly (weakened in USD terms) due to SK Hynix's 40 trillion won foreign-exchange conversion, pushing the rate down from 1,555 to 1,473 KRW/USD over recent days. This means you need fewer won to buy $2,000, making it relatively cheaper to convert right now compared to recent weeks.\n\nTIP: Lock in this conversion now if possible, since the government is encouraging more corporate repatriation, which may sustain won strength in the near term—but monitor for any reversal if dollar strength resumes globally."
+  },
+  "articles": [
+    {
+      "title": "[신윤우의 외환분석] 풀리는 달러와 곳곳의 암초들",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9IWE9LRVZJUnl1bzNjUnRydXhvVmFCZEVaR1U5d2dZQ1A0ejRiT1hYb2lpVFIyLUczUHBUaGdIbnB2VkFnb05SUlMxLTNVMjRxaWR0NW9FRHUyR1RWSTdiQ3ZJaW9NRzBKSEFPS2ZjZ1N2M0t00gF0QVVfeXFMT0hYT0tFVklSeXVvM2NSdHJ1eG9WYUJkRVpHVTl3Z1lDUDR6NGJPWFhvaWlUUjItRzNQcFRoZ0hucHZWQWdvTlJSUzEtM1UyNHFpZHQ1b0VEdTJHVFZJN2JDdklpb01HMEpIQU9LZmNnU3YzS3Q?oc=5",
+      "summary": "[신윤우의 외환분석] 풀리는 달러와 곳곳의 암초들 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-22T01:03:13+00:00"
+    },
+    {
+      "title": "[전혜은 시선] SK하이닉스 40조 환전…환율 급락, 1470원대 안착",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5oLWQzUXhOcmROTURSRXZkcTZuZXlkRV9CcWYtYi15OVR0NEl0YnRVZWNfYjg3eUtUM2pJaFR4aU1uU3U2WXhpcEM2bmVQY2JoNGtlUzlzdHg3Y2NMcDY5OV8yT1l1eUsxMndTTUlR?oc=5",
+      "summary": "[전혜은 시선] SK하이닉스 40조 환전…환율 급락, 1470원대 안착 위클리오늘",
+      "source": "위클리오늘",
+      "date": "2026-07-22T00:50:48+00:00"
+    },
+    {
+      "title": "[단독] 40조 들고 온 SK하이닉스… 환율 1555원→ 1473원까지 뚝",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9wVmxpMU9fcEZpSTFtTFIwZ3FFLWNrSzZhM25Da2h6VHpxUHRwUlN3dk9BMkE0eWVmb2dvRlBOZEJVUjVSb3pORHVoX0ZNOFBINGwwdUNlQXNqNGhkVnIxZzBEb2VnTlHSAWxBVV95cUxNdmIweGJ3V3VwbkEzc0gtLXJ1b2p4QldhX0N5X1NsWEhGNnp2Y0xvckpKRVFtX2cxdGVjSzBIV0VKVDVmSURSY1JFaWNHTF95VlNpaWtFNFlkWkZZS01VM2pNZi1ENzh1UzRqTEM?oc=5",
+      "summary": "[단독] 40조 들고 온 SK하이닉스… 환율 1555원→ 1473원까지 뚝 국민일보",
+      "source": "국민일보",
+      "date": "2026-07-21T17:17:00+00:00"
+    },
+    {
+      "title": "SK하이닉스가 환율도 낮췄다…40조 ADR 자금 환전에 원·달러 1470원대로",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tbE44ZG8tU3FUdjhmUnhiczFlMXdxM05GSm40anJwZ0RTWVRMQTZGcnh2WHZObk1OZGtrdFlPbkpWUTlKLUhRT0VFanE5STY1UWtYRm1FUjM1U3lUd2VVb2JrUzVYb2J0aFpaaGNrX1YyVG_SAXdBVV95cUxQOWdpeGxRa2FtcmRjS2ttN0xubnhKRG90YllGWkdvX3FxWFhaVU03YVN1TUxrUGNUZmlXX2ZSZzN0UVdySElDN2hZWnNJZG9Wb01WNVRkSGxPQ0gtQmlMemdZVXYzZEZ3My0wZmlORzBHTGZPdHlPOA?oc=5",
+      "summary": "SK하이닉스가 환율도 낮췄다…40조 ADR 자금 환전에 원·달러 1470원대로 핀포인트뉴스",
+      "source": "핀포인트뉴스",
+      "date": "2026-07-22T00:17:58+00:00"
+    },
+    {
+      "title": "원·달러 환율, 5.0원 내린 1473.4원",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByUFV6ZTdrQkw3WGVFbVJ3Y00xX0VqTzJyNG9Id3EyTklzbDBST2ZOVmNJQU1MWW9GcGVyOFJObHdrbk9OZW9JV3A5NllXaXBIWTFV?oc=5",
+      "summary": "원·달러 환율, 5.0원 내린 1473.4원 네이트",
+      "source": "네이트",
+      "date": "2026-07-21T07:19:00+00:00"
+    },
+    {
+      "title": "SK하이닉스가 외환 시장을 구했다? 환율 1490원 무너뜨린 40조 원의 위력",
+      "link": "https://news.google.com/rss/articles/CBMiogNBVV95cUxQWnEzZFJacm91LWVyc3Zycl9PNDZLYW4xNUVYWHZ1bUFYNXBFU01YeFdzZVlJX0tDdzE0bzdkSDFxWXBNRlBlNklfYTNTWWVMakZmVFNVYXFPQjhKLWJaNF9nRUJzVXNRV2xmQlE5SjlfakVQSm0waVh0V0V6SmZVS0pqa3E0bXBOYlNGQ29zMUF0UDVTMVpfTmNsM0pUVUt3dzJ0aHYtOEhyVjVKMi1oWTNRQzlaZm1xQWlEdmVnTkk2cVM3ZXEteWg5VjlTWjJYRlpHNHRDdlNPTU5SWDF4MnltMVR5S2M1ejdqTkZLMnAzZ0M4OEFSYWExMUx3a3hWNEdCVTVseXkzZEpnRG9wNmNncjYtR2E5N1JOMTFHLThKMktKMG8zampFT3VyMmZ1dHZmc3NoUjY1aWJjdi1yTGx4VVVfXzlxUHVCcnlGRGQ0aHVKNFREVmE1T2VRZlRnSlZCLURjRHZIX1RpSndnN0NPcDVoV1JBZjd0N1ZjbUxFRC1keTBwWkJqQTBOSWhKaHg2OGxHQWNDS2ppOXBqemFR?oc=5",
+      "summary": "SK하이닉스가 외환 시장을 구했다? 환율 1490원 무너뜨린 40조 원의 위력 MSN",
+      "source": "MSN",
+      "date": "2026-07-21T14:05:17+00:00"
+    },
+    {
+      "title": "달러 강세에도 원/달러 환율 6일째 하락…1470원 밑으로 가나 - 머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1KUjgyalBVVVhSWWtKbzRzZ0xmLWgtS3M3VmR5cXJjTU5jVHpFV0dCQ2xmLUQwMk9RQXVTVzJEMUdvMm1qSjVBM3FpaXdoQXlDMDNiRGJvVzJMbzhNNy1HRXo4NEc2SnkwT3ZB0gFwQVVfeXFMTk1hTmh5TVNlb1drN1JWa0pvYmM1RENRc1FscFhTYVR3Q1VHSVpxY0Zncm5GbUxRMnEta0VaMmE4ZFowUjQ4TXJLbVpCNGZObl9UZ1I5YWsxdmp1V21uLWs1aml1SlZaekE2a3ducDFGRQ?oc=5",
+      "summary": "달러 강세에도 원/달러 환율 6일째 하락…1470원 밑으로 가나 - 머니투데이 머니투데이",
+      "source": "머니투데이",
+      "date": "2026-07-21T07:42:26+00:00"
+    },
+    {
+      "title": "“외화예금 환전하고 유보자금 국내로”…정부, 기업에 외환시장 안정 역할 당부",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uVjE0NHMycnhKclJNOXdhb01ZQURSMGtmOHRxekJrV1ByS1hGVTgwOTNrMnVyQWNjd2QwNGJ6SlFjWDhhVXc1Um1QV051Qmg1NXI4ZlFR?oc=5",
+      "summary": "“외화예금 환전하고 유보자금 국내로”…정부, 기업에 외환시장 안정 역할 당부 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-07-22T01:00:42+00:00"
+    },
+    {
+      "title": "원·엔 환율 900원대…하이닉스 효과에 1년8개월 만에 최저",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45ZmRIMmVUNjBHdXExTTh2c3h4ZVI5QkRPLWo5dlBuY3VDTnVaY1FYRzBhLWEyejI2NkpGUVVWRktQTU1TNXlwYnpUQVhYdWdUbHpr?oc=5",
+      "summary": "원·엔 환율 900원대…하이닉스 효과에 1년8개월 만에 최저 네이트",
+      "source": "네이트",
+      "date": "2026-07-21T07:19:00+00:00"
+    },
+    {
+      "title": "허장 재경부 2차관 \"반도체 호조로 하반기 외화 수급 개선\"…수출기업과 환율 안정 민관협력 논의",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0wMmc1aFFhN1J5UTVlVnVTSWpCYXhPdVVQa1dnOWh2UjlScmFDcFZoUkpzTFFrTG9zcTd3bUpkODN1RjFwWFotT2swM1NKdXBGd05XTE5mNW1Bc0RLWjRiZg?oc=5",
+      "summary": "허장 재경부 2차관 \"반도체 호조로 하반기 외화 수급 개선\"…수출기업과 환율 안정 민관협력 논의 네이트",
+      "source": "네이트",
+      "date": "2026-07-22T00:29:00+00:00"
+    }
+  ]
+}
