@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-23T02:40:42.188171+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,470–1,480 KRW per USD\n\nWHY: The won has recently strengthened (weakened from 1,560 to 1,480 KRW/USD) due to foreign investor inflows and SK Hynix ADR conversion activity, stabilizing around the 1,470–1,480 range. However, multiple headlines suggest uncertainty about whether this level will hold, with one article questioning if the rate will \"return\" to better levels, implying the trend may reverse.\n\nTIP: Since you need fixed monthly conversions, consider splitting your purchase across 2–3 days each month to reduce timing risk rather than waiting for a significantly stronger won that may not materialize."
+  },
+  "articles": [
+    {
+      "title": "SK하이닉스 ADR 환전 랠리에도 원·달러 환율 회귀는 어렵다?",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9sOHk0RVhzRUNqRVM4SFUxZEpwd0lwc1g2c3ZVMjl3MUkyWkNIMW9NUXktYmZXWndwUWpuOEdkUGtjWDdHN0Zvb2FOaUxiMVZEajhPSmJ4LWhVem1ob0RfUTJldV9KYTRhTjNFU2VqVTdFUQ?oc=5",
+      "summary": "SK하이닉스 ADR 환전 랠리에도 원·달러 환율 회귀는 어렵다? 인베스트조선",
+      "source": "인베스트조선",
+      "date": "2026-07-22T22:00:52+00:00"
+    },
+    {
+      "title": "여름휴가 앞두고 환전 언제?…더 기다릴까 지금할까",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWnNSSXhpaDkzSE5mV3cwUEdxdWpldFUyRGF1ZFlRaHI4eVlRMFZGSjE1TnNCZTlyOTlKckdVYTB0V1dQMC1KbFBpb2NwT1hxNEhHZkFCa3hNSk9tUGllVWFhMklHLWRVMVJZZHhBRFZmV1JtX1FVTnY4dGVDNFhyMA?oc=5",
+      "summary": "여름휴가 앞두고 환전 언제?…더 기다릴까 지금할까 edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-22T08:25:42+00:00"
+    },
+    {
+      "title": "[이슈] SK하이닉스 ADR 자금 환전 본격화…원·달러 환율 1470원대로 안정",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5HTGpPcmh0RTNpb3RZdjBpbFEwN0RZVWNmcnBCaldMQjNwaDNVMHpUalAzUUUtN3JXbVJSNzVkbXpDOU5yWGZxdFh2bWFacTF0OU5BWklEdjhJa0txdmJQYWJVSXN3SkpKdkFqVnNwNDNTQdIBckFVX3lxTE5HTGpPcmh0RTNpb3RZdjBpbFEwN0RZVWNmcnBCaldMQjNwaDNVMHpUalAzUUUtN3JXbVJSNzVkbXpDOU5yWGZxdFh2bWFacTF0OU5BWklEdjhJa0txdmJQYWJVSXN3SkpKdkFqVnNwNDNTQQ?oc=5",
+      "summary": "[이슈] SK하이닉스 ADR 자금 환전 본격화…원·달러 환율 1470원대로 안정 폴리뉴스 Polinews",
+      "source": "폴리뉴스 Polinews",
+      "date": "2026-07-22T09:03:56+00:00"
+    },
+    {
+      "title": "돌아오는 외국인…1560원 찍던 환율 1480원대로 '뚝'",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1ejV4NEhPTUVhYUVDWURBOGpLNXJraldiNTc2SjBoMnNKMVA1ZFNEdUlFVS10NkZ6Q0VnZ19Qai1EZ1ctUWtnN2h4T3hQNmtGY2NmLTNxbXMwYW9NbFFJMQ?oc=5",
+      "summary": "돌아오는 외국인…1560원 찍던 환율 1480원대로 '뚝' 네이트",
+      "source": "네이트",
+      "date": "2026-07-22T07:51:00+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 성장이 일으킬 파문",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9aOVY0dkMxOXlKdDVWV2QyX1BDT2ZUWW1jMXlIRm1mbk9na05oSFdSeXRReWhpeks0bm5rUEVGTEhvRjhXZE1GU21zeVdBNHFxYjJCdUtpQ2NrVnZ5UzZRdzdPOHNLYi1JZkJSbmdPYWFuWXhZ0gF0QVVfeXFMT1o5VjR2QzE5eUp0NVZXZDJfUENPZlRZbWMxeUhGbWZuT2drTmhIV1J5dFF5aGl6SzRubmtQRUZMSG9GOFdkTUZTbXN5V0E0cXFiMkJ1S2lDY2tWdnlTNlF3N084c0tiLUlmQlJuZ09hYW5ZeFk?oc=5",
+      "summary": "[신윤우의 외환분석] 성장이 일으킬 파문 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-07-23T00:57:11+00:00"
+    },
+    {
+      "title": "[GDI 질주] 한은 매파 힘 싣나…환율은 이미 선반영",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE50bFdtQldBNUhvQkMyUlFJdTlIUTdWWHJwbW1sR3NSZFZGN2wwN01SaTlkQnNZTkh0eDN0bC1YRDV0a0RoS0Z1elozZWNxdm9aQXcxLVdsUFBvN29COHhVZXd2dktab1E5bWJDekk0bzNBZw?oc=5",
+      "summary": "[GDI 질주] 한은 매파 힘 싣나…환율은 이미 선반영 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-23T00:01:20+00:00"
+    },
+    {
+      "title": "원·달러 환율, 6.7원 오른 1480.1원 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPLUV4azJ4Uzhaal91SElLQzZwMVpoWHpjN3Eza2tYa1NHV3JwNTFnRzNEbmFFaU1xWkFxbTdtc1IyT25QZnJRM0x5UWROSVdraVJySVNfUnV6VkIwWFI5V1VRei1nckNyZlBkY01Pb3RyN0JtSUFObEVxc3ZQZWkxTXVINFBLUdIBmgFBVV95cUxNNTh6VTJLVEM4UmpJZ0dLN1I0bEZKZTBHWmI0R2pwMERCSS03bnFfU3RLdTh4b0hOaWRJWVBIRlUwdnJuUndEcDlILW9xNDRMZXl5UjVDaUxPV2RfRUhVV25WdGptZmlnYTVDUklFLTE3eGszSE9sMVRqMS1TeHZQX2RPOTdodlZod0pXTlcxaDJUcnMwcVd3U1Vn?oc=5",
+      "summary": "원·달러 환율, 6.7원 오른 1480.1원 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-22T06:53:00+00:00"
+    }
+  ]
+}
