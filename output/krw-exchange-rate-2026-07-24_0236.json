@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-24T02:36:49.637577+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,470 KRW/USD\n\nWHY: The won is currently WEAK, with the USD/KRW rate at 1,470—meaning you need more won to buy your $2,000. News reports show the rate has risen due to surging international oil prices and semiconductor concerns, and while some articles mention a potential downtrend toward 1,450, the current level remains elevated and unfavorable for your dollar purchases.\n\nTIP: Consider waiting for the anticipated downtrend toward 1,450 KRW/USD before converting, or split your monthly purchase across multiple smaller transactions to average out timing risk."
+  },
+  "articles": [
+    {
+      "title": "[환율 전망] 기름 묻은 반도체, 원화까지 합선되나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kejZrZVNJQlZlTHIwcEFadmFZWFZrcVc0MFRYMEJJeFJzSGMtS3cycG5ITHplUVhDdzJyT0tHaE02dTFkN05Dbkx2UVM4bl9xMDYxdGxCUGx6UDRIU19VQw?oc=5",
+      "summary": "[환율 전망] 기름 묻은 반도체, 원화까지 합선되나 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-24T01:50:01+00:00"
+    },
+    {
+      "title": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5dzgxMk0zSkoxQnYyWlEtQlE0Q1h0S2w3MUpnVVhnSzEyTzY0UFFWems2clItZmp2Q2tzN19KeFBkU2J4ak5CVGFVN08zZThCVjV4eWNlUVlqY01wQVJmdw?oc=5",
+      "summary": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-24T00:49:18+00:00"
+    },
+    {
+      "title": "원화 웃고 엔화 울고…원·엔 환율 900원 붕괴",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1LcnlMQmpNYURxOHMxek0tb1pRNzZRQmRqQjFWcGt2MVpiZXVLakhvdV9tX2hwbjBuNThkUUVzQWZHbWJVRERKNnN1RUJ4cnJrVGJF?oc=5",
+      "summary": "원화 웃고 엔화 울고…원·엔 환율 900원 붕괴 네이트",
+      "source": "네이트",
+      "date": "2026-07-23T21:39:00+00:00"
+    },
+    {
+      "title": "엔화 환율 전망, 달러당 163엔까지 떨어진 이유와 BOJ 금리 일정",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4MEtHUnhFbVlUVXdYSS1DR1ZiQ2YxS3JLRjN4U3htdTl1ZFRQdDAybG9yaUEya2FlcE9kbDV3eXd5eDktVEtnYW52d3VmUzdVVFE?oc=5",
+      "summary": "엔화 환율 전망, 달러당 163엔까지 떨어진 이유와 BOJ 금리 일정 EBC Financial Group",
+      "source": "EBC Financial Group",
+      "date": "2026-07-23T06:18:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 장 중 1460원대 터치…“하락 추세 진입, 1450원대 갈수도”",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUklybmYyQ1NIbnV4bDRhRmgwdUNNanNTSUl4QVZkMnJuU1YwMWw5VmROd09fQmJMWTZaeGMzbmJ2QUYyYjJKajFOaVV3RXBZdERaa0Q5SWJocVQ5ZTlfbW45SzNRcUhYUWJKTmI1THNqRTlmZkR1SlpBbWUzNjlBSA?oc=5",
+      "summary": "원·달러 환율, 장 중 1460원대 터치…“하락 추세 진입, 1450원대 갈수도” edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-23T05:21:00+00:00"
+    },
+    {
+      "title": "알파벳 실적·GDP 호조에 달러·원 13.3원 급락…1466.8원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPOWhPSXZzWkxqdnNjclhRZGw2ZXpJbVYwalczYUV0Z2tWY2ZEX2RtaHd1cmlFS0JxbzBOU3dMb194VEJKZ0xRTDJzTE9hOEd4NE96WnloOFdWclhrU0FoTg?oc=5",
+      "summary": "알파벳 실적·GDP 호조에 달러·원 13.3원 급락…1466.8원 마감(종합) 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-23T07:13:21+00:00"
+    },
+    {
+      "title": "환율, SK하이닉스 ADR 환전 수요·수출업체 네고 물량에 1460원대로 급락",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9MMXh1dXBZYkZ1a3hHYzBTc0h0TmpBZU1vTkN1bDA3U0lJZENuTFNOZnctMnpOSVVsaHYwdUgwOGlrZHVnU1dUQmlEcElWdHNDM3J1N0JYQ01PRTVXblQ5S2pPUjU1SUxX0gFsQVVfeXFMUEVxbk9uUzJqZUY4SWxtY0hEMFhxaGlQSXVxYV9BWkpyQjBUMjhmOWtZQ3N2WUhhaGZ6RFdyUHNfYm0yUkxQSF9mM1poWkNWSXMxZmpxRHlMNlpGMmVMTE4ycDRBZFIxRjA1eGZX?oc=5",
+      "summary": "환율, SK하이닉스 ADR 환전 수요·수출업체 네고 물량에 1460원대로 급락 직썰",
+      "source": "직썰",
+      "date": "2026-07-23T07:58:54+00:00"
+    },
+    {
+      "title": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TLTZ4MHUtRXRCYm43b0dGaWVfN1FvSEtUaWxLNnRaLTEtaWJxLVRDRDRERlZGbmN1V000T2xpeHJuTWtsV2ZTZF9lRzI1RWVoR2hr?oc=5",
+      "summary": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라 네이트",
+      "source": "네이트",
+      "date": "2026-07-24T00:50:00+00:00"
+    }
+  ]
+}
