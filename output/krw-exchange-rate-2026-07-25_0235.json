@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-25T02:35:04.168739+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,466.6 KRW per USD\n\nWHY: The won is currently STRONG (lower KRW per USD), making dollars cheaper to acquire. The news reports a 2-day consecutive decline in the KRW/USD rate despite headwinds from a strong dollar and rising oil prices, driven by positive SK Hynix ADR effects that are supporting the won.\n\nTIP: This is a relatively favorable window for your monthly $2,000 conversion—locking in a stronger won now protects you from potential rate weakness if the strong-dollar trend reasserts itself."
+  },
+  "articles": [
+    {
+      "title": "강달러·유가급등에도 SK하이닉스 ADR 효과 ↑...원·달러 환율, 이틀 연속 하락해 1,466.6원 마감",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95b2hDNUJSWTdkLXJzcXNPemR1eE9CdGVCaGxRYm1Dd1NkVHprdkhDM3hManZBLW0yVC1LbVNtX0ZOb28wc3ZfOEszNDBfVXdSMkhwWTgtU2kxREJTbUd2SE11blQ?oc=5",
+      "summary": "강달러·유가급등에도 SK하이닉스 ADR 효과 ↑...원·달러 환율, 이틀 연속 하락해 1,466.6원 마감 베타뉴스",
+      "source": "베타뉴스",
+      "date": "2026-07-24T11:13:56+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR 효과…환율 0.2원 내린 1466.6원",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1YVTQ5cjZtVC1sZzlnWmFidUhlYTE5eW0tSDNtMnRLak8zYjBLb1dkT2xSUGJLeVNyMnl6SjktRmlrMEpEVVZrdDFqRFM0UHVZYTlz?oc=5",
+      "summary": "SK하이닉스 ADR 효과…환율 0.2원 내린 1466.6원 SBS Biz",
+      "source": "SBS Biz",
+      "date": "2026-07-24T08:30:00+00:00"
+    },
+    {
+      "title": "유가 급등·외인 매도에도 달러·원 0.2원 하락…1466.6원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91Rjgtb3Z0S2xiZGkyOVJ4SnpVaHNteE9IdW9DdE5ONDFnalNwSDd6TEM2VEVPbjlLbHd1bEZwN3B4aFhxcFl0SmtBTzZrdk8tS0hnQ01RMy05NWo3LVk4Xw?oc=5",
+      "summary": "유가 급등·외인 매도에도 달러·원 0.2원 하락…1466.6원 마감(종합) 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-24T07:34:39+00:00"
+    },
+    {
+      "title": "강달러도 누른 하이닉스 효과…환율 0.2원 내린 1,466.6원",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GVkQ2amJCaWpOdUZzNDdwaVpJLWY4dGt5aGpBcGpiTFozTHlNeHQzeGl5Ylh0TnZYWEFFX2lRc001ajhselM3WWs3MlZMdW1WTHM5R1pJZlBadzJPQ1VPdTY5c0dESjUwLXAzZUdnRGpaY2tXUWo1Tg?oc=5",
+      "summary": "강달러도 누른 하이닉스 효과…환율 0.2원 내린 1,466.6원 네이트",
+      "source": "네이트",
+      "date": "2026-07-24T07:05:00+00:00"
+    },
+    {
+      "title": "강달러 압박 속 SK하이닉스 효과, 원/달러 환율 소폭 하락 : 금융",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1FTUFScmF1QURGTHM1S3pwSmJrZjhNRW9tR3N2Nlg4eXBDV2hVUGFSOFNUd0xicnpMaUUzNWNwaU5pQnVFLWI3VkpB?oc=5",
+      "summary": "강달러 압박 속 SK하이닉스 효과, 원/달러 환율 소폭 하락 : 금융 재경일보",
+      "source": "재경일보",
+      "date": "2026-07-24T07:48:00+00:00"
+    }
+  ]
+}
