@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-26T02:44:58.420551+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,466–1,470 KRW/USD\n\nWHY: The won is currently around 1,466–1,470 KRW per USD, sitting near mid-range levels. While international oil price spikes and strong dollar pressure are pushing the rate higher, SK Hainic's ADR effect is providing offsetting support, resulting in a two-day downward trend—suggesting the won may stabilize or strengthen further to 1,450 levels. Neither extreme weakness nor strength is evident right now.\n\nTIP: Since the rate appears to be stabilizing with potential for won appreciation, consider splitting your monthly $2,000 conversion across 2–3 smaller transactions rather than one lump sum, to average out timing risk."
+  },
+  "articles": [
+    {
+      "title": "[환율 전망] 기름 묻은 반도체, 원화까지 합선되나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5kejZrZVNJQlZlTHIwcEFadmFZWFZrcVc0MFRYMEJJeFJzSGMtS3cycG5ITHplUVhDdzJyT0tHaE02dTFkN05Dbkx2UVM4bl9xMDYxdGxCUGx6UDRIU19VQw?oc=5",
+      "summary": "[환율 전망] 기름 묻은 반도체, 원화까지 합선되나 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-23T23:04:54+00:00"
+    },
+    {
+      "title": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA5dzgxMk0zSkoxQnYyWlEtQlE0Q1h0S2w3MUpnVVhnSzEyTzY0UFFWems2clItZmp2Q2tzN19KeFBkU2J4ak5CVGFVN08zZThCVjV4eWNlUVlqY01wQVJmdw?oc=5",
+      "summary": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-24T00:49:18+00:00"
+    },
+    {
+      "title": "엔화 환율 전망, 달러당 163엔까지 떨어진 이유와 BOJ 금리 일정",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB4MEtHUnhFbVlUVXdYSS1DR1ZiQ2YxS3JLRjN4U3htdTl1ZFRQdDAybG9yaUEya2FlcE9kbDV3eXd5eDktVEtnYW52d3VmUzdVVFE?oc=5",
+      "summary": "엔화 환율 전망, 달러당 163엔까지 떨어진 이유와 BOJ 금리 일정 EBC Financial Group",
+      "source": "EBC Financial Group",
+      "date": "2026-07-23T06:18:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 장 중 1460원대 터치…“하락 추세 진입, 1450원대 갈수도”",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUklybmYyQ1NIbnV4bDRhRmgwdUNNanNTSUl4QVZkMnJuU1YwMWw5VmROd09fQmJMWTZaeGMzbmJ2QUYyYjJKajFOaVV3RXBZdERaa0Q5SWJocVQ5ZTlfbW45SzNRcUhYUWJKTmI1THNqRTlmZkR1SlpBbWUzNjlBSA?oc=5",
+      "summary": "원·달러 환율, 장 중 1460원대 터치…“하락 추세 진입, 1450원대 갈수도” edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-23T05:21:00+00:00"
+    },
+    {
+      "title": "원화 웃고 엔화 울고…원·엔 환율 900원 붕괴",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1kY0pFM3hOSFdsdXFvS0xiVElVNmZIRF9mMmtnbE9kcXJBcDNmSEtabFl0Y1laaHRCX2E4NjFoZUV5RTdrZHpja05ld1hIdUxIclMzYjNtMHdUZDBucVVLZg?oc=5",
+      "summary": "원화 웃고 엔화 울고…원·엔 환율 900원 붕괴 네이트",
+      "source": "네이트",
+      "date": "2026-07-23T21:39:00+00:00"
+    },
+    {
+      "title": "유가 급등·외인 매도에도 달러·원 0.2원 하락…1466.6원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE91Rjgtb3Z0S2xiZGkyOVJ4SnpVaHNteE9IdW9DdE5ONDFnalNwSDd6TEM2VEVPbjlLbHd1bEZwN3B4aFhxcFl0SmtBTzZrdk8tS0hnQ01RMy05NWo3LVk4Xw?oc=5",
+      "summary": "유가 급등·외인 매도에도 달러·원 0.2원 하락…1466.6원 마감(종합) 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-07-24T07:34:39+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR 효과…환율 0.2원 내린 1466.6원",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBOQ3VPQkN5UDhXZXFfc3ItVlZrMTJZaXlYSU41YkVwTlYwa3YxbXF6MDRiT2FMYkdUTXRRQ1JYTkJrMVRkbmc?oc=5",
+      "summary": "SK하이닉스 ADR 효과…환율 0.2원 내린 1466.6원 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-07-24T08:33:03+00:00"
+    },
+    {
+      "title": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TLTZ4MHUtRXRCYm43b0dGaWVfN1FvSEtUaWxLNnRaLTEtaWJxLVRDRDRERlZGbmN1V000T2xpeHJuTWtsV2ZTZF9lRzI1RWVoR2hr?oc=5",
+      "summary": "국제유가 급등에 달러·원 환율 상승…1470원대로 올라 네이트",
+      "source": "네이트",
+      "date": "2026-07-24T00:50:00+00:00"
+    },
+    {
+      "title": "강달러·유가급등에도 SK하이닉스 ADR 효과 ↑...원·달러 환율, 이틀 연속 하락해 1,466.6원 마감",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95b2hDNUJSWTdkLXJzcXNPemR1eE9CdGVCaGxRYm1Dd1NkVHprdkhDM3hManZBLW0yVC1LbVNtX0ZOb28wc3ZfOEszNDBfVXdSMkhwWTgtU2kxREJTbUd2SE11blQ?oc=5",
+      "summary": "강달러·유가급등에도 SK하이닉스 ADR 효과 ↑...원·달러 환율, 이틀 연속 하락해 1,466.6원 마감 베타뉴스",
+      "source": "베타뉴스",
+      "date": "2026-07-24T11:13:56+00:00"
+    },
+    {
+      "title": "강달러 압박 속 SK하이닉스 효과, 원/달러 환율 소폭 하락 : 금융",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1FTUFScmF1QURGTHM1S3pwSmJrZjhNRW9tR3N2Nlg4eXBDV2hVUGFSOFNUd0xicnpMaUUzNWNwaU5pQnVFLWI3VkpB?oc=5",
+      "summary": "강달러 압박 속 SK하이닉스 효과, 원/달러 환율 소폭 하락 : 금융 재경일보",
+      "source": "재경일보",
+      "date": "2026-07-24T07:48:00+00:00"
+    }
+  ]
+}
