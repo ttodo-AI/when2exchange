@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-27T02:51:53.724220+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,450–1,460 KRW/USD\n\nWHY: The won has strengthened recently to the 1,450s (a two-and-a-half-month low), meaning dollars are cheaper than before—normally good for your monthly purchase. However, news sources suggest further near-term strengthening to the early 1,400s is possible, and geopolitical risks (Middle East tensions, FOMC decisions) create significant uncertainty about whether this is a local or sustained low.\n\nTIP: Since you have a fixed monthly $2,000 obligation regardless of rate, consider setting a limit order near 1,440–1,445 KRW/USD rather than rushing to buy at 1,450, but don't wait indefinitely if rates spike—dollar strength could quickly reverse."
+  },
+  "articles": [
+    {
+      "title": "[주간환율전망] 원·달러 두 달 반 만에 1450원대…이번주 FOMC·중동정세에 방향 갈린다",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1cnB0YThOVnRGcWhhTE43bV9oZXoyZUE4X3VyTGVfNkFTWjNBdk00YmIxYVdGUm5YOC1ZM2hTVGJ6a1Y3MEVETnl4NEFHTUt0ZHM3OEFPOUlhTGo0Q2xiejhjUTVncEE?oc=5",
+      "summary": "[주간환율전망] 원·달러 두 달 반 만에 1450원대…이번주 FOMC·중동정세에 방향 갈린다 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-07-26T22:00:00+00:00"
+    },
+    {
+      "title": "\"단기적 환율 1,400원 초반까지 하락 가능…원화 구조적 강세 기대는 일러\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PWXhTdmNlOHFjT2kySFAwZU50cFFGbk5QZzFPLXlWb3Y2di0yQXFQcU9qV1dyU1V0MkpWcFRxNkVRWFA4TGFrUGxIdF9FaTY5VWZRUThFY3BBWmdlREZSWFZydkUxOU9qZm1ZbzBDZ2lDdw?oc=5",
+      "summary": "\"단기적 환율 1,400원 초반까지 하락 가능…원화 구조적 강세 기대는 일러\" KB Think",
+      "source": "KB Think",
+      "date": "2026-07-26T23:23:30+00:00"
+    },
+    {
+      "title": "[주간환율전망] 중동 긴장 누른 달러 공급우위···FOMC 주목",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5MTDY0enQzdVBuT2hXak14Q1ZZZ3pHZFVqTThyOXhKTlQ2cW8tYml1NUFQUFZCdGZLdjJtZW1PQ3JlZ19nTG9hdDhqMkpxaldmNmNNbnR4NTJ4TjBEaThzTmY2Rk5qYXhjemc?oc=5",
+      "summary": "[주간환율전망] 중동 긴장 누른 달러 공급우위···FOMC 주목 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-07-26T05:05:21+00:00"
+    },
+    {
+      "title": "원·달러 환율 1600원 '공포' 걷혔지만…추세적 강세는 '글쎄'",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE14Tm9ISk5Obm80T2NjMXpYRGFkT1pBajgtcV9ibzBWandhM3RaQnJONjBmNlNTWjhIN0d0ZGg0VnpjdDFFbFExcDdZWjlzTUFCaHBZ?oc=5",
+      "summary": "원·달러 환율 1600원 '공포' 걷혔지만…추세적 강세는 '글쎄' 네이트",
+      "source": "네이트",
+      "date": "2026-07-27T01:24:00+00:00"
+    },
+    {
+      "title": "엔·달러, 40년 만에 최고…엇갈린 원·엔 동조화할까",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnVktvMDRlMERpOWJoZm5hdHNYZllLVld3VFBRLUgzU0RhMWtLai02OXN2YlF0NzlEMVh2OXBXaUhxUVVKOGo4cF9lc0M3OUpnVG9TQk9vWkVmaDcwaktpTXQwUUM2QUFPSFZUSS1LYk56OFkx?oc=5",
+      "summary": "엔·달러, 40년 만에 최고…엇갈린 원·엔 동조화할까 대한경제",
+      "source": "대한경제",
+      "date": "2026-07-26T03:00:19+00:00"
+    },
+    {
+      "title": "[외환-주간] 어느새 1,450원대…수급·美日 통화정책은 어디로",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4TnBGanc5UVJQWXd1R3NvbmJ6ZWQ5TklHNHBXOVE5akZBZDF4cU9vYW8xOUZfT0p1ZXhzVVJwNndqSzRWR0VyUlM2LUl1ZkNFM0VQZE5VUGo0ck5CMWRZVXcwcU84TVJUU0l5TVR2M3kydw?oc=5",
+      "summary": "[외환-주간] 어느새 1,450원대…수급·美日 통화정책은 어디로 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-26T04:00:00+00:00"
+    },
+    {
+      "title": "환율·채권, 원·달러 1400원대 중후반 유지할듯",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5uOE85cmJoUy1qdThIQUJQUGxmRUt5WmtfWFRTckNoSE84X1NTUXFMVGJWR1NmaXRESk1xck9yUTVuQ1J3RkhnN3VKVDQ3Zk5NVFo3clh0TXJ4QQ?oc=5",
+      "summary": "환율·채권, 원·달러 1400원대 중후반 유지할듯 한국경제",
+      "source": "한국경제",
+      "date": "2026-07-26T08:10:20+00:00"
+    },
+    {
+      "title": "환율 1460원대 등락…수출 기업 환전 수요 지속",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE81TEFaRjE5aDkwZHhYN3lJcmRHR1doWm1KZG15QW1NdzRvQ3l6bFNxUXRXUkNfby1BVzVIcFNZQkdnMGI4MlNFejJURnpJejdzR1ZhNndZc1hpcUhBV0E?oc=5",
+      "summary": "환율 1460원대 등락…수출 기업 환전 수요 지속 뉴스투데이",
+      "source": "뉴스투데이",
+      "date": "2026-07-27T01:18:00+00:00"
+    },
+    {
+      "title": "1450원대까지 떨어진 원·달러 환율, 변수는 '중동 전쟁'",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1sU1dlZVBvNU5iZjdBMUpURXRZa0RBRkZ2bHVELUJJeGxaYW5CQ1NrX0tiLUZ4RDN2MUNjUDROdWlRVHhKOHQ5UlhZZHhTZWdmT2FZ?oc=5",
+      "summary": "1450원대까지 떨어진 원·달러 환율, 변수는 '중동 전쟁' 네이트",
+      "source": "네이트",
+      "date": "2026-07-26T07:08:00+00:00"
+    },
+    {
+      "title": "미·이란 공습 중단에 강달러 압력 완화…달러·원 1460원 초반 하락세",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmSGJ2Z1FQZ2pUS3VUaWdOY28zZXJzM0RSeEowQjlST09sU3JaWmJvcW1wbTN5eUdIbkdoQTNTNVhJNG5LTF96eURNc2J4WjJPN3VJ?oc=5",
+      "summary": "미·이란 공습 중단에 강달러 압력 완화…달러·원 1460원 초반 하락세 네이트",
+      "source": "네이트",
+      "date": "2026-07-27T00:47:00+00:00"
+    }
+  ]
+}
