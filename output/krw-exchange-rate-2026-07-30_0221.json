@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-30T02:21:42.950914+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1440–1446.7 KRW/USD\n\nWHY: The won is currently STRONG (low KRW per USD), meaning dollars are cheaper to buy right now—but the news indicates the dollar is weakening further due to Fed rate holds and dovish sentiment, with forecasts suggesting rates could fall to 1430 KRW/USD or lower. This means your $2,000 monthly conversion will cost fewer won if you wait.\n\nTIP: Consider delaying or splitting your conversion over the next few weeks, as the dollar weakness trend suggests more favorable rates may be coming soon for your fixed USD obligation."
+  },
+  "articles": [
+    {
+      "title": "[환율 전망] 기우에 그친 FOMC, 약세로 기우는 달러",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12aVI0QkkxR043T3YyaGJFZm45ZmxYUGFmWmF0VFZNWEd0R01lLXBNdnhPQlBBVk10RzBOT3JkOHY4VlZCdnFRMmxiVTRSXzIySHNaTHZPSDZpd1loNzVmRg?oc=5",
+      "summary": "[환율 전망] 기우에 그친 FOMC, 약세로 기우는 달러 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-30T00:45:12+00:00"
+    },
+    {
+      "title": "100엔당 800원대 엔화에…엔화 환전 규모 1년 7개월 만에 최대",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQUh3emlWWU5QMnRmQS14bU9vV09TYzQ1X1Mzem1Ic3VmWUNQbThXSE5zek9ZSXljaFktc29nZHRMMW1ueEdaUkJ1VW5rdE1Xb0FFdkpQeXF2ZnRnXzZqQjFaZXE5bmtxQktURzhZa1hlUDFZYkMzV3NzV1V4YUpBTi1PbUJUZmxpLWtRMkl3?oc=5",
+      "summary": "100엔당 800원대 엔화에…엔화 환전 규모 1년 7개월 만에 최대 조선일보",
+      "source": "조선일보",
+      "date": "2026-07-29T13:15:00+00:00"
+    },
+    {
+      "title": "연준 금리 동결에 달러 약세⋯\"1430원대까지 내려갈수도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MNVI3UWJCRHVGajlibnU1NkZ6dVFMOThMVG12cXBGNGR0UmpSQm9mM052ZktjLWd4UmJnX2haZTVlS05nX19ydVdIV0xKSkpycWJmbw?oc=5",
+      "summary": "연준 금리 동결에 달러 약세⋯\"1430원대까지 내려갈수도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-07-29T23:14:00+00:00"
+    },
+    {
+      "title": "[오늘의 외환분석] 고래 매물에 비둘기 연준까지",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqSWhzaExNakVlVEpTT1RKWU95eHZ6dFNnU0xKYWVYd0ZBWUY5OXpNbWVvak5NYXpFMnFOSVhDaV9GMldPaTJXSEdlMTFUNU9ObENOcmZna3hSeDFZU0oyRGJNb2RNWmtSZ2ZzZjF2MzNvUQ?oc=5",
+      "summary": "[오늘의 외환분석] 고래 매물에 비둘기 연준까지 KB Think",
+      "source": "KB Think",
+      "date": "2026-07-29T22:53:30+00:00"
+    },
+    {
+      "title": "원·달러 환율, 15.8원 내린 1446.7원… 중동 전쟁 후 5개월 만에 최저 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNmxUdlViQm1aSnRMS2h0UklDUkpYNzBsWERmcTFycThBYXdsQTdfcEtoY29BX05kRnB6MUNBbDhBVmJpd3JDeGkwZnQ1XzdDLVVnQXgtNjZqbTQtSFJKUzA3OHItSzBRRm1nR3hHV01GREdFdXdPcnd5eUlXRVBOeUFBNV94QdIBmgFBVV95cUxPZHdfa01WRjN3cHBtTk0zeUc2dEJwUUxNT3JqSDdSM3AtSGdOa05QZUxmLUcyX2Qya1JTajdzdm9OLVVDYzl1N0laWlJDSEJ0akNSR2NaUXVRM0FadkNpVWNPcjhQT01maGVqV1RHMGNHT0tmR2tXei10LVVBbUQ4NWVkbE1UUEw1aUc5SFNSYjJWa0t0V2pqeXNn?oc=5",
+      "summary": "원·달러 환율, 15.8원 내린 1446.7원… 중동 전쟁 후 5개월 만에 최저 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-29T07:28:00+00:00"
+    },
+    {
+      "title": "[환율마감] 원·달러 급락 1440원대 안착 '5개월래 최저'",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBCMGNPUTdkSUtYZnJCUm42MnYzYkQzdmRER2Q1Uy1FWlluODFJM3BnX0hVRFIzOXJqczE1ZXFMUTYwU3NtLUR5QkFmYkcwSjZzLWM0?oc=5",
+      "summary": "[환율마감] 원·달러 급락 1440원대 안착 '5개월래 최저' news.nate.com",
+      "source": "news.nate.com",
+      "date": "2026-07-29T07:05:00+00:00"
+    },
+    {
+      "title": "“당장 갈 일 없어도 800원대면 일단 바꿔놔야지”…엔화 환전 19개월 만에 최대",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBqUHZzR05JQkJnMFdUR0d3ZzlHamN5VWhFb3dnN0N1cURUM3U2ZTcxQzA1TmxpMEpjUlh1SXZXMjF0bDNpd1FRUXFKazVNa09Yc2c?oc=5",
+      "summary": "“당장 갈 일 없어도 800원대면 일단 바꿔놔야지”…엔화 환전 19개월 만에 최대 매일경제 마켓",
+      "source": "매일경제 마켓",
+      "date": "2026-07-29T02:27:48+00:00"
+    },
+    {
+      "title": "연준發 달러 약세와 달러 매도 지속…환율 1430원대로 추가 하락",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9raGx3bzFEaXIxSVVUNVlON3RoWGJjaFRfVzlUNUNiT2FGR1JINUhYQ3hPY21URU05ckZxZGVRYkMxZTJsd1A2d2pqRWxBQjhDQWxkNmVwVVNRRkFpYnJjeWxYOEVIdVRmeVprbkVPNnEzczA?oc=5",
+      "summary": "연준發 달러 약세와 달러 매도 지속…환율 1430원대로 추가 하락 마켓인",
+      "source": "마켓인",
+      "date": "2026-07-29T23:22:12+00:00"
+    }
+  ]
+}
