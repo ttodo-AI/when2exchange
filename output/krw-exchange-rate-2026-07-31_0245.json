@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-07-31T02:45:36.614091+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,430–1,437 KRW per USD\n\nWHY: The won has strengthened significantly—the exchange rate has fallen 112 KRW in one month and hit a 5-month low around 1,437 KRW/USD. This means you get dollars more cheaply now. However, news suggests potential upside risk: analysts project rates could rise to 1,600 KRW/USD under certain scenarios, and 67% expect a US rate hike in September, which could weaken the won again.\n\nTIP: This is a relatively favorable window to lock in your monthly $2,000 conversion at ~1,430–1,437, but monitor for September Fed moves that could push rates higher."
+  },
+  "articles": [
+    {
+      "title": "[달러-원 POLL] 더 내릴까…8월 저점 1,416원·고점 1,477원",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tZ2FtbW1NcHFuRWxrVERrTlV6NEwxU1dNVWFsVzhqYzBXMWFaV3JWck4tV1JoVDVSQjRwVE5KaWkxa3hkbWQwNmVlX1FSTFhiQWZxbVNlNklTVDUzZ3kyVnRlTzNKWnhtX1JRcHpUaFRPQQ?oc=5",
+      "summary": "[달러-원 POLL] 더 내릴까…8월 저점 1,416원·고점 1,477원 kbthink.com",
+      "source": "kbthink.com",
+      "date": "2026-07-30T23:00:01+00:00"
+    },
+    {
+      "title": "원/달러, 1430원대 진입…한달 새 112원 하락",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1FU2t6N3NUZV9uLXpsRkdreTJpcVpieExWeUxNajJ0NHEyNmdvR1lmRHgzdWhKZnRQOXZRVTd4SU5kQ2F0cWtoMENNWnJkUGdEbnY4U21LbERnQng4Z0tveUJvUzd3UHRQQWtTdzlSZkJzU0XSAXdBVV95cUxQdFFxcDVRZ1gtVWJIU09YbjktcjdPdldyNGhxRFNqVjNGa0I5a3BKcEV3eW1LclpsQ2haZ3JqX29iT3ROZzN5WmNSb2dtY3dCTnlybW45V2p1NGNpWDI4d1NVUF9xcUZRbkFRVkgxM0FUR1ZrYnN5dw?oc=5",
+      "summary": "원/달러, 1430원대 진입…한달 새 112원 하락 straightnews.co.kr",
+      "source": "straightnews.co.kr",
+      "date": "2026-07-30T07:13:37+00:00"
+    },
+    {
+      "title": "코스피 급락에도 환율 1430원대…전쟁 프리미엄 지웠다",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XeUZRUFo5dFNsd1Q0QmhiUm1kdlRSUzhIZmxDRTR6SkNTYnlaa0ZFbXdYeWVyaXIwSmlFVTlvUnE3S2Rjd2tqaGEzRXBzNlZNYVgzR1YyTkrSAVhBVV95cUxPV3lGUVBaOXRTbHdUNEJoYlJtZHZUUlM4SGZsQ0U0ekpDU2J5WmtGRW13WHllcmlyMEppRVU5b1JxN0tkY3dramhhM0VwczZWTWFYM0dWMk5K?oc=5",
+      "summary": "코스피 급락에도 환율 1430원대…전쟁 프리미엄 지웠다 ajunews.com",
+      "source": "ajunews.com",
+      "date": "2026-07-30T07:16:45+00:00"
+    },
+    {
+      "title": "[경제 포커스] 주가·환율 함께 떨어지는 이유는… “기업 달러 매도 본격화” - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMFYzUVVCVmVkSGhnX1lDUUZMY3NWS2NYcFVRRWNWRVVkWUw1VHRNZFpzeG5VdU9ub2xGTW84VzI3NVZCV1ppMkRXQ2JZTTgtZi1VWmpkWU1PTlBIRjZCbFVtQ2ZqMndkMW9zbktXN0xkZ3Q1QjN6UDNNOGxKb24xemxPXzBJUdIBmgFBVV95cUxQU05hWUwxVFRDcm5lUkQ1MDJaWTdjMEdEMkJjMmVFZ0xMRFh4cFFic2N5eEl0ZmplNlF4V1RfVEtNMDljc3g4bHdYdTZLZENSUTh4V3pTMVN2VTVQRlowNXZQNWpLdzh5V2c2NDJIWlVZWDVfdVFJY0NuVWp6cWEweDVaWi1wZkNTNGljS09fNFVGNVJ2Nk9lOVVR?oc=5",
+      "summary": "[경제 포커스] 주가·환율 함께 떨어지는 이유는… “기업 달러 매도 본격화” - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-07-30T02:47:00+00:00"
+    },
+    {
+      "title": "중장기 달러-원은…\"대만 경로 땐 1,600원대…독일 경로도 1,430원 웃돌아\"",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1WSkVpVmlpV1hBX2M1aXE1ZUNUVU1FMmQtTGRxUWRKeXdra0RqM1NjNlJsMVFQVU82T191bDVwSHZTUUFSeUpGNmVYVXdKdjhkS3NMRUoxbzVaZl9zWXJTNFFlUUYwR0hPeWRrZjc1TTA?oc=5",
+      "summary": "중장기 달러-원은…\"대만 경로 땐 1,600원대…독일 경로도 1,430원 웃돌아\" news.einfomax.co.kr",
+      "source": "news.einfomax.co.kr",
+      "date": "2026-07-30T03:49:41+00:00"
+    },
+    {
+      "title": "[외환] 원·달러 환율 1437.4원 5개월 만 최저…9월 인상 기대 67%로",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5peHAxWlJaaHlNSm51bm9sSGxheEJKdmhJZUpFMkdDbVlDT3VMNHJScVEyMzBMWG4zM04yVzNjQ0U5ZHAta1NHSjljbGJLaWZKODhCZjNLRUNMNnFJWVRKb1JDQ3l3U3M?oc=5",
+      "summary": "[외환] 원·달러 환율 1437.4원 5개월 만 최저…9월 인상 기대 67%로 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-07-30T08:00:00+00:00"
+    },
+    {
+      "title": "원·달러 환율 1,430원대로 하락…달러 약세·외국인 자금 유입 영향",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE82SEFxcDE4Mm8wblAxaW1YaDZwNDhSemJkNkNaeXNxWWY1ZmFfYnhTdTROS2M4dmVMdm1GN05hdnJDN24tX2h3b1ZpY0pLUVZfZEpXR3RrS25yQkR0UXVDNkRtNGppWjZqYXo5RS1wdGhZbjjSAXdBVV95cUxOTEt0RE5oZlJ4ZVRSbXdCOWZVNl9wS1lQejhub0JJUUE0VFRLU2ZjdjAtZm45Rjc1azJSd0YyS3IyZTdSOTRNYVlOWmdlRTI1TkFPeW1BZ2FOX1VIUmtWakJFeVQ4RXdhbkY4OU5IUkNYdVVKQXZpbw?oc=5",
+      "summary": "원·달러 환율 1,430원대로 하락…달러 약세·외국인 자금 유입 영향 시사매거진",
+      "source": "시사매거진",
+      "date": "2026-07-30T10:02:40+00:00"
+    },
+    {
+      "title": "레버리지 규제 효과에 FOMC까지…환율 추가 하락 시험대",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ3pFMkQ2WnlGeVh1eno1eHktWmt3UHJiZW95LWZjMUJ3ZUo1LVNCMU51TlNZWWJKR0tEMGNKb294UHlTZl9iNU5jUDNQa2hSZHZQVzUxT3A0OWVmQ0EzNU9mdHloOEc0TzZSZDk5Y0s2dW0ya2RueGF2UU5IT05HeA?oc=5",
+      "summary": "레버리지 규제 효과에 FOMC까지…환율 추가 하락 시험대 edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-07-30T07:33:33+00:00"
+    }
+  ]
+}
