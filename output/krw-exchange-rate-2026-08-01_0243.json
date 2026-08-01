@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-01T02:43:50.639018+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,410 KRW per USD\n\nWHY: The won has strengthened significantly—the exchange rate has fallen 130-141 won in the past month, making dollars cheaper to buy. However, multiple sources indicate the market is stabilizing and may hover around current levels, with potential central bank and trilateral (Korea-US-Japan) intervention limiting further sharp moves.\n\nTIP: Since you need $2,000 monthly regardless, consider setting a standing order at your current rate rather than trying to time a strengthening won—this removes emotion and locks in predictable costs."
+  },
+  "articles": [
+    {
+      "title": "한 달 만에 141원 '수직 낙하'…고환율 끌어내린 세 가지 요인",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qZDdTYlZVLUxJSU5fclZnOFBhQkFWb0hXcTNad05mTWFlNzZ1X29JdUZTY3Z2N0h3WEQtS0dIXzFId1ZtREdMVk9lTUxJWkZrMktWS3RGLWx2QQ?oc=5",
+      "summary": "한 달 만에 141원 '수직 낙하'…고환율 끌어내린 세 가지 요인 한국경제",
+      "source": "한국경제",
+      "date": "2026-07-31T10:00:03+00:00"
+    },
+    {
+      "title": "‘1410원’ 바라보는 환율…연준보다 한은·수급이 변수",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1selVSZXBqUjMxV1VaSHl0ZFVGUVZGZ2QtUy1oVUpJTnV3OHJKZmw4N0pzc2k0SlNGZjZTSnM2eWhCb2RoVzlJVW1JR2F0UGxqMWw1YjI0SFRUVXE1cDd3aHNDOTUwM0dVNFNIRnJpa9IBb0FVX3lxTE1selVSZXBqUjMxV1VaSHl0ZFVGUVZGZ2QtUy1oVUpJTnV3OHJKZmw4N0pzc2k0SlNGZjZTSnM2eWhCb2RoVzlJVW1JR2F0UGxqMWw1YjI0SFRUVXE1cDd3aHNDOTUwM0dVNFNIRnJpaw?oc=5",
+      "summary": "‘1410원’ 바라보는 환율…연준보다 한은·수급이 변수 투데이신문",
+      "source": "투데이신문",
+      "date": "2026-07-31T09:59:25+00:00"
+    },
+    {
+      "title": "원·달러 환율 한 달 새 130원 급락… 증권가 “당분간 안정세” 전망",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB4S0hjRmpKRkdUeHcwa3BHX2tOYWRvZ2otcWZVZHlWVFdnS0NBRWFHaHNYMnZQTkVYemo3b0dLdkpZTVRSWjFIVjFNTzBPNnp6UnU1Q05vU3NzTTNtLVJYSXB4bXpXQWtkcEtVczJPWQ?oc=5",
+      "summary": "원·달러 환율 한 달 새 130원 급락… 증권가 “당분간 안정세” 전망 이코리아",
+      "source": "이코리아",
+      "date": "2026-07-31T05:09:51+00:00"
+    },
+    {
+      "title": "[경제뭔데]900원대도 싸다 싶었는데 ‘800원대’ 왔다···다시 만난 엔저, 지금이 환전 기회일까",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zRnI2NU56R29fd0Vzd0JiV3ZxYjJmNEI4Tjc0NTYyekVERUZQdW92eDVWbVFCQzRsTFZRVnRpVlNZenNYMW1GUVFremlhTG5kNUR3dldlZ3pBQdIBX0FVX3lxTE5VYUNaLXFSREhsS3pUZVo0b0lkbi1hWWZ1MGFkTFRIUEE5b2QzVVpLMzlYUW4xRmJtWC1nbXo0VUlRTXYxTlJsSHlpUFZPYmRRLWR6anBFRjFiMG12WXQ4?oc=5",
+      "summary": "[경제뭔데]900원대도 싸다 싶었는데 ‘800원대’ 왔다···다시 만난 엔저, 지금이 환전 기회일까 경향신문",
+      "source": "경향신문",
+      "date": "2026-07-31T21:00:00+00:00"
+    },
+    {
+      "title": "韓·美·日, 외환시장 동시 개입 가능성…원·엔 환율 급락 후 숨고르기",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE52UVpKM0lCZWZ3dzNMVW5PNko1VGstcDI0WnJVXy1ybXVvSUZ6Wml4RWJYZjExcTJoaklXWFRZYUF1M20wdnEwMHZvY1R3WWgxMkY5Yk9HeUhIaGJmV3dQX3JpNF9yaFdaNWVrZg?oc=5",
+      "summary": "韓·美·日, 외환시장 동시 개입 가능성…원·엔 환율 급락 후 숨고르기 프라임경제",
+      "source": "프라임경제",
+      "date": "2026-07-31T09:38:19+00:00"
+    }
+  ]
+}
