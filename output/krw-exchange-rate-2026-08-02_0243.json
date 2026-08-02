@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-02T02:43:05.391105+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,400 KRW/USD\n\nWHY: The won has strengthened significantly (8.8% appreciation in July alone), pushing the exchange rate down from ~1,600 to ~1,400 KRW per USD. A lower KRW/USD rate means you need fewer won to get your $2,000, but the news suggests this favorable trend may have already peaked—one source warns \"long-term high exchange-rate phase continues,\" implying further won strength is unlikely.\n\nTIP: Consider locking in this rate soon if possible, or dollar-cost average your monthly conversion rather than waiting for rates to weaken further, since the won appears to have completed a major appreciation cycle."
+  },
+  "articles": [
+    {
+      "title": "7월 원화 절상률 8.8%, 금융위기 후 최고…1,400원선 깨질까",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE96NnMyS21qR2JwVHExcGJEcnhRRzc2dVU5YUVqZWNlMzVOeVlaS3dPQWt4QmRkU0dhaEdiVEotOGVpN014R2VqbnNIdHRlS1U3YmRCb19lRHgzbVhDMmpyV9IBYEFVX3lxTE96NnMyS21qR2JwVHExcGJEcnhRRzc2dVU5YUVqZWNlMzVOeVlaS3dPQWt4QmRkU0dhaEdiVEotOGVpN014R2VqbnNIdHRlS1U3YmRCb19lRHgzbVhDMmpyVw?oc=5",
+      "summary": "7월 원화 절상률 8.8%, 금융위기 후 최고…1,400원선 깨질까 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-08-01T20:53:00+00:00"
+    },
+    {
+      "title": "달러·원 환율 한 달 새 7% 급락, 1400원대 진입",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GVVdPWWRXcHFxU1hUaTQxRGljNzlYRnM1RENPSDctUDZ5WVRqSVpYa0VXS21fSy0zMVY4TWxYajJaQlkxQU1WaWp1VlhXWmRhbEtEbjRySk9sQV9kZVJoUjcxSTEtTmFB?oc=5",
+      "summary": "달러·원 환율 한 달 새 7% 급락, 1400원대 진입 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-08-01T23:02:00+00:00"
+    },
+    {
+      "title": "환율, 1600원 문턱서 1400원대로 급락…\"장기적 고환율 국면은 계속\"",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5mWDJsZ0lmN1hmSElMWlRHY2gydTgtVV8xa2tOMXFuaTlZaVptQi1MdklyZTllYzE1d3ZzVmswMi1BZWhLd3dNRW1WNnc5dWNfRjhTZw?oc=5",
+      "summary": "환율, 1600원 문턱서 1400원대로 급락…\"장기적 고환율 국면은 계속\" 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-08-02T01:25:14+00:00"
+    },
+    {
+      "title": "7월 원화 절상률 8.81% '주요국 1위'…환율 1400원 하회 전망도",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9pU2Z5N3MzREVsakd2RGVmYmRCUHdMR1IwWl9vR3pYNHFfbnlSLURFV3A2b1RPci1sXzNWWE5DOUREU09HSVBNWjNoY2ZLV1FFdnozS2hVTGNhUQ?oc=5",
+      "summary": "7월 원화 절상률 8.81% '주요국 1위'…환율 1400원 하회 전망도 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-08-02T01:10:57+00:00"
+    }
+  ]
+}
