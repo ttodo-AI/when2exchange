@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-03T02:43:50.176085+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,400–1,418 KRW/USD\n\nWHY: The won has strengthened significantly—reaching a 10-month low of 1,418 KRW/USD and potentially attempting to break into the 1,300s. This means you are paying fewer yen for each dollar, which is unfavorable when you need to convert a fixed USD amount monthly. The news indicates July saw the won's strongest appreciation since 2009, driven by foreign hedge-ratio adjustments and domestic company currency conversions.\n\nTIP: Consider waiting for the predicted range ceiling (~1,440 KRW/USD) or signs of won weakness before your next conversion, since 74% of individuals surveyed agree: \"convert when the rate is lower (higher KRW/USD).\""
+  },
+  "articles": [
+    {
+      "title": "\"외인 헤지비율 조정·국내기업 환전에 원화 강세…8월은 숨고르기\"",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1xYWtEVWtDaDd6alJIa3NZbWU2cDhuTXRDeHZwRTRfcEV6alpHRTgwVmQ0Sk9UUUtsd19TVktYTFlQeDdtYVpSYnpLTzgwZE9jXy1IY01CbnZwNDRxdjBWQ0JZU2tlT3RYNDMzYlh1N28?oc=5",
+      "summary": "\"외인 헤지비율 조정·국내기업 환전에 원화 강세…8월은 숨고르기\" 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-08-03T01:22:33+00:00"
+    },
+    {
+      "title": "환율 한달새 114원 급락… 美日, 28년만에 ‘엔화 방어’ 동시 개입",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB2RzJfWklPeDRJU2FXYXZ4ZjZnQTVoVWh6LWsxbGRkVFR3RnNxYmN3TXdtQzc5dTVSSVZiLUM3UmFvLWgxM3hMaXV5UWppbG11Tk9CRUo4MXlaV0ZKTV9lYzJEZDc0VXBSQjY0RHREOWh3MlJOU2fSAWZBVV95cUxPMjV2SzZNY3B6TDNiM2JUek1ScGRaYzQ4ZFl3YzZZQ25vX3h5UXdrNTRNSnNESERLazdwS0RmclVVcmJ3ajdGWHZPelVHc3REWE93OGtUU0tSSDZ0N2RiZ3dqNnpuNmc?oc=5",
+      "summary": "환율 한달새 114원 급락… 美日, 28년만에 ‘엔화 방어’ 동시 개입 동아일보",
+      "source": "동아일보",
+      "date": "2026-08-02T19:30:00+00:00"
+    },
+    {
+      "title": "[포커스] 엔화 방어 직접개입 美·日…원·달러 환율 추가하락 가능성",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE05ZV85NFI4N2o4ZEw0SUFIckxtRkNXOFlZWkJRTDRYMVgzY05QOG1BUDk3aGtkQkFVbHBxZEFfUDZZelI4RTNzbV9kNG51RnBDMWFxTFhZOXhlVnQ4S04wYW9wVkxUVncxWk54bEVnTGc3SjA?oc=5",
+      "summary": "[포커스] 엔화 방어 직접개입 美·日…원·달러 환율 추가하락 가능성 오늘경제",
+      "source": "오늘경제",
+      "date": "2026-08-03T01:49:43+00:00"
+    },
+    {
+      "title": "원달러 환율 1400 초중반 숨고르기 vs 1410원대로 하락",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4xSEptNEJBQlVxcmZGY2xHRWNoRTg2dlJjLVpHZ18zdzZEZm5jS3ZDWkhwdEprMjZzbVJMUlpQRmk0OERKaFdOb1phSEVqWFBhX1AzQ0N1Tm9uTDF1M0s1cnJETkFiQ3BheVlKN0N1S0FkWEoxeVJV?oc=5",
+      "summary": "원달러 환율 1400 초중반 숨고르기 vs 1410원대로 하락 thecommoditiesnews.com",
+      "source": "thecommoditiesnews.com",
+      "date": "2026-08-02T06:32:06+00:00"
+    },
+    {
+      "title": "역대급 수출에도…해외투자 붐에 갇힌 원·달러 환율",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4yOXh4dXd2dlRvTkFBVk9ZalljRk9kQnNCTUFHamF0NFExX0VxcUNpMjVWTjd2QS1fZTNFMmhOU1Vya293NE1aekhVUUxNT2FVLXJvSjhMVGZuUdIBWEFVX3lxTE84dGs4eXJLdmM4bkJ6SHpmcUNBZjFzVHhUUUhfc202bVd1ZExhM2NEcl96YmxSclZ4Ym9lbjlHcldqRkJLUHFWZkRCcm95N1J2OTFnQjZ0SlI?oc=5",
+      "summary": "역대급 수출에도…해외투자 붐에 갇힌 원·달러 환율 아주경제",
+      "source": "아주경제",
+      "date": "2026-08-02T07:14:08+00:00"
+    },
+    {
+      "title": "7월 원화 가치 급등…2009년 이후 최대 절상률 기록",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBdjlQSG1sQ2ZrcUlMS3JrX3d3c3pnZmNEMDdMN2NfRzROLWtNT2JQZWw1Q1FQWWRHRk1vOUxTV1hHT1k5RWcya2N4M0E2N0tRcjlkNmRLS0FBcU5FUm52cUJrNThfU1lx?oc=5",
+      "summary": "7월 원화 가치 급등…2009년 이후 최대 절상률 기록 공감신문",
+      "source": "공감신문",
+      "date": "2026-08-02T06:54:07+00:00"
+    },
+    {
+      "title": "[주간환율전망] 원·달러 1418원 10개월 만 최저…이번주 예상 밴드 1395~1440원",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE81b25peXFaOWc5X09LQWc5Y0QxZ19xMGdUblZfLUh6WEYxM3FXNzZ1T2RyNUw5X2lSV0J4TkYzRUNpS2lSc3FpVnNyMGdUZWJENVdzNUV1bG1QbmJiU0ZhMDZNcXB2dWs?oc=5",
+      "summary": "[주간환율전망] 원·달러 1418원 10개월 만 최저…이번주 예상 밴드 1395~1440원 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-08-02T22:00:00+00:00"
+    },
+    {
+      "title": "[주간환율전망] 이제는 원화의 시간···1300원대 진입 시도",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CZGhJeEppVXhkSFlVX2twY3lOdXk0OEl6Wk5hbHZKOWNZSEl2Vk1TRmpLdENHODE0aU0zOTZzdkQ1eGh5UUZCNnVXRENQMFdBekU1S2EwQkpmcGU5ZzNOSW43SjlhUURPQUE?oc=5",
+      "summary": "[주간환율전망] 이제는 원화의 시간···1300원대 진입 시도 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-08-02T03:59:06+00:00"
+    },
+    {
+      "title": "트럼프 이란 공습 취소에 위험선호 회복⋯\"1420원 진입 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9hd2JCRFMyTUpDX0hvNVV4U0diV1RPeHRrelVTM1I1dlowSmp5RS1tbU4tdUZOaERFbVp4UHVFd1lxRlk4YVdfVXpEVTlrX2pZQ0QwSA?oc=5",
+      "summary": "트럼프 이란 공습 취소에 위험선호 회복⋯\"1420원 진입 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-08-02T22:56:00+00:00"
+    },
+    {
+      "title": "7월 원화 가치상승, 주요국 중 1위… 개인 “내렸을 때 환전하자” 74% ↑",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5pMVhUTlVMYy1MYUR5bUtUWk5uWnBEVzlWMkxyUGhoOS1SVzFCbVEyZXB2cmdXVjV6eWlrZDJlU04wZFlhd0E?oc=5",
+      "summary": "7월 원화 가치상승, 주요국 중 1위… 개인 “내렸을 때 환전하자” 74% ↑ v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-08-02T04:30:16+00:00"
+    }
+  ]
+}
