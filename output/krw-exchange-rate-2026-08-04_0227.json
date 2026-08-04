@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-04T02:27:45.737917+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,429–1,430 KRW/USD\n\nWHY: The won has recently strengthened significantly (July showed the highest appreciation rate since the financial crisis), pushing the rate down to around 1,430 won per dollar. However, multiple sources forecast the rate will stabilize in the 1,380–1,420 range going forward, suggesting the won may strengthen further, making dollars cheaper still in the near term.\n\nTIP: Since forecasts suggest rates could improve (lower KRW needed per dollar), consider splitting your monthly $2,000 conversion across multiple dates rather than converting all at once, to capture potential further won-strengthening over coming weeks."
+  },
+  "articles": [
+    {
+      "title": "환율 안정 3가지 이유…“당분간 1380~1420원 전망”",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Oamt2Q0c2VHg5NEgyT2lvVmVtZDg5SF80NWVsV0tWd0FKRE1BUnptak1WSGFaOUF4ZTd1YzR0amN0M2UyMVF0emRxRnZ0cnpGdXJKMEpLdUpYV2lkYzhydndIc3RxRldlSlRSX3VXSWZyUQ?oc=5",
+      "summary": "환율 안정 3가지 이유…“당분간 1380~1420원 전망” 한겨레",
+      "source": "한겨레",
+      "date": "2026-08-03T11:02:00+00:00"
+    },
+    {
+      "title": "위험선호 회복 속 저가 매수세에 보합⋯\"1430원 안팎서 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5PQk5RMDNqSmo2RF9TdUdoMFdrRm1NcVd0LWkxb2FlQ1plRE1XZjNqTDV1cFhwbVhvU3N0QkhTLVZNOFdZeFBGX3BuMzNpS2FzR0piQw?oc=5",
+      "summary": "위험선호 회복 속 저가 매수세에 보합⋯\"1430원 안팎서 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-08-03T23:06:00+00:00"
+    },
+    {
+      "title": "급락한 환율 1400원 깨지나 Vs 연말 반등",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrY3ppaUwwM3dpbTBRbW9sTVJLNkxfMW9INFUxR3Z0Mm8tY1pyc0w2dTNKOGFwVnhzVTlBNUotN2ZrM1B5ZWU3dW5Ld0J4VUpGWXJNbENVRWdjeG1mT2pZa0J3Y3I?oc=5",
+      "summary": "급락한 환율 1400원 깨지나 Vs 연말 반등 매일일보",
+      "source": "매일일보",
+      "date": "2026-08-03T06:39:22+00:00"
+    },
+    {
+      "title": "달러·원 환율 1429.8원 '상승 마감'…외인 순매도·서학개미 환전 (종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE42ZzBtM2MtbzFPdDVpUkN5NUlxaFhpZGJnQURwRFNtSUtsdUZseXBacXJseXZnTEZyLVVFcXprT3hYTnJON1JDUWFjQWlPdTRJNld3TVNPRkxaN0ZLZ3hmaA?oc=5",
+      "summary": "달러·원 환율 1429.8원 '상승 마감'…외인 순매도·서학개미 환전 (종합) news1.kr",
+      "source": "news1.kr",
+      "date": "2026-08-03T07:01:24+00:00"
+    },
+    {
+      "title": "달러·원 환율 1429.8원 '상승 마감'…외인 순매도·서학개미 환전 (종합)",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0xVlFqMU5wYlRJc056RDV2NUFRbkVlRk5ZOG4xUzY0Rm81MThtaE5mU1NWVmdyUlJoSTNNNG90aUhUNXZ5QkE?oc=5",
+      "summary": "달러·원 환율 1429.8원 '상승 마감'…외인 순매도·서학개미 환전 (종합) v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-08-03T07:02:49+00:00"
+    },
+    {
+      "title": "7월 원화 절상률, 금융위기 후 최고",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5TdDNBZGwyZGNTMl9HR0pBY20xLUMwTEE3VFdOWHhhbE9OdWE1ZGxXZzk3S3Z1SlZwc3RmdURMNHlXbHVGWjNZeVdUanAwTHY1ckFNMHA2Ymh5UHg4NldSQ1hzYXBucjFFd3V0a2d6NXI0NFFG?oc=5",
+      "summary": "7월 원화 절상률, 금융위기 후 최고 부산일보",
+      "source": "부산일보",
+      "date": "2026-08-03T08:45:58+00:00"
+    },
+    {
+      "title": "\"환율 1430원대로 내려왔는데\"…외국인은 코스피로 돌아올까",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5IeThFOVl3dU9mLTg1WEJSTThBVWJ1TlhTMHJ3azJpQndDd1FWaDNMV3lhS0xWYXJNSjVaMGJ6dkJFUnJ1WXlxYzRoOW5EZFZWWlY5TXNzY1ZKTXVyZFM5WA?oc=5",
+      "summary": "\"환율 1430원대로 내려왔는데\"…외국인은 코스피로 돌아올까 네이트",
+      "source": "네이트",
+      "date": "2026-08-03T05:31:00+00:00"
+    }
+  ]
+}
