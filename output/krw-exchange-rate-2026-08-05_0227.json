@@ -1,0 +1,41 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-05T02:27:27.745725+00:00",
+  "window_hours": 24,
+  "count": 4,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1300 KRW/USD\n\nWHY: The won is approaching historically stronger levels (1300 KRW/USD), suggesting won strength is pushing dollars cheaper for the user. However, the news highlights debate between whether this is temporary \"undershooting\" or a sustained downtrend, and US-Japan coordination to defend the yen may create renewed upward pressure on the won-dollar rate.\n\nTIP: Since you have a fixed $2,000 monthly obligation, consider setting a target rate (e.g., buy if KRW/USD exceeds 1320) rather than waiting for a \"perfect\" moment, to avoid getting caught if the won weakens again."
+  },
+  "articles": [
+    {
+      "title": "[마켓+] 원·달러 환율 1300원대 진입하나···'일시적 언더슈팅' vs '추세적 하락'",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51ZVVGclZ0RkNEX1l5THY5NW5tdmQ0eWx5dGs3OEVMcFNrNGp1TVZoczk3YjJiYm01ekx6NjJDbU9hNHJ2M2k2NTVBOWU1ODFyUW91TURINHlOT2NOY21yZTlwcnBGdjdaWkE?oc=5",
+      "summary": "[마켓+] 원·달러 환율 1300원대 진입하나···'일시적 언더슈팅' vs '추세적 하락' 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-08-04T23:00:00+00:00"
+    },
+    {
+      "title": "미·일의 엔저 방어…원·달러 환율 1300원대 다시 볼까",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5IUUdnbEdhb2lMSy1LRE1oU1Z4UExISVZhZFlfdG5KdFJvRDRjUjhHbFlCOGdEWmp5VGk1X1dtUjlvbXJPSEV0UE9nT0tOVXkwcWpuWkwwNmYwSlMtZnJJ0gFfQVVfeXFMTkhRR2dsR2FvaUxLLUtETWhTVnhQTEhJVmFkWV90bkp0Um9ENGNSOEdsWUI4Z0RaanlUaTVfV21SOW9tck9IRXRQT2dPS05VeTBxam5aTDA2ZjBKUy1mckk?oc=5",
+      "summary": "미·일의 엔저 방어…원·달러 환율 1300원대 다시 볼까 경향신문",
+      "source": "경향신문",
+      "date": "2026-08-04T07:52:00+00:00"
+    },
+    {
+      "title": "미·일 공조, 엔화 약세 방어…엔·원 동조, 원화 강세 반전",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5qeUFyQXBWMGNZMzY2REljanpzNUd0RHhpaDA4bW1XS0hnOTVtUE5SMlZ1amFxS2FEMGltWDE1Wmgxd2J6NVRraXNrUTc3Zl92QVRoc2tEQTFCSl8xTXR30gFfQVVfeXFMTmp5QXJBcFYwY1kzNjZESWNqenM1R3REeGloMDhtbVdLSGc5NW1QTlIyVnVqYXFLYUQwaW1YMTVaaDF3Yno1VGtpc2tRNzdmX3ZBVGhza0RBMUJKXzFNdHc?oc=5",
+      "summary": "미·일 공조, 엔화 약세 방어…엔·원 동조, 원화 강세 반전 경향신문",
+      "source": "경향신문",
+      "date": "2026-08-04T11:41:00+00:00"
+    },
+    {
+      "title": "원/달러 환율 79원 뛴 3월…3분의 1은 ‘NDF’가 밀어 올렸다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hUWtRYTRMdVZHTUtvVmZkOWNzbjd5MkdsSzItQThHWHVPM1ZlTUJXMTdITkxZNWI4UzI5bjd5aVdzd04wNFhYdkEybWR4RUtIb2lwZU1B?oc=5",
+      "summary": "원/달러 환율 79원 뛴 3월…3분의 1은 ‘NDF’가 밀어 올렸다 biz.heraldcorp.com",
+      "source": "biz.heraldcorp.com",
+      "date": "2026-08-04T06:35:26+00:00"
+    }
+  ]
+}
