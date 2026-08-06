@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-06T02:29:47.938890+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,300–1,330 KRW/USD\n\nWHY: The won has strengthened significantly—rallying ~130–135 KRW in one month—meaning you are currently getting more dollars per won spent. News sources describe this as a major \"decline in high exchange rates\" and relief from the previous 1,600 won fear level. Although some forecasts suggest the rate may test 1,300 won or even drift toward 1,500 won by year-end, the current stable and strengthened won (supported by corporate conversions and authorities' stabilization measures) represents a favorable entry point relative to recent highs.\n\nTIP: Lock in this month's $2,000 conversion now while the won is strong; if rates weaken further toward 1,500 won later in the year, your fixed monthly obligation will become more expensive in KRW terms."
+  },
+  "articles": [
+    {
+      "title": "씨티 \"달러-원, 기업 환전·당국 안정화 조치로 추가 안정\"",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xUHBCcVp3a2RRQlc1MFNjSGVXdXRtZVg3aFgyUnRYcllqY21lZG1ITVMzY2s4X0xMblh3V3UtMVI4dElUalhHNmlDTUIxNktqUUlYZFAyTk1XQUxrNlZCTko5ZEtkTnNLMFJnUU0tYVM?oc=5",
+      "summary": "씨티 \"달러-원, 기업 환전·당국 안정화 조치로 추가 안정\" 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-08-05T09:57:02+00:00"
+    },
+    {
+      "title": "[마켓] 원·달러 한 달 새 130원 급락…\"일시적\" vs \"추세 시작\" 갈렸다",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xY2VZNWZKZUZmakRuNXFHeHptS2JXZW44MEMtNzVHVHZzWHZSLWF3YXU3eDdZSVhwVnExNDdUS0lvSmw2QmhoZHM5eUp4bFlzQnJQa1l0SFROenl6UGY1TWVqSVNqcFk?oc=5",
+      "summary": "[마켓] 원·달러 한 달 새 130원 급락…\"일시적\" vs \"추세 시작\" 갈렸다 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-08-05T03:00:00+00:00"
+    },
+    {
+      "title": "1600원 공포는 끝났다…132원 급락한 환율, 원화 반격 시작되나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qd1FnYUl5T19IQ2ExS1lHNzNCUjQ0OUMyY0tEZ2cwWHNoeGE4VHpWTnNZWUFWLTJXRW52WEZzTnh6bVpBRS1pTVNnZzNBRHNreVhfR01od2FZU3hvcXVERg?oc=5",
+      "summary": "1600원 공포는 끝났다…132원 급락한 환율, 원화 반격 시작되나 네이트",
+      "source": "네이트",
+      "date": "2026-08-05T05:02:00+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 응축된 하방 압력…하단은 버텨낼까",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WSzJvZnJJbHBESDR6QkNRMUplT1p3OEx2NUN2R2UxenY4M05HelM2WGZ2a0JNNUR6bHFfeFdUTHlsUnl5TW1RaWFENjdGS05KSGJRTm95TjZvS3c3TThrQWR1RVk5amxUUDhUaENCSktHdw?oc=5",
+      "summary": "[신윤우의 외환분석] 응축된 하방 압력…하단은 버텨낼까 KB Think",
+      "source": "KB Think",
+      "date": "2026-08-05T22:47:16+00:00"
+    },
+    {
+      "title": "美 재무장관 발언에 달러 환율 1300원대까지 가나",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmR1RKY25yRENuQWdBTFVQeU9udzFaRC1TdUZSM3hhSERiaDdBWExFZmhvcmN0cWdTTmhXX3NBNWV6dUxSaXNtVTdCZS16RmFjcnY4LWNHVkVoSDZXd2QwbWxmMmE0a09D?oc=5",
+      "summary": "美 재무장관 발언에 달러 환율 1300원대까지 가나 fetv.co.kr",
+      "source": "fetv.co.kr",
+      "date": "2026-08-06T01:20:37+00:00"
+    },
+    {
+      "title": "한투 “8월 법인세 중간예납 46조…원·달러 환율 1300원대 후반 가능”",
+      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcXZzbWdyRnZjaGFnd0dPNHlJakVEY05kN0dETkw4ZmFONEpaSjhBeGVHdWFxWl83WHpnRUxzLUJkTExMMWV3TlRtWm1ucUhLbW15QTBHWF94ZkNDdGRHYVhWMm9CTmJRN0VJNGdKYzZhMHFYZ3BETUNhb1FWdEZqNFlOMEM?oc=5",
+      "summary": "한투 “8월 법인세 중간예납 46조…원·달러 환율 1300원대 후반 가능” 글로벌이코노믹",
+      "source": "글로벌이코노믹",
+      "date": "2026-08-06T01:53:37+00:00"
+    },
+    {
+      "title": "[고환율 완화 언제까지] 한 달 새 7% 뚝...산업계 단비, 급격한 변동성은 리스크",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xc0t5VGMxN0NXc0VGZTg1cFh3NFV1NjhuNUE0dkJqYlE1UU1wb0dJVkt5NXRVbG1zSzFNU0t3VWJzemdNeXoxUTdlT2dGS2x0SWs4azJWVXp4UdIBWEFVX3lxTE9CT2RZcWJ6TmJZTzdhclBqQi1UUFFDSm1LTF80WGpyN3JrckZNc2Ruc0hsbEhRTGJ0V1hqTHNEUEhCbW9YU1hKZFlsb0x6UmY2UndPUzk1U0Y?oc=5",
+      "summary": "[고환율 완화 언제까지] 한 달 새 7% 뚝...산업계 단비, 급격한 변동성은 리스크 아주경제",
+      "source": "아주경제",
+      "date": "2026-08-05T09:00:00+00:00"
+    },
+    {
+      "title": "한 달 새 135원 급락 환율…3분기 1300원 찍고 연말 1500원 튄다",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE80OFBCMjFiZWZMb3FtMTE4UHJUOUpGenhOdWMtM2YxWldmQWdMOFR5YjQ2S20yTmEyODlmLWR2UU1lMDl5RnNCbjQ2d05ReV9tbWZPSTc2TkZZWUJsa3NCbWllNndKLThYNkgwUU9B0gFuQVVfeXFMTzQ4UEIyMWJlZkxvcW0xMThQclQ5SkZ6eE51Yy0zZjFaV2ZBZ0w4VHliNDZLbTJOYTI4OWYtZHZRTWUwOXlGc0JuNDZ3TlF5X21tZk9JNzZORllZQmxrc0JtaWU2d0otOFg2SDBRT0E?oc=5",
+      "summary": "한 달 새 135원 급락 환율…3분기 1300원 찍고 연말 1500원 튄다 파이낸셜투데이",
+      "source": "파이낸셜투데이",
+      "date": "2026-08-05T09:54:27+00:00"
+    }
+  ]
+}
