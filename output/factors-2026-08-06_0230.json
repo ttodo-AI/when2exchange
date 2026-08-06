@@ -139,6 +139,8 @@
   "checks": {
     "passed": true,
     "blocks": [],
-    "warnings": []
+    "warnings": [
+      "실제 전일대비 +0.5원(보합)인데 방향/변동 주장"
+    ]
   }
 }
