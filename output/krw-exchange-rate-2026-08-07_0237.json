@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-07T02:37:31.655059+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,300s won per dollar (lower end)\n\nWHY: Multiple sources indicate the won is currently near or at a recent low point (1,300s range), supported by a large expected corporate tax payment of 46 trillion won in August that will boost won supply and demand. The Bank of Korea's hawkish hold on rates and strong semiconductor performance suggest the won may strengthen from here, making now relatively attractive for dollar purchases.\n\nTIP: Lock in your monthly $2,000 conversion now while the won is in this favorable 1,300s range, as the trend appears positioned to strengthen the won (making dollars more expensive) in coming months."
+  },
+  "articles": [
+    {
+      "title": "[환율 전망] 워시 한 마디에 뒤바뀔 추세는 아니다",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuSDZXNndtdzVwcWVyMEg1T2RkbWZjdnFwb29RVGhQamRJTUpmSXVEQjJ2QW5vQnd6VW4zMzRZQ2pEOW9LM0FvN21HMkJpVXhpN1dpZW5nUEd0WHBuUzE4Wg?oc=5",
+      "summary": "[환율 전망] 워시 한 마디에 뒤바뀔 추세는 아니다 KB Think",
+      "source": "KB Think",
+      "date": "2026-08-07T00:58:19+00:00"
+    },
+    {
+      "title": "우리금융硏 \"한은, 8월 기준금리 '매파적 동결' 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3M0MxUmVnd2R5U3Y4aFpwX2hoRXJVVWw1RGFnUDR6eWVjZlNyWDNqZkg0QzlycC1yWC1uZkxGVVNXQlVXemNvdVNnUkhMSHNOVS1VSnMyU2UyeElGakFpR9IBYEFVX3lxTFB3M0MxUmVnd2R5U3Y4aFpwX2hoRXJVVWw1RGFnUDR6eWVjZlNyWDNqZkg0QzlycC1yWC1uZkxGVVNXQlVXemNvdVNnUkhMSHNOVS1VSnMyU2UyeElGakFpRw?oc=5",
+      "summary": "우리금융硏 \"한은, 8월 기준금리 '매파적 동결' 전망\" 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-08-06T05:20:04+00:00"
+    },
+    {
+      "title": "반도체 호실적에 법인세 중간예납 '46조' 전망…\"달러-원 하단 1,300원대 후반\"",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBRnc2SzFhY0ZRU0FobFZsdHl4S0VsYnNMMUo1ajZoby1WRHpRejY2REU4X0JwUDhMX0NBY0tUMDFqZFFacTlPMkJ4RVpHRjEzcDJ6ejZRdjN2TFpwNUpvT0laZ1I3RGJHY2ZVQjFYaUJUTFhq0gF0QVVfeXFMUEFGdzZLMWFjRlFTQWhsVmx0eXhLRWxic0wxSjVqNmhvLVZEelF6NjZERThfQnBQOExfQ0FjS1QwMWpkUVpxOU8yQnhFWkdGMTNwMnp6NlF2M3ZMWnA1Sm9PSVpnUjdEYkdjZlVCMVhpQlRMWGo?oc=5",
+      "summary": "반도체 호실적에 법인세 중간예납 '46조' 전망…\"달러-원 하단 1,300원대 후반\" 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-08-06T07:44:52+00:00"
+    },
+    {
+      "title": "원·달러 환율 지금이 저점?…달러 수급 지속 놓고 전망 엇갈려",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd2UyekZvQk1FUy03c2ROekxNWEE5bUdHb3BrS0JhVWhQMV9YeTZPSzEwTlR1VmdkTjRCUjhOTTVQM0E2T181NTRYQnVVMzBKOEotajRrcEE0Y2twUGxxSTNQeFI1SXN6dDdQczhNZExoRTRtODNCOURWeHVqOS1GcA?oc=5",
+      "summary": "원·달러 환율 지금이 저점?…달러 수급 지속 놓고 전망 엇갈려 edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-08-06T07:59:46+00:00"
+    },
+    {
+      "title": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Mel9wYVEyQ21fRm85eHV0eUJQZ1FacmEzV1Q4X0dCZTNRUlhHMlRzNWpHalAtSng4bllRSjZsaGNVR1VsRXZ1ejNYMW01UW9nYTVF0gFTQVVfeXFMT0x6X3BhUTJDbV9Gbzl4dXR5QlBnUVpyYTNXVDhfR0JlM1FSWEcyVHM1akdqUC1KeDhuWVFKNmxoY1VHVWxFdnV6M1gxbTVRb2dhNUU?oc=5",
+      "summary": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나 서울경제",
+      "source": "서울경제",
+      "date": "2026-08-06T06:49:31+00:00"
+    },
+    {
+      "title": "닛케이 “美, 원화환율 개입 관측 배경엔 對韓 무역적자 확대 우려”",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9FR3JCS2ZKRUlkMWxoSE5PS2JEbVo1UGs4NVdILW1seEJXbVlsZVZudnh5N1dyTjk0MFZ2Ny1hWF9JZTFYM0ZKTEhBSWRTNTUzNWpKM1R3?oc=5",
+      "summary": "닛케이 “美, 원화환율 개입 관측 배경엔 對韓 무역적자 확대 우려” 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-08-06T05:14:38+00:00"
+    },
+    {
+      "title": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5fUktJdngwUGxBMEozaG9qdlFhTWFzOFk4N3hiTTZCdzdORWJYbGhoTnpOSE9sako4NHh6ZGJPNURydG40NE4wMzdFQ1ZkRVlsTUVmLTBUbFliWTNLd3IyRg?oc=5",
+      "summary": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나 네이트",
+      "source": "네이트",
+      "date": "2026-08-06T06:50:00+00:00"
+    }
+  ]
+}
