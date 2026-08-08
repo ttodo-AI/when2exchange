@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-08T01:29:07.086403+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,300–1,420 KRW/USD\n\nWHY: The won has strengthened significantly (132 KRW drop in one month), with the rate now hovering near potential support levels around 1,300–1,420 range. However, analysts are divided—some call this a temporary dip while others expect the won to maintain strength due to corporate tax payments (46 trillion KRW expected) and government stabilization measures. The trend lacks clear directional conviction.\n\nTIP: Since the won appears relatively strong now and forecasts are mixed, lock in your monthly $2,000 conversion consistently to average out timing risk rather than waiting for a \"better\" rate that may not materialize."
+  },
+  "articles": [
+    {
+      "title": "[환율 전망] 워시 한 마디에 뒤바뀔 추세는 아니다",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuSDZXNndtdzVwcWVyMEg1T2RkbWZjdnFwb29RVGhQamRJTUpmSXVEQjJ2QW5vQnd6VW4zMzRZQ2pEOW9LM0FvN21HMkJpVXhpN1dpZW5nUEd0WHBuUzE4Wg?oc=5",
+      "summary": "[환율 전망] 워시 한 마디에 뒤바뀔 추세는 아니다 KB Think",
+      "source": "KB Think",
+      "date": "2026-08-06T23:06:18+00:00"
+    },
+    {
+      "title": "씨티 \"달러-원, 기업 환전·당국 안정화 조치로 추가 안정\"",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xUHBCcVp3a2RRQlc1MFNjSGVXdXRtZVg3aFgyUnRYcllqY21lZG1ITVMzY2s4X0xMblh3V3UtMVI4dElUalhHNmlDTUIxNktqUUlYZFAyTk1XQUxrNlZCTko5ZEtkTnNLMFJnUU0tYVM?oc=5",
+      "summary": "씨티 \"달러-원, 기업 환전·당국 안정화 조치로 추가 안정\" 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-08-05T09:57:02+00:00"
+    },
+    {
+      "title": "우리금융硏 \"한은, 8월 기준금리 '매파적 동결' 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3M0MxUmVnd2R5U3Y4aFpwX2hoRXJVVWw1RGFnUDR6eWVjZlNyWDNqZkg0QzlycC1yWC1uZkxGVVNXQlVXemNvdVNnUkhMSHNOVS1VSnMyU2UyeElGakFpR9IBYEFVX3lxTFB3M0MxUmVnd2R5U3Y4aFpwX2hoRXJVVWw1RGFnUDR6eWVjZlNyWDNqZkg0QzlycC1yWC1uZkxGVVNXQlVXemNvdVNnUkhMSHNOVS1VSnMyU2UyeElGakFpRw?oc=5",
+      "summary": "우리금융硏 \"한은, 8월 기준금리 '매파적 동결' 전망\" 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-08-06T05:20:04+00:00"
+    },
+    {
+      "title": "[환율 전망] 사는 자와 파는 자, 만만치 않을 공방",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rYVQtWUdlZ1Y3azN3NC1lMGF3eWNMNkR5ZWtVcnFEZ1g2ZjJQVkliR0ZqUktlYW8ybThiZTFNdmVJcmR6LXZnbUU1VGR2NnUydW5jNjJ2QkZId3ZsNjVjcg?oc=5",
+      "summary": "[환율 전망] 사는 자와 파는 자, 만만치 않을 공방 KB Think",
+      "source": "KB Think",
+      "date": "2026-08-05T23:06:30+00:00"
+    },
+    {
+      "title": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IUEQ5MnBVRS1RWUpKQTlwVDBBUkVTNVlmc3N1TEVJRDdDbVpPVHZkWTdmN2VmUW9fNDloNkh6YjBleWhSdkhTTTJ4QXBQRGVyNmfSAVNBVV95cUxPTHpfcGFRMkNtX0ZvOXh1dHlCUGdRWnJhM1dUOF9HQmUzUVJYRzJUczVqR2pQLUp4OG5ZUUo2bGhjVUdVbEV2dXozWDFtNVFvZ2E1RQ?oc=5",
+      "summary": "46조 전망까지 나오는 8월 법인세…환율도 한숨 돌리나 서울경제",
+      "source": "서울경제",
+      "date": "2026-08-06T06:49:31+00:00"
+    },
+    {
+      "title": "원·달러 환율 지금이 저점?…달러 수급 지속 놓고 전망 엇갈려",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd2UyekZvQk1FUy03c2ROekxNWEE5bUdHb3BrS0JhVWhQMV9YeTZPSzEwTlR1VmdkTjRCUjhOTTVQM0E2T181NTRYQnVVMzBKOEotajRrcEE0Y2twUGxxSTNQeFI1SXN6dDdQczhNZExoRTRtODNCOURWeHVqOS1GcA?oc=5",
+      "summary": "원·달러 환율 지금이 저점?…달러 수급 지속 놓고 전망 엇갈려 edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-08-06T07:59:46+00:00"
+    },
+    {
+      "title": "반도체 호실적에 법인세 중간예납 '46조' 전망…\"달러-원 하단 1,300원대 후반\"",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBRnc2SzFhY0ZRU0FobFZsdHl4S0VsYnNMMUo1ajZoby1WRHpRejY2REU4X0JwUDhMX0NBY0tUMDFqZFFacTlPMkJ4RVpHRjEzcDJ6ejZRdjN2TFpwNUpvT0laZ1I3RGJHY2ZVQjFYaUJUTFhq0gF0QVVfeXFMUEFGdzZLMWFjRlFTQWhsVmx0eXhLRWxic0wxSjVqNmhvLVZEelF6NjZERThfQnBQOExfQ0FjS1QwMWpkUVpxOU8yQnhFWkdGMTNwMnp6NlF2M3ZMWnA1Sm9PSVpnUjdEYkdjZlVCMVhpQlRMWGo?oc=5",
+      "summary": "반도체 호실적에 법인세 중간예납 '46조' 전망…\"달러-원 하단 1,300원대 후반\" 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-08-06T07:44:52+00:00"
+    },
+    {
+      "title": "1600원 공포는 끝났다…132원 급락한 환율, 원화 반격 시작되나",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qd1FnYUl5T19IQ2ExS1lHNzNCUjQ0OUMyY0tEZ2cwWHNoeGE4VHpWTnNZWUFWLTJXRW52WEZzTnh6bVpBRS1pTVNnZzNBRHNreVhfR01od2FZU3hvcXVERg?oc=5",
+      "summary": "1600원 공포는 끝났다…132원 급락한 환율, 원화 반격 시작되나 네이트",
+      "source": "네이트",
+      "date": "2026-08-05T05:02:00+00:00"
+    },
+    {
+      "title": "호르무즈발 유가 상승에 투심 난조⋯\"1420원 중후반 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGdG1KMHltWGdaOEZMWDAzY01ENFdsRHBmNllaR25tV0VtRElhM0xudFBVSEVVbTNjTXo1Um45dnprZkVIdVg0a1AydWU2VEprNWZwag?oc=5",
+      "summary": "호르무즈발 유가 상승에 투심 난조⋯\"1420원 중후반 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-08-06T23:18:00+00:00"
+    },
+    {
+      "title": "[마켓] 원·달러 한 달 새 130원 급락…\"일시적\" vs \"추세 시작\" 갈렸다",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xY2VZNWZKZUZmakRuNXFHeHptS2JXZW44MEMtNzVHVHZzWHZSLWF3YXU3eDdZSVhwVnExNDdUS0lvSmw2QmhoZHM5eUp4bFlzQnJQa1l0SFROenl6UGY1TWVqSVNqcFk?oc=5",
+      "summary": "[마켓] 원·달러 한 달 새 130원 급락…\"일시적\" vs \"추세 시작\" 갈렸다 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-08-05T03:00:00+00:00"
+    }
+  ]
+}
