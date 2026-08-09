@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-09T01:41:05.326888+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,410 KRW/USD\n\nWHY: The won has strengthened significantly—the exchange rate has fallen to 1,410 won per dollar, a 10-month low, meaning you need fewer won to purchase your $2,000. The news reports a sharp 125 won decline over one month and 107 won drop in July alone, indicating sustained won strength against the dollar.\n\nTIP: Lock in this conversion soon, as the won appears near multi-month peaks; if it weakens further (rates rise above 1,410), your monthly $2,000 will cost more won."
+  },
+  "articles": [
+    {
+      "title": "[이번주 환율] 10개월 만에 1410원대…법인세 환전 수요에 추가 하락할까",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0tS3ZSLURab05lbm9ZWXNBN25nZ1pXS3ZFTE5Xa05OQW5Sdm4wVXlFZmhNR2N3MDhkamRkZ2RKbGtkYVdlbUFzd3Y5cWhCbVpYM19rTlFHdXlxVndZbHFZYkRrWF91NlM3b0JuU0N0YVRudw?oc=5",
+      "summary": "[이번주 환율] 10개월 만에 1410원대…법인세 환전 수요에 추가 하락할까 오피니언뉴스",
+      "source": "오피니언뉴스",
+      "date": "2026-08-09T00:50:19+00:00"
+    },
+    {
+      "title": "한 달 새 125원 급락…1,410원대 원·달러, ‘언더슈팅’ 가능성도",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1tcjVIdXdGdHA2SE9PYndKRDFjbnlDc2NkMVNVcU5aelo2UjQwUmxkU0dhY3hMVUJQeUpmSlNhaWZnV1czMjlDNWYzODRpMXdJVUt3ZnBXNl95X2xSbFliaWNxY0RPOXg2RXJYRmx3?oc=5",
+      "summary": "한 달 새 125원 급락…1,410원대 원·달러, ‘언더슈팅’ 가능성도 seoulilbo.co.kr",
+      "source": "seoulilbo.co.kr",
+      "date": "2026-08-08T13:44:56+00:00"
+    },
+    {
+      "title": "7월 한 달 107원 하락한 환율…시중은행 달러예금은 오히려 늘었다",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1EdTIxU2s0MDhnYTk0Rl9CeG1GcTBha3llblJnLWxvd0F6SVBzQVNpRVo5eGlnZTNmSDN3UFJLQUhyZXU4LVU1VEhkQjdEanh1WEZlQzh6ZVNmUlVXOFNOWV9SWk1vQjQ4?oc=5",
+      "summary": "7월 한 달 107원 하락한 환율…시중은행 달러예금은 오히려 늘었다 CBC뉴스",
+      "source": "CBC뉴스",
+      "date": "2026-08-08T08:55:00+00:00"
+    }
+  ]
+}
