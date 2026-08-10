@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-10T01:43:55.962638+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,400–1,410 KRW per USD\n\nWHY: The won is currently STRONG (only ~1,400 KRW per USD), meaning you need fewer won to get your $2,000—so dollars are cheap right now. However, multiple sources indicate the won is expected to WEAKEN further, with a 93% probability of reaching 1,300 KRW per USD by year-end, meaning dollars will become even cheaper. Buying now locks you in at an unfavorable rate when better rates are likely coming soon.\n\nTIP: Consider delaying or reducing this month's conversion if possible, and wait for the won to weaken toward 1,300 (where your $2,000 will cost significantly more won, but that's when you should buy)."
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율 1,300원대 눈앞...하락 반전 'U턴', 왜? [앵커리포트]",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE11TnA4LVV0MWFLV21yaFNsaHdXbGdKNElBRlpJemFxbV95c24tSl9kbl90Q2JNblgzNEc4aWZwWVR5ZXl6VlBsU0NOYU9tOUF2eGUtTXZaa0pmZlB3RGc?oc=5",
+      "summary": "원·달러 환율 1,300원대 눈앞...하락 반전 'U턴', 왜? [앵커리포트] YTN",
+      "source": "YTN",
+      "date": "2026-08-09T23:21:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 1400원대까지 뚝…원화 강세 이어질까",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54d3d0VzlrWEFzWEVOdWtuN2UyRTdlYjNld2M5VS10QzZueG8wTXBRQ0k5RWpsZ3ZGV1B2TnVkRDNsaGMtS0RuSTNFRHdWMlJ1dFBfa2Y3czlZZ9IBWEFVX3lxTE5qVEVqNXBtb1pvbHVxeVdLamhJdy1ZMWdreG5SN29FdXkwYllpZExFMFlTcDNSZUIteWtfQVdlbnVrSFp0azNrelNuOGUyckswR1k1eS15Qkk?oc=5",
+      "summary": "원·달러 환율, 1400원대까지 뚝…원화 강세 이어질까 아주경제",
+      "source": "아주경제",
+      "date": "2026-08-09T06:49:15+00:00"
+    },
+    {
+      "title": "\"달러-원 연내 1,300원대 접촉 확률 93%…무질서 땐 원·엔 비동조\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qUlpwZXN6WEoxcmVMVEIzUVpOOGhGNHlFeUlGY0k5NC1KR0p0NkVJYUpLUll1d3BTSUhicnMtdW9EUmYyRmNNNzhLenh5X3NrdDk2enI1U1FRMTBFT0JNbkJST1d6N2stT21oWjdYOThmdw?oc=5",
+      "summary": "\"달러-원 연내 1,300원대 접촉 확률 93%…무질서 땐 원·엔 비동조\" KB Think",
+      "source": "KB Think",
+      "date": "2026-08-10T01:06:46+00:00"
+    },
+    {
+      "title": "[주간환율전망] 환율 1409.5원 10개월 만에 1400원대…예상 밴드 1400~1440원",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9UdEg5dWNoRERyRjdVLW1DR3VsdFlJZWF6QkxHVzNoT1JoamhGR1FraDJEXy05RDZjRUFkbHhQVTdNSkJETzRjdjZtM0paZkhYbE1qdmhOcmxnZVptTHVnQVlWa3E0WmM?oc=5",
+      "summary": "[주간환율전망] 환율 1409.5원 10개월 만에 1400원대…예상 밴드 1400~1440원 jabon.co.kr",
+      "source": "jabon.co.kr",
+      "date": "2026-08-09T22:30:00+00:00"
+    },
+    {
+      "title": "美 고용쇼크에 엔화 강세까지... 원·달러 1400원선 뚫고 1300원대 가나",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE40cmZBT0U1dVBRT1R0X1VKcDNkcHVKdVk0bFdZOTMyakFBam9GZ0xqM3o5b2h6dVg0amNyMFdMaVJENlBKeGN0LXJBT3AySzRiYU84dHZjRGFaRnFGTTBCZmlBLUo0Q1g5?oc=5",
+      "summary": "美 고용쇼크에 엔화 강세까지... 원·달러 1400원선 뚫고 1300원대 가나 녹색경제신문",
+      "source": "녹색경제신문",
+      "date": "2026-08-10T01:22:00+00:00"
+    },
+    {
+      "title": "[주간환율전망] 환율 1300원대 진입 가능성은?···美물가지표 '주목'",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4teFlTUE40WnRzSHc2SnRGTmtheFI5WnlOQ3p0SmYxVGJPYXJ3YWQ4SjhrRnJ5MENaYlFERzByMW5fREtiUVhmX2dqTGE1S29USUxyRWhHdDZfbEx5X09rTGhTam1SbzJsOHc?oc=5",
+      "summary": "[주간환율전망] 환율 1300원대 진입 가능성은?···美물가지표 '주목' 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-08-09T07:00:00+00:00"
+    }
+  ]
+}
