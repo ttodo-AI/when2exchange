@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-11T01:40:51.946516+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1400 KRW/USD (currently, with 1300s expected by year-end)\n\nWHY: The won has strengthened significantly (150 KRW drop over two months), making USD more expensive to buy right now. However, news suggests the won may continue strengthening toward 1300s by year-end, meaning if you wait, dollars could become even cheaper—but this requires the trend to hold.\n\nTIP: Consider splitting your monthly $2,000 conversion into smaller weekly purchases to average out timing risk, rather than trying to time one large monthly conversion."
+  },
+  "articles": [
+    {
+      "title": "환율 눈높이 낮아졌다…연말 1300원대 전망도",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVUoxMllsdFd0cTBfSmRITElBcUpQSHV5SlNCY2hWRldTdzdLWDFxb09PU2ppbmlGMEduLVNZU0JBT1YzeUE4SVRuOEdWZ3pzdGVGYWh5eFlQOWdLaXRmYkhFQmFLOFNwXzY2ZUpKOGdVT1BrQ29HMUZkeURZYXJ5Mw?oc=5",
+      "summary": "환율 눈높이 낮아졌다…연말 1300원대 전망도 edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-08-10T20:00:05+00:00"
+    },
+    {
+      "title": "두 달 새 150원 ‘뚝’ 원·달러 환율…변동성 지속되나",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zNjNhNHZXUV9tRzZCSmhzQW9lcUkwdnJkVnh2R0VIM0g3eGV2WEZWblBiclgtME5HN2k5TFduNjRaNTBrNHZiai05RVRJVmRJS3Q5U1NoV1VySGd5N0NsYnF6Z1FYUWotcmRDcGRrR18?oc=5",
+      "summary": "두 달 새 150원 ‘뚝’ 원·달러 환율…변동성 지속되나 한양경제",
+      "source": "한양경제",
+      "date": "2026-08-10T08:37:10+00:00"
+    },
+    {
+      "title": "1400원 깨지면 1300원대 안착?…'美 고용 쇼크', 환율 하락세 굳히나",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9TVEJfd1RNcTMzai1GNW9MOFVfR0tyUEhYV3l3MUF3b01Vak0zWE9ub3cxTmtUMDdwM2JxSmtwSy0ybjg2clJLLUc1OVByX0R5WWFvNTU0UFl6d183bWNJeC1jZDVFTGZOcHpv?oc=5",
+      "summary": "1400원 깨지면 1300원대 안착?…'美 고용 쇼크', 환율 하락세 굳히나 한국부동산뉴스",
+      "source": "한국부동산뉴스",
+      "date": "2026-08-10T08:39:52+00:00"
+    }
+  ]
+}
