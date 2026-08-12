@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-12T01:52:01.700997+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1413 KRW/USD\n\nWHY: The won has strengthened significantly to 1413 KRW/USD, described as a \"10-month low\" and representing a major improvement from the \"1550원의 공포\" (1550 fear level). Multiple sources indicate the won is near recent strength, with analyst commentary suggesting further strengthening toward the 1300s is possible, meaning your $2,000 monthly cost in KRW is currently cheaper than it has been in months.\n\nTIP: Lock in this strong won rate for your monthly conversion now, as timing a fixed dollar obligation becomes easier when the won is at multi-month strength—further gains are uncertain and you may face weaker rates again soon."
+  },
+  "articles": [
+    {
+      "title": "[신윤우의 외환분석] 팔아야 할 팔자",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1URXRicVAxUXlYNDNJa2U2czI3UWVmWkhFZHVyOGhvRlM5djYwN3dySFg0b0EtcnRpS29lR280NlMtcU5PSUlIR2Rmd2NsSnBGb2p1bnlZU0NYY3B2M1lMZ3hYcFdkWUVrOHUzUkNIdTRlUQ?oc=5",
+      "summary": "[신윤우의 외환분석] 팔아야 할 팔자 kbthink.com",
+      "source": "kbthink.com",
+      "date": "2026-08-11T22:59:23+00:00"
+    },
+    {
+      "title": "원·달러, 1300원대 진입하나…1410원대 등락",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5PVHB4dlBtek9ERmtxTTN4M09nWHNfUEEwNkxKaFNhOXJoR2pIYjVCNmJKYWotZGo1elcyLVo2cnRVMktBeHVqbHduQzBYampkc3F2MTdfb0F1Z2QyQzFmbtIBeEFVX3lxTE5mMFZnYVlJVDNpWGp6ZllIYzZtYlpUQlFTZlVoLWhpOHI1VUpRLS1SR0stWllXSHJWVDB1eW1jaFNzTFByQWM4YUxEbUxRaXFYSzg4UzJ4Qkg1azhnY0ZOUmhkR0FqQ0xUa0Uxcm04NUVaSjRCTEFWUQ?oc=5",
+      "summary": "원·달러, 1300원대 진입하나…1410원대 등락 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-08-12T00:33:23+00:00"
+    },
+    {
+      "title": "위험 선호 위축에 美 물가 대기 중···\"1400원대 상승 후 하락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE00S0RXMEZpOWdPN29oV3kxR2JZZWpkcTRRYXdQZ1ZvTUEzNEZlbkdRWlBDVGtmYzNNanRDTVQxdVd6ZUR3U1ZYSmRkQzRuZ3I5Y2FZ?oc=5",
+      "summary": "위험 선호 위축에 美 물가 대기 중···\"1400원대 상승 후 하락\" [환율전망] 네이트",
+      "source": "네이트",
+      "date": "2026-08-11T23:40:07+00:00"
+    },
+    {
+      "title": "원·달러 환율 1413원대로 하락…10개월 만에 최저 수준 이어가나",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5vNkVNT0VFMnU5UmN3Vk9OdU1LeTJaOXhMNnE5c1I5X2tTbnFkRVg2Q1FiWTBWNnF6bFJjd2ZMaHgwb3VfekNVZ3dFREpBWGp6a0h2WkIwYzJTbDFOSHJhY2VfRzN1T241RDc0?oc=5",
+      "summary": "원·달러 환율 1413원대로 하락…10개월 만에 최저 수준 이어가나 hdnews.co.kr",
+      "source": "hdnews.co.kr",
+      "date": "2026-08-12T00:42:43+00:00"
+    },
+    {
+      "title": "1550원의 공포, 1420원의 기회…환율이 바꾼 금융지주 표정 : 네이버 블로그",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPejhVY2phZXFiVF81VXBqNEFxbEpEVC0wTDZoMDZPa29hWEg4bkhKa0tvVklodXJMdjB5ZmEyUmdtcDktVmNFUl9iLU4wTGMyWS1lUjJYdTU3dWt6cEtZbUpHWEZHNGMyRjVIMXpVWHBSb2V5SUJJXzJ4bU5SRUh6RXNEVFZUdHpvMnRLc3pORQ?oc=5",
+      "summary": "1550원의 공포, 1420원의 기회…환율이 바꾼 금융지주 표정 : 네이버 블로그 Naver Blog",
+      "source": "Naver Blog",
+      "date": "2026-08-11T07:39:27+00:00"
+    },
+    {
+      "title": "SK하이닉스 ADR이 불붙인 달러 매도…달러 약세 어디까지",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3UTMyRUtrRTMtZF8tbHRSMWpRSTlfbEszU2JuWktkQjU2V212QWU4N25JbzlnRkw0cV9iUFFKeUVxRW5ud25UQ1ZRcDFhaU5fU0VF?oc=5",
+      "summary": "SK하이닉스 ADR이 불붙인 달러 매도…달러 약세 어디까지 네이트",
+      "source": "네이트",
+      "date": "2026-08-12T00:13:00+00:00"
+    },
+    {
+      "title": "원화 강세 어디까지…\"1300원 후반 가능, 추세 전환 아냐\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5oMGNWd0VPZzFobzhsNjdDX3lnLW9OYUsxTVNyVzZZZWRWTmFwSmJZUWxCZTNzcjJqaEZCUzZmc3djaXBqLWZPeU9JS3g5SGFDUm5J?oc=5",
+      "summary": "원화 강세 어디까지…\"1300원 후반 가능, 추세 전환 아냐\" 네이트",
+      "source": "네이트",
+      "date": "2026-08-11T08:07:00+00:00"
+    }
+  ]
+}
