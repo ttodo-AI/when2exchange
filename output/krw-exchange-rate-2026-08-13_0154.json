@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-08-13T01:54:30.072469+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: ~1,412–1,416 KRW per USD\n\nWHY: The won is currently strengthening (declining KRW/USD ratio), with rates moving from ~1,415.7 down to 1,412.80 KRW per USD. While this makes dollar purchases more expensive short-term, news mentions the won may face upward pressure (\"상승\") as the dollar strengthens globally and retail investors buy on dips, suggesting volatility rather than a clear trend.\n\nTIP: Since you convert a fixed $2,000 monthly, consider dollar-cost averaging—lock in the standard monthly conversion regardless of current levels to avoid timing risk and benefit from averaging over time."
+  },
+  "articles": [
+    {
+      "title": "강달러에 서학개미 환전 등 저가매수세⋯\"1410원 후반서 상승\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9xOFkxT0FpVF9fNVRrbHEzYkc4WWtYRGhCSE5rdC1XUHVlalBwNTdINlY0dFUwWU5qeW8xcE5CZDRxR1RHX3R0d2NtbnZhSlBvck9RTA?oc=5",
+      "summary": "강달러에 서학개미 환전 등 저가매수세⋯\"1410원 후반서 상승\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-08-12T23:22:00+00:00"
+    },
+    {
+      "title": "강달러에 서학개미 환전 등 저가매수세···\"1410원 후반서 상승\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1RVTkyVGNRb08yQkRveFhvWHFWRjlTbkwyOTRnVThDRGVyNlhFbEhDNGxTeWNPejJteFZkdHRnTGFoTl9mOVJQSFNVbmpxSUZ6T2JJ?oc=5",
+      "summary": "강달러에 서학개미 환전 등 저가매수세···\"1410원 후반서 상승\" [환율전망] 네이트",
+      "source": "네이트",
+      "date": "2026-08-12T23:23:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.3원 내린 1415.7원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9XU3FtcEVoTmM5WElxS0NqNDZEM2dicUhrb3ZYZ19xV0ZNaVl1Xy1jaHN1V0lQVWNlM09pM0htRDNlRjZGUkwtcE8tRVBWYkxsTW1ZUU9HSUtlZTg1bmdBUNIBeEFVX3lxTE5ZR1JUV181UE1vXzRNYkJoa0I5SjZBY0tfUm1Ickdvbllvd1lRcW50dXY1UlFpZnFRRlhzbm5WRW9GRk1UNk82U0JBOEtxVlNfem42aUxGRFVTNHNEdXUxOWhScmRWMDJ0c2RfMjVVeml6SjVOQzhOSg?oc=5",
+      "summary": "원·달러 환율, 0.3원 내린 1415.7원 마감(종합) 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-08-12T06:37:44+00:00"
+    },
+    {
+      "title": "같은 S&P500인데 수익률 8%P 차이...원화 강세에 ‘환헤지형’ ETF 재조명 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWHFvRE83bFNMcjAyUFZiX2kxSU9IaThZS0owTXFxaHFYQVFCR25FTExnNTNyanJZQ2R0ZVJqQkRyM3pZMklUYlpqeWlkbW5uTGUteHJWaXRSTDVTbG9OdWNIc1B5YWdlZVF4SkdNX0xnR2Rxb1I4TEtlQjVYZ2gxLWdybzE2Y3ho0gGcAUFVX3lxTE5Udk9BblZzQWY4c21ZeGVTbzVCQVNSRE56WWJ1ODAyZDhoRE5kSlhYUThBRDVpSko0bnFRN3hiSG10NFVuRWNSaG9uVGl3QWh2LUktVzZzREJLMVZfVVNDZS1RRmFuZkZkSk5QdjNEQnhUWUJ5MFBGbHVWTU9mbjZDWVljbEpiazNyXzcwV3BLdGdKcnRocVBtTlhvbg?oc=5",
+      "summary": "같은 S&P500인데 수익률 8%P 차이...원화 강세에 ‘환헤지형’ ETF 재조명 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-08-12T05:32:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.3원 내린 1415.7원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA0YXBSRXJFRnlNZjRzRGhaV0tDNmpoaEZRZkJjdE96UjJadnk5d1d4NTFDZGdQNGsyMXc0dFQwaC1UUGtUWVJNZzFIQVY5cnU0bWVV?oc=5",
+      "summary": "원·달러 환율, 0.3원 내린 1415.7원 마감(종합) 네이트",
+      "source": "네이트",
+      "date": "2026-08-12T06:38:00+00:00"
+    },
+    {
+      "title": "오늘의 환율, 원·달러 1412.80원…달러·엔·유로 일제히 하락",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LdlhWUGFFSm91STRFTkp6cFJmVWZOTXM0N2N5N3VKbHB0VERyWEVGTmtSVWlYOFU3d0RzMWNhWllFTTZGcllxejRsamxQQU56RVFNTlN1ekdxUXVxY3p4NmowN25kMlctdEo2U0tB0gFyQVVfeXFMTnN6dDM3cDZrQzZnRWgzTEcybGIyUXVjWFlQTTEtcEFTRVBaUkpIei04NVpzVTNvLWJwNXUteHBncUpMUlAzV3lPVTBHa09NbU5YM3dkZnZGS2E4bWpoXzNxQkJtUlhzc2JIcnV5MzUzWXZn?oc=5",
+      "summary": "오늘의 환율, 원·달러 1412.80원…달러·엔·유로 일제히 하락 job-post.co.kr",
+      "source": "job-post.co.kr",
+      "date": "2026-08-13T01:13:19+00:00"
+    }
+  ]
+}
