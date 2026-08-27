@@ -1,15 +1,11 @@
 {
   "source": "naver",
-  "rate": 1384.9,
-  "prev": 1383.5,
-  "fluctuations": 1.4,
-  "send": 1398.4,
-  "cashBuy": 1409.13,
+  "rate": 1382.6,
+  "prev": 1386.0,
+  "fluctuations": -3.4,
+  "send": 1396.1,
+  "cashBuy": 1406.79,
   "series": [
-    {
-      "date": "2026-06-01",
-      "close": 1514.5
-    },
     {
       "date": "2026-06-02",
       "close": 1535.0
@@ -244,16 +240,20 @@
     },
     {
       "date": "2026-08-26",
-      "close": 1384.9
+      "close": 1386.0
+    },
+    {
+      "date": "2026-08-27",
+      "close": 1382.6
     }
   ],
   "stocks": {
-    "SP500": 766,
-    "TSLA": 350,
-    "NVDA": 213,
-    "AMZN": 261,
-    "GOOGL": 347,
-    "PLTR": 173
+    "SP500": 770,
+    "TSLA": 355,
+    "NVDA": 228,
+    "AMZN": 256,
+    "GOOGL": 341,
+    "PLTR": 186
   },
-  "asof": "2026-08-26 18:41 KST"
+  "asof": "2026-08-28 04:38 KST"
 }
