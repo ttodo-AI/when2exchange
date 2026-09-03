@@ -429,6 +429,18 @@ def validate_briefing(payload, rate, cal_events, prev_title, today):
     tldr = [t for t in (payload.get("tldr") or []) if t]
     text = " ".join([title, " ".join(tldr), payload.get("overall_why") or ""])
 
+    # 0) 어미 규칙 — tldr=해요체(TLDR_RULES), overall_why·요인 문장=문어체('~다').
+    #    2026-09-03: effort를 낮추자 tldr이 문어체로 나왔는데 게이트가 못 잡았다.
+    #    페이지 톤은 모델 등급이 아니라 코드가 보장해야 한다(경고만 — 사실 오류는 아니라 배포는 막지 않음).
+    for i, t in enumerate(tldr, 1):
+        if not re.search(r"(요|까)[.!?]?$", t.strip()):
+            warns.append(f"tldr {i}번이 해요체가 아님(TLDR_RULES): '…{t.strip()[-18:]}'")
+    for label, body in [("overall_why", payload.get("overall_why") or "")] + [
+            (f"요인{i} 불릿", b) for i, f in enumerate(payload.get("factors") or [], 1)
+            for b in (f.get("bullets") or [])]:
+        if body.strip() and re.search(r"(어요|예요|에요|해요)[.!?]?$", body.strip()):
+            warns.append(f"{label}가 해요체(문어체여야 함): '…{body.strip()[-18:]}'")
+
     # 1) 제목 환율 숫자 = desync 위험
     if _RATE_NUM_RE.search(title):
         blocks.append(f"제목에 환율 숫자 포함 → 박스와 desync: '{title}' (숫자 빼고 원인·이슈로)")
@@ -1015,9 +1027,10 @@ def main() -> None:
         "- 시제 정확: 오늘 날짜 기준으로 이미 발표·종료된 지표(예: 어제 나온 CPI)를 '발표를 앞두고'·"
         "'발표 예정' 같은 미래형으로 쓰지 말 것. 발표 전에 작성된 옛 기사의 표현을 그대로 옮기지 말고, "
         "이미 나온 결과를 반영해 과거형으로 쓸 것.\n"
-        "- 모든 문장(headline·bullets·impact_reason·tldr·overall_why)은 '~다/~했다'로 "
-        "끝나는 담백한 문어체 평서문으로 일관되게. 해요체(~요/~예요)·반말·과한 격식"
-        "(~습니다)을 섞지 말 것.\n\n"
+        "- 문체: headline·bullets·impact_reason·overall_why는 '~다/~했다'로 끝나는 "
+        "담백한 문어체 평서문. 반말·과한 격식(~습니다) 금지.\n"
+        "- ★ 예외: tldr만 해요체('~됐어요', '~있어요'). 아래 tldr 규칙을 따르고, "
+        "위 문어체 규칙을 tldr에는 적용하지 말 것.\n\n"
         "■ 섹션 역할 분담(반복 금지 — 매우 중요): tldr·overall_why·요인 카드는 한 화면에 함께 "
         "보이므로 같은 사실을 같은 말로 되풀이하면 안 된다. 각자 다른 층위를 맡는다 — tldr=결과·"
         "핵심 변화·지켜볼 것(가장 압축, 숫자 중심), overall_why=요인들을 잇는 인과 한 줄기와 더 깊은 "
