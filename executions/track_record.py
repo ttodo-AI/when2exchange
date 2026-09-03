@@ -148,16 +148,29 @@ def main():
         if rec is None:
             print("신호 계산 불가(이력 부족)", file=sys.stderr)
             return 1
-        existing = set()
+        # upsert — append-only가 아니라 "그날 값이 확정되면 정정"이다.
+        # 09:00 KST full 빌드는 종가(15:30 KST) 전이라 장중 값으로 기록된다. 예전엔 같은 날짜면
+        # 스킵해서 그 장중 값이 그대로 굳었다(2026-09-03 점검: 58일 중 38일이 종가와 불일치, 최대 4원).
+        # rate.json series는 매 빌드 다시 수집돼 자가정정되므로, 저녁 빌드가 그날 줄을 종가로 덮어쓴다.
+        rows = []
         if os.path.exists(OUT):
             with open(OUT, encoding="utf-8") as f:
-                existing = {json.loads(l)["date"] for l in f if l.strip()}
-        if rec["date"] in existing:
-            print(f"이미 기록됨: {rec['date']} (스킵)")
+                rows = [json.loads(l) for l in f if l.strip()]
+        prev = next((r for r in rows if r.get("date") == rec["date"]), None)
+        if prev is None:
+            rows.append(rec)
+            action = "append"
+        elif prev == rec:
+            print(f"이미 기록됨: {rec['date']} (변화 없음)")
             return 0
-        with open(OUT, "a", encoding="utf-8") as f:
-            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-        print(f"append: {rec['date']} | base={rec['base']['verdict']} | 환율 {rec['rate']}")
+        else:
+            rows = [rec if r.get("date") == rec["date"] else r for r in rows]
+            action = f"update({prev.get('rate')}→{rec['rate']})"
+        rows.sort(key=lambda r: r.get("date", ""))
+        with open(OUT, "w", encoding="utf-8") as f:
+            for r in rows:
+                f.write(json.dumps(r, ensure_ascii=False) + "\n")
+        print(f"{action}: {rec['date']} | base={rec['base']['verdict']} | 환율 {rec['rate']}")
         return 0
 
     # START_DATE부터 백필(이전은 기록 안 함; 게이지 이력으로만 사용). 결정적.
