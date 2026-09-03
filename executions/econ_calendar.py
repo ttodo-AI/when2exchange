@@ -230,6 +230,78 @@ def confirmed_dates_block(backbone, today_str):
             + "\n".join(rows) + "\n")
 
 
+# ── 유령 일정 방어 (A: 근거 필수 · C: 연설류 엄격 · D: 미국시간→KST) ──────────
+# 2026-09-03: 근거 기사 0건인 '월러 연준 이사 연설'이 캘린더에 실렸다. 요인(factor_analysis)은
+# 이미 source_ids를 요구하고 '근거 0건 요인'을 환각으로 차단하는데, 캘린더에만 그 방어가 없었다.
+# 같은 규칙을 이식한다. 캘린더는 배포를 막는 대신 '그 일정만 드롭'이 안전하다 —
+# 페이지는 계속 살고 거짓만 빠진다.
+_SPEECH_RE = re.compile(r"(연설|발언|증언|기자회견|간담회|브리핑)")
+
+
+def _us_dst(d):
+    """미국 서머타임(EDT) 여부 — 3월 둘째 일요일 ~ 11월 첫째 일요일."""
+    mar1 = datetime(d.year, 3, 1).date()
+    second_sun = mar1 + timedelta(days=((6 - mar1.weekday()) % 7) + 7)
+    nov1 = datetime(d.year, 11, 1).date()
+    first_sun = nov1 + timedelta(days=(6 - nov1.weekday()) % 7)
+    return second_sun <= d < first_sun
+
+
+def kst_from_et(et_date, et_time):
+    """미국 현지(ET) 발표 일시 → 한국 (날짜, 'HH:MM'). EDT=+13h, EST=+14h. 못 읽으면 None.
+    미 8:30am ET 지표는 한국 당일 밤(같은 날짜), 오후 ET 일정(FOMC 2pm·연설 등)은 한국 다음날."""
+    d = _iso((et_date or "").strip())
+    m = re.match(r"^\s*(\d{1,2}):(\d{2})", (et_time or "").strip())
+    if not d or not m:
+        return None
+    shift = 13 if _us_dst(d) else 14
+    dt = datetime(d.year, d.month, d.day, int(m.group(1)), int(m.group(2))) + timedelta(hours=shift)
+    return dt.date().isoformat(), dt.strftime("%H:%M")
+
+
+def _backbone_confirmed(ev, backbone):
+    """확정 일정표(백본)에 있는 정기 지표인가 — 있으면 뉴스 근거가 없어도 신뢰한다."""
+    for pat, kw in _BACKBONE_KW:
+        if pat.search(ev.get("name", "")):
+            return any(be.get("kw") == kw and be.get("date", "")[:7] == ev.get("date", "")[:7]
+                       for be in backbone)
+    return False
+
+
+def _date_mentioned(datestr, sources):
+    """근거 기사(제목+요약)에 그 날짜가 실제로 적혀 있나 — '9월 4일' / '9/4' / '2026-09-04'."""
+    d = _iso(datestr)
+    if not d:
+        return False
+    pats = [re.compile(r"%d\s*월\s*%d\s*일" % (d.month, d.day)),
+            re.compile(r"(?<!\d)%d\s*/\s*%d(?!\d)" % (d.month, d.day)),
+            re.compile(re.escape(d.isoformat()))]
+    blob = " ".join((s.get("title") or "") + " " + (s.get("snippet") or "") for s in sources)
+    return any(p.search(blob) for p in pats)
+
+
+def evidence_filter(events, backbone):
+    """(살릴 일정, [(일정, 드롭 사유)]) — A: 근거 0건 드롭 / C: 연설·발언류는 근거 2건 + 날짜 언급."""
+    kept, dropped = [], []
+    for e in events:
+        srcs = e.get("sources") or []
+        if _backbone_confirmed(e, backbone):
+            kept.append(e)
+            continue
+        if not srcs:
+            dropped.append((e, "근거 기사 0건(환각 위험)"))
+            continue
+        if _SPEECH_RE.search(e.get("name", "")):
+            if len(srcs) < 2:
+                dropped.append((e, "연설·발언류인데 근거 %d건(2건 이상 필요)" % len(srcs)))
+                continue
+            if not _date_mentioned(e.get("date", ""), srcs):
+                dropped.append((e, "연설·발언류인데 근거 기사에 그 날짜가 없음"))
+                continue
+        kept.append(e)
+    return kept, dropped
+
+
 def verify_fix_dates(events, backbone, guide, today_str):
     """생성된 이벤트 날짜를 검증 일정표와 대조: 다르면 자동 보정, 주말발표·요일라벨은 경고.
     (fixes, warns) 반환. events는 제자리 수정."""
@@ -413,11 +485,13 @@ def main() -> None:
         "두루뭉술 금지), "
         "result(이미 발표된 일정의 '실제 결과+환율 영향' 한 줄, 아니면 ''), "
         "scenarios(예정 일정만, 2개의 {cond, effect}: 예 '예상보다 높게 나오면'→환율 어떻게 / '낮게 나오면'→어떻게).\n"
+        "- ★ source_ids: 그 일정을 확인한 기사 번호 2개 이상(위 목록의 [번호]). 기사에 없는 일정은 절대 만들지 말 것 — 근거 없는 일정은 코드가 자동으로 버린다.\n"
+        "- ★ 미국 일정이면 et_date(미국 현지 날짜 YYYY-MM-DD)와 et_time(현지 시각 24시간 'HH:MM')도 채운다(고용보고서 08:30, FOMC 14:00, 연설은 실제 시각). 한국 날짜는 코드가 계산하니 추측하지 말 것. 미국 일정이 아니면 둘 다 빈 문자열.\n"
         "- guide: 다가오는 가장 큰 변수를 정확한 시점(이번 주/다음 주)과 함께 짚고 환전러 실전 조언 2~3문장. "
         "다음 주 일정을 '이번 주'라고 하지 말 것.\n\n"
         '아래 정확한 JSON만 출력(코드펜스 없이): {"guide":"...","events":[{"date":"YYYY-MM-DD",'
         '"time":"HH:MM","name":"...","importance":3,"summary":"...","why":"...","result":"",'
-        '"scenarios":[{"cond":"...","effect":"..."},{"cond":"...","effect":"..."}]}]}'
+        '"source_ids":[0,3],"et_date":"","et_time":"","scenarios":[{"cond":"...","effect":"..."},{"cond":"...","effect":"..."}]}]}'
     )
 
     print("Asking LLM to extract the week's events…", flush=True)
@@ -452,17 +526,44 @@ def main() -> None:
         for s in (ev.get("scenarios") or [])[:3]:
             if isinstance(s, dict) and (s.get("effect") or "").strip():
                 scns.append({"cond": (s.get("cond") or "").strip(), "effect": s.get("effect").strip()})
+        # A) 근거 기사 연결 — 번호(source_ids)를 실제 기사로 되돌린다. 유효하지 않은 번호는 버린다.
+        pool = articles[:30]
+        srcs = []
+        for sid in (ev.get("source_ids") or [])[:5]:
+            try:
+                a = pool[int(sid)]
+            except (ValueError, TypeError, IndexError):
+                continue
+            srcs.append({"title": a.get("title", ""), "link": a.get("link", ""),
+                        "snippet": (a.get("snippet") or "")[:200]})
+        # D) 미국 일정은 현지 시각(ET)에서 한국 날짜를 코드가 계산해 덮어쓴다(모델 추측 금지).
+        conv = kst_from_et(ev.get("et_date"), ev.get("et_time"))
+        ktime = (ev.get("time") or "").strip()
+        if conv:
+            if conv[0] != date:
+                print("  [ET→KST] %s: %s → %s (현지 %s %s)" % (
+                      ev.get("name", ""), date, conv[0], ev.get("et_date"), ev.get("et_time")),
+                      file=sys.stderr)
+            date, ktime = conv[0], conv[1]
         events.append({
             "date": date,
-            "time": (ev.get("time") or "").strip(),
+            "time": ktime,
             "name": ev.get("name", "").strip(),
             "importance": imp,
             "summary": (ev.get("summary") or ev.get("impact") or "").strip(),
             "why": (ev.get("why") or "").strip(),
             "result": (ev.get("result") or "").strip(),
             "scenarios": scns,
+            "sources": srcs,
         })
     events.sort(key=lambda x: x["date"])  # chronological for the table
+
+    # A·C) 근거 없는 유령 일정 제거 — 백본 확정 지표는 통과, 나머지는 기사 근거 필수.
+    #      배포를 막지 않고 그 일정만 뺀다(페이지는 살고 거짓만 사라진다).
+    events, dropped = evidence_filter(events, backbone)
+    for ev_d, why_d in dropped:
+        print("  [유령일정 제거] %s (%s) — %s" % (ev_d.get("name", ""), ev_d.get("date", ""), why_d),
+              file=sys.stderr)
 
     # 이벤트 날짜 자동 검증·보정 — 검증 일정표 대조(자동보정) + 주말발표·요일라벨 경고
     fixes, date_warns = verify_fix_dates(events, backbone, result.get("guide") or "", today)
