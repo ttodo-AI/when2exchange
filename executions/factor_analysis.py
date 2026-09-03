@@ -528,6 +528,18 @@ def print_validation(blocks, warns, where="검증"):
 # 어느 엔진이 쓰든 출력은 똑같이 validate_briefing·build_site.gate를 통과해야 배포되므로
 # 검증 기준은 내려가지 않는다. Anthropic 클라이언트와 같은 .messages.create(...) 모양이라
 # 호출부(4곳)는 고치지 않는다.
+# 사고 깊이. Sonnet 5는 thinking이 기본 on이고 사고 토큰이 출력으로 과금돼, 기본값(high)이면
+# 출력이 약 2배가 된다(2026-09-03 실측). ANTHROPIC_EFFORT로 덮어쓸 수 있다.
+EFFORT = os.environ.get("ANTHROPIC_EFFORT") or "low"
+# effort를 받지 않는 모델(haiku-4-5, sonnet-4-5 등)에 보내면 400이라 이름으로 거른다.
+_NO_EFFORT = ("haiku", "sonnet-4-5", "sonnet-4-6", "opus-4-5")
+
+
+def _supports_effort(model):
+    m = (model or "").lower()
+    return bool(m) and not any(k in m for k in _NO_EFFORT)
+
+
 GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
 GEMINI_CANDIDATES = ["gemini-3-flash", "gemini-2.5-flash", "gemini-flash-latest"]
 
@@ -563,8 +575,23 @@ class LLM:
         last = None
         if self._anthropic is not None:
             try:
-                r = self._anthropic.messages.create(
-                    model=model, max_tokens=max_tokens, messages=messages)
+                # effort=low: Sonnet 5는 thinking이 기본 on이라 사고 토큰이 출력으로 과금된다
+                # (2026-09-03 실측: 출력이 약 2배). 사고는 남기되 깊이만 낮춰 비용을 절반쯤 줄인다.
+                # effort를 모르는 모델(haiku-4-5 등)은 400이 나므로 빼고 다시 부른다.
+                kw = {"model": model, "max_tokens": max_tokens, "messages": messages}
+                if _supports_effort(model):
+                    kw["output_config"] = {"effort": EFFORT}
+                try:
+                    r = self._anthropic.messages.create(**kw)
+                except TypeError:                      # 구버전 SDK: output_config 미지원
+                    kw.pop("output_config", None)
+                    r = self._anthropic.messages.create(**kw)
+                except Exception as exc:
+                    if "output_config" not in kw or "effort" not in str(exc):
+                        raise
+                    kw.pop("output_config")
+                    print("  ⚠ effort 미지원 모델(%s) — 빼고 재시도" % model, file=sys.stderr)
+                    r = self._anthropic.messages.create(**kw)
                 self.engine = "claude"
                 # Sonnet 5 등 thinking 기본 on 모델은 사고 토큰이 max_tokens를 함께 쓴다.
                 # 한도가 모자라면 text 블록 없이 끝나(빈 응답) 파싱이 실패하므로 원인을 남긴다.
