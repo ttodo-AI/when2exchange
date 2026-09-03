@@ -50,6 +50,8 @@ jobs:
         env:
           # 뉴스 검색은 Google News RSS(무료)로 이전됨 — Firecrawl 미사용.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # 2차 엔진(무료). 1차가 크레딧 소진 등으로 실패하면 자동으로 여기로 넘어간다.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python executions/build_site.py --mode ${{ steps.m.outputs.mode }}
 
       # 모트(해자): 오늘 신호를 track_record.jsonl에 1줄 append. 빌드(rate.json 갱신) 후,

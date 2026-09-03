@@ -49,6 +49,118 @@ _BACKBONE_KW = [
 _US_INDICATOR = re.compile(r"소비자물가|CPI|고용보고서|비농업|PCE|개인소비지출|FOMC")
 
 
+# ── LLM 엔진: Anthropic 1차 → Gemini(무료 티어) 2차 ────────────────────────────
+# 2026-08-14~09-02: Anthropic 크레딧이 떨어지자 full 분석이 20일간 멈췄다(light만 성공해
+# 겉보기엔 정상이라 늦게 발견). 2차 엔진을 두어 크레딧이 없어도 파이프라인이 계속 돈다.
+# 어느 엔진이 쓰든 출력은 똑같이 validate_briefing·build_site.gate를 통과해야 배포되므로
+# 검증 기준은 내려가지 않는다. Anthropic 클라이언트와 같은 .messages.create(...) 모양이라
+# 호출부(4곳)는 고치지 않는다.
+GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta"
+GEMINI_CANDIDATES = ["gemini-3-flash", "gemini-2.5-flash", "gemini-flash-latest"]
+
+
+class _Block:
+    def __init__(self, text):
+        self.type = "text"
+        self.text = text
+
+
+class _Response:
+    def __init__(self, text):
+        self.content = [_Block(text)]
+
+
+class LLM:
+    """1차 Anthropic, 2차 Gemini. engine 속성에 마지막으로 성공한 엔진 이름이 남는다."""
+
+    def __init__(self, an_key=None, gem_key=None):
+        self.gem_key = gem_key or os.environ.get("GEMINI_API_KEY") or ""
+        self.gem_model = os.environ.get("GEMINI_MODEL") or ""
+        self.engine = ""
+        self._anthropic = None
+        self.messages = self          # client.messages.create(...) 호환용
+        if an_key:
+            try:
+                from anthropic import Anthropic
+                self._anthropic = Anthropic(api_key=an_key)
+            except ImportError:
+                print("  anthropic 미설치 — Gemini만 사용", file=sys.stderr)
+
+    def create(self, model=None, max_tokens=1024, messages=None):
+        last = None
+        if self._anthropic is not None:
+            try:
+                r = self._anthropic.messages.create(
+                    model=model, max_tokens=max_tokens, messages=messages)
+                self.engine = "claude"
+                return r
+            except Exception as exc:
+                last = exc
+                print("  ⚠ Claude 실패(%s) — Gemini로 폴백" % str(exc)[:120],
+                      file=sys.stderr, flush=True)
+        if self.gem_key:
+            prompt = "\n\n".join((m.get("content") or "") for m in (messages or []))
+            try:
+                text = self._gemini(prompt, max_tokens)
+                self.engine = "gemini"
+                return _Response(text)
+            except Exception as exc:
+                last = exc
+                print("  ⚠ Gemini 실패(%s)" % str(exc)[:160], file=sys.stderr, flush=True)
+        raise RuntimeError("모든 LLM 엔진 실패: %s" % last)
+
+    def _gemini(self, prompt, max_tokens):
+        """OpenAI 호환 엔드포인트로 호출. 모델명은 자주 바뀌므로 후보를 순서대로 시도하고,
+        다 막히면 사용 가능한 flash 모델을 조회해 한 번 더 시도한다(무료 티어=flash만)."""
+        err = None
+        for name in ([self.gem_model] if self.gem_model else list(GEMINI_CANDIDATES)):
+            try:
+                out = self._gemini_call(name, prompt, max_tokens)
+                self.gem_model = name
+                return out
+            except Exception as exc:
+                err = exc
+        for name in self._gemini_discover():
+            try:
+                out = self._gemini_call(name, prompt, max_tokens)
+                self.gem_model = name
+                print("  Gemini 모델 자동선택: %s" % name, file=sys.stderr)
+                return out
+            except Exception as exc:
+                err = exc
+        raise RuntimeError(err)
+
+    def _gemini_call(self, name, prompt, max_tokens):
+        body = json.dumps({
+            "model": name,
+            "messages": [{"role": "user", "content": prompt}],
+            # 사고(thinking) 토큰이 출력 한도를 먹을 수 있어 여유를 둔다.
+            "max_tokens": min(int(max_tokens) * 2, 8192),
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            GEMINI_BASE + "/openai/chat/completions", data=body,
+            headers={"Authorization": "Bearer " + self.gem_key,
+                     "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=180) as r:
+            j = json.loads(r.read().decode("utf-8"))
+        return ((j.get("choices") or [{}])[0].get("message", {}).get("content") or "").strip()
+
+    def _gemini_discover(self):
+        try:
+            url = GEMINI_BASE + "/models?key=" + urllib.parse.quote(self.gem_key)
+            with urllib.request.urlopen(url, timeout=30) as r:
+                j = json.loads(r.read().decode("utf-8"))
+        except Exception:
+            return []
+        names = []
+        for m in j.get("models") or []:
+            nm = (m.get("name") or "").split("/")[-1]
+            if "flash" in nm and "generateContent" in (m.get("supportedGenerationMethods") or []):
+                names.append(nm)
+        names.sort(reverse=True)      # 버전이 큰(최신) 이름 우선
+        return names[:3]
+
+
 def _load_backbone():
     p = os.path.join(os.path.dirname(__file__), "..", "data", "event_schedule.json")
     try:
@@ -221,13 +333,9 @@ def main() -> None:
             pass
 
     an_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not an_key:
-        sys.exit("error: ANTHROPIC_API_KEY is not set (.env).")
-
-    try:
-        from anthropic import Anthropic
-    except ImportError:
-        sys.exit("error: anthropic not installed. pip install -r requirements.txt")
+    # 둘 중 하나만 있어도 돈다 — Anthropic 크레딧이 떨어져도 Gemini가 받는다.
+    if not an_key and not os.environ.get("GEMINI_API_KEY"):
+        sys.exit("error: ANTHROPIC_API_KEY도 GEMINI_API_KEY도 없다 (.env).")
 
     seen, articles = set(), []
     print("Searching economic-calendar news (Google News, free)…", flush=True)
@@ -275,15 +383,15 @@ def main() -> None:
         '"scenarios":[{"cond":"...","effect":"..."},{"cond":"...","effect":"..."}]}]}'
     )
 
-    print("Asking Claude to extract the week's events…", flush=True)
-    client = Anthropic(api_key=an_key)
+    print("Asking LLM to extract the week's events…", flush=True)
+    client = LLM(an_key=an_key)
     try:
         resp = client.messages.create(
             model=args.model, max_tokens=2500,
             messages=[{"role": "user", "content": prompt}],
         )
     except Exception as exc:
-        sys.exit(f"error: Claude call failed: {exc}")
+        sys.exit(f"error: LLM call failed: {exc}")
     text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
     s = text.find("{")
     if s == -1:
