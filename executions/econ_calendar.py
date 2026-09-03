@@ -302,6 +302,38 @@ def evidence_filter(events, backbone):
     return kept, dropped
 
 
+# guide 문장 정합성 — 드롭된 일정을 가리키는 문장은 안내문에서도 빼야 한다.
+# 일정 목록에서만 지우면 "잭슨홀 연설이 이미 영향을 준 상태"처럼 근거 없는 문장이 남는다.
+_GENERIC_TOK = {"미국", "한국", "중국", "일본", "유럽", "발표", "지수", "결정", "보고서", "일정",
+                "연설", "발언", "증언", "회견", "기준금리", "물가", "고용", "예정", "관련"}
+
+
+def _name_tokens(name):
+    """일정 이름에서 식별력 있는 낱말만 (괄호 안·일반명사 제외)."""
+    base = re.sub(r"\(.*?\)", " ", name or "")
+    return {t for t in re.findall(r"[가-힣A-Za-z]{2,}", base) if t not in _GENERIC_TOK}
+
+
+def strip_dropped_from_guide(guide, dropped, kept):
+    """드롭된 일정에만 있는 낱말이 든 문장을 guide에서 제거. (새 guide, 지운 문장들) 반환.
+    살아남은 일정과 공유하는 낱말은 기준에서 빼서(예: '고용') 멀쩡한 문장까지 지우지 않는다."""
+    if not guide or not dropped:
+        return guide, []
+    kept_tok = set()
+    for e in kept:
+        kept_tok |= _name_tokens(e.get("name", ""))
+    bad = set()
+    for e, _why in dropped:
+        bad |= (_name_tokens(e.get("name", "")) - kept_tok)
+    if not bad:
+        return guide, []
+    sents = [s.strip() for s in re.split(r"(?<=다\.)\s+", guide) if s.strip()]
+    keep, removed = [], []
+    for s in sents:
+        (removed if any(b in s for b in bad) else keep).append(s)
+    return " ".join(keep).strip(), removed
+
+
 def verify_fix_dates(events, backbone, guide, today_str):
     """생성된 이벤트 날짜를 검증 일정표와 대조: 다르면 자동 보정, 주말발표·요일라벨은 경고.
     (fixes, warns) 반환. events는 제자리 수정."""
@@ -564,6 +596,13 @@ def main() -> None:
     for ev_d, why_d in dropped:
         print("  [유령일정 제거] %s (%s) — %s" % (ev_d.get("name", ""), ev_d.get("date", ""), why_d),
               file=sys.stderr)
+    if dropped:
+        g0 = result.get("guide") or ""
+        g1, cut = strip_dropped_from_guide(g0, dropped, events)
+        if cut:
+            result["guide"] = g1
+            for c in cut:
+                print("  [guide 문장 제거] %s" % c[:60], file=sys.stderr)
 
     # 이벤트 날짜 자동 검증·보정 — 검증 일정표 대조(자동보정) + 주말발표·요일라벨 경고
     fixes, date_warns = verify_fix_dates(events, backbone, result.get("guide") or "", today)
