@@ -53,6 +53,24 @@ def latest(pattern):
     return max(m) if m else None
 
 
+# 분석이 이 일수 이상 묵으면 본문(해설·요약·요인)을 숨긴다. light는 직전 factors를
+# 재사용하므로, full이 며칠 실패하면(예: API 크레딧 소진) 옛 해설의 환율 숫자가 오늘
+# 환율 박스와 어긋난 채 계속 배포된다 — 그 구멍을 막는 가드. API 0.
+STALE_DAYS = 2
+
+
+def factors_age(today: date):
+    """(묵은 일수, 마지막 분석 날짜 'YYYY-MM-DD'). factors가 없으면 (None, '')."""
+    ff = latest("factors-*.json")
+    if not ff:
+        return None, ""
+    m = re.search(r"factors-(\d{4}-\d{2}-\d{2})_", os.path.basename(ff))
+    if not m:
+        return None, ""
+    d = date.fromisoformat(m.group(1))
+    return (today - d).days, m.group(1)
+
+
 # ── API 감축 가드 (full 하루 1회 / 캘린더 주간+트리거) ──────────────────────────
 def today_factors_exist(today: date) -> bool:
     """오늘 날짜로 생성된 factors-*.json이 이미 있나 (full 중복 실행 방지)."""
@@ -92,9 +110,15 @@ def should_run_calendar(today: date):
 _RATE_NUM_RE = re.compile(r"\d[\d,]*\s*원|\b1[0-9]{3}\b|\d{3,}\s*선")
 
 
-def gate(force=False):
+def gate(force=False, stale=0):
     """웹 배포 전 검증(share_page 직전). card_title·요약 ↔ 실제 환율 + 엔진 checks 상속.
-    캐러셀(carousel.validate_facts)·엔진(factor_analysis.validate_briefing)과 같은 기준."""
+    캐러셀(carousel.validate_facts)·엔진(factor_analysis.validate_briefing)과 같은 기준.
+    stale>0이면 그 본문은 페이지에 실리지 않으므로(스테일 가드) 검증을 건너뛴다 —
+    안 그러면 묵은 텍스트가 게이트를 막아 환율 갱신까지 함께 멈춘다."""
+    if stale:
+        print(f"  ⚠ 요인 분석 {stale}일 묵음 — 본문 숨김(스테일 가드), 텍스트 검증 생략.",
+              file=sys.stderr)
+        return
     ff = latest("factors-*.json")
     if not ff:
         return
@@ -185,7 +209,18 @@ def heal_latest_factors():
     print(f"🩹 factors 자가치유 적용({os.path.basename(ff)}) — 잔여 blocks={len(blocks)}", flush=True)
 
 
-def publish_today_json():
+def _cal_payload(cj):
+    """캘린더 payload. 남은 일정이 전부 과거면(=캘린더가 묵음) 비워서 내보낸다 —
+    웹은 섹션을 숨기므로 앱도 같은 사실을 보게 맞춘다(웹=앱 동일 소스)."""
+    today = datetime.now(timezone(timedelta(hours=9))).date().isoformat()
+    evs = [e for e in (cj.get("events") or []) if e.get("date")]
+    if not any(e["date"] >= today for e in evs):
+        return {"guide": "", "events": [], "today_kst": cj.get("today_kst", "")}
+    return {"guide": cj.get("guide", ""), "events": cj.get("events", []),
+            "today_kst": cj.get("today_kst", "")}
+
+
+def publish_today_json(stale=0, since=""):
     """미니앱·웹이 런타임에 fetch할 단일 데이터 파일 발행(site/today.json).
     빌드시 박던 요인·일정·요약을 외부화 → .ait 재배포 없이 매일 갱신 반영(웹=앱 동일 소스).
     환율·시계열·종목은 site/rate.json에 이미 발행되므로 여기엔 안 담는다."""
@@ -193,9 +228,21 @@ def publish_today_json():
     fj = load(lf, {}) if lf else {}
     cj = load(lc, {}) if lc else {}
     rj = load(os.path.join(SITE, "rate.json"), {})
+    if stale:
+        # 미니앱도 이 파일을 런타임 fetch하므로, 묵은 해설을 여기서 비운다(.ait 재배포 불필요).
+        # 숫자가 든 옛 문장 대신 안내만 남겨 웹과 앱이 같은 사실을 말하게 한다.
+        d = since.split("-")
+        kr = f"{int(d[1])}월 {int(d[2])}일" if len(d) == 3 else "며칠 전"
+        msg = (f"요인 해설이 {kr} 이후 갱신되지 않아 잠시 숨겨뒀개요. "
+               "환율·게이지·차트는 오늘 값이에요.")
+        fj = {"card_title": "요인 분석 갱신 대기", "overall_why": msg,
+              "tldr": [msg], "heat": "", "title_badge": "", "factors": [],
+              "stale_days": stale, "stale_since": since}
+
     today = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "asof": rj.get("asof", ""),
+        "stale_days": stale,
         "card_title": fj.get("card_title", ""),
         "overall_why": fj.get("overall_why", ""),
         "tldr": fj.get("tldr", []),
@@ -204,8 +251,7 @@ def publish_today_json():
         "factors": fj.get("factors", []),
         # today_kst = calendar 생성일(=guide 문구의 '오늘' 기준). 클라가 D-Day 기준(rate.asof=오늘)과
         # 비교해, 어긋나면(=guide가 묵음) 상대시점 문구가 오도하지 않도록 guide를 숨긴다.
-        "calendar": {"guide": cj.get("guide", ""), "events": cj.get("events", []),
-                     "today_kst": cj.get("today_kst", "")},
+        "calendar": _cal_payload(cj),
     }
     out = os.path.join(SITE, "today.json")
     with open(out, "w", encoding="utf-8") as fh:
@@ -235,6 +281,8 @@ def main():
                    help="그날 제목을 최신 factors로 강제 재생성(동결 무시). 평소엔 첫 퍼블리시 제목 유지.")
     p.add_argument("--force", action="store_true",
                    help="검증 실패에도 배포 강행(주의 — 박스/제목 모순 가능).")
+    p.add_argument("--stale-days", type=int, default=STALE_DAYS,
+                   help=f"요인 분석이 N일 이상 묵으면 본문을 숨긴다(기본 {STALE_DAYS}, 0=끄기).")
     p.add_argument("--force-full", action="store_true",
                    help="오늘 factors가 이미 있어도 factor_analysis 강제 재실행(큰 이벤트 후 갱신용).")
     args = p.parse_args()
@@ -267,15 +315,26 @@ def main():
 
     # 예보어·델타숫자 자가치유(API 0) — light 재사용분 desync까지 무인 해소 후 게이트.
     heal_latest_factors()
+
+    # 스테일 가드 — 분석이 며칠째 안 돌면(full 실패 누적) 본문을 숨기고 환율만 갱신한다.
+    age, since = factors_age(today_d)
+    stale = age if (args.stale_days and age is not None and age >= args.stale_days) else 0
+    if stale:
+        print("")
+        print("⚠️ 요인 분석이 %d일 묵음(마지막 %s) — 해설·요약·요인 숨김. "
+              "환율·게이지·차트는 정상 갱신." % (stale, since), flush=True)
+
     # 배포 전 검증 게이트 — 표지/캐러셀과 같은 기준(제목 desync·환율 모순·엔진 checks).
-    gate(force=args.force)
+    gate(force=args.force, stale=stale)
 
     # Render the page into site/index.html with the '지난 브리핑' archive list.
-    run("Share page", "share_page.py",
-        ["--out", os.path.join(SITE, "index.html"), "--archive", ARCH])
+    sp_extra = ["--out", os.path.join(SITE, "index.html"), "--archive", ARCH]
+    if stale:
+        sp_extra += ["--stale-days", str(stale), "--stale-since", since]
+    run("Share page", "share_page.py", sp_extra)
 
     # 런타임 fetch용 데이터 외부화 — 웹·미니앱이 같은 today.json을 읽어 동일 정보 보장.
-    publish_today_json()
+    publish_today_json(stale=stale, since=since)
 
     # Snapshot today's page (last build of the day wins).
     today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
@@ -306,7 +365,7 @@ def main():
         headline = prev["headline"]            # 동결: 그날 제목 유지(light)
     else:
         headline = ""                          # full·강제갱신·첫 퍼블리시 → 새 factors로 생성
-        ff = latest("factors-*.json")
+        ff = None if stale else latest("factors-*.json")   # 스테일이면 옛 제목 재사용 금지
         if ff:
             fj = load(ff, {})
             tl = fj.get("tldr") or []

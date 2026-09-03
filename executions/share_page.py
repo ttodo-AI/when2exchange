@@ -89,7 +89,20 @@ def parse_args() -> argparse.Namespace:
                    help="Skip the Claude Korean rewrite; use the raw verdict text.")
     p.add_argument("--archive", default=None,
                    help="archive.json with past entries to list as '지난 브리핑'.")
+    p.add_argument("--stale-days", type=int, default=0,
+                   help="요인 분석이 N일 묵음 — 해설·요인·요약을 숨기고 안내만 표시(0=정상).")
+    p.add_argument("--stale-since", default="",
+                   help="마지막 요인 분석 날짜(YYYY-MM-DD). --stale-days와 함께 안내에 표시.")
     return p.parse_args()
+
+
+def _stale_since_kr(iso: str) -> str:
+    """'2026-08-13' -> '8월 13일'. 값이 없거나 형식이 다르면 '며칠 전'."""
+    try:
+        d = datetime.strptime(iso, "%Y-%m-%d").date()
+    except (ValueError, TypeError):
+        return "며칠 전"
+    return f"{d.month}월 {d.day}일"
 
 
 def find_latest(pattern: str):
@@ -256,8 +269,13 @@ def main() -> None:
     why_html = None
     tldr_html = ""
 
+    # 스테일 가드: 요인 분석이 며칠 묵으면(=API 중단 등) 해설·요약·요인을 통째로 숨기고
+    # 안내만 남긴다. 옛 해설의 '현재 1,414원' 같은 숫자가 오늘 환율 박스와 어긋나는 것을
+    # 막기 위함 — 환율·게이지·차트(rate.json)는 오늘 값이라 그대로 보여준다.
+    stale = args.stale_days > 0
+
     # Prefer the factor Top4 analysis if present (richer, sourced, specific).
-    factor_file = find_latest("factors-*.json")
+    factor_file = None if stale else find_latest("factors-*.json")
     if factor_file:
         try:
             fj = json.load(open(factor_file, encoding="utf-8"))
@@ -311,6 +329,33 @@ def main() -> None:
             note = '<div class="sec-note impact-note">영향도 막대는 그날 뉴스 분석을 토대로 한 AI 추정이에요.</div>'
             news_html = note + "\n".join(blocks)
             news_title = "오늘 환율을 움직인 요인 Top 4"
+
+    if stale:
+        since = _stale_since_kr(args.stale_since)
+        why_html = (
+            "지금 보이는 환율·게이지·차트는 <b>오늘 값</b>이개요. "
+            f"다만 <b>요인 해설은 {since}이 마지막</b>이라, 그 사이 환율이 움직여 옛 설명이 "
+            "지금 숫자와 어긋날 수 있어요. 그래서 해설·요인은 잠시 접어뒀개요 — "
+            "분석이 다시 도는 대로 이 자리에 올라와요."
+        )
+        tldr_html = (
+            '<section><div class="tldr">'
+            '<div class="tldr-meta">📅 요인 분석 갱신 대기</div>'
+            '<div class="tldr-cap">30초 요약</div>'
+            '<ul class="tldr-list">'
+            f"<li>환율·게이지·차트는 <b>오늘 값</b>이라 그대로 봐도 되개요.</li>"
+            f"<li>요인 해설은 <b>{since}</b> 이후 갱신이 멈춰 있어 숨겨뒀개요.</li>"
+            '</ul></div></section>'
+        )
+        news_html = (
+            '<div class="factor"><div class="factor-line">'
+            f"요인 분석이 {args.stale_days}일째 갱신되지 않아, 옛 해설 대신 이 안내를 두었개요."
+            '</div><ul class="factor-bullets">'
+            "<li>환율·등락·게이지·차트는 매일 갱신돼요 — 오늘 값이에요.</li>"
+            "<li>요인 Top 4와 해설은 분석이 다시 돌면 자동으로 되살아나개요.</li>"
+            '</ul></div>'
+        )
+        news_title = "요인 분석 갱신 대기"
 
     if why_html is None:  # no factor file -> annotate the fallback why
         why_html = annotate(emphasize(why))
@@ -370,6 +415,10 @@ def main() -> None:
                 )
 
             evs = sorted((e for e in cj["events"] if _evd(e)), key=lambda e: e["date"])
+            # 캘린더가 묵어 남은 일정이 전부 과거면 섹션을 통째로 숨긴다 — '이번주' 라벨이
+            # 8월 일정을 가리키는 거짓말이 되기 때문. (캘린더는 주간 갱신이라 며칠 묵는 건 정상.)
+            if not any(_evd(e) >= kst_today for e in evs):
+                evs = []
             this_week = [e for e in evs if _evd(e) <= this_sun]
             next_week = [e for e in evs if _evd(e) > this_sun]
             groups = ""
@@ -396,7 +445,7 @@ def main() -> None:
                 '<section><h3 class="sec">환율 영향 일정</h3>'
                 + guide_html + groups
                 + '</section>'
-            )
+            ) if groups else ""
 
     # Archive list ("지난 브리핑") from a manifest of past daily pages.
     arc_section = ""
