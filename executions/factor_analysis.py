@@ -660,8 +660,8 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Find the day's Top 4 USD/KRW drivers.")
     p.add_argument("--per-factor", type=int, default=15, help="News results per factor (default 15).")
     p.add_argument("--out", default=None, help="Output JSON (default output/factors-<ts>.json).")
-    p.add_argument("--model", default="claude-sonnet-4-6",
-                   help="Claude model (default claude-sonnet-4-6 — judgment task).")
+    p.add_argument("--model", default="claude-sonnet-5",
+                   help="Claude model (default claude-sonnet-5 — judgment task).")
     p.add_argument("--rewrite-why", action="store_true",
                    help="Reuse the latest factors-*.json and regenerate ONLY overall_why (no new search).")
     return p.parse_args()

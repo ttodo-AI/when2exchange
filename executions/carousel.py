@@ -1021,7 +1021,7 @@ def _update_ledger(caption, ledger):
         pass
 
 
-def build_caption(factors, rate, model="claude-sonnet-4-6"):
+def build_caption(factors, rate, model="claude-sonnet-5"):
     """오늘 캐러셀과 함께 쓸 인스타 캡션을 생성한다(어제 톤 고정 + 헤드라인 환율 용어 풀이 포함).
     숫자는 rate.json(현재/어제/전일대비) 단일 소스만. 실패해도 카드 생성은 막지 않게 best-effort.
     이미 풀이했던 용어는 '이미 아시겠지만'을 붙여 재설명한다(원장 TERM_LEDGER)."""

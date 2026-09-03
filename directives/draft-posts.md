@@ -21,7 +21,7 @@ Optional flags:
 - `--in <path>`     briefs JSON to use (default: latest `output/briefs-*.json`).
 - `--voice <path>`  voice samples file (default `voice/voice-samples.md`).
 - `--out <path>`    output file (default `output/drafts-<timestamp>.md`).
-- `--model <id>`    Claude model (default `claude-sonnet-4-6`; voice matching
+- `--model <id>`    Claude model (default `claude-sonnet-5`; voice matching
                     benefits from a stronger model than the other stages).
 
 ## Behavior

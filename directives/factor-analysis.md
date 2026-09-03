@@ -6,7 +6,7 @@ specific, sourced bullets. Feeds the share page's "오늘 환율을 움직인 �
 Top 4" section and the "왜 그럴까요" summary.
 
 ## Inputs
-- `FIRECRAWL_API_KEY` and `ANTHROPIC_API_KEY` in `.env`.
+- `ANTHROPIC_API_KEY` in `.env`. (뉴스 검색은 Google News RSS 무료, 키 불필요.)
 - (Optional) latest Scout `output/krw-exchange-rate-*.json` for rate context.
 
 ## Scripts to run
@@ -16,7 +16,7 @@ python executions/factor_analysis.py
 Optional flags:
 - `--per-factor N`  news results per factor (default 15).
 - `--out <path>`    output JSON (default `output/factors-<timestamp>.json`).
-- `--model <id>`    Claude model (default `claude-sonnet-4-6`).
+- `--model <id>`    Claude model (default `claude-sonnet-5`).
 
 ## Behavior
 1. Searches recent Korean news (Firecrawl, last week) for each of **10 fixed

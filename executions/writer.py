@@ -38,8 +38,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--out", default=None, help="Output path (default output/drafts-<ts>.md).")
     p.add_argument(
         "--model",
-        default="claude-sonnet-4-6",
-        help="Claude model id (default claude-sonnet-4-6 — voice matching benefits from a stronger model).",
+        default="claude-sonnet-5",
+        help="Claude model id (default claude-sonnet-5 — voice matching benefits from a stronger model).",
     )
     return p.parse_args()
 

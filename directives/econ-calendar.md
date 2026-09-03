@@ -7,7 +7,7 @@ importance score. The share page renders it at the bottom; **D-Day is computed
 client-side** so it stays current.
 
 ## Inputs
-- `FIRECRAWL_API_KEY` + `ANTHROPIC_API_KEY` in `.env`.
+- `ANTHROPIC_API_KEY` in `.env`. (뉴스 검색은 Google News RSS 무료, 키 불필요.)
 
 ## Scripts to run
 ```
@@ -16,7 +16,7 @@ python executions/econ_calendar.py
 Optional flags:
 - `--per-query N`  news results per search query (default 12).
 - `--out <path>`   output JSON (default `output/calendar-<timestamp>.json`).
-- `--model <id>`   Claude model (default `claude-sonnet-4-6`).
+- `--model <id>`   Claude model (default `claude-sonnet-5`).
 
 ## Behavior
 1. Searches recent Korean news for upcoming macro events (a few queries).

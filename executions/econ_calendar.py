@@ -227,7 +227,7 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Build this week's FX economic calendar.")
     p.add_argument("--per-query", type=int, default=12, help="News results per query (default 12).")
     p.add_argument("--out", default=None, help="Output JSON (default output/calendar-<ts>.json).")
-    p.add_argument("--model", default="claude-sonnet-4-6", help="Claude model.")
+    p.add_argument("--model", default="claude-sonnet-5", help="Claude model.")
     return p.parse_args()
 
 
