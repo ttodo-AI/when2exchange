@@ -17,6 +17,7 @@ permissions:
   contents: write   # site/·output/ 를 다시 커밋해 아카이브 누적
   pages: write
   id-token: write
+  issues: write     # 실패 시 이슈로 알림(=멘션 메일)
 
 concurrency:
   group: pages
@@ -71,3 +72,35 @@ jobs:
         with:
           path: site
       - uses: actions/deploy-pages@v4
+
+      # 실패 알림 — full이 조용히 죽는 걸 막는다(2026-08~09: 크레딧 소진으로 20일 방치).
+      # light는 API를 안 써서 계속 성공하므로 겉보기엔 정상이다 → 실패는 따로 알려야 한다.
+      # 이슈를 열고 소유자를 멘션하면 GitHub이 멘션 알림 메일을 보낸다(SMTP·Secret 불필요).
+      # 이미 열린 알림 이슈가 있으면 새로 만들지 않는다(매일 메일 폭탄 방지).
+      - name: Notify on failure (open an issue -> mention email)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          MODE: ${{ steps.m.outputs.mode }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          if [ "$(gh issue list --label build-failure --state open --json number -q 'length')" != "0" ]; then
+            echo '이미 열린 알림 이슈 있음 — 중복 생성 안 함.'
+            exit 0
+          fi
+          gh label create build-failure --color B60205 --description '예약 빌드 실패' || true
+          cat > /tmp/issue.md <<EOF
+          @$OWNER 예약 빌드가 실패했개요.
+
+          - 모드: **$MODE**
+          - 로그: $RUN_URL
+
+          가장 흔한 원인은 **Anthropic 크레딧 소진**이에요 (로그에서 'credit balance is too low' 검색).
+          light 빌드는 API를 안 써서 계속 성공하니, 이 알림이 없으면 멈춘 걸 알아채기 어려워요.
+          분석이 2일 이상 묵으면 페이지·미니앱은 해설을 숨기고 '요인 분석 갱신 대기'만 보여줘요
+          (환율·게이지·차트는 정상 갱신).
+
+          고친 뒤: 'gh workflow run publish.yml -f mode=full' 으로 즉시 복구하고 이 이슈를 닫으세요.
+          EOF
+          gh issue create --label build-failure --title "🔴 예약 빌드 실패 ($MODE) — $(date -u +%F)" --body-file /tmp/issue.md
