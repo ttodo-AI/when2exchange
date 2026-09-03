@@ -1073,7 +1073,7 @@ def build_caption(factors, rate, model="claude-sonnet-5"):
     )
     try:
         resp = Anthropic(api_key=key).messages.create(
-            model=model, max_tokens=900, messages=[{"role": "user", "content": prompt}])
+            model=model, max_tokens=6000, messages=[{"role": "user", "content": prompt}])
         caption = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
     except Exception as exc:
         print(f"캡션 생성 건너뜀({exc})", file=sys.stderr)

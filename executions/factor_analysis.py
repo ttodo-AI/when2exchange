@@ -566,6 +566,16 @@ class LLM:
                 r = self._anthropic.messages.create(
                     model=model, max_tokens=max_tokens, messages=messages)
                 self.engine = "claude"
+                # Sonnet 5 등 thinking 기본 on 모델은 사고 토큰이 max_tokens를 함께 쓴다.
+                # 한도가 모자라면 text 블록 없이 끝나(빈 응답) 파싱이 실패하므로 원인을 남긴다.
+                u = getattr(r, "usage", None)
+                if u is not None:
+                    print("  [usage] in=%s out=%s stop=%s" % (
+                        getattr(u, "input_tokens", "?"), getattr(u, "output_tokens", "?"),
+                        getattr(r, "stop_reason", "?")), file=sys.stderr)
+                if not any(getattr(b, "type", None) == "text" for b in (r.content or [])):
+                    print("  ⚠ 본문(text) 없음 — stop_reason=%s. max_tokens(%s)가 사고+출력에 부족할 수 있다."
+                          % (getattr(r, "stop_reason", "?"), max_tokens), file=sys.stderr)
                 return r
             except Exception as exc:
                 last = exc
@@ -608,7 +618,7 @@ class LLM:
             "model": name,
             "messages": [{"role": "user", "content": prompt}],
             # 사고(thinking) 토큰이 출력 한도를 먹을 수 있어 여유를 둔다.
-            "max_tokens": min(int(max_tokens) * 2, 8192),
+            "max_tokens": min(int(max_tokens) * 2, 16384),
         }).encode("utf-8")
         req = urllib.request.Request(
             GEMINI_BASE + "/openai/chat/completions", data=body,
@@ -641,7 +651,7 @@ def fix_title_number(client, model, title):
     if not title or not _RATE_NUM_RE.search(title):
         return title
     try:
-        r = client.messages.create(model=model, max_tokens=80, messages=[{"role": "user", "content":
+        r = client.messages.create(model=model, max_tokens=2000, messages=[{"role": "user", "content":
             "다음 '지난 브리핑' 제목에서 환율 숫자(예: 1,500원·1520선·1530)를 빼고, 그날의 원인·이슈만 "
             "살려 한국어 18자 이내 한 줄로 다시 써줘. 숫자·따옴표·이모지 없이 제목 글자만 출력:\n" + title}])
         t = "".join(b.text for b in r.content if getattr(b, "type", None) == "text").strip().strip('"\'')
@@ -810,7 +820,7 @@ def rewrite_why(client, model: str) -> None:
         'JSON만 출력(코드펜스 없이): {"card_title":"...","overall_why":"...","tldr":["문장","문장","문장"]}'
     )
     resp = client.messages.create(
-        model=model, max_tokens=1200, messages=[{"role": "user", "content": prompt}]
+        model=model, max_tokens=6000, messages=[{"role": "user", "content": prompt}]
     )
     text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
     s, e = text.find("{"), text.rfind("}")
@@ -869,7 +879,7 @@ def verify_factors(client, model, result, digest):
         '{"factors":[{"factor_id":"F1","headline":"...","bullets":["..",".."],"source_ids":[0,3]}]}'
     )
     try:
-        resp = client.messages.create(model=model, max_tokens=2500,
+        resp = client.messages.create(model=model, max_tokens=10000,
                                       messages=[{"role": "user", "content": prompt}])
         text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
         s, e = text.find("{"), text.rfind("}")
@@ -1016,7 +1026,7 @@ def main() -> None:
     client = LLM(an_key=an_key)
     try:
         resp = client.messages.create(
-            model=args.model, max_tokens=4000,
+            model=args.model, max_tokens=16000,
             messages=[{"role": "user", "content": prompt}],
         )
     except Exception as exc:

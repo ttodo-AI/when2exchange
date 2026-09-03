@@ -93,6 +93,16 @@ class LLM:
                 r = self._anthropic.messages.create(
                     model=model, max_tokens=max_tokens, messages=messages)
                 self.engine = "claude"
+                # Sonnet 5 등 thinking 기본 on 모델은 사고 토큰이 max_tokens를 함께 쓴다.
+                # 한도가 모자라면 text 블록 없이 끝나(빈 응답) 파싱이 실패하므로 원인을 남긴다.
+                u = getattr(r, "usage", None)
+                if u is not None:
+                    print("  [usage] in=%s out=%s stop=%s" % (
+                        getattr(u, "input_tokens", "?"), getattr(u, "output_tokens", "?"),
+                        getattr(r, "stop_reason", "?")), file=sys.stderr)
+                if not any(getattr(b, "type", None) == "text" for b in (r.content or [])):
+                    print("  ⚠ 본문(text) 없음 — stop_reason=%s. max_tokens(%s)가 사고+출력에 부족할 수 있다."
+                          % (getattr(r, "stop_reason", "?"), max_tokens), file=sys.stderr)
                 return r
             except Exception as exc:
                 last = exc
@@ -135,7 +145,7 @@ class LLM:
             "model": name,
             "messages": [{"role": "user", "content": prompt}],
             # 사고(thinking) 토큰이 출력 한도를 먹을 수 있어 여유를 둔다.
-            "max_tokens": min(int(max_tokens) * 2, 8192),
+            "max_tokens": min(int(max_tokens) * 2, 16384),
         }).encode("utf-8")
         req = urllib.request.Request(
             GEMINI_BASE + "/openai/chat/completions", data=body,
@@ -302,7 +312,7 @@ def fill_results(client, events, today, model):
         + '\n\nJSON만(코드펜스 없이): {"results":[{"i":0,"result":"..."}]}'
     )
     try:
-        resp = client.messages.create(model=model, max_tokens=1000,
+        resp = client.messages.create(model=model, max_tokens=6000,
                                       messages=[{"role": "user", "content": prompt}])
         text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
         s = text.find("{")
@@ -387,7 +397,7 @@ def main() -> None:
     client = LLM(an_key=an_key)
     try:
         resp = client.messages.create(
-            model=args.model, max_tokens=2500,
+            model=args.model, max_tokens=10000,
             messages=[{"role": "user", "content": prompt}],
         )
     except Exception as exc:

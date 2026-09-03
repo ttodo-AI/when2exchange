@@ -159,7 +159,7 @@ def korean_copy(label: str, verdict_text: str, articles, monthly_usd, model: str
     try:
         client = Anthropic(api_key=api_key)
         resp = client.messages.create(
-            model=model, max_tokens=2000,
+            model=model, max_tokens=8000,
             messages=[{"role": "user", "content": prompt}],
         )
         text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
