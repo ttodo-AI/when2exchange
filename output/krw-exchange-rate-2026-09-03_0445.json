@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-03T04:45:24.949727+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1300 KRW/USD\n\nWHY: The won has strengthened significantly, with the exchange rate falling to the 1300 KRW range—a relatively cheap level for converting to dollars. News sources highlight that this is an attractive entry point for currency exchangers (\"환테크족\"), and analysts expect the rate may rise back toward 1360 KRW, suggesting the current 1300s represent a favorable window.\n\nTIP: Since you must convert $2,000 monthly regardless, locking in this 1300-level conversion now is better than waiting for potential weakening; consider converting your full month's amount today rather than spreading it if rates drift toward 1360+."
+  },
+  "articles": [
+    {
+      "title": "9월 글로벌 경제 및 금융시장 전망 : '선제적 금리인상', 미국 등 주요국으로 확산 경계 | KB의 생각",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PMDJ5WUNHLTlibE1jNmVycGg5eGVab2FsQWw0ZnJ5b3N6UFlvS0lQVjMtQlZ3V1h2cWJVclVodDRjZmhzeXJuOFFuX3RnY2dQOVRfS01zWUNrdTRaTnBfR1BpS3hxdw?oc=5",
+      "summary": "9월 글로벌 경제 및 금융시장 전망 : '선제적 금리인상', 미국 등 주요국으로 확산 경계 | KB의 생각 KB Think",
+      "source": "KB Think",
+      "date": "2026-09-02T05:21:34+00:00"
+    },
+    {
+      "title": "1300원대로 떨어진 환율…달러·엔 환테크족 바빠졌다",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1PaEhPVVhZVm00cVJIcmNUZHF4VElyZlpMVmdQSllVOTIwdVJmc0twTkJHa2hUbV9uZmE2Q3FnNllYNXpGOHJPY1p6c29VTmhZ?oc=5",
+      "summary": "1300원대로 떨어진 환율…달러·엔 환테크족 바빠졌다 블루밍비트",
+      "source": "블루밍비트",
+      "date": "2026-09-02T08:04:39+00:00"
+    },
+    {
+      "title": "[통장잔GO] 1300원대 달러…환전할까, ETF로 굴릴까",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9tWl9TU1FxM1c2OFo0Y0g5NnR3ckRRSDBEOVVXTGFJVk9RdXVpLTNwakVkQWQzYkozQ2xqeU9RbTRZc1FWTVRVVlIwX0xiU2lETHBLbnc0NGs2N0ZsWm5LUg?oc=5",
+      "summary": "[통장잔GO] 1300원대 달러…환전할까, ETF로 굴릴까 데일리안",
+      "source": "데일리안",
+      "date": "2026-09-02T22:08:00+00:00"
+    },
+    {
+      "title": "약달러 추종 속 저가매수 수요 대기⋯\"1360원 재진입 시도할 것\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBWM29ZT0pkWDExcnpaN01SUGhxTFZVeDFKbTRfeVZzcklEUmwxY1NlQ01xcEstWU5sXzRoR09EbmNtWF9KZ3NJbWg0VFAxMXVFSTMxVg?oc=5",
+      "summary": "약달러 추종 속 저가매수 수요 대기⋯\"1360원 재진입 시도할 것\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-02T22:49:00+00:00"
+    },
+    {
+      "title": "美 국채금리 급등에 환율 다시 출렁이나",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5PT3RhdWJURW5aakVUYlRJci0zSjNCQzIxZmUtWk51eFk0NXY2eE90QTJlVlRVYmJxaEFCXzJrT1FsWVVNMEUtUzRVNUd0bDl4dWltWUl3?oc=5",
+      "summary": "美 국채금리 급등에 환율 다시 출렁이나 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-09-03T02:05:23+00:00"
+    }
+  ]
+}
