@@ -1,0 +1,105 @@
+{
+  "generated_at": "2026-09-04T03:07:10.327086+00:00",
+  "today_kst": "2026-09-04",
+  "guide": "이번 주 금요일(9/4) 미국 8월 고용보고서와 다음 주 목요일(9/11) CPI, 그리고 다음다음 주 FOMC(9/17)로 이어지는 흐름이 원/달러 환율의 핵심 변수다. 고용지표가 예상보다 부진하면 금리인하 기대로 달러 약세·원화 강세 압력이 커지고, 반대로 견조하면 달러 강세 재부각 가능성이 있다. 환전은 이번 주 금요일 저녁(한국시간) 발표 직후 변동성을 확인한 뒤 결정하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-09-04",
+      "time": "21:30",
+      "name": "미국 8월 고용보고서(비농업·실업률)",
+      "importance": 3,
+      "summary": "9월 FOMC 직전 마지막 핵심 지표로 원/달러 변동성 확대 예상",
+      "why": "고용지표 결과가 연준의 9월 금리 결정 기대를 좌우해 달러 강약을 즉각적으로 움직인다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "고용 부진·실업률 상승 시",
+          "effect": "금리인하 기대 강화로 달러 약세, 원/달러 하락 압력"
+        },
+        {
+          "cond": "고용 견조·예상 상회 시",
+          "effect": "금리인하 기대 후퇴로 달러 강세, 원/달러 상승 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "[크립토하나] 비트코인 8만 달러 앞두고 숨고르기…美 고용지표에 쏠린 눈",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jUHpsQW44TmNBQjR2TVNJUTF5NVRDNGpMWWVHVHZhd3JtVVJpaU1ZVEFkTzhzbEw0dmpYdjdQdGYwWUVXUU1SOEhFNTBxdVV5YXljMVln?oc=5",
+          "snippet": "[크립토하나] 비트코인 8만 달러 앞두고 숨고르기…美 고용지표에 쏠린 눈 지디넷코리아"
+        },
+        {
+          "title": "[글로벌 증시 캘린더] 엔비디아 가고 브로드컴 온다…美 8월 고용·실적 발표 날짜별 총정리",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5HckcyLV8xTV9wMVJqdnUwUUJXRUNZaEhGc2h3ZWRZRE9sU0FkZi1PanFXZW9nQkRfNlhEQWpvT2hiZ1JxMndNblBYNEZCbk9Wd0ZLX0g0LXBrYWFNY1ZELQ?oc=5",
+          "snippet": "[글로벌 증시 캘린더] 엔비디아 가고 브로드컴 온다…美 8월 고용·실적 발표 날짜별 총정리 theconnectmoney.com"
+        },
+        {
+          "title": "월러 9월 3일 연설 뒤 8월 고용보고서 나온다",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBaS2NYMjBJNzR1a1dXZzljbjJ4UDdXZjl5MWQxaGJmbVdBVTAyc1BzNFZnbUdYcURaUVhRSGJEcmQ3UnJBeUdTX05PQTZaNUthZTdHNVZBa9IBXEFVX3lxTE1tQUtuemd5UENpYjExbG9zSWZIZ210dDZfeU9IMXFBWl9KOUZ1NHZQRFJUdE1SRjJNdkE5bFFCeHY4a2hSZTlWNlp2aFFrYWtjOWNCa2NCV0Y4WTc5?oc=5",
+          "snippet": "월러 9월 3일 연설 뒤 8월 고용보고서 나온다 tokenpost.kr"
+        },
+        {
+          "title": "주간경제일정, 미 8월 고용보고서 등",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE10d2xCOGJ3VHZjMTV1LVpZZGVzWmNJbDBYSFJ0OFo2RFBndFdRRzhydkllNk1xeUxBQ3pCOU9PbWxrQktUT0pDdXZ2VGE3enVt?oc=5",
+          "snippet": "주간경제일정, 미 8월 고용보고서 등 이코노미블록"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "time": "21:30",
+      "name": "미국 8월 PPI(생산자물가지수)",
+      "importance": 2,
+      "summary": "CPI 앞서 물가 흐름을 가늠하는 선행지표",
+      "why": "생산자물가는 소비자물가에 앞서 인플레이션 압력을 예고해 환율 변동성을 키운다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "인플레 우려로 달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "물가 둔화 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "FOMC 직전 인플레이션 확인 지표로 환율 방향성에 결정적",
+      "why": "물가 둔화 여부가 연준의 금리 정책 경로 전망을 바꿔 달러 가치에 직접 영향을 준다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "CPI 예상보다 낮게 나오면",
+          "effect": "금리인하 기대 확대로 달러 약세, 원/달러 하락"
+        },
+        {
+          "cond": "CPI 예상보다 높게 나오면",
+          "effect": "긴축 우려 재부각으로 달러 강세, 원/달러 상승"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-04T03:06:17.943872+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,350 KRW/USD\n\nWHY: The won is currently strong (1,350 KRW per dollar), making USD conversion relatively expensive right now. However, news suggests the rate may weaken further to 1,300s in the short term due to oil price spikes and volatility, though it's expected to stabilize around 1,380 by Q4 2026—meaning waiting could yield better rates, but the trend is uncertain.\n\nTIP: Since you need $2,000 monthly regardless, consider splitting your conversion across the month to average out volatility rather than timing a single lump sum, given the current uncertainty and potential for further won strengthening."
+  },
+  "articles": [
+    {
+      "title": "\"원/달러 환율, 안정세 이어갈 것… 4분기 평균 1380원 전망\"-NH - 머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE12SmxFSUZmQ3prWXdYMHlZU2RYQmFhTkkwQ0loX2J0cHhXbEozQTU4enkzNV9HUzgxU3owSWJKRG9zZ1Qxc2tjSE85TkNldlN2WjRtT1RfRU9oYmtsOWdGb2NRelF4Smc4V3N3N2Jn0gFuQVVfeXFMTXZKbEVJRmZDemtZd1gweVlTZFhCYWFOSTBDSWhfYnRweFdsSjNBNTh6eTM1X0dTODFTejBJYkpEb3NnVDFza2NITzlOQ2V2U3ZaNG1PVF9FT2hia2w5Z0ZvY1F6UXhKZzhXc3c3Ymc?oc=5",
+      "summary": "\"원/달러 환율, 안정세 이어갈 것… 4분기 평균 1380원 전망\"-NH - 머니투데이 머니투데이",
+      "source": "머니투데이",
+      "date": "2026-09-03T23:29:40+00:00"
+    },
+    {
+      "title": "달러 1350원대·엔화 850원대…환전족 움직인다",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mdE1uREYwZjIxeFpmNzhNODh0R0VuREFHRUxyZTVHTm5QQmprWDQyRWQ5SE44NXlzbENmT0laaWY1TVNJUGQtYlU4TGNRRm4wX2EyMThBWnRfRW96SEtGX0hEb3hCQWN4QndwYQ?oc=5",
+      "summary": "달러 1350원대·엔화 850원대…환전족 움직인다 mstoday.co.kr",
+      "source": "mstoday.co.kr",
+      "date": "2026-09-03T05:14:32+00:00"
+    },
+    {
+      "title": "강달러에도 원화 강세…반도체 수출 호조에 '환율 상식' 깨졌다",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE83ZWtqQ1RKbkdtdHZ3X3pyYTlqQjd0QkJjeENLMTgzTENHMnlBN29JRzY0Z3dhMENjNHNJOF82NTVfek1qYTdpRGpGT25wNVFtaVBV?oc=5",
+      "summary": "강달러에도 원화 강세…반도체 수출 호조에 '환율 상식' 깨졌다 네이트",
+      "source": "네이트",
+      "date": "2026-09-03T19:34:00+00:00"
+    },
+    {
+      "title": "유가 급등→국채 발작→환율 출렁…1300원대 얼마 못 가나 ‘긴장모드’ [머니뭐니]",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8yUTExQVZOMWM5eDVmVmRYVnhDU2s2OE5YaXJlc1JlUi1naGNFdWJnaUVnSFAyYS0xa2JWaEh6dzNSYTNURnNwN0loU3I0dmpkTDAzUjBR?oc=5",
+      "summary": "유가 급등→국채 발작→환율 출렁…1300원대 얼마 못 가나 ‘긴장모드’ [머니뭐니] 헤럴드경제",
+      "source": "헤럴드경제",
+      "date": "2026-09-03T08:00:00+00:00"
+    },
+    {
+      "title": "글로벌 약달러 속 미 고용지표 관망···\"1350원 후반 중심 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE45MHRfbExpVDJhdlhSLTdkNjhyMkxVYXdfbjNxQ3ZRY1VLcVRHVldGQ3ljS29vRXJTX09vUFZxM0JpMk12Q0I4WGlYNVVHckVBd1JJ?oc=5",
+      "summary": "글로벌 약달러 속 미 고용지표 관망···\"1350원 후반 중심 등락\" [환율전망] 네이트",
+      "source": "네이트",
+      "date": "2026-09-03T22:47:11+00:00"
+    },
+    {
+      "title": "1350원대 찍은 환율, 바닥일까 더 떨어질까",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9iVHBWUHB2YWlseFlKZUtlc2N6WnprRVdWbVk2WGtwN0FkNWp4X1B4bjNXOWYwWFE2Rng0V2xxdEhCN045UEJTQWdWLU5lNU45N2Ixbg?oc=5",
+      "summary": "1350원대 찍은 환율, 바닥일까 더 떨어질까 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-03T05:25:00+00:00"
+    },
+    {
+      "title": "1350원대 원·달러, 단기 1300원대 초반 전망",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE56RFBmVWV6MnVJWU8yY2NmOEVLUmhfclpyTnp0UUFNUDVyM1BtUlhaem9QZUJNbjFyNndzcTdBODRTRXh0dkU4WEhOelZ3OUIzaWpUeHp4eXNiYlRl0gFcQVVfeXFMTnpEUGZVZXoydUlZTzJjY2Y4RUtSaF9yWnJOenRRQU1QNXIzUG1SWFp6b1BlQk1uMXI2d3NxN0E4NFNFeHR2RThYSE56Vnc5QjNpalR4enh5c2JiVGU?oc=5",
+      "summary": "1350원대 원·달러, 단기 1300원대 초반 전망 tokenpost.kr",
+      "source": "tokenpost.kr",
+      "date": "2026-09-04T00:46:58+00:00"
+    }
+  ]
+}
