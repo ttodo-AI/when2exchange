@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-09-05T03:09:22.106548+00:00",
+  "today_kst": "2026-09-05",
+  "guide": "다음 주 목요일(9/11) 미국 8월 CPI와 그 다음 주 목요일(9/17) FOMC 금리결정이 원/달러 환율의 최대 변수다. CPI가 예상보다 높으면 인상 기대 강화로 달러 강세·환율 상승, 낮으면 달러 약세로 환율 하락 압력이 커진다. 환전은 CPI·FOMC 발표 직전 변동성 확대를 감안해 분할 매수·매도로 대응하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-08-30",
+      "time": "",
+      "name": "한국은행 기준금리 연속 인상(3%)",
+      "importance": 3,
+      "summary": "한은이 물가·성장 압력에 기준금리를 3%로 연속 인상해 원화 강세 요인 발생",
+      "why": "기준금리 인상은 원화 자산 매력을 높여 단기적으로 원/달러 환율 하락(원화 강세) 압력을 준다",
+      "result": "한은이 기준금리를 3%로 연속 인상, 신현송 총재는 원화의 대외충격 면역력 강화를 언급하며 원화 안정에 긍정적 영향",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "[주간핫이슈] 2연속 ‘금리인상’…신현송 총재의 광폭 행보",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Vc0VrUVFIODltQldDekpMUlE2RGxUaC1IdklTbmg0T3M5b1NLMjZBTXFBMTlqZ2p4YTN4NGJfR1BjMEwzdG54bjdDVlVhRHBHSXZ1MTZ3VWRVVjdpWlVZaEVVRUJqU2daempFOENOcjnSAXRBVV95cUxPR3RJRzVNWDlMcEh2S3JlRkZZanJkMWVEZ3BkQWFOY1hLVU8yTUhIb05nbWNvS1NaLXV1ckxmWTdsNDM0czNxVWFpb3JVN2h0MFpUZXJoMGMwcVg2clB1ai1Sb251eGtGb21KcXowYl9xdzV3Qg?oc=5",
+          "snippet": "[주간핫이슈] 2연속 ‘금리인상’…신현송 총재의 광폭 행보 weekly.hankooki.com"
+        },
+        {
+          "title": "한은, 물가·성장 압력에 기준금리 3%로 연속 인상…주담대 8%대 부담↑",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0cV9oNF9odjRuTm51dlQ1QkNraTBwLWFGRmJuR3lhWmpQMFlvNTFWVVRseEhWdVNGT3VHZVl2SVNtUGs5Y3YtcGR1NjZyaUVtREtzNnhEcU04NTJUcUdTb1RVTE9XXzJlOFd2S3dn?oc=5",
+          "snippet": "한은, 물가·성장 압력에 기준금리 3%로 연속 인상…주담대 8%대 부담↑ 뉴스후플러스"
+        },
+        {
+          "title": "물가·환율 불안에 선제 대응한 한은의 결단 [서지용의 금융 톡톡]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE15SDB2UGFtaDdxc1ZzT1BYWlY2dzFVSTRpSWVyNDJYMFRVaGtuUUpGNXhiZ2ZvZElyc0ZVSUhWeng1bE1jRkYzWUR2T2xlNGZDblJB?oc=5",
+          "snippet": "물가·환율 불안에 선제 대응한 한은의 결단 [서지용의 금융 톡톡] 네이트"
+        },
+        {
+          "title": "[금융家] 신현송 한국은행 총재 ⑤ㅣ '호미'로 선제 긴축…성장률 3.3%·원화 '면역력' 자신",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80VXBzdUE1X2xlTnFvc05sVmQyZXpOajIzQXRDdkJ3MTF0bHRucVIyVEV3ZEVtX0JxQmlISFdPUllBdVBzaXhXUVRsZkFyQ2t4dWIw?oc=5",
+          "snippet": "[금융家] 신현송 한국은행 총재 ⑤ㅣ '호미'로 선제 긴축…성장률 3.3%·원화 '면역력' 자신 네이트"
+        },
+        {
+          "title": "신현송 \"원화, 대외충격 면역력 생겨…대미투자 감당 가능\"",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9EQUpNZzNENzRsUjdfWHBjNzNBUlg3dm1URk11ZU11cXV1cUJLUV9MbmJhRWhDWmlKdko3SUpZODZNSkJyZHVCV1hqOENBS0F2ZmpB?oc=5",
+          "snippet": "신현송 \"원화, 대외충격 면역력 생겨…대미투자 감당 가능\" 네이트"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "time": "21:30",
+      "name": "미국 8월 고용보고서(비농업·실업률)",
+      "importance": 3,
+      "summary": "9월 FOMC 직전 마지막 주요 지표로 달러 방향성 좌우",
+      "why": "고용지표는 연준의 9월 금리 결정에 직접 영향을 줘 달러 강약과 원/달러 환율을 크게 흔든다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 고용이 강하게 나오면",
+          "effect": "금리 인상 기대 강화로 달러 강세, 원/달러 환율 상승 압력"
+        },
+        {
+          "cond": "예상보다 부진하게 나오면",
+          "effect": "금리 동결·인하 기대로 달러 약세, 원/달러 환율 하락 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "[크립토하나] 비트코인 8만 달러 앞두고 숨고르기…美 고용지표에 쏠린 눈",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jUHpsQW44TmNBQjR2TVNJUTF5NVRDNGpMWWVHVHZhd3JtVVJpaU1ZVEFkTzhzbEw0dmpYdjdQdGYwWUVXUU1SOEhFNTBxdVV5YXljMVln?oc=5",
+          "snippet": "[크립토하나] 비트코인 8만 달러 앞두고 숨고르기…美 고용지표에 쏠린 눈 지디넷코리아"
+        },
+        {
+          "title": "주간 전망: 8월 비농업 고용 데이터 발표, 브로드컴·델·팔로알토 실적 발표 예정",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNcGp6cHBOWE5Fb0xuN056Sk9JeVNBUEFvZTNES2RYVEdpbjg1ekRYdlpPRlBrdVdZOTFfYUw1STVIbUZBXzFOdmZXNU91NEl2bTNBZUgwOHNPWi12Zk9kdktGa3BjVEo0S0lOY2pfb3UzU09LUEZ6MEozSWJ1Wm9lV2tRREM2Q2pGZ3ZTbWdmUHU2bDVRRDBxcHNlbW1TNzI3aG9qTzNLNUNOY0pwc3cxSm9TdTl6bmw1eDRNODJZVWZtVHhNa3RVWGJPY2Z5X3RJekRhcmhYaTdmZw?oc=5",
+          "snippet": "주간 전망: 8월 비농업 고용 데이터 발표, 브로드컴·델·팔로알토 실적 발표 예정 TradingKey"
+        },
+        {
+          "title": "월러 9월 3일 연설 뒤 8월 고용보고서 나온다",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBaS2NYMjBJNzR1a1dXZzljbjJ4UDdXZjl5MWQxaGJmbVdBVTAyc1BzNFZnbUdYcURaUVhRSGJEcmQ3UnJBeUdTX05PQTZaNUthZTdHNVZBa9IBXEFVX3lxTE1tQUtuemd5UENpYjExbG9zSWZIZ210dDZfeU9IMXFBWl9KOUZ1NHZQRFJUdE1SRjJNdkE5bFFCeHY4a2hSZTlWNlp2aFFrYWtjOWNCa2NCV0Y4WTc5?oc=5",
+          "snippet": "월러 9월 3일 연설 뒤 8월 고용보고서 나온다 tokenpost.kr"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 7월 노동부 구인이직보고서 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBCdWVFWE1SWFRfM3dNNGdOd2huNmlkeDdteXpybjFFSkQ5dTNBWGlFM1U4ekpraThyUW42SzM1Ui01dFJFcTQtS2EwX3dwc2JK?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 7월 노동부 구인이직보고서 外 블루밍비트"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "9월 FOMC 직전 마지막 물가 지표로 환율 변동성 확대 예상",
+      "why": "CPI가 예상치를 벗어나면 연준의 금리 경로 전망이 바뀌어 달러·원화 환율에 직접 반영된다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "CPI가 예상보다 높게 나오면",
+          "effect": "인플레 우려로 달러 강세, 원/달러 환율 상승"
+        },
+        {
+          "cond": "CPI가 예상보다 낮게 나오면",
+          "effect": "금리 인하 기대 확대로 달러 약세, 원/달러 환율 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정(+점도표)",
+      "importance": 3,
+      "summary": "연준의 금리결정과 점도표가 달러 방향을 결정짓는 최대 이벤트",
+      "why": "금리 결정과 향후 정책 경로를 보여주는 점도표가 달러 가치와 원/달러 환율의 중기 흐름을 좌우한다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "금리 인상 또는 매파적 점도표가 나오면",
+          "effect": "달러 강세 심화로 원/달러 환율 상승"
+        },
+        {
+          "cond": "동결 또는 비둘기적 신호가 나오면",
+          "effect": "달러 약세로 원/달러 환율 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa0EwR3VpUDZNQkZnTWRDV251WHdmdXFrb3pXdGQxNEx6dk9CWWxlTDFISG1FY01lbU5LWkl4eUpsaG5jemVCSHJybXFsazFPV0ppd0tyZXRXZVZUOUJ5TlliLUtGNnpuZTJzclF0Z19hQ3M4emxJTlJNZDZ5eXdxa281cXhuTzFNRkJsS0Q2R3M2TlRGWWFkQ3E3Y2ZTM3UyeFBwTTlwM1ExU21KaFhtM2toZ3l0TGpmUVJwdnBpZw?oc=5",
+          "snippet": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정 TradingKey"
+        },
+        {
+          "title": "비트코인, 9월 FOMC서 8월 PCE 공백 주시",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5EOGM5SUswaDFBVjVnUjI4NEQzV0QzZ3V6dnB6bUpNVGRUdVJxNVBISnl0UFFTdDl2RUxURVFYUTFPTXFTakVQTmluOHg0V2wtdWVPY1Y5S3NUbmxk0gFcQVVfeXFMTkQ4YzlJSzBoMUFWNWdSMjg0RDNXRDNndXp2cHptSk1UZFR1UnE1UEhKeXRQUVN0OXZFTFRFUVhRMU9NcVNqRVBOaW44eDRXbC11ZU9jVjlLc1RubGQ?oc=5",
+          "snippet": "비트코인, 9월 FOMC서 8월 PCE 공백 주시 tokenpost.kr"
+        }
+      ]
+    }
+  ]
+}

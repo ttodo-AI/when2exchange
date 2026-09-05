@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-09-05T03:08:50.411686+00:00",
+  "card_title": "엔화·달러 약세에 원화 강세 지속",
+  "tldr": [
+    "원/달러가 어제 1,359원에서 오늘 1,348원으로 더 내려갔어요.",
+    "엔화가 강해지고 달러가 약세를 보이면서 원화도 같이 강해지는 흐름이 이어졌어요.",
+    "이번 주 한국은행 금통위 결정과 미국 물가지표 결과를 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "엔화 강세에 원화가 같이 움직이는 흐름 속에서, 연준 내부에서 월러 위원 등이 금리 동결 쪽에 무게를 싣는 발언을 내놓으며 **달러 약세 압력**이 커졌다. 여기에 한국의 역대급 경상수지 흑자와 외국인 자금이 국내 증시로 돌아온 점까지 겹치며 원화를 밀어 올리는 힘이 함께 작용했다. 이런 여러 갈래의 원화 강세 요인이 겹치면서 환율은 **1,350원선 아래로 내려앉는 흐름**을 이어갔다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 하락의 1순위 원인으로 달러 약세와 엔화 강세 동조를 지목",
+      "headline": "약달러 흐름 속 엔화 강세가 원화 강세를 이끌었다",
+      "bullets": [
+        "엔화 강세에 연동돼 원/달러가 전일 1,359원에서 내린 1,348원에 마감했다.",
+        "수출기업의 달러 매도 물량(네고)까지 겹치며 하락 압력이 커졌다."
+      ],
+      "sources": [
+        {
+          "title": "달러-원, 엔화 추가 강세 기대 속에 또 연저점…1,350원대 초반으로(상보)",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5za0htdUNuQVJSenVHQmpQR1A4QkVQaEYxaDItVWN3eHB2Z3RTN0lFUlBmTjRTX2NvVHhxcG1pUTRON0pMdWFqSHVUQlZOUVZYLW90aXV5bHAwRF84ckt1NmJQOWNvRnprb1B0VjZaaHlFQQ?oc=5"
+        },
+        {
+          "title": "[외환] '弱달러·엔화 강세·경상흑자'에 하락…1,350원대 중후반 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PaHctZTlkM0VvS1o1alNCZGdTaTBUMGkxSHh2U1hncVlLMXJGSXpRcC1yRHNGTHB3SXN4U19MamVQRzZDSUhna0VfREUwRGpwUDcydVVzMHBsZG1oNllpTlV5STdXUVgwTDBjMzByNkFFQ2Fn?oc=5"
+        },
+        {
+          "title": "수출 달러 매도·엔화 강세…환율 1,350원대 '14개월만에 최저'",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1RNDRPaXhiWlZSWExtRlQ1M19CRm5FaXFxQUFVNkswVXRZSjJrMlBDOTZTc3hhUDhpLWQxWHlaMTlsMHlSNnpJdFJhc1JrRVNnTFRYZl9scXhBUnB6UzZJMkFfcnlKejFFM2IxcWNWUC1LTkp0?oc=5"
+        },
+        {
+          "title": "[환율마감] 원·달러 1350원대 안착 ‘1년2개월 최저’, 엔화강세+네고",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE96YW93LUNDcU5NeVhPWnl3LWpWaTloWFYydTZwV1BEZnJGVk5rT3RodTJGaTZvamtyWnk1ZjFCTURuVjN2ZGJLandxTUlBMUY3eGJtNg?oc=5"
+        },
+        {
+          "title": "[외환-마감] 네고 공습과 엔화 강세로 1,350원대…9.40원↓",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4cTV0Vk4wSTlETmhMLVpRMjF5UmZxVXdzc2Y5RldkTk1mTXUxbGpQdG9sWnRyT21ENXFJVHQyMHlFUzNVSW1mZTBuemRBWS1zVnVHR19BcDBDeHBoc1hZZUMwa2sxUE1zQVNTT0ZqUHJtUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "연준 내 금리 동결·인상 논쟁이 달러 방향성에 직접 영향을 줌",
+      "headline": "연준 내 워시·월러 발언 충돌로 달러 약세 압력이 커졌다",
+      "bullets": [
+        "월러 위원의 금리 동결 시사 발언에 미국 국채금리와 달러가 동반 하락했다.",
+        "9월 FOMC 금리 인상 확률이 워시·월러 충돌 이후 50%로 급락했다."
+      ],
+      "sources": [
+        {
+          "title": "[미국증시] 워시·월러 정면 충돌…9월 FOMC 인상 확률 50%로 급락",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZeWFmMUhtYVJza092VUc3OVp3TU5CaXpRWF9lckxOQW14c3EtUFlldnFaLW9ORTgtdUttTEh2UGU1bEFQTEk0Y2dXMkI1a2M4ZEE4djFLN1dHZjhKbWRsR0xyQzFrQkE?oc=5"
+        },
+        {
+          "title": "[채권/외환] 월러 한마디에 美 국채금리·달러 '뚝'…엔화는 2% 급등",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9YWThvOGpFUmRtSGsyaFFNSUM4V0JnNlhCUGlWY09mZjV4VFNTWEJLbHFUYnRIcVdlejNZM1pYUEVKT19ScXJTT3czYktXVUhaRm93NjNEOVVJN2dVQmdpWnpfd3lCT2xzeEljVzlSTmlGVXlGTkctMg?oc=5"
+        },
+        {
+          "title": "[뉴욕마켓워치] 목소리 키우는 연준 금리동결 세력…주식·채권↑달러↓",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUSDRCUHI3bW5qWXlsNXpHUjVWYjUzbWFtTGxZcFFTQ0h2YkFnblFXNDBLblBNT2VJZkJtaVdVNkVDS3dMZzNETk55WTRDT093eVcxUzVUaXdQeHQ1b1IwZWxJdEo1ZmlLa1Y3d3VxUU84QQ?oc=5"
+        },
+        {
+          "title": "[채권/외환] 월러 한마디에 美 국채금리·달러 '뚝'… 엔화는 2% 급등",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5mNWNLbTRjZmNLNmlha25aWFFrc0lPM21aRzVDNzRzQUM5TWd0RmExbkNsNmxXWmpzczhZVWsxaUlrM2hlUTNHSFByWUU0Wm1MMGl3eDZuZWIzU3g4?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 3,
+      "impact_reason": "경상수지 흑자가 원화 강세의 구조적 배경으로 반복 언급됨",
+      "headline": "역대급 경상흑자가 원화 강세 흐름을 뒷받침했다",
+      "bullets": [
+        "한국 상반기 경상흑자가 중국에 이어 세계 2위 규모를 기록했다.",
+        "한은은 연간 경상흑자가 4500억달러에 이를 수 있다고 밝혔다."
+      ],
+      "sources": [
+        {
+          "title": "韓 상반기 경상흑자 中 이어 세계 2위…한은 \"연 4500억달러 가능\" [종합]",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9LQXZyZXlJYkx2dUJQR0lPV1JzdWM5Ym1UUWs1QTlPcGdVWVFYcEd1VzdrbFpGMWc5aDloMzM3a3NuQTJzYnoxVWdobw?oc=5"
+        },
+        {
+          "title": "수출 넘어 배당까지 ‘반도체 효과’…올해 경상흑자 4500억달러 청신호(종합)",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTVlUUXkyS2U2MXc4di1fT0lCYjJNYmEyLU9FWXluUlZYSmNlV05BMTFOQnhMcURQY0FxNDl1UGhVVFV6aHhEaVZjQ3dfR19SV3pjQlUwZ1d0a3NuVUtFV2RMRXZkSG1PVU9pbVRBX0FXS0lvUEsxOERPdUxyS0cwOQ?oc=5"
+        },
+        {
+          "title": "반도체 호황이 이끈 7월 경상수지···420.8억달러 흑자 '역대 2위'",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwVml3OTBSUzJyX2ZJR1ROeTFLeGtmV1dIQnk0ZHg4XzBSbmZDelNFWDRITl9xc090dEpQOXJPb3BDd3U3MXpEXy01V1R4c1g0bTU0?oc=5"
+        },
+        {
+          "title": "7월 경상수지 421억달러 흑자…반도체 수출에 동월 최대",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9VY3Q4N1hJeHdnZVBVR29SSWlEMkotVDd6VDg2TFpfaHRBaUdvXy1TRFRUeDE5MDFRdjkxUzVJVENWNDNiTVRTYTR1Zm5xVmlI?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "국내 증시 강세와 외국인 자금 복귀가 원화 수급에 보조적으로 작용",
+      "headline": "코스피 급등과 외국인 순매수 전환이 원화 수급을 개선시켰다",
+      "bullets": [
+        "코스피가 외국인·기관 쌍끌이 매수에 힘입어 1.64% 오른 6687선에 마감했다.",
+        "미 국채금리 안정에 외국인 자금이 국내 증시로 복귀하는 모습을 보였다."
+      ],
+      "sources": [
+        {
+          "title": "코스피, 외인·기관 '쌍끌이'에 1.64% 상승…6687선 마감",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9RY1ZUajRGRU5qT2dxTlB0V01RTFIxWVBiZi1XYUVrR245TmMtYzR6ejhZVzh5QzVIclBQUHNnZG9kZUc1R2c?oc=5"
+        },
+        {
+          "title": "코스피, 월러 ‘금리 동결’ 발언에 환호…1.64% 오른 6687.21 마감",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE01RDhYVV9iUUg1S0J3NEVNMVdldFoyTkN0ZU93OWtTZ1dhbjRheUFKY0sxUGU1NmhPWHJqd3dxakV2WS1iV2lzQ1B6Z0paRnpLcTY3M2pqdGlHcWF2TVVyR0pVLTBWRmpWRldN0gFuQVVfeXFMT1d2V2o3VmxzU2FWdXBtLTlHWGdtMFNDVVdvZ2FmUzRSMWV1MHpsemp2Umd5VTBfc1NYQnpla0xSRXdrOEpiRU9mNEktdXFHWGV0a3JRbm1Ld0hNLVN6eWU3NWRZb2stNHdjUXl6Wnc?oc=5"
+        },
+        {
+          "title": "美국채금리 안정에 외인·기관 복귀…코스피 1.6% 상승 마감(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1vbWN6aWhsTmdHUjhaeFAzQWE4NVVEQzk3V3lJZXc4anBCMjFRS0E4RDdCSDlOTUNSVEJWSjVzMlpibHFnZDlqZF8yZ3JTSHlIek50cUFKblhpNUlUZW5KMVJIU1F5MTNXZGc?oc=5"
+        },
+        {
+          "title": "[데일리 시장해부] 코스피 +1.64%·외국인 순매수 전환…삼성전자·SK하이닉스 반등보다 중요한 미국 고용",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOT0laNGdaRVBJTWpvcDV0cG1VNXMwV3NaOFFXUXYta044YWRSUGNRMm5MVllRTWlrY0cybVc2WFJwOUZHMEdaY2llMGFmMnZPVUQ4RUxJdGlDVVExVDB2Nm9aSkVheGpockxpbEV3TVFHSEp4Tl9YNzNzWi1BRHduWFh4ZGRyNndzM09QMnFIdThTdw?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "전일대비 -10원",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "claude"
+}
