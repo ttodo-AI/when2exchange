@@ -1,0 +1,20 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-06T03:08:13.932161+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,340 KRW/USD (or lower)\n\nWHY: The won is at a 14-month HIGH (strong), meaning the KRW/USD rate is at its LOWEST level in 14 months. Since a strong won makes converting to dollars cheaper, this is a favorable window for your monthly $2,000 purchase.\n\nTIP: Consider converting now or soon before the won weakens further, since your fixed dollar obligation means you benefit most when the won is strong."
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 원·달러 14개월 만에 최저…다음주 1340원선도 깨질까",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5QlhwYXExMUM3aGp6MWxJbEtCTHZKREltdHRkOHVKbllFUk1RMlJlb1BfWWZrYnNMS1FXRGg5ekFOQ1hFc0JUTlFwV2FiOXZoX3c4UjA4MzZNNmJnSTN5NzhWd0NHeng0UWRzNA?oc=5",
+      "summary": "[다음주 환율전망] 원·달러 14개월 만에 최저…다음주 1340원선도 깨질까 굿모닝경제",
+      "source": "굿모닝경제",
+      "date": "2026-09-05T22:00:00+00:00"
+    }
+  ]
+}
