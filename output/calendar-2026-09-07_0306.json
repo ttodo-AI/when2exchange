@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-09-07T03:06:52.395404+00:00",
+  "today_kst": "2026-09-07",
+  "guide": "이번 주 9월 11일(금) 미국 8월 CPI 발표가 가장 큰 변수이며 다음 주 9월 17일(목)에는 FOMC 금리결정이 예정돼 있다. CPI가 예상보다 높으면 금리인하 기대가 후퇴하며 달러 강세·원화 약세 압력이 커질 수 있으니 환전 계획이 있다면 CPI 발표 전후 변동성을 감안해 분할 환전을 고려하는 것이 안전하다. FOMC 전에는 시장이 관망세를 보일 가능성이 크므로 급하지 않다면 결과 확인 후 움직이는 편이 유리하다.",
+  "events": [
+    {
+      "date": "2026-09-04",
+      "time": "21:30",
+      "name": "미국 8월 고용보고서(비농업·실업률)",
+      "importance": 3,
+      "summary": "고용지표 결과가 이미 발표되어 달러 방향성에 영향을 준 것으로 보인다.",
+      "why": "고용지표는 연준의 금리정책 판단에 직접적 영향을 미쳐 달러 강약을 좌우한다.",
+      "result": "고용지표가 서프라이즈(예상보다 강한 고용)를 보였으나 원/달러 환율은 1,350원대를 유지하며 버텼다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fbmwweEc4azZPb1FjVW5IUTBzTWRuekZpb1ZKVlZBaHo1YzBSUEFTNjNrdm1hbm9qRmxFWWsybUpmcEJNbTRxQVFlYndhR245T1h0ZjczN1UwVFRpVTFwbHp0d0VYc0tYRDVkbA?oc=5",
+          "snippet": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다 굿모닝경제"
+        },
+        {
+          "title": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sSEs1U3B2eWFlTkJBbmJOaU5mR3hsVEJGQ2hlcVhSYllWalBVSWEzTmdSSGQwZlA4SlF3OXlUc1BoSC1NZHlfYjZaN3d3SkhWWmhj?oc=5",
+          "snippet": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는] 네이트"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "time": "21:30",
+      "name": "미국 8월 생산자물가지수(PPI)",
+      "importance": 2,
+      "summary": "PPI는 CPI와 함께 물가 흐름을 확인하는 지표로 환율 변동성을 키울 수 있다.",
+      "why": "PPI는 향후 소비자물가 흐름을 예고하는 선행지표로 금리 전망에 영향을 준다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "인플레이션 우려 확대로 달러 강세 가능"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "물가 안정 신호로 달러 약세 가능"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 contents.premium.naver.com"
+        },
+        {
+          "title": "주간 전망: 오라클·어도비 실적 발표 속 미국 8월 CPI·PPI 발표 예정",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUFZTdkVvQ2d6dFZMWF9oUnkyc0ktaVVhM1VJMXNpQVkwX0VRMngxQmp0MHhxNl9pbWExM2U0c0RweElZYUxSeFJCN2pUV0p2Zl96N0lkdjUyRzlNT1dTQkYxaWV4aEpvUFJsYlhDTGpZTEpITGFWWndGbFhWWFlEa0dlQmNSNGdvWElEVzE1MXRpc1lnS0F5bF9hSnRPX0ZHUGVlQjAtclZNZw?oc=5",
+          "snippet": "주간 전망: 오라클·어도비 실적 발표 속 미국 8월 CPI·PPI 발표 예정 TradingKey"
+        },
+        {
+          "title": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sSEs1U3B2eWFlTkJBbmJOaU5mR3hsVEJGQ2hlcVhSYllWalBVSWEzTmdSSGQwZlA4SlF3OXlUc1BoSC1NZHlfYjZaN3d3SkhWWmhj?oc=5",
+          "snippet": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는] 네이트"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "CPI 결과에 따라 9월 FOMC 금리 전망이 크게 바뀌며 원/달러 환율 변동성이 커질 전망이다.",
+      "why": "CPI는 FOMC 직전 마지막 핵심 물가지표로 금리인하 속도 전망을 좌우해 환율에 직접 영향을 준다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "금리인하 기대 후퇴로 달러 강세, 원/달러 상승 압력"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "금리인하 기대 강화로 달러 약세, 원/달러 하락 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 contents.premium.naver.com"
+        },
+        {
+          "title": "[주간 뉴욕증시] 고용 이어 CPI 시험대…오라클 실적도 변수",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE42NDR2cUk0U0k5aWdaaEREUkpYR1BQcUt1QUpIR1ZiczNNUGtOdE1sbjhfODFockNGdy0xbUV1MFJpWlZvSkZkQmZIUVV1d2ZXaXVjR21SZUQxWWFEZ3dFbNIBeEFVX3lxTE1xcVg4aXZRV2JQVTBHNHR5RzZBXzk3c19EdTE3eVZjcnlXbUhjakxLM3ZCNXJmcEtCWkUxQUFaZ01hcURaUVo0Z0VOWlJaVnVCM1F1YUZsNmZoT2dQZ09zcGM2WUdmclVtSEZSMDdQTFhmZUlZTWNObA?oc=5",
+          "snippet": "[주간 뉴욕증시] 고용 이어 CPI 시험대…오라클 실적도 변수 뉴시스"
+        },
+        {
+          "title": "주간 전망: 오라클·어도비 실적 발표 속 미국 8월 CPI·PPI 발표 예정",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQUFZTdkVvQ2d6dFZMWF9oUnkyc0ktaVVhM1VJMXNpQVkwX0VRMngxQmp0MHhxNl9pbWExM2U0c0RweElZYUxSeFJCN2pUV0p2Zl96N0lkdjUyRzlNT1dTQkYxaWV4aEpvUFJsYlhDTGpZTEpITGFWWndGbFhWWFlEa0dlQmNSNGdvWElEVzE1MXRpc1lnS0F5bF9hSnRPX0ZHUGVlQjAtclZNZw?oc=5",
+          "snippet": "주간 전망: 오라클·어도비 실적 발표 속 미국 8월 CPI·PPI 발표 예정 TradingKey"
+        },
+        {
+          "title": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fbmwweEc4azZPb1FjVW5IUTBzTWRuekZpb1ZKVlZBaHo1YzBSUEFTNjNrdm1hbm9qRmxFWWsybUpmcEJNbTRxQVFlYndhR245T1h0ZjczN1UwVFRpVTFwbHp0d0VYc0tYRDVkbA?oc=5",
+          "snippet": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다 굿모닝경제"
+        },
+        {
+          "title": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sSEs1U3B2eWFlTkJBbmJOaU5mR3hsVEJGQ2hlcVhSYllWalBVSWEzTmdSSGQwZlA4SlF3OXlUc1BoSC1NZHlfYjZaN3d3SkhWWmhj?oc=5",
+          "snippet": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는] 네이트"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정(+점도표)",
+      "importance": 3,
+      "summary": "금리결정과 점도표 방향에 따라 원/달러 환율이 크게 움직일 것으로 예상된다.",
+      "why": "FOMC는 미국 기준금리와 향후 정책 경로를 결정하는 가장 중요한 이벤트로 달러 가치에 직접 영향을 준다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "금리 동결·매파적 점도표면",
+          "effect": "달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "금리 인하·비둘기적 점도표면",
+          "effect": "달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5PUmcwQzNZVWZCMkNCdlcyMW1tc3hIei0zUmNUdjNWb1ZWSXlIYjBtVWotdEo5V0xmX1ptRkJob215Z3JFSU9kNDlIVmhKQ2FlWVdqdGhoZWdFR1BsUHpkZ2NtcDR1enNzaWxuUUhvZktPWXludkQxamp3Wm9hdw?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜미 CPI·PPI와 오라클 실적, 9월 FOMC 직전 마지막 관문 contents.premium.naver.com"
+        },
+        {
+          "title": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fbmwweEc4azZPb1FjVW5IUTBzTWRuekZpb1ZKVlZBaHo1YzBSUEFTNjNrdm1hbm9qRmxFWWsybUpmcEJNbTRxQVFlYndhR245T1h0ZjczN1UwVFRpVTFwbHp0d0VYc0tYRDVkbA?oc=5",
+          "snippet": "[금주 뉴욕증시 전망] 8월 물가·오라클 실적에 쏠린 눈…Fed 금리 향방 가른다 굿모닝경제"
+        },
+        {
+          "title": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa0EwR3VpUDZNQkZnTWRDV251WHdmdXFrb3pXdGQxNEx6dk9CWWxlTDFISG1FY01lbU5LWkl4eUpsaG5jemVCSHJybXFsazFPV0ppd0tyZXRXZVZUOUJ5TlliLUtGNnpuZTJzclF0Z19hQ3M4emxJTlJNZDZ5eXdxa281cXhuTzFNRkJsS0Q2R3M2TlRGWWFkQ3E3Y2ZTM3UyeFBwTTlwM1ExU21KaFhtM2toZ3l0TGpmUVJwdnBpZw?oc=5",
+          "snippet": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정 TradingKey"
+        }
+      ]
+    }
+  ]
+}

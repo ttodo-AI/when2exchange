@@ -1,0 +1,62 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-07T03:05:59.334406+00:00",
+  "window_hours": 24,
+  "count": 7,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,340–1,350 KRW/USD\n\nWHY: The won has recently strengthened to a 23-month low (1,340s range), making dollars relatively cheaper to buy right now. However, news shows conflicting signals—some analysts expect further strengthening toward 1,300 won/USD, while others anticipate a Q4 rebound toward 1,350+, suggesting the trend remains uncertain.\n\nTIP: Since you must convert $2,000 monthly regardless, consider splitting purchases across weeks rather than waiting for a perfect rate, as timing a volatile market with a fixed obligation often underperforms dollar-cost averaging."
+  },
+  "articles": [
+    {
+      "title": "[주간환율전망] 환율 1345원까지 밀렸다…이번주 1340~1370원 전망",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9BT1FfN0JUXzJib2J0YWMxMlphRUg5OXNyeUIyeHFyYWNHc1pQa0lvZ2hyTEZEMFhEYlpoYlV5WG5XWWRVYkt6cDFVc1pzT2gwYjVMMHRVNjdvUDVFME1qTS03dExZQU0?oc=5",
+      "summary": "[주간환율전망] 환율 1345원까지 밀렸다…이번주 1340~1370원 전망 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-09-06T22:00:00+00:00"
+    },
+    {
+      "title": "기업이 쏟아낸 달러에 환율 1340원대…\"1300원 간다\" vs \"4분기 반등\" |",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8tcHRJSjZFdHd2WGRkbTlPZmQ2ZG1kQjFLa2R4Y3RWVTdtc0JGSVlIZzNLVWk1RFFxUDFmbXUwclVqUTJScUVCaTdibW9pRHUwMW9hRlFPWXdXejIwRFNXLVlYT3I1VWxTckdZdWhkVWt6Tnd4QXc?oc=5",
+      "summary": "기업이 쏟아낸 달러에 환율 1340원대…\"1300원 간다\" vs \"4분기 반등\" | 데일리머니",
+      "source": "데일리머니",
+      "date": "2026-09-07T00:40:50+00:00"
+    },
+    {
+      "title": "美 고용 서프라이즈에 강달러…환율, 1350원 반등 시도[외환브리핑]",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOLUhpaDhjTFFWVHB0SFhGaDZGMV93OG1ta3hHa0xLR1hQLUdfbl94bFRuUFlPZldyR2h2VjgyckEwVmVldVNVLWg4YnUweERBMmNRRTA5T1FOYUR4OVotYWVGSDFPOVZzZE1oNDdtR1VMdnAxU2NxRFF3dkdreHpCSQ?oc=5",
+      "summary": "美 고용 서프라이즈에 강달러…환율, 1350원 반등 시도[외환브리핑] edaily.co.kr",
+      "source": "edaily.co.kr",
+      "date": "2026-09-06T23:17:55+00:00"
+    },
+    {
+      "title": "美 고용 서프라이즈에 연준 금리 인상 경계령···\"1350원선 지지\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12TTFlTHVMUk9zWTNSaDJOaVFwMDNxWEJUN3RPNVVoSzQ3S1lyWjBHeVQwOEN5SWpURHdnOW9tLWlJN3ZPdTduWnpoVU5YVVpGQmw0?oc=5",
+      "summary": "美 고용 서프라이즈에 연준 금리 인상 경계령···\"1350원선 지지\" [환율전망] 네이트",
+      "source": "네이트",
+      "date": "2026-09-06T22:42:11+00:00"
+    },
+    {
+      "title": "23개월 만에 최저 환율...안정세 이어가나?",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5zRVAtUmFHZ2tnNTFYNENRSFJKSVlyVzlCNExsRU90ak5uZXJfYjFlaGNfUkREMlh1NmE0T3hnRUEwU3ZGM0lKbTVFMkV3NDdBRVdMMFNDQzZHSm5vdkE?oc=5",
+      "summary": "23개월 만에 최저 환율...안정세 이어가나? YTN",
+      "source": "YTN",
+      "date": "2026-09-06T15:15:00+00:00"
+    },
+    {
+      "title": "달러·원 환율 1340원대 진입…1300원 초반까지 내려갈까",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9idDVIRV8ya1p3V0JqY3RsSko5ZEpaZHdlakVuNW9OSVhDN01taHVrMUtxRFlLcXpwRnJseGNkc2FDbFFBc3dvVHBoSGVWLWlGbU5OcTVtaEV1RENFczV1c3hyVmtCdzN5NHJJ?oc=5",
+      "summary": "달러·원 환율 1340원대 진입…1300원 초반까지 내려갈까 hdnews.co.kr",
+      "source": "hdnews.co.kr",
+      "date": "2026-09-07T00:31:14+00:00"
+    },
+    {
+      "title": "에볼루션 뉴월드 보드게임 시스템 아키텍처의 입문 가이드: 사상, 행동 및 결과",
+      "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxNVWx1Ui1EMUgxV2xrUTV0Yk0yWEZMbjBfeUNnd0dpWjBTYnVnVFRhWlltb0cwTjRyQURPdGJuVW42QVZYRVRTX3ZBMzFNQkhWRFpWeExIRkVxaTdWdkZGWkYxS0R3MmdSS0xMeXRXSkUzVVhmUmotZU9ZRXlDZXF3dWVkQVhLYVZWN2ZxQXBTYTFtVWxyX21PZ3RnV1lqaG1jdnpMSlBBdTBvcm4yaVI4c3ZBZU1ZVXg0V3FNcWJ2MHRiTlVqOXFjV2VEeDctcklfNVRaOHp4aTJxWURWZlkyUVVxVGpLQjV4WFdxVnNlc3V5TkpvdWEzemxReTF1MF9FSXRuSWlyUDl4YXNmd0dLb0N1MVNmUm5lQV9pbEVpV3BUNHI4NmVrck0xUzRWOHVtMTJz?oc=5",
+      "summary": "에볼루션 뉴월드 보드게임 시스템 아키텍처의 입문 가이드: 사상, 행동 및 결과 histoire-pour-tous.fr",
+      "source": "histoire-pour-tous.fr",
+      "date": "2026-09-06T13:36:35+00:00"
+    }
+  ]
+}
