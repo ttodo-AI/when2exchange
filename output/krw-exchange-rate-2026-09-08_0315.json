@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-08T03:15:01.235365+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,330–1,340 KRW/USD\n\nWHY: The won is at its strongest level in 23 months (1–2 year low), meaning you need fewer KRW to buy each USD. News reports indicate the won is strengthening (\"원화강세 질주\") due to export companies selling dollars and broader won strength, making dollar conversion cheaper than it has been in nearly two years.\n\nTIP: If the won continues to strengthen, your monthly $2,000 conversion will become even cheaper in future months—but locking in near these 23-month lows protects you against any reversal in the won's weakness."
+  },
+  "articles": [
+    {
+      "title": "환율 1년 11개월 만에 최저...기업·서학개미는 달러 사재기",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE81UUVVclhYTlZEdjFwcjFtbENxVmdHal9IZHVaa05EVjcyNGtMMVlJc2VvemNWMkgwZHRlZ3MxZ1FXV0RCd0xLT0dIOTl5X1c5b3MxUTQ3WEJXQjh2bTc0aFZZQWxJXzNwRHc4VWw3UTHSAXBBVV95cUxPNVFFVXJYWE5WRHYxcHIxbWxDcVZnR2pfSGR1WmtORFY3MjRrTDFZSXNlb3pjVjJIMGR0ZWdzMWdRV1dEQndMS09HSDk5eV9XOW9zMVE0N1hCV0I4dm03NGhWWUFsSV8zcER3OFVsN1Ex?oc=5",
+      "summary": "환율 1년 11개월 만에 최저...기업·서학개미는 달러 사재기 반론보도닷컴",
+      "source": "반론보도닷컴",
+      "date": "2026-09-07T05:43:12+00:00"
+    },
+    {
+      "title": "환율 추가하락 전망에 도미노 달러 매도…당국, 당분간 속도조절",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9qdkJSVkh5VDU4TnYwcjZ6OXVSLXVBMDl6dnd2SC1ucEwzV05pdlBURzRhU3Q2RDB5dEd6VUhCQVlUYjhrNnNKdkR4NVlmQTNEM0HSAVNBVV95cUxNRXp4a2pnZndycDR2MDZSMjdxaWZMS2ZYQXZ5ZV91LVV3d3ZGYkJUVklHa2NvV2NKTHo1NzNrNC1zdTB2bERybnozTWFDNENwZF94OA?oc=5",
+      "summary": "환율 추가하락 전망에 도미노 달러 매도…당국, 당분간 속도조절 sedaily.com",
+      "source": "sedaily.com",
+      "date": "2026-09-07T08:48:26+00:00"
+    },
+    {
+      "title": "수출업체 달러매도에 달러·원 1334원 터치…23개월 만에 최저(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8wMWttMU9YMU4tcFl2UVpSOS1yUkN2Ny03WVoxRm9BV0tmWFR3MzMzTlh6b2NHVHMxOThrcUlCZTdVQzVDako3Y1c4em93RnRvYU5lT1VUbk16NzU1VVlLWdIBYEFVX3lxTE8wMWttMU9YMU4tcFl2UVpSOS1yUkN2Ny03WVoxRm9BV0tmWFR3MzMzTlh6b2NHVHMxOThrcUlCZTdVQzVDako3Y1c4em93RnRvYU5lT1VUbk16NzU1VVlLWQ?oc=5",
+      "summary": "수출업체 달러매도에 달러·원 1334원 터치…23개월 만에 최저(종합) 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-07T07:02:01+00:00"
+    },
+    {
+      "title": "수출기업 달러 매도에 환율 1330원대 터치…원화강세 질주",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORlg0TndQRzRlemtrMWFJUWdqdTd4TGlTUnBOYzBfNnVJNXFFc19CVTN0ZEdKU0xKd0ltSHdhbnRwTEprRzhJOFNHbnYxZWtIdVNGWmR6Rk9WTXJsVWJCdHJxSDJ2LWZCVVJ6V0NHWXJVa2dBVzF6dUt6c3c4THdLMkdIUDlZSjJoSXU1TEtn?oc=5",
+      "summary": "수출기업 달러 매도에 환율 1330원대 터치…원화강세 질주 국제신문",
+      "source": "국제신문",
+      "date": "2026-09-07T10:14:00+00:00"
+    },
+    {
+      "title": "엔화강세·달러매도 vs 연기금 속도 조절…달러·원 1340원대 등락",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5EZml2ckJFWEpDdnVJbEk2cUxMOUVBTmVFa3hWTTQ5ZFMxSFlMMzJGaTBoemhHdTZtbHRxa0lvTFNyRExpQk1yZnBlWGxEODFhZUNuNkJSMENpcE1tS0hmNtIBYEFVX3lxTE5EZml2ckJFWEpDdnVJbEk2cUxMOUVBTmVFa3hWTTQ5ZFMxSFlMMzJGaTBoemhHdTZtbHRxa0lvTFNyRExpQk1yZnBlWGxEODFhZUNuNkJSMENpcE1tS0hmNg?oc=5",
+      "summary": "엔화강세·달러매도 vs 연기금 속도 조절…달러·원 1340원대 등락 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-08T00:50:39+00:00"
+    },
+    {
+      "title": "원·달러, 1340.5원 마감…1년 11개월만 최저 수준",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoaEJGLTVxMExIUDJOd2t6ZG9jbTJNV0lYUENjeEVSQ05fa1ZLMnRuSXdLaEgxNmJKTFpUX3V3djJEdU9uMDVNOVN4M0JJWTk1aTc2TjdrV1NFZGV1OUl0btIBeEFVX3lxTE9yRUdqUWN6bVNBWlJPTTBrcHJGdVNaajJLdzBsWTZOTG05MkVoMG1qcjZSVHBmTG9KUFh0Ni1wQ293VWotbXRxcFpSRTZxR0pkTU5saF9rVmp1NFRYMk40azY2YkNuMmNvN2tnaDdFMnk3S2JlSVI5Tw?oc=5",
+      "summary": "원·달러, 1340.5원 마감…1년 11개월만 최저 수준 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-09-07T06:49:25+00:00"
+    },
+    {
+      "title": "환율 1350원대…서학개미, 美 3배 레버리지에 베팅한 이유",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE50Z21mbS1Ga3JRbjU3ZkdrUWpJU0VmbVhuVkdJU01Ca0hrMnFFbEd5UU9md3BINjkyWjZfUnFVMFptV2ZrbnhYZVBOdlMycmtZZldJYnVsMkFVR1NLMXpUN0lIdDJFalEtN3Juak9GWVVMZw?oc=5",
+      "summary": "환율 1350원대…서학개미, 美 3배 레버리지에 베팅한 이유 한양경제",
+      "source": "한양경제",
+      "date": "2026-09-07T09:26:36+00:00"
+    },
+    {
+      "title": "“주가 올랐는데 왜 돈이 줄어요?”…미국채 사재기한 서학개미 눈물",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9wWXplVDNvN0R5QlVkdHRCYlpPbFJ5ektrZlZ6ZHVIaDFZR2FQTGcxQTFsQjBRWXRLMHZNMnNNNnpQeDd1SkE?oc=5",
+      "summary": "“주가 올랐는데 왜 돈이 줄어요?”…미국채 사재기한 서학개미 눈물 mk.co.kr",
+      "source": "mk.co.kr",
+      "date": "2026-09-07T22:00:28+00:00"
+    }
+  ]
+}

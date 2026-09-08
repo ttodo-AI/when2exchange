@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-09-08T03:15:37.237937+00:00",
+  "card_title": "엔화 강세 속 원화 강세 지속",
+  "tldr": [
+    "원/달러가 어제 1,347원에서 오늘 1,340원으로 추가로 내려갔어요.",
+    "달러 약세와 엔화 강세가 겹치면서 원화도 같이 강해지는 흐름이 이어졌어요.",
+    "이번주 미국 CPI 발표(9월 11일)를 앞두고 시장이 관망하는 분위기예요."
+  ],
+  "overall_why": "오늘 원/달러가 낮은 수준을 유지한 가장 큰 힘은 달러 자체의 약세다. 여기에 엔화가 150엔대까지 강해지는 흐름이 겹치면서 원화도 같은 방향으로 움직였다. 다만 이틀 뒤로 다가온 미국 CPI 발표를 앞두고 시장은 **추가 방향을 정하기보다 경계하는 분위기**를 유지했고, 국민연금의 환헤지 중단 논의 같은 개별 수급 이슈도 함께 거론됐다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 달러 약세를 원화 강세의 1순위 배경으로 지목했다",
+      "headline": "달러 약세 흐름이 이어지며 원/달러를 끌어내렸다",
+      "bullets": [
+        "달러 약세와 수출기업 달러 매도가 겹치며 원화 강세를 이끌었다는 분석이 나왔다.",
+        "달러 강세를 눌렀다는 평가와 함께 환율이 낮은 수준을 유지했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 1330원대로 하락…달러 약세·수출기업 매도에 원화 강세",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4yV0hFaExzd25VZW5Ib3d5V2Z2WUF0ZUloQmpUUkc3Szk1NGVIN093ZHNGY0Q1TlNOSk5IVDE1WUNtWmdrclV5RlFXYmhWaWJfRm84V0ltbUNkTzRhMUE?oc=5"
+        },
+        {
+          "title": "“달러 강세도 눌렀다”…원·달러 1340.5원, 23개월 만에 최저",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uV05UNTR6Ni1tbWtVY2ZacHY4Zk8xak41cEU5d2dEVmc4WVJiU3VpcWlvR2ZwMk5QS2dJMFpYU2lDMkZTbHQ2QlpXRG9XUk9zcGE3VC01WExJX3NwMG9tQXRIaHk?oc=5"
+        },
+        {
+          "title": "[외환+] 원·달러 환율, 약달러·수급에 9.9원 '뚝···2년여 만에 최저",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5iS3hJUU0tTFN4djZ4VTc3U0NuSEVQRm5aMVZCWFlUZVNTeEFiLUU4eGQ2eWJXWmYtd2FZejhsU3dnUGlERC1pOFhPWVR3cEZwN1BpWGk3OURnNmdaaEJJQVplRll6MVBjWFE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "엔화 강세와 달러 하락 관성이 원화 흐름에 직접 영향을 준 것으로 반복 보도됐다",
+      "headline": "엔화 강세가 달러-원 하락 관성에 힘을 보탰다",
+      "bullets": [
+        "엔/달러가 150엔대 진입 가능성이 거론되며 슈퍼 엔저가 끝날 수 있다는 전망이 나왔다.",
+        "외환개입 효과가 나타나며 달러·엔 추가 하락 가능성이 제기됐다."
+      ],
+      "sources": [
+        {
+          "title": "“외환개입 효과 가시화…달러·엔 추가 하락할 수도”",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFByYUpNZnZLb0NqNjhoZzRaTFVLY0VpZ0hKckEzdmZBZzQ0SDF4cW5YREFMZGZ6S2hKaUJ5TkFjTVZFZnM4YVdjbmZ5NnhEMDJ0WFNabGJJZHNTQjJJdXc?oc=5"
+        },
+        {
+          "title": "\"달러-원 하락 관성에 엔화 강세\"…1,330원대로 급락한 환율, 배경과 전망은 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB6VDR2dGhpR2hBWER3SmRFRDhMdWtwbzJGLTY2WDFhVnhDQmVWS18xZ2pKRkRpSlNDemRSaWxyZXNoS29zRzZSd285dEdoN3NpUXd6R3ZSZzA0U21hcTlBekNJb3YzUDl1QlZlbXpGNFNGbHND?oc=5"
+        },
+        {
+          "title": "슈퍼 엔저 끝나나…\"엔/달러 150엔도 가시권\" - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fSVNoRmlIZVFKQllFM3JMeVZHb1Nkb1FCUnkzUEZGQW41TUMwWTZkSTNrd3hMVTJVaUNNWTBKXzZ4dmtCZ3hFd09ucFNBQXhZYk9vRHlUdFFMTkZpdk80TjAwOUpKUXFLR3Vlc3Nn0gFuQVVfeXFMTV9JU2hGaUhlUUpCWUUzckx5VkdvU2RvUUJSeTNQRkZBbjVNQzBZNmRJM2t3eExVMlVpQ01ZMEpfNnh2a0JneEV3T25wU0FBeFliT29EeVR0UUxORml2TzROMDA5SkpRcUtHdWVzc2c?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 3,
+      "impact_reason": "발표 임박한 미국 물가지표가 시장의 경계 심리를 키운 요인으로 지목됐다",
+      "headline": "미국 8월 CPI 발표를 앞두고 시장이 경계태세에 들어갔다",
+      "bullets": [
+        "미국 CPI를 앞두고 원화 강세 흐름 속에서도 경계 태세가 유지됐다는 분석이 나왔다.",
+        "금값이 CPI·PPI 발표를 앞두고 보합권에서 관망세를 보였다."
+      ],
+      "sources": [
+        {
+          "title": "원화 강세 질주, 미국 CPI 앞두고 경계태세",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93X2M0ckhjRFVwSHM4V0J6MHJlVlBDbU1ZaWdZZ0NKd2pHYnR5WWR3ZjdOZlhYcTVCR3huRW9Ca2pvVXVEN1kwSXg5U2hSbW5XWUxvVktNTWhDODBqTlhnMm5R?oc=5"
+        },
+        {
+          "title": "오늘(8일) 금시세 보합…미국 CPI·PPI 발표 앞두고 관망세",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBua05PTjJZR3ZlS2RyTEhUMTViVUJWdHNDbUQ2UlZyTVJuQ2xZd0V3dnpyVGlSSFZKUkJVRGJsa2tZTWtxQXJrMnY0dVhHQ0gzYVNuNVdrcUMtMFVGREJjdDJHV214OHdpYUdCVC0zUk7SAXRBVV95cUxQN3VuRlFUTkEwM1RDY1BFbWVoWWM1TERTZnczSEozTTJHMWEzVlFycVp2OEN2ZDduei12OEZ5UERQRDBuZ2NPZGNuY2drZjRPenA0T3Y4WFRSQ05WZzVCejJ6djRfdVlKeGlsaWtER0tCd0VZUQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "국민연금 환헤지 중단 이슈가 앞선 요인들과 겹치지 않는 별도의 수급 변수로 거론됐다",
+      "headline": "국민연금 환헤지 중단 관련 외환당국 스와프 한도 논의가 수급 변수로 부각됐다",
+      "bullets": [
+        "환율 급락에 국민연금이 환헤지를 멈추면서 외환당국의 FX스와프 한도 향방이 주목받았다.",
+        "환율 추가 하락 전망 속에 연쇄적인 달러 매도 움직임이 포착됐다."
+      ],
+      "sources": [
+        {
+          "title": "환율 급락에 환헤지 멈춘 국민연금…외환당국 FX스와프 한도 향방은",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5sbVpEU1o5YXhwOGVISnBxc0gtWFR6eEVLdUFwOEd3T1hVejA2T2d4dUVyQXhlVWR0UU1ObHE5eHNkblpXak1EUkRSYzJPOUl6M2tWUjV3TnpBc09pMFJ0NEs1XzdaM0JrR0JDWTBJZTBIQQ?oc=5"
+        },
+        {
+          "title": "환율 추가하락 전망에 연쇄 달러 매도 [Pick코노미]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9EWjg1U3NkcG52NWZ6SjdNSEhPaDBYZUVlNDY0c0tMVEhvekNIRE5na1BRLWdKeEstX25fMFhPSTNHRUZSbmRFeG5ROEQwX2IwR1RF?oc=5"
+        },
+        {
+          "title": "환율, 2년 만에 1330원대 진입…국민연금이 하락세 제동",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1XR1dUcVB1eUU0bTJ4Q3hndEFMN20wanRCeHNPNlRySUx2TEZrTnpYTjNZRTdLTGdjWmNmT2VuNm5jcVdGTlE?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}
