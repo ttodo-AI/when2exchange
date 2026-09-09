@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-09T03:17:47.416890+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,340 KRW/USD\n\nWHY: The Korean won is at extremely strong levels (1,340 KRW/USD is a 23-month low), meaning you need fewer won to get each dollar—but the news warns of \"additional decline in exchange rate\" ahead, suggesting the won could strengthen further. This means waiting could allow you to convert even fewer won per dollar in the coming weeks.\n\nTIP: Consider splitting your monthly $2,000 purchase into smaller weekly or bi-weekly amounts to hedge against timing risk, since a stronger won trajectory could make waiting advantageous but also carries execution risk."
+  },
+  "articles": [
+    {
+      "title": "쓰리터치 룰렛 : 을 활용한 효율적인 방법",
+      "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNUERXUnhzQ0RjZlAyZnByZFBoNTNGSVpvNjBTN1pIX2dCZEdFUW45YlVpUnNuUTB4WUxqSlJ2TFZYc1NGQUpfdEcwaXNnVDVpWm0tUTBzYkhTNEtMOTlCeEVMX3JUYXBaNlNTeHBPU0FOOWRuOHlTLWJzVWpUNVliblVCckVCSnFTTjl3amt4MEVQT2duVGxCdW9MT3dmbkZxWmhjaGxUcWpqcE11cENCU1h3d1pLcWJPNUlIVE1QOEZCTlZ4S2lSeUlEOHh5cm9qbl9zZ05HLVB1SllKaC1WYkdxS3NuUG8xM2JWWmpkemtXbXBIVWpDSW5QUi1fTEVSaENSdWwwSTN2S2RVcHdjTTJ0b01jUk9vNUNuYnJZanNlTDF3RldB?oc=5",
+      "summary": "쓰리터치 룰렛 : 을 활용한 효율적인 방법 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-08T03:52:55+00:00"
+    },
+    {
+      "title": "두 달 새 200원 넘게 내린 환율…세금 내고도 남은 기업 달러가 추가 하락 변수",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUWFVVk8zcnM5eXVUY0E3S2ZGTmRMV0RteEY0THhIY1R4bXo5TVp5UXQ1X3pyb2NWN2VYU1VBSFpENHpZTDFfYXhLVkF6YVZibUVKZ3BWdUdkVkZkNzRXN2tHT0JRM1M2Q0FIUkhBR2dkaE1fU3ZHc081TTdkZVMzNmh0MVdURWlYejhB?oc=5",
+      "summary": "두 달 새 200원 넘게 내린 환율…세금 내고도 남은 기업 달러가 추가 하락 변수 조선일보",
+      "source": "조선일보",
+      "date": "2026-09-08T23:00:00+00:00"
+    },
+    {
+      "title": "두 달 새 200원 넘게 내린 환율…대비 못한 기업들은 속 탄다",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE4zWmpmN1ZtX3NBczdBOFRiM3Y0dDhtWUFHdlZKeVlwcWRZNk5HdENQWHJaWERseTFWMTIwWXpyZnZXNGFfcmJwRDFvLV9lUG8?oc=5",
+      "summary": "두 달 새 200원 넘게 내린 환율…대비 못한 기업들은 속 탄다 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-09-08T23:01:50+00:00"
+    },
+    {
+      "title": "원화 초강세, ‘환율 추가 하락’ 전망도…반도체·자동차 수출업체는 긴장",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5cUtsYlhmdkdaUkVHRDJzZmRZOVRRTmVlOXZiaDNfNjJkZ29sZG44R3JEYVRWdWp3a1FqYUtWUTBLZ2pHNVhFN2Jxek1iZEg2ci1qWHBRRWhORTRPTUlqQ2lZeTA0ams?oc=5",
+      "summary": "원화 초강세, ‘환율 추가 하락’ 전망도…반도체·자동차 수출업체는 긴장 한겨레",
+      "source": "한겨레",
+      "date": "2026-09-08T06:29:00+00:00"
+    },
+    {
+      "title": "원·달러 1340원대 마감…1년11개월 만에 최저치 : 네이버 블로그",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSy1rUlNZWm1JUWFMcWNuZ25YSVhnR081bDU3NUx1LS1zYjdycndKR0RxOThoMl9CdERPc2JDRGZuUjRnVGdoMzdaVWE2cFNlbE92ZHRvY0pXdGpDaHRxeDhNZXNzVzY3emVyZTVMQU14ZXBrU0VJVERzTFhhS1ZEZHpaN3RRdHVHRHI0Y1dQOA?oc=5",
+      "summary": "원·달러 1340원대 마감…1년11개월 만에 최저치 : 네이버 블로그 Naver Blog",
+      "source": "Naver Blog",
+      "date": "2026-09-08T07:49:26+00:00"
+    }
+  ]
+}

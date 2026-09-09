@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-09-09T03:18:26.606115+00:00",
+  "card_title": "엔화 강세·CPI 앞두고 원화 강세 지속",
+  "tldr": [
+    "오늘 원/달러는 1,338원으로 어제보다 4원 더 내려가며 원화 강세 흐름이 이어지고 있어요.",
+    "엔화가 7개월 만에 최고치를 기록하면서 달러가 약해진 영향이 원화에도 그대로 옮겨왔어요.",
+    "모레 발표되는 미국 8월 소비자물가지수 결과에 따라 달러 흐름이 다시 바뀔 수 있어 지켜봐야 해요."
+  ],
+  "overall_why": "오늘 원화 강세의 가장 큰 배경은 엔화가 7개월 만에 최고치를 기록하면서 나타난 **달러 약세 흐름**이 원화로 그대로 옮겨온 데 있다. 여기에 외국인이 코스피를 사흘간 4조7천억원어치 사들이며 원화 수요를 더했고, 국민연금의 환헤지 중단이 낙폭을 일부 되돌리는 변수로 작용했다. 다만 모레 발표될 미국 8월 CPI 결과에 따라 **연준의 금리 방향 기대**가 바뀌면 이 흐름이 다시 흔들릴 수 있다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 엔화 강세와 달러 약세를 오늘 원화 강세의 핵심 배경으로 지목했다",
+      "headline": "엔화가 7개월 만에 최고치를 찍으며 달러 약세가 원화 강세로 이어졌다",
+      "bullets": [
+        "엔화값이 7개월 만에 최고 수준을 기록하며 원화 강세 동력으로 작용했다는 분석이 나왔다.",
+        "달러 강세 요인마저 원화 강세를 막지 못했다는 평가가 나올 정도로 달러 약세 흐름이 뚜렷했다."
+      ],
+      "sources": [
+        {
+          "title": "엔화값 7개월 만에 최고…원화값 상승 동력?",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RSzVGRUJmSFRXU0wza1VaYWdsX0hmandqSnE0dGtOMUxCWXhWMmxiNFdEVnRMUUhzLTlNNm8xOHhWUTBMXzAwYmt0OE1SdHhTWkprd0F0U3d4Q01NZHVxRw?oc=5"
+        },
+        {
+          "title": "슈퍼 엔저 끝나나…\"엔/달러 150엔도 가시권\" - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fSVNoRmlIZVFKQllFM3JMeVZHb1Nkb1FCUnkzUEZGQW41TUMwWTZkSTNrd3hMVTJVaUNNWTBKXzZ4dmtCZ3hFd09ucFNBQXhZYk9vRHlUdFFMTkZpdk80TjAwOUpKUXFLR3Vlc3Nn0gFuQVVfeXFMTV9JU2hGaUhlUUpCWUUzckx5VkdvU2RvUUJSeTNQRkZBbjVNQzBZNmRJM2t3eExVMlVpQ01ZMEpfNnh2a0JneEV3T25wU0FBeFliT29EeVR0UUxORml2TzROMDA5SkpRcUtHdWVzc2c?oc=5"
+        },
+        {
+          "title": "[채권/외환] 美 국채 금리 상승…고유가·연준 인상 경계 속 엔화 7개월 최고",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE92R01TdGliUXFURHlWYXFfckNKNF9fS01xTDY5TGN5aWNMR011ZVE4MjBLNmRlOVhOdURLY3BQUEQ1Z3hxV04ySWdBUFRSeUkyZTFv?oc=5"
+        },
+        {
+          "title": "[마켓 인사이트] 원화 이어 엔화까지 강해진다…‘달러 약세’ 넘어 환율 지형이 바뀐다",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1lVFUzU3dES2E4UDJVQkxDWXVBdy13c3dUdmZPMGgtRkp2dmhfeE1JU2Z0a052ZGliOFdsa05saVpXMktWUVJjdzRsMmZwYW1BUkpEMUc4SktOMTJoa0c0WEhPbUFSMUJ2RHc?oc=5"
+        },
+        {
+          "title": "“달러 강세도 눌렀다”…원·달러 1340.5원, 23개월 만에 최저",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uV05UNTR6Ni1tbWtVY2ZacHY4Zk8xak41cEU5d2dEVmc4WVJiU3VpcWlvR2ZwMk5QS2dJMFpYU2lDMkZTbHQ2QlpXRG9XUk9zcGE3VC01WExJX3NwMG9tQXRIaHk?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "모레 발표될 미국 CPI가 이번 주 환율의 최대 변수로 지목되며 시장이 주목하고 있다",
+      "headline": "미국 8월 CPI 발표를 앞두고 환율 방향을 가늠하는 관망세가 나타났다",
+      "bullets": [
+        "CPI가 예상보다 높게 나오면 9월 FOMC에서 금리가 오를 수 있다는 분석이 나왔다.",
+        "금값이 CPI·PPI 발표를 앞두고 보합권에 머무는 등 시장 전반이 관망하는 분위기가 확인됐다."
+      ],
+      "sources": [
+        {
+          "title": "[셀럽의 한 수] \"美 CPI 예상보다 높으면 9월 FOMC 금리 오를 것\"",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5kSGVvY2hCMGtFM2doOTZlUTBxVExYSFlabUtmbThIV3oyQjhkWk5fMWNOanNvMGhIRVY5RlNxRnpIM3dhMkVoY2ZsMzRUX2s?oc=5"
+        },
+        {
+          "title": "미국 물가 지표에 주목해야 할 한 주",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1TSEJnMHFJa2hVSHQxZkxHaGtmOUdnM21vMWRVUlY3RkVBVEF6bTVBWkM0alZvV0dVS201Rng0ZkRPSnZYNUpkVkd6cUxObnJ4ajBtR2twM281QjJnaWZiaW50RGpXQQ?oc=5"
+        },
+        {
+          "title": "오늘(8일) 금시세 보합…미국 CPI·PPI 발표 앞두고 관망세",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBua05PTjJZR3ZlS2RyTEhUMTViVUJWdHNDbUQ2UlZyTVJuQ2xZd0V3dnpyVGlSSFZKUkJVRGJsa2tZTWtxQXJrMnY0dVhHQ0gzYVNuNVdrcUMtMFVGREJjdDJHV214OHdpYUdCVC0zUk7SAXRBVV95cUxQN3VuRlFUTkEwM1RDY1BFbWVoWWM1TERTZnczSEozTTJHMWEzVlFycVp2OEN2ZDduei12OEZ5UERQRDBuZ2NPZGNuY2drZjRPenA0T3Y4WFRSQ05WZzVCejJ6djRfdVlKeGlsaWtER0tCd0VZUQ?oc=5"
+        },
+        {
+          "title": "[셀럽의 한 수] \"美 CPI 예상보다 높으면 9월 FOMC 금리 오를 것\"",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kYWRxTzE0MUZ0MWZGR0ppWHlySEdiQWpveTlUOUhOVFh0RXJsaGFZcEdLMTN6NEVxYTVTOVVPbDFuWm5RVWc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "외국인 자금 유입이 원화 강세를 뒷받침하는 보조 요인으로 거론됐다",
+      "headline": "외국인 투자자가 코스피를 사흘간 4조원 넘게 사들이며 원화 강세를 거들었다",
+      "bullets": [
+        "외국인이 사흘 동안 코스피에서 4조 7천억원을 순매수했다는 집계가 나왔다.",
+        "아시아 신흥국 중 한국에서 외국인 매도 비중이 66%로 컸다는 분석도 함께 제기됐다."
+      ],
+      "sources": [
+        {
+          "title": "원화 강세에 外人 돌아올까…사흘 간 코스피 4.7兆 순매수",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBBMUpGUmh3a3lwUGpyRm4wejRkVGpZR1UwY3BXanR2a0cwWHNsUHRFV091SW9LTmUwYzZEd3Y3cnRlMnhVZ3RVbVhhYTExaXlMYk9ia1dNVmVaSlNScVlSX3dtXzZTaUdmRW1wbGFTMS1RMG9Qa2VkadIBeEFVX3lxTFBBMUpGUmh3a3lwUGpyRm4wejRkVGpZR1UwY3BXanR2a0cwWHNsUHRFV091SW9LTmUwYzZEd3Y3cnRlMnhVZ3RVbVhhYTExaXlMYk9ia1dNVmVaSlNScVlSX3dtXzZTaUdmRW1wbGFTMS1RMG9Qa2VkaQ?oc=5"
+        },
+        {
+          "title": "亞 8개 신흥국 외국인 매도 66%가 한국에…셀 코리아 끝 보이나",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1wd3dQMksyQWhzZ3RtMUFmdmlnQjV2WFVac2M5Vkk1R0FwbFpSZWtZTlVtMlR1d0tzR3RveUVXYVFjbnp1bFpobWdRZl9VVkRoTkY2N2ExWjdBeVFwUWotYzl5dnhUY1dtTzBGbVFpTkVoN2_SAXNBVV95cUxNcHd3UDJLMkFoc2d0bTFBZnZpZ0I1dlhVWnNjOVZJNUdBcGxaUmVrWU5VbTJUdXdLc0d0b3lFV2FRY256dWxaaG1nUWZfVVZEaE5GNjdhMVo3QXlRcFFqLWM5eXZ4VGNXbU8wRm1RaU5FaDdv?oc=5"
+        },
+        {
+          "title": "외국인 다시 돌아오나?…사흘 간 코스피서 4조 넘게 순매수",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hbXllb0laRjdqNGpsMHpPWFFRZGpqemtXSTkxaXN5WE5PV2NzSEpQdDg4eHlNRW9RZkMtSVNhcExHdjJ4aUxZNm9WRTVDekE1aS1Z?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "국민연금의 환헤지 중단과 외환당국의 스와프 한도 문제가 원화 강세 흐름에 변수로 작용했다",
+      "headline": "국민연금이 환헤지를 멈추면서 환율 낙폭을 되돌리는 움직임이 나타났다",
+      "bullets": [
+        "국민연금이 환헤지를 중단하면서 환율 하락폭이 일부 되돌아가는 현상이 나타났다는 보도가 있었다.",
+        "외환당국의 FX스와프 한도 조정 여부가 향후 환율 흐름의 변수로 거론됐다."
+      ],
+      "sources": [
+        {
+          "title": "약 2년만에 환율 1,330원대…국민연금 환헤지 중단에 낙폭 반납",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uNkR3Q05aYjk1cDE0WmozS3R1NnduSkpCZkh1bXJuNHVXMVc1WjZFWXlFY0tmREw3S2R4MHc2R09qUzZ1RXhxZFhfQXh0ZUxOY2ZLajhiZEkwaVMyRDY2N9IBYEFVX3lxTE1uNkR3Q05aYjk1cDE0WmozS3R1NnduSkpCZkh1bXJuNHVXMVc1WjZFWXlFY0tmREw3S2R4MHc2R09qUzZ1RXhxZFhfQXh0ZUxOY2ZLajhiZEkwaVMyRDY2Nw?oc=5"
+        },
+        {
+          "title": "환율 급락에 환헤지 멈춘 국민연금…외환당국 FX스와프 한도 향방은",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5sbVpEU1o5YXhwOGVISnBxc0gtWFR6eEVLdUFwOEd3T1hVejA2T2d4dUVyQXhlVWR0UU1ObHE5eHNkblpXak1EUkRSYzJPOUl6M2tWUjV3TnpBc09pMFJ0NEs1XzdaM0JrR0JDWTBJZTBIQQ?oc=5"
+        },
+        {
+          "title": "환율, 2년 만에 1330원대 진입…국민연금이 하락세 제동",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1XR1dUcVB1eUU0bTJ4Q3hndEFMN20wanRCeHNPNlRySUx2TEZrTnpYTjNZRTdLTGdjWmNmT2VuNm5jcVdGTlE?oc=5"
+        },
+        {
+          "title": "[환율마감] 원·달러 5일만 상승, 국민연금 여진+저가매수",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBBbllOcDBnMEY0d1F2QmhaQ2lkcE9EVURLQ2E0cEdvMFN1LUE5SlZyRk9PYldkTEY4Tm9Yb3hCTmQwQzJDczdscENReGgySDVmRUpv?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}
