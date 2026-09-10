@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-09-10T03:17:57.167217+00:00",
+  "card_title": "CPI 코앞, 환율 숨고르기",
+  "tldr": [
+    "오늘 원/달러는 현재 1,339원으로 어제 1,341원과 비슷한 수준에서 움직이고 있어요.",
+    "내일 미국 8월 소비자물가지수 발표를 앞두고 국제유가 상승과 엔화 강세가 서로 힘을 겨루며 환율을 크게 못 움직이게 잡고 있어요.",
+    "내일 밤 CPI 결과가 예상보다 높게 나오면 금리 인상 경계감이 커지면서 환율이 다시 움직일 수 있어요."
+  ],
+  "overall_why": "내일로 다가온 미국 8월 CPI 발표가 **금리 인상 경계감**을 키우면서 시장 참가자들이 큰 방향을 잡지 못하고 있다. 동시에 엔화가 7개월 만에 최고치에 근접해 달러를 누르는 힘과, 국제유가가 100달러를 넘어서며 달러를 밀어 올리는 힘이 맞서면서 환율이 어느 한쪽으로 크게 움직이지 못했다. 여기에 반도체 수출기업의 달러 매도까지 겹쳐 오늘 환율은 **1,339원 안팎에서 보합** 흐름을 보였다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "내일 발표될 CPI가 9월 FOMC 금리 결정을 좌우할 핵심 변수로 시장 전체가 주목하고 있다",
+      "headline": "내일 미국 CPI 발표를 앞두고 금리 인상 경계감이 환율 움직임을 제한하고 있다",
+      "bullets": [
+        "전문가들은 CPI가 예상보다 높게 나오면 9월 FOMC에서 금리가 오를 수 있다고 전망했다.",
+        "비트코인 등 위험자산 시장도 CPI 결과를 다음 분수령으로 보고 관망세를 이어갔다."
+      ],
+      "sources": [
+        {
+          "title": "[셀럽의 한 수] \"美 CPI 예상보다 높으면 9월 FOMC 금리 오를 것\"",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kYWRxTzE0MUZ0MWZGR0ppWHlySEdiQWpveTlUOUhOVFh0RXJsaGFZcEdLMTN6NEVxYTVTOVVPbDFuWm5RVWc?oc=5"
+        },
+        {
+          "title": "[셀럽의 한 수] \"美 CPI 예상보다 높으면 9월 FOMC 금리 오를 것\"",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5nRUc3bUxoWUladHJ1Si1ueEtwNGMwRW4xSDNPQ3FEMkpmT1U5djZENWJuRUVORnZTT3VsdkFrSXFiWC15X0o4WGhTMA?oc=5"
+        },
+        {
+          "title": "비트코인, 중동 충돌에도 7만9000달러대…CPI가 다음 분수령",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9aT2w2TjNzd1pDZ3NpaS04bFhySXJueTBjd0RYanZRbDNucjhWc2J1ZnA4LWh0VzZxdTJGSGEtNHMzRGJEVGNNeVE2WkV1ZzFLWkFOeFRyeDU?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "엔화 강세가 달러 약세 압력을 만들어 환율 상단을 눌렀다는 점이 여러 기사에서 반복 확인된다",
+      "headline": "엔화가 7개월 만에 최고치에 근접하며 달러 약세 압력을 키웠다",
+      "bullets": [
+        "엔화 가치가 7개월 만에 최고 수준에 근접하면서 달러 전반이 약세를 보였다.",
+        "달러 지수는 2주 만에 최저 수준까지 내려간 것으로 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 美 국채 금리 상승…고유가·연준 인상 경계 속 엔화 7개월 최고",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1WcmpnN054V200YW9TXzBnNW8zV0FGaUk0bUNZaDZEY3gwTGdldVVPLWxyUXR4MGhPSzZId3g3SkM5VEVPTGFhcmhyUXpPU0FNTzgyLWlaUG9FLTdk?oc=5"
+        },
+        {
+          "title": "엔화, 7개월래 최고치 근접…달러는 2주래 최저, 유가 100달러 임박",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9RNk84eUFoWVBUNWUwWUNLeEprWERvMmJTY3VHQ05GaExxQWczRHNRNHR1V0puQy1ueHVhMi1YNkxXUl9kLU5JenZENWVwNEZMa0RxdVp1UHRfV1J2Y0FxQU5RTE12WTQ?oc=5"
+        },
+        {
+          "title": "엔화값 7개월 만에 최고…원화값 상승 동력?",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RSzVGRUJmSFRXU0wza1VaYWdsX0hmandqSnE0dGtOMUxCWXhWMmxiNFdEVnRMUUhzLTlNNm8xOHhWUTBMXzAwYmt0OE1SdHhTWkprd0F0U3d4Q01NZHVxRw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "국제유가·원자재",
+      "emoji": "🛢️",
+      "impact": 3,
+      "impact_reason": "유가 급등이 환율을 밀어 올리는 힘으로 작용했지만 엔화 강세와 상쇄되며 보조적 역할에 그쳤다",
+      "headline": "국제유가가 100달러를 넘어서며 환율에 상승 압력 요인으로 작용했으나 영향은 제한적이었다",
+      "bullets": [
+        "브렌트유가 100달러를 다시 돌파하며 원자재발 물가 부담이 커졌다.",
+        "미국 10년물 국채금리도 4.84%까지 오르며 유가 상승과 함께 시장을 압박했다."
+      ],
+      "sources": [
+        {
+          "title": "유가 다시 100달러 돌파…국채금리까지 증시 압박[뉴욕마감] - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51eHY0cFViWThncFRZYWUzTzlkN0Riano0REVDaV9tcDB6N3ctelF3MDc1M01wTVBueFE4NFh4RTl5WUFSY1daV2VSdmxKdmZkOUlhaFBTSXJobnltU3BOeWh1MERZWkxXR2NnOUVn0gFuQVVfeXFMTnV4djRwVWJZOGdwVFlhZTNPOWQ3RGJqejRERUNpX21wMHo3dy16UXcwNzUzTXBNUG54UTg0WHhFOXlZQVJjV1pXZVJ2bEp2ZmQ5SWFoUFNJcmhueW1TcE55aHUwRFlaTFdHY2c5RWc?oc=5"
+        },
+        {
+          "title": "[원자재 시황] 바이백 실망감 덮친 시장…브렌트유 100달러 돌파",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0c2JDZTJnZkhlNGdrYjJBSy01LTZ6al85blByYlJydzdOTEZ6cTFNTHFZRjF4b0FDa1BiZ0R0Z24tVU5jZlVMVnNoUi03MG1lTmZkRnJQYmZCblpIMzJtSmZhM21sTVZ3?oc=5"
+        },
+        {
+          "title": "[뉴욕 금·채권·달러] 유가 100달러 돌파…10년물 4.84%·금 1%↑",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBoRm4zWXJjOGlwTzJNTVpyN0dQdzNCTDVueGZzbnFFQmh2TEpkM1ZJWkhnblVRZzYwU3lReGczVGtpN0F5enh3a3JaYVV5OC1sUzlJSllOcWU?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "수출기업의 달러 매도 물량이 환율 하락 요인으로 작용했지만 유가·통화정책 이슈에 비해 영향력은 작았다",
+      "headline": "반도체 수출기업의 달러 매도 물량이 환율 하락 쪽에 소폭 힘을 보탰다",
+      "bullets": [
+        "반도체 업체들이 벌어들인 달러를 내다 팔면서 원화 강세 요인으로 작용했다.",
+        "코스피가 7000선을 다시 탈환하며 외국인·기관 매수세가 환율에도 영향을 줬다."
+      ],
+      "sources": [
+        {
+          "title": "이름값 하는 칩달러…원화값 1300원 보인다",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBSUmdXZ2dVaHB2SVo3anlnVmpGeHhDUk1VNkROZHcwRHJoWlRfUU0yMzgyeTBBemp3dm9lRnZBM2gwbWx6MldRVFp0bS14UzZ1R2o5Q2pRT1pqWWNUS0k5c1BR?oc=5"
+        },
+        {
+          "title": "중동 불안에도 기업 달러 매도에...원·달러 환율, 1330원대 하락 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tc09qeGVLOHpNc256VGNkX1F3aFo1ZTd1dU1UWDY2QlYwZ24zSjBBUHg1ODA2SVRrQXcxU1BOZWZLOWZKR0Zqa3V6eXBmbjRadGNhT3p1aDlyOWNpN0N5a3pPajQ?oc=5"
+        },
+        {
+          "title": "코스피 7000선 탈환...기관 매수에 1.40% 상승",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxUWR4YmQ5aG1icEZ5bFV0Z3dISU95VGk3bXpPVUVDVGM5eGYxdTZudGZvdGREMUNtRkowY3pkOUR0b1F1VTlNaTgySUNBSXBoZTFySjZrc1lDSUUwRWQzYzk2ZGRyOGdHN1B6MUVhZWFDNXc?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 8월 소비자물가지수( D-1",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}
