@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-09-11T03:13:58.087274+00:00",
+  "card_title": "미 물가·유가 상승, 엔화 강세로 상쇄",
+  "tldr": [
+    "오늘 환율은 어제 1,351원보다 내린 1,346원대에서 움직이고 있어요.",
+    "어젯밤 미국 PPI가 5.4%로 높게 나오고 국채금리가 4.96%까지 오르며 달러가 강세를 보였지만, 유가 급등과 엔화 강세가 겹치며 원화도 함께 힘을 받았어요.",
+    "오늘 밤 발표되는 미국 8월 CPI 결과에 따라 환율이 더 크게 움직일 수 있어요."
+  ],
+  "overall_why": "어젯밤 발표된 미국 PPI가 5.4%로 높게 나오면서 물가 우려가 커졌고, 이에 따라 미국 국채금리가 4.96%까지 오르며 달러 수요가 늘었다. 동시에 국제유가가 100달러를 넘어서며 물가 부담을 더했지만, **엔화가 BOJ 금리 인상 기대와 베선트 미 재무장관의 경고성 발언으로 강세를 보이며** 원화도 같은 방향으로 움직여 환율 상승 폭이 제한됐다. 오늘 밤 발표될 미국 CPI 결과가 이 흐름의 다음 방향을 결정할 변수로 남아있다.",
+  "factors": [
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 5,
+      "impact_reason": "어젯밤 발표된 미 PPI 수치와 국채금리 급등이 오늘 달러 강세의 가장 직접적 원인으로 여러 매체가 지목",
+      "headline": "미 PPI 5.4%·국채금리 4.96%로 달러 강세, 물가지표 경계감 지속",
+      "bullets": [
+        "미국 8월 PPI가 5.4%로 예상치를 웃돌며 물가 우려가 커졌다.",
+        "미 10년물 국채금리가 4.96%까지 오르며 달러 자산 매력이 부각됐다."
+      ],
+      "sources": [
+        {
+          "title": "[뉴욕 금·채권·달러] \"미 PPI 5.4%에 고유가\"…미 10년물 국채금리 4.96%",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lR3YxSlpEekZWY292ZE9Sb1ppM0lGTzZ5Tm1xdld5aDdiLVhZcjl6d21DSEl3ckRVZWREVGtpSHpyWThlQUw4MzBEaTQ2S2NvVjJuQ1dqV1A?oc=5"
+        },
+        {
+          "title": "유가·물가·금리 '트리플 악재'…증시 나흘째 털썩[뉴욕마감] - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9OS1VuSFZRTUlFOUpiOW9leVBMUDFGYVROaUpJTF9fd3BHUDhuN3NBVXJzM3JNaDBWUW5QR2t3aGFIdUFIbnptNDVKcW92Zmk4ZmM1Y1VxMWswWGpXQWhYaG1mbVBGT3hGR3l5eE5n0gFuQVVfeXFMT05LVW5IVlFNSUU5SmI5b2V5UExQMUZhVE5pSklMX193cEdQOG43c0FVcnMzck1oMFZRblBHa3doYUh1QUhuem00NUpxb3ZmaThmYzVjVXExazBYaldBaFhobWZtUEZPeEZHeXl4Tmc?oc=5"
+        },
+        {
+          "title": "긴축 경계감에 다시 7000선 아래로…증권가, 美국채금리·CPI 촉각",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9TbUFoNnlzZ2ZfcjJLMFdhZ2hnX29scE9HM1VMX09YVm5JcjlJbmYteFkxUWRlcG5JMnkwZDNjMmpxWGRuZzM3TUkyZkp1SjFjbGNiX2hpTDYwaWZCYWlFSkxESE9mTHEtdmtQamVHS21yVGxwY1RVNdIBeEFVX3lxTE9TbUFoNnlzZ2ZfcjJLMFdhZ2hnX29scE9HM1VMX09YVm5JcjlJbmYteFkxUWRlcG5JMnkwZDNjMmpxWGRuZzM3TUkyZkp1SjFjbGNiX2hpTDYwaWZCYWlFSkxESE9mTHEtdmtQamVHS21yVGxwY1RVNQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "국제유가·원자재",
+      "emoji": "🛢️",
+      "impact": 4,
+      "impact_reason": "유가 급등이 물가·금리 우려를 키워 달러 강세를 뒷받침한 두번째 핵심 동인",
+      "headline": "중동 불안에 국제유가 급등, 물가 부담 가중",
+      "bullets": [
+        "중동 정세 불안으로 국제유가가 6% 급등하며 장중 환율이 1350원에 근접한 바 있다.",
+        "브렌트유가 100달러를 돌파하며 물가 상승 우려를 키웠다."
+      ],
+      "sources": [
+        {
+          "title": "중동 불안에 국제유가 6% 급등…환율도 1350원 눈앞",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tbzZaV0NxX2g0UktyRGJEaWs3YnVzdFBaUVpMZU05R3BHbHc0ckpjTjhtc3hJRmJNRGJyTnkyazBUSEV4azJOb2llTHhKbzlTdFhrRFUtOW9ubGU3VHNPQlJoUWZWZTVxbnc?oc=5"
+        },
+        {
+          "title": "[원자재 시황] 바이백 실망감 덮친 시장…브렌트유 100달러 돌파",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB0c2JDZTJnZkhlNGdrYjJBSy01LTZ6al85blByYlJydzdOTEZ6cTFNTHFZRjF4b0FDa1BiZ0R0Z24tVU5jZlVMVnNoUi03MG1lTmZkRnJQYmZCblpIMzJtSmZhM21sTVZ3?oc=5"
+        },
+        {
+          "title": "유가 100달러·美금리 급등…반도체 훈풍, 코스피 7000선 지킬까",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBoSkN2R1A2RzFGcFg4bU5YRlc1Wm5RRzF6UGRnYUhTZ0NyQlFyNjFSQ1lYLVpHQ2g2WHc2SjJtN3pKanN4alpSVDhpRzY4OW01RUtKU2dvZDljdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "아시아 통화 동조",
+      "emoji": "🌏",
+      "impact": 3,
+      "impact_reason": "달러 강세 요인을 일부 상쇄한 원화 고유 동인으로 방향에 영향을 준 보조 요인",
+      "headline": "BOJ 금리 인상 기대에 엔화 강세, 원화도 동조 흐름",
+      "bullets": [
+        "일본은행(BOJ)의 금리 인상 기대감에 엔화가 급등했다.",
+        "엔화 강세 흐름에 원화가 동조하며 환율 상승폭이 제한됐다."
+      ],
+      "sources": [
+        {
+          "title": "[분석] 원화의 새 방향키 엔화···동조화 확대에 달라진 환율 셈법",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE84Nk9HQ3gzSGNqazluMWp6ZmhPT09ranhsUEhlM09qZi0ySWtNcXZhSDdOQ0QxN1A0a3U5NGlTbURsYXpvVkRNbUJmYnB0X3Q1bEJyZW9tRWJTWHNoTWszQlZiWmt3WDNFMnItOWx4QTJMUDTSAXdBVV95cUxPdmFSWlRMV3FaWGh0UkhJMnBZQ1hSekdrTXR0R0NqNXBXN3pSb0k4Y19UdlVUa2RPN0E0UGItRkhPUTdfckhFNmNZbTJhNTJJbl9UVGFVcG1DWU5JcDBqQ1BzN25QOEV6UWZORjdDYmp1TG50dzNUYw?oc=5"
+        },
+        {
+          "title": "BOJ 금리 인상 기대에 엔화 급등…시장 ‘엔 캐리 청산’ 긴장",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwcnBaQjlZTjBxcVlwejlja3hPLVJRVFgtcGp2cXJscXR3amVDYUVZOUlZVG1YRUpsWW9XMUpzVGFwNERJOHJYY3BHYW41T1M4OVVrb3AzUnJiV0tSX0Iw0gFfQVVfeXFMUDBycFpCOVlOMHFxWXB6OWNreE8tUlFUWC1wanZxcmxxdHdqZUNhRVk5SVlUbVhFSmxZb1cxSnNUYXA0REk4clhjcEdhbjVPUzg5VWtvcDNScmJXS1JfQjA?oc=5"
+        },
+        {
+          "title": "엔화 강세에 원화 동조…종가 1년 11개월래 최저 [김혜란의 FX]",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhYXM4RG1UajZGZ0FiZmdXYXk5eWVmMzFMZi1faU5Yay1pZE9BWGhZY1pCZFpqNzVZcmItOG1NQVdxamxLeHhORUhQNi04TzJuUnfSAVNBVV95cUxNb08zNkVYbk5fMk5vSktjNUNvNTNMQXFwZVJRNktRdk53clBmaDc5SkoxdkQ3MEQ3dFV6VnJreGVPQkt1b3VUemFjb1c2MUI4QkFhNA?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "당일 시장을 움직인 구체적 발언성 이벤트로, 다른 카드와 겹치지 않는 별도 동인",
+      "headline": "베선트 미 재무장관 엔화 경고 발언에 엔·원 동반 강세 흐름 나타나",
+      "bullets": [
+        "베선트 미국 재무장관이 엔화 약세 베팅을 자제하라고 경고했다.",
+        "이 발언 이후 엔화와 원화가 함께 강세를 보이며 당시 환율이 9.하락한 사례가 있었다."
+      ],
+      "sources": [
+        {
+          "title": "[외환-마감] 베선트 '엔화 역베팅 말라' 경고에 엔·원 강세…9.50원↓",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5yR0dZSjFXWHRYa1U2dmlBV0lXUHo1V3RvanV3MXNiVW96ajlrdDdya1h2T3pCN0w0b2xlM253d0I3VjVmQk1fckdaN0FtMFpHYUJvM2tJU2lRVURTMnVDSjJKNGFfc2dlTjdaem4wX20?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 8월 소비자물가지수( D-0",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "임박 ★★★ '미국 8월 소비자물가지수(CPI)'(D-0)이 요약에 안 보임"
+    ]
+  },
+  "engine": "claude"
+}

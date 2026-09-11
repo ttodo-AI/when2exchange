@@ -1,0 +1,20 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-11T03:12:56.054573+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,360 KRW/USD (or higher)\n\nWHY: The headline signals a \"risk-off\" environment triggered by oil-price shock concerns, which typically strengthens the US dollar and weakens the Korean won. The news mentions potential recovery toward 1,360 won per dollar, implying the won is currently weak (at higher KRW/USD levels), making your monthly USD conversion more expensive right now.\n\nTIP: Consider waiting for won strengthening (lower KRW/USD) if market volatility settles, or adopt a dollar-cost averaging strategy to smooth out unfavorable timing across months."
+  },
+  "articles": [
+    {
+      "title": "'유가 100달러 쇼크' 재발에 리스크 오프⋯\"1360원 회복 가능성도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAyWEZ1d2FoUmtydjhXNHNjVURzem84RFRFVmlaZGtmdV9UOHpMRUN2RnJyM29kcDRSdThrcVpGMm9kdk50cUpwWG5IaW9jbWhhLXV6bg?oc=5",
+      "summary": "'유가 100달러 쇼크' 재발에 리스크 오프⋯\"1360원 회복 가능성도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-10T22:50:00+00:00"
+    }
+  ]
+}
