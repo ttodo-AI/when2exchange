@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-09-12T03:19:28.257222+00:00",
+  "card_title": "외국인 자금 복귀에 원화 강세",
+  "tldr": [
+    "오늘 원/달러는 1,344원으로 마감해 어제(1,351원)보다 7원 내렸어요.",
+    "외국인 투자자가 국내 증시로 다시 돈을 넣고 반도체 수출도 호조를 보이면서 원화가 힘을 받았어요.",
+    "한국은행의 10월 추가 금리 인상 가능성이 줄었다는 얘기도 나와, 앞으로 금리 결정과 외국인 자금 흐름을 계속 지켜봐야 해요."
+  ],
+  "overall_why": "오늘 원/달러가 내린 가장 큰 배경은 서학개미의 해외투자 열기가 식으면서 외국인 투자자들이 국내 증시로 돌아온 점이다. 여기에 반도체 수출이 역대 최대치를 기록하며 국내로 달러가 들어온 점, 그리고 **한국은행의 추가 금리 인상 가능성이 줄었다는 전망**이 겹치며 원화를 지지했다. 일본은행의 금리 인상 기대로 엔화가 급등한 점도 아시아 통화 전반의 분위기에 영향을 준 것으로 보인다.",
+  "factors": [
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 5,
+      "impact_reason": "서학개미(해외투자 개인) 열기가 식고 외국인이 국내 증시로 돌아온 점이 환율 하락의 직접적 배경으로 지목됨",
+      "headline": "외국인 자금이 국내 증시로 돌아오며 원화를 사들이는 힘이 커졌다",
+      "bullets": [
+        "서학개미 투자열기가 식은 반면 외국인 투자자는 국내 증시로 돌아오는 흐름이 나타났다.",
+        "외국인 자금 유입은 원화 매수로 이어져 환율에 하락 압력을 더한 요인으로 지목됐다."
+      ],
+      "sources": [
+        {
+          "title": "서학개미 투자열기 식고, 외국인은 돌아오고…환율 더 내릴까",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdlUtWnpaZWMtSlV0SkVmd25fYkFTQm5wUU5Fd25ONTZGVG51U2piWEcxTjlYSktfcnlDcElXNXBidC1pUkptczBRZTQySHRxTExYaWFaY05RSHlCUlZBWEVPQ3dEWFZULV9wRzkyU192dGxPMF9UWWRiNDBHaHcwZzRxcGQ4OFpFbTVwUTBTR1hsNDhXX3pDU09R?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 4,
+      "impact_reason": "반도체 수출 호조로 달러가 국내로 많이 들어와 원화 강세를 뒷받침한 요인으로 꼽힘",
+      "headline": "반도체 수출 대금이 쏟아지며 원화 강세를 지지했다",
+      "bullets": [
+        "9월 1~10일 수출이 350억달러로 역대 최대를 기록했고 반도체 수출은 270% 늘었다.",
+        "수출로 벌어들인 달러가 국내로 들어오면서 원화 강세 압력을 키웠다."
+      ],
+      "sources": [
+        {
+          "title": "9월 1∼10일 수출 350억달러 또 ‘역대 최대’…반도체 270%↑",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE54UlA0SFVhcjZBbURlX1YtaTgyUzgzanI4NGE1NF8zVFNYTG1TcWZqemlmcGRSR2pnOTNNZGtnZVJVM1lTS016QVpSQWFHUkJsVmUzajFuVDRoZENkTVdJa3g4TVFXWTlCQlJvYndIV0lCZw?oc=5"
+        },
+        {
+          "title": "‘반도체 달러’ 쏟아지자 원화 초강세…원·달러 1300원선 보인다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1JcUQwRWZ2OTg4R01PT0oxMzVtdm5UZlV6aDI5dXg5bHI2UHpHSHhselBWeWVpQ043aW5aWHhrRlQ4alkxYzNjTWdWdHVpem9rMTFpdVN5OFI3SUhUNHpCaVRnZlQxSGRqMjRseA?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한국은행의 추가 인상 가능성 후퇴 전망이 환율 방향에 영향을 준 보조 요인으로 언급됨",
+      "headline": "한은의 10월 추가 인상 가능성이 줄었다는 전망이 나왔다",
+      "bullets": [
+        "증권가에서는 10월 추가 금리 인상 가능성이 줄었다는 분석이 나왔다.",
+        "다만 국제유가가 변수로 남아 있어 한은의 다음 결정에 영향을 줄 수 있다는 점이 지적됐다."
+      ],
+      "sources": [
+        {
+          "title": "\"10월 추가 금리인상 가능성 줄었지만…문제는 유가\"",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Xa2tJNDQ0OEpZQnlKOWFvQ0ViR0FDbUxvZmJna0paNHBIdDFqRzVISi03TTYtcWhPMmh2RHhhczlIT2JxdmotTHlUVU5JSXBPLVN5Q3dLb3E1SUNlNS1hV2Q2R09NRnR0cFVieS1FaUw?oc=5"
+        },
+        {
+          "title": "美 금리인상 임박…환율·유가까지 들썩, 한은 ‘3연속 인상’ 압박",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "엔화 강세와 엔 캐리 청산 우려가 아시아 통화 전반에 영향을 줄 수 있는 배경으로 거론됨",
+      "headline": "일본은행의 추가 금리 인상 기대로 엔화가 급등하며 시장이 긴장했다",
+      "bullets": [
+        "일본은행의 추가 금리 인상 기대감에 엔화가 급등하는 모습을 보였다.",
+        "엔 캐리 청산 우려가 커지면서 아시아 통화 시장 전반의 변동성이 주목받았다."
+      ],
+      "sources": [
+        {
+          "title": "BOJ 금리 인상 기대에 엔화 급등…시장 ‘엔 캐리 청산’ 긴장",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBuRXhGN255WUlWM0g1SkJOOFM0ZVc5czlpMVEzWFljU2hmQlRac0hXMDNhaWctUk5iZFRxbmhYVTFxVWdtcXdUTkoxNktaSjBUcHQ3RVZxM1BMQdIBX0FVX3lxTFAwcnBaQjlZTjBxcVlwejlja3hPLVJRVFgtcGp2cXJscXR3amVDYUVZOUlZVG1YRUpsWW9XMUpzVGFwNERJOHJYY3BHYW41T1M4OVVrb3AzUnJiV0tSX0Iw?oc=5"
+        },
+        {
+          "title": "[글로벌증시 따라잡기] 엔 캐리 우려는? 문제는 BOJ 추가 인상 시그널",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1VOVc4d1pVdlNnOGV5cGc3T2lIRzhGWFNYQmNENG8zN2lXblBfSUxJX2ZTeDhOUGp5QzRoMFZ3UTE4cEZIN2VWYXVxRE9WU2hsNFl3TGVTaTlvQW4t?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "claude"
+}

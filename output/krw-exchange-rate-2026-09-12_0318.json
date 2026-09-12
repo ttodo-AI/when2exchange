@@ -1,0 +1,27 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-12T03:18:37.043045+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,340 KRW/USD\n\nWHY: The won has weakened recently (returning to the 1340s after 3 trading days), making dollars more expensive for your conversion. More importantly, analyst commentary suggests the won could strengthen further to the 1200s range, meaning if you wait, you may need fewer won per dollar.\n\nTIP: Consider dollar-cost averaging your monthly $2,000 purchases rather than converting in lump sums, to reduce the impact of unfavorable timing if the won does strengthen as analysts suggest."
+  },
+  "articles": [
+    {
+      "title": "달러·원 환율, 3거래일 만에 1340원대 복귀",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE11YWRJZ181eXdZMkhOREJuMlZHdGJmTzhPQU02V0ViY2VZX3ppbllab1NiaTBrUkVxa051V0pSU0FrWHFhWVMxcE54RnlueTF6RkNSRm9ySEZnRHZEaW01dDc4dWdyQlFM?oc=5",
+      "summary": "달러·원 환율, 3거래일 만에 1340원대 복귀 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-09-11T07:34:00+00:00"
+    },
+    {
+      "title": "원·달러 환율 바닥 어디까지 내려가나…\"1200원대 진입 가능성도\"",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oY20teTNOM0ZkWllfZFV6ZGFXYkpSS1BHNHBHaGptUlFwdG1RTkp0bUhaejlwRDJobldGektvZUJ6SGhFbFZhRlY0Y19fMGRBVHVoSDZpRE8xNVd4RkktTnBncFg2czcyV2hiWmtB0gFzQVVfeXFMT1Y5TkxaeVVGMkZoWjEyZTZHVHVrc2lHWFN0X0hHOVVNM2pOZVlzcS1idUtKQWU3YnJ6UXVBWHhVYklTZER0dmZUR3RDVjF5ejBManlEaktnWmdKWkliWEFEYjczWTRBWmxDN0tnVTJQaFlPRQ?oc=5",
+      "summary": "원·달러 환율 바닥 어디까지 내려가나…\"1200원대 진입 가능성도\" 한국일보",
+      "source": "한국일보",
+      "date": "2026-09-11T07:57:00+00:00"
+    }
+  ]
+}
