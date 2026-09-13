@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-09-13T03:24:39.622783+00:00",
+  "today_kst": "2026-09-13",
+  "guide": "이번 주는 이미 9월 11일 CPI 발표가 끝난 뒤라 시장이 결과를 소화하는 국면이고, 가장 큰 변수는 다음 주 목요일(9월 17일) FOMC 금리결정이다. 워시 신임 의장의 첫 데뷔 회의로 점도표와 발언 강도에 따라 원/달러 변동성이 커질 수 있어, 환전 계획이 있다면 FOMC 결과 발표 직후 급변동을 피해 하루 이틀 지켜본 뒤 움직이는 것이 안전하다. 그 전까지는 CPI 발표 후 형성된 흐름이 이어질 가능성이 높다.",
+  "events": [
+    {
+      "date": "2026-09-04",
+      "time": "21:30",
+      "name": "미국 8월 고용보고서",
+      "importance": 2,
+      "summary": "예상 웃돈 고용지표로 발표 직후 뉴욕증시 하락, 달러 강세 요인 발생",
+      "why": "고용지표는 연준의 금리 정책 판단에 중요한 근거가 되어 환율에 영향을 준다",
+      "result": "미국 8월 고용지표가 서프라이즈를 기록했음에도 원/달러 환율은 하락해 1,330원대로 1년 11개월 만의 최저 수준을 기록했다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "[뉴욕증시 전략] 예상 웃돈 8월 고용에 3대 지수 하락…반도체는 선방",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4tOVFfNFhGQW5PRVdjQVZpalJaZTM3eW4zellqcl9JTEZJWkRzeXZlLVE4eXpGaVRRdzVkVVRCeGlSY0RMRldHR3c3WFgxS1J5Y3g4T1pGM1FZRjlq?oc=5",
+          "snippet": "[뉴욕증시 전략] 예상 웃돈 8월 고용에 3대 지수 하락…반도체는 선방 supple.kr"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "time": "21:30",
+      "name": "미국 8월 생산자물가지수(PPI)",
+      "importance": 2,
+      "summary": "CPI 발표 전 선행지표로 시장 변동성을 키웠다",
+      "why": "PPI는 CPI 발표 직전 물가 흐름을 가늠하는 참고지표라 환율 변동성을 키운다",
+      "result": "미국 8월 PPI가 인플레이션 우려를 키우며 원/달러 환율이 전일 대비 6.7원 오른 1,345.9원으로 마감했다",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "CPI 경계감 확대로 달러 강세"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "물가 둔화 기대로 달러 약세"
+        }
+      ],
+      "sources": [
+        {
+          "title": "오늘 밤 미국 PPI, 이번에는 왜 더 중요할까｜9월 금리 인상 여부의 첫 번째 시험대",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wT0g4SWM1b2t5SFRESXc2ZVFiUjBVTFppNjdhOTlBampEVW1Ia3NvSG9uNnVuclM1QURRODQ2ZjZyaVZMNjU3Z0VyMWdOeVZPTGpxaXVNTWZyWUJWM1p0SjBGekgyTFpQYjRscEx0c1FQVmNTc0FXa1JjcWVRdw?oc=5",
+          "snippet": "오늘 밤 미국 PPI, 이번에는 왜 더 중요할까｜9월 금리 인상 여부의 첫 번째 시험대 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "[KFT 모닝 브리프] 2026.09.10 — 오늘 꼭 알아야 할 국내외 경제·시장 뉴스",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE02ZmtlOUo0bjVPb3h6NENJc1Z3OExMckVGM2c3T1JqWWNEVURlcHBzZG94V3BQZHlBVV9LTmJoeEtsc0NIMHBMN1VITXNrX1dyb0FKdmY5VzhOQzNfa3phS0FDeHdOUFU0STVSMjVrMkhVTlo4dEEwT2FTazY?oc=5",
+          "snippet": "[KFT 모닝 브리프] 2026.09.10 — 오늘 꼭 알아야 할 국내외 경제·시장 뉴스 한국금융신문"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "CPI 결과가 이번 주 초 환율 흐름을 좌우했다",
+      "why": "CPI는 연준의 9월 금리 결정에 직접 영향을 줘 달러 강약을 결정짓는 핵심 지표다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "금리인상 기대 강화로 달러 강세, 원/달러 상승 압력"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "금리인상 기대 약화로 달러 약세, 원/달러 하락 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NQnpkSjQ0bmNGanZiZWtpbFB4ejNSQTVTNDdGUVJMaTNWR002OTIwQmtQYUxSNUhpeXlKWVJJaGVQYVRDTm9ZR3VoUHVtUW1wLVlveWpOVzZpQ2R3RTZkc3pQejVSYnVsaml6Y3l6TDdQeXFlUE11RTRuNzdTUQ?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는]",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sSEs1U3B2eWFlTkJBbmJOaU5mR3hsVEJGQ2hlcVhSYllWalBVSWEzTmdSSGQwZlA4SlF3OXlUc1BoSC1NZHlfYjZaN3d3SkhWWmhj?oc=5",
+          "snippet": "다음주 금리 인상 좌우할 CPI…장기 국채 입찰, 오라클 실적도 주목[이번주 美 증시는] 네이트"
+        },
+        {
+          "title": "[미국 뉴욕증시] 이번 주 ‘8월 물가’에 시선 집중, 연준 기준금리 향방 가늠할 분수령...지난주 다우존스 하락, S&P500·나스닥지수 상승",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBkaEhlX2tETG51SGY1NFc1djJGdWlhTUUxRmJzbFdtMUVwRXJUenRZbm1MdlRCVE50Z3AydWItM3MwcnZpQTJ6Q1V5Wms5c2l3Z2poVkgxNktsVXdjZmc1M3ZpTVZFRkpLVnBGY3lPMzE?oc=5",
+          "snippet": "[미국 뉴욕증시] 이번 주 ‘8월 물가’에 시선 집중, 연준 기준금리 향방 가늠할 분수령...지난주 다우존스 하락, S&P500·나스닥지수 상승 한국강사신문"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정 및 점도표",
+      "importance": 3,
+      "summary": "다음 주 목요일 새벽 발표되는 최대 변수, 워시 의장 첫 데뷔",
+      "why": "금리결정과 점도표, 신임 의장 발언 강도가 향후 달러 방향성을 결정짓는 최대 이벤트다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "금리 인상 또는 매파적 점도표",
+          "effect": "달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "동결 또는 완화적 발언",
+          "effect": "달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa0EwR3VpUDZNQkZnTWRDV251WHdmdXFrb3pXdGQxNEx6dk9CWWxlTDFISG1FY01lbU5LWkl4eUpsaG5jemVCSHJybXFsazFPV0ppd0tyZXRXZVZUOUJ5TlliLUtGNnpuZTJzclF0Z19hQ3M4emxJTlJNZDZ5eXdxa281cXhuTzFNRkJsS0Q2R3M2TlRGWWFkQ3E3Y2ZTM3UyeFBwTTlwM1ExU21KaFhtM2toZ3l0TGpmUVJwdnBpZw?oc=5",
+          "snippet": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정 TradingKey"
+        },
+        {
+          "title": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTl9ndHlfZVdDSWx0enRTaFcwYVNQSl9DdlhYX0R0cUJKV0hJSnpGR2h1UExCYjg2MFViTlhqSmRET0F3eU5rdmlNem5RaHpESDE1aW45dERVdnNqQnZ3TUxzbk5DOGlUT3BYQXFXVUc?oc=5",
+          "snippet": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈 한국강사신문"
+        },
+        {
+          "title": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5",
+          "snippet": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다 쿠키뉴스"
+        }
+      ]
+    }
+  ]
+}

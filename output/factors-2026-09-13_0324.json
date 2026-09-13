@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-09-13T03:24:19.044816+00:00",
+  "card_title": "美 금리 인상 기대에 환율 마감",
+  "tldr": [
+    "오늘 환율은 1,344원으로 어제(1,351원)보다 7원 내렸어요.",
+    "미국 CPI 발표 이후 연준 금리 인상 가능성이 86%까지 커지면서 달러 수요가 이어졌어요.",
+    "이번 주 목요일 FOMC 금리 결정과 국제유가 흐름을 계속 지켜봐야 해요."
+  ],
+  "overall_why": "미국 CPI 발표 이후 연준의 금리 인상 가능성이 86%까지 오르면서 미국 국채 금리가 4.97%까지 뛰었고, 이는 달러 자산의 매력을 키워 **달러 수요를 늘리는 흐름**으로 이어졌다. 여기에 국제유가 급등이 물가 부담을 더하고 코스피가 7000선 아래로 밀리며 위험자산 회피 심리가 겹쳐, 원화는 최근의 강세 흐름 속에서도 오늘은 **소폭 눌리는 모습**을 보였다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 CPI 발표 이후 연준 금리 인상 기대를 오늘 환율 움직임의 핵심 원인으로 지목했다",
+      "headline": "미국 CPI 발표 후 연준 금리 인상 기대가 86%까지 오르며 달러 수요를 지지했다",
+      "bullets": [
+        "미 CPI 발표 이후 연준 금리 인상론이 86%까지 확대됐다.",
+        "미국 10년물 국채금리가 4.97%까지 오르며 달러 자산 매력을 키웠다."
+      ],
+      "sources": [
+        {
+          "title": "[뉴욕 금·채권·달러] 미 CPI 발표에 연준 금리 인상론 86%…10년물 금리 4.97%",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5wT0k5QkNsSHp0UXNKck94QzhyMDhZMDdMN3RGMHpXUGpRTHFyVVZWRFJpZDdtT0JiUUM0WUdkQ0ljdlgwRUhyV2JkQ1dVRWNIZVZQM0t1OGk?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "달러 강세 흐름이 이틀째 이어졌다는 점이 여러 기사에서 공통적으로 확인된다",
+      "headline": "미국 금리 인상 기대에 달러가 이틀째 강세를 보이며 원화에 부담을 줬다",
+      "bullets": [
+        "서울파이낸스는 미 금리인상 기대에 달러가 이틀째 강세를 보였다고 전했다.",
+        "3분기 원화 절상률이 주요국 중 1위였다는 점은 그만큼 최근 원화 강세 폭이 컸음을 보여준다."
+      ],
+      "sources": [
+        {
+          "title": "[외환+] 美 금리인상 기대에 이틀째 달러 강세···환율 1345.9원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5NWS15WTNtb3cyeDZwdllfS21zWS1NSjdySjVZQXNuZlNRaVdmU0pHc2ZTMVBHbWhYS2F1YzRGTjhUN05tdFlYUEF3dHE5U0d4UEl4dHNqSXRUV0l0QmFTc3hYcEFUOHY4NkE?oc=5"
+        },
+        {
+          "title": "3분기 원화 절상률 1위, 엔화의 3배…미·일 금리 결정에 주목",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5VdFNJM0RPUFNrNkJVUkU1VktUcXJxQ3BkMEZyVGxLY19QMmtLYjFhanFtS1pQMWQwRDRqVUFPR21yVDQ3NXFNN2JIOUJ4cDhud1pwdEVMVFYzQjctMGZiTtIBYEFVX3lxTE5VdFNJM0RPUFNrNkJVUkU1VktUcXJxQ3BkMEZyVGxLY19QMmtLYjFhanFtS1pQMWQwRDRqVUFPR21yVDQ3NXFNN2JIOUJ4cDhud1pwdEVMVFYzQjctMGZiTg?oc=5"
+        },
+        {
+          "title": "주요국 통화 중 원화 가치 가장 빠르게 올랐다…3분기 절상률 1위",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9XWmd5TllxX08yOGNOSXhTUUF4S0pEOGNpZW11UXJNWGE3bnJHSFp2Mm5xeU1Sc1VmMWhoUW5QZFVBdVRxWlZoTkp3R2w5dTFiRFF3?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "국제유가·원자재",
+      "emoji": "🛢️",
+      "impact": 3,
+      "impact_reason": "유가 급등이 환율 상승 요인으로 함께 언급됐으나 금리 요인보다는 보조적이다",
+      "headline": "국제유가 급등이 물가 부담을 키우며 환율 상승 압력을 더했다",
+      "bullets": [
+        "WTI 가격이 100달러를 넘어서며 물가 부담이 커졌다는 보도가 나왔다.",
+        "유가·美 금리 급등이 겹치며 환율이 1340원대 중반대에서 움직였다는 보도가 다수 확인됐다."
+      ],
+      "sources": [
+        {
+          "title": "WTI 100달러에 ECB는 인상, 이제 연준과 일본은행의 시간",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWVlaVi1obTMtZ3Y4MUo1UlBGLXhuN24xcHZ1NkZzSVpSa21pTVN0NEpTam1sRUwwTmRoQ25JV3dKVUZzZHJ0SFZ4U2s3N1I1T05fcVVqc3ZwaFMxcEs0TlJHTVBrWHk5M0pGOWJYUkxUeEpVZ3RKTHlScUd6TjV1aDJ4a1ZKYzhRcGZJN1dZaw?oc=5"
+        },
+        {
+          "title": "유가·美 국채금리 급등에 원·달러 환율 1345.9원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nQWlJbE9LdDk3dy0tRUlFSVI3VDVaWnVHWExEN2pSU1k0Z2RXamw3ZEwyeVM1bTUxYWJGVzg0eTZwQUJPRExnemZlYlMycDVVby1lX013MkIyc2c3LV9CN3g3WmM2UUpf0gFsQVVfeXFMT0dOZmJ6OHN3Nlg3UndlMzg2M05OeUxJZG5WcVBFZHJyR3FmbVVDbFZCWHdmcXByd015azJKdDNEanNBSmZWdXp0NmZwYjRxekhVRDBfOGN0U240R0dQeUlycE0zVDZDa21nY2Zm?oc=5"
+        },
+        {
+          "title": "원·달러 환율, '유가·美 금리 급등'에 1340원대 중반 마감...코스피는 다시 7000선 아래로",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBXVUNDVGZPUFRPWEQwNXZ2WjBNMXFOVnNqTERvWWVEX2VVcXlTQ3RaMU9naE5tMndQVW01Ukx1YTN0LVE4ZmJXWXljVjBPVjRPVEl1SXpHRGQtMmhZMTRPLVVlZm8?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "코스피 하락과 증시 변동성이 환율과 함께 움직인 그날의 구체적 시장 동향으로 확인된다",
+      "headline": "코스피가 7000선 아래로 밀리며 위험자산 회피 분위기가 환율에도 영향을 줬다",
+      "bullets": [
+        "코스피가 유가·美 국채금리 이중고로 1.76% 하락하며 6900선까지 후퇴했다.",
+        "삼성전자·SK하이닉스 등 대형주 하락이 겹치며 증시 전반의 투자 심리가 위축됐다."
+      ],
+      "sources": [
+        {
+          "title": "[마감시황] 코스피 ‘유가·美 국채금리’ 이중고에 1.76% 하락…6900선 후퇴",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1nNmZVa2RiQkdib0YwMjM3eGdubWxVSHdQOWRoa1Z6SWhqSXZZcXFJUnhSd084aXc3NW5neG9ZUDN2cWhqYkFFV2FRQXV3Mm1BUDVfXzZmbk5Pdy1YYTNtOGFXcWVBalVZNFljb0swRVZ5UQ?oc=5"
+        },
+        {
+          "title": "코스피, 다시 7000선 아래로...유가·금리 상승에 투심 냉각",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBjLXBRR2RmU3ZwNHhtUHFTaGdVbWVyaW42SVhBdVpDTXJ6U1hiU1hqRFFVT1BwTHllaWgwU0hPbWpIemJ6c1pSeVNZdnBRLVZJTVR0Z2Q1QUFNN3NhRjBjNzlzcTNaV09SUFo1aGF30gFyQVVfeXFMUDdCSk0tbmQyX0JpZzItZDc5bkFqLW14cF80NlQxblQ4UV90RXhoa2VlYjBFUTM2WnFyaGlWQU1Dd0NnT3VIdWVWbk9HeWZocGRsdVlma1BhYWE4a1FpLWRXQmgwOTFRQVlpcGFXM1huY1JR?oc=5"
+        },
+        {
+          "title": "코스피 7000선 붕괴.. 삼성전자·SK하이닉스까지 '줄하락' > 뉴스",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1PZU9qSWk5UmEyVDN4R3NnNWNpT1dLVXdveEx5U3p6bDB1NlJHUGhESHJENlRTdGpoMFlNWHlHM2x1TFpIR1Y3RDhXVTk3MHkyMFJ2Ym1rSXk5dHVKQmxGT1Y2ak9kUG9LdEw0WQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "claude"
+}

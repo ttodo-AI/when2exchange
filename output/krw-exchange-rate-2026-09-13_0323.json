@@ -1,0 +1,27 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-13T03:23:30.863136+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: ~1,350 KRW/USD\n\nWHY: The news explicitly forecasts the exchange rate approaching 1,350 won per dollar next week, which represents a weakening won (higher KRW per USD). This means the user will need to spend more Korean won to obtain their fixed $2,000, making it more expensive than when the won is stronger.\n\nTIP: Consider waiting for won strength (lower KRW/USD levels) to execute your monthly conversion, or use dollar-cost averaging if you cannot time the market precisely."
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 다시 1350원 넘보는 환율…중동發 유가 쇼크에 FOMC까지 '변동성 장세'",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5nM0dpS1dlZVFkTXlMQUVmMm1hZEdieUo0TUhiQVZTU1JJRUV5c1VMeTdQaENQSU9jWVpQWXBWZmxkM2M0TXdaWHBscXFTTzBoVEFDb3dDY1lsLTNCOXVFTmdOV2RSNlZFSk5yRw?oc=5",
+      "summary": "[다음주 환율전망] 다시 1350원 넘보는 환율…중동發 유가 쇼크에 FOMC까지 '변동성 장세' 굿모닝경제",
+      "source": "굿모닝경제",
+      "date": "2026-09-12T22:00:00+00:00"
+    },
+    {
+      "title": "게임 용어를 화면 위치와 연결하는 꼬마 버스 타요 토토 입문 설명",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVzk3bmJDRGs2cHgyLVU1cDM3aWFnYUE1azNVQ0dJRVdtT19SbkJyWTdNYkx3WDAxRlZlZnVoeWRxSVFTS1lZQUlfTHhRMVRSdUtzallxV3lJb0N2NWhSTDN0OWFucEVkY0pHeC1XNWZUdVE5N195bWpfVFN5OExDVXdjVFdoaWtJRUJ6VU5KWlRVeXBBTG5zSUl2LTRVbS1EWG9ITFR0YjVmekZwS1BjcEpIZndMNVp3?oc=5",
+      "summary": "게임 용어를 화면 위치와 연결하는 꼬마 버스 타요 토토 입문 설명 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-12T05:00:40+00:00"
+    }
+  ]
+}
