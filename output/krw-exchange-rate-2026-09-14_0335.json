@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-14T03:35:06.728592+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1340 KRW/USD (mid-1340s range)\n\nWHY: The won is currently weak, with the exchange rate in the 1340 KRW/USD range—meaning you need more won to buy your $2,000. While oil prices surging to $100+ are pushing the rate higher, the won faces additional weakness from strong yen competition. The news indicates uncertainty ahead with Fed and BOJ decisions pending, but current levels are unfavorable for your conversion needs.\n\nTIP: If possible, consider waiting for signs of won strengthening (rates dropping toward 1330 or lower) before converting your monthly $2,000, or stagger purchases if the rate falls."
+  },
+  "articles": [
+    {
+      "title": "[주간환율전망] 국제유가 100달러 돌파에 환율 반등…9월 인상확률 87.3%",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5OVzlnOVoyQnA2REZTZzNYTXh6cnZIYUlyU3BJb0lCWHFLVmYxTHpYUXkyeVJEUGxlY0habGptOVd2RWtiV1N2SXlFc3VZX29TRDhQUDlHNHh3SHBEakJDMlBMd0JEWDA?oc=5",
+      "summary": "[주간환율전망] 국제유가 100달러 돌파에 환율 반등…9월 인상확률 87.3% jabon.co.kr",
+      "source": "jabon.co.kr",
+      "date": "2026-09-13T22:00:00+00:00"
+    },
+    {
+      "title": "연준 금리 인상보다 엔화 강세에 영향⋯\"1330원 진입 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1jU2RxUUdhOFdrVTJ6OFZXOGR5ZXk0QmdjQjUybWxhMzNRYW1Sd2c1ZHJqcEQwRmRrRTljRmg3aWU2aFNSdnByWWZiNEd1akJtdHRTYTdfWGV6T3JR?oc=5",
+      "summary": "연준 금리 인상보다 엔화 강세에 영향⋯\"1330원 진입 시도\" [환율전망] supple.kr",
+      "source": "supple.kr",
+      "date": "2026-09-13T23:25:00+00:00"
+    },
+    {
+      "title": "[주간환율전망] 유가 급등에 하락세 '제동'···美FOMC·BOJ에 쏠린 눈",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HenFBZHJMWTBscmZaOS1LVVRPdnhwU2Q2ZkpBcHU2WFRFMmhxam5DZXhmNjIzdS1qdDNHVks0T0k5OHN5Z21CbmJ1RWQ4U21mYm15UzlTRmF3emtzcFFfUzhKUjdMYlE1YkE?oc=5",
+      "summary": "[주간환율전망] 유가 급등에 하락세 '제동'···美FOMC·BOJ에 쏠린 눈 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-09-13T08:00:00+00:00"
+    },
+    {
+      "title": "미 연준 인상 경계에도 엔화 강세…달러·원 1340원대 중반 등락",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYQmhuemJNbDFUQ3ZROEMtcy1KM2xDZXRyQnNSV3RYZ0FMLVdCS2IydVhqZFE0MEhQRFVkZGk1RDZZUmxJRlZTVk9QTUt5U0poc1FpemRGT3ItTmJuaGhRM9IBYEFVX3lxTFBYQmhuemJNbDFUQ3ZROEMtcy1KM2xDZXRyQnNSV3RYZ0FMLVdCS2IydVhqZFE0MEhQRFVkZGk1RDZZUmxJRlZTVk9QTUt5U0poc1FpemRGT3ItTmJuaGhRMw?oc=5",
+      "summary": "미 연준 인상 경계에도 엔화 강세…달러·원 1340원대 중반 등락 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-14T00:25:12+00:00"
+    },
+    {
+      "title": "배당표 예시와 실제 조합을 구분하는 베네시안 리조트 호텔 앤드 카지노",
+      "link": "https://news.google.com/rss/articles/CBMixANBVV95cUxPNVpSV3lRcHd6eENaVFhFSVZtZ2tyMk80VmhybWYwVGFMZTJaMG1jZ09FTVdMZUJ4eTZkTlVSZ2pVWVBBUm1qRm53aDduRVpCNWl0ME1tWmV0bTRCMG9aYXRKTEdEdElVcko1d21VRklQa2RLaFo0SVNkeUJUcWdIWkpTOHByWVE4YmZXUXVhX0NmaFBZV3RkX2VZNE9aQWlOQ1JjcGY0ZGctNjBzRTFnMXd1LVg1MDZLV3dHUjRvcDBtMUphNXhYdHhYSXZOME1XYjcyaGpHSnNveWtEUTJCTkQyYVZad2tDUEZ3R1RJdXJRSVhfNlZFYzJ6dEg1Y0puSE13eXdINEd5QVFjT0JRbXZsOHl2ektjS0ZYa3hHeEp2a0JXVXdSV0IzWG80YjByRzBXX0lKOGpNQ1V4akV3cFkxdjRYRUxFZ1JvTGZhS3poekgzT29UTXRyMFoyS1h1eVVlaXdaX1NPS3VZLUN0dzExZ2hmVHB1VDB6azIxMzlkdE5UUUpIU0VxNVRDZnRxYVk1RlpZTjFUQ3dDVDRxcWNMZVV5Rl9ZS3VXSmdhNDFqeWU0TF9XVUw4U2xwTEFRQmJRaA?oc=5",
+      "summary": "배당표 예시와 실제 조합을 구분하는 베네시안 리조트 호텔 앤드 카지노 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-13T13:29:45+00:00"
+    }
+  ]
+}
