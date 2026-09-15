@@ -1,0 +1,121 @@
+{
+  "generated_at": "2026-09-15T03:36:20.103065+00:00",
+  "card_title": "FOMC 임박, 유가·달러 강세에 환율 상승",
+  "tldr": [
+    "환율이 어제 1,349원에서 오늘 1,354원으로 소폭 올랐어요.",
+    "국제유가가 배럴당 100달러를 넘보면서 미국 금리 인상 우려가 커지고 달러로 돈이 몰렸어요.",
+    "모레(목요일) 미국 FOMC 금리 결정이 남아있어서 결과에 따라 환율이 더 움직일 수 있어요."
+  ],
+  "overall_why": "국제유가가 100달러에 근접하면서 미국의 물가 부담이 커지고, 이는 연준이 금리를 더 올릴 수 있다는 경계감으로 이어졌다. 이 경계감 속에 달러가 강보합을 유지하고 외국인이 주식과 채권을 동시에 팔아치우면서 원화를 팔고 달러를 사려는 힘이 겹쳤다. **모레 열리는 FOMC 결과**에 따라 이 흐름이 더 커지거나 진정될 수 있어 시장은 숨죽이고 있다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "여러 매체가 FOMC 경계 심리를 오늘 환율 상승의 가장 큰 원인으로 지목했다",
+      "headline": "FOMC 앞두고 금리 인상 경계감에 환율 상승",
+      "bullets": [
+        "9월 FOMC 금리 결정을 앞두고 시장이 결과를 주시하고 있다.",
+        "iM증권은 이번 주 환율을 1,310~1,370원으로 전망하며 FOMC의 금리 인상 가능성을 주목했다."
+      ],
+      "sources": [
+        {
+          "title": "[신윤우의 외환분석] FOMC 직전, 바닥 확인했나",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94TVdmMDJ5VE94OVp2TWtlZ3VSUy1WMXZ5S0xPNC11a2p2dEhrOWtxajl6MG8zVmpOeHotV055MmRuQlU2aW1UcjQ1MFJmVU9yNGkwdmhFY0lsN1JRYWprNGh0OWxzWFFKUVIzM290RUd6OWVr0gF0QVVfeXFMT3hNV2YwMnlUT3g5WnZNa2VndVJTLVYxdnlLTE80LXVranZ0SGs5a3FqOXowbzNWak54ei1XTnkyZG5CVTZpbVRyNDUwUmZVT3I0aTB2aEVjSWw3UlFhams0aHQ5bHNYUUpRUjMzb3RFR3o5ZWs?oc=5"
+        },
+        {
+          "title": "iM증권 \"이번주 환율 1310~1370원 전망, 9월 미국 FOMC 기준금리 인상 가능성 주목\"",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15UXhOQkhyeXJMel9fN0IxYzBXTzhvbFEzQk1iTXBiNWplaFd6bGNGdVFIbDFldEwyX09OV0UwdlNCZ21FMXhqTjMtak0zdWlmaDlXYW5adzRYUmh4M2h3VW9aUVZ5eVhNcFdCM3dWRUdkUWs?oc=5"
+        },
+        {
+          "title": "환율 1300원대 중반서 줄다리기… 美 FOMC가 분수령",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UTGZDRE8ydnVUaGd5Mmt3MnZCUU8yYS1ELXBtZzJwaFM0QWRSd2taNklXS2VsaFNDLW5xWUdQSHFrNjJEOHRJb3BscGFOU21FaEhaZ2dXZ20xUQ?oc=5"
+        },
+        {
+          "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02d9IBWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02dw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "국제유가·원자재",
+      "emoji": "🛢️",
+      "impact": 4,
+      "impact_reason": "국제유가 100달러 돌파가 금리 인상 우려를 자극한 핵심 재료로 반복 언급됐다",
+      "headline": "국제유가 100달러 근접에 긴축 우려 재점화",
+      "bullets": [
+        "국제유가가 100달러에 근접하면서 미국의 추가 긴축 가능성이 다시 부각됐다.",
+        "유가 상승이 미국 금리 5% 근접 우려와 맞물려 환율 상승 압력으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "유가 100달러가 깨운 긴축···美 금리인상 공포 재점화",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JTUt3UFIzQl91Y09iT0g2WlBRLWY1TkdGNWlmX1NZWjVPaEF6QXAwNjNybVVRMnNESDN2RFFhcy1KSXZuS2VpejJYdDIzR0xaMkJJUUlDQnF1YmpMU2lfT2FqcjE0aFQ5b09fMVAwS1Jad9IBdkFVX3lxTFAyX2t6RTJSMTVOSHFZcnRLcXpUTEJ3UEY3MC13S0pqVW9qV0xVZ2V1d3ZVM0ZRTGRtUjlsRXFXMG9WTndGS2t4MGQzWHY2eU94anUzbTVqbHlOSDFyWl9nenJENEtUNkZLcDBZTHFFaUNZTm5KVHc?oc=5"
+        },
+        {
+          "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02d9IBWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02dw?oc=5"
+        },
+        {
+          "title": "[환율 전망] 더욱 부담되는 고유가와 장기 금리의 상승",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1DZzlLU0ltYUNKQ1lKSWZTc1R4N20wQnpfYkVadHlNb0FoeENvamYwQ1gycGx0U1dPcV9lR2pmVzQ3eFVwR1J3Zl9BTGh6bHV6MzUzalhIV2FjWEZfN0l5Qg?oc=5"
+        },
+        {
+          "title": "FOMC 앞두고 1,340원대 숨죽인 환율… 유가 100달러·AI 충격에 짙어진 위험회피",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qX2hnSmVfakc0OWE3aHdyNV9ROEJMVF9Lc2tKR0JxMmZVZWt2MWNvODBSdlVMMzdlZnROUXRYZU1rSV9uUTZHSE9VX2NVRC1Dd2J1YWhRcDJCcmV1MTBCWnRCVy1uUlVH?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 3,
+      "impact_reason": "달러 강세가 FOMC 경계와 함께 작용했으나 개별 동인은 F1·F9에서 이미 설명됐다",
+      "headline": "FOMC 경계 속 달러 강보합 흐름 지속",
+      "bullets": [
+        "FOMC를 앞두고 달러가 강보합세를 보이며 환율을 지지했다.",
+        "엔화 강세와 대비되며 원/달러 환율이 1,340원대에서 등락하다 이후 1,354원까지 상승했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 1340원대 후반으로 상승…고유가·FOMC 경계에 달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yQnFnQ1VQMzlnVTUyUDhFczNVLXN4MWFmM0tZVWJBZjFacWRMUEc2YzJGWWR4OS1KSHRBNkZWbWJsX0VrZmVicFl3Z080bnRNU2NjdEF1Rk4yeWlGU0E?oc=5"
+        },
+        {
+          "title": "미 연준 인상 경계 속 엔화 강세…원·달러 환율, 1340원대",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5rUklmZmJnUFVBRTFxVjFtN3FxN2V4dzUtQTF6M1NkWFM0bFJpVWt4NUhWREVyaGZvb2tYekEwU0E5OEhsR2c?oc=5"
+        },
+        {
+          "title": "환율, 1340원대 중반서 횡보…美 FOMC 경계 속 달러 강보합",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kdjBCRGdiNGo2Nl84V2h4YUJvSS10LTBhZmRvUkdydzlwRHJQendtWV9MRW0zdDRPRTFYaEMyMm9nV2dMVWhhTHMxTjNFd3ZBZVNIajlyTUJpbHdxVnc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "외국인 자금 이탈이 환율에 추가 압력을 준 구체적 수급 이슈로 확인된다",
+      "headline": "외국인, 주식·채권 동시 이탈로 원화 매도 압력 가중",
+      "bullets": [
+        "외국인 투자자가 주식뿐 아니라 채권시장에서도 자금을 빼며 이탈세를 보였다.",
+        "이런 삼중고 흐름이 환율 상승 압력을 더한 요인으로 지목됐다."
+      ],
+      "sources": [
+        {
+          "title": "'삼중고'에 다시 돌아선 외국인…채권마저 이탈",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqMzRzd3gtRlA3V2k0YTdZMm1RVjVMWUNKVkd0dVJlWk02bFhfbWo5TXN4ellOU1FpUkZzVXlOV0NuVzMxVnBXcjRYOFo5ckpETXM4cGhIRXhJcTdOT1lKTQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}

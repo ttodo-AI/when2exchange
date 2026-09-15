@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-14T15:43:16.152127+00:00",
-  "asof": "2026-09-15 00:43 KST",
+  "generated_at": "2026-09-15T03:36:40.393095+00:00",
+  "asof": "2026-09-15 12:35 KST",
   "stale_days": 0,
-  "card_title": "FOMC 코앞, 환율 눈치보기 장세",
-  "overall_why": "이번주 목요일로 다가온 미국 FOMC 금리 결정이 오늘 환율의 가장 큰 변수로 작용했다. 국제유가가 100달러를 다시 넘어서면서 물가 부담이 커지고, 이는 연준의 금리 인상 가능성을 높여 **달러 강세로 이어지는 흐름**을 만들었다. 여기에 일본은행의 금리인상 가속 관측으로 엔화까지 강세를 보이면서, 원화는 뚜렷한 방향 없이 FOMC 결과를 기다리며 좁은 범위에서 움직이고 있다.",
+  "card_title": "FOMC 임박, 유가·달러 강세에 환율 상승",
+  "overall_why": "국제유가가 100달러에 근접하면서 미국의 물가 부담이 커지고, 이는 연준이 금리를 더 올릴 수 있다는 경계감으로 이어졌다. 이 경계감 속에 달러가 강보합을 유지하고 외국인이 주식과 채권을 동시에 팔아치우면서 원화를 팔고 달러를 사려는 힘이 겹쳤다. **모레 열리는 FOMC 결과**에 따라 이 흐름이 더 커지거나 진정될 수 있어 시장은 숨죽이고 있다.",
   "tldr": [
-    "오늘 환율은 1,345원으로 어제(1,344원)와 비슷한 수준에서 큰 변화 없이 움직이고 있어요.",
-    "이번주 목요일 FOMC 금리 결정을 앞두고 국제유가가 100달러를 넘어서면서 미국 금리 인상 경계감이 커졌어요.",
-    "목요일 FOMC 결과와 그에 따른 점도표 발표를 지켜봐야 해요."
+    "환율이 어제 1,349원에서 오늘 1,354원으로 소폭 올랐어요.",
+    "국제유가가 배럴당 100달러를 넘보면서 미국 금리 인상 우려가 커지고 달러로 돈이 몰렸어요.",
+    "모레(목요일) 미국 FOMC 금리 결정이 남아있어서 결과에 따라 환율이 더 움직일 수 있어요."
   ],
   "heat": "normal",
   "title_badge": "",
@@ -16,157 +16,158 @@
       "name": "미국 통화정책",
       "emoji": "🇺🇸",
       "impact": 5,
-      "impact_reason": "복수 매체가 오늘 환율 흐름의 1순위 원인으로 FOMC 경계감을 지목",
-      "headline": "9월 FOMC 사흘 앞두고 환율 1340원대 중반 눈치보기 장세",
+      "impact_reason": "여러 매체가 FOMC 경계 심리를 오늘 환율 상승의 가장 큰 원인으로 지목했다",
+      "headline": "FOMC 앞두고 금리 인상 경계감에 환율 상승",
       "bullets": [
-        "iM증권은 이번주 환율을 1310~1370원으로 전망하며 FOMC 기준금리 결정을 최대 변수로 꼽았다.",
-        "국제유가 100달러 돌파와 미국 금리 5% 근접 전망이 겹치며 FOMC를 앞둔 긴축 경계감이 커졌다."
+        "9월 FOMC 금리 결정을 앞두고 시장이 결과를 주시하고 있다.",
+        "iM증권은 이번 주 환율을 1,310~1,370원으로 전망하며 FOMC의 금리 인상 가능성을 주목했다."
       ],
       "sources": [
         {
-          "title": "iM증권 \"이번주 환율 1310~1370원 전망, 9월 FOMC 기준금리 결정 주목\"",
+          "title": "[신윤우의 외환분석] FOMC 직전, 바닥 확인했나",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94TVdmMDJ5VE94OVp2TWtlZ3VSUy1WMXZ5S0xPNC11a2p2dEhrOWtxajl6MG8zVmpOeHotV055MmRuQlU2aW1UcjQ1MFJmVU9yNGkwdmhFY0lsN1JRYWprNGh0OWxzWFFKUVIzM290RUd6OWVr0gF0QVVfeXFMT3hNV2YwMnlUT3g5WnZNa2VndVJTLVYxdnlLTE80LXVranZ0SGs5a3FqOXowbzNWak54ei1XTnkyZG5CVTZpbVRyNDUwUmZVT3I0aTB2aEVjSWw3UlFhams0aHQ5bHNYUUpRUjMzb3RFR3o5ZWs?oc=5"
+        },
+        {
+          "title": "iM증권 \"이번주 환율 1310~1370원 전망, 9월 미국 FOMC 기준금리 인상 가능성 주목\"",
           "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE15UXhOQkhyeXJMel9fN0IxYzBXTzhvbFEzQk1iTXBiNWplaFd6bGNGdVFIbDFldEwyX09OV0UwdlNCZ21FMXhqTjMtak0zdWlmaDlXYW5adzRYUmh4M2h3VW9aUVZ5eVhNcFdCM3dWRUdkUWs?oc=5"
         },
         {
-          "title": "환율, 1340원대 중반서 횡보…美 FOMC 경계 속 달러 강보합",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kdjBCRGdiNGo2Nl84V2h4YUJvSS10LTBhZmRvUkdydzlwRHJQendtWV9MRW0zdDRPRTFYaEMyMm9nV2dMVWhhTHMxTjNFd3ZBZVNIajlyTUJpbHdxVnc?oc=5"
+          "title": "환율 1300원대 중반서 줄다리기… 美 FOMC가 분수령",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UTGZDRE8ydnVUaGd5Mmt3MnZCUU8yYS1ELXBtZzJwaFM0QWRSd2taNklXS2VsaFNDLW5xWUdQSHFrNjJEOHRJb3BscGFOU21FaEhaZ2dXZ20xUQ?oc=5"
         },
         {
           "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
           "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02d9IBWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02dw?oc=5"
-        },
-        {
-          "title": "원·달러 환율 1340원대 중반서 눈치보기…FOMC 앞두고 방향성 탐색",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2bjlvRXlJQ1VjaGRHYTFYam91S19pWXZkVTZOZ1hvNWpBOEw0QUdCS3BiZHo0bHNUM1hBSzc4d3F0N1F3eW5TdlpJTzJ6TU9DeE9HcTFLWWtrWFFuWUpvQW5KY2J5emN0cmprcNIBbEFVX3lxTFA2bjlvRXlJQ1VjaGRHYTFYam91S19pWXZkVTZOZ1hvNWpBOEw0QUdCS3BiZHo0bHNUM1hBSzc4d3F0N1F3eW5TdlpJTzJ6TU9DeE9HcTFLWWtrWFFuWUpvQW5KY2J5emN0cmprcA?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "달러 강세(달러인덱스)",
-      "emoji": "💵",
-      "impact": 4,
-      "impact_reason": "달러 강보합이 환율 하단을 지지한 직접적 요인으로 보도됨",
-      "headline": "미 FOMC 경계 속 달러 강보합 흐름 지속",
-      "bullets": [
-        "FOMC를 앞두고 달러가 강보합세를 보이며 환율이 1340원대 중반에서 큰 변동 없이 움직였다.",
-        "두 달간 떨어졌던 환율이 미국 긴축 우려로 다시 반등할지 시험받고 있다."
-      ],
-      "sources": [
-        {
-          "title": "미 연준 인상 경계 속 엔화 강세…원·달러 환율, 1340원대",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5pOFY4NWsyNzBBOFctR1hCMktzNjgzVE0wX1hNZjg0aXdSa3pEM3VxZmRIMWxndUpkNS1VT0hsdTl4YzVEWHp1ZDl3Nm5ZT2M?oc=5"
-        },
-        {
-          "title": "환율, 1340원대 중반서 횡보…美 FOMC 경계 속 달러 강보합",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kdjBCRGdiNGo2Nl84V2h4YUJvSS10LTBhZmRvUkdydzlwRHJQendtWV9MRW0zdDRPRTFYaEMyMm9nV2dMVWhhTHMxTjNFd3ZBZVNIajlyTUJpbHdxVnc?oc=5"
-        },
-        {
-          "title": "원·달러 환율 1340원대 중반서 눈치보기…FOMC 앞두고 방향성 탐색",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9fOHdKMk9SRk9VeURveUxFbFU3amsyZGZ2aUJYX3J2WjA1Q1hWWXM1YmhGZGFuV0hYZGRadW9nekVBOWtUUjZlcGVOYUR1LXE1dEZsWmZwOWF0MkFqUnhHVnRxQjQweE1B0gFsQVVfeXFMUDZuOW9FeUlDVWNoZEdhMVhqb3VLX2lZdmRVNk5nWG81akE4TDRBR0JLcGJkejRsc1QzWEFLNzh3cXQ3UXd5blN2WklPMnpNT0N4T0dxMUtZa2tYUW5ZSm9BbkpjYnl6Y3Ryamtw?oc=5"
-        },
-        {
-          "title": "두달간 200원 넘게 떨어진 환율…美 긴축에 다시 반등할까",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcFFUVjIwNUJNTzZxQ1hMakpESVdjNmg3YVJ6M0t3RHBET1J2cElzbk83WUxfX3Y5Sy1NVTU1ZHd6bXVWNzFOR3VGU0k2VjUwblNqVmlaV05mRVB1MG5yRE1BSmtRTHl3ajdZQjR2eTZ5SFI1OFdfcG1LZmctekdvdQ?oc=5"
         }
       ]
     },
     {
       "name": "국제유가·원자재",
       "emoji": "🛢️",
-      "impact": 3,
-      "impact_reason": "유가 급등이 미국 금리 인상 우려를 키운 매개 요인으로 작용",
-      "headline": "국제유가 100달러 돌파가 미국 긴축 우려 재점화",
+      "impact": 4,
+      "impact_reason": "국제유가 100달러 돌파가 금리 인상 우려를 자극한 핵심 재료로 반복 언급됐다",
+      "headline": "국제유가 100달러 근접에 긴축 우려 재점화",
       "bullets": [
-        "국제유가가 다시 100달러를 넘어서며 유통업계 원가·물류비 부담이 커졌다는 보도가 나왔다.",
-        "유가 100달러가 미국 금리인상 공포를 재점화시켰다는 분석이 나왔다."
+        "국제유가가 100달러에 근접하면서 미국의 추가 긴축 가능성이 다시 부각됐다.",
+        "유가 상승이 미국 금리 5% 근접 우려와 맞물려 환율 상승 압력으로 작용했다."
       ],
       "sources": [
-        {
-          "title": "회복 흐름 속 커진 대외 변수 '9월 경제진단이 던진 두 개의 신호'",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE83TzJCcUdfU2pGYVN5eW1nblExbDYwT2pxcXRfeFptUS16SFl3RE5qQl84SWtOUnlEUVFYeGtjWUlyREpOLUtISmJaQWFBejI4ZUpKVVQtQ3FzbzNjUEE?oc=5"
-        },
         {
           "title": "유가 100달러가 깨운 긴축···美 금리인상 공포 재점화",
           "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JTUt3UFIzQl91Y09iT0g2WlBRLWY1TkdGNWlmX1NZWjVPaEF6QXAwNjNybVVRMnNESDN2RFFhcy1KSXZuS2VpejJYdDIzR0xaMkJJUUlDQnF1YmpMU2lfT2FqcjE0aFQ5b09fMVAwS1Jad9IBdkFVX3lxTFAyX2t6RTJSMTVOSHFZcnRLcXpUTEJ3UEY3MC13S0pqVW9qV0xVZ2V1d3ZVM0ZRTGRtUjlsRXFXMG9WTndGS2t4MGQzWHY2eU94anUzbTVqbHlOSDFyWl9nenJENEtUNkZLcDBZTHFFaUNZTm5KVHc?oc=5"
         },
         {
-          "title": "다시 100달러 넘은 국제유가…유통업계 '원가·물류비' 긴장",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE16UXE5ckVJQ3FCY0c1UjgyQWt6emxtZzBQMGxaWUItei1RY0NWdndvOE5NWVdPMGVpeGxTS19Na1U2aUV6UUEteDdNbXZudVJPaXhFM3MyazF5OHBCeUM40gFkQVVfeXFMUENyYTA5MXNNb05fSS1QU0draER4YnpyVWQwYkZfNnhHeHZyV25DSFNRMjRrV2hUdHZ2bkZfcFdxVGQ5ajBQb0R3eFc3U21WV2FRR3lRWGlHMUROc0s2bDRZVW1JWQ?oc=5"
+          "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02d9IBWkFVX3lxTFBBMzFScVgzd0k5TldzQ2tKTTBVUWFPdVh6U29jeFZodVoxTWRaeXk2T0djTjBDOUlzbkVRYmpQdVAwS1ZLTm1GOHZRUWxHQW9JWTRjaUFibC02dw?oc=5"
+        },
+        {
+          "title": "[환율 전망] 더욱 부담되는 고유가와 장기 금리의 상승",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1DZzlLU0ltYUNKQ1lKSWZTc1R4N20wQnpfYkVadHlNb0FoeENvamYwQ1gycGx0U1dPcV9lR2pmVzQ3eFVwR1J3Zl9BTGh6bHV6MzUzalhIV2FjWEZfN0l5Qg?oc=5"
+        },
+        {
+          "title": "FOMC 앞두고 1,340원대 숨죽인 환율… 유가 100달러·AI 충격에 짙어진 위험회피",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9qX2hnSmVfakc0OWE3aHdyNV9ROEJMVF9Lc2tKR0JxMmZVZWt2MWNvODBSdlVMMzdlZnROUXRYZU1rSV9uUTZHSE9VX2NVRC1Dd2J1YWhRcDJCcmV1MTBCWnRCVy1uUlVH?oc=5"
         }
       ]
     },
     {
-      "name": "그 외 환율 이슈",
-      "emoji": "🔎",
-      "impact": 2,
-      "impact_reason": "엔화 강세와 재정 속도조절론 등 부수적 이슈가 환율 방향에 일부 영향",
-      "headline": "엔화 강세와 국내 재정 속도조절론이 환율에 추가 변수로 작용",
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 3,
+      "impact_reason": "달러 강세가 FOMC 경계와 함께 작용했으나 개별 동인은 F1·F9에서 이미 설명됐다",
+      "headline": "FOMC 경계 속 달러 강보합 흐름 지속",
       "bullets": [
-        "일본은행의 금리인상 가속 관측에 엔화가 1달러=153엔대 후반까지 강세를 보이며 원화에도 영향을 줬다.",
-        "금융위기 이후 최고 수준 환율을 배경으로 국내에서 확장 재정 속도조절론이 확산되고 있다는 보도가 나왔다."
+        "FOMC를 앞두고 달러가 강보합세를 보이며 환율을 지지했다.",
+        "엔화 강세와 대비되며 원/달러 환율이 1,340원대에서 등락하다 이후 1,354원까지 상승했다."
       ],
       "sources": [
         {
-          "title": "엔화, 日 금리인상 가속 관측에 1달러=153엔대 후반 상승 출발",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QSVh3VnEzYlJSdXI4eml4WmUwNkJzUzYtX3I3STU5S1hQb0owZHQySUZfZF9KTEFUMWpJM1ZIcjZTYXJHLWxRWnNib2R0ZENTclZIMjdvcjhwaDI2UDRJWjk3aC1hejctcFFIN3Y3UUY3TTAxdnN2N9IBeEFVX3lxTE9QSVh3VnEzYlJSdXI4eml4WmUwNkJzUzYtX3I3STU5S1hQb0owZHQySUZfZF9KTEFUMWpJM1ZIcjZTYXJHLWxRWnNib2R0ZENTclZIMjdvcjhwaDI2UDRJWjk3aC1hejctcFFIN3Y3UUY3TTAxdnN2Nw?oc=5"
+          "title": "환율, 1340원대 후반으로 상승…고유가·FOMC 경계에 달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yQnFnQ1VQMzlnVTUyUDhFczNVLXN4MWFmM0tZVWJBZjFacWRMUEc2YzJGWWR4OS1KSHRBNkZWbWJsX0VrZmVicFl3Z080bnRNU2NjdEF1Rk4yeWlGU0E?oc=5"
         },
         {
-          "title": "금융위기 이후 최고 환율…‘확장 재정’ 속도 조절론 확산",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rYjhuYUhMa0pzMEdWaTdaNlFZbW0tX3lDNzJlSTFOeE5BR2Zmc1NsVzVTRWhLZVpPcjU4WkJXUGxXOEpPaHI4OW52YnRVNWx2QS1MdW9GdkFCMnNZTlZhUnZ1cw?oc=5"
+          "title": "미 연준 인상 경계 속 엔화 강세…원·달러 환율, 1340원대",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5rUklmZmJnUFVBRTFxVjFtN3FxN2V4dzUtQTF6M1NkWFM0bFJpVWt4NUhWREVyaGZvb2tYekEwU0E5OEhsR2c?oc=5"
         },
         {
-          "title": "중동 불안 vs 엔화 강세…환율 1330~1350원 줄다리기 [외환브리핑]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWVc0N3czaHUwVXBJMkRKa2VRaWo1ak9HQU1EbV9LV2QxZlZZZzNQMVdReWY4Ny00ZnVIcHdzeDZVWmJvR1dOTzBlLUk5akF2blJVNWEtcTJFWXZqamxnOWJPRDNULVl0Vnh3NTZ6UHBpWTBxR2JFa0pmMkVIaUlLVw?oc=5"
+          "title": "환율, 1340원대 중반서 횡보…美 FOMC 경계 속 달러 강보합",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9kdjBCRGdiNGo2Nl84V2h4YUJvSS10LTBhZmRvUkdydzlwRHJQendtWV9MRW0zdDRPRTFYaEMyMm9nV2dMVWhhTHMxTjNFd3ZBZVNIajlyTUJpbHdxVnc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "외국인 자금 이탈이 환율에 추가 압력을 준 구체적 수급 이슈로 확인된다",
+      "headline": "외국인, 주식·채권 동시 이탈로 원화 매도 압력 가중",
+      "bullets": [
+        "외국인 투자자가 주식뿐 아니라 채권시장에서도 자금을 빼며 이탈세를 보였다.",
+        "이런 삼중고 흐름이 환율 상승 압력을 더한 요인으로 지목됐다."
+      ],
+      "sources": [
+        {
+          "title": "'삼중고'에 다시 돌아선 외국인…채권마저 이탈",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqMzRzd3gtRlA3V2k0YTdZMm1RVjVMWUNKVkd0dVJlWk02bFhfbWo5TXN4ellOU1FpUkZzVXlOV0NuVzMxVnBXcjRYOFo5ckpETXM4cGhIRXhJcTdOT1lKTQ?oc=5"
         }
       ]
     }
   ],
   "calendar": {
-    "guide": "이번 주 핵심은 9월 11일 이미 발표된 미국 8월 CPI 결과의 여진과 다음 주 9월 17일 FOMC 금리결정이다. FOMC 점도표에서 향후 인상 속도가 매파적으로 나오면 달러 강세로 원/달러 환율이 오를 수 있어 급한 환전은 FOMC 전에 일부 분산 처리하는 것이 안전하다. 발표 당일과 다음날은 변동성이 커질 수 있으니 큰 금액 환전은 결과 확인 후 진행을 권한다.",
+    "guide": "이번 주 목요일(9/17) 미국 FOMC 금리 결정과 점도표가 가장 큰 변수다. 시장은 9월 금리 인상 확률을 높게 보고 있어 실제 인상 시 달러 강세로 원/달러 환율이 추가 상승할 수 있다. 환전 계획이 있다면 FOMC 발표 전후 변동성에 대비해 분할 환전을 권장한다.",
     "events": [
       {
         "date": "2026-09-11",
         "time": "21:30",
         "name": "미국 8월 소비자물가지수(CPI)",
         "importance": 3,
-        "summary": "CPI 결과가 FOMC 금리 인상 기대를 자극해 환율 변동성 확대",
-        "why": "CPI가 예상보다 높으면 연준의 금리 인상 압박이 커져 달러 강세, 원/달러 환율 상승 요인이 된다",
-        "result": "CPI 발표 후 미 금리인상 확률이 85%까지 오르며 고유가와 겹쳐 환율 상승 압박이 커졌다",
-        "scenarios": [],
+        "summary": "CPI 결과가 FOMC 금리 결정 기대를 좌우해 환율 변동성 확대",
+        "why": "CPI가 예상보다 높으면 연준의 긴축 강도가 세질 것이란 기대로 달러가 강세를 보이기 쉽다",
+        "result": "",
+        "scenarios": [
+          {
+            "cond": "예상보다 높게 나오면",
+            "effect": "연준 긴축 우려로 달러 강세, 원/달러 환율 상승"
+          },
+          {
+            "cond": "예상보다 낮게 나오면",
+            "effect": "긴축 완화 기대로 달러 약세, 원/달러 환율 하락 압력"
+          }
+        ],
         "sources": [
           {
             "title": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
             "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NQnpkSjQ0bmNGanZiZWtpbFB4ejNSQTVTNDdGUVJMaTNWR002OTIwQmtQYUxSNUhpeXlKWVJJaGVQYVRDTm9ZR3VoUHVtUW1wLVlveWpOVzZpQ2R3RTZkc3pQejVSYnVsaml6Y3l6TDdQeXFlUE11RTRuNzdTUQ?oc=5",
-            "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 contents.premium.naver.com"
+            "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 네이버 프리미엄콘텐츠"
+          },
+          {
+            "title": "오늘 밤 미국 PPI, 이번에는 왜 더 중요할까｜9월 금리 인상 여부의 첫 번째 시험대",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wT0g4SWM1b2t5SFRESXc2ZVFiUjBVTFppNjdhOTlBampEVW1Ia3NvSG9uNnVuclM1QURRODQ2ZjZyaVZMNjU3Z0VyMWdOeVZPTGpxaXVNTWZyWUJWM1p0SjBGekgyTFpQYjRscEx0c1FQVmNTc0FXa1JjcWVRdw?oc=5",
+            "snippet": "오늘 밤 미국 PPI, 이번에는 왜 더 중요할까｜9월 금리 인상 여부의 첫 번째 시험대 네이버 프리미엄콘텐츠"
           },
           {
             "title": "9월 PPI·CPI·FOMC, 비트코인 금리 시험대",
             "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9GSnNQV3RtaUROLUU1WjdJdWE2X1pybFlnMU1RWHlmMUM4NXFXWERKUnlnN0tqaFZvZUlKdExZbmxnQVl3aFRnelI4Mm9NNEkwRXBhSEN1ONIBXEFVX3lxTFB4eDI1eTR5YURfZVA2a1g3c0FGOVIwaUxVSjN6cVdFSkxoOFVJQkRYYk9fYmV4bVk5aW1HLVl5a01yb0ZhZ2hEZTFBOGFUYkg5TnlYTUM2bVQzLWxE?oc=5",
             "snippet": "9월 PPI·CPI·FOMC, 비트코인 금리 시험대 tokenpost.kr"
-          },
-          {
-            "title": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다",
-            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5",
-            "snippet": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다 쿠키뉴스"
           }
         ]
       },
       {
         "date": "2026-09-17",
         "time": "03:00",
-        "name": "미국 9월 FOMC 금리결정 및 점도표",
+        "name": "미국 9월 FOMC 금리 결정 및 점도표",
         "importance": 3,
-        "summary": "연준의 금리 인상 여부와 점도표가 달러 방향성을 결정하는 최대 변수",
-        "why": "금리 인상과 매파적 점도표가 확인되면 달러 강세 압력이 커져 원/달러 환율이 오를 가능성이 크다",
+        "summary": "금리 인상 여부와 향후 경로 전망이 달러 방향성 결정",
+        "why": "금리 인상 확률이 85%로 높게 형성돼 실제 결정과 점도표 톤이 환율에 직접적 충격을 줄 수 있다",
         "result": "",
         "scenarios": [
           {
-            "cond": "금리 인상 및 매파적 점도표 확인 시",
-            "effect": "달러 강세로 원/달러 환율 상승 압력 확대"
+            "cond": "예상대로 금리 인상하고 매파적 점도표 나오면",
+            "effect": "달러 강세 심화, 원/달러 환율 추가 상승"
           },
           {
-            "cond": "금리 동결 또는 완화적 신호 시",
-            "effect": "달러 약세로 원/달러 환율 하락 압력 발생"
+            "cond": "금리 동결하거나 비둘기파적 신호 나오면",
+            "effect": "달러 약세 전환, 원/달러 환율 하락"
           }
         ],
         "sources": [
@@ -186,6 +187,42 @@
             "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
           },
           {
+            "title": "주간 전망: 엔비디아와 마벨 실적이 AI 투자 수요를 시험하는 가운데 워시 잭슨홀 데뷔",
+            "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPa183Um03dDJzd09EU0wzSEdfeXRoQVhsSVBqQkFQRXVqNlk4UHJTdHhKTVpsOUYzVE03QzNmREJQYUlaaDVMN0hYaFpLM1V1dmJPWlNXUTFwampxWHc0SW1XVk9EWHlQdW9hWlFIaDRaR3lNcmxoZjM1cVA0djB0Ny0tNVAyMGZtbm9naF82blZfVGRnQmoxWGlDUVRUc3Z1TUt6cWhEM18yUUQxMHNqaUFRckpHZDJFdHd1c0trTzhJUDhBaHE4X016Ry1ZUXFMSW42MGZVZV9JYWs?oc=5",
+            "snippet": "주간 전망: 엔비디아와 마벨 실적이 AI 투자 수요를 시험하는 가운데 워시 잭슨홀 데뷔 TradingKey"
+          },
+          {
+            "title": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정",
+            "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa0EwR3VpUDZNQkZnTWRDV251WHdmdXFrb3pXdGQxNEx6dk9CWWxlTDFISG1FY01lbU5LWkl4eUpsaG5jemVCSHJybXFsazFPV0ppd0tyZXRXZVZUOUJ5TlliLUtGNnpuZTJzclF0Z19hQ3M4emxJTlJNZDZ5eXdxa281cXhuTzFNRkJsS0Q2R3M2TlRGWWFkQ3E3Y2ZTM3UyeFBwTTlwM1ExU21KaFhtM2toZ3l0TGpmUVJwdnBpZw?oc=5",
+            "snippet": "주간 전망: 이르면 일요일 미-이란 평화 협정 체결 예정; 워시의 FOMC 데뷔 카운트다운; OpenAI CEO 알트만 한국 방문 예정 TradingKey"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "time": "",
+        "name": "일본은행(BOJ) 금리 결정",
+        "importance": 2,
+        "summary": "엔화 방향성 변화가 원화에도 간접 영향",
+        "why": "미국과 일본의 금리 정책 격차가 좁혀지거나 벌어지면 원/엔 재정환율을 통해 원/달러에도 영향을 줄 수 있다",
+        "result": "",
+        "scenarios": [
+          {
+            "cond": "BOJ가 금리 인상하면",
+            "effect": "엔화 강세로 원화도 동반 강세 압력"
+          },
+          {
+            "cond": "BOJ가 동결하면",
+            "effect": "엔저 지속, 원화 약세 압력 지속"
+          }
+        ],
+        "sources": [
+          {
+            "title": "美와 벌어지고 日과 좁혀지나…한은 '금리차 샌드위치' 시험대",
+            "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92eUlTa0p1UnhyYXpMdVd1S3BYaEhReXo5dnhOSVJKdnQ4Y2EteUc5cFdWaWVKSXE5UURmTmxtYmFvb3lfZF9Ra09PdE1UeC0zdTlTN3djX1NmQVpGWm96Nw?oc=5",
+            "snippet": "美와 벌어지고 日과 좁혀지나…한은 '금리차 샌드위치' 시험대 메트로신문"
+          },
+          {
             "title": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정",
             "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaMjhmTHJRa1JWSlZaakJLdW5oMTRvNmhjMjktZTNjYnFyTExRMkdBeTJ3cFZReEVmMGVFY2MwZFR6aG5abnNQdXFiczR4ZGZEb1F1OU1NWlZZOGhwOVNLdk5CTDBaZ295MkHSAWpBVV95cUxQWjI4ZkxyUWtSVkpWWmpCS3VuaDE0bzZoYzI5LWUzY2JxckxMUTJHQXkyd3BWUXhFZjBlRWNjMGRUemhuWm5zUHVxYnM0eGRmRG9RdTlNTVpWWThocDlTS3ZOQkwwWmdveTJB?oc=5",
             "snippet": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정 newskr.kr"
@@ -193,6 +230,6 @@
         ]
       }
     ],
-    "today_kst": "2026-09-14"
+    "today_kst": "2026-09-15"
   }
 }

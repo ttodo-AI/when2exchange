@@ -1,0 +1,55 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-15T03:35:38.892927+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,340 KRW/USD (late 1340s range)\n\nWHY: The won is currently strong (requiring only ~1,340 KRW per USD), meaning your monthly $2,000 conversion is expensive in won terms right now. News reports highlight significant exchange-rate volatility rather than a favorable trend, with the rate fluctuating in the mid-1300s range and uncertainty around US long-term interest rates and the upcoming FOMC decision creating unpredictability.\n\nTIP: Given the volatility and current strong won, consider splitting your monthly $2,000 purchase into smaller weekly or bi-weekly conversions to average out the timing risk, rather than converting a large lump sum when the rate is unfavorable."
+  },
+  "articles": [
+    {
+      "title": "원화 강세보다 무서운 환율 변동성…수출기업 사업 계획도 '안갯속'",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWGpsTGxadUFCTUFTd1ozRTNndU1VU1NyZ1B6aHQ1SUJlLXh3SjYtZU9MMUNFaDR2U3p3eTJnMUFhMGdYZnBsTndpMHpNUDZSZ3EwQjY2b2U5cFIwR204RFMzYlhXeEVHTXZOamJPSFRqRGYzeHpETG5vYmVNWXZJU29zcw?oc=5",
+      "summary": "원화 강세보다 무서운 환율 변동성…수출기업 사업 계획도 '안갯속' 인베스트조선",
+      "source": "인베스트조선",
+      "date": "2026-09-14T22:04:27+00:00"
+    },
+    {
+      "title": "국제 유가·美 장기금리 급등…원·달러, 1340원대 후반",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBvWXUybVFLVVR4WWw3a21NNmRsNk12S2FSTFpTb004STN0UFMxYmw3LWo1UWJCSTdLcXFLUVVkeWp4aHpIdlphSHI0VzhuTndaTU15NlN5c0d0YnZEaWgtV3FlUGkwNlNRZ3FaMktjU2NLMFZaRWFCcNIBeEFVX3lxTFBvWXUybVFLVVR4WWw3a21NNmRsNk12S2FSTFpTb004STN0UFMxYmw3LWo1UWJCSTdLcXFLUVVkeWp4aHpIdlphSHI0VzhuTndaTU15NlN5c0d0YnZEaWgtV3FlUGkwNlNRZ3FaMktjU2NLMFZaRWFCcA?oc=5",
+      "summary": "국제 유가·美 장기금리 급등…원·달러, 1340원대 후반 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-09-15T00:20:36+00:00"
+    },
+    {
+      "title": "[퇴근길머니] '삼전·닉스' 던지는 개미들…김해공항 은행 찾기 '난항'",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBtY1BZRjdha1RDNUNBc0plWWMwLTdNMWdzYk5TWHRmeWhlbG9tX21BTGdNbTIyLW9SMUdBbm8tUHRrV2lfeExEWjZ4WndBQU9jVm1kYldWdm1zUVNSa2VqMNIBYEFVX3lxTFBtY1BZRjdha1RDNUNBc0plWWMwLTdNMWdzYk5TWHRmeWhlbG9tX21BTGdNbTIyLW9SMUdBbm8tUHRrV2lfeExEWjZ4WndBQU9jVm1kYldWdm1zUVNSa2VqMA?oc=5",
+      "summary": "[퇴근길머니] '삼전·닉스' 던지는 개미들…김해공항 은행 찾기 '난항' 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-09-14T08:22:05+00:00"
+    },
+    {
+      "title": "테마부터 조작까지 이어지는 겜블시티 환전 상세 탐색",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNem0zZ1JsMENva2d2aEZiTDF2YmVESVlsY1hfZlhmQlppckJvcE93WUVxV0NSbUs0WWp6eEw2V3YyUm1uTWQtQkNhZDN3NzMyNlBUUS1FbllUMERrNHY1V3l2Q09DS09ZelRoX0lLd1Q1VG1MSFE0SkZNaDhrbUZCVzNSczRFalVJd2xoOVo3UmtnWEJacnRBOXBPM3ExS3R0UnAtaXN0dlhhNndIZC1GRGdVbFp1cXB5aWtRS0pB?oc=5",
+      "summary": "테마부터 조작까지 이어지는 겜블시티 환전 상세 탐색 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-14T11:33:54+00:00"
+    },
+    {
+      "title": "설마 이럴 줄 몰랐다…환율의 역습",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAtYWJBNHlHd0U1NGROX1FVMEtDUTh4blUzWlNZVEY4VmJBZzlBU1F4YXNSUkx6VFctN2ZqMV9aRDlPM3R3elE?oc=5",
+      "summary": "설마 이럴 줄 몰랐다…환율의 역습 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-09-14T12:03:00+00:00"
+    },
+    {
+      "title": "환율 1300원대 중반서 줄다리기… 美 FOMC가 분수령",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UTGZDRE8ydnVUaGd5Mmt3MnZCUU8yYS1ELXBtZzJwaFM0QWRSd2taNklXS2VsaFNDLW5xWUdQSHFrNjJEOHRJb3BscGFOU21FaEhaZ2dXZ20xUQ?oc=5",
+      "summary": "환율 1300원대 중반서 줄다리기… 美 FOMC가 분수령 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "date": "2026-09-14T09:21:37+00:00"
+    }
+  ]
+}
