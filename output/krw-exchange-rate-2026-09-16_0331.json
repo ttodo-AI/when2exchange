@@ -1,0 +1,69 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-16T03:31:48.936942+00:00",
+  "window_hours": 24,
+  "count": 8,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,359–1,365 KRW/USD\n\nWHY: The won has recently strengthened significantly (from 1500→1300 range), making dollars cheaper than they were. However, the rate is currently consolidating around the 1,365 resistance level with mixed signals—some analysts expect further strength toward 1,200 won/dollar, while others cite export dollar supply potentially causing a rebound. You're catching a relatively favorable moment versus recent highs, but future upside is uncertain.\n\nTIP: Since your obligation is fixed at $2,000/month, consider splitting purchases across 2–3 days each month to smooth out daily volatility rather than waiting for a \"perfect\" rate that may not come."
+  },
+  "articles": [
+    {
+      "title": "200원 내린 달러·원 환율... 수출 달러 소진에 반등하나",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1HOFV4ZjZ4UkRoUmN2bllWM21zUnhPTDFQWGNqSkJfME1ueW83V3dKZnM2emtnZGowR0xaZmh3cy14bEw3eGt6OHZ2aG53Y0dQb3A4dHZkek9pUlFrR0pYUW5TOGQ0ODV50gFoQVVfeXFMTUc4VXhmNnhSRGhSY3ZuWVYzbXNSeE9MMVBYY2pKQl8wTW55bzdXd0pmczZ6a2dkajBHTFpmaHdzLXhsTDd4a3o4dnZobndjR1BvcDh0dmR6T2lSUWtHSlhRblM4ZDQ4NXk?oc=5",
+      "summary": "200원 내린 달러·원 환율... 수출 달러 소진에 반등하나 매일일보",
+      "source": "매일일보",
+      "date": "2026-09-15T05:44:31+00:00"
+    },
+    {
+      "title": "원·달러 환율, 12.1원 오른 1359.4원 마감(종합)",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5UZUxaTXRtbUtueFJTbXR6NkZ2OE1TYWNwU0tIaUZFLUVKWDdrOU1nZFQ1Q1FnaFo0SExERU12RExHckREeENjLUp4WjhEcFJUYm9uNURBUVZQZGJXQXhJUdIBeEFVX3lxTE0zb01tUlhJUWlaSHlzYmRLa2pUME1xTmU0dnlrN0pQVW93WmIxWTRZb29iZGhUS0o2WUNNY2xiRF9fQVludFkyTWxuZkpmMmx6YUI1VFVDZTBTa2MwaXFoQ3AwWFdqTEJkTGZ6MlVZbmxlTDREZURJSw?oc=5",
+      "summary": "원·달러 환율, 12.1원 오른 1359.4원 마감(종합) 뉴시스",
+      "source": "뉴시스",
+      "date": "2026-09-15T06:39:59+00:00"
+    },
+    {
+      "title": "원·달러 환율 '1500→1300원대'...\"1200원대 진입 가능성\" 전망도",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE95OEh5SklvZ0NxdHloT3lYUjBxeGlQbVpxQjVmSmFnNncxbG04Xy1aVmw2OXp2V0dRVE5pakI5LXBSa3R4dXlCZmlpaGpTdlFFOFZwYUxQcWgzZjE2dnZsOWgyREF5bGZFOWVLWjdTTWcwUQ?oc=5",
+      "summary": "원·달러 환율 '1500→1300원대'...\"1200원대 진입 가능성\" 전망도 중앙이코노미뉴스",
+      "source": "중앙이코노미뉴스",
+      "date": "2026-09-15T23:34:34+00:00"
+    },
+    {
+      "title": "슬롯 어플 릴 수와 행 수를 읽는 법",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcTl4OWlCWFZ0SWJlb0dNRzhLbGxYSU9OOXVXdXRXTGZjSERHaTI1NGZteUhadDE1Q0pNSkNyT3Q3aWcwX2dpeXkyNW5jM2ZQcERkdGoxTU9kNy0tX3hXTzN6a28zNm4weTRXVUpPd3k1LXgzSVM3T096NFl6am9hUHJLb3Q3UFItemFlc0xMaXA4SG5QajN6QnhobUhHcVY4cjd0dXZnZ2tpN29udllqR2tMcGM?oc=5",
+      "summary": "슬롯 어플 릴 수와 행 수를 읽는 법 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-15T07:09:43+00:00"
+    },
+    {
+      "title": "같은 기능도 이름이 달라지는 kbo 불법 도박 누구 용어 비교",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNS0FydjgyeGs2eUh2T3RhTmVDVzJDYktrVUVwMUM3aFRIT2kyaTZ2RDJoR3VGN2ZiY3RYX005T3M1NmN0NWl3OGNTbFFCWHQ4aTJhLXV2QmZIR0JUVXo5Zm1QSWw2RUJjUENXMTYzM0dCd1kyaERnZmtmR21UTzhXUWU1dnhMTlBBamxOMExRSERsYnFNa19TS3k5cmRITHBtSU9qNk5yN0VmTF9JRHVrSkZDaDRhV1M2LW5rcWpZN2V3Z0E?oc=5",
+      "summary": "같은 기능도 이름이 달라지는 kbo 불법 도박 누구 용어 비교 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-15T06:07:01+00:00"
+    },
+    {
+      "title": "카지노 배너 베스트 온라인 카지노슬롯보증 정리 지속적 통합 핵심 전략",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVmdZUkxuMDdMOTlrcWlkNU5PNWszLUFNemc0Rjlrc2hScFp3ZVhMSFVEQVh0bWFSWkp0LUhLaXQwTGlCeGZWTnhjS2kxcFdRelhTeWQ0QlV6MTZmR0piQ2hBdnBnQkZMbE1Pc1VPN004Qk1ydmxzdGxyOVRRNzV1bGpxTDNaYUQ3dU03NklVTGFwYUVfeFZSN3UyMXZVT3lES0p4SFNWTml3UjRGWGRPWnhaSm9waUlkeFFNVDFNZ0VOWDN5T1Yw?oc=5",
+      "summary": "카지노 배너 베스트 온라인 카지노슬롯보증 정리 지속적 통합 핵심 전략 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-15T09:44:31+00:00"
+    },
+    {
+      "title": "모바일 이용 전 알아둘 대선 토토 화면 비율",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPXzBPYUhQRUZDa3dyX3R5RTRoYlNzMEZuUmdxbTJrYkJtQ3I3S0xFa0dfQmU5el9qaUM1aHZjbVU1MUFmTHNsUjItUTRJWkZVcTczR0hIaHl5eEkyRWRtVEhxYXpQUm1HY0F1T3k2azZLSkNmV3BxdlJ5Si1wRVBFaFZsX1pkNmUwZTBYMkVGTk42b0gtWEtQblRaeDZTWWFJSmtDRTV5TGdmWDZDMEF6OW93eDNOTEVUSEtV?oc=5",
+      "summary": "모바일 이용 전 알아둘 대선 토토 화면 비율 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-15T04:33:56+00:00"
+    },
+    {
+      "title": "미국 달러/한국 원 환율 전망: ₩1,365 저항선 부근에서 횡보",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPbF9SaFVaSWpFaFRCSUxxWDl3UEpzOGRwZENidnBELWZPc0trUWpHY0NRVU92QjFsSWw1anFNSEdpeW5VdTBRM2xqd2FpSUR5aXFIVEV5SS1IczFtVE9tTVI0RFZGbTlEYWl4UERKeDQ3b3VfV3FlSGwzRmRELVJuWTlnVS1qMElM?oc=5",
+      "summary": "미국 달러/한국 원 환율 전망: ₩1,365 저항선 부근에서 횡보 Traders Union",
+      "source": "Traders Union",
+      "date": "2026-09-15T06:07:22+00:00"
+    }
+  ]
+}

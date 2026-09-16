@@ -1,0 +1,111 @@
+{
+  "generated_at": "2026-09-16T03:32:44.611508+00:00",
+  "today_kst": "2026-09-16",
+  "guide": "이번 주 목요일(9/17) 새벽에 발표되는 미국 FOMC 금리결정과 점도표가 원/달러 환율의 최대 변수다. 시장은 9월 금리인상 확률을 85%로 보고 있어 실제 인상 여부와 워시 의장의 발언 강도에 따라 환율 변동성이 커질 수 있다. 환전이 급하지 않다면 FOMC 결과 발표 이후 시장 반응을 확인하고 움직이는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "CPI 결과가 이번 주 FOMC 금리인상 기대를 좌우해 환율 변동성을 키웠다",
+      "why": "CPI가 예상보다 높으면 연준의 금리인상 명분이 강해져 달러 강세·원화 약세 압력이 커진다",
+      "result": "CPI 발표 후 9월 금리인상 확률이 85%까지 치솟으며 달러 강세, 원/달러 환율 상승 압력이 커졌다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NQnpkSjQ0bmNGanZiZWtpbFB4ejNSQTVTNDdGUVJMaTNWR002OTIwQmtQYUxSNUhpeXlKWVJJaGVQYVRDTm9ZR3VoUHVtUW1wLVlveWpOVzZpQ2R3RTZkc3pQejVSYnVsaml6Y3l6TDdQeXFlUE11RTRuNzdTUQ?oc=5",
+          "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "비트코인(BTC), 금리 발표보다 'CPI'에 더 '출렁'...금요일 발표에 시선집중",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9LRmNReXd4ZGExTWMwNmhGb3ltSElpR3BLV21fc1NYQnJvdHpyd1BMTFJTQk5oRWZuTkJsTENUWGptUTNQTHhPbWNR?oc=5",
+          "snippet": "비트코인(BTC), 금리 발표보다 'CPI'에 더 '출렁'...금요일 발표에 시선집중 코인리더스"
+        },
+        {
+          "title": "9월 11일 CPI 앞둔 비트코인, 변동성 시험대",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10aDROY2RYV1NnTzVYU2c5eWNHNlFZR0dXT01CUWNSWG0xT0NwSTN6NHFzNUhFaTVXODhfaEo0cUhmTnQwY3Fza281NWZMLUtkSkNIOUJTZFN3VDBTR0gxSdIBZkFVX3lxTE1tVXZjTFpudzZJVko4TlBfU1lVTkJHY1RRdFNyRTlkM2JVeFh1T2I5bEhONzFmV3ZpeWFydEYyRUJRZjd6SlNKaU5YYWJkZWFxcVk3VDdMeEt5dGozbDdQajV5N2o3QQ?oc=5",
+          "snippet": "9월 11일 CPI 앞둔 비트코인, 변동성 시험대 tokenpost.kr"
+        },
+        {
+          "title": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5",
+          "snippet": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다 쿠키뉴스"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정 및 점도표",
+      "importance": 3,
+      "summary": "금리인상 여부와 향후 인상 경로 전망(점도표)이 환율에 직접 영향을 준다",
+      "why": "금리인상이 확정되고 점도표가 매파적이면 달러 강세로 원/달러 환율이 급등할 수 있다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "금리인상 단행 및 점도표가 추가 인상을 시사하면",
+          "effect": "달러 강세 심화로 원/달러 환율 상승(원화 약세) 압력이 커진다"
+        },
+        {
+          "cond": "금리 동결이거나 점도표가 인상 속도 완화를 시사하면",
+          "effect": "달러 약세로 원/달러 환율이 하락(원화 강세)할 수 있다"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPanhaMzdHblV6YTc5bE16bFBIUWc5X1dXMVNNMHhUcWtodllfNDVSM0VtV1A2VmlITVRpZGZtaXk3cl9zWUNLWG96ajYzV1psV0lHeXI4NjdrVkh6NmRXRl9fZkJPN2dHUThoUzl6Ukp5YzNqejZYbktBMWR3eUxrbWlxMV8yNWNFTDk1SlBBQldRQTFMT0kzU29qelhBT0RxZ0ZrYXJUYlNnSFhiVm1JZWE4NEQydF8tWktIcVozUk9xemxvY05VenFXbW9BVnlCYTAw?oc=5",
+          "snippet": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목 TradingKey"
+        },
+        {
+          "title": "[주간 뉴욕증시]연준 금리 인상 여부 촉각…유가·국채금리도 변수",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5STnJsTmhfWDFsaEFFV21NSGNzeThzVTFMTXZlMmVRZkpyeHhOY1dteWhWaDBKVlM3RmFWV3R2M013UVNCY1YzWWVWZEFILXpBWnBKdE5nc2xmY1ZsMWhjRWx0QzhTVkRwYXlndW14MEZRemZZcmh5NNIBeEFVX3lxTE5STnJsTmhfWDFsaEFFV21NSGNzeThzVTFMTXZlMmVRZkpyeHhOY1dteWhWaDBKVlM3RmFWV3R2M013UVNCY1YzWWVWZEFILXpBWnBKdE5nc2xmY1ZsMWhjRWx0QzhTVkRwYXlndW14MEZRemZZcmh5NA?oc=5",
+          "snippet": "[주간 뉴욕증시]연준 금리 인상 여부 촉각…유가·국채금리도 변수 뉴시스"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NUnVHNUplOFhPNlVtNTZKcEQ0dmVWeU1Uek1CQU5Hek8yczc5WV8wdnZMWi0teVNQS2cwTWZuR3ZNTi1DTTlIRHEzbXJ3QUsy?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
+        },
+        {
+          "title": "'9월 금리인상 확률 85%' 워시 첫 시험대… 점도표·유가 향방에 '7000피' 안착 달렸다 [주간 뉴욕ㆍ한국증시]",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xWUlHRG1DeDNoTm9zWjNnS2w3R3NNSFlZc2pmWDBReW1hX2RjcHd5Wm5Sa3gtVmhXUEQ2WWQwcU5pTGVWaUFva0lLbkVwUlVnSGt1NDNZODc1NVZCbXRBcVpiU0tCRVZKLUQydmlR0gFyQVVfeXFMTTVrUkpuWkVmV0F0UVJsYmlpVlpiN1VGVzIySGtzYnUwa09rVXhscGRVa2NiYkNGMU9wRGNydVI5Mmlhcng1cDI2SnY3OHpiUE96cnkzVjJ6cnFBX0xzVXRZRHpXdWp0N0NKc2xvNndSR0Nn?oc=5",
+          "snippet": "'9월 금리인상 확률 85%' 워시 첫 시험대… 점도표·유가 향방에 '7000피' 안착 달렸다 [주간 뉴욕ㆍ한국증시] citytimes.co.kr"
+        },
+        {
+          "title": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTl9ndHlfZVdDSWx0enRTaFcwYVNQSl9DdlhYX0R0cUJKV0hJSnpGR2h1UExCYjg2MFViTlhqSmRET0F3eU5rdmlNem5RaHpESDE1aW45dERVdnNqQnZ3TUxzbk5DOGlUT3BYQXFXVUc?oc=5",
+          "snippet": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈 lecturernews.com"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "",
+      "name": "일본은행(BOJ) 금리 결정",
+      "importance": 2,
+      "summary": "엔화 방향성이 원화에도 간접 영향을 줄 수 있다",
+      "why": "일본은행이 금리를 인상하면 엔화 강세로 원화도 동반 강세 압력을 받을 수 있다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "일본은행이 금리를 인상하면",
+          "effect": "엔화 강세 동반, 원화도 상대적 강세 압력"
+        },
+        {
+          "cond": "금리를 동결하면",
+          "effect": "엔화 약세 지속, 원화도 약세 압력 유지"
+        }
+      ],
+      "sources": [
+        {
+          "title": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaMjhmTHJRa1JWSlZaakJLdW5oMTRvNmhjMjktZTNjYnFyTExRMkdBeTJ3cFZReEVmMGVFY2MwZFR6aG5abnNQdXFiczR4ZGZEb1F1OU1NWlZZOGhwOVNLdk5CTDBaZ295MkHSAWpBVV95cUxQWjI4ZkxyUWtSVkpWWmpCS3VuaDE0bzZoYzI5LWUzY2JxckxMUTJHQXkyd3BWUXhFZjBlRWNjMGRUemhuWm5zUHVxYnM0eGRmRG9RdTlNTVpWWThocDlTS3ZOQkwwWmdveTJB?oc=5",
+          "snippet": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정 newskr.kr"
+        }
+      ]
+    }
+  ]
+}
