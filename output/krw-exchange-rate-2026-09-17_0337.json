@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-17T03:37:26.207215+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,368.6 KRW/USD (approaching 1,400)\n\nWHY: The won is currently weak and weakening further—the rate has risen 5 consecutive trading days and is approaching the 1,400 level, meaning you need more KRW to buy each dollar. However, one analyst predicts the won is \"still undervalued\" and will reverse downward after this short-term bounce, suggesting better rates may come soon.\n\nTIP: Consider delaying or reducing this month's conversion if possible, since the trend suggests the won may strengthen (lower KRW/USD rate) in the near term, making your $2,000 cheaper to buy."
+  },
+  "articles": [
+    {
+      "title": "\"환율 1,400원 오기 전에 환전하자\"…매파 FOMC에 들썩이는 환테크족",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEcm5QS1ZidlV1Z1kzWVhwdlZ5MElPaWxCUzhsVVBUNjh4QTl6X3M1ZHNGMzQ4NW9wNFVxcGFQWlNjcHF6SDNISjFWVEZaS0xsNnEtUWpFRWc3RVBhU3ltSFV3eU5kQVJBN0RTRXl4LVY?oc=5",
+      "summary": "\"환율 1,400원 오기 전에 환전하자\"…매파 FOMC에 들썩이는 환테크족 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-09-17T01:42:09+00:00"
+    },
+    {
+      "title": "원-달러 환율 ‘달러 강세’ 재전환?…1368.6원, 5거래일 연속 상승",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBJWENEZFFMdjdVMFMtOWNBNElFajlSam14YVc1QzVKUnFLV3lJYWNiQ0swcEYyWnVhaVUyM3llSzNEb2NMSHQ2ZnFJUFZzRk13aGhFSmFuSnY3TmtIUXlFbzhoTXZMazA?oc=5",
+      "summary": "원-달러 환율 ‘달러 강세’ 재전환?…1368.6원, 5거래일 연속 상승 한겨레",
+      "source": "한겨레",
+      "date": "2026-09-17T00:45:38+00:00"
+    },
+    {
+      "title": "규칙 설명 속 최소 개수를 읽는 카지노 무료 슬롯 게임 다운로드 판정 안내",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS09PWDJyNl9fYzg5bnZNenFUeklLTTEyejBrMlJ5NExDcmFvMmxDRHZjUmxWQUhzYlNlMmtsWVYxOHU1TW5mVzBXSHJOOXRuSFZ4eGVGSWFwWE1zU0VZX1lHSmNpWUVvOW1qcnp1clMzVlU2YVdnMXk5bjZVUnVDdGdzaVpSS1QydmFzZGZNaVRHUFpGa1hGVVcyZGVuZEZZUEo3TW5oRm1QUQ?oc=5",
+      "summary": "규칙 설명 속 최소 개수를 읽는 카지노 무료 슬롯 게임 다운로드 판정 안내 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T13:18:58+00:00"
+    },
+    {
+      "title": "\"원화, 아직도 저평가…환율 단기 반등 후 하락할 것\"",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91enpvTnU2VFpuck1Ha28xdXltY2VIRGVOOUZKdmw4cWp1YnJySzFYUDF0UGxCMUN5WmRuQXhkaVowNjU0aW5weEhFcmVVNWFkRmZUdC0zZV91dw?oc=5",
+      "summary": "\"원화, 아직도 저평가…환율 단기 반등 후 하락할 것\" 한국경제",
+      "source": "한국경제",
+      "date": "2026-09-16T08:52:49+00:00"
+    },
+    {
+      "title": "‘H’로 몰린 자금…삼성운용 “환율 반전 땐 美대표지수·AI”",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE04WHJISkVrYmNUa1I4VWhkNGZhQlBfUzVJRUNJVThTbUI1VzRzaXJWamRPN0Z4ZFhWeUpoV2pRR242QXotOWNhZGNBbnhzNkMxR1FGRFJ0ZmlRLTFuUHc?oc=5",
+      "summary": "‘H’로 몰린 자금…삼성운용 “환율 반전 땐 美대표지수·AI” 뉴스투데이",
+      "source": "뉴스투데이",
+      "date": "2026-09-16T19:19:29+00:00"
+    },
+    {
+      "title": "첫 실행과 재실행에서 확인할 스포츠토토 축구 연장전 상태",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNeFZEVnFVMnNUZDV0MDV5Sk5FOFExaDBrdEZKdF84bWN1XzlXc3lWVWpSVkM5RUk5UzZxUmRSbWMzMXM0MWk2dFc2ZUpoRVJWT00wQTQ5Z0NVaDBPUEJUb1BubUNzSDdscXQwMmt1LUIxR2FGN0xnWkZEVFZLT01wcldBczN1NVVZSWc?oc=5",
+      "summary": "첫 실행과 재실행에서 확인할 스포츠토토 축구 연장전 상태 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T07:17:19+00:00"
+    },
+    {
+      "title": "게임 이해를 돕는 짧은 문답, 플렉스 카지노",
+      "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxPTXlIZGRXOHVvRWpLTlZveXRZcF9EQXVYSmYzNlMtdGtSNGotMlpWY1l1eHY1YW5nUTFXbHRoWmlBWFBRMWp3Rzl4bHZLZjg0WGc4M2dvU082aHppdGVsMml1YlFZV3gxTF9oSDl6dGd0Ujh3NXhoRHUxMW5PRXp0d0wxUzY2OE05M3VOV3AteWduTVJBQ2NuVnVuUUdNZm5oNXlYbE9KNjR4a0hzM1FoQmFYZ3lLZk1kUVFEc3dxUlRHaWFmdURGaWNhWjdtNEZ6U1o0S2hDQ3JWRWZxX3FIeHAxNWRJQ1ZzR0pyWXNFcTBrNFEwTUlaTTh4UzMwbkpwR3h1UXp4Y2xPZkxEUVI3LTR1RmNPQm1KTGtQVkxtMjJUZE1uTnlDcnBHQnZ2bEtvQnFXVEY2RlVHYjhZT0p5bF8yUXJTa1NUSmlXMw?oc=5",
+      "summary": "게임 이해를 돕는 짧은 문답, 플렉스 카지노 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T10:52:55+00:00"
+    },
+    {
+      "title": "처음 보는 버전명을 확인하는 토토 hold the line 정보 페이지",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMGt0NEoyVUhmMENIYjBQbEV3QkxmRHNkSzd1eWFwWU1RYTRwSXVTem4yVk1JMWluUFFxVXAxVm5YUFZBVkhfMmFVR1lHVklMTm1GSG9DVTlwWFV6ZHR0dnI5N255S1RIZ1F0S1UyZ0xNZ0Q0UTRaWXFnXzVPdjhLY2huVV9FZVRWeWc?oc=5",
+      "summary": "처음 보는 버전명을 확인하는 토토 hold the line 정보 페이지 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T14:52:31+00:00"
+    },
+    {
+      "title": "플렉스 보드게임카페 마작 : 초보자가 알아야 할 모든 것 - 실용적인 접근법",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbXpGemE4d0Ruem1EeWhPTGtwTGFDcFJIcnhuNXY3SHRnTnpocFk1aDQwWnJKOWRydTN0WmFtcE01dlZTejdFVThzQWlQSENEdk9XWHFtRzczUGVSWTEwT3JhMThZQ1Nhb044NmJEb244dUN4QWFPbkVMeEZ6Q3ozOTRndHhxUVR3SEJuREFNOVpma0dNZG81QlNxelUzZXp1THdQMUUwMzlrN3VHdnBGMGE2dV9Bd1FEVDVJUHU4dG55Sk5WUWZJbEg5VDFaX0U?oc=5",
+      "summary": "플렉스 보드게임카페 마작 : 초보자가 알아야 할 모든 것 - 실용적인 접근법 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T06:26:46+00:00"
+    },
+    {
+      "title": "poe 카드 도박 확률 진행 중 돌아가기 버튼 주의점",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOGtYV0N2d09yNWF1T0xfb1RaRkJqbXNNUXdCR2l6YVJ5cGdIUm11dE9VOTVqb0xnN0VoY29UTTIzcWgxT0lUUWJ2V05yZ1VHMWdPRHkwZUlVZERJX192a1VicmFLOHQ1MDR5M08ybVc3VkhnNDcxMlpKcDFuYm4wbWhVSU1oRlJ6OGNMUkFYekc0d1U4dWhVNVU0LW9CalFJUEV5RE1rWGs2emNCRVE?oc=5",
+      "summary": "poe 카드 도박 확률 진행 중 돌아가기 버튼 주의점 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-16T13:42:39+00:00"
+    }
+  ]
+}

@@ -1,16 +1,12 @@
 {
-  "generated_at": "2026-09-17T03:38:37.447612+00:00",
-  "asof": "2026-09-17 12:37 KST",
-  "stale_days": 0,
+  "generated_at": "2026-09-17T03:38:15.452363+00:00",
   "card_title": "美 FOMC 당일 원화 약세 지속",
-  "overall_why": "오늘 원/달러가 1,381원까지 오른 가장 큰 이유는 미국 연준의 9월 FOMC 금리 결정이 당일 발표를 앞두고 매파적(긴축 강화) 신호에 대한 경계감이 커졌기 때문이다. 이 경계감이 미국 국채금리 상승과 **달러 강세**로 이어졌고, 한국은행도 금리차 확대를 우려해 추가 인상을 고민하는 상황이 맞물리면서 원화 매도 압력이 커졌다. 여기에 외국인 투자자들의 코스피 매도세까지 겹치며 **환율 상승 흐름**이 더 뚜렷해졌다.",
   "tldr": [
     "오늘도 원/달러가 1,381원으로 어제보다 더 올랐어요.",
     "미국 연준의 9월 FOMC 금리 결정이 오늘 나오는 만큼 매파적 신호 경계감이 달러를 더 강하게 만들었어요.",
     "오늘 밤 FOMC 결과와 점도표 내용에 따라 환율이 더 움직일 수 있어요."
   ],
-  "heat": "high",
-  "title_badge": "⚡ 오늘 주목",
+  "overall_why": "오늘 원/달러가 1,381원까지 오른 가장 큰 이유는 미국 연준의 9월 FOMC 금리 결정이 당일 발표를 앞두고 매파적(긴축 강화) 신호에 대한 경계감이 커졌기 때문이다. 이 경계감이 미국 국채금리 상승과 **달러 강세**로 이어졌고, 한국은행도 금리차 확대를 우려해 추가 인상을 고민하는 상황이 맞물리면서 원화 매도 압력이 커졌다. 여기에 외국인 투자자들의 코스피 매도세까지 겹치며 **환율 상승 흐름**이 더 뚜렷해졌다.",
   "factors": [
     {
       "name": "미국 통화정책",
@@ -129,109 +125,13 @@
       ]
     }
   ],
-  "calendar": {
-    "guide": "이번 주 목요일(9/17) 새벽 미국 FOMC 금리결정과 점도표 발표가 가장 큰 변수다. 3년 만의 금리 인상이 현실화되며 한미 금리차 확대 우려로 환율 상승 압력이 커질 수 있어 급한 달러 매수는 발표 직후 변동성을 확인한 뒤 진행하는 것이 안전하다. 이미 발표된 CPI 결과도 원/달러 200원 하락에 영향을 준 만큼 다음 지표 발표 전후 환율 되돌림 가능성에 유의해야 한다.",
-    "events": [
-      {
-        "date": "2026-09-11",
-        "time": "21:30",
-        "name": "미국 8월 소비자물가지수(CPI)",
-        "importance": 3,
-        "summary": "CPI 발표 후 환율 200원 하락, 방향 전환 시험대",
-        "why": "CPI는 연준의 9월 금리결정 판단 근거로 환율 변동성을 직접 자극하는 지표다",
-        "result": "CPI 발표 이후 원/달러 환율이 200원 급락했으며 이후 미국 긴축 우려로 재상승 여부가 관건이 됨",
-        "scenarios": [],
-        "sources": [
-          {
-            "title": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NQnpkSjQ0bmNGanZiZWtpbFB4ejNSQTVTNDdGUVJMaTNWR002OTIwQmtQYUxSNUhpeXlKWVJJaGVQYVRDTm9ZR3VoUHVtUW1wLVlveWpOVzZpQ2R3RTZkc3pQejVSYnVsaml6Y3l6TDdQeXFlUE11RTRuNzdTUQ?oc=5",
-            "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 네이버 프리미엄콘텐츠"
-          },
-          {
-            "title": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이",
-            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Tk5wTU9udERHajJPUVhmR2pKUGUyZ3c4TmFoTGQ1WVRzUHBzU2F1YWtJR2FmbHFXUExVOGY0QlFSMXY5X1ltMVRNblQwZ2VxT3V1dVpGckVvMHZrcDRodTEyckYwWnAzVkU00gFwQVVfeXFMTVFzaTNoRTN1RWZzYUZWOGswZjhYRjZtcFJkb3VReFNuNTRkQ1lIUkdBM2wxV2tqS0xnT3djVkl4eG0yYWJNM09GNXZIVVRmM1NlQ0pMQmlWeHk5YmxOWFhybFBGazl1N3A3dUJBVUtNSw?oc=5",
-            "snippet": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이 머니투데이"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-17",
-        "time": "03:00",
-        "name": "미국 9월 FOMC 금리결정 및 점도표 발표",
-        "importance": 3,
-        "summary": "3년 만의 기준금리 인상 결정, 한미 금리차 확대로 환율 상승 압력 예상",
-        "why": "연준의 금리 인상 여부와 향후 인상 속도(점도표)는 한미 금리차를 결정해 원/달러 환율에 가장 직접적인 영향을 준다",
-        "result": "미국이 3년 만에 기준금리를 인상했으며 한국은행도 추가 인상 압력을 받는 것으로 보도됨",
-        "scenarios": [
-          {
-            "cond": "점도표가 예상보다 매파적(추가 인상 시사)이면",
-            "effect": "한미 금리차 확대 우려로 원/달러 환율 추가 상승"
-          },
-          {
-            "cond": "인상 폭이 예상보다 완만하거나 점도표가 비둘기적이면",
-            "effect": "긴축 우려 완화로 환율 상승폭 제한 또는 하락 전환"
-          }
-        ],
-        "sources": [
-          {
-            "title": "[주간 뉴욕증시]연준 금리 인상 여부 촉각…유가·국채금리도 변수",
-            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5STnJsTmhfWDFsaEFFV21NSGNzeThzVTFMTXZlMmVRZkpyeHhOY1dteWhWaDBKVlM3RmFWV3R2M013UVNCY1YzWWVWZEFILXpBWnBKdE5nc2xmY1ZsMWhjRWx0QzhTVkRwYXlndW14MEZRemZZcmh5NNIBeEFVX3lxTE5STnJsTmhfWDFsaEFFV21NSGNzeThzVTFMTXZlMmVRZkpyeHhOY1dteWhWaDBKVlM3RmFWV3R2M013UVNCY1YzWWVWZEFILXpBWnBKdE5nc2xmY1ZsMWhjRWx0QzhTVkRwYXlndW14MEZRemZZcmh5NA?oc=5",
-            "snippet": "[주간 뉴욕증시]연준 금리 인상 여부 촉각…유가·국채금리도 변수 뉴시스"
-          },
-          {
-            "title": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목",
-            "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPanhaMzdHblV6YTc5bE16bFBIUWc5X1dXMVNNMHhUcWtodllfNDVSM0VtV1A2VmlITVRpZGZtaXk3cl9zWUNLWG96ajYzV1psV0lHeXI4NjdrVkh6NmRXRl9fZkJPN2dHUThoUzl6Ukp5YzNqejZYbktBMWR3eUxrbWlxMV8yNWNFTDk1SlBBQldRQTFMT0kzU29qelhBT0RxZ0ZrYXJUYlNnSFhiVm1JZWE4NEQydF8tWktIcVozUk9xemxvY05VenFXbW9BVnlCYTAw?oc=5",
-            "snippet": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목 TradingKey"
-          },
-          {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NUnVHNUplOFhPNlVtNTZKcEQ0dmVWeU1Uek1CQU5Hek8yczc5WV8wdnZMWi0teVNQS2cwTWZuR3ZNTi1DTTlIRHEzbXJ3QUsy?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
-          },
-          {
-            "title": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈",
-            "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTl9ndHlfZVdDSWx0enRTaFcwYVNQSl9DdlhYX0R0cUJKV0hJSnpGR2h1UExCYjg2MFViTlhqSmRET0F3eU5rdmlNem5RaHpESDE1aW45dERVdnNqQnZ3TUxzbk5DOGlUT3BYQXFXVUc?oc=5",
-            "snippet": "미국 뉴욕증시, 9월 FOMC에 시선 집중…기준금리 인상보다 케빈 워시 연준 의장 입에 쏠린 눈 한국강사신문"
-          },
-          {
-            "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
-            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBtRWJGNzVreWMtajl0QnBuV0g4Wko2ZFZWaWFkRDl3OUNqUWIwMGY1bC1VZEZJeFNrTXc4Mk52Rl9saWRBNjh5MjMxNEFybmttWENJbA?oc=5",
-            "snippet": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡 v.daum.net"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-30",
-        "time": "21:30",
-        "name": "미국 8월 개인소비지출(PCE) 물가지수",
-        "importance": 2,
-        "summary": "연준의 선호 물가지표로 향후 금리 경로 예측에 영향, 환율 변동성 확대 가능",
-        "why": "PCE는 연준이 가장 중시하는 인플레이션 지표로 다음 통화정책 방향성을 가늠하는 데 핵심적이다",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "PCE가 예상보다 높게 나오면",
-            "effect": "추가 긴축 우려로 달러 강세, 원/달러 환율 상승"
-          },
-          {
-            "cond": "PCE가 예상보다 낮게 나오면",
-            "effect": "긴축 완화 기대로 달러 약세, 원/달러 환율 하락"
-          }
-        ],
-        "sources": [
-          {
-            "title": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9NQnpkSjQ0bmNGanZiZWtpbFB4ejNSQTVTNDdGUVJMaTNWR002OTIwQmtQYUxSNUhpeXlKWVJJaGVQYVRDTm9ZR3VoUHVtUW1wLVlveWpOVzZpQ2R3RTZkc3pQejVSYnVsaml6Y3l6TDdQeXFlUE11RTRuNzdTUQ?oc=5",
-            "snippet": "다음주 한국·미국 주요 일정｜오늘의 CPI가 결정하고, 다음 주 FOMC가 답합니다 네이버 프리미엄콘텐츠"
-          },
-          {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NUnVHNUplOFhPNlVtNTZKcEQ0dmVWeU1Uek1CQU5Hek8yczc5WV8wdnZMWi0teVNQS2cwTWZuR3ZNTi1DTTlIRHEzbXJ3QUsy?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
-          }
-        ]
-      }
-    ],
-    "today_kst": "2026-09-17"
-  }
+  "heat": "high",
+  "heat_reason": "미국 9월 FOMC 금리결 D-0",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
 }
