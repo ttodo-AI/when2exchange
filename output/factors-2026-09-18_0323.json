@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-09-18T03:23:58.167959+00:00",
+  "card_title": "매파 연준 여진 지속, 원화 약세",
+  "tldr": [
+    "오늘 원/달러가 1,385원으로 어제(1,382원)보다 소폭 더 올랐어요.",
+    "어제 미국 연준이 금리를 올리고 매파적 신호를 낸 여파가 오늘까지 이어지고 있어요.",
+    "엔화도 156엔대로 약세라 원화도 같이 밀리는 흐름이라 이후 움직임을 지켜봐야 해요."
+  ],
+  "overall_why": "어제 미국 연준이 금리를 올리며 추가 긴축까지 예고하자 **달러를 찾는 수요가 커지며 원/달러가 급등**했고, 그 여파가 오늘도 이어지며 1,385원까지 오름세가 이어졌다. 엔화 등 주변 통화들도 같이 약세를 보이며 원화 하락 압력을 더했고, 국내 증시에서는 외국인이 주식을 팔면서도 코스피가 약보합에 그쳐 **환율 쪽 상승 압력이 더 두드러진 하루**였다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "복수 매체가 어제 매파 FOMC를 환율 급등의 1순위 원인으로 지목했고 그 여파가 오늘도 이어짐",
+      "headline": "어제 매파적 FOMC발 급등 여진 속에 환율은 오늘도 완만한 오름세를 이어갔다",
+      "bullets": [
+        "연준이 3년 2개월 만에 금리를 올리고 추가 긴축을 시사하며 어제 환율이 13.급등해 1,382.2원에 마감했고, 오늘은 전일대비 오른 현재 1,385원",
+        "1,400원 위험까지 거론됐지만 전문가들은 이번 상승이 추세적인 것은 아니라고 평가했다"
+      ],
+      "sources": [
+        {
+          "title": "美 FOMC 충격 여파에 달러·원 1383원대…13.6원 급등(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBWQXlmZkphZm9KVGVocjUxVHd1XzhwWmU5Zk50NGFuR1U0VE56RFpfTXVZUUhyNUx1ZWxCQVlCa3NwSWE4bHc?oc=5"
+        },
+        {
+          "title": "美 연준 금리 인상에 추가 긴축 시사…달러·원 1370원대 중반",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1JbmwzQzhzM3pJS09PZ0xWdDBremgxeFdBWEZJZnB3OWJuU2hSakJLbW1tRS0zVkdEdlZOQTF1ZHlMdGktVUpKVkJnSDdRR3RRVnFmdTZqVGdiT1cwMG5abNIBYEFVX3lxTE1JbmwzQzhzM3pJS09PZ0xWdDBremgxeFdBWEZJZnB3OWJuU2hSakJLbW1tRS0zVkdEdlZOQTF1ZHlMdGktVUpKVkJnSDdRR3RRVnFmdTZqVGdiT1cwMG5abA?oc=5"
+        },
+        {
+          "title": "매파 연준, 환율 1385원 턱밑까지 급등⋯전문가들 “추세 상승 아냐”",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9WYjNwR0dIRVhGQjFhSVVPLVdjS21IVDFWQXJZU1dodGk0UzZybEtPckpMWDZiRlh5eHJJMzdyNmk0OS1XOHJoY2x0R3RfRzk2SXN5Qw?oc=5"
+        },
+        {
+          "title": "[FOMC] 환율, 고유가·국채금리에 '연준 뉴노멀'까지...1400위험",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBxOFd1R0t5emlMbGlvNVNtZ3J2VHNUVF9tU1I4QmpjTnktRE94bmtudnFfblBpVzdFdjU4TldnRjRzTjJIM0gtbDVqQnZMNllPVmRsZDFZbHY2VTBIU204QlVfRU9GVXk3cFZDTS1SU2tMN1Nm?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "연준 결정 이후 달러 강세가 원/달러 상승의 직접 경로로 반복 보도됨",
+      "headline": "연준 결정 이후 달러 전반이 강세를 보이며 원화를 눌렀다",
+      "bullets": [
+        "매파적 연준에 달러가 전반적으로 강세를 보이며 원·달러가 1,380원대에서 유지됐다",
+        "FOMC 이후 결제 수요까지 몰리며 환율 상단을 지지했다"
+      ],
+      "sources": [
+        {
+          "title": "[외환-마감] 美 FOMC 후 결제 몰리자 1,380원대로…'네고·엔화 강세'에 상단 제한 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9CTDVOV1B2cnMtR3FTNWg3YnVubllPUzBBVXBZbThQMjdVenNMR3UzRXMzaE1aSk5Cb0w0Tk5WWlROeVhwZDZiRGRsZUFWVWplcTlVel9oamVqMlFPYjFTb2NoemJBekVRSG4xdW9yc3gwLWJW?oc=5"
+        },
+        {
+          "title": "[외환+] 매파적 연준에 强달러···원·달러 환율, 1380원 돌파",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xZEJ2YlZvNHFWVVJDRzhnaVNSRV9sempSR01aY1dueUNibW1YVklPU1FuRnYtSzhEM0pDalFUQ1N3dWlUZW9zOWdsWGYwXzl1ZTVtQVJKSklZVVN4czNycm5HQmQ1ZDE1bmc?oc=5"
+        },
+        {
+          "title": "매파 연준에 원·달러 환율 1380원 돌파 [김혜란의 FX]",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9acVV1RUdnU1dhVXRiZ3RXR0l0YUREdmNobW9JNC1lbGRmbXVvcHV6Uk8tRnBlQlU0N3RoZHJKRE5SMXhVS0ZpY09NRFpFSnJySmfSAVNBVV95cUxQalZDX1h1LWhHSzNaczIwbXNGT0xRd19fU1pOOFdET1Y2ajNGN1Nab0NYS2RxTjN4NWFLaUgzTzJpMDJTRXV0TmlSY1BZS0o2QktIOA?oc=5"
+        },
+        {
+          "title": "[환율마감] 매파 연준…원·달러 급등 1380원대 안착 ‘한달만 최고’",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qelZuamlCTmphamJqTDd1a3dsVGFDWmE5Y1JySW9iQVVEcnBLbmd1cTk2ZUJhR2N0Mk81TGJ1NG1xV1g5WTFQWGlFdUxRdGVkRGd1S0RIYjgzM1FUUDRiSnViX3RJbUNrN3pFNTZn?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "아시아 통화 동조",
+      "emoji": "🌏",
+      "impact": 3,
+      "impact_reason": "엔화 등 아시아 통화 동반 약세가 원화 약세를 뒷받침하는 보조 근거로 등장",
+      "headline": "엔화가 156엔대로 약세를 보이며 원화도 같이 눌렸다",
+      "bullets": [
+        "미국의 3년 만의 금리 인상 이후 엔화가 156엔대로 돌파하며 약세를 보였다",
+        "엔화·루피 등 아시아 통화 전반이 동반 약세를 보이며 원화 하락 압력을 키웠다"
+      ],
+      "sources": [
+        {
+          "title": "엔화, 美 추가 금리인상 관측에 1달러=156엔대 전반 하락 출발",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1jM29BbzJnRU9lYkhsRmRWYTd6OU9GOG5XdnZSMjUxTDI0eDJrUjRoS3JxSmZJYUFlb1ZERHVsVnRmNno5Q1JfbnZIVjdRQzhEUDZHV2JpYW01cjdHLXZ1ZWFxVGZBdklKNE0wMG9SVXVvZUM3MDFaVNIBeEFVX3lxTE1jM29BbzJnRU9lYkhsRmRWYTd6OU9GOG5XdnZSMjUxTDI0eDJrUjRoS3JxSmZJYUFlb1ZERHVsVnRmNno5Q1JfbnZIVjdRQzhEUDZHV2JpYW01cjdHLXZ1ZWFxVGZBdklKNE0wMG9SVXVvZUM3MDFaVA?oc=5"
+        },
+        {
+          "title": "美 3년 만의 금리인상에 엔화 156엔 돌파…원화·루피도 약세",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0zd1hwVk9QSnhVa2ltVHlOdXl6Rjc0THBqeTh3d1ZEVkhwMF8ybm55ZHBsNDZaOHZSUTQ2bTU1d1pIeDBKZjRTMWJFNEtpVFhtaDVVWHMxa1YwSHYxZGVWZlZGalg5YnlPLUM2RTZlQ2hvSGlt0gF0QVVfeXFMTTN3WHBWT1BKeFVraW1UeU51eXpGNzRMcGp5OHd3VkRWSHAwXzJubnlkcGw0Nlo4dlJRNDZtNTV3Wkh4MEpmNFMxYkU0S2lUWG1oNVVYczFrVjBIdjFkZVZmVkZqWDlieU8tQzZFNmVDaG9IaW0?oc=5"
+        },
+        {
+          "title": "BOJ발 엔화 변동성 확대 '촉각'⋯\"1370원 안팎서 하락 예상\" [환율전망] · 주요 내용은?",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9MeDk5YkxnZmE1TjlrWXRxNTU0VThUSFB2MlpqbHRvMnlNVVUtRF9QX2F0cWw3cTg0YWhLcllRZ1NfTDdUQjNwMHR0V0Q4QVFBVEVId1MwcUJoZ1ZF?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "환율과 별개로 국내 증시 수급 흐름이 그날의 구체적 이슈로 확인됨",
+      "headline": "코스피는 외국인 매도 속 약보합에 그치며 환율 상승과는 다른 흐름을 보였다",
+      "bullets": [
+        "FOMC 충격에도 코스피는 외국인 2조원대 매도 속에 약보합으로 마감했다",
+        "코스닥은 반대로 상승하며 국내 증시 내에서도 자금 흐름이 엇갈렸다"
+      ],
+      "sources": [
+        {
+          "title": "코스피, 美 매파적 금리인상에도 약보합 마감…코스닥은 상승(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5kdDZmNUU4N0piQUZHcmFuNEt0RDh4Zlh0Yk1IQTQzNk9pcnFLVUFIZEhtMUY2Q1BFWXpWaTl2WlJNNGlWMGRwWUJGWQ?oc=5"
+        },
+        {
+          "title": "[마감시황] 코스피, FOMC 충격은 제한적…외국인 2조 매도에 약보합",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5pQWdYOUNCcE9nQ1otektpRVV6WXpNbVJMZVZsQzBiSmVnT0Z5UUF5UTE5dGRSdnRSUVVDZGxiRHpQS29iZ1ZvNTBLT2ZldWVCNktWVTAzckVPUERRd3ZPT2xkSFA2N2ZEYXFPZ2g4V1BlUQ?oc=5"
+        },
+        {
+          "title": "코스피, 미국 매파적 금리 인상에도 약보합 마감…코스닥은 상승",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBGYmdlWGlXU0dMQ21kNGZMOXQwMENqalF1TE1rdElDUVpJRDBOekE4S3lpTXJLMWtGcUpEZ2VGRkExTzR3LXc?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}

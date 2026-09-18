@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-18T03:23:15.162801+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: ~1,300–1,370 KRW/USD\n\nWHY: Multiple sources indicate the won is strengthening (\"살아나는 원화\" / \"the won is recovering\") and the dollar is weakening (\"주춤하는 달러\" / \"the dollar is stalling\"). One analyst specifically expects the rate to fall to around 1,370 KRW/USD, meaning fewer won needed per dollar—a favorable environment for your monthly conversion.\n\nTIP: Since the won is currently strong, locking in your $2,000 conversion now captures a relatively favorable rate; if the trend continues downward, waiting risks needing even more KRW per dollar later."
+  },
+  "articles": [
+    {
+      "title": "“환율 어디까지 내려갈까”…주춤하는 달러, 살아나는 원화 [화제의 리포트]",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Ib1JvOTZkcUJIbk9tZHJ6R1ZXN1p5TnpuTWdwNDJ5em40TFFqak9pUkdWbndOMkwxWVJHMThGQ3J4dXp5N0swaE4zZTFSQ1M5SlAyQlJtSlg3RlhxN29ZOHhLVXBrU1BPMHo1Mg?oc=5",
+      "summary": "“환율 어디까지 내려갈까”…주춤하는 달러, 살아나는 원화 [화제의 리포트] 한경매거진&북",
+      "source": "한경매거진&북",
+      "date": "2026-09-17T07:23:09+00:00"
+    },
+    {
+      "title": "BOJ발 엔화 변동성 확대 '촉각'⋯\"1370원 안팎서 하락 예상\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5RNWZQT0szSVo3azkybDFaaFoyTEdrNmZSdnlCMFNIOGlZVWw3YUZOUHBaQ0RnZmJna0gwbVZRQjdJM2lRVF9xQnctYkhaUDYzdFBxbA?oc=5",
+      "summary": "BOJ발 엔화 변동성 확대 '촉각'⋯\"1370원 안팎서 하락 예상\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-17T23:39:00+00:00"
+    },
+    {
+      "title": "스테이트스트리트 \"단기 원화 숏·엔화 롱\"…디커플링 전망 |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1USVNXeWkxdm1FbGR5MTFGMHZrT1RLV1laM1dQM0JsMmVIam5BNVhyeVVCeG9Ba2xVR3J5c1hMMnpCUC1JSXVQeVlZcElHeUYydXdIeE5RMy0zNHpKOFl5eERxMTVPZ0ZiYmNUUDFqWU82MG9H?oc=5",
+      "summary": "스테이트스트리트 \"단기 원화 숏·엔화 롱\"…디커플링 전망 | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-09-17T09:28:54+00:00"
+    },
+    {
+      "title": "[AJU+MONEY] 환율 1300원대, 지금 미국주식 시작해도 될까?",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5LejhGYS1wVFB4RENDNHlHN1NZVzVPcE9JVmNabDdSNVNtTjY5eVNrdUMxYVN4eWJReHRuWTNja3RhN3BYZTVFbTBHbnpSTG5BeXdpdkNVdljSAVhBVV95cUxOS3o4RmEtcFRQeERDQzR5RzdTWVc1T3BPSVZjWmw3UjVTbU42OXlTa3VDMWFTeHliUXh0blkzY2t0YTdwWGU1RW0wR256UkxuQXl3aXZDVXZY?oc=5",
+      "summary": "[AJU+MONEY] 환율 1300원대, 지금 미국주식 시작해도 될까? 아주경제",
+      "source": "아주경제",
+      "date": "2026-09-17T08:57:34+00:00"
+    },
+    {
+      "title": "모바일 브라우저에서 점검하는 무료 슬롯 은신처 디럭스 무료 표시 상태",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSTRiaXpYdllUQVVCOHJ2STQ0V09fZUloejFhQlZ1V0xyRXc1ZjQ5S3N2b0J1UG1xTmlsOFZIbDNPTjZVQm0xeU9ieVEydmxIOEhrMWpjVHZ2RUlSdkJMSzhQdnZ6QUtyRHdfb0NnZEJBbWJHSnZSY2RsVjJOSzhZb1hBMUlHVmtzWC1NMGRRR21makpXdmdneHAyUTZ0TTdHdEVDcjBySmhSRHM5dWc?oc=5",
+      "summary": "모바일 브라우저에서 점검하는 무료 슬롯 은신처 디럭스 무료 표시 상태 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-17T10:00:40+00:00"
+    },
+    {
+      "title": "릴의 움직임과 판정 결과를 나눠 보는 카지노 양정팔",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxORlhJQzV1bGFJWDlNMjE1TElGUllMVUhjbW5LNEJKU19YVTlsLXA4Y3NiTWMyTkxySHo1dDk0WmJKYzZhRDNUUDBBZ3dWYnBtSU5qVXNlcDhiWElXZUdSTkkzZHF0V2J1Um1wUzZFeGRCSmRUdjllMkR3SUdieWwtclMyTFI5dzZJcUFTZmJSTHRnUVdnMXJHazJVRVlDM1RFa2VXTlBJMlFudUw1dy1xQzNETFYzN2MtZ0hOblJFS0tYcFBWTE50OGU0cmRxbXFzTU0yYzI5VWdjNm9iTDczaWZXS3hRMjB5ckE?oc=5",
+      "summary": "릴의 움직임과 판정 결과를 나눠 보는 카지노 양정팔 calgaryroughnecks.com",
+      "source": "calgaryroughnecks.com",
+      "date": "2026-09-17T03:46:47+00:00"
+    },
+    {
+      "title": "다른 게임과 비교하기 위한 카지노 9 화 예고 기본 사양",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxON0t1U2w1clppczRXc0NBb1dWNEF1X0cyclI4SUM1NHZtSC1hdlhjQmU2VGxUQVBoQmd4dmN1aU9feTExMVlMbC02REhyYnptS0w1MEM3VlRZOGZudkdCMGpqQlQtaTJYUF9ncFZHazI2NHdtcHN2djhXNXFxUWlGS0ktczVSVFJTOWNJdXVmTmZhY0JwLTJieWdiT2l3LUlWaVBsc2hrNTIzR3VTd0ZibFdR?oc=5",
+      "summary": "다른 게임과 비교하기 위한 카지노 9 화 예고 기본 사양 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-17T09:28:47+00:00"
+    },
+    {
+      "title": "스테이트스트리트 \"한은, 11월 금리 인상 가능⋯최종 3.50% 열어둬야\"",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBzemFXMjVETE1aMWw5YS1XS2xUUllzLVEwa0s0ZGxnRDFmRXNhWjBhYnk0VzZ2NUM2TzdvM0FuZXEwNzBXN2F4Z05SOXV0UkY1Q3A4d01JaXYwR2lu?oc=5",
+      "summary": "스테이트스트리트 \"한은, 11월 금리 인상 가능⋯최종 3.50% 열어둬야\" supple.kr",
+      "source": "supple.kr",
+      "date": "2026-09-17T09:53:00+00:00"
+    },
+    {
+      "title": "계단식 진행 구조인지 확인하는 카지노 2부 5화 규칙",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWGNtNm55ZkhhcVJlcWRvSWQzMGYtbUphTGtJSkRrWWpNTzZGR2s4dENkTHFINTdBc21wdWhjYXUtUl9PcW40WFYxbWJpMTVfbjRfMk9pemY4c0dzWHFEaDVKWUR6REcwRWJ2UlMyT2p4Sy01WEdpZXF4WWRaZHhfLTNrc2xKSmRYQWZkNE1ISzlCMTRsczQtZ2NPWmJsbUtyN1JhMzV4S2dsNzJOWVNMU2w5UDFNUkdUeDR5YU1ZOEdDMy1od2dyeXh1a0w3MmUw?oc=5",
+      "summary": "계단식 진행 구조인지 확인하는 카지노 2부 5화 규칙 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-17T12:46:20+00:00"
+    },
+    {
+      "title": "토토 출금 실수 배당표에 나오는 기호 설명",
+      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQeG9NSXJhUEhzZW1YbHRiNlhiUk0yelMzWGpEeUN0c3lZSVJLM1Z5T2ljdXdxMXQ0cU04X1pBZ1pSampUbzVrWktrOEh4ZUJhbi1tYTgycjQ4VW52aUNQVWlCUDFLVi01cXhaWlFCSm9tX011Z01UbHdBWTR1eTdPOUdvUUlfdHlrZk5OaWNNeGlGX29NNFV3RzRDOS16SmRFd091emE2OERKM0V0ZWM5SUZETlRGdDNUaGZLOEJsd3Vrd05JXzBhbG1PQ0duYW5f?oc=5",
+      "summary": "토토 출금 실수 배당표에 나오는 기호 설명 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-17T10:45:20+00:00"
+    }
+  ]
+}

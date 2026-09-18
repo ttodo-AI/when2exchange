@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-09-18T03:24:18.479548+00:00",
+  "today_kst": "2026-09-18",
+  "guide": "이번 주 목요일(9/17) 새벽 미국 FOMC 금리결정과 점도표 발표가 가장 큰 변수이며, 이미 시장은 금리 인상 가능성을 높게 반영해 환율이 급등락할 수 있다. 다음 주에는 9/30 PCE 물가 발표를 앞두고 변동성이 다소 진정될 수 있으니, FOMC 결과 직후 환전 타이밍을 성급히 잡기보다 시장 반응을 하루 이틀 지켜본 뒤 결정하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 2,
+      "summary": "CPI 결과가 FOMC 금리 결정 기대를 좌우해 환율 변동성 확대",
+      "why": "CPI가 예상보다 높으면 연준의 긴축 강화 기대가 커져 달러 강세·원화 약세 압력이 발생한다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "긴축 강화 기대로 달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "긴축 완화 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPanhaMzdHblV6YTc5bE16bFBIUWc5X1dXMVNNMHhUcWtodllfNDVSM0VtV1A2VmlITVRpZGZtaXk3cl9zWUNLWG96ajYzV1psV0lHeXI4NjdrVkh6NmRXRl9fZkJPN2dHUThoUzl6Ukp5YzNqejZYbktBMWR3eUxrbWlxMV8yNWNFTDk1SlBBQldRQTFMT0kzU29qelhBT0RxZ0ZrYXJUYlNnSFhiVm1JZWE4NEQydF8tWktIcVozUk9xemxvY05VenFXbW9BVnlCYTAw?oc=5",
+          "snippet": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목 TradingKey"
+        },
+        {
+          "title": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5",
+          "snippet": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다 쿠키뉴스"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정 및 점도표",
+      "importance": 3,
+      "summary": "3년 만의 금리 인상 여부와 향후 금리 경로가 원/달러 환율의 핵심 변수",
+      "why": "금리 인상과 매파적 점도표가 확인되면 달러 강세와 한미 금리차 확대로 원화 약세 압력이 커진다",
+      "result": "美 FOMC 결과 발표 이후 원/달러 환율은 결제 수요가 몰리며 1,380원대로 상승했다",
+      "scenarios": [
+        {
+          "cond": "매파적 점도표(추가 인상 시사)가 나오면",
+          "effect": "달러 강세 심화, 원/달러 추가 상승"
+        },
+        {
+          "cond": "인상 후 비둘기적 발언이 나오면",
+          "effect": "긴축 종료 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WMzM4cldaUjlUaUp6SkVXSzBRaFRSWkZySHp0OE5RNWlyMTlVbG5OS1MycExzLVpGa2Rib0ZsSk5YbHQ5OGNueURuYS1aV1NwM21UTVZ5amlJZG93eXhlbnpsT2VEVUNJTnlqbHhwYV9MQk9Q?oc=5",
+          "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+        },
+        {
+          "title": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Tk5wTU9udERHajJPUVhmR2pKUGUyZ3c4TmFoTGQ1WVRzUHBzU2F1YWtJR2FmbHFXUExVOGY0QlFSMXY5X1ltMVRNblQwZ2VxT3V1dVpGckVvMHZrcDRodTEyckYwWnAzVkU00gFwQVVfeXFMTVFzaTNoRTN1RWZzYUZWOGswZjhYRjZtcFJkb3VReFNuNTRkQ1lIUkdBM2wxV2tqS0xnT3djVkl4eG0yYWJNM09GNXZIVVRmM1NlQ0pMQmlWeHk5YmxOWFhybFBGazl1N3A3dUJBVUtNSw?oc=5",
+          "snippet": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이 머니투데이"
+        },
+        {
+          "title": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaMjhmTHJRa1JWSlZaakJLdW5oMTRvNmhjMjktZTNjYnFyTExRMkdBeTJ3cFZReEVmMGVFY2MwZFR6aG5abnNQdXFiczR4ZGZEb1F1OU1NWlZZOGhwOVNLdk5CTDBaZ295MkHSAWpBVV95cUxQWjI4ZkxyUWtSVkpWWmpCS3VuaDE0bzZoYzI5LWUzY2JxckxMUTJHQXkyd3BWUXhFZjBlRWNjMGRUemhuWm5zUHVxYnM0eGRmRG9RdTlNTVpWWThocDlTS3ZOQkwwWmdveTJB?oc=5",
+          "snippet": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정 newskr.kr"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "time": "",
+      "name": "한국은행 통화정책 관련 압력(추가 인상 가능성)",
+      "importance": 2,
+      "summary": "美 금리 인상에 따른 한미 금리차 확대로 한은의 추가 인상 압력 부각",
+      "why": "한미 금리차가 벌어지면 자본유출 우려로 원화 약세 압력이 커져 한은의 대응 여부가 환율에 영향",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "한은이 추가 인상을 시사하면",
+          "effect": "금리차 축소 기대로 원화 강세 요인"
+        },
+        {
+          "cond": "한은이 동결 기조를 유지하면",
+          "effect": "금리차 확대 지속으로 원화 약세 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Tk5wTU9udERHajJPUVhmR2pKUGUyZ3c4TmFoTGQ1WVRzUHBzU2F1YWtJR2FmbHFXUExVOGY0QlFSMXY5X1ltMVRNblQwZ2VxT3V1dVpGckVvMHZrcDRodTEyckYwWnAzVkU00gFwQVVfeXFMTVFzaTNoRTN1RWZzYUZWOGswZjhYRjZtcFJkb3VReFNuNTRkQ1lIUkdBM2wxV2tqS0xnT3djVkl4eG0yYWJNM09GNXZIVVRmM1NlQ0pMQmlWeHk5YmxOWFhybFBGazl1N3A3dUJBVUtNSw?oc=5",
+          "snippet": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이 머니투데이"
+        },
+        {
+          "title": "美와 벌어지고 日과 좁혀지나…한은 '금리차 샌드위치' 시험대",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE92eUlTa0p1UnhyYXpMdVd1S3BYaEhReXo5dnhOSVJKdnQ4Y2EteUc5cFdWaWVKSXE5UURmTmxtYmFvb3lfZF9Ra09PdE1UeC0zdTlTN3djX1NmQVpGWm96Nw?oc=5",
+          "snippet": "美와 벌어지고 日과 좁혀지나…한은 '금리차 샌드위치' 시험대 메트로신문"
+        },
+        {
+          "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WMzM4cldaUjlUaUp6SkVXSzBRaFRSWkZySHp0OE5RNWlyMTlVbG5OS1MycExzLVpGa2Rib0ZsSk5YbHQ5OGNueURuYS1aV1NwM21UTVZ5amlJZG93eXhlbnpsT2VEVUNJTnlqbHhwYV9MQk9Q?oc=5",
+          "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "time": "21:30",
+      "name": "미국 8월 PCE 물가지수",
+      "importance": 2,
+      "summary": "연준의 핵심 물가지표로 향후 금리 경로 판단에 영향, 환율 변동성 확대 가능",
+      "why": "PCE가 예상보다 높으면 추가 긴축 기대가 강화돼 달러 강세 요인이 된다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "추가 긴축 기대로 달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "긴축 완화 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NUnVHNUplOFhPNlVtNTZKcEQ0dmVWeU1Uek1CQU5Hek8yczc5WV8wdnZMWi0teVNQS2cwTWZuR3ZNTi1DTTlIRHEzbXJ3QUsy?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
+        }
+      ]
+    }
+  ]
+}
