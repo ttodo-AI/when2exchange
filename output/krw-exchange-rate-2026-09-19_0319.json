@@ -1,0 +1,20 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-19T03:19:33.733334+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: unknown\n\nWHY: The article indicates the won/dollar exchange rate has risen for 7 consecutive trading days, meaning the won is weakening (KRW per USD is increasing). A weak won makes your USD conversion more expensive, so now is a relatively unfavorable time to convert your monthly KRW into $2,000.\n\nTIP: Consider waiting for the won to strengthen (KRW/USD rate to fall) before making your conversion if possible, or establish a standing order to average your costs across multiple days rather than converting in one lump sum during a weak-won trend."
+  },
+  "articles": [
+    {
+      "title": "日 금리 올려도 엔화 약세…원/달러 환율 7거래일 연속 상승 - 머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1WWUdoNHZVMEVrbHplbnNseWF1LVNQdmhMLTdDa2d1MDc1OWhadlY3aGl4VmU1akR4OFdJR0x5RzNvMVRJTjMwNUdnRFVUeXp2NzlZQjJiLVpTZV9na2l5UEpKX1BURmIyR0RpVjNsZkTSAXBBVV95cUxNVllHaDR2VTBFa2x6ZW5zbHlhdS1TUHZoTC03Q2tndTA3NTloWnZWN2hpeFZlNWpEeDhXSUdMeUczbzFUSU4zMDVHZ0RVVHl6djc5WUIyYi1aU2VfZ2tpeVBKSl9QVEZiMkdEaVYzbGZE?oc=5",
+      "summary": "日 금리 올려도 엔화 약세…원/달러 환율 7거래일 연속 상승 - 머니투데이 머니투데이",
+      "source": "머니투데이",
+      "date": "2026-09-18T08:07:46+00:00"
+    }
+  ]
+}

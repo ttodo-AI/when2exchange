@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-09-19T03:20:33.510601+00:00",
+  "today_kst": "2026-09-19",
+  "guide": "이번 주 목요일(9/17) 발표된 미국 9월 FOMC 금리결정과 점도표가 이미 원/달러 환율에 큰 영향을 준 상태이며, 다음 주에는 특별한 확정 일정이 없으나 한국은행의 11월 인상 가능성 관련 발언과 시장 반응을 주시할 필요가 있다. 환전 계획이 있다면 FOMC 이후 달러 변동성이 진정되는 시점을 확인하고, 급하지 않다면 분할 환전으로 리스크를 분산하는 것이 좋다.",
+  "events": [
+    {
+      "date": "2026-09-11",
+      "time": "21:30",
+      "name": "미국 8월 소비자물가지수(CPI)",
+      "importance": 2,
+      "summary": "CPI 결과가 FOMC 금리결정 전 인플레이션 판단 근거로 작용해 환율에 영향을 줬다",
+      "why": "CPI는 연준의 금리결정 방향을 좌우하는 핵심 물가지표로 예상치 대비 결과에 따라 달러 강약이 갈린다",
+      "result": "美 8월 CPI 발표 이후 금리 인상 경계감이 커지며 원/달러 환율은 3거래일 연속 상승해 1,347.3원에 마감했다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목",
+          "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPanhaMzdHblV6YTc5bE16bFBIUWc5X1dXMVNNMHhUcWtodllfNDVSM0VtV1A2VmlITVRpZGZtaXk3cl9zWUNLWG96ajYzV1psV0lHeXI4NjdrVkh6NmRXRl9fZkJPN2dHUThoUzl6Ukp5YzNqejZYbktBMWR3eUxrbWlxMV8yNWNFTDk1SlBBQldRQTFMT0kzU29qelhBT0RxZ0ZrYXJUYlNnSFhiVm1JZWE4NEQydF8tWktIcVozUk9xemxvY05VenFXbW9BVnlCYTAw?oc=5",
+          "snippet": "주간 전망: 9월 FOMC 금리 결정 및 점도표 발표 앞두고 트립닷컴과 레나 실적 주목 TradingKey"
+        },
+        {
+          "title": "9월 15~16일 FOMC 회의, 금리 인상할까? 다음주 국내증시, 미국증시 전망",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdEk5NlM1VWMtOVljV052X0NuaDFGclExMzNCazUxd2FBcHQ1UHZtLWQ1Rm9GZjl0V0EzalllNTBNZ3l1SXNZSXdGdklNQy1jdUtBa0ZobHF2TG1waTVKWWRCUXg3bDZ3ZlpHNHh1b1NqVFM0R3NOTmJJZjB6dm4tMzlPNA?oc=5",
+          "snippet": "9월 15~16일 FOMC 회의, 금리 인상할까? 다음주 국내증시, 미국증시 전망 네이버 프리미엄콘텐츠"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정 및 점도표",
+      "importance": 3,
+      "summary": "연준이 3년 만에 기준금리를 인상하며 한미 금리차가 1%p로 확대돼 원화 약세 압력이 커졌다",
+      "why": "FOMC 결과와 점도표는 향후 금리 경로 기대를 바꿔 달러 가치와 원/달러 환율에 직접적이고 강력한 영향을 준다",
+      "result": "9월 FOMC에서 美 연준이 기준금리 인상을 단행했고, 이후 결제수요가 몰리며 원/달러 환율은 1,380원대로 상승 마감했다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
+          "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 mk.co.kr"
+        },
+        {
+          "title": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaMjhmTHJRa1JWSlZaakJLdW5oMTRvNmhjMjktZTNjYnFyTExRMkdBeTJ3cFZReEVmMGVFY2MwZFR6aG5abnNQdXFiczR4ZGZEb1F1OU1NWlZZOGhwOVNLdk5CTDBaZ295MkHSAWpBVV95cUxQWjI4ZkxyUWtSVkpWWmpCS3VuaDE0bzZoYzI5LWUzY2JxckxMUTJHQXkyd3BWUXhFZjBlRWNjMGRUemhuWm5zUHVxYnM0eGRmRG9RdTlNTVpWWThocDlTS3ZOQkwwWmdveTJB?oc=5",
+          "snippet": "[이주의 관전 포인트]연준·일본은행, 이번 주 금리 인상 결정 newskr.kr"
+        },
+        {
+          "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wWWo1djB2ckp5RkNVd294cUs0WVBVUmtiLU5GbldUYjZ3eGMxSWt5ZDlnSDBhOGxKUzJvZ3dkNWVKNzEyOFNaX09fQmNFOHJDa19ROEk4SU9mLXhkekZfS0ZXRjV4bFM2RVUzODJmV0poS1A4RDVSTGRtTDI?oc=5",
+          "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "time": "",
+      "name": "한국은행 11월 기준금리 인상 가능성 시사",
+      "importance": 2,
+      "summary": "한미 금리차 확대로 한은의 추가 인상 압력이 커지며 원/달러 환율 향방에 영향을 줄 변수로 부상했다",
+      "why": "한미 금리차가 벌어질수록 자본유출 우려로 원화 약세 압력이 커지므로 한은의 대응이 환율에 중요하다",
+      "result": "美 금리 인상 확정 이후 한은도 11월 금통위에서 3연속 기준금리 추가 인상 가능성에 무게가 실렸다",
+      "scenarios": [
+        {
+          "cond": "한은이 11월 인상 신호를 강하게 내면",
+          "effect": "금리차 축소 기대로 원화 강세(환율 하락) 압력"
+        },
+        {
+          "cond": "한은이 인상에 소극적이면",
+          "effect": "금리차 유지·확대로 원화 약세(환율 상승) 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Tk5wTU9udERHajJPUVhmR2pKUGUyZ3c4TmFoTGQ1WVRzUHBzU2F1YWtJR2FmbHFXUExVOGY0QlFSMXY5X1ltMVRNblQwZ2VxT3V1dVpGckVvMHZrcDRodTEyckYwWnAzVkU00gFwQVVfeXFMTVFzaTNoRTN1RWZzYUZWOGswZjhYRjZtcFJkb3VReFNuNTRkQ1lIUkdBM2wxV2tqS0xnT3djVkl4eG0yYWJNM09GNXZIVVRmM1NlQ0pMQmlWeHk5YmxOWFhybFBGazl1N3A3dUJBVUtNSw?oc=5",
+          "snippet": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이 머니투데이"
+        },
+        {
+          "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
+          "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 mk.co.kr"
+        },
+        {
+          "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE4wWWo1djB2ckp5RkNVd294cUs0WVBVUmtiLU5GbldUYjZ3eGMxSWt5ZDlnSDBhOGxKUzJvZ3dkNWVKNzEyOFNaX09fQmNFOHJDa19ROEk4SU9mLXhkekZfS0ZXRjV4bFM2RVUzODJmV0poS1A4RDVSTGRtTDI?oc=5",
+          "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+        }
+      ]
+    }
+  ]
+}
