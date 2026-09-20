@@ -1,16 +1,12 @@
 {
-  "generated_at": "2026-09-20T03:37:42.884472+00:00",
-  "asof": "2026-09-20 12:36 KST",
-  "stale_days": 0,
+  "generated_at": "2026-09-20T03:37:16.627931+00:00",
   "card_title": "연준 매파 여진에 원화 약세 지속",
-  "overall_why": "연준이 기준금리를 3.75~4.00%로 올리며 매파적 신호를 낸 여파가 계속되면서, 미국 금리를 좇는 달러 수요가 이어져 원/달러가 1390원까지 올라왔다. 여기에 **BOJ 금리 인상에도 엔화가 약세를 보인 점**이 겹치며 아시아 통화 전반이 함께 눌렸고, 고유가로 인한 무역수지 부담도 상승 압력을 더했다. 다만 반도체 강세에 힘입은 코스피 급등과 외국인 순매수가 환율 상승폭을 일부 눌러주는 역할을 했다.",
   "tldr": [
     "오늘 원/달러는 1,390원으로 마감해 어제 1,381원보다 9원 더 올랐어요.",
     "연준의 매파적 금리 인상 여파가 계속되는 가운데 엔화도 약세를 보이며 원화까지 같이 밀렸어요.",
     "다음 미국 지표와 한은 금리 결정 시점을 지켜볼 필요가 있어요."
   ],
-  "heat": "normal",
-  "title_badge": "",
+  "overall_why": "연준이 기준금리를 3.75~4.00%로 올리며 매파적 신호를 낸 여파가 계속되면서, 미국 금리를 좇는 달러 수요가 이어져 원/달러가 1390원까지 올라왔다. 여기에 **BOJ 금리 인상에도 엔화가 약세를 보인 점**이 겹치며 아시아 통화 전반이 함께 눌렸고, 고유가로 인한 무역수지 부담도 상승 압력을 더했다. 다만 반도체 강세에 힘입은 코스피 급등과 외국인 순매수가 환율 상승폭을 일부 눌러주는 역할을 했다.",
   "factors": [
     {
       "name": "미국 통화정책",
@@ -125,117 +121,15 @@
       ]
     }
   ],
-  "calendar": {
-    "guide": "이번 주(9/14~9/20) FOMC는 이미 지나갔으나 그 여파로 환율 변동성이 이어지고 있으며, 다음 주(9/21~9/27)는 특별한 대형 지표가 없어 상대적으로 잠잠할 전망이다. 다만 9/30 미국 PCE 발표를 앞두고 원/달러는 미 국채금리와 유가 흐름에 민감하게 반응할 수 있으니 환전은 급하지 않다면 분할로 접근하는 것이 안전하다. 한국은행의 11월 추가 인상 가능성도 시장에 선반영되고 있어 관련 발언에 주의가 필요하다.",
-    "events": [
-      {
-        "date": "2026-09-14",
-        "time": "",
-        "name": "원/달러 환율 200원 급락 및 한은 추가 인상 압력",
-        "importance": 2,
-        "summary": "FOMC 앞두고 환율 200원 하락, 한은의 대응 압력 부각",
-        "why": "미국 긴축 기조 강화가 예상되는 가운데 환율 급변동이 한은의 금리 정책 셈법을 복잡하게 만든다",
-        "result": "두 달간 200원 넘게 급락했던 원/달러 환율이 미 FOMC를 앞두고 반등해 1340원대를 거쳐 FOMC 이후 1380원대로 올라섰다",
-        "scenarios": [],
-        "sources": [
-          {
-            "title": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이",
-            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB4Tk5wTU9udERHajJPUVhmR2pKUGUyZ3c4TmFoTGQ1WVRzUHBzU2F1YWtJR2FmbHFXUExVOGY0QlFSMXY5X1ltMVRNblQwZ2VxT3V1dVpGckVvMHZrcDRodTEyckYwWnAzVkU00gFwQVVfeXFMTVFzaTNoRTN1RWZzYUZWOGswZjhYRjZtcFJkb3VReFNuNTRkQ1lIUkdBM2wxV2tqS0xnT3djVkl4eG0yYWJNM09GNXZIVVRmM1NlQ0pMQmlWeHk5YmxOWFhybFBGazl1N3A3dUJBVUtNSw?oc=5",
-            "snippet": "200원 내린 환율, 美 긴축에 방향 틀까…한은도 추가 인상 압력 - 머니투데이 머니투데이"
-          },
-          {
-            "title": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡",
-            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Rb1F6YWxPa0RWNXN3cHE4amdnZXBiVFFLaEpfLThINFMwR1ZreDVjbmczNFc2czlEMXFhb04ydVVsTlFkdnRYYjhBZw?oc=5",
-            "snippet": "유가 100달러·美 금리 5% 턱밑…美 FOMC 앞두고 한은 셈법 복잡 v.daum.net"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-17",
-        "time": "03:00",
-        "name": "미국 9월 FOMC 금리결정 및 점도표",
-        "importance": 3,
-        "summary": "3년 만의 금리 인상 결정으로 한미 금리차 1%p 확대, 원화 약세 압력",
-        "why": "연준의 금리 인상과 향후 점도표 전망이 한미 금리차를 벌려 달러 강세·원화 약세를 유발하는 핵심 변수다",
-        "result": "미 연준이 3년2개월 만에 기준금리를 인상하며 연내 추가 인상을 시사했다",
-        "scenarios": [],
-        "sources": [
-          {
-            "title": "[주간경제일정] 美 연준, 기준금리 결정…금리 전망 담은 점도표·경제전망 주목",
-            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBGTmFoR2ZyTEk0ZnJ1MXZBM1E5aW9CRUlDbkMxLVNnZndQUlFuUmJuWkRJWTdlc05SR2l5MncySXhTUkVySkRrdGJwekd5em56c19CWQ?oc=5",
-            "snippet": "[주간경제일정] 美 연준, 기준금리 결정…금리 전망 담은 점도표·경제전망 주목 v.daum.net"
-          },
-          {
-            "title": "연준, 다시 금리 인상할까? 10월 인상 확률 45%",
-            "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9SVTNhZUtObFJwOGROOFlSNEg1WGVkMUhrRUpxT0owNDh3a1c5VE41UkdKZExycGVXN2RmUTFNM2J3X3A1bEVlSTBrYWx6eEVwb0g5WjE1Qjhqa01WS3VBekRrV0tpOXZfLVBOX1lCRncyeHM?oc=5",
-            "snippet": "연준, 다시 금리 인상할까? 10월 인상 확률 45% financefeeds.com"
-          },
-          {
-            "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
-            "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WMzM4cldaUjlUaUp6SkVXSzBRaFRSWkZySHp0OE5RNWlyMTlVbG5OS1MycExzLVpGa2Rib0ZsSk5YbHQ5OGNueURuYS1aV1NwM21UTVZ5amlJZG93eXhlbnpsT2VEVUNJTnlqbHhwYV9MQk9Q?oc=5",
-            "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
-          },
-          {
-            "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
-            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
-            "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 매일경제"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-17",
-        "time": "",
-        "name": "한미 금리 격차 확대 및 한은 11월 인상 전망",
-        "importance": 2,
-        "summary": "금리차 1%p로 벌어지며 한은 11월 인상 무게 실려, 원화 약세 완화 기대",
-        "why": "금리차 확대는 원화 약세 요인이지만 한은의 인상 예고가 이를 일부 상쇄할 수 있다",
-        "result": "미 연준의 금리 인상으로 한미 금리차가 1%p로 재확대되며 한은은 10월 동결, 11월 추가 인상 가능성에 무게가 실렸다",
-        "scenarios": [],
-        "sources": [
-          {
-            "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
-            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
-            "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 매일경제"
-          },
-          {
-            "title": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺]",
-            "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqOFQ4Zm14YUtxSDJvMHRfQlAwYVFEeHFxUWs2Z2pJZlZTNHo3eUZrX2lxX1lpLXUyaGRkYVMwcFdNWi05U005MjUyUHM4OWZjWmZLdldpdFhrTEdIU2c?oc=5",
-            "snippet": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺] YTN"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-30",
-        "time": "21:30",
-        "name": "미국 8월 PCE(개인소비지출 물가지수)",
-        "importance": 3,
-        "summary": "연준의 핵심 물가지표로 다음 금리 경로 판단에 직접 영향",
-        "why": "PCE는 연준이 가장 중시하는 물가지표로 결과에 따라 추가 긴축 기대가 달러 강세·약세를 좌우한다",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "예상보다 높게 나오면",
-            "effect": "추가 긴축 우려로 달러 강세, 원/달러 상승"
-          },
-          {
-            "cond": "예상보다 낮게 나오면",
-            "effect": "긴축 완화 기대로 달러 약세, 원/달러 하락"
-          }
-        ],
-        "sources": [
-          {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5NUnVHNUplOFhPNlVtNTZKcEQ0dmVWeU1Uek1CQU5Hek8yczc5WV8wdnZMWi0teVNQS2cwTWZuR3ZNTi1DTTlIRHEzbXJ3QUsy?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 금리결정 外 블루밍비트"
-          },
-          {
-            "title": "연준, 다시 금리 인상할까? 10월 인상 확률 45%",
-            "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9SVTNhZUtObFJwOGROOFlSNEg1WGVkMUhrRUpxT0owNDh3a1c5VE41UkdKZExycGVXN2RmUTFNM2J3X3A1bEVlSTBrYWx6eEVwb0g5WjE1Qjhqa01WS3VBekRrV0tpOXZfLVBOX1lCRncyeHM?oc=5",
-            "snippet": "연준, 다시 금리 인상할까? 10월 인상 확률 45% financefeeds.com"
-          }
-        ]
-      }
-    ],
-    "today_kst": "2026-09-20"
-  }
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "claude"
 }

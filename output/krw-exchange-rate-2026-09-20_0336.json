@@ -1,0 +1,34 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-20T03:36:38.485599+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,380 KRW/USD (approaching 1,400 ceiling)\n\nWHY: The won is currently trading at 1,380 won per dollar, which is moderately weak but hovering near a resistance level of 1,400. The news indicates the market is watching the upper boundary, suggesting possible consolidation rather than a clear directional trend.\n\nTIP: Since you need $2,000 monthly regardless, consider splitting your conversion into smaller weekly portions to average out the timing risk around the 1,380–1,400 range rather than waiting for a significantly stronger won."
+  },
+  "articles": [
+    {
+      "title": "원/달러 환율 1380원대…상단 1400원 경계",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBKSi1TMzlEWVBlYUZ6RHY0ZmlzQlpYVEdoVk01VExmNVh5dHBSMTBSbDVZcmtMVmZOWEhnNjctRFNvNXBfRHA5S1FuS3dDRm83NC0xM1Z0eUFGUkVhUGc?oc=5",
+      "summary": "원/달러 환율 1380원대…상단 1400원 경계 sidae.com",
+      "source": "sidae.com",
+      "date": "2026-09-20T00:00:00+00:00"
+    },
+    {
+      "title": "버튼이 많아 보일 때 필요한 토토 가입머니 환전가능 조작 안내",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTzFtLWo5QTItYmZGTkdMMWlpd1ZGNWExclo3NWNGZUllRmlHemxXUloyQTlNN1hLamhCY0plb180eHdWTld6a1QwZXI5TkJFSXVVQ19USWo2ZjNwalIwVV9GckRZazNkTXAtMllaQzRETWZvWEl1RzdYMUczX0tKWkQxM2dvLWdydGgxLXNB?oc=5",
+      "summary": "버튼이 많아 보일 때 필요한 토토 가입머니 환전가능 조작 안내 Calgary Roughnecks",
+      "source": "Calgary Roughnecks",
+      "date": "2026-09-19T09:31:11+00:00"
+    },
+    {
+      "title": "굿모닝 토토 경찰 : 새로운 아이디어와 접근법",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQN3FNbTREb3dfZ1d2RFJfakNyaFRNbXdOal96MWNneElQeloyRWp5bU9sTU9jMUJzUVdBbzNYQnRGVUFOYjZsQXNmMXkycDRqUERCOFIyczE2TGRicUkxbWxwNnhYSU5VQS1OMHhmVTIyeWs2Q01xeVNxcE5LaTVmdHZJbVluXzZ2cFUxeFRJTnBYZm5wbmY4TUh1T0pjSDhFOGF0S01qaTQyanJDTWlibkZmWFNXd0FDZkhVR1dwWkVDNVE2cllFVW1fSnR5d3JrY1lQZ04yaXhoWE1TR3VhaEx0RkNQMzhyNTlrM18yaw?oc=5",
+      "summary": "굿모닝 토토 경찰 : 새로운 아이디어와 접근법 Histoire pour tous",
+      "source": "Histoire pour tous",
+      "date": "2026-09-19T12:36:48+00:00"
+    }
+  ]
+}
