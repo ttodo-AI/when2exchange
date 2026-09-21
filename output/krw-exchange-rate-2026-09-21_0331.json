@@ -1,0 +1,83 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-21T03:31:23.972802+00:00",
+  "window_hours": 24,
+  "count": 10,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "BAD",
+    "text": "VERDICT: BAD timing to buy USD with KRW now\n\nRATE: 1,380–1,390 KRW/USD\n\nWHY: The won is currently weak, with the exchange rate hovering around 1,380–1,390 KRW per dollar—meaning you need more won to get your $2,000. News reports indicate the rate has touched 1,390 and is threatening 1,400, driven by US rate hikes and high oil prices. Analysts note the won is consolidating at elevated levels this week, with no clear downward pressure expected.\n\nTIP: Consider waiting for signs of won strength (lower KRW/USD rates) before converting, or dollar-cost average smaller amounts if the rate stabilizes below 1,380 in coming weeks."
+  },
+  "articles": [
+    {
+      "title": "[주간환율전망] 환율 한 달 만에 1390원 터치…이번 주는 숨고르기",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE12UHhlV1FESlVuTF9iVUF3Yks4akR5Q0tGWDZRcHlueGhJT1k0UFVKbWttQTJFTjE4OEdhZC1qTnNWbW8wckc3Uk9hYWs1UGhiWW1pM285YkpLdXVCVHdXUTNNZzRTaFE?oc=5",
+      "summary": "[주간환율전망] 환율 한 달 만에 1390원 터치…이번 주는 숨고르기 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-09-20T22:00:00+00:00"
+    },
+    {
+      "title": "환율 다시 1385원 넘어서… 고유가 겹쳐 수입물가 상승 비상",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9SOU41RmswZG1DZDRJZEllamFtWmZvRTEwUmNtSXktSFowYnlTTld3SGNNZEluZkZMUzRCYWJ2Rnk1WkJ4QWc?oc=5",
+      "summary": "환율 다시 1385원 넘어서… 고유가 겹쳐 수입물가 상승 비상 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-09-20T15:32:09+00:00"
+    },
+    {
+      "title": "다시 1400원 위협하는 환율…美 긴축·고유가가 변수",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZzd3ZV9wTy1wV1JlRFRtR0hMMUVQdzNpcWhCM201NXNIb0dMV2Z0WTVic3R4QWVNR0I5WExzVEFScTV4NEJOak1TNk9GU3hoT3F0eW5jT0NWYms0YlNqYUpyVUtuaEhaa1VoSU1vbFdIVmxObkl0MjEtalZQWEpQbzFMNEE1QzNpcHNsSGdB?oc=5",
+      "summary": "다시 1400원 위협하는 환율…美 긴축·고유가가 변수 조선일보",
+      "source": "조선일보",
+      "date": "2026-09-21T00:05:00+00:00"
+    },
+    {
+      "title": "일본 엔화 강세에 동조화⋯\"1380원 중반서 하향 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5nbGdraWpjMnFveHlHWUotLUFhN2o2M0JXbm94blNnRjZmQk1FZVpPNkpiY1ZKYzZWMTdQWWhxLThhNlJTRF92elBLTW5JdTZ2WGUyaA?oc=5",
+      "summary": "일본 엔화 강세에 동조화⋯\"1380원 중반서 하향 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-20T23:35:00+00:00"
+    },
+    {
+      "title": "[주간환율전망] 급반등한 환율···추석 앞두고 1380원대 숨고르기",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8wQUtNci1EQVBBVThQaXFRWDAteXU3RC00MUJTR29GeE5BZ2VidTNCdGQ2aXd6QXpKOWY2WnBwRUtvY1RrZjdQbkVfMHdyMkRZdHhvanpjMklXMXg3NFFHdnplUkd1dTIwUXc?oc=5",
+      "summary": "[주간환율전망] 급반등한 환율···추석 앞두고 1380원대 숨고르기 서울파이낸스",
+      "source": "서울파이낸스",
+      "date": "2026-09-20T08:00:00+00:00"
+    },
+    {
+      "title": "달러·원 환율 1380원대 상승…고유가 및 미 국채 금리 여파",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oWWp4NXZtLU04NXJ0eDJEMmxVbUY2dDVoUjl5VTVTQkNYUWMxTE5YamdwSGgtSmZ5dDZhNkcxSG5EVkk5S2dNUHlPQXRRLTQ0b3lCY2tRNm9wQ3BNTWFPU01UN1JFX1Bj?oc=5",
+      "summary": "달러·원 환율 1380원대 상승…고유가 및 미 국채 금리 여파 2news.co.kr",
+      "source": "2news.co.kr",
+      "date": "2026-09-21T00:41:00+00:00"
+    },
+    {
+      "title": "달러·원 1380원대 8거래일째 상승…\"연휴 앞둔 네고 규모 관건\"",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBYQUpYSXhKUjctdEh2T3I3aFgtUGdMUGZfNkc1cVRrc2h1WXotYU1ZdVB0UGgtbHZGblBEWlZYOHB0eUVOSEMwamtRQjF0OGZLVlMtem5ESXJSWnJNRUxIMtIBYEFVX3lxTFBYQUpYSXhKUjctdEh2T3I3aFgtUGdMUGZfNkc1cVRrc2h1WXotYU1ZdVB0UGgtbHZGblBEWlZYOHB0eUVOSEMwamtRQjF0OGZLVlMtem5ESXJSWnJNRUxIMg?oc=5",
+      "summary": "달러·원 1380원대 8거래일째 상승…\"연휴 앞둔 네고 규모 관건\" 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-21T00:07:37+00:00"
+    },
+    {
+      "title": "美 금리 인상에 1380원대 올라선 환율…수입물가 뛰고 기업 불확실성 커져",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9kOHBLbkhta0RSb21PQU5sSlZZU3dBTWt2anpLcHBOOHl6TGtyZGNoc1g0WEhueU8yZDJsMzVsOWphNk96TXc?oc=5",
+      "summary": "美 금리 인상에 1380원대 올라선 환율…수입물가 뛰고 기업 불확실성 커져 v.daum.net",
+      "source": "v.daum.net",
+      "date": "2026-09-20T06:38:38+00:00"
+    },
+    {
+      "title": "원·달러 환율, 2.4원 오른 1385.7원 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOc3dHTDhiOTRTRXk3MC0xcUFXWGVYNlRZVmoxVmpWUHJVTTZVVmI5RHM5MkFELTZyazJQalA0d1FjVmhVd3JaeExucm5VNmRldUVCekdIM3NjNGlyVG9LenJSODc4dkhNMThlZDRtd25HRUJPeklxYjA5M2s5LTlfOGVVVlVpd9IBmgFBVV95cUxQcHNDa1MwNnctX040VEExek05Nmp1eUFnc2JLS2RWNmtfS0pzci00cGo3RDR2QnUzSFZKY25Zd0hReWcyZmY0VTMzc1l5WGxpdHM5MHpjN0YxbHNLWDJvN3o5QTl1UVhyMDJWNEhRRTRrTW9rTWJ0a3E4dmo4XzloWUR3SjVTUzFWVVRNRjVndDdrSHcwUVFNWkZR?oc=5",
+      "summary": "원·달러 환율, 2.4원 오른 1385.7원 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-09-21T00:29:00+00:00"
+    },
+    {
+      "title": "[외환-주간] 롤러코스터 환율의 종착역은…길잡이 엔화 주시",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZM1U5cTYtZU9sUkNEMDhIMEwwb1Z1T0swWGxDNnNTbFpMUktPV1ZwRXhjWGpDQnNSQlpsX0x1VTVKUjR3OVdBVkNmd245ZmVZa1M0ZTAtYXBzYnptcW5BUFNpRTlaLTRKOU5NVzBCUTJGQQ?oc=5",
+      "summary": "[외환-주간] 롤러코스터 환율의 종착역은…길잡이 엔화 주시 KB Think",
+      "source": "KB Think",
+      "date": "2026-09-20T04:00:01+00:00"
+    }
+  ]
+}

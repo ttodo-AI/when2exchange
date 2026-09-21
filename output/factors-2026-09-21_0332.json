@@ -1,16 +1,12 @@
 {
-  "generated_at": "2026-09-21T03:32:24.355174+00:00",
-  "asof": "2026-09-21 12:31 KST",
-  "stale_days": 0,
+  "generated_at": "2026-09-21T03:32:03.975541+00:00",
   "card_title": "달러·엔 약세에 원화 소폭 강세",
-  "overall_why": "환율의 큰 틀은 여전히 **연준의 매파적 금리 기조**가 잡고 있지만, 오늘은 달러와 엔화, 유로화가 동시에 약세를 보이면서 원화가 소폭 힘을 받았다. 여기에 수출기업의 달러 환전 물량과 외국인 자금의 코스피 복귀가 원화 약세를 일부 눌러주면서, 큰 방향 전환 없이 **1380원대에서 소폭 내려앉는 흐름**이 나타났다.",
   "tldr": [
     "오늘 환율은 1,384원으로 어제 1,388원보다 4원 내렸어요.",
     "달러와 엔화, 유로화가 동시에 약세를 보이면서 원화가 살짝 힘을 받았어요.",
     "연준의 매파적 기조는 여전해 다시 오를 여지도 남아있어요."
   ],
-  "heat": "normal",
-  "title_badge": "",
+  "overall_why": "환율의 큰 틀은 여전히 **연준의 매파적 금리 기조**가 잡고 있지만, 오늘은 달러와 엔화, 유로화가 동시에 약세를 보이면서 원화가 소폭 힘을 받았다. 여기에 수출기업의 달러 환전 물량과 외국인 자금의 코스피 복귀가 원화 약세를 일부 눌러주면서, 큰 방향 전환 없이 **1380원대에서 소폭 내려앉는 흐름**이 나타났다.",
   "factors": [
     {
       "name": "미국 통화정책",
@@ -97,63 +93,13 @@
       ]
     }
   ],
-  "calendar": {
-    "guide": "이번 주(9/17)에는 미국 9월 FOMC 금리결정이 이미 발표되어 한미 금리차 확대가 확인됐고, 다음 주에는 9/30 미국 8월 PCE 물가지표가 예정돼 있어 환율 변동성이 커질 수 있다. 환전 시 FOMC 결과에 따른 원화 약세 흐름이 이어지는지 확인하고, PCE 발표 전후로 환율 급등락 가능성에 대비해 분할 환전 전략을 권장한다.",
-    "events": [
-      {
-        "date": "2026-09-17",
-        "time": "03:00",
-        "name": "미국 9월 FOMC 금리결정(+점도표)",
-        "importance": 3,
-        "summary": "3년 만의 금리 인상 단행으로 한미 금리차 1%p로 확대, 원화 약세 압력 커짐",
-        "why": "미국 기준금리 인상은 달러 강세 요인으로 한미 금리차 확대 시 자본유출 우려와 함께 원/달러 환율 상승 압력을 높인다",
-        "result": "연준이 매파적 기조로 금리를 인상하며 연내 추가 인상을 시사했다",
-        "scenarios": [],
-        "sources": [
-          {
-            "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
-            "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WMzM4cldaUjlUaUp6SkVXSzBRaFRSWkZySHp0OE5RNWlyMTlVbG5OS1MycExzLVpGa2Rib0ZsSk5YbHQ5OGNueURuYS1aV1NwM21UTVZ5amlJZG93eXhlbnpsT2VEVUNJTnlqbHhwYV9MQk9Q?oc=5",
-            "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
-          },
-          {
-            "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
-            "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
-            "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 매일경제"
-          },
-          {
-            "title": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다",
-            "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PeWlTX0RHTmdtdlc2Y3RhRlZKdkIwT3dmN1A5alQ2a3NkaXNQaVNmY0N6RUhOMnVQUjJ2SHRDNmkyMTR3LXFxZnFZTDFkMWhiQlZOa2FTV09KS3MzUzYySkYtYw?oc=5",
-            "snippet": "美 9월 금리인상 확률 85%…고유가·환율 상승에 한은 부담 커졌다 쿠키뉴스"
-          }
-        ]
-      },
-      {
-        "date": "2026-09-30",
-        "time": "21:30",
-        "name": "미국 8월 PCE(개인소비지출 물가)",
-        "importance": 3,
-        "summary": "연준의 핵심 물가지표로 인플레이션 추이에 따라 추가 긴축 기대 변화, 환율 변동성 확대 예상",
-        "why": "PCE는 연준이 가장 중시하는 물가지표로 예상치를 벗어나면 추가 금리인상 기대가 급변하며 달러/원 환율에 즉각 영향을 준다",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "예상보다 높게 나오면",
-            "effect": "연준 추가 긴축 기대로 달러 강세, 원/달러 환율 상승 압력"
-          },
-          {
-            "cond": "예상보다 낮게 나오면",
-            "effect": "긴축 속도 조절 기대로 달러 약세, 원/달러 환율 하락 압력"
-          }
-        ],
-        "sources": [
-          {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LNnhZOXJuQWN0SHJ4WnFGRkRXYTlMakJ0STBtd1JZM3dudks0RDBGcGkwSE56VEJEcHlrT28tbE93NG9MWEdvTXNwQXFZdzZD?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外 블루밍비트"
-          }
-        ]
-      }
-    ],
-    "today_kst": "2026-09-21"
-  }
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
 }
