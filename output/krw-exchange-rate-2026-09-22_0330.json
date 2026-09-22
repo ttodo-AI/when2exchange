@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-22T03:30:27.707473+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "NEUTRAL",
+    "text": "VERDICT: NEUTRAL timing to buy USD with KRW now\n\nRATE: 1,381 KRW per USD\n\nWHY: The won is currently around 1,381 KRW/USD after a slight 2.3 won strengthening. News indicates the market is hovering at the 1,380 level with active buy/sell pressure, and external factors like high oil prices and BOJ policy are creating uncertainty about future direction rather than a clear trend.\n\nTIP: Since you convert $2,000 monthly regardless, consider splitting purchases across the month to average out volatility rather than timing a single conversion at this uncertain juncture."
+  },
+  "articles": [
+    {
+      "title": "'고유가·고환율' 동반 타격…4분기 韓 경제 '3% 성장' 시험대",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2YUQzZDM3VDJiNzhwM0xyV2Z6dzh5MWxZMXR4X1VrSTc2RlBOQjdtWktFbHpVcGFmQUpHZDJKYUhDMVNmWWVpb3M2cFRZcmRnSmgyUHVKRjhVUdIBWkFVX3lxTFA2YUQzZDM3VDJiNzhwM0xyV2Z6dzh5MWxZMXR4X1VrSTc2RlBOQjdtWktFbHpVcGFmQUpHZDJKYUhDMVNmWWVpb3M2cFRZcmRnSmgyUHVKRjhVUQ?oc=5",
+      "summary": "'고유가·고환율' 동반 타격…4분기 韓 경제 '3% 성장' 시험대 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-21T21:00:00+00:00"
+    },
+    {
+      "title": "원·달러 환율, 2.3원 내린 1381원 - 조선비즈",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQm93VWF1YTc2ZjUwUnNxOUUxVkJNbEV0YmRVMHhLUHVvS1NKOThfN2d3ZVdpRVBtS1JuTElyU1NnSzhWZ3VNZElVMGN0bmdMbEFpdVV5ejVXd25PMXZWbTl4NTFodlBNbGY1Y1c4Qnk5XzhCQ0tZNTI4bVQwYTQ5c0lzOGxqd9IBmgFBVV95cUxPRUVmRmwzNVFwYnJVTnNiYXhBNVBPN1k2TVd5YXZlZUVmYWFPVjNZM3NtdUZuQU9oWFFyYmZUaGN6RFB5TE5Wa18wNzItODlsdGhReU1DZV9HUzFpdzR0LWdySXg4WXYwWTViX3BWcGFTc2RfQkNxSXIyRWpRdU9KT3V1U3k2MF9lS05MYnNsRkI5U01XNUx2eEhn?oc=5",
+      "summary": "원·달러 환율, 2.3원 내린 1381원 - 조선비즈 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-09-21T06:59:00+00:00"
+    },
+    {
+      "title": "처음 마주치는 안내 화면을 설명하는 토토 1억 환전 놀이터벳",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOWdrT084ZmJINjVZT29QcEdNRDNjcVlKSHdvM1doOV9IcVVmWC1GVmQtbTlXYVpNSkdJU3hXLVJLWjU0YTdIVC0xSnJkYXJOV0twMXQ2dVlwa09CNGlUakpJM3lzRThLcHhIZGJmNEVjMUdvQzFBM0NJVVhHNlk?oc=5",
+      "summary": "처음 마주치는 안내 화면을 설명하는 토토 1억 환전 놀이터벳 Calgary Roughnecks",
+      "source": "Calgary Roughnecks",
+      "date": "2026-09-21T20:19:26+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 다시 주저앉고 싶은 마음",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PYkhvVlpsMlZ1Tm02T19iVUQ5Q1RPNXVocndmUXhIWUZZTVFzTEU3Ty1mbk1mT0lhMjdyRmlSQ25RUTZ4anhUNHBGQ29tTHowUWpsejl3Slc3LVRaRTBSbzF0UU8yanVjOWN5YThSZTg1Vjda0gF0QVVfeXFMT09iSG9WWmwyVnVObTZPX2JVRDlDVE81dWhyd2ZReEhZRllNUXNMRTdPLWZuTWZPSWEyN3JGaVJDblFRNnhqeFQ0cEZDb21MejBRamx6OXdKVzctVFpFMFJvMXRRTzJqdWM5Y3lhOFJlODVWN1o?oc=5",
+      "summary": "[신윤우의 외환분석] 다시 주저앉고 싶은 마음 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-09-22T01:02:57+00:00"
+    },
+    {
+      "title": "1380원대서 매수·매도 맞붙어…BOJ 긴축도 변수 [김혜란의 FX]",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1lZ0hkVXREM2o5cXMxMXBoVG8wQm1vMjlSenQ3VHB0RGp0bWJSUThnR1FuNk9vWVFwbUdmUmozdlEyQ0RCRzJWZ1RYSlBBWTZob1JB0gFTQVVfeXFMTWVnSGRVdEQzajlxczExcGhUbzBCbW8yOVJ6dDdUcHREanRtYlJROGdHUW42T29ZUXBtR2ZSajN2UTJDREJHMlZnVFhKUEFZNmhvUkE?oc=5",
+      "summary": "1380원대서 매수·매도 맞붙어…BOJ 긴축도 변수 [김혜란의 FX] 서울경제",
+      "source": "서울경제",
+      "date": "2026-09-21T06:57:49+00:00"
+    }
+  ]
+}
