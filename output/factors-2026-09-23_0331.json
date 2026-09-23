@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-23T03:31:35.294318+00:00",
+  "card_title": "추석 앞두고 달러매도에 환율 하락",
+  "tldr": [
+    "오늘 원/달러는 1,352원으로 어제 1,356원보다 내려 비슷한 흐름을 이어갔어요.",
+    "추석을 앞두고 수출기업들이 달러를 내다 판 데다 미국과 이란의 대화 재개 기대감이 겹치면서 환율을 눌렀어요.",
+    "다음 미국 지표와 중동 정세 변화에 따라 환율이 다시 움직일 수 있어 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "환율 하락의 가장 큰 힘은 **추석을 앞두고 나온 수출기업들의 달러 매도**였고, 여기에 미국과 이란의 대화 재개 기대감이 겹치며 안전자산인 달러를 덜 찾게 만든 점이 더해졌다. 엔화 강세까지 같은 방향으로 움직이며 원화 하락 흐름을 뒷받침했고, 코스피 강세와 외국인 채권 매도 전환 같은 국내 수급 변수도 함께 작용해 환율이 1352원 부근에서 **어제와 비슷한 흐름**을 이어갔다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "복수 매체가 오늘 환율 하락의 1순위 원인으로 수출기업 달러 매도를 지목",
+      "headline": "추석 앞둔 수출기업 달러 매도가 환율을 소폭 눌렀다",
+      "bullets": [
+        "추석 연휴를 앞두고 수출기업들이 결제에 쓸 달러를 시장에 내놓으면서 달러 공급이 늘었다.",
+        "이 달러 매도 물량이 겹치며 환율은 전일대비 내린 1,352원으로 1350원대 초반을 유지했다."
+      ],
+      "sources": [
+        {
+          "title": "원/달러 환율 1350원대 급락…추석 앞둔 수출기업 달러매도 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HWmdvV3RISG1Lby12aUpIR2VIVW1RRUlWU05vODNNbGxHQm1LVF9JdWVDbkpnOG5vOUp2S3dxYUEzQ09hTnFtbndocjUxOXo4LXhRNzJRNGpiVEg0UzhfTjBIel9rdExSQ2Y40gFwQVVfeXFMUG5BTlNHd2JRRmhOWmRCM18wU0JwTjUwZ3F3TnJvekFoSlNLSEZkalE1REczdV9KekI3d3pjM0NhYk1PS2prMEQ1Vk9nb3oyVzhKNGVJd2pyWV9UU3I4OEFXNEoxSFJkZ1VPQVhkMkZleQ?oc=5"
+        },
+        {
+          "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
+        },
+        {
+          "title": "[외환] 추석 앞두고 대규모 네고에 1,350원대 초반으로 급락…25.20원↓ |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90UF9sQmxHbXZja1VZUjJ2Zy1COHVuVjFPYVB4VTdUMl8tWGpWai1LWldTeEVocmc3NHg1eGZJcWVYM0F6aEZjejg1WEZiM3BUUFZ5NVhZbUFBV21FcWxpNEM4anExV2pQdjdmYXQ1VkpKbGlC?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "미·이란 대화 재개 기대가 안전자산 달러 수요를 낮춘 요인으로 함께 거론됨",
+      "headline": "미국-이란 대화 재개 기대가 달러 수요를 낮췄다",
+      "bullets": [
+        "미국과 이란의 대화 재개 가능성이 나오며 중동 불안이 다소 누그러�었다.",
+        "이 기대감이 안전자산인 달러를 덜 찾게 만들며 환율 하락에 힘을 보탰다."
+      ],
+      "sources": [
+        {
+          "title": "환율 이틀 연속 급락해 1,350원대로…달러매도·중동대화 기대",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03bXZ1N1QtRlRYTGpJTFpManpIMFdwcWs5QnBaaXZnUmpFYWE5NV9MejVCNVhQRWc5TzEwVUk3MzN6OXRGY09YbTNyZ0JLd0J6VHc?oc=5"
+        },
+        {
+          "title": "이틀째 급락 원·달러 환율 1350원대로…미국-이란 대화 재개 기대감 겹쳐",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQ3phTm9jTUk4QVFaMW1uVV80cFkxdmtONjhwUkpWOS1CTmtSLXJCV1NBSEFfRmZub3pwSDV0MU5tTkF1eXFMZDVvWF9IYUNiT1k2MVVaX3ladkNoRFNNb3NNTTkzRF9S?oc=5"
+        },
+        {
+          "title": "미·이란 협상 소식에 원화 강세…원·달러 환율 1340원대",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54dFYyUmxtMjZJYUhvNnFHN0Q0ZmxVaHhVdkxhTk41R2xBUkdzallpOVZ0dUVfRmh2ZVRNTkFFbDFMWmthc0VRd1RXR1BIcDgtSXlDNngwek5Hcm5CTmExLWRlSFNYOFRJ0gFsQVVfeXFMT1lrTjFscU1RalpJYTk1XzZtZ19rNjlkUmZsVTdybjdpbVh1VUVmWjN5VHFLWVdlbXdSaUdYdmczb19HV2pBWFhhU1JUNDd0Z1owcEExYjduRnl2YVVJSEFvSnhFMXJYaUhrT2po?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "아시아 통화 동조",
+      "emoji": "🌏",
+      "impact": 3,
+      "impact_reason": "엔화 강세가 원화와 같은 방향으로 움직이며 하락을 거들었음이 기사에 명시됨",
+      "headline": "엔화 강세가 원화 하락에 동조했다",
+      "bullets": [
+        "엔화가 강세를 보이면서 원화도 비슷한 방향으로 움직였다.",
+        "수출업체 달러 매도와 함께 엔화 강세가 환율 하락 요인으로 함께 언급됐다."
+      ],
+      "sources": [
+        {
+          "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "코스피 강세와 외국인 채권 순매도 전환 등 별개의 국내 시장 수급 이슈가 함께 나타남",
+      "headline": "코스피 강세와 외국인 채권 매도 전환이 겹쳤다",
+      "bullets": [
+        "코스피가 반도체 강세에 힘입어 7000선을 지키며 시장 분위기가 개선됐다.",
+        "외국인이 한국 채권시장에서 두 달 연속 순매도로 돌아선 점도 함께 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "코스피, 반도체 강세에 7천선 '탈환'…원·달러 환율은 8거래일 만에 '하락'",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXTXlJR0l3d1B1ekwxYXBPSEVTN1planhVc2dGV3p6R3ZrdGNhcVF6MExuOXY1UHJQV3E1eE1zV0RybjlmU0NDR3VSbnZQRWUzUDJxcllIS01WTlM5b0x5M0VLUnV3bkU?oc=5"
+        },
+        {
+          "title": "[경제 포커스] 외국인, 韓 채권 WGBI 편입 후 세 달 순매수… 최근 2개월 연속 순매도 - 조선비즈",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlpEanZ5b2JzSjhjV1JZRXlaSTU1RTNvaVFDWjJVVFplUWJNa1hWSjQtaHoxeS1EMkdtVjluZWpGRFEzQUZaajBHdHozM29uWmVkZTdGQmMteFZocFp2OWFKYUl1UHIzbG9DdFExa2J1Y0dEVmhZenAyUXVHV256eTFjd0stVjg5OHotQlR5UVJmdlNKUmljRmxn0gGaAUFVX3lxTFBOWkRqdnlvYnNKOGNXUllFeVpJNTVFM29pUUNaMlVUWmVRYk1rWFZKNC1oejF5LUQyR21WOW5lakZEUTNBRlpqMEd0ejMzb25aZWRlN0ZCYy14VmhwWnY5YUphSXVQcjNsb0N0UTFrYnVjR0RWaFl6cDJRdUdXbnp5MWN3Sy1WODk4ei1CVHlRUmZ2U0pSaWNGbGc?oc=5"
+        },
+        {
+          "title": "[데일리 경제 분석] (9월 22일) 코스피 7000선은 지켰지만 힘 빠진 상승…환율 급락 뒤 금융의 ‘약한 고리’가 보인다",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PWXhEeWViVnJaTnRfWUQ0QTVzekpNSV9uaHBoREtvZUZtREZKTXUwS1Jhd3JHWGZfdGdIQ0dHTWZUeWJnTkVZdHNTWFVYenJzbDVNSl9BV3JmSEZvN1lhdi1IMi14NUNPalZhbGhR?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}

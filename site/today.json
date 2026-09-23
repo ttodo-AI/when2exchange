@@ -1,146 +1,131 @@
 {
-  "generated_at": "2026-09-22T13:56:02.421516+00:00",
-  "asof": "2026-09-22 22:55 KST",
+  "generated_at": "2026-09-23T03:31:57.294025+00:00",
+  "asof": "2026-09-23 12:30 KST",
   "stale_days": 0,
-  "card_title": "수출업체 네고와 반도체 훈풍에 원화 강세",
-  "overall_why": "오늘 하락의 가장 큰 힘은 국제유가 급락으로 미국 국채 금리가 낮아지며 **강달러 압력이 누그러진 것**이다. 여기에 삼성전자 급등과 코스피 7000선 회복으로 외국인 자금이 국내 증시로 들어오고, 중동 정세 완화 기대감까지 겹치며 **위험자산을 사려는 분위기**가 원화 매수로 이어졌다. 연준의 긴축 기조라는 배경 변수는 남아있지만 오늘은 이 흐름을 뒤집지 못했다.",
+  "card_title": "추석 앞두고 달러매도에 환율 하락",
+  "overall_why": "환율 하락의 가장 큰 힘은 **추석을 앞두고 나온 수출기업들의 달러 매도**였고, 여기에 미국과 이란의 대화 재개 기대감이 겹치며 안전자산인 달러를 덜 찾게 만든 점이 더해졌다. 엔화 강세까지 같은 방향으로 움직이며 원화 하락 흐름을 뒷받침했고, 코스피 강세와 외국인 채권 매도 전환 같은 국내 수급 변수도 함께 작용해 환율이 1352원 부근에서 **어제와 비슷한 흐름**을 이어갔다.",
   "tldr": [
-    "오늘 원/달러는 1,359원으로 어제 1,375원보다 더 내려갔어요.",
-    "국제유가가 떨어지면서 강달러 압력이 누그러졌고, 코스피가 7000선을 되찾으며 외국인 자금이 몰린 게 원화를 밀어올렸어요.",
-    "중동 정세가 진정되는 분위기도 위험자산 선호를 살려 환율을 더 끌어내렸어요."
+    "오늘 원/달러는 1,352원으로 어제 1,356원보다 내려 비슷한 흐름을 이어갔어요.",
+    "추석을 앞두고 수출기업들이 달러를 내다 판 데다 미국과 이란의 대화 재개 기대감이 겹치면서 환율을 눌렀어요.",
+    "다음 미국 지표와 중동 정세 변화에 따라 환율이 다시 움직일 수 있어 지켜볼 필요가 있어요."
   ],
-  "heat": "high",
-  "title_badge": "⚡ 오늘 주목",
+  "heat": "normal",
+  "title_badge": "",
   "factors": [
     {
       "name": "달러 강세(달러인덱스)",
       "emoji": "💵",
       "impact": 5,
-      "impact_reason": "유가 급락과 달러 부담 완화가 여러 기사에서 환율 하락의 1순위 원인으로 지목됐다",
-      "headline": "유가 급락에 강달러 부담이 풀리며 원화가 강해졌다",
+      "impact_reason": "복수 매체가 오늘 환율 하락의 1순위 원인으로 수출기업 달러 매도를 지목",
+      "headline": "추석 앞둔 수출기업 달러 매도가 환율을 소폭 눌렀다",
       "bullets": [
-        "국제유가 급락으로 미국 10년물 금리가 5% 아래로 내려가며 매파적 연준 기조에 대한 부담이 완화됐다.",
-        "추석을 앞두고 수출업체들의 달러 매도(네고) 물량이 나오며 환율을 끌어내리는 힘으로 작용했다."
+        "추석 연휴를 앞두고 수출기업들이 결제에 쓸 달러를 시장에 내놓으면서 달러 공급이 늘었다.",
+        "이 달러 매도 물량이 겹치며 환율은 전일대비 내린 1,352원으로 1350원대 초반을 유지했다."
       ],
       "sources": [
         {
-          "title": "[뉴욕 금·채권·달러] 유가 급락에 10년물 5% 아래로…매파 연준 눌렀다",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBrUHk5a0VUNU9DMjV6Unc3OXh3ZktiSHFKcXl5Rm1jZzJ1UlZZVTJGYzdTeWQwdnp4MXVCSlBERWUtSUV3Q1BxZ3M3end2U194OXhYbHBNZGQ?oc=5"
+          "title": "원/달러 환율 1350원대 급락…추석 앞둔 수출기업 달러매도 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HWmdvV3RISG1Lby12aUpIR2VIVW1RRUlWU05vODNNbGxHQm1LVF9JdWVDbkpnOG5vOUp2S3dxYUEzQ09hTnFtbndocjUxOXo4LXhRNzJRNGpiVEg0UzhfTjBIel9rdExSQ2Y40gFwQVVfeXFMUG5BTlNHd2JRRmhOWmRCM18wU0JwTjUwZ3F3TnJvekFoSlNLSEZkalE1REczdV9KekI3d3pjM0NhYk1PS2prMEQ1Vk9nb3oyVzhKNGVJd2pyWV9UU3I4OEFXNEoxSFJkZ1VPQVhkMkZleQ?oc=5"
         },
         {
           "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
           "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
         },
         {
-          "title": "추석 앞두고 수출업체 달러 매도 확대…원·달러 1381원 마감",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hM1l2ajNtN3ZNV3R6aV8tYmxQbDFraUtESENHdS1SOGdiZHlTUW1jV0FhXzctVEdlWnNWMkxMamxqd3gyaFBOMTNQY2pxbUtrYU1YYXBWaGdrZDFWN2VlUzhVRURxWjZR0gFsQVVfeXFMT29hQWhXNVB4a3V6LVoxblI5R3Z3THI2eXBqZUZzQllkUkNJVlI3ZWpvWF8xY0lCa2I0Z3ZmNjhad1U4VU4ydlh3bVFxMlh1bDNiQ0RsVWlMNEtORjBwOEM4MXBpb0JYZ3BsalY3?oc=5"
-        },
-        {
-          "title": "환율, 1360원대로 내려…유가 급락에 강달러 부담 완화",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5jWHRnc1hrbHVzRFJjV2l3akhmbU5zbEc0c1B1QllUbVpzSWthb216RWh3WHpteHgyNHRtQ21KMXpBZkNLRjIxV1ZBLWZ5ZDRId2NMWENRTHV1VzFiekE?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "외국인 증시 수급",
-      "emoji": "📈",
-      "impact": 4,
-      "impact_reason": "코스피 7000선 회복과 반도체 강세가 외국인 자금 유입을 이끌며 원화 강세를 뒷받침했다",
-      "headline": "삼성전자 급등에 코스피 7000선 회복, 외국인 매수세가 원화를 지지했다",
-      "bullets": [
-        "삼성전자가 약 5% 급등하며 코스피가 8거래일 만에 7000선을 다시 넘었다.",
-        "반도체주 강세와 유가 안정이 겹치며 외국인 자금이 국내 증시로 몰렸다."
-      ],
-      "sources": [
-        {
-          "title": "코스피 8거래일 만에 7000선 터치…반도체가 끌어올렸다",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1kRGRnX2x1dnAyb2V2LWEycXhqcjc3N0RpMDJLVG1EZFdHT19LNnI5cm5iZTE3OVFpeHhhQk1tMmtGdGhoMENxTVJpQ0oxcllsUk02V21xenc5UVdVMDVsWk96aDhCNzBVNV9nTUhsRQ?oc=5"
-        },
-        {
-          "title": "코스피, 1.65% 오르며 ‘7천피’ 탈환…반도체주 상승",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fTHBiNGZyaVE1VWhsV1RQTGtaUU9BQ0kxU0NFdGIzYm03cDUzMXA2d0MwRFFZVTRiaS1pajh2U0lUYW1TOFRoQkUzNWtmNFZvSmJ1ZTF1Z0lQYjg?oc=5"
-        },
-        {
-          "title": "'반도체 훈풍' 삼전 5%대 급등…코스피 7천선 탈환",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE82V0xvUENPWWJCeFVYWS00Ym1tekhEWU5sMHZQYjRFMDlsSmJxY3pwQjgwdGVnRkRZNUZJVG9BaWhKc1pqZFhyMDF2WHl6X3M?oc=5"
-        },
-        {
-          "title": "코스피, 반도체·유가 안정 힘입어 7000선 회복…삼성전자 5% 급등",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5KcVg5Vjc3N2lEczBwWVVsZmhZdmdkbERtUlRSckVLRGprc3B1OUdDelFVM2VtNnBCb2s3SFZBTnRMZkdQYzh1NDcxb0MyZ0E2UXc?oc=5"
-        },
-        {
-          "title": "삼성전자 4%대 급등..코스피 ‘7000’선 탈환",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5ILTg2aVZDXzFaN2hjaEVlZVNmdVA4ZGpmUXllS0h5ZjFOM1l5d1hTMjdlc2pHUXpKWGt3MkpZVE9VRXV2NENpb1JVV2hzRWp6amZDWTJJcC1wa0dhdmNtUkNNcmZwRWPSAWpBVV95cUxOOGhpblNhWDFMQUt2NDhSdlVEVllONFlwYXZWTklld2gzczl6V0EwRXZmTWtYUnQ2TzZuWHZMZjRLUExQcGRnSF8tWFMxdTlYaG9nOGpaY1daeHFWRlRLYklLQ1BtUHVSX1Fn?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "그 외 환율 이슈",
-      "emoji": "🔎",
-      "impact": 3,
-      "impact_reason": "중동 정세 완화 기대가 위험자산 선호 심리를 살려 환율 하락에 힘을 보탰다",
-      "headline": "중동 합의 기대감에 위험자산 선호가 살아나며 환율에 하락 압력이 더해졌다",
-      "bullets": [
-        "중동 지역의 합의 기대감이 커지며 위험을 피해 달러로 몰렸던 자금이 빠져나갔다.",
-        "장중 1380원대에서 매수와 매도가 맞섰으나 결국 전일 대비 내린 현재 1,359원 매도 우위로 기울었다."
-      ],
-      "sources": [
-        {
-          "title": "위험선호심리 회복·중동 합의 기대감에 환율 하락 압력 [외환브리핑]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPeUhuSkswZlZHZlJzanVlaUNfeFhXU0Z1c3lncDBEMlAyYThTRS1zYWpPcTlVNzlrMUo1SHpZNDlTYnA5bC1QWVBNdzA2WjlXd1Z5QURYNUViWkNiZ3lzY3ptQkVHTGxVU0g1dXZpdjVSQlJlTS1xUnlFaExfUzFPRw?oc=5"
-        },
-        {
-          "title": "[26년 9월 22일(화)] 1380원대서 매수·매도 맞붙어…BOJ 긴축도 변수 - 비티의 오늘 주요 뉴스 요약",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOVZBdENTd3Z1OVllSnhrRXdQYnVqSmF4YjhwTjF3cDVuZGZ0a3BIOWFvVTZ6YzVNYldDTGVZM0RMN1NnRzFYNFV5ODBETkwxZnJ4bWRjbXVmdEk2U0pfTnBlX1BtR25JMFgtUHFRMGl4RU1HRmVhY3I4Y29NQVhjUw?oc=5"
-        },
-        {
-          "title": "1380원대서 매수·매도 맞붙어…BOJ 긴축도 변수 [김혜란의 FX]",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81QlhiMGZLLXg2NWo0cTQtZU9VNmxMRjd5S1NYOVptUV9qYjZuaVN3WWllLXMzb1h5ZHJXSUpCaDFPMkZOQzZLZVVLcDZjVlQxV1HSAVNBVV95cUxNZWdIZFV0RDNqOXFzMTFwaFRvMEJtbzI5Unp0N1RwdERqdG1iUlE4Z0dRbjZPb1lRcG1HZlJqM3ZRMkNEQkcyVmdUWEpQQVk2aG9SQQ?oc=5"
+          "title": "[외환] 추석 앞두고 대규모 네고에 1,350원대 초반으로 급락…25.20원↓ |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90UF9sQmxHbXZja1VZUjJ2Zy1COHVuVjFPYVB4VTdUMl8tWGpWai1LWldTeEVocmc3NHg1eGZJcWVYM0F6aEZjejg1WEZiM3BUUFZ5NVhZbUFBV21FcWxpNEM4anExV2pQdjdmYXQ1VkpKbGlC?oc=5"
         }
       ]
     },
     {
       "name": "미국 통화정책",
       "emoji": "🇺🇸",
-      "impact": 2,
-      "impact_reason": "연준의 매파적 기조는 여전히 배경 변수로 남아있지만 오늘 하락의 직접 원인은 아니었다",
-      "headline": "연준 긴축 기조는 남아있지만 오늘은 원화 강세 흐름을 막지 못했다",
+      "impact": 4,
+      "impact_reason": "미·이란 대화 재개 기대가 안전자산 달러 수요를 낮춘 요인으로 함께 거론됨",
+      "headline": "미국-이란 대화 재개 기대가 달러 수요를 낮췄다",
       "bullets": [
-        "미국의 금리 인상 여파가 이어지며 환율 상단을 지지하는 요인으로 계속 거론됐다.",
-        "엔화 흐름이 환율의 '길잡이' 변수로 계속 주목받았다."
+        "미국과 이란의 대화 재개 가능성이 나오며 중동 불안이 다소 누그러�었다.",
+        "이 기대감이 안전자산인 달러를 덜 찾게 만들며 환율 하락에 힘을 보탰다."
       ],
       "sources": [
         {
-          "title": "[외환-주간] 롤러코스터 환율의 종착역은…길잡이 엔화 주시 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByX2Jta0ZSNmV2dTVLMEtnaEVpa1E1cTdLc3BPbl9ILWFheUlRNE9Hd3dqUk44N3JPRjBuajlzX1FhV05ibVFESVJKNFo1bVRZYkQxU09TeTk4VGlNTTQydXZITmliVXREQ3FTRV9lOEpHeWVD?oc=5"
+          "title": "환율 이틀 연속 급락해 1,350원대로…달러매도·중동대화 기대",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03bXZ1N1QtRlRYTGpJTFpManpIMFdwcWs5QnBaaXZnUmpFYWE5NV9MejVCNVhQRWc5TzEwVUk3MzN6OXRGY09YbTNyZ0JLd0J6VHc?oc=5"
         },
         {
-          "title": "[모닝 리포트] \"엇갈린 미·일 금리, '유가·엔화' 변수 부상\"",
-          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBCaEtjZnc4Qi05U3ZHWEhXRTdOVTM3dnJIQjFIdFE3djNqYS1xV2NUOXV4U25NNTlySGszV1dYb1F0OTVYUjdKNXJpbDhLYy1UNU5OZGtSUjlNdzhU?oc=5"
+          "title": "이틀째 급락 원·달러 환율 1350원대로…미국-이란 대화 재개 기대감 겹쳐",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQ3phTm9jTUk4QVFaMW1uVV80cFkxdmtONjhwUkpWOS1CTmtSLXJCV1NBSEFfRmZub3pwSDV0MU5tTkF1eXFMZDVvWF9IYUNiT1k2MVVaX3ladkNoRFNNb3NNTTkzRF9S?oc=5"
         },
         {
-          "title": "환율, 1380원대 중반서 등락…美 긴축·엔화 약세 영향",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9xS3pXOThObXZ3VVZxWEpmOTFXMlBHZlY2QzVXZ3kyNGVPbmg2QnJuRDVqSVpKQnZyNUw0RmtWMDFGNFdxRHJwM0xLT0cyQWtUODdNZzZSaFl0RjBadHc?oc=5"
+          "title": "미·이란 협상 소식에 원화 강세…원·달러 환율 1340원대",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54dFYyUmxtMjZJYUhvNnFHN0Q0ZmxVaHhVdkxhTk41R2xBUkdzallpOVZ0dUVfRmh2ZVRNTkFFbDFMWmthc0VRd1RXR1BIcDgtSXlDNngwek5Hcm5CTmExLWRlSFNYOFRJ0gFsQVVfeXFMT1lrTjFscU1RalpJYTk1XzZtZ19rNjlkUmZsVTdybjdpbVh1VUVmWjN5VHFLWVdlbXdSaUdYdmczb19HV2pBWFhhU1JUNDd0Z1owcEExYjduRnl2YVVJSEFvSnhFMXJYaUhrT2po?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "아시아 통화 동조",
+      "emoji": "🌏",
+      "impact": 3,
+      "impact_reason": "엔화 강세가 원화와 같은 방향으로 움직이며 하락을 거들었음이 기사에 명시됨",
+      "headline": "엔화 강세가 원화 하락에 동조했다",
+      "bullets": [
+        "엔화가 강세를 보이면서 원화도 비슷한 방향으로 움직였다.",
+        "수출업체 달러 매도와 함께 엔화 강세가 환율 하락 요인으로 함께 언급됐다."
+      ],
+      "sources": [
+        {
+          "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "코스피 강세와 외국인 채권 순매도 전환 등 별개의 국내 시장 수급 이슈가 함께 나타남",
+      "headline": "코스피 강세와 외국인 채권 매도 전환이 겹쳤다",
+      "bullets": [
+        "코스피가 반도체 강세에 힘입어 7000선을 지키며 시장 분위기가 개선됐다.",
+        "외국인이 한국 채권시장에서 두 달 연속 순매도로 돌아선 점도 함께 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "코스피, 반도체 강세에 7천선 '탈환'…원·달러 환율은 8거래일 만에 '하락'",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXTXlJR0l3d1B1ekwxYXBPSEVTN1planhVc2dGV3p6R3ZrdGNhcVF6MExuOXY1UHJQV3E1eE1zV0RybjlmU0NDR3VSbnZQRWUzUDJxcllIS01WTlM5b0x5M0VLUnV3bkU?oc=5"
+        },
+        {
+          "title": "[경제 포커스] 외국인, 韓 채권 WGBI 편입 후 세 달 순매수… 최근 2개월 연속 순매도 - 조선비즈",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlpEanZ5b2JzSjhjV1JZRXlaSTU1RTNvaVFDWjJVVFplUWJNa1hWSjQtaHoxeS1EMkdtVjluZWpGRFEzQUZaajBHdHozM29uWmVkZTdGQmMteFZocFp2OWFKYUl1UHIzbG9DdFExa2J1Y0dEVmhZenAyUXVHV256eTFjd0stVjg5OHotQlR5UVJmdlNKUmljRmxn0gGaAUFVX3lxTFBOWkRqdnlvYnNKOGNXUllFeVpJNTVFM29pUUNaMlVUWmVRYk1rWFZKNC1oejF5LUQyR21WOW5lakZEUTNBRlpqMEd0ejMzb25aZWRlN0ZCYy14VmhwWnY5YUphSXVQcjNsb0N0UTFrYnVjR0RWaFl6cDJRdUdXbnp5MWN3Sy1WODk4ei1CVHlRUmZ2U0pSaWNGbGc?oc=5"
+        },
+        {
+          "title": "[데일리 경제 분석] (9월 22일) 코스피 7000선은 지켰지만 힘 빠진 상승…환율 급락 뒤 금융의 ‘약한 고리’가 보인다",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PWXhEeWViVnJaTnRfWUQ0QTVzekpNSV9uaHBoREtvZUZtREZKTXUwS1Jhd3JHWGZfdGdIQ0dHTWZUeWJnTkVZdHNTWFVYenJzbDVNSl9BV3JmSEZvN1lhdi1IMi14NUNPalZhbGhR?oc=5"
         }
       ]
     }
   ],
   "calendar": {
-    "guide": "이번 주는 지난주 FOMC 결과의 여진 속에 한미 금리차 확대 이슈가 원화 약세 압력으로 작용할 수 있다. 다음 주(9/30, 10/2)에는 미국 PCE와 9월 고용보고서가 연달아 발표되어 환율 변동성이 커질 전망이다. 환전은 급한 경우 이번 주 분산 매수하고, 고용보고서 발표 전후는 변동성이 크니 큰 금액은 결과 확인 후 움직이는 것이 안전하다.",
+    "guide": "이번 주는 이미 지난 9월17일 FOMC 금리인상 여파가 원/달러에 계속 반영되는 국면이고, 다음 주 9월30일 미국 8월 PCE 발표가 원/달러 변동성의 핵심 변수다. 한미 금리차가 1%p로 확대된 만큼 달러 강세 압력이 이어질 수 있어, 환전은 PCE 발표 전후 변동성을 감안해 분할로 접근하는 것이 안전하다.",
     "events": [
       {
         "date": "2026-09-17",
         "time": "03:00",
-        "name": "미국 9월 FOMC 금리결정",
+        "name": "미국 9월 FOMC 금리결정(+점도표)",
         "importance": 3,
-        "summary": "3년 만의 기준금리 인상으로 한미 금리차가 1%p로 확대되며 원화 약세 요인 발생",
-        "why": "미국이 3년 만에 금리를 인상하며 한미 금리차가 벌어져 자본유출·원화 약세 압력이 커짐",
-        "result": "연준이 3년 만에 기준금리를 인상하며 예상보다 매파적으로 평가되면서 달러-원 환율은 1,400원 개방 전망이 나왔으나, 발표 후 결제수요 유입에도 네고물량과 엔화 강세로 상단이 제한되며 1,380원대로 마감했다",
+        "summary": "3년 만의 금리 인상 단행으로 한미 금리차 확대, 달러 강세 요인",
+        "why": "연준이 예상 밖 금리 인상을 단행하며 한미 금리차가 1%p로 벌어져 원화 약세 압력이 커졌다",
+        "result": "연준이 3년2개월 만에 기준금리를 인상하고 연내 추가 인상을 시사했으며 이에 달러가 강세로 복귀했다",
         "scenarios": [],
         "sources": [
           {
+            "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
+            "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
+          },
+          {
             "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
-            "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9WMzM4cldaUjlUaUp6SkVXSzBRaFRSWkZySHp0OE5RNWlyMTlVbG5OS1MycExzLVpGa2Rib0ZsSk5YbHQ5OGNueURuYS1aV1NwM21UTVZ5amlJZG93eXhlbnpsT2VEVUNJTnlqbHhwYV9MQk9Q?oc=5",
+            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UVDJFaEEySU43aUJiYWJ2VEtVMWxUeWQwa0NlQnRqX2lYXzd2UldvZWQxSlBnZ0loWjM5Y2Z2X3dpOFp0RnNKcGFVeTNseFBXcGlaNF95OHk4Wk9uOF9aWGFDZmtxVkduVlhQQTVuQTI2NV9PTGJodA?oc=5",
             "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
           },
           {
@@ -155,17 +140,48 @@
         "time": "21:30",
         "name": "미국 8월 PCE(개인소비지출 물가)",
         "importance": 3,
-        "summary": "연준의 선호 물가지표로 향후 금리 경로 전망에 영향, 달러 변동성 확대 요인",
-        "why": "PCE는 연준이 가장 중시하는 물가지표라 결과에 따라 추가 금리 인상 기대가 바뀌며 달러 강약이 갈림",
+        "summary": "인플레이션 재가속 여부 확인, 추가 금리 인상 기대에 영향",
+        "why": "연준의 10월 추가 인상 가능성을 가늠하는 핵심 물가지표로 결과에 따라 달러 방향성이 크게 갈린다",
         "result": "",
         "scenarios": [
           {
             "cond": "예상보다 높게 나오면",
-            "effect": "연준의 긴축 지속 우려로 달러 강세, 원/달러 상승(원화 약세)"
+            "effect": "10월 추가 인상 기대 강화로 달러 강세, 원/달러 상승"
           },
           {
             "cond": "예상보다 낮게 나오면",
-            "effect": "금리 인하 기대 강화로 달러 약세, 원/달러 하락(원화 강세)"
+            "effect": "인상 기조 완화 기대로 달러 약세, 원/달러 하락"
+          }
+        ],
+        "sources": [
+          {
+            "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
+            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
+            "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
+          },
+          {
+            "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
+            "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
+            "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "time": "21:30",
+        "name": "미국 9월 고용보고서(비농업·실업률)",
+        "importance": 3,
+        "summary": "고용 둔화 여부에 따라 연준 정책 경로 재평가, 환율 변동성 확대",
+        "why": "고용 지표가 견조하면 추가 인상 명분이 강화되어 달러 강세 압력이 커진다",
+        "result": "",
+        "scenarios": [
+          {
+            "cond": "예상보다 강한 고용이면",
+            "effect": "추가 인상 기대로 달러 강세, 원/달러 상승"
+          },
+          {
+            "cond": "예상보다 약한 고용이면",
+            "effect": "인상 종료 기대로 달러 약세, 원/달러 하락"
           }
         ],
         "sources": [
@@ -175,44 +191,13 @@
             "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
           },
           {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LNnhZOXJuQWN0SHJ4WnFGRkRXYTlMakJ0STBtd1JZM3dudks0RDBGcGkwSE56VEJEcHlrT28tbE93NG9MWEdvTXNwQXFZdzZD?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外 블루밍비트"
-          }
-        ]
-      },
-      {
-        "date": "2026-10-02",
-        "time": "21:30",
-        "name": "미국 9월 고용보고서(비농업고용·실업률)",
-        "importance": 3,
-        "summary": "미국 노동시장 상황을 보여주는 핵심 지표로 연준 정책 전망과 달러 방향에 큰 영향",
-        "why": "고용지표가 연준의 다음 금리 결정 판단 근거가 되기 때문에 서프라이즈 시 환율 급변 가능",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "고용이 예상보다 강하게 나오면",
-            "effect": "금리 인하 지연 우려로 달러 강세, 원/달러 상승"
-          },
-          {
-            "cond": "고용이 예상보다 약하게 나오면",
-            "effect": "경기 둔화 우려 속 금리 인하 기대로 달러 약세, 원/달러 하락"
-          }
-        ],
-        "sources": [
-          {
             "title": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목",
             "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WRlNSOXFydUNCbDYtM2FHZExqNlpLQWFONVE0VEt2MWxlT2pra2lwNzhkZ1gxSzNtU293VjNVUVVyT2laaV9HX2VzT1RDVUht?oc=5",
             "snippet": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목 블루밍비트"
-          },
-          {
-            "title": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外",
-            "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LNnhZOXJuQWN0SHJ4WnFGRkRXYTlMakJ0STBtd1JZM3dudks0RDBGcGkwSE56VEJEcHlrT28tbE93NG9MWEdvTXNwQXFZdzZD?oc=5",
-            "snippet": "[한주간 주요 경제·암호화폐 일정] 美中 정상회담 外 블루밍비트"
           }
         ]
       }
     ],
-    "today_kst": "2026-09-22"
+    "today_kst": "2026-09-23"
   }
 }

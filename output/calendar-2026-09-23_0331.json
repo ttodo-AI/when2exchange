@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-09-23T03:31:51.207740+00:00",
+  "today_kst": "2026-09-23",
+  "guide": "이번 주는 이미 지난 9월17일 FOMC 금리인상 여파가 원/달러에 계속 반영되는 국면이고, 다음 주 9월30일 미국 8월 PCE 발표가 원/달러 변동성의 핵심 변수다. 한미 금리차가 1%p로 확대된 만큼 달러 강세 압력이 이어질 수 있어, 환전은 PCE 발표 전후 변동성을 감안해 분할로 접근하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정(+점도표)",
+      "importance": 3,
+      "summary": "3년 만의 금리 인상 단행으로 한미 금리차 확대, 달러 강세 요인",
+      "why": "연준이 예상 밖 금리 인상을 단행하며 한미 금리차가 1%p로 벌어져 원화 약세 압력이 커졌다",
+      "result": "연준이 3년2개월 만에 기준금리를 인상하고 연내 추가 인상을 시사했으며 이에 달러가 강세로 복귀했다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
+          "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
+        },
+        {
+          "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UVDJFaEEySU43aUJiYWJ2VEtVMWxUeWQwa0NlQnRqX2lYXzd2UldvZWQxSlBnZ0loWjM5Y2Z2X3dpOFp0RnNKcGFVeTNseFBXcGlaNF95OHk4Wk9uOF9aWGFDZmtxVkduVlhQQTVuQTI2NV9PTGJodA?oc=5",
+          "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+        },
+        {
+          "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
+          "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 매일경제"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "time": "21:30",
+      "name": "미국 8월 PCE(개인소비지출 물가)",
+      "importance": 3,
+      "summary": "인플레이션 재가속 여부 확인, 추가 금리 인상 기대에 영향",
+      "why": "연준의 10월 추가 인상 가능성을 가늠하는 핵심 물가지표로 결과에 따라 달러 방향성이 크게 갈린다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "10월 추가 인상 기대 강화로 달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "인상 기조 완화 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
+          "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
+        },
+        {
+          "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
+          "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "time": "21:30",
+      "name": "미국 9월 고용보고서(비농업·실업률)",
+      "importance": 3,
+      "summary": "고용 둔화 여부에 따라 연준 정책 경로 재평가, 환율 변동성 확대",
+      "why": "고용 지표가 견조하면 추가 인상 명분이 강화되어 달러 강세 압력이 커진다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 강한 고용이면",
+          "effect": "추가 인상 기대로 달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "예상보다 약한 고용이면",
+          "effect": "인상 종료 기대로 달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
+          "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
+        },
+        {
+          "title": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WRlNSOXFydUNCbDYtM2FHZExqNlpLQWFONVE0VEt2MWxlT2pra2lwNzhkZ1gxSzNtU293VjNVUVVyT2laaV9HX2VzT1RDVUht?oc=5",
+          "snippet": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목 블루밍비트"
+        }
+      ]
+    }
+  ]
+}

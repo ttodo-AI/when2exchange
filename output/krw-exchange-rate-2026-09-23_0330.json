@@ -1,0 +1,48 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-09-23T03:30:48.842348+00:00",
+  "window_hours": 24,
+  "count": 5,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "label": "GOOD",
+    "text": "VERDICT: GOOD timing to buy USD with KRW now\n\nRATE: 1,340–1,350 KRW/USD\n\nWHY: The won has strengthened significantly, with the KRW/USD rate falling to the 1,340s (a sharp 22.8 won drop in recent days and the largest decline in 2.5 months). A lower KRW/USD means the won is strong, so you need fewer won to buy your $2,000—making this a relatively favorable entry point for your monthly conversion.\n\nTIP: Lock in this rate now if possible, as the news suggests volatility ahead; the won may weaken again if dollar strength resumes due to anticipated interest-rate hikes."
+  },
+  "articles": [
+    {
+      "title": "유가 하락에 달러·원 사흘 째 내림세…1340원대로 급락",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE51Ung0SUVJWERHeTNjN2FhRnE4bjFmc3BIWUhxNy1RZ013ZzZ4bTkzNHc5ZnBXTkpZdkNMc3VkbjZSTGlmNHBvUlNCZVFpMDBQMkdoeGI5MlJHRUxkeVJQVtIBYEFVX3lxTE51Ung0SUVJWERHeTNjN2FhRnE4bjFmc3BIWUhxNy1RZ013ZzZ4bTkzNHc5ZnBXTkpZdkNMc3VkbjZSTGlmNHBvUlNCZVFpMDBQMkdoeGI5MlJHRUxkeVJQVg?oc=5",
+      "summary": "유가 하락에 달러·원 사흘 째 내림세…1340원대로 급락 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-23T00:37:50+00:00"
+    },
+    {
+      "title": "금리 인상 전망에 '달러 강세 지속'",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8yY09HWndYakIxVnBTNGJORVRuR2JQbHJJaEVieTZWMHJHTDNPeFoxTngxZGFLQWZMbmN6U00xNVgxR3FxUExZSmVMOA?oc=5",
+      "summary": "금리 인상 전망에 '달러 강세 지속' 뉴스1",
+      "source": "뉴스1",
+      "date": "2026-09-22T03:35:03+00:00"
+    },
+    {
+      "title": "[외환] 원·달러 22.8원 급락…두 달 반 만에 최대 낙폭",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBTZVpwWjBieHJrU3A2S255aTBFYUJNVXZGT21EaGNFVTE2bDBfcU92S3RWTGxoeF9SdHZDbnhZcmhmTEVkNzVQeUlkUFRhcUZPeGZJLWg1dlh5TVF3aHRfV1Nlbkg2N0U?oc=5",
+      "summary": "[외환] 원·달러 22.8원 급락…두 달 반 만에 최대 낙폭 자본시장뉴스",
+      "source": "자본시장뉴스",
+      "date": "2026-09-22T08:30:00+00:00"
+    },
+    {
+      "title": "연휴 앞두고 달러 공급 확대⋯\"원·달러 1350원 초중반 등락\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5GVlJjWWV2S0VQNTZoQmxHbHJ0TV9KbkVMcXN2cTktMHJsa2JmWVdqUVJfMFZnX0k1XzBtUWxDQUlMZGR0dS1OQkRWaVBzeVhyRXJTTGR4bE9ZVjFfRV8wMHUtLXh6Rm1GLVhUVXZaQ1JGbkVs?oc=5",
+      "summary": "연휴 앞두고 달러 공급 확대⋯\"원·달러 1350원 초중반 등락\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-09-22T22:54:00+00:00"
+    },
+    {
+      "title": "다바오 홀덤 환전:바카라 토토",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdnNZZHFBOWJ6UFoxQjZQS3JISFpndTBwV0VzdE4tQlBLX3VlRGlydEE4d1k0aVNzMlhjSEJwQWllVEdaeXRYLWlSVGo3OTcydE82RGZBV3lyZHhPRFZYb2RxSnp4NTF5aWhIQkVaeWpVallzaHNua0lHalJPTHByREFSUUZsVkU?oc=5",
+      "summary": "다바오 홀덤 환전:바카라 토토 calgaryroughnecks.com",
+      "source": "calgaryroughnecks.com",
+      "date": "2026-09-22T05:16:46+00:00"
+    }
+  ]
+}
