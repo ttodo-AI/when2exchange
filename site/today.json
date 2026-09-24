@@ -1,132 +1,128 @@
 {
-  "generated_at": "2026-09-23T14:06:31.368392+00:00",
-  "asof": "2026-09-23 23:06 KST",
+  "generated_at": "2026-09-24T03:22:16.756776+00:00",
+  "asof": "2026-09-24 12:21 KST",
   "stale_days": 0,
-  "card_title": "추석 앞두고 달러매도에 환율 하락",
-  "overall_why": "환율 하락의 가장 큰 힘은 **추석을 앞두고 나온 수출기업들의 달러 매도**였고, 여기에 미국과 이란의 대화 재개 기대감이 겹치며 안전자산인 달러를 덜 찾게 만든 점이 더해졌다. 엔화 강세까지 같은 방향으로 움직이며 원화 하락 흐름을 뒷받침했고, 코스피 강세와 외국인 채권 매도 전환 같은 국내 수급 변수도 함께 작용해 환율이 1352원 부근에서 **어제와 비슷한 흐름**을 이어갔다.",
+  "card_title": "매파 연준 여진에 환율 상승",
+  "overall_why": "어제 연준이 매파적 신호를 내놓은 데 이어 오늘 미국 PMI 지표가 예상보다 강하게 나오면서 **미국 금리가 더 상승 흐름이라는 기대가 커졌다.** 이 기대는 미국 국채 10년물 금리를 5.12%까지 밀어올렸고, 그 높은 이자를 좇아 돈이 달러로 몰리면서 달러가 강해졌다. 그 결과 원화는 상대적으로 약해지며 원/달러 환율이 어제보다 더 올랐다.",
   "tldr": [
-    "오늘 원/달러는 1,352원으로 어제 1,356원보다 내려 비슷한 흐름을 이어갔어요.",
-    "추석을 앞두고 수출기업들이 달러를 내다 판 데다 미국과 이란의 대화 재개 기대감이 겹치면서 환율을 눌렀어요.",
-    "다음 미국 지표와 중동 정세 변화에 따라 환율이 다시 움직일 수 있어 지켜볼 필요가 있어요."
+    "오늘 원/달러가 1,367원으로 어제 1,356원보다 올랐어요.",
+    "어제 미국 연준의 매파적 금리 신호와 미국 PMI 서프라이즈로 미국 금리와 달러가 함께 오른 영향이 이어졌어요.",
+    "미국 10년물 금리가 5%대를 넘어선 만큼 앞으로 미국 지표 발표에 따라 환율이 더 움직일 수 있어요."
   ],
-  "heat": "normal",
-  "title_badge": "",
+  "heat": "high",
+  "title_badge": "⚡ 오늘 주목",
   "factors": [
-    {
-      "name": "달러 강세(달러인덱스)",
-      "emoji": "💵",
-      "impact": 5,
-      "impact_reason": "복수 매체가 오늘 환율 하락의 1순위 원인으로 수출기업 달러 매도를 지목",
-      "headline": "추석 앞둔 수출기업 달러 매도가 환율을 소폭 눌렀다",
-      "bullets": [
-        "추석 연휴를 앞두고 수출기업들이 결제에 쓸 달러를 시장에 내놓으면서 달러 공급이 늘었다.",
-        "이 달러 매도 물량이 겹치며 환율은 전일대비 내린 1,352원으로 1350원대 초반을 유지했다."
-      ],
-      "sources": [
-        {
-          "title": "원/달러 환율 1350원대 급락…추석 앞둔 수출기업 달러매도 - 머니투데이",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HWmdvV3RISG1Lby12aUpIR2VIVW1RRUlWU05vODNNbGxHQm1LVF9JdWVDbkpnOG5vOUp2S3dxYUEzQ09hTnFtbndocjUxOXo4LXhRNzJRNGpiVEg0UzhfTjBIel9rdExSQ2Y40gFwQVVfeXFMUG5BTlNHd2JRRmhOWmRCM18wU0JwTjUwZ3F3TnJvekFoSlNLSEZkalE1REczdV9KekI3d3pjM0NhYk1PS2prMEQ1Vk9nb3oyVzhKNGVJd2pyWV9UU3I4OEFXNEoxSFJkZ1VPQVhkMkZleQ?oc=5"
-        },
-        {
-          "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
-        },
-        {
-          "title": "[외환] 추석 앞두고 대규모 네고에 1,350원대 초반으로 급락…25.20원↓ |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90UF9sQmxHbXZja1VZUjJ2Zy1COHVuVjFPYVB4VTdUMl8tWGpWai1LWldTeEVocmc3NHg1eGZJcWVYM0F6aEZjejg1WEZiM3BUUFZ5NVhZbUFBV21FcWxpNEM4anExV2pQdjdmYXQ1VkpKbGlC?oc=5"
-        }
-      ]
-    },
     {
       "name": "미국 통화정책",
       "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "어제 매파적 연준 결정이 오늘까지 환율 상승의 근본 배경으로 지목됨",
+      "headline": "연준 관련 매파적 시각이 원화 약세 요인으로 거론됐다",
+      "bullets": [
+        "케빈 워시 연준 의장의 추가 금리 인상 시사 여부를 묻는 보도가 나왔다.",
+        "연준의 긴축 기조 우려가 원화 약세 압력으로 언급됐다."
+      ],
+      "sources": [
+        {
+          "title": "케빈 워시 연준 의장이 추가 금리 인상을 시사했나요?",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVlNuNmxRVzlhMzdyX3JVQXZZX2NySzYyVGhxN3F5UmtRVEVzbzZQdHRKcXFMVm5GU3ZPRkxic2RhbWFlekxnM2VVRy0wS0RoU3dBN2lvYzdzVFRfT3lydU9TbmJ4akNkVGx4LXljekp5cTZzeHZfM3ExTHcxRmpKUkNiLWI4alp2RlRQSjE2WDVzem5VUzhCWjdxVmxGVXM?oc=5"
+        },
+        {
+          "title": "1330원대 찍던 원·달러 환율 다시 1400원 위협…Fed 긴축·고유가에 원화 '휘청'",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5yLXlyRFBXZTVBVU4zX3pWZEw1RUJMZUlWUG9pZWtXcl9kT1JTaUNQS2xLWXh2ZmJDZ19JMWRReTl1bDJqaGZLWTJCbWJrb2RodlVka0hxV1c3czk5QXVLemd5aGJJbHhDZFJHX0pxQl9PQdIBckFVX3lxTE5yLXlyRFBXZTVBVU4zX3pWZEw1RUJMZUlWUG9pZWtXcl9kT1JTaUNQS2xLWXh2ZmJDZ19JMWRReTl1bDJqaGZLWTJCbWJrb2RodlVka0hxV1c3czk5QXVLemd5aGJJbHhDZFJHX0pxQl9PQQ?oc=5"
+        },
+        {
+          "title": "한국경제 ‘3高’+물가 압박…고금리·고유가·고환율에 물가까지 상승",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50UDNTaU1uZjdacWdBdFQtSFg1dmNmV1NFcGRDV2VCSEFGaDhGN0JVX0M1Y2tFRlVIMW0xVGJFZXUzcVY0czAtSFh2eV8yak5Yeml4bjRpU3BxZFpWQ2tmcmxFZkgtb3NUSnctZmdzc9IBb0FVX3lxTE50UDNTaU1uZjdacWdBdFQtSFg1dmNmV1NFcGRDV2VCSEFGaDhGN0JVX0M1Y2tFRlVIMW0xVGJFZXUzcVY0czAtSFh2eV8yak5Yeml4bjRpU3BxZFpWQ2tmcmxFZkgtb3NUSnctZmdzcw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
       "impact": 4,
-      "impact_reason": "미·이란 대화 재개 기대가 안전자산 달러 수요를 낮춘 요인으로 함께 거론됨",
-      "headline": "미국-이란 대화 재개 기대가 달러 수요를 낮췄다",
+      "impact_reason": "미국 지표 서프라이즈로 달러가 실제로 강해진 직접적 경로를 설명함",
+      "headline": "미국 PMI 서프라이즈로 달러가 강세를 보인 정황이 있다",
       "bullets": [
-        "미국과 이란의 대화 재개 가능성이 나오며 중동 불안이 다소 누그러�었다.",
-        "이 기대감이 안전자산인 달러를 덜 찾게 만들며 환율 하락에 힘을 보탰다."
+        "뉴욕시장에서 미국 PMI 서프라이즈에 금리와 달러가 함께 올랐다.",
+        "같은 날 금값이 1.6% 하락하며 안전자산 자금이 이동한 정황이 나타났다."
       ],
       "sources": [
         {
-          "title": "환율 이틀 연속 급락해 1,350원대로…달러매도·중동대화 기대",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE03bXZ1N1QtRlRYTGpJTFpManpIMFdwcWs5QnBaaXZnUmpFYWE5NV9MejVCNVhQRWc5TzEwVUk3MzN6OXRGY09YbTNyZ0JLd0J6VHc?oc=5"
+          "title": "[뉴욕 금·채권·달러] 미국 PMI 서프라이즈에 금리·달러 상승…금값 1.6% 하락",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EQWEydldtSm5EaFRVOW5vdUMxcWhabzBCVXp6Tm55YkR1S3pMVVFXTEY5NW16RlctelpVUXZTTmlraGxZaW1sRmJkNWRNM2YybzhXWjZpdjQ?oc=5"
         },
         {
-          "title": "이틀째 급락 원·달러 환율 1350원대로…미국-이란 대화 재개 기대감 겹쳐",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFByQ3phTm9jTUk4QVFaMW1uVV80cFkxdmtONjhwUkpWOS1CTmtSLXJCV1NBSEFfRmZub3pwSDV0MU5tTkF1eXFMZDVvWF9IYUNiT1k2MVVaX3ladkNoRFNNb3NNTTkzRF9S?oc=5"
-        },
-        {
-          "title": "미·이란 협상 소식에 원화 강세…원·달러 환율 1340원대",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE54dFYyUmxtMjZJYUhvNnFHN0Q0ZmxVaHhVdkxhTk41R2xBUkdzallpOVZ0dUVfRmh2ZVRNTkFFbDFMWmthc0VRd1RXR1BIcDgtSXlDNngwek5Hcm5CTmExLWRlSFNYOFRJ0gFsQVVfeXFMT1lrTjFscU1RalpJYTk1XzZtZ19rNjlkUmZsVTdybjdpbVh1VUVmWjN5VHFLWVdlbXdSaUdYdmczb19HV2pBWFhhU1JUNDd0Z1owcEExYjduRnl2YVVJSEFvSnhFMXJYaUhrT2po?oc=5"
+          "title": "[9.24(목) 미장 0시] - 금리·유가 급등에 성장주 압박, 에너지만 역주행",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sWnpVeXY1TnZWNGMwWWxuenpZSHhhWnFvWm1xZ2tRM2FkSDBsNUp2aURVeHZLU1Y1UmNoUmJPVFFsN3RMTExnVEctYmhxaUhMelozSjBNLWowV3VlOXJMcFEzWWJtVU8zZ2d3NDVNRlRvZXN6UlE?oc=5"
         }
       ]
     },
     {
-      "name": "아시아 통화 동조",
-      "emoji": "🌏",
+      "name": "미국 경제지표",
+      "emoji": "📊",
       "impact": 3,
-      "impact_reason": "엔화 강세가 원화와 같은 방향으로 움직이며 하락을 거들었음이 기사에 명시됨",
-      "headline": "엔화 강세가 원화 하락에 동조했다",
+      "impact_reason": "달러 강세를 촉발한 직접 지표 결과로 보조적이지만 핵심 트리거 역할",
+      "headline": "미국 PMI 발표에 시장의 관심이 집중됐다",
       "bullets": [
-        "엔화가 강세를 보이면서 원화도 비슷한 방향으로 움직였다.",
-        "수출업체 달러 매도와 함께 엔화 강세가 환율 하락 요인으로 함께 언급됐다."
+        "미국 PMI 발표를 앞두고 트레이더들의 전망이 주목받았다.",
+        "PMI 서프라이즈가 미국 금리 상승과 맞물려 달러 수요를 자극한 것으로 보도됐다."
       ],
       "sources": [
         {
-          "title": "원/달러 환율 하락, 수출업체 달러 매도와 엔화 강세의 영향은?",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE85S1JNVXcwWC14REVXTDR2SjR2TThuT1BpS3dTMThvQnRncEo3RVBjYm03SnkwSVpRZVQ3TVN2cjRsODhWci1WdUg5THc5U0ppLUE0Ml9DXzg5TE84TFJFaFpPSE9Cc1FF?oc=5"
+          "title": "오늘 미국 PMI 발표…트레이더 전망은",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA4bHp2VnFiakZ0QWJub01XWFRnMURSZGtES3Y3UUFLT2FJWnUzNlhwVkd3aVNrR2dsM0xlUklVQ1lSeFB1Z3VYX1NPbWhIb05LcDNiN0NLMnA2VUh3a291Tk5lenBPV2FELUVz?oc=5"
+        },
+        {
+          "title": "[오늘증시] 추석연휴 앞 힘겨루기... \"반도체 강세\" vs \"차익실현 관망\"",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NQnRkWlFIcE5OSVN2eDdrOURvMmNFci1neV9hUjR1Mm1UYnhLcVFrVU05M0p5T2pRWHRMWlZxQUlYU282dmtXSnVLYkd0c0VhcWlsZXNhRF9QaDhCWVZKanNPQ05DckdBa2VKWk05U2Z2cnc?oc=5"
         }
       ]
     },
     {
-      "name": "그 외 환율 이슈",
-      "emoji": "🔎",
+      "name": "지정학 리스크",
+      "emoji": "⚔️",
       "impact": 2,
-      "impact_reason": "코스피 강세와 외국인 채권 순매도 전환 등 별개의 국내 시장 수급 이슈가 함께 나타남",
-      "headline": "코스피 강세와 외국인 채권 매도 전환이 겹쳤다",
+      "impact_reason": "금리 급등에 따른 안전자산 이탈 신호로 방향에 힘을 보탰으나 주된 동인은 아님",
+      "headline": "미 국채 10년물 금리 5.12% 돌파가 안전자산 흐름에 영향을 준 것으로 보인다",
       "bullets": [
-        "코스피가 반도체 강세에 힘입어 7000선을 지키며 시장 분위기가 개선됐다.",
-        "외국인이 한국 채권시장에서 두 달 연속 순매도로 돌아선 점도 함께 나타났다."
+        "미국 10년물 국채 금리가 5.12%를 돌파했다는 보도가 나왔다.",
+        "지정학적 리스크에도 금값이 폭락하는 이례적 흐름이 나타났다."
       ],
       "sources": [
         {
-          "title": "코스피, 반도체 강세에 7천선 '탈환'…원·달러 환율은 8거래일 만에 '하락'",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBXTXlJR0l3d1B1ekwxYXBPSEVTN1planhVc2dGV3p6R3ZrdGNhcVF6MExuOXY1UHJQV3E1eE1zV0RybjlmU0NDR3VSbnZQRWUzUDJxcllIS01WTlM5b0x5M0VLUnV3bkU?oc=5"
+          "title": "[9.24(목) 안전자산 악재] 미 10년물 5.12% 돌파…안전…",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBkVldfSXRsN2c1TmpiSmVRS2hveWJxaDN1aHhJdEJxWGRxVTZsZllHaGlpZXRiY2tMS2hoVE9PWFUyd0VHYmo0YTh6bEUtcXJfNU8yM0dKVjNIRHBONW1nMno4U2psdDZsclR4aTU1azFFNFlEdHc?oc=5"
         },
         {
-          "title": "[경제 포커스] 외국인, 韓 채권 WGBI 편입 후 세 달 순매수… 최근 2개월 연속 순매도 - 조선비즈",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTlpEanZ5b2JzSjhjV1JZRXlaSTU1RTNvaVFDWjJVVFplUWJNa1hWSjQtaHoxeS1EMkdtVjluZWpGRFEzQUZaajBHdHozM29uWmVkZTdGQmMteFZocFp2OWFKYUl1UHIzbG9DdFExa2J1Y0dEVmhZenAyUXVHV256eTFjd0stVjg5OHotQlR5UVJmdlNKUmljRmxn0gGaAUFVX3lxTFBOWkRqdnlvYnNKOGNXUllFeVpJNTVFM29pUUNaMlVUWmVRYk1rWFZKNC1oejF5LUQyR21WOW5lakZEUTNBRlpqMEd0ejMzb25aZWRlN0ZCYy14VmhwWnY5YUphSXVQcjNsb0N0UTFrYnVjR0RWaFl6cDJRdUdXbnp5MWN3Sy1WODk4ei1CVHlRUmZ2U0pSaWNGbGc?oc=5"
-        },
-        {
-          "title": "[데일리 경제 분석] (9월 22일) 코스피 7000선은 지켰지만 힘 빠진 상승…환율 급락 뒤 금융의 ‘약한 고리’가 보인다",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1PWXhEeWViVnJaTnRfWUQ0QTVzekpNSV9uaHBoREtvZUZtREZKTXUwS1Jhd3JHWGZfdGdIQ0dHTWZUeWJnTkVZdHNTWFVYenJzbDVNSl9BV3JmSEZvN1lhdi1IMi14NUNPalZhbGhR?oc=5"
+          "title": "오늘 금시세(금값) 폭락... 금가격이 지정학 리스크에도 추락한 이유는",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrQkdOZWI0ZldwYk9pc05ha1ZtbHFKRnpOZ0p5SThRS01QMXllWVNCWUNQaGlicDJ5YTVrQVB4UndWODF0cWpaQWxIVjJKVW5hRWc5NDlB?oc=5"
         }
       ]
     }
   ],
   "calendar": {
-    "guide": "이번 주는 이미 지난 9월17일 FOMC 금리인상 여파가 원/달러에 계속 반영되는 국면이고, 다음 주 9월30일 미국 8월 PCE 발표가 원/달러 변동성의 핵심 변수다. 한미 금리차가 1%p로 확대된 만큼 달러 강세 압력이 이어질 수 있어, 환전은 PCE 발표 전후 변동성을 감안해 분할로 접근하는 것이 안전하다.",
+    "guide": "이번 주는 이미 FOMC가 지난 목요일 종료되어 금리 방향성은 확인된 상태이며, 다음 주 수요일 미국 8월 PCE 물가와 그 다음 날짜인 10월 2일 고용보고서가 원/달러 환율의 다음 변수다. 한미 금리차가 1%p로 확대된 상황이라 PCE·고용지표가 예상보다 강하게 나오면 달러 강세·원화 약세 압력이 커질 수 있으니, 환전 계획이 있다면 지표 발표 전후 변동성을 감안해 분할 환전을 권한다.",
     "events": [
       {
         "date": "2026-09-17",
         "time": "03:00",
         "name": "미국 9월 FOMC 금리결정(+점도표)",
         "importance": 3,
-        "summary": "3년 만의 금리 인상 단행으로 한미 금리차 확대, 달러 강세 요인",
-        "why": "연준이 예상 밖 금리 인상을 단행하며 한미 금리차가 1%p로 벌어져 원화 약세 압력이 커졌다",
-        "result": "연준이 3년2개월 만에 기준금리를 인상하고 연내 추가 인상을 시사했으며 이에 달러가 강세로 복귀했다",
+        "summary": "연준 금리 인상 결정으로 한미 금리차 확대, 환율 상승 압력 발생",
+        "why": "금리 결정과 점도표는 한미 금리차와 달러 강세 방향을 좌우해 원/달러 환율에 직접 영향을 준다",
+        "result": "미국 연준이 3년 만에 기준금리를 인상했으며, 원/달러 환율에 대한 직후 반응은 명시된 내용이 없다",
         "scenarios": [],
         "sources": [
           {
-            "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
-            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
-            "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
+            "title": "지난주 클래리티 표결 실패·연준 금리 인상에도… 비트코인 회복세, 솔라나 급등",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9fWFBNY0ZyampmWEpGWmJOTkVIZVY1SE1vcnlIT3NVNk1MOUh6a3JObTBWZVZZOEdsRzlaUzgtd2pScTQ2YnhJSGFlNW1OYlo0Q2kyc2VMUS0?oc=5",
+            "snippet": "지난주 클래리티 표결 실패·연준 금리 인상에도… 비트코인 회복세, 솔라나 급등 블록미디어"
           },
           {
-            "title": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성",
-            "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UVDJFaEEySU43aUJiYWJ2VEtVMWxUeWQwa0NlQnRqX2lYXzd2UldvZWQxSlBnZ0loWjM5Y2Z2X3dpOFp0RnNKcGFVeTNseFBXcGlaNF95OHk4Wk9uOF9aWGFDZmtxVkduVlhQQTVuQTI2NV9PTGJodA?oc=5",
-            "snippet": "美 3년 만에 기준금리 인상…한은도 추가 인상 가능성 부산일보"
+            "title": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺]",
+            "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqOFQ4Zm14YUtxSDJvMHRfQlAwYVFEeHFxUWs2Z2pJZlZTNHo3eUZrX2lxX1lpLXUyaGRkYVMwcFdNWi05U005MjUyUHM4OWZjWmZLdldpdFhrTEdIU2c?oc=5",
+            "snippet": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺] YTN"
           },
           {
             "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
@@ -140,25 +136,20 @@
         "time": "21:30",
         "name": "미국 8월 PCE(개인소비지출 물가)",
         "importance": 3,
-        "summary": "인플레이션 재가속 여부 확인, 추가 금리 인상 기대에 영향",
-        "why": "연준의 10월 추가 인상 가능성을 가늠하는 핵심 물가지표로 결과에 따라 달러 방향성이 크게 갈린다",
+        "summary": "물가 지표에 따라 추가 금리 경로 기대가 바뀌며 환율 변동성 확대 가능",
+        "why": "PCE는 연준이 가장 중시하는 물가지표로 향후 금리 정책 기대를 바꿔 달러 강약을 좌우한다",
         "result": "",
         "scenarios": [
           {
             "cond": "예상보다 높게 나오면",
-            "effect": "10월 추가 인상 기대 강화로 달러 강세, 원/달러 상승"
+            "effect": "추가 긴축 기대로 달러 강세, 원/달러 상승 압력"
           },
           {
             "cond": "예상보다 낮게 나오면",
-            "effect": "인상 기조 완화 기대로 달러 약세, 원/달러 하락"
+            "effect": "금리 인하 기대로 달러 약세, 원/달러 하락 압력"
           }
         ],
         "sources": [
-          {
-            "title": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망",
-            "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNMFJBdU5JQzZDZV9OZmFsbjl3RVpISVJtcGdNYVFXaWJDc3VlZHFiMXIzeFFGMUM4UE9KZndIeGVBMnlfbEs0cnZwYlFoelB1YTJwSWw2anREeDRMREhXSVpETlBfcXVxUldNUjlFQ203Mk9ZUi1NQnVfV1BRdmEwVnMtZjRRZ2tjaUNwckZsOTBxVm43NVhFZERvc0djbW9EZTVRV0NDc2pKa2lsQnVSX0E0MllTdVJHamswT0pPMG1SaG5BUmc?oc=5",
-            "snippet": "연준의 금리 인상 재개에 대한 월가의 해석: 골드만은 10월 인상에 베팅, 씨티는 내년 6월 인하 전망 TradingKey"
-          },
           {
             "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
             "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
@@ -171,17 +162,17 @@
         "time": "21:30",
         "name": "미국 9월 고용보고서(비농업·실업률)",
         "importance": 3,
-        "summary": "고용 둔화 여부에 따라 연준 정책 경로 재평가, 환율 변동성 확대",
-        "why": "고용 지표가 견조하면 추가 인상 명분이 강화되어 달러 강세 압력이 커진다",
+        "summary": "고용지표 강약에 따라 연준 정책 기대 변화, 환율 변동성 확대",
+        "why": "고용지표는 미국 경기와 연준 금리 경로 판단의 핵심 근거로 달러 가치에 직접적 영향을 준다",
         "result": "",
         "scenarios": [
           {
-            "cond": "예상보다 강한 고용이면",
-            "effect": "추가 인상 기대로 달러 강세, 원/달러 상승"
+            "cond": "고용이 예상보다 강하면",
+            "effect": "달러 강세, 원/달러 상승"
           },
           {
-            "cond": "예상보다 약한 고용이면",
-            "effect": "인상 종료 기대로 달러 약세, 원/달러 하락"
+            "cond": "고용이 예상보다 약하면",
+            "effect": "달러 약세, 원/달러 하락"
           }
         ],
         "sources": [
@@ -198,6 +189,6 @@
         ]
       }
     ],
-    "today_kst": "2026-09-23"
+    "today_kst": "2026-09-24"
   }
 }

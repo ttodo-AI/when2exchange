@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-09-24T03:22:10.110411+00:00",
+  "today_kst": "2026-09-24",
+  "guide": "이번 주는 이미 FOMC가 지난 목요일 종료되어 금리 방향성은 확인된 상태이며, 다음 주 수요일 미국 8월 PCE 물가와 그 다음 날짜인 10월 2일 고용보고서가 원/달러 환율의 다음 변수다. 한미 금리차가 1%p로 확대된 상황이라 PCE·고용지표가 예상보다 강하게 나오면 달러 강세·원화 약세 압력이 커질 수 있으니, 환전 계획이 있다면 지표 발표 전후 변동성을 감안해 분할 환전을 권한다.",
+  "events": [
+    {
+      "date": "2026-09-17",
+      "time": "03:00",
+      "name": "미국 9월 FOMC 금리결정(+점도표)",
+      "importance": 3,
+      "summary": "연준 금리 인상 결정으로 한미 금리차 확대, 환율 상승 압력 발생",
+      "why": "금리 결정과 점도표는 한미 금리차와 달러 강세 방향을 좌우해 원/달러 환율에 직접 영향을 준다",
+      "result": "미국 연준이 3년 만에 기준금리를 인상했으며, 원/달러 환율에 대한 직후 반응은 명시된 내용이 없다",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "지난주 클래리티 표결 실패·연준 금리 인상에도… 비트코인 회복세, 솔라나 급등",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9fWFBNY0ZyampmWEpGWmJOTkVIZVY1SE1vcnlIT3NVNk1MOUh6a3JObTBWZVZZOEdsRzlaUzgtd2pScTQ2YnhJSGFlNW1OYlo0Q2kyc2VMUS0?oc=5",
+          "snippet": "지난주 클래리티 표결 실패·연준 금리 인상에도… 비트코인 회복세, 솔라나 급등 블록미디어"
+        },
+        {
+          "title": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺]",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBqOFQ4Zm14YUtxSDJvMHRfQlAwYVFEeHFxUWs2Z2pJZlZTNHo3eUZrX2lxX1lpLXUyaGRkYVMwcFdNWi05U005MjUyUHM4OWZjWmZLdldpdFhrTEdIU2c?oc=5",
+          "snippet": "한은 금리결정, 집값 아닌 '이것'에 달렸다 [이슈톺] YTN"
+        },
+        {
+          "title": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GQmctX1BUVEhfTTVmSjRDelRxNW01SE5ha2xhblROZC1oS3N2dmh4ODB0eDctcGwzdkdUc2ZYV200b3dFX1Y2a1YzMHB1a0s0NHpFTw?oc=5",
+          "snippet": "韓·美 금리 격차 1%p로 확대 ... 기준금리 11월 인상에 무게 매일경제"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "time": "21:30",
+      "name": "미국 8월 PCE(개인소비지출 물가)",
+      "importance": 3,
+      "summary": "물가 지표에 따라 추가 금리 경로 기대가 바뀌며 환율 변동성 확대 가능",
+      "why": "PCE는 연준이 가장 중시하는 물가지표로 향후 금리 정책 기대를 바꿔 달러 강약을 좌우한다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "추가 긴축 기대로 달러 강세, 원/달러 상승 압력"
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "금리 인하 기대로 달러 약세, 원/달러 하락 압력"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
+          "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "time": "21:30",
+      "name": "미국 9월 고용보고서(비농업·실업률)",
+      "importance": 3,
+      "summary": "고용지표 강약에 따라 연준 정책 기대 변화, 환율 변동성 확대",
+      "why": "고용지표는 미국 경기와 연준 금리 경로 판단의 핵심 근거로 달러 가치에 직접적 영향을 준다",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "고용이 예상보다 강하면",
+          "effect": "달러 강세, 원/달러 상승"
+        },
+        {
+          "cond": "고용이 예상보다 약하면",
+          "effect": "달러 약세, 원/달러 하락"
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOWmhqMFdsVENQZFJ6aTU0MUpBWnJfWGdXX0dfZ0Z3ZGNGMUtaeTZFTjJ1czRabGlkSFhVWEM3Mm0yMm1qMmhTOG5JSm9BWldPbjlRWnJqWjQ3MWhLRlVHZG1ZTnoxdHNQUGZVVi1VYjdHVlA1Wi1XZmpHNWdtQ3R0OVRlX2NCbHRnOVA2eWRobzdjX1RQSHYyMUNYZm9zRmEwMjFGdFpFbjlSel9Pd25oRVJGeXdOa2l5NkwzMzRMbE91dEcxOFNBdlRhUUJkalcyWkdOLTJ4czc0UQ?oc=5",
+          "snippet": "주간 전망: 연준 의사록과 월마트·타깃·홈디포 실적, 미국 소비 회복력 시험대 TradingKey"
+        },
+        {
+          "title": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WRlNSOXFydUNCbDYtM2FHZExqNlpLQWFONVE0VEt2MWxlT2pra2lwNzhkZ1gxSzNtU293VjNVUVVyT2laaV9HX2VzT1RDVUht?oc=5",
+          "snippet": "비트코인 8만4000달러선 반등…이번주 美 고용지표·토큰화 주식 거래 주목 블루밍비트"
+        }
+      ]
+    }
+  ]
+}

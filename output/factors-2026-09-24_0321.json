@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-09-24T03:21:54.995281+00:00",
+  "card_title": "매파 연준 여진에 환율 상승",
+  "tldr": [
+    "오늘 원/달러가 1,367원으로 어제 1,356원보다 올랐어요.",
+    "어제 미국 연준의 매파적 금리 신호와 미국 PMI 서프라이즈로 미국 금리와 달러가 함께 오른 영향이 이어졌어요.",
+    "미국 10년물 금리가 5%대를 넘어선 만큼 앞으로 미국 지표 발표에 따라 환율이 더 움직일 수 있어요."
+  ],
+  "overall_why": "어제 연준이 매파적 신호를 내놓은 데 이어 오늘 미국 PMI 지표가 예상보다 강하게 나오면서 **미국 금리가 더 상승 흐름이라는 기대가 커졌다.** 이 기대는 미국 국채 10년물 금리를 5.12%까지 밀어올렸고, 그 높은 이자를 좇아 돈이 달러로 몰리면서 달러가 강해졌다. 그 결과 원화는 상대적으로 약해지며 원/달러 환율이 어제보다 더 올랐다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "어제 매파적 연준 결정이 오늘까지 환율 상승의 근본 배경으로 지목됨",
+      "headline": "연준 관련 매파적 시각이 원화 약세 요인으로 거론됐다",
+      "bullets": [
+        "케빈 워시 연준 의장의 추가 금리 인상 시사 여부를 묻는 보도가 나왔다.",
+        "연준의 긴축 기조 우려가 원화 약세 압력으로 언급됐다."
+      ],
+      "sources": [
+        {
+          "title": "케빈 워시 연준 의장이 추가 금리 인상을 시사했나요?",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVlNuNmxRVzlhMzdyX3JVQXZZX2NySzYyVGhxN3F5UmtRVEVzbzZQdHRKcXFMVm5GU3ZPRkxic2RhbWFlekxnM2VVRy0wS0RoU3dBN2lvYzdzVFRfT3lydU9TbmJ4akNkVGx4LXljekp5cTZzeHZfM3ExTHcxRmpKUkNiLWI4alp2RlRQSjE2WDVzem5VUzhCWjdxVmxGVXM?oc=5"
+        },
+        {
+          "title": "1330원대 찍던 원·달러 환율 다시 1400원 위협…Fed 긴축·고유가에 원화 '휘청'",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5yLXlyRFBXZTVBVU4zX3pWZEw1RUJMZUlWUG9pZWtXcl9kT1JTaUNQS2xLWXh2ZmJDZ19JMWRReTl1bDJqaGZLWTJCbWJrb2RodlVka0hxV1c3czk5QXVLemd5aGJJbHhDZFJHX0pxQl9PQdIBckFVX3lxTE5yLXlyRFBXZTVBVU4zX3pWZEw1RUJMZUlWUG9pZWtXcl9kT1JTaUNQS2xLWXh2ZmJDZ19JMWRReTl1bDJqaGZLWTJCbWJrb2RodlVka0hxV1c3czk5QXVLemd5aGJJbHhDZFJHX0pxQl9PQQ?oc=5"
+        },
+        {
+          "title": "한국경제 ‘3高’+물가 압박…고금리·고유가·고환율에 물가까지 상승",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE50UDNTaU1uZjdacWdBdFQtSFg1dmNmV1NFcGRDV2VCSEFGaDhGN0JVX0M1Y2tFRlVIMW0xVGJFZXUzcVY0czAtSFh2eV8yak5Yeml4bjRpU3BxZFpWQ2tmcmxFZkgtb3NUSnctZmdzc9IBb0FVX3lxTE50UDNTaU1uZjdacWdBdFQtSFg1dmNmV1NFcGRDV2VCSEFGaDhGN0JVX0M1Y2tFRlVIMW0xVGJFZXUzcVY0czAtSFh2eV8yak5Yeml4bjRpU3BxZFpWQ2tmcmxFZkgtb3NUSnctZmdzcw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "미국 지표 서프라이즈로 달러가 실제로 강해진 직접적 경로를 설명함",
+      "headline": "미국 PMI 서프라이즈로 달러가 강세를 보인 정황이 있다",
+      "bullets": [
+        "뉴욕시장에서 미국 PMI 서프라이즈에 금리와 달러가 함께 올랐다.",
+        "같은 날 금값이 1.6% 하락하며 안전자산 자금이 이동한 정황이 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "[뉴욕 금·채권·달러] 미국 PMI 서프라이즈에 금리·달러 상승…금값 1.6% 하락",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EQWEydldtSm5EaFRVOW5vdUMxcWhabzBCVXp6Tm55YkR1S3pMVVFXTEY5NW16RlctelpVUXZTTmlraGxZaW1sRmJkNWRNM2YybzhXWjZpdjQ?oc=5"
+        },
+        {
+          "title": "[9.24(목) 미장 0시] - 금리·유가 급등에 성장주 압박, 에너지만 역주행",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5sWnpVeXY1TnZWNGMwWWxuenpZSHhhWnFvWm1xZ2tRM2FkSDBsNUp2aURVeHZLU1Y1UmNoUmJPVFFsN3RMTExnVEctYmhxaUhMelozSjBNLWowV3VlOXJMcFEzWWJtVU8zZ2d3NDVNRlRvZXN6UlE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 3,
+      "impact_reason": "달러 강세를 촉발한 직접 지표 결과로 보조적이지만 핵심 트리거 역할",
+      "headline": "미국 PMI 발표에 시장의 관심이 집중됐다",
+      "bullets": [
+        "미국 PMI 발표를 앞두고 트레이더들의 전망이 주목받았다.",
+        "PMI 서프라이즈가 미국 금리 상승과 맞물려 달러 수요를 자극한 것으로 보도됐다."
+      ],
+      "sources": [
+        {
+          "title": "오늘 미국 PMI 발표…트레이더 전망은",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA4bHp2VnFiakZ0QWJub01XWFRnMURSZGtES3Y3UUFLT2FJWnUzNlhwVkd3aVNrR2dsM0xlUklVQ1lSeFB1Z3VYX1NPbWhIb05LcDNiN0NLMnA2VUh3a291Tk5lenBPV2FELUVz?oc=5"
+        },
+        {
+          "title": "[오늘증시] 추석연휴 앞 힘겨루기... \"반도체 강세\" vs \"차익실현 관망\"",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1NQnRkWlFIcE5OSVN2eDdrOURvMmNFci1neV9hUjR1Mm1UYnhLcVFrVU05M0p5T2pRWHRMWlZxQUlYU282dmtXSnVLYkd0c0VhcWlsZXNhRF9QaDhCWVZKanNPQ05DckdBa2VKWk05U2Z2cnc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "지정학 리스크",
+      "emoji": "⚔️",
+      "impact": 2,
+      "impact_reason": "금리 급등에 따른 안전자산 이탈 신호로 방향에 힘을 보탰으나 주된 동인은 아님",
+      "headline": "미 국채 10년물 금리 5.12% 돌파가 안전자산 흐름에 영향을 준 것으로 보인다",
+      "bullets": [
+        "미국 10년물 국채 금리가 5.12%를 돌파했다는 보도가 나왔다.",
+        "지정학적 리스크에도 금값이 폭락하는 이례적 흐름이 나타났다."
+      ],
+      "sources": [
+        {
+          "title": "[9.24(목) 안전자산 악재] 미 10년물 5.12% 돌파…안전…",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBkVldfSXRsN2c1TmpiSmVRS2hveWJxaDN1aHhJdEJxWGRxVTZsZllHaGlpZXRiY2tMS2hoVE9PWFUyd0VHYmo0YTh6bEUtcXJfNU8yM0dKVjNIRHBONW1nMno4U2psdDZsclR4aTU1azFFNFlEdHc?oc=5"
+        },
+        {
+          "title": "오늘 금시세(금값) 폭락... 금가격이 지정학 리스크에도 추락한 이유는",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBrQkdOZWI0ZldwYk9pc05ha1ZtbHFKRnpOZ0p5SThRS01QMXllWVNCWUNQaGlicDJ5YTVrQVB4UndWODF0cWpaQWxIVjJKVW5hRWc5NDlB?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "전일대비 +11원",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "claude"
+}
