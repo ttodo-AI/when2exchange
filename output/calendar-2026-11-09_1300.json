@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-11-09T13:00:19.288393+00:00",
+  "today_kst": "2026-11-09",
+  "guide": "이번 주 10일 발표되는 미국 10월 소비자물가지수(CPI)가 원/달러 환율 방향성을 결정지을 최대 분수령이다. 지난주 미국 고용 호조로 긴축 우려가 이어지는 가운데 물가 지표까지 높게 나오면 달러 강세가 심화될 수 있다. 달러 실수요자는 물가 발표 전후 변동성에 대비해 분할 환전으로 대응하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-11-06",
+      "time": "22:30",
+      "name": "미국 10월 비농업 고용보고서",
+      "importance": 3,
+      "summary": "미국 고용 지표 호조로 긴축 우려 부각되며 달러 강세 압력 작용",
+      "why": "고용 시장의 탄탄함이 연준의 긴축 기조를 장기화시켜 달러 가치를 끌어올리는 핵심 요인이기 때문이다.",
+      "result": "미국 고용 지표가 호조를 기록하면서 연준의 금리 부담이 커져 달러 강세 및 환율 상승 요인으로 작용했다.",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QVFE3WDdIWnRlbEpjeHpQdzljRURsSjF6SThTWm9pS0RRekFnWlNyZEszejA0UHZQa2Y5WG01cS01ME95MWRmSU5xeDNDZnczbm1rYWpyRk1VX1dubVNfWjl1dmNNbGZoM0dr?oc=5",
+          "snippet": "6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검 ISSUE ON (이슈온)"
+        },
+        {
+          "title": "국제 금값, 美 고용 호조에 하락세…연준 금리 인상 전망 부담",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBBbFZvQTNzRTNxZzNxOS1oaWhmby0zczNhLVcyMTRPN0RKVVdYb2JLVjBPTnUtaldJWVpyTW1SS0p1U0hfUXlxVndmWW85OFNU?oc=5",
+          "snippet": "국제 금값, 美 고용 호조에 하락세…연준 금리 인상 전망 부담 블루밍비트"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "time": "22:30",
+      "name": "미국 10월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "미국 인플레이션 둔화 여부에 따라 환율의 추가 상승 또는 반락 결정",
+      "why": "연준의 향후 통화정책 방향을 가늠할 핵심 물가 지표로 환율에 직접적인 충격을 준다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상보다 높게 나오면",
+          "effect": "연준의 긴축 장기화 우려가 커지며 원/달러 환율이 상승할 수 있다."
+        },
+        {
+          "cond": "예상보다 낮게 나오면",
+          "effect": "인플레이션 완화 기대감으로 달러화가 약세를 보이며 환율이 하락할 수 있다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1QVFE3WDdIWnRlbEpjeHpQdzljRURsSjF6SThTWm9pS0RRekFnWlNyZEszejA0UHZQa2Y5WG01cS01ME95MWRmSU5xeDNDZnczbm1rYWpyRk1VX1dubVNfWjl1dmNNbGZoM0dr?oc=5",
+          "snippet": "6일 고용·10일 CPI·26일 금통위…11월 시장 일정 7건 점검 ISSUE ON (이슈온)"
+        },
+        {
+          "title": "[주간프리뷰] 중간선거 지나니 물가 시험대…CPI·PPI부터 코어위브 실적까지",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE54MFh6VWxlQ3lnTE0yZ1FpdjN1cFphQVZtMndPMzZxdEl4UEFNMnZEZmhqbDgwczlQelJQam1xSVJSS3Jldjk1U3oyRW5IRnlBMk9jQ3lLcDNhbzBJVTA0Nnp5aE9FOHVmSHFMYzdubV9CTDjSAXdBVV95cUxPcHQwSkt6QWtpZTdqeHZGdWVmak5jYnc0bHBaZTdxdG13T2ZabHF0ZFVWUDBtd3ozTGZrMWNTWXo3YTdtTUFkNVhqNk5MYVNYbklTWmZCdEFSVlhjaVdaZXJVRm1tc0pnUVdTVzAtM05kSmxya2VzYw?oc=5",
+          "snippet": "[주간프리뷰] 중간선거 지나니 물가 시험대…CPI·PPI부터 코어위브 실적까지 머니네버슬립"
+        },
+        {
+          "title": "[11월2주 글로벌 증시 캘린더] 미국 CPI·PPI에 AI 실적까지…증시 흔들 변수는",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZMXhCeWd2OVNXZkpTSHJRdGxQbG16akRtMW5BbC1RR0FkenNZSUNzc0hITHVHMDB1NzMtUGVMblB5UlZQTWc1UlVTQWYwUFBkNlFCZThyT1NINlRxcU15aA?oc=5",
+          "snippet": "[11월2주 글로벌 증시 캘린더] 미국 CPI·PPI에 AI 실적까지…증시 흔들 변수는 https://www.theconnectmoney.com/"
+        },
+        {
+          "title": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBwVk1CRElYc2pwX3pKUXRjZzdveFF5Z1NhZ08xM0RHbFNyZXFYOURoTUlfRmRNaUN0QXFKOXRoOXZObHoxNUpES2Fn?oc=5",
+          "snippet": "비트코인 추가 폭락하나? 미국 CPI·PPI 등 4대 변수에 시장 긴장 코인리더스"
+        },
+        {
+          "title": "[이번주 관전포인트] 뉴욕발 급락 코스피, 미 물가에 반등 달렸다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9aZVBqUzB5S1pPa2swRk1IUE1ERDR1dnNKUTJoaDVzYXBfMXNZNm1aVDBRVnF1Yi1YcVZNS1pacFBjZExZZ1pBWUd3QmhXdERjOXhqV3NUbE9pU204Y1Q2Q3RCd0VLQdIBakFVX3lxTE5YLWpHaTJjMENCeUxLaDRQcktKV19WQnNKVlM3aUdTZzh5ZjRHWjJZMVlOTFc2bnBXLTFtd05JdEwzMEtUZGNxeFZKVnV3ZEN1X2lva3JFOGctTk9YRjctT25vaE1Gbk5iUWc?oc=5",
+          "snippet": "[이번주 관전포인트] 뉴욕발 급락 코스피, 미 물가에 반등 달렸다 센트럴경제"
+        }
+      ]
+    }
+  ]
+}

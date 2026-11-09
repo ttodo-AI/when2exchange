@@ -1,0 +1,26 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-09T12:59:01.381707+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgsPqTMTDaCLZijkxrqsx'})"
+  },
+  "articles": [
+    {
+      "title": "미 고용 서프라이즈에 달러 강세⋯\"1360원 중반 회복 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1jU3VSU2NlM0tGaWVkQkExaGV3dEtBYU51Ylk5eDdPN3c0VHNONEpBbUdVR2dlNXBFdVRndzZoWU4wZ05WQWtFRUlrVnZPR2JBUUxTSg?oc=5",
+      "summary": "미 고용 서프라이즈에 달러 강세⋯\"1360원 중반 회복 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-11-08T22:50:00+00:00"
+    },
+    {
+      "title": "환율 1360원대 상승 압력…美 금리 인상 우려에 강달러 재점화",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB0RjNFYjZMekc3TzhDZENSd0NQTmhuUUNLSDhEcEFiWUYzejJhUTQ2MFluUlZfTTFacjZXRzBtN2V0d2tocDVqcHV6X0pVekNIcXRabVlSX1AzS19aSVVz?oc=5",
+      "summary": "환율 1360원대 상승 압력…美 금리 인상 우려에 강달러 재점화 조세일보",
+      "source": "조세일보",
+      "date": "2026-11-08T23:24:34+00:00"
+    }
+  ]
+}
