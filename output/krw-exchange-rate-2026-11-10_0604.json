@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-10T06:04:50.605274+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgtk4YUUgVo87iaiG1pzZ'})"
+  },
+  "articles": [
+    {
+      "title": "원/달러 환율 다시 1340원대로…추가 하락 가능성도 - 머니투데이",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45TFdHWDlTV3RORF9BX0NjVzBxTmdoNF9ybGpoYXBFd3lFbFREdmlSVXBQNW5sNS1PX0tVWG1RUTJEN3JtdEFwaWxqcXgtOGJfVGE4TEE4eW54MlJIQS1wcHlkNFlZcUxycnk5ZUZaMUPSAXBBVV95cUxOOUxXR1g5U1d0TkRfQV9DY1cwcU5naDRfcmxqaGFwRXd5RWxURHZpUlVwUDVubDUtT19LVVhtUVEyRDdybXRBcGlsanF4LThiX1RhOExBOHlueDJSSEEtcHB5ZDRZWXFMcnJ5OWVGWjFD?oc=5",
+      "summary": "원/달러 환율 다시 1340원대로…추가 하락 가능성도 - 머니투데이 머니투데이",
+      "source": "머니투데이",
+      "date": "2026-11-09T07:54:17+00:00"
+    },
+    {
+      "title": "우리금융硏 “한은, 11월 금통위서 기준금리 3.25%로 인상 전망”",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5IblRERExQOGp5R05mTmo5WDVoREd2VHNJN2d4N01iVDBFMWdaWmNVelFqX25QTF9ad1hyaWRDOF9oN3d1dGNfLXFmeHlrTnNVMUUzeGRzTzI2RDU0VGRQRWxvYlo1T3dfMEJhaVRWM3fSAXBBVV95cUxOSG5URERMUDhqeUdOZk5qOVg1aERHdlRzSTdneDdNYlQwRTFnWlpjVXpRal9uUExfWndYcmlkQzhfaDd3dXRjXy1xZnh5a05zVTFFM3hkc08yNkQ1NFRkUEVsb2JaNU93XzBCYWlUVjN3?oc=5",
+      "summary": "우리금융硏 “한은, 11월 금통위서 기준금리 3.25%로 인상 전망” 글로벌경제신문",
+      "source": "글로벌경제신문",
+      "date": "2026-11-09T08:30:15+00:00"
+    },
+    {
+      "title": "2027년 달러당 147엔 전망…미·일 금리차 0.5%포인트 축소 예상",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1Hc295Tld1VERSTnExV2s5M3BUVW43N2RGYnVaY0M2SkRBbU1ZWHBpRWE2aFFuejEtajR1QzkxSmx3U0VzWENqVENjR0J1N1lPcGNoWDJMMTIxWjZn0gFcQVVfeXFMTUdzb3lOV3VURFJOcTFXazkzcFRVbjc3ZEZidVpjQzZKREFtTVlYcGlFYTZoUW56MS1qNHVDOTFKbHdTRXNYQ2pUQ2NHQnU3WU9wY2hYMkwxMjFaNmc?oc=5",
+      "summary": "2027년 달러당 147엔 전망…미·일 금리차 0.5%포인트 축소 예상 토큰포스트",
+      "source": "토큰포스트",
+      "date": "2026-11-10T00:51:19+00:00"
+    }
+  ]
+}

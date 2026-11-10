@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-11-10T06:05:29.137398+00:00",
+  "card_title": "미국 CPI 대기 속 소폭 하락",
+  "tldr": [
+    "오늘 원/달러는 장중 1,338원으로 어제보다 4원 내리며 1,330원대 후반에서 움직이고 있어요.",
+    "미국의 강력했던 고용 호재 영향이 잦아들고 주식시장 위험선호가 살아나며 환율을 조금 끌어내렸어요.",
+    "오늘 밤 발표되는 미국의 10월 소비자물가지수(CPI) 결과에 따라 달러화 향방이 다시 크게 출렁일 수 있어요."
+  ],
+  "overall_why": "미국 고용 깜짝 호조의 여파가 다소 잦아들고 **수출기업의 달러 매도 물량**이 유입되면서 원/달러 환율이 소폭 하락했다. 다만 시장 참여자들은 오늘 밤 발표되는 **미국 10월 소비자물가지수(CPI)**를 확인하기 위해 적극적인 베팅을 자제하며 1,330원대 후반에서 팽팽한 힘겨루기를 이어갔다.",
+  "factors": [
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 5,
+      "impact_reason": "오늘 밤 발표될 10월 물가지표 결과에 전 세계 외환시장의 시선이 집중되며 가장 큰 변수로 작용",
+      "headline": "미국 10월 CPI 앞두고 연준 정책 경로 주시하며 관망세",
+      "bullets": [
+        "미국의 10월 소비자물가지수(CPI) 발표를 앞두고 연방준비제도의 12월 금리 정책 경로를 확인하려는 시장의 경계감이 이어졌다.",
+        "달러인덱스가 102선 안팎에서 등락을 보이는 가운데 향후 물가 지표에 따라 통화정책 전망과 환율의 방향성이 좌우될 전망이다."
+      ],
+      "sources": [
+        {
+          "title": "미 달러화: CPI 발표 앞두고 강세 – MUFG",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWWJjZEtqeVlSRG13bFo4YVZaRmpfV1hxR0QtLWt1VGRyVGhWdmdTc2YtQ3Voaks0c3poQlRfNEdvb1Q3NEExeS1BNzN2WTJiNENsMGROTVk3VnNlS0pocTJ5UXpNSlgxTmQ1SV9tc2pVOXZnOTQ2QU1BMHd2MkFFbEhoUTF0dm5qZmtmTFRIMkZXV29Kek9GZEN5cGpJaFZUM0FZdHZJaTBMOVozRWc?oc=5"
+        },
+        {
+          "title": "[뉴욕환시-주간] 美 기술주 급락에도 '12월 인상' 유효한가…CPI 주목",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1jLTNwX29FSWF5MmlmcWtKVTRxWW1fMktITjBFX19peklsWkkxWlBkT2lnXzI1QzBhWjhubnNCM0xfOEhwMW5NMlk2Zlg0LXpZYXBGci1TZTNrLXpIMDhkMFJuZmdXY3gxRGRUclhfQ08?oc=5"
+        },
+        {
+          "title": "미 달러 지수: 연준의 정책 경로와 CPI에 주목 – 도이체방크",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNdGtFWTFaa0t3SW95MzFkS19iVUd4OVRkSFg3ZFV2aU5ueUFkaXlHZy1GOU5XVmdxb1RnaGgzX3hVZlhienM4QzU0TFU0WEs3YTlleFdoNW1EbzRpNmV0R1hrbGNIekpURThtUkozNGJhNjVobndnanAyNEM4NGtHcUs1MDdBZjJ4bTFha3RLNVRzQmdjc0pDVnJWUTlqSlMwVGdrcGowcjZ5R1lWbXI4aFRaMkktUmdGX3c?oc=5"
+        },
+        {
+          "title": "달러지수 102선 위·아래 엇갈려…미 10월 CPI 10일 발표",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE16Uy0wWW4wOFB3ckh6X0pNeTZlQ1dDQ0JwRDBnZU5zNGJqbXgzZTBqcFNrYjBvQUNMWW9Ebmg5QzBKYkdFNnkwN1JVMGhTOHhyY2pKQ3ZINDNDWHpL0gFcQVVfeXFMTXpTLTBZbjA4UHdySHpfSk15NmVDV0NDQnBEMGdlTnM0YmpteDNlMGpwU2tiMG9BQ0xZb0RuaDlDMEpiR0U2eTA3UlUwaFM4eHJjakpDdkg0M0NYeks?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 4,
+      "impact_reason": "수출 기업들의 달러 매도 물량이 장중 환율의 추가 상승을 억제하고 하락을 견인",
+      "headline": "수출기업 달러 매도 물량 유입되며 원화 가치 지지",
+      "bullets": [
+        "외국인의 주식 순매도세가 이어지는 상황에서도 국내 수출기업들의 달러 매도 공급 물량이 꾸준히 유입됐다.",
+        "기업들의 달러 공급이 원화 가치를 뒷받침하면서 환율은 전일 대비 내린 1,338원으로 1,340원 선을 밑돌았다."
+      ],
+      "sources": [
+        {
+          "title": "“1500원 넘던 달러가 1300원대로”…한국 기업들이 쏟아낸 389조원, 환율 뒤흔들었다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95NENpT05lQ0dIb1N6YWZfbzN1UzZrMVdOSWJSS0dzM1R5OU9qdHJVOHZuZDZENUhHZ202Znd4eFQ3MklSaDYwYlpCMTJXR3FtMUNZY2k2WkpTM05iSG1YNmZsLTZDSlRjNUtFZg?oc=5"
+        },
+        {
+          "title": "외국인 6조 ‘셀코리아’에도…반도체 달러 덕에 버틴 원화",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5veVJSRnpoQzE5NmRndDc1RDFzSXlWYnpXN010bzVwZ3pRemRZX0hsZnJPbTMtU3dUdktBa1A0ZGtfc2ItdEtBbmVvNzlhV2lINzJaNl9n?oc=5"
+        },
+        {
+          "title": "외국인 주식 순매도에도 환율 내려…수출기업 달러 공급 영향",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9meGs1UVY1Uk9RWWxxY3BWREd0RUdFZ3FMWUNCWXNwcWtuZ2stcDFIN1NEZnNMeGRIekh5S1dRV0RyQU1ELTVfRC0wOEVBajBxSTc3dTB6SHF3Mk8wckdIUXRoaVdQbm9yT0QwaTlkS2FIQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 3,
+      "impact_reason": "고용 충격 완화와 함께 연준의 금리 인상 전망과 자산시장 위험선호 회복이 교차",
+      "headline": "고용 호조 충격 완화와 위험선호 반등에 달러화 약세",
+      "bullets": [
+        "미국 10월 비농업 고용 서프라이즈 여파가 일부 진정되며 글로벌 달러화가 상승세를 멈추고 반락했다.",
+        "위험선호 심리가 일부 되살아나면서 원/달러 환율도 4거래일 만에 하락세로 돌아섰다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 미 국채 금리 상승·달러 약세…이란 확전 우려 완화 속 CPI 주목",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE91UUtwYnJubzcxZWp0RGN2ZkNYdkVubTM4Ukk5Zk1idU1sYXI4MUFqZVgwNGxiMWRYUXUzemdqNFZHT2dCZ2hZY0RtYWpKcU56QjhndENsVW9qM1RM?oc=5"
+        },
+        {
+          "title": "환율, 4거래일 만에 하락…위험선호심리 반등 영향",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1nbUlHRkk4QlQxakZBZGlrQ0hJR2dNZW9YLVMzS1pSRnVvaXFXcTNHTC1Ndy1UQUtIaU05bTJfZlA1NXA5SU1OYTRKdC1KWGh2ZGdj0gFYQVVfeXFMUHpaaHpPdnJjTnJiUi1tdjRpZjlkMFVEQ2xxclpHLXI4OGVpQmRZX2lyc1VvTTczSWtyT3h2NDFWNzZZN01BTE5fcVpESl9mSDFSa0NVRlI2RQ?oc=5"
+        },
+        {
+          "title": "오늘의 외환시장: 미국 달러, 비농업 고용지표에 힘입은 상승 후 반락",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUl9KWHNUX3lVR19CdDVrZUtCVHgyVjFieGlGeTM3ckh4QzZjelpkQkNHbURSRE9BRXUxZTBxQkg1NElLM096VmN2ZWxBMDVISGlqdC14aUp5blNHd3l3V3R5RER5dXFvNVBHVFZQUC0wc19kZkFjLWx1SDNoQXFLbm03NERYeW1CT2ptbHlwZHRwN296Nm01SDZNazhic2wyZVlvUmI1d3k4NWptVkx5RHVRTDBUWWg0aExNcFdIc3RuRWc?oc=5"
+        },
+        {
+          "title": "원·달러 환율, 위험선호 회복에 4거래일 만에 하락 : 경제",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1XNU9jWGNxZ1BHZWlmZEk0Z2lBY2FWSUxPeEgxUzZzbEZUanFpUDNubV82NVM0enVVSmtXR3lnQ2FWeUhMbzBxUlNucw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 2,
+      "impact_reason": "국내 증시의 매수세 유입과 지수 변동이 외환시장 심리에 보조적 영향 제공",
+      "headline": "국내 증시 변동성 확대와 외국인 순매도 지속",
+      "bullets": [
+        "코스피 시장에서 외국인의 순매도가 이어진 가운데 증시 변동성이 장중 외환시장에 부담 요인으로 작용했다.",
+        "외국인 주식 매도세에도 불구하고 수출업체 네고 물량 등이 맞물리며 환율의 상승 압력은 제한됐다."
+      ],
+      "sources": [
+        {
+          "title": "외국인 주식 순매도에도 환율 내려…수출기업 달러 공급 영향",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9meGs1UVY1Uk9RWWxxY3BWREd0RUdFZ3FMWUNCWXNwcWtuZ2stcDFIN1NEZnNMeGRIekh5S1dRV0RyQU1ELTVfRC0wOEVBajBxSTc3dTB6SHF3Mk8wckdIUXRoaVdQbm9yT0QwaTlkS2FIQQ?oc=5"
+        },
+        {
+          "title": "코스피, 장 초반 5% 급등해 5200선 탈환…양대 시장 매수 사이드카 발동",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBmUko1T1BUdmtKc0pWal9oWnUwSUFnN242c2gwYnlDbEJMc2lqamt0S0ZzTVFhbGxOLVl5SVFaa2pid3BlVHFsY1NVN2M2Rmw2?oc=5"
+        },
+        {
+          "title": "[더페어 돋보기] \"환율 널뛰기에 외국인 수급 흔들\"…원/달러 변동성과 현선물 동향 상관관계 분석",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1NVS04eVFGdF80YThjRTZPZk5UOW1oM1pnVXlMV1BCbXQ5SUhicHJYRWFZd2dJMzc0bmRzbEtIS2tWZmNCeGQzYjRsM2gwYWpUVFFSbUJzOWZ6cld5dHJadmtxQmlBaUd1Zm92anBPcFQ?oc=5"
+        },
+        {
+          "title": "코스피·코스닥, 0.8% 하락 마감...외국인 순매도 계속",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzVFdmaHFGUmk5VkFZRHdlUGlMWGh0WmliS2FoaTFIUm90QWpOSllxZzFvVmZTOG9zVWhsVmhiaXpQdVJjS1ljQ2tMemVUYVNjV1F4aGpycndBS3JaNkE?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 10월 소비자물가지수 D-0",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}
