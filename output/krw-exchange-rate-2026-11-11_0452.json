@@ -1,0 +1,19 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-11T04:52:31.341368+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgvYMXtpewAkqHRU8DcFy'})"
+  },
+  "articles": [
+    {
+      "title": "하나證 \"내년 달러-원 2분기부터 반등…1,400원대서 상단 제한\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYM2RMWVB6RHJaU0tkbEM0V0F5cDBZeFBnU3ZmT2xkQzdjbXk0NUFhTGRQaUozV2huR1dIUzRzNXh0dTdtTzFMRXNzQUNrdjFRMXN3QW5mVDR2STZnTThGb3FpbUhmdnU3djhsWVlEOGRvdw?oc=5",
+      "summary": "하나證 \"내년 달러-원 2분기부터 반등…1,400원대서 상단 제한\" KB Think",
+      "source": "KB Think",
+      "date": "2026-11-11T01:32:18+00:00"
+    }
+  ]
+}

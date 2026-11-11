@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-11-11T04:53:14.048379+00:00",
+  "card_title": "증시 급반등에 환율 하락",
+  "tldr": [
+    "원/달러는 어제 1,345원에서 현재 1,337원으로 내려 하락세를 이어가고 있어요.",
+    "국내 증시가 4% 넘게 급반등하고 외국인 투자자의 자금이 유입되면서 원화 가치를 밀어 올렸어요.",
+    "미국 물가 지표 발표 이후 달러화 움직임과 외국인의 국내 주식 매수세가 이어질지 지켜봐야 해요."
+  ],
+  "overall_why": "미국 소비자물가지수(CPI) 발표 직후 연방준비제도(Fed)의 긴축 우려가 남아있음에도, **국내 증시가 4% 넘게 급반등하며 외국인 매수세가 대거 유입된 점**이 환율을 1,337원 수준으로 끌어내렸다. 여기에 역외 달러 매도와 **수출기업의 고점 네고 물량**이 상단을 제한하면서 환율 하락 압력이 우위를 점했다.",
+  "factors": [
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 5,
+      "impact_reason": "코스피 지수의 4%대 급반등과 외국인 순매수가 오늘 원/달러 하락의 가장 핵심적인 동력으로 작용",
+      "headline": "코스피 4%대 급반등과 외국인 순매수 전환이 환율 하락 견인",
+      "bullets": [
+        "코스피가 4.39% 급등해 5,230선을 회복한 가운데 외국인과 기관이 8,500억 원 규모의 주식을 순매수하며 원화 강세를 이끌었다.",
+        "국내 증시로 투자 자금이 유입되면서 위험자산을 선호하는 심리가 빠르게 되살아나 달러 수요를 억제했다."
+      ],
+      "sources": [
+        {
+          "title": "원·달러 환율 이틀째 하락해 1337.5원…코스피 4.39% 급반등",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yNHJLVER1ZFVsZ0t4M1pMbm5hbDktRXdYVFZXWC16cXZXaFpLOU16WVhhQk9FMGNRemM1bGh6RDBraHFwQ0dSNGxhUGNuc0hxX3FWdUd4bTJhY0xoNXMtS0ZkOGM?oc=5"
+        },
+        {
+          "title": "[외환] 증시 반등에 외국인 복귀, 환율 1337.5원",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE91SnJJVm9iLWxLdGNPVXVoXzFjSWJUR0I3WHpwTGd4cEs1ZWV5QUZFNXRYNFdodmdTU2NLRDlQYVRzNTE2X3FqcjVLNVd5dW9SZXVHUlRXbDEwT29xQ1ZfQkQ1ZWpBS3c?oc=5"
+        },
+        {
+          "title": "코스피 4.39% 급등해 5230선 회복…외국인·기관 8500억 순매수",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nVjFhdlNjUEd5a0FzdzF2eEN2S2o0ZThSc2JBc082U3JJWjA2UUtYbkpWdEpLakY4Q0Q4QVhHaWtKWm1IUTl0R2JXM0ZOcDJsTndZb3czd3hVTXgzMDZpX3A4dHp3Wk5J?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "미국 물가 지표 발표 후 역외 투자자들의 달러 매도 포지션이 유입되며 환율 반락을 주도",
+      "headline": "역외 달러 매도 유입되며 통화 긴축 우려에도 환율 반락",
+      "bullets": [
+        "미국의 물가 지표 발표 이후 긴축 우려가 이어졌음에도 역외 시장에서 달러 매도(숏) 물량이 유입되며 환율이 장중 1,330원대 후반으로 밀렸다.",
+        "미국 연방준비제도의 긴축 장기화 부담 속에서도 상단에서는 추가 매수가 제한되며 1,337원선으로 내려앉았다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 1330원대 후반에서 등락…美 물가 충격에 달러 반등",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0tRU9QNFZuR0xNalN6TmR2VFg0YmtlZ3dkM0FCNWtNay1nMlhCRWxUVmNlMFZwQnFuRWZFSXBSd0ZaVVBMVmZlWDR5MlRudTVGbW1Jd2tvY1ZuZVY3U1E?oc=5"
+        },
+        {
+          "title": "서울환시 \"예상 웃돈 美 CPI에도 네고물량 경계…상단 제한\" |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZWEJob1VJZF9vRGx2eng0SnRaM2FRRjBVbVlhYVFUbnZDS09GQ3RLajg2WFo0ZHZBcUk3TFNndDBlczJTSjlZVVl3YzFQUDByRmwzc2V0N1VzOGlrUEp0MVNxM3RWSm8yY3hGMEdfdVgxLVJF?oc=5"
+        },
+        {
+          "title": "[외환] 美 인플레 장기화 우려에 반등…1,340원대 중반",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9RZ1R5THZGcVFHOXE5NUlYZEI3SUI3WlRveEk2T3pFQmdic2wwR2FLTUdabVFFM2lmTXRqek1sRTFBNW5LTldjVHdoSDlIM1pxcjlFLTQ1V1NqYUpVSXRXRUExY1I2ZW51XzVDNGtJT2htcWta0gF0QVVfeXFMT1FnVHlMdkZxUUc5cTk1SVhkQjdJQjdaVG94STZPekVCZ2JzbDBHYUtNR1ptUUUzaWZNdGp6TWxFMUE1bktOV2NUd2hIOUgzWnFyOUUtNDVXU2phSlVJdFdFQTFjUjZlbnVfNUM0a0lPaG1xa1o?oc=5"
+        },
+        {
+          "title": "[외환] 역외 숏에 반락…1,330원대 중후반",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9rMk1vUmcwc0Jxdmc0YWhfdXduYUJLTnZHV1I0a1FkeFJ6bFhPbDgwdzJEYTlGeHA3SE9sU0JWSkd0bkpqNW1HOTl6T1dfdUI0bGVzb21LcVlNdHBNZUdJdThGTTlVOFVueTJZRGRNX3VJQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 3,
+      "impact_reason": "수출기업들의 고점 달러 매도 물량이 환율 1,340원대 안착을 저지",
+      "headline": "수출업체 달러 매도 물량이 환율 상단 지속 압박",
+      "bullets": [
+        "환율이 장중 1,340원대 중반으로 오를 때마다 수출기업의 달러 매도(네고) 물량이 출회되며 추가 상승을 제한했다.",
+        "해외 투자은행인 뱅크오브아메리카(BofA)가 달러 매도와 원화 매수 의견을 제시하는 등 원화 가치 회복 기대가 수급에 힘을 보탰다."
+      ],
+      "sources": [
+        {
+          "title": "서울환시 \"예상 웃돈 美 CPI에도 네고물량 경계…상단 제한\" |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZWEJob1VJZF9vRGx2eng0SnRaM2FRRjBVbVlhYVFUbnZDS09GQ3RLajg2WFo0ZHZBcUk3TFNndDBlczJTSjlZVVl3YzFQUDByRmwzc2V0N1VzOGlrUEp0MVNxM3RWSm8yY3hGMEdfdVgxLVJF?oc=5"
+        },
+        {
+          "title": "“1500원 넘던 달러가 1300원대로”…한국 기업들이 쏟아낸 389조원, 환율 뒤흔들었다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95NENpT05lQ0dIb1N6YWZfbzN1UzZrMVdOSWJSS0dzM1R5OU9qdHJVOHZuZDZENUhHZ202Znd4eFQ3MklSaDYwYlpCMTJXR3FtMUNZY2k2WkpTM05iSG1YNmZsLTZDSlRjNUtFZg?oc=5"
+        },
+        {
+          "title": "BofA 달러 팔고 원화 매수",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5BTWxoR0dQV3BKVUxmOTBrZi1YdWtUdG1kVFB6blVPR21MTTVCRTd5QlV6bFRsU1MtNnVQYVYxV0VzbWhUbGtMcUFGMU56b1J1SUVz0gFYQVVfeXFMTnM3Ym4xVEpIRkFJWW9LNnNTS0U0Vk5COVItUHZ4M2ducUpBa2E3aWhUZHVtdVl0THI0RWFtMzljUUpEMmdZZnFxYU1mVjJ5Wjk1MTZDSkd6YQ?oc=5"
+        },
+        {
+          "title": "[외환] 수출 네고 몰리자 환율 1347.1원 후퇴",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kTXd3UzBSX3JXV1lHekV2LUx0N0o0UmhaWkhGQU5CcVFaSGhIbjFSX0VFYnZTR0hDMmNRV2hUSHFRSWJScllkTUJqdDlveVlHLXViMS1wMnhrNGJGb21NVTNnaGVycXM?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "중동 지역의 긴장 완화에 따른 국제유가 안정이 외환시장 심리를 개선",
+      "headline": "중동 리스크 완화와 유가 급락으로 환율 하락 압력 작용",
+      "bullets": [
+        "중동 관련 협상 기대감에 따른 지정학적 긴장 완화와 국제유가 급락 여파가 시장의 불안을 덜어냈다.",
+        "위험회피 심리가 누그러지면서 원/달러 환율은 전일 대비 내린 1,337원에 장을 마감했다."
+      ],
+      "sources": [
+        {
+          "title": "미국·이란 합의 기대 고조에도 미 달러화 강세에 유로화 약세",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeGZvUmJNZVItSTBKWGw5c3dYMjJZOFhGbS1pX1JaMEZLNmpadzE3c2cwdnRRNFlaSFhrWVIxMXF4dTZKLW1kNVU2R3I0bnQtY3R4elBPXzY0eHk4cTg4Y3JwS2JHWk1TazlsQTBlTUpENVN4RVk2RjFoeEgxYjRGSncwS3pVV0tWVmxLM19kcU9kLVc4VkozalZUenlJMTlLZHVyOWhLbVBFM0dYX0gxM1plWXhELWlEalc4azlhNXRmaUdpb19BdWx3?oc=5"
+        },
+        {
+          "title": "중동 긴장 완화 원·달러 환율 1345원",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ZRXlYck16U2xObVhFcVZWZ2RIOUE2dWtnQjZCX0ItVmpmZkRRNmVKZmZ0TmJ0eHNtWDNoNlZrVHZjZExwQ0g5Nmp0cjBFU3NURmNOR0FsLXY4eFdxTm9nb1pmYVcydXh4ZVNWaFJBYUvSAXRBVV95cUxPTU1BRlhFbUhmU2g2SzBCWjBfRjV1QVBDdERQY2lGdEVXd2VJYV82OTF2R1dsekNsVXlwU00xUnFWZXg5djFYZjlzNnpjNERUZlNSV1pXc1A5NHRnZ3FDRnBfSXRZamxRWjNEOHdBb1hsLTBjcg?oc=5"
+        },
+        {
+          "title": "[환율 마감] 중동 긴장 완화 및 국제유가 급락 여파…원/달러 환율 9.6원 하락한 1,337.5원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tYzRVOFB6aVZKVkxaTnpIR3UyVVN5UXpmRmRKM1lad1pkamxKYm1ROU1hd2hzRW56clNscXkyenBMQTVES3R2OFphS0tSTUVycFI5MEpzWHQ4VWg1ci1Ienl3MEpIRUE?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}
