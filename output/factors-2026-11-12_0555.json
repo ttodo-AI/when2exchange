@@ -1,0 +1,142 @@
+{
+  "generated_at": "2026-11-12T05:55:21.023945+00:00",
+  "card_title": "수출기업 달러 매도에 환율 하락",
+  "tldr": [
+    "원/달러 환율은 어제 1,338원에서 현재 1,330원으로 내려 하락 흐름을 이어가고 있어요.",
+    "미국의 물가 지표 발표로 달러가 강세를 보였지만, 수출기업들이 달러를 원화로 바꾸는 매도 물량을 쏟아내며 환율을 끌어내렸어요.",
+    "미국 연방준비제도의 긴축 경계감이 남아 있는 가운데 수출기업의 달러 매도세가 환율을 계속 누를지 지켜봐야 해요."
+  ],
+  "overall_why": "미국의 물가 지표가 예상을 웃돌며 연준의 긴축 우려가 커졌고 달러인덱스도 19개월 만에 최고치로 치솟았지만, 국내 외환시장에서는 **수출기업의 달러 매도 물량**이 쏟아져 환율을 강하게 끌어내렸다. 여기에 중동 긴장 완화에 따른 국제유가 급락과 국내 증시 안정세가 더해지며 환율은 상승 압력을 이겨내고 현재 1,330원으로 하락세를 나타냈다.",
+  "factors": [
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 5,
+      "impact_reason": "글로벌 달러 강세 압력을 누르고 환율을 직접 끌어내린 핵심 수급 요인으로 지목",
+      "headline": "수출기업의 달러 매도 물량이 쏟아지며 환율 하락 주도",
+      "bullets": [
+        "수출기업들이 보유한 달러를 원화로 바꾸려는 네고 물량이 시장에 끊임없이 유입되며 환율 상단을 강하게 눌렀다.",
+        "경상수지 41개월 연속 흑자와 반도체 중심의 수출 호조세가 이어지며 달러 공급 우위 환경을 뒷받침했다."
+      ],
+      "sources": [
+        {
+          "title": "끊임없는 네고물결…환시 시선은 '사상 첫 1조달러' 수출 지표에 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00Ul8ybS1oQV9JZGFyZUFpYmdpMFJPbnRhWHdPTnZwLXh5YlFxdXE1bWI5dktqTVNmLW8xMkFxcXU5dE1xRkRxQlBBODZ6ZTZXU3ZuNV9VTkxQQV8xU2ViVF9fMVJaM0dYYU92dU9xaU9seWE4?oc=5"
+        },
+        {
+          "title": "[비바100] 수출 대박에도 힘 못 쓰는 원화… 달러 수급이 바꾼 환율 공식",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JcElwelRNLVJpSXVyTGwzVUVGQy1SUHhkT2kzZXhrR0hobVFCbmFFRlN5ZEQ3RzFmdTBUV1dIVnhjbHNLNXozdG9yOXNCT3RSUnNCQWJXbTdqUQ?oc=5"
+        },
+        {
+          "title": "한국 경상수지 41개월 연속 흑자…환율 안정 기대 커져 : 금융",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBGTWg1QW9SWWJRYnM4cGNsOExaeGQ4RHdQeW1FZHpCN1VCVXE5OXU4S0Jzb2NnZFJ3akdwMXc0b3A4TnFhVVdEQXRUcw?oc=5"
+        },
+        {
+          "title": "美 긴축 우려에도 원·달러 환율 1333원대 하락…수출기업 달러 매도 영향",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1UeTFiMzI3STk4cmxma0tycEZwWE9uWXZ1dHBlZlF0VENGMUc1Y1FSZWRweWF3akRkVVVrQkt6Y2lWR3NsWUc1VVRUYU0xV2VVdTBzSmpZZnVHTDNiaEhUZTk1WnU?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 4,
+      "impact_reason": "달러인덱스가 19개월 만에 최고치로 치솟았으나 원화가 이에 맞서며 변동성을 키움",
+      "headline": "달러화가 19개월 만에 최고 수준을 기록했으나 원화가 강세로 맞섬",
+      "bullets": [
+        "미국 소비자물가지수 충격으로 달러인덱스가 19개월 만에 최고 수준까지 치솟으며 환율 상승 압력을 키웠다.",
+        "달러 강세 압력에도 불구하고 국내 외환시장에서는 수출기업의 달러 매도 물량이 출회되며 환율이 하락 흐름을 나타냈다."
+      ],
+      "sources": [
+        {
+          "title": "美 물가 충격에 달러 강세…금리 인상 압박에 19개월 만에 최고",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xMmU5MEtBNnNuNnNQTW5GUjJQYmZpbnp0ME9sZHV2SmFzQ015RVVBX2JjOFZpYkxmeG9HLVM5RTZDN1JielkydnUzbHM1bmtvdDhpdDR6bXoyQVRWd0xqZ2hCZzF0cHBob2FFUXFxYnbSAXRBVV95cUxPRGNBWXktVm1XU2d4NVJLdGtwWE80bWF0N1dfYjhINWRMR0dyZnVNWXI0N2xxZ1VESzg2VDdnVWpmVmRDQTFzN3FUa0lNeE5XWU1PUmd5LVlCekhHRUNkcmJuSWZMX3ZaeGdzTnB4aTZfMDZxNw?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 초반 등락…美 긴축 우려에도 원화 강세에 상승 제한",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EOExDc25sQ29mdGFnamxtNG1vY0h2ME5tTi04NFVRb2Z0ZUswZlczY3A3cjdFR1Rxd2VOSEx3RGtnRFF4TWpiWkJ4X3VZYzlET0dKX3ZLVmlvMnFheFE?oc=5"
+        },
+        {
+          "title": "달러 인덱스, 19개월 만에 최고...기술주 상승·빅스텝 가능성까지 달러 땔감 [글로벌 머니플로우]",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kV3VMdTlJb0hybU5fWDUyeDViUTBmeDdTUU9iTWpEQ2xGTmpxQ3BGbUdpbUd1cFRZS1NtZURLSkN3TXJpMm43Q1FQcWFfbnh0anFIRkZ1MHFuR2ZmT0s2U2pfTE5hQ2lUTDZaOU81VGdxRjA?oc=5"
+        },
+        {
+          "title": "달러 강세 속 수출 달러 매도에 원·달러 3.9원 하락 : 금융",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkYWZoNF9uWHRqcG1pZmc3TFh0OWVoU1RVZmlqbVV1ODRiLWRxMTYyX0VCUGlwcUdYT1IxRDFNRzd3STBnM3J4cnY1cw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 3,
+      "impact_reason": "미국 물가 지표 충격으로 연준의 추가 긴축 및 빅스텝 우려가 다시 고개 듦",
+      "headline": "미국 물가 충격에 연준 긴축 우려 고조",
+      "bullets": [
+        "미국 소비자물가지수(CPI)가 시장 예상을 웃돌면서 연준의 기준금리 빅스텝 인상 가능성에 대한 우려가 다시 고개를 들었다.",
+        "엔화가 1달러당 159엔대 후반까지 밀리는 등 미·일 금리차 확대 전망 속에 글로벌 외환시장의 통화정책 경계감이 커졌다."
+      ],
+      "sources": [
+        {
+          "title": "엔화, 미일 금리차 확대 전망에 1달러=159엔대 후반 하락 출발",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ZSVBzRzVlNTJIamxOdmRmZDRzUE5oX0NEWlRpRWt2RXBrZzNfZnZZVjNFMWp5bFROd1ZyWDJsZjd1czB1TXk1dEJGZGlqaHlOZ1hza09Zb1lLbEJPZ09yQnpaWTJtampUYW8xX3JyQlZoTU51ODJzUdIBeEFVX3lxTE5ZSVBzRzVlNTJIamxOdmRmZDRzUE5oX0NEWlRpRWt2RXBrZzNfZnZZVjNFMWp5bFROd1ZyWDJsZjd1czB1TXk1dEJGZGlqaHlOZ1hza09Zb1lLbEJPZ09yQnpaWTJtampUYW8xX3JyQlZoTU51ODJzUQ?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 초반 등락…美 긴축 우려에도 원화 강세에 상승 제한",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EOExDc25sQ29mdGFnamxtNG1vY0h2ME5tTi04NFVRb2Z0ZUswZlczY3A3cjdFR1Rxd2VOSEx3RGtnRFF4TWpiWkJ4X3VZYzlET0dKX3ZLVmlvMnFheFE?oc=5"
+        },
+        {
+          "title": "美 금리 '빅스텝' 우려에도 원·달러 환율 1333.6원…3일째 하락",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yclJCcC1Sa04wOFNWOUsyM3VXN25JaDJFTEwxemw0Q3NsRnZUeEhhRHdsYU5mTHhoQnIyYjQta0VTTTRLMlJSZzlIeVo0WjlhSXEzbnQyTEdMREsySlQxWHNuNHpEWmJZN3VEMGpxVQ?oc=5"
+        },
+        {
+          "title": "서울환시 \"예상 웃돈 美 CPI에도 네고물량 경계…상단 제한\" |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZWEJob1VJZF9vRGx2eng0SnRaM2FRRjBVbVlhYVFUbnZDS09GQ3RLajg2WFo0ZHZBcUk3TFNndDBlczJTSjlZVVl3YzFQUDByRmwzc2V0N1VzOGlrUEp0MVNxM3RWSm8yY3hGMEdfdVgxLVJF?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 후반에서 등락…美 물가 충격에 달러 반등",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0tRU9QNFZuR0xNalN6TmR2VFg0YmtlZ3dkM0FCNWtNay1nMlhCRWxUVmNlMFZwQnFuRWZFSXBSd0ZaVVBMVmZlWDR5MlRudTVGbW1Jd2tvY1ZuZVY3U1E?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 2,
+      "impact_reason": "중동 긴장 완화와 유가 급락, 국내 증시 안정 등 추가적인 외환시장 안정 요인 작용",
+      "headline": "중동 긴장 완화와 유가 급락 여파로 시장 불안 진정",
+      "bullets": [
+        "미국과 이란 간의 합의 기대가 커지면서 중동 지역의 긴장이 누그러지고 국제유가가 급락했다.",
+        "국내 증시도 반도체 대형주를 중심으로 반등세를 나타내며 외환시장의 위험회피 심리를 완화하는 데 기여했다."
+      ],
+      "sources": [
+        {
+          "title": "미국·이란 합의 기대감 확대에 유가 하락하며 캐나다 달러 약세",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdFBEOVVOQ1FXOS04ZVY3cURLTFRrQTJHQXlwUGEwXzg0N3BWSXNmTzJQSG9GcHdab0NRd0haZ3hJRjFXTEU3LTBOWE9nUF9iWFhTWEt2TmVaSGdmSzRteUs4VDRJUVhjdWhkOWdJY0NIUV90bFMwakx4eWQwZ0N0enRMXzFKTWFVRmhhU01sQjh5cy1rRy1oNXh0MmFENTY0b0VxeG9WdUZtZW8yQk9ONmNzY3phYTcwSXduOEp2YnFCbDFkcWZpdm8xUnJoWTA?oc=5"
+        },
+        {
+          "title": "코스피 2% 올라 5,375 마감...삼전·닉스 상승세",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnOVJ3ZHVMd1FVZ3JxWVN4eUtrVkdpUEdVbl9TdUdiVkxlckxCSVp1bGt4RU0xVDhTaS14Mmw0bUxJUHU0VlZKdHFTVUhpU1RyQWlXSTg2MVpIcHdFWnc?oc=5"
+        },
+        {
+          "title": "[환율 마감] 중동 긴장 완화 및 국제유가 급락 여파…원/달러 환율 9.6원 하락한 1,337.5원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tYzRVOFB6aVZKVkxaTnpIR3UyVVN5UXpmRmRKM1lad1pkamxKYm1ROU1hd2hzRW56clNscXkyenBMQTVES3R2OFphS0tSTUVycFI5MEpzWHQ4VWg1ci1Ienl3MEpIRUE?oc=5"
+        },
+        {
+          "title": "미국발 훈풍에 증시 반등...코스피, 4.4% 상승 마감",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fblBzR1pPeGZVbTBzS0dIc1MyaFdfMDctbkFmNllTQTF5TXVfMDdmdWFFSlhSUzhjQUNQSy1ZcmhmT2FDdWIxNHdydEkyZEQ3SkZ3QWRReTVMcFhTV1E?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}

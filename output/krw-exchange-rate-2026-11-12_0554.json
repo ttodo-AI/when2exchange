@@ -1,0 +1,19 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-12T05:54:35.422082+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgxWtzrT6nrTCgX89AKvu'})"
+  },
+  "articles": [
+    {
+      "title": "\"경상수지 흑자 지속·美재정건정서 지속시 원달러 환율 현수준 가능성\"",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1NMEdXME5lWW5CZzg5eFFJTm5QNmNYbHJMUEQ2VmVXQkdOVnlwV2RkNDhaQUREWDJkUkMxYW5TN19yU093RnFGMW5OUHNQdnhxREE?oc=5",
+      "summary": "\"경상수지 흑자 지속·美재정건정서 지속시 원달러 환율 현수준 가능성\" 매일경제 마켓",
+      "source": "매일경제 마켓",
+      "date": "2026-11-11T06:46:35+00:00"
+    }
+  ]
+}
