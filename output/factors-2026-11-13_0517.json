@@ -135,7 +135,9 @@
   "checks": {
     "passed": true,
     "blocks": [],
-    "warnings": []
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
   },
   "engine": "gemini",
   "engine_model": "gemini-flash-latest"
