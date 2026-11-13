@@ -1,0 +1,26 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-13T05:16:49.344687+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgzMprcx6zJ4sjhQhzf4p'})"
+  },
+  "articles": [
+    {
+      "title": "유가 상승이 촉발한 강달러 압박⋯\"1340원 터치 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE82RUtUclk5WmltVms0UmE3Wm43eFNCYkJuOE1zWVpXY3RGODdhWlo3XzdIRllldEpHU0tWNXRrTDlBZ0RwejFUaWRiV0xsM0JZNTI5X1FNUzF4cE5FTEU1dTlnUzliM3BkQkZHODQwek5adnFh?oc=5",
+      "summary": "유가 상승이 촉발한 강달러 압박⋯\"1340원 터치 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-11-12T23:10:00+00:00"
+    },
+    {
+      "title": "[오늘 환율] 11월 12일 원·달러 환율 1,328원…달러·엔화·유로화 일제히 하락",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBYNjd6Ul9OU2JaODRnME9mdV9UTjRORExUR2ZiT1FNTkNYMmFSWVNtT0d4d0NuMkoxVktyd3owLUR3MmJWeGRVVHBhaTJpN2VlcXphcUJkX2l4dFAxbENDbTFtTUxla2IwaE9oQkdDbjRQQdIBckFVX3lxTFBYNjd6Ul9OU2JaODRnME9mdV9UTjRORExUR2ZiT1FNTkNYMmFSWVNtT0d4d0NuMkoxVktyd3owLUR3MmJWeGRVVHBhaTJpN2VlcXphcUJkX2l4dFAxbENDbTFtTUxla2IwaE9oQkdDbjRQQQ?oc=5",
+      "summary": "[오늘 환율] 11월 12일 원·달러 환율 1,328원…달러·엔화·유로화 일제히 하락 잡포스트",
+      "source": "잡포스트",
+      "date": "2026-11-12T05:29:20+00:00"
+    }
+  ]
+}

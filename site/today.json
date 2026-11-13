@@ -1,105 +1,105 @@
 {
-  "generated_at": "2026-11-12T17:23:58.321848+00:00",
-  "asof": "2026-11-13 02:23 KST",
+  "generated_at": "2026-11-13T05:17:57.820608+00:00",
+  "asof": "2026-11-13 14:16 KST",
   "stale_days": 0,
   "card_title": "수출기업 달러 매도에 환율 하락",
-  "overall_why": "미국의 물가 지표가 예상을 웃돌며 연준의 긴축 우려가 커졌고 달러인덱스도 19개월 만에 최고치로 치솟았지만, 국내 외환시장에서는 **수출기업의 달러 매도 물량**이 쏟아져 환율을 강하게 끌어내렸다. 여기에 중동 긴장 완화에 따른 국제유가 급락과 국내 증시 안정세가 더해지며 환율은 상승 압력을 이겨내고 현재 1,330원으로 하락세를 나타냈다.",
+  "overall_why": "미국 연준의 금리 인상 우려로 달러화 매수 심리가 자극됐으나, 외환시장에 쏟아진 **수출업체의 달러 매도 물량**이 환율 상승을 강하게 가로막았다. 여기에 반도체 수출 호조를 바탕으로 **외국인 투자자의 국내 주식 매수세**가 이어지며 환율을 아래로 끌어내렸다.",
   "tldr": [
-    "원/달러 환율은 어제 1,338원에서 현재 1,330원으로 내려 하락 흐름을 이어가고 있어요.",
-    "미국의 물가 지표 발표로 달러가 강세를 보였지만, 수출기업들이 달러를 원화로 바꾸는 매도 물량을 쏟아내며 환율을 끌어내렸어요.",
-    "미국 연방준비제도의 긴축 경계감이 남아 있는 가운데 수출기업의 달러 매도세가 환율을 계속 누를지 지켜봐야 해요."
+    "원/달러는 어제 1,337원에서 현재 1,334원으로 3원 내리며 하락 흐름을 이어가고 있어요.",
+    "미국의 금리 인상 우려에도 수출업체의 달러 매도 물량과 외국인의 주식 매수세가 원화 가치를 끌어올렸어요.",
+    "미국의 추가 물가 지표 발표와 연준의 긴축 정책 행보에 따라 달러화가 다시 반등할지 지켜봐야 해요."
   ],
   "heat": "normal",
   "title_badge": "",
   "factors": [
     {
-      "name": "한국 경제·수출",
-      "emoji": "🏭",
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
       "impact": 5,
-      "impact_reason": "글로벌 달러 강세 압력을 누르고 환율을 직접 끌어내린 핵심 수급 요인으로 지목",
-      "headline": "수출기업의 달러 매도 물량이 쏟아지며 환율 하락 주도",
+      "impact_reason": "외국인 투자자의 국내 증시 매수세가 유입되며 환율을 직접적으로 끌어내린 핵심 요인으로 작용",
+      "headline": "외국인 투자자의 국내 주식 순매수가 이어지며 환율 하락을 뒷받침했다",
       "bullets": [
-        "수출기업들이 보유한 달러를 원화로 바꾸려는 네고 물량이 시장에 끊임없이 유입되며 환율 상단을 강하게 눌렀다.",
-        "경상수지 41개월 연속 흑자와 반도체 중심의 수출 호조세가 이어지며 달러 공급 우위 환경을 뒷받침했다."
+        "외국인 투자자가 국내 증시에서 3,000억 원 이상 주식을 사들이며 원화 수요를 뒷받침했다.",
+        "인공지능 수요 기대감 속에 외국인 자금이 국내 증시로 유입돼 달러 공급 요인으로 작용했다."
       ],
       "sources": [
         {
-          "title": "끊임없는 네고물결…환시 시선은 '사상 첫 1조달러' 수출 지표에 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00Ul8ybS1oQV9JZGFyZUFpYmdpMFJPbnRhWHdPTnZwLXh5YlFxdXE1bWI5dktqTVNmLW8xMkFxcXU5dE1xRkRxQlBBODZ6ZTZXU3ZuNV9VTkxQQV8xU2ViVF9fMVJaM0dYYU92dU9xaU9seWE4?oc=5"
+          "title": "[환율마감] 장중 1,327.7원까지 내려… 위험선호 심리 속 외국인 3천400억 순매수",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KX0RjREE2ek03Sll1S3JiNUphdDR0WFJmSnl0eUNsNFFBeUI5UTNGWE1vb0hzS1luRXRtTWZONV9wOFJmU0E0UTE3REZwUXNMT2FKcG00eEJ6YnloWG44M3FSN19Db2NW?oc=5"
         },
         {
-          "title": "[비바100] 수출 대박에도 힘 못 쓰는 원화… 달러 수급이 바꾼 환율 공식",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1JcElwelRNLVJpSXVyTGwzVUVGQy1SUHhkT2kzZXhrR0hobVFCbmFFRlN5ZEQ3RzFmdTBUV1dIVnhjbHNLNXozdG9yOXNCT3RSUnNCQWJXbTdqUQ?oc=5"
+          "title": "달러·원 3.9원 하락, 1333.6원 마감…외인 양시장 동반 순매수 (종합)'",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MdXp5UHJ0Tlh1aDBVUmliUFktOUFEVzhob3BCOEZkRXVBMUp4VlFmQnBmbVRLaWFMSk1UR0xNMUNwU09XUTczVnF0aE5NdnoyMG5LUmMtTm5aUWc?oc=5"
         },
         {
-          "title": "한국 경상수지 41개월 연속 흑자…환율 안정 기대 커져 : 금융",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBGTWg1QW9SWWJRYnM4cGNsOExaeGQ4RHdQeW1FZHpCN1VCVXE5OXU4S0Jzb2NnZFJ3akdwMXc0b3A4TnFhVVdEQXRUcw?oc=5"
+          "title": "환율, 11거래일 만에 1320원대…강달러에도 외인 주식 ‘사자’",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNczNhNTQwMEJJajJOQXpVOUhXcGRHVWZ1LWEwaTVLNHNXZ2QzLWI5cGNVLXRZM2dXUUJuTXRPc1A0RDlDUjgyWlRvb09OVnZCTXllRFNLcWFabUVQUzhpM0VPaGszUC1jNnZ0Wmh2MkYzTW40T0ZjQWFLbGs4X1hwYg?oc=5"
         },
         {
-          "title": "美 긴축 우려에도 원·달러 환율 1333원대 하락…수출기업 달러 매도 영향",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1UeTFiMzI3STk4cmxma0tycEZwWE9uWXZ1dHBlZlF0VENGMUc1Y1FSZWRweWF3akRkVVVrQkt6Y2lWR3NsWUc1VVRUYU0xV2VVdTBzSmpZZnVHTDNiaEhUZTk1WnU?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "달러 강세(달러인덱스)",
-      "emoji": "💵",
-      "impact": 4,
-      "impact_reason": "달러인덱스가 19개월 만에 최고치로 치솟았으나 원화가 이에 맞서며 변동성을 키움",
-      "headline": "달러화가 19개월 만에 최고 수준을 기록했으나 원화가 강세로 맞섬",
-      "bullets": [
-        "미국 소비자물가지수 충격으로 달러인덱스가 19개월 만에 최고 수준까지 치솟으며 환율 상승 압력을 키웠다.",
-        "달러 강세 압력에도 불구하고 국내 외환시장에서는 수출기업의 달러 매도 물량이 출회되며 환율이 하락 흐름을 나타냈다."
-      ],
-      "sources": [
-        {
-          "title": "美 물가 충격에 달러 강세…금리 인상 압박에 19개월 만에 최고",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xMmU5MEtBNnNuNnNQTW5GUjJQYmZpbnp0ME9sZHV2SmFzQ015RVVBX2JjOFZpYkxmeG9HLVM5RTZDN1JielkydnUzbHM1bmtvdDhpdDR6bXoyQVRWd0xqZ2hCZzF0cHBob2FFUXFxYnbSAXRBVV95cUxPRGNBWXktVm1XU2d4NVJLdGtwWE80bWF0N1dfYjhINWRMR0dyZnVNWXI0N2xxZ1VESzg2VDdnVWpmVmRDQTFzN3FUa0lNeE5XWU1PUmd5LVlCekhHRUNkcmJuSWZMX3ZaeGdzTnB4aTZfMDZxNw?oc=5"
-        },
-        {
-          "title": "환율, 1330원대 초반 등락…美 긴축 우려에도 원화 강세에 상승 제한",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EOExDc25sQ29mdGFnamxtNG1vY0h2ME5tTi04NFVRb2Z0ZUswZlczY3A3cjdFR1Rxd2VOSEx3RGtnRFF4TWpiWkJ4X3VZYzlET0dKX3ZLVmlvMnFheFE?oc=5"
-        },
-        {
-          "title": "달러 인덱스, 19개월 만에 최고...기술주 상승·빅스텝 가능성까지 달러 땔감 [글로벌 머니플로우]",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5kV3VMdTlJb0hybU5fWDUyeDViUTBmeDdTUU9iTWpEQ2xGTmpxQ3BGbUdpbUd1cFRZS1NtZURLSkN3TXJpMm43Q1FQcWFfbnh0anFIRkZ1MHFuR2ZmT0s2U2pfTE5hQ2lUTDZaOU81VGdxRjA?oc=5"
-        },
-        {
-          "title": "달러 강세 속 수출 달러 매도에 원·달러 3.9원 하락 : 금융",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkYWZoNF9uWHRqcG1pZmc3TFh0OWVoU1RVZmlqbVV1ODRiLWRxMTYyX0VCUGlwcUdYT1IxRDFNRzd3STBnM3J4cnY1cw?oc=5"
+          "title": "\"AI 수요는 건재\"…외인 6500억 귀환에 코스피 반등",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhZlpkbldGNnFTYVJzY1ZNM0VGZHdWNElIYWV2c0pMdEhBZWYwSlNBU3RzNUx1QlZ5bU1kSkY2Q1NTSFRlSVlfRG12VjVrRTJyYzNn?oc=5"
         }
       ]
     },
     {
       "name": "미국 통화정책",
       "emoji": "🇺🇸",
-      "impact": 3,
-      "impact_reason": "미국 물가 지표 충격으로 연준의 추가 긴축 및 빅스텝 우려가 다시 고개 듦",
-      "headline": "미국 물가 충격에 연준 긴축 우려 고조",
+      "impact": 4,
+      "impact_reason": "미 연준의 12월 빅스텝 인상 경계감이 시장 전반에 퍼졌으나 국내 외환 수급에 상쇄",
+      "headline": "미국 연준의 빅스텝 긴축 우려에도 환율이 소폭 하락했다",
       "bullets": [
-        "미국 소비자물가지수(CPI)가 시장 예상을 웃돌면서 연준의 기준금리 빅스텝 인상 가능성에 대한 우려가 다시 고개를 들었다.",
-        "엔화가 1달러당 159엔대 후반까지 밀리는 등 미·일 금리차 확대 전망 속에 글로벌 외환시장의 통화정책 경계감이 커졌다."
+        "미국의 12월 기준금리 0.5%포인트 인상(빅스텝) 가능성이 제기되며 글로벌 시장에서 달러화 가치가 들썩였다.",
+        "하지만 국내 외환시장에서는 달러 매도세가 미국의 긴축 불안을 상쇄하며 원·달러 환율이 1,334원으로 내렸다."
       ],
       "sources": [
         {
-          "title": "엔화, 미일 금리차 확대 전망에 1달러=159엔대 후반 하락 출발",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ZSVBzRzVlNTJIamxOdmRmZDRzUE5oX0NEWlRpRWt2RXBrZzNfZnZZVjNFMWp5bFROd1ZyWDJsZjd1czB1TXk1dEJGZGlqaHlOZ1hza09Zb1lLbEJPZ09yQnpaWTJtampUYW8xX3JyQlZoTU51ODJzUdIBeEFVX3lxTE5ZSVBzRzVlNTJIamxOdmRmZDRzUE5oX0NEWlRpRWt2RXBrZzNfZnZZVjNFMWp5bFROd1ZyWDJsZjd1czB1TXk1dEJGZGlqaHlOZ1hza09Zb1lLbEJPZ09yQnpaWTJtampUYW8xX3JyQlZoTU51ODJzUQ?oc=5"
+          "title": "美 금리 '빅스텝' 우려에도 원·달러 환율 1333.6원…3일째 하락",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yclJCcC1Sa04wOFNWOUsyM3VXN25JaDJFTEwxemw0Q3NsRnZUeEhhRHdsYU5mTHhoQnIyYjQta0VTTTRLMlJSZzlIeVo0WjlhSXEzbnQyTEdMREsySlQxWHNuNHpEWmJZN3VEMGpxVQ?oc=5"
         },
         {
           "title": "환율, 1330원대 초반 등락…美 긴축 우려에도 원화 강세에 상승 제한",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EOExDc25sQ29mdGFnamxtNG1vY0h2ME5tTi04NFVRb2Z0ZUswZlczY3A3cjdFR1Rxd2VOSEx3RGtnRFF4TWpiWkJ4X3VZYzlET0dKX3ZLVmlvMnFheFE?oc=5"
         },
         {
-          "title": "美 금리 '빅스텝' 우려에도 원·달러 환율 1333.6원…3일째 하락",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yclJCcC1Sa04wOFNWOUsyM3VXN25JaDJFTEwxemw0Q3NsRnZUeEhhRHdsYU5mTHhoQnIyYjQta0VTTTRLMlJSZzlIeVo0WjlhSXEzbnQyTEdMREsySlQxWHNuNHpEWmJZN3VEMGpxVQ?oc=5"
+          "title": "미국 빅스텝 가능성 커졌는데…원·달러 환율은 1330원대",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0d2daLUZsSXllNmdMb2NGeWFjLU1KaHVSNjBHSjZHcERBMDJKMWR1LXRoNTZwcVpNMjc1S2ZUSDlrSUdxSVh5bm04dWdxRWZUUlNjMy1KYXV2N25FY1Nfb2x4UHF2cnQyX01rbElQUGhDdXpUeks00gF3QVVfeXFMUDR3Z1otRmxJeWU2Z0xvY0Z5YWMtTUpodVI2MEdKNkdwREEwMkoxZHUtdGg1NnBxWk0yNzVLZlRIOWtJR3FJWHlubTh1Z3FFZlRSU2MzLUphdXY3bkVjU19vbHhQcXZydDJfTWtsSVBQaEN1elR6SzQ?oc=5"
         },
         {
-          "title": "서울환시 \"예상 웃돈 美 CPI에도 네고물량 경계…상단 제한\" |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5ZWEJob1VJZF9vRGx2eng0SnRaM2FRRjBVbVlhYVFUbnZDS09GQ3RLajg2WFo0ZHZBcUk3TFNndDBlczJTSjlZVVl3YzFQUDByRmwzc2V0N1VzOGlrUEp0MVNxM3RWSm8yY3hGMEdfdVgxLVJF?oc=5"
+          "title": "미 금리 '빅스텝' 인상 우려에도…환율 3.9원 내린 1,333.6원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sWHB1TmtjbG5SSExqUUJ0cW54Q2hTTVA3cmFzQ1dLUzJsYndkVHNkUjBsMTd0eUl4RVpJQjJ4S2pVbGVZZjlMUnFFSFhOaExieWlvM2djSzE0OWljemJhNdIBYEFVX3lxTE9sWHB1TmtjbG5SSExqUUJ0cW54Q2hTTVA3cmFzQ1dLUzJsYndkVHNkUjBsMTd0eUl4RVpJQjJ4S2pVbGVZZjlMUnFFSFhOaExieWlvM2djSzE0OWljemJhNQ?oc=5"
         },
         {
-          "title": "환율, 1330원대 후반에서 등락…美 물가 충격에 달러 반등",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0tRU9QNFZuR0xNalN6TmR2VFg0YmtlZ3dkM0FCNWtNay1nMlhCRWxUVmNlMFZwQnFuRWZFSXBSd0ZaVVBMVmZlWDR5MlRudTVGbW1Jd2tvY1ZuZVY3U1E?oc=5"
+          "title": "미 12월 '빅스텝' 가능성에 달러 들썩…한은, 금리 고심",
+          "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPLUZ5a3otTWRXTnEyRUl5TXpidFRUZ2V0TmQxY2JmLXdoRTlfVkcxVzV6c1duRk83eFNKSWYxX2FQN0tFcnNLZXlBVE1DVWJzSmdFekJyYTFqTmpONFhkY2Y0VGItM1RfanRCb2VoV040Ylc0VGlyQmxkeERPb2NJcEw3M2dubGw0VDNreEkyNmVNWUJySGxSWDlEQ21nSnlpbThXNEJCTkdLOVZXVlNwZkVvQmZ3Ujlwb1hyOGNjMkVIQjZKZzJEcThGY3pUUzY3bWZVX0dNVDF5Y3dsUkFmRzdMeHZ5TkdZTFItRkVtRHhDRVpOOENTSDlwWVpPOEFLekRF?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 3,
+      "impact_reason": "반도체 수출 호조와 경상수지 흑자 기조가 원화 기초체력을 단단하게 지지",
+      "headline": "반도체 수출 호조와 경상수지 흑자가 원화 기초체력을 뒷받침했다",
+      "bullets": [
+        "반도체 수출이 급증세를 이어가며 한국의 사상 첫 연간 수출 1조 달러 달성 기대감을 높였다.",
+        "41개월 연속 이어진 경상수지 흑자 기조가 외환시장 내 달러 공급 기반을 다지며 원화 가치를 안정시켰다."
+      ],
+      "sources": [
+        {
+          "title": "\"반도체가 다 했다\"… 수출 1조달러 눈앞, 반도체 331% 급증이 내 지갑에 남기는 '이것'",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfdVJCYW51aGJlS29fRW83Wmd2cS0tMkRQZ1RCNnlUakJ2aGpSd2lBVkQ3SlZNOXd6SlExMFlKZ2U4X25sQkdJN2hfVUNkMzlqSWd1SkZ0d0ZSM1RyVVBfYkJaTXpOT3cybEdkN3FJZHlBZTg?oc=5"
+        },
+        {
+          "title": "[이슈] 반도체 수출 비중 50% 육박…한국 경제가 웃을 수만은 없는 이유",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LbEZzZjJTbEw3MFd3QXhuRXBVQXhHRkdFblZjVGdPNjJ3bFl2VnUtOEFBMzFUZ2t4Z1NNWmRucDhmNUY3NU5zaUJwS19ZeE81RHBscGxUWWVtS0czUmZ5SGd5bTFnTTl2d2hRRkhwd2NSdw?oc=5"
+        },
+        {
+          "title": "끊임없는 네고물결…환시 시선은 '사상 첫 1조달러' 수출 지표에 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00Ul8ybS1oQV9JZGFyZUFpYmdpMFJPbnRhWHdPTnZwLXh5YlFxdXE1bWI5dktqTVNmLW8xMkFxcXU5dE1xRkRxQlBBODZ6ZTZXU3ZuNV9VTkxQQV8xU2ViVF9fMVJaM0dYYU92dU9xaU9seWE4?oc=5"
+        },
+        {
+          "title": "한국 경상수지 41개월 연속 흑자…환율 안정 기대 커져 : 금융",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBGTWg1QW9SWWJRYnM4cGNsOExaeGQ4RHdQeW1FZHpCN1VCVXE5OXU4S0Jzb2NnZFJ3akdwMXc0b3A4TnFhVVdEQXRUcw?oc=5"
         }
       ]
     },
@@ -107,28 +107,28 @@
       "name": "그 외 환율 이슈",
       "emoji": "🔎",
       "impact": 2,
-      "impact_reason": "중동 긴장 완화와 유가 급락, 국내 증시 안정 등 추가적인 외환시장 안정 요인 작용",
-      "headline": "중동 긴장 완화와 유가 급락 여파로 시장 불안 진정",
+      "impact_reason": "수출업체의 달러 매도 물량이 환율 상단을 강하게 누르며 하락 압력을 가중",
+      "headline": "수출업체의 달러 매도 물량이 유입되며 환율 상승을 방어했다",
       "bullets": [
-        "미국과 이란 간의 합의 기대가 커지면서 중동 지역의 긴장이 누그러지고 국제유가가 급락했다.",
-        "국내 증시도 반도체 대형주를 중심으로 반등세를 나타내며 외환시장의 위험회피 심리를 완화하는 데 기여했다."
+        "수출기업들이 보유한 달러를 원화로 바꾸는 네고 물량을 출회하며 강달러 파도를 막는 방파제 역할을 했다.",
+        "장중 달러 공급 우위가 이어지면서 원·달러 환율은 장중 한때 1,327원대까지 하락하기도 했다."
       ],
       "sources": [
         {
-          "title": "미국·이란 합의 기대감 확대에 유가 하락하며 캐나다 달러 약세",
-          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdFBEOVVOQ1FXOS04ZVY3cURLTFRrQTJHQXlwUGEwXzg0N3BWSXNmTzJQSG9GcHdab0NRd0haZ3hJRjFXTEU3LTBOWE9nUF9iWFhTWEt2TmVaSGdmSzRteUs4VDRJUVhjdWhkOWdJY0NIUV90bFMwakx4eWQwZ0N0enRMXzFKTWFVRmhhU01sQjh5cy1rRy1oNXh0MmFENTY0b0VxeG9WdUZtZW8yQk9ONmNzY3phYTcwSXduOEp2YnFCbDFkcWZpdm8xUnJoWTA?oc=5"
+          "title": "[신윤우의 외환분석] 강달러 파도에 맞설 네고 방파제",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwSWhfXzZGYVlIVmI5RU02ZGY0SmRrcVYyMVBzNkxoNDJ2cnhYLUVSY0xSd1NGWmZ0a0dudmFtX2VGNHRVeGxFNUtMZWdJbENFOXhaWkpiM2JiWml2VWt0REZ6d1loZ253WWM4eHp0S3NiQQ?oc=5"
         },
         {
-          "title": "코스피 2% 올라 5,375 마감...삼전·닉스 상승세",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBnOVJ3ZHVMd1FVZ3JxWVN4eUtrVkdpUEdVbl9TdUdiVkxlckxCSVp1bGt4RU0xVDhTaS14Mmw0bUxJUHU0VlZKdHFTVUhpU1RyQWlXSTg2MVpIcHdFWnc?oc=5"
+          "title": "원·달러 환율, 美 긴축 우려에도 수출업체 달러매도 등에 하락...1330.7원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yWENjYzBQeUdKNE9BMXVkX2VfUHd2VzM3R1l2ZzVURkRVZThfYjZMaXI2SmY3MXFqNG1hVVpMalNYaU5LRTI3TGVNVmllVnlWSlJ4NU03YkJWRFpEakRGZlR4Zmg?oc=5"
         },
         {
-          "title": "[환율 마감] 중동 긴장 완화 및 국제유가 급락 여파…원/달러 환율 9.6원 하락한 1,337.5원 마감",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tYzRVOFB6aVZKVkxaTnpIR3UyVVN5UXpmRmRKM1lad1pkamxKYm1ROU1hd2hzRW56clNscXkyenBMQTVES3R2OFphS0tSTUVycFI5MEpzWHQ4VWg1ci1Ienl3MEpIRUE?oc=5"
+          "title": "[환율마감] 장중 1,327.7원까지 내려… 위험선호 심리 속 외국인 3천400억 순매수",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KX0RjREE2ek03Sll1S3JiNUphdDR0WFJmSnl0eUNsNFFBeUI5UTNGWE1vb0hzS1luRXRtTWZONV9wOFJmU0E0UTE3REZwUXNMT2FKcG00eEJ6YnloWG44M3FSN19Db2NW?oc=5"
         },
         {
-          "title": "미국발 훈풍에 증시 반등...코스피, 4.4% 상승 마감",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fblBzR1pPeGZVbTBzS0dIc1MyaFdfMDctbkFmNllTQTF5TXVfMDdmdWFFSlhSUzhjQUNQSy1ZcmhmT2FDdWIxNHdydEkyZEQ3SkZ3QWRReTVMcFhTV1E?oc=5"
+          "title": "수출업체 달러 매도에 원화 강세…환율 1330.7원 : 금융",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5QMmdjX25NYWxyVlFIVF94T3RiM1hiaVppdnFoOTYzMHVQa0xlMTExek05eXNaandJOF9xNFU4UkdVc1daNURMemgwUQ?oc=5"
         }
       ]
     }
@@ -136,6 +136,6 @@
   "calendar": {
     "guide": "",
     "events": [],
-    "today_kst": "2026-11-12"
+    "today_kst": "2026-11-13"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-11-13T05:17:56.310050+00:00",
+  "today_kst": "2026-11-13",
+  "guide": "이번 주 발표된 미국 10월 CPI가 시장 예상치를 웃도는 쇼크를 기록하며 연준의 긴축 장기화 우려와 함께 원/달러 환율의 상방 압력이 커진 상태다. 다음 주에는 물가 충격의 여파 속에서 주요국 지표를 소화하며 환율 변동성이 확대될 수 있다. 달러 매수가 필요한 실수요자라면 급등 시 추격 매수를 피하고 조정 시점을 노려 분할 환전하는 것이 유리하다.",
+  "events": [
+    {
+      "date": "2026-11-10",
+      "time": "22:30",
+      "name": "미국 10월 소비자물가지수(CPI)",
+      "importance": 3,
+      "summary": "미국 10월 CPI가 예상보다 높게 나와 연준의 긴축 장기화 우려를 키우며 달러 강세를 촉발했다.",
+      "why": "미국의 소비자물가 상승세가 꺾이지 않으면 연준의 고금리 기조가 이어져 원/달러 환율 상승 압력으로 직결된다.",
+      "result": "미국 CPI가 예상을 웃돌았으나, 원/달러 환율은 3.9원 내린 1,333.6원을 기록했다.",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "[거시경제] 기준금리 인상 압력 속 11월 10일 美 CPI 공개",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBKZkpBQzVjR0QyY0VsTlowcXRSSTJ3U1pIc3RZWjBZQm0wZXQyeWNsN2hMbnlLZGh4RW9KVjV3UDZsRk9DSnR0cm1aMFdnR01PZ0Q2Z01rYWlwakM2RVRLSW54R1d0RHU0X3JNa2lqOEI1Zw?oc=5",
+          "snippet": "[거시경제] 기준금리 인상 압력 속 11월 10일 美 CPI 공개 디지털애셋"
+        },
+        {
+          "title": "미 10월 CPI 10일 발표…엘리시움, 메인넷 약 4주 뒤 기능 추가 계획",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9wOThOTFhIMERGNWVwU3AybjRFaXp2RHhpYkVBa1U1ZWFZUEV2RjY4WUppZWlMZUVaZE1vQVRvWkp4X0d1S2tFdVJCZ01nRVJXa2NjdnhRTdIBXEFVX3lxTE5MbTNvLTBCQ2laNFJDUkhoYlRQNllWV1JycmxOT0J4MkZsUk5JUXFwVXJ5ZEVzVDZIUFFueE5tel9JalgzT1g0REg5S3hkVGcwVWg3N2FMeUhPTWdH?oc=5",
+          "snippet": "미 10월 CPI 10일 발표…엘리시움, 메인넷 약 4주 뒤 기능 추가 계획 토큰포스트"
+        }
+      ]
+    }
+  ]
+}
