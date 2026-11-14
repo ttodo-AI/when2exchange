@@ -1,138 +1,15 @@
 {
-  "generated_at": "2026-11-13T16:58:36.953271+00:00",
-  "asof": "2026-11-14 01:58 KST",
-  "stale_days": 0,
-  "card_title": "수출기업 달러 매도에 환율 하락",
-  "overall_why": "미국 연준의 금리 인상 우려로 달러화 매수 심리가 자극됐으나, 외환시장에 쏟아진 **수출업체의 달러 매도 물량**이 환율 상승을 강하게 가로막았다. 여기에 반도체 수출 호조를 바탕으로 **외국인 투자자의 국내 주식 매수세**가 이어지며 환율을 아래로 끌어내렸다.",
+  "generated_at": "2026-11-14T15:37:01.728908+00:00",
+  "asof": "2026-11-15 00:37 KST",
+  "stale_days": 2,
+  "card_title": "요인 분석 갱신 대기",
+  "overall_why": "요인 해설이 11월 13일 이후 갱신되지 않아 잠시 숨겨뒀개요. 환율·게이지·차트는 오늘 값이에요.",
   "tldr": [
-    "원/달러는 어제 1,337원에서 현재 1,334원으로 3원 내리며 하락 흐름을 이어가고 있어요.",
-    "미국의 금리 인상 우려에도 수출업체의 달러 매도 물량과 외국인의 주식 매수세가 원화 가치를 끌어올렸어요.",
-    "미국의 추가 물가 지표 발표와 연준의 긴축 정책 행보에 따라 달러화가 다시 반등할지 지켜봐야 해요."
+    "요인 해설이 11월 13일 이후 갱신되지 않아 잠시 숨겨뒀개요. 환율·게이지·차트는 오늘 값이에요."
   ],
-  "heat": "normal",
+  "heat": "",
   "title_badge": "",
-  "factors": [
-    {
-      "name": "외국인 증시 수급",
-      "emoji": "📈",
-      "impact": 5,
-      "impact_reason": "외국인 투자자의 국내 증시 매수세가 유입되며 환율을 직접적으로 끌어내린 핵심 요인으로 작용",
-      "headline": "외국인 투자자의 국내 주식 순매수가 이어지며 환율 하락을 뒷받침했다",
-      "bullets": [
-        "외국인 투자자가 국내 증시에서 3,000억 원 이상 주식을 사들이며 원화 수요를 뒷받침했다.",
-        "인공지능 수요 기대감 속에 외국인 자금이 국내 증시로 유입돼 달러 공급 요인으로 작용했다."
-      ],
-      "sources": [
-        {
-          "title": "[환율마감] 장중 1,327.7원까지 내려… 위험선호 심리 속 외국인 3천400억 순매수",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KX0RjREE2ek03Sll1S3JiNUphdDR0WFJmSnl0eUNsNFFBeUI5UTNGWE1vb0hzS1luRXRtTWZONV9wOFJmU0E0UTE3REZwUXNMT2FKcG00eEJ6YnloWG44M3FSN19Db2NW?oc=5"
-        },
-        {
-          "title": "달러·원 3.9원 하락, 1333.6원 마감…외인 양시장 동반 순매수 (종합)'",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MdXp5UHJ0Tlh1aDBVUmliUFktOUFEVzhob3BCOEZkRXVBMUp4VlFmQnBmbVRLaWFMSk1UR0xNMUNwU09XUTczVnF0aE5NdnoyMG5LUmMtTm5aUWc?oc=5"
-        },
-        {
-          "title": "환율, 11거래일 만에 1320원대…강달러에도 외인 주식 ‘사자’",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNczNhNTQwMEJJajJOQXpVOUhXcGRHVWZ1LWEwaTVLNHNXZ2QzLWI5cGNVLXRZM2dXUUJuTXRPc1A0RDlDUjgyWlRvb09OVnZCTXllRFNLcWFabUVQUzhpM0VPaGszUC1jNnZ0Wmh2MkYzTW40T0ZjQWFLbGs4X1hwYg?oc=5"
-        },
-        {
-          "title": "\"AI 수요는 건재\"…외인 6500억 귀환에 코스피 반등",
-          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhZlpkbldGNnFTYVJzY1ZNM0VGZHdWNElIYWV2c0pMdEhBZWYwSlNBU3RzNUx1QlZ5bU1kSkY2Q1NTSFRlSVlfRG12VjVrRTJyYzNn?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "미국 통화정책",
-      "emoji": "🇺🇸",
-      "impact": 4,
-      "impact_reason": "미 연준의 12월 빅스텝 인상 경계감이 시장 전반에 퍼졌으나 국내 외환 수급에 상쇄",
-      "headline": "미국 연준의 빅스텝 긴축 우려에도 환율이 소폭 하락했다",
-      "bullets": [
-        "미국의 12월 기준금리 0.5%포인트 인상(빅스텝) 가능성이 제기되며 글로벌 시장에서 달러화 가치가 들썩였다.",
-        "하지만 국내 외환시장에서는 달러 매도세가 미국의 긴축 불안을 상쇄하며 원·달러 환율이 1,334원으로 내렸다."
-      ],
-      "sources": [
-        {
-          "title": "美 금리 '빅스텝' 우려에도 원·달러 환율 1333.6원…3일째 하락",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1yclJCcC1Sa04wOFNWOUsyM3VXN25JaDJFTEwxemw0Q3NsRnZUeEhhRHdsYU5mTHhoQnIyYjQta0VTTTRLMlJSZzlIeVo0WjlhSXEzbnQyTEdMREsySlQxWHNuNHpEWmJZN3VEMGpxVQ?oc=5"
-        },
-        {
-          "title": "환율, 1330원대 초반 등락…美 긴축 우려에도 원화 강세에 상승 제한",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9EOExDc25sQ29mdGFnamxtNG1vY0h2ME5tTi04NFVRb2Z0ZUswZlczY3A3cjdFR1Rxd2VOSEx3RGtnRFF4TWpiWkJ4X3VZYzlET0dKX3ZLVmlvMnFheFE?oc=5"
-        },
-        {
-          "title": "미국 빅스텝 가능성 커졌는데…원·달러 환율은 1330원대",
-          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA0d2daLUZsSXllNmdMb2NGeWFjLU1KaHVSNjBHSjZHcERBMDJKMWR1LXRoNTZwcVpNMjc1S2ZUSDlrSUdxSVh5bm04dWdxRWZUUlNjMy1KYXV2N25FY1Nfb2x4UHF2cnQyX01rbElQUGhDdXpUeks00gF3QVVfeXFMUDR3Z1otRmxJeWU2Z0xvY0Z5YWMtTUpodVI2MEdKNkdwREEwMkoxZHUtdGg1NnBxWk0yNzVLZlRIOWtJR3FJWHlubTh1Z3FFZlRSU2MzLUphdXY3bkVjU19vbHhQcXZydDJfTWtsSVBQaEN1elR6SzQ?oc=5"
-        },
-        {
-          "title": "미 금리 '빅스텝' 인상 우려에도…환율 3.9원 내린 1,333.6원",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sWHB1TmtjbG5SSExqUUJ0cW54Q2hTTVA3cmFzQ1dLUzJsYndkVHNkUjBsMTd0eUl4RVpJQjJ4S2pVbGVZZjlMUnFFSFhOaExieWlvM2djSzE0OWljemJhNdIBYEFVX3lxTE9sWHB1TmtjbG5SSExqUUJ0cW54Q2hTTVA3cmFzQ1dLUzJsYndkVHNkUjBsMTd0eUl4RVpJQjJ4S2pVbGVZZjlMUnFFSFhOaExieWlvM2djSzE0OWljemJhNQ?oc=5"
-        },
-        {
-          "title": "미 12월 '빅스텝' 가능성에 달러 들썩…한은, 금리 고심",
-          "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPLUZ5a3otTWRXTnEyRUl5TXpidFRUZ2V0TmQxY2JmLXdoRTlfVkcxVzV6c1duRk83eFNKSWYxX2FQN0tFcnNLZXlBVE1DVWJzSmdFekJyYTFqTmpONFhkY2Y0VGItM1RfanRCb2VoV040Ylc0VGlyQmxkeERPb2NJcEw3M2dubGw0VDNreEkyNmVNWUJySGxSWDlEQ21nSnlpbThXNEJCTkdLOVZXVlNwZkVvQmZ3Ujlwb1hyOGNjMkVIQjZKZzJEcThGY3pUUzY3bWZVX0dNVDF5Y3dsUkFmRzdMeHZ5TkdZTFItRkVtRHhDRVpOOENTSDlwWVpPOEFLekRF?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "한국 경제·수출",
-      "emoji": "🏭",
-      "impact": 3,
-      "impact_reason": "반도체 수출 호조와 경상수지 흑자 기조가 원화 기초체력을 단단하게 지지",
-      "headline": "반도체 수출 호조와 경상수지 흑자가 원화 기초체력을 뒷받침했다",
-      "bullets": [
-        "반도체 수출이 급증세를 이어가며 한국의 사상 첫 연간 수출 1조 달러 달성 기대감을 높였다.",
-        "41개월 연속 이어진 경상수지 흑자 기조가 외환시장 내 달러 공급 기반을 다지며 원화 가치를 안정시켰다."
-      ],
-      "sources": [
-        {
-          "title": "\"반도체가 다 했다\"… 수출 1조달러 눈앞, 반도체 331% 급증이 내 지갑에 남기는 '이것'",
-          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfdVJCYW51aGJlS29fRW83Wmd2cS0tMkRQZ1RCNnlUakJ2aGpSd2lBVkQ3SlZNOXd6SlExMFlKZ2U4X25sQkdJN2hfVUNkMzlqSWd1SkZ0d0ZSM1RyVVBfYkJaTXpOT3cybEdkN3FJZHlBZTg?oc=5"
-        },
-        {
-          "title": "[이슈] 반도체 수출 비중 50% 육박…한국 경제가 웃을 수만은 없는 이유",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LbEZzZjJTbEw3MFd3QXhuRXBVQXhHRkdFblZjVGdPNjJ3bFl2VnUtOEFBMzFUZ2t4Z1NNWmRucDhmNUY3NU5zaUJwS19ZeE81RHBscGxUWWVtS0czUmZ5SGd5bTFnTTl2d2hRRkhwd2NSdw?oc=5"
-        },
-        {
-          "title": "끊임없는 네고물결…환시 시선은 '사상 첫 1조달러' 수출 지표에 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00Ul8ybS1oQV9JZGFyZUFpYmdpMFJPbnRhWHdPTnZwLXh5YlFxdXE1bWI5dktqTVNmLW8xMkFxcXU5dE1xRkRxQlBBODZ6ZTZXU3ZuNV9VTkxQQV8xU2ViVF9fMVJaM0dYYU92dU9xaU9seWE4?oc=5"
-        },
-        {
-          "title": "한국 경상수지 41개월 연속 흑자…환율 안정 기대 커져 : 금융",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBGTWg1QW9SWWJRYnM4cGNsOExaeGQ4RHdQeW1FZHpCN1VCVXE5OXU4S0Jzb2NnZFJ3akdwMXc0b3A4TnFhVVdEQXRUcw?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "그 외 환율 이슈",
-      "emoji": "🔎",
-      "impact": 2,
-      "impact_reason": "수출업체의 달러 매도 물량이 환율 상단을 강하게 누르며 하락 압력을 가중",
-      "headline": "수출업체의 달러 매도 물량이 유입되며 환율 상승을 방어했다",
-      "bullets": [
-        "수출기업들이 보유한 달러를 원화로 바꾸는 네고 물량을 출회하며 강달러 파도를 막는 방파제 역할을 했다.",
-        "장중 달러 공급 우위가 이어지면서 원·달러 환율은 장중 한때 1,327원대까지 하락하기도 했다."
-      ],
-      "sources": [
-        {
-          "title": "[신윤우의 외환분석] 강달러 파도에 맞설 네고 방파제",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwSWhfXzZGYVlIVmI5RU02ZGY0SmRrcVYyMVBzNkxoNDJ2cnhYLUVSY0xSd1NGWmZ0a0dudmFtX2VGNHRVeGxFNUtMZWdJbENFOXhaWkpiM2JiWml2VWt0REZ6d1loZ253WWM4eHp0S3NiQQ?oc=5"
-        },
-        {
-          "title": "원·달러 환율, 美 긴축 우려에도 수출업체 달러매도 등에 하락...1330.7원 마감",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8yWENjYzBQeUdKNE9BMXVkX2VfUHd2VzM3R1l2ZzVURkRVZThfYjZMaXI2SmY3MXFqNG1hVVpMalNYaU5LRTI3TGVNVmllVnlWSlJ4NU03YkJWRFpEakRGZlR4Zmg?oc=5"
-        },
-        {
-          "title": "[환율마감] 장중 1,327.7원까지 내려… 위험선호 심리 속 외국인 3천400억 순매수",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KX0RjREE2ek03Sll1S3JiNUphdDR0WFJmSnl0eUNsNFFBeUI5UTNGWE1vb0hzS1luRXRtTWZONV9wOFJmU0E0UTE3REZwUXNMT2FKcG00eEJ6YnloWG44M3FSN19Db2NW?oc=5"
-        },
-        {
-          "title": "수출업체 달러 매도에 원화 강세…환율 1330.7원 : 금융",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5QMmdjX25NYWxyVlFIVF94T3RiM1hiaVppdnFoOTYzMHVQa0xlMTExek05eXNaandJOF9xNFU4UkdVc1daNURMemgwUQ?oc=5"
-        }
-      ]
-    }
-  ],
+  "factors": [],
   "calendar": {
     "guide": "",
     "events": [],
