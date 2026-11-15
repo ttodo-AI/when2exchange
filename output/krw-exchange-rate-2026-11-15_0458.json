@@ -1,0 +1,19 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-15T04:58:56.440501+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch485aLU6JmEujiq3buUF'})"
+  },
+  "articles": [
+    {
+      "title": "[외환-주간] 바깥바람이 만들어낼 방향성…연준·APEC 주시",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0OEZ1YThVdlhhdXZMbG5sQ292anNlLXdxYVJsdGMteWZ6NWRuUzZSTVliYzFUVi1NRUxYcjlGSEkxT1ZwMnIxUXVwRnNDTUlQUnEwbC10N0tTUndla1VSR3gzQmZ4UFFRQ0NlZmxZNFdDUQ?oc=5",
+      "summary": "[외환-주간] 바깥바람이 만들어낼 방향성…연준·APEC 주시 KB Think",
+      "source": "KB Think",
+      "date": "2026-11-15T04:00:01+00:00"
+    }
+  ]
+}

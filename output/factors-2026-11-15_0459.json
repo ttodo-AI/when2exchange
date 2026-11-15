@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-11-15T04:59:28.459598+00:00",
+  "card_title": "달러 강세와 외인 매도에 소폭 반등",
+  "tldr": [
+    "오늘 원/달러 환율은 1,340원으로 어제 1,337원보다 3원 올랐어요.",
+    "미국 도매물가가 여전히 높게 나오면서 달러가 강세를 보였고 국내 주식시장에서 외국인이 주식을 팔아치운 영향이에요.",
+    "주요국 물가 흐름과 이번 주 예정된 APEC 정상회의 등 대외 이벤트 추이를 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "**미국 도매물가가 높게 유지되며 달러 가치가 19개월 만에 최고치 수준으로 오른 것**이 오늘 환율 상승의 주된 원인이다. 여기에 **국내 증시에서 외국인이 순매도로 돌아서며** 원화 약세 압력을 더해, 환율은 5거래일 만에 소폭 반등해 1,340원으로 장을 마쳤다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "달러인덱스가 19개월 만의 최고치 부근까지 치솟으며 오늘 환율 상승을 주도한 핵심 배경으로 지목됨",
+      "headline": "글로벌 달러화 강세 속 원/달러 환율 반등",
+      "bullets": [
+        "미국 달러인덱스가 19개월 만에 최고 수준에 근접하는 등 달러화 강세 흐름이 이어졌다.",
+        "원/달러 환율은 국제유가 상승과 강달러 압력 속에 전일 대비 오른 1,340원에 마감했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 달러 강세에 닷새 만에 반등…6.0원 오른 1,336.7원",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE95VVRZQU9XT2lwbGd4T0xSV3NWeV9fYXhOVjc5M0p6MVkydEFUd2hOMjNUODVKSy1pY1c3bVJEVDRhQjZTSERKQjZOTUVCSGZLQkpZUldHbER4NjDSAWBBVV95cUxPb2hkMTNNRjZ5OVRRUE9USHRUUGJMS1FRQzcxbkdPaWFKZ2g3WXVuSkpqamw5R1BVYk83dkM0cmVVdmk0Wk54cHdZX2dzb1NkV2lSaFpaaDRVXzJoV0R1cnU?oc=5"
+        },
+        {
+          "title": "국제유가 상승에 달러 강세…달러인덱스 19개월 만에 최고",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qYUZzRFlzdHNfSkI4MlduanF0ajlTdlo4QWIxNFdYc0ZJMnNvWU9QX01tR1FhNk1vY0R6SzliUzdGcVVqYkJvMTM2Q1Y1UlhkRnfSAVNBVV95cUxNV2hvSDMzeWNRNy1LalFRNXZrWUdJMmRZRXpqN1o4SDluMkJZU05ENGlpYVNEN2hrc0NmY1lLV3FSNm9lVmp4cUgtaWxRZ1Z5YjJDbw?oc=5"
+        },
+        {
+          "title": "원·달러 환율 1336.7원 마감…유가 급등·달러 강세에 5거래일 만에 반등",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBXUHB0dTNaNnNMOVE3Z0Yzc3kydzFCSjVZZkRhN3FLNzNXMm5zM3ExUFJNeXIyQ1lPQlpYYVBWOFBHd0RDalNnUWFKT1gtR2czTDBHelUyUHJrdE8zdUd6REZ2NW5pbnBHcGlIUA?oc=5"
+        },
+        {
+          "title": "달러-원 환율 5거래일 만에 상승…유가 급등·달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzUUIxZnlFVTJjN1ZhX2VWV1B0WkltNnJ5VlJHcVRvbUZnRkI0ZE9qSlN4MEp5b2p3cWhubW5yU1dfNlFlNGI2OTlMV2VVLWRXRDlpWWczQUXSAVhBVV95cUxQc1FCMWZ5RVUyYzdWYV9lVldQdFpJbTZyeVZSR3FUb21GZ0ZCNGRPakpTeDBKeW9qd3Fobm1uclNXXzZRZTRiNjk5TFdlVS1kV0Q5aVlnM0FF?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 경제지표",
+      "emoji": "📊",
+      "impact": 4,
+      "impact_reason": "끈적한 미국 도매물가 지표가 연준의 추가 긴축 우려를 자극해 달러 강세를 촉발한 근본 원인으로 작용",
+      "headline": "미국 도매물가 불안에 인플레이션 우려 재점화",
+      "bullets": [
+        "미국 도매물가가 높게 유지되면서 인플레이션 우려가 지속되고 달러 가치 상승을 뒷받침했다.",
+        "연준 당국자의 50bp 인상 검토 발언 등이 전해지며 통화긴축 장기화에 대한 경계감이 커졌다."
+      ],
+      "sources": [
+        {
+          "title": "[뉴욕환시] 달러 나흘째↑…끈적한 美 도매물가에 인플레 우려 지속",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9CeWJmY2paajd0WlJ5RUJOVDZJQk5PX0lYdFFlck9LRXNlLUI0QjFYLVFaR1NDbzVxdXRCd1BWY0dJalc3RXUxOVpIbjlOcWdZXzREZzlaTEdsRjZZWThsc1hrRVFDeDRqTnZYQ2ozdWk?oc=5"
+        },
+        {
+          "title": "[머니 확률표] 월러 '50bp 인상 검토' 발언…연준 12월 빅스텝 확률 9%",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE56OVhpZUZCOXNUTzhnbkx0SUFqZzV5WFZwQzMtWVhxRzc2dDBMRjlhRjlXSDEwYkZJV1J1NTZwelc2T1FlRlF3SlR3?oc=5"
+        },
+        {
+          "title": "오늘(11월 14일) 미국 달러 환율: 미국 달러가 급격히 강세를 보이며 19개월 만에 최고 수준에 근접했습니다.",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY3YzSTBVd0Q0bVhtOHFCREtrVE01bUczVGxLVmZ4N2xNb0FnQnEtbzBJcmdHWWtIMGlOcmtMbjRubW42aHA1emJJdzItZ25NQVZLSTNUanRDdERfX1YxbUJNMnl3NXFqMWpwQ2duRnVoSks4Y2hXTXMweEJqUEdHV04wNUcxcnJ4OEp1ZTFIdk5jTUFreFB5X2c5cXRYY3E3RGx3LW1ickIwdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "국내 증시에서 외국인 투자자가 대규모 순매도로 돌아서며 원화 가치를 끌어내림",
+      "headline": "국내 증시 외국인 순매도 전환에 환율 상승 압력",
+      "bullets": [
+        "코스피 시장에서 외국인 투자자가 나흘 만에 순매도로 돌아서며 지수 하락을 이끌었다.",
+        "외국인의 국내 주식 매도세는 외환시장에서 달러 수요를 자극해 환율 상승 요인으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "외국인, 한국 주식 193억 달러 팔았다…AI 투자 불안에 흔들리는 코스피",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ETGZZQllKelgxeXpvc0VjUVIwTnRfSGlSZUtQdVpvaU45cGNiT3N3VDJZWllnOHYycTczMndyWlNkTnM0dmRKVzZmRzZmWi03WVRLOFk2ekVOVFVEM2RURU5hV3NoLTJ0aFdCQ2VoZjFGUQ?oc=5"
+        },
+        {
+          "title": "5500선 뚫고도 5290선 추락…코스피, 외국인 매도에 245포인트 출렁",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA3Z2RPLWhBVU9fcXhGVVJiSzgydHc3RHR0SVl3TzZOV0t2cDIzb29feVRYSjFKbEZlc2tpMWVoLVdTMDRrdVRlSW56Z2lwYVRMdHZmYlF6S21tU1VnRU5DSzJzb21kbzg?oc=5"
+        },
+        {
+          "title": "[증시분석] 코스피, 5,500선 넘었다가 5,290 마감…외국인 매도에 반도체주 밀려",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4M0xyMERjUENvUHRSTmViSjdrM25wRWIxWW9vZ1ZKRmh6emRzVnlPdmY5MmcxMFlQTjI3cTBCdXpiWTh2U3NpZEozY3V6cUpySTFkZk01TjNxX1E0OC1KeVF6YzNVQUk0RVBiVDhsOA?oc=5"
+        },
+        {
+          "title": "나흘만에 순매도 돌아선 외국인…수급 변동성 여전 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA4TlVadl80dGlaV19JazlmVENlZDh6SUJfOHN0V3lKSHhDVDVTb3pNSjkyN2N4NWNIaVhKdnVMbjQtYTg4MExQSzZxbHNhX2NDYlJyYnl5cEh1N1NqSzlndlczQ1U5S2R2MG1mNTRB0gFuQVVfeXFMUDhOVVp2XzR0aVpXX0lrOWZUQ2VkOHpJQl84c3RXeUpIeENUNVNvek1KOTI3Y3g1Y0hpWEp2dUxuNC1hODgwTFBLNnFsc2FfY0NiUnJieXlwSHU3U2pLOWd2VzNDVTlLZHYwbWY1NEE?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 2,
+      "impact_reason": "연준의 매파적 긴축 기조 가능성이 환율 하단을 지지하는 배경으로 지속 작용",
+      "headline": "연준 긴축 장기화 경계감 속 대외 이벤트 주시",
+      "bullets": [
+        "미국 연준의 매파적 기조가 지속되며 연말까지 달러화 강세가 지지될 것이라는 전망이 나왔다.",
+        "시장 참가자들은 주요 통화정책 불확실성과 함께 이번 주 APEC 정상회의 등 대외 일정을 주목했다."
+      ],
+      "sources": [
+        {
+          "title": "[외환-주간] 바깥바람이 만들어낼 방향성…연준·APEC 주시",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0OEZ1YThVdlhhdXZMbG5sQ292anNlLXdxYVJsdGMteWZ6NWRuUzZSTVliYzFUVi1NRUxYcjlGSEkxT1ZwMnIxUXVwRnNDTUlQUnEwbC10N0tTUndla1VSR3gzQmZ4UFFRQ0NlZmxZNFdDUQ?oc=5"
+        },
+        {
+          "title": "[이번주 환율] 강달러에도 1330원대 지킨 환율…이번주 APEC 회담에 촉각",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE53bExJUkhBaHpmMnp6cDQ5MVBxOUttOGNDeUJwMlB3Y2NGdEZrWWluVHlBUHJTY1d1RlVxZ0Z4c1YzLURXdVJGUENXYUJRV1VSSVRvaWpNYmlnS1hsUloxdVlGTlhieldNUi1LVFloY1pOUQ?oc=5"
+        },
+        {
+          "title": "달러, 연말까지 지지…2027년 점진적 약세 전망",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBrVUEtWVN3bWhicm4tV1BNSVBXRUxFMEpfdG5jQl85SkItaVl2NXF6SkJfMmlJd25pN0hQT0xWdjlBN285U01nTnpLUVUyZzNkLTYyRF9BUU5tQ2py0gFcQVVfeXFMUGtVQS1ZU3dtaGJybi1XUE1JUFdFTEUwSl90bmNCXzlKQi1pWXY1cXpKQl8yaUl3bmk3SFBPTFZ2OUE3bzlTTWdOektRVTJnM2QtNjJEX0FRTm1DanI?oc=5"
+        },
+        {
+          "title": "EUR/USD, 유로존 지표 혼조와 매파적 연준 기조 속 약세 지속",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPa0s0WWNWb3BkZ1dHWDl6Nm1JUEpHSGNKTi1hbXNlOXFlX1dFaUllSWRfVVJha3FWVGpwcTc5VDE2bVE4MmZNMjB1eXZ5YW9hX1Y2N0RCTDc4d3Y2MlhLQ0xMWVVsMlEwakhKNVc4X1d2SW5wckFrcWJra20xaGxUOXdWOUN2MVhjSFk5S2lLeTdKRFljWGd6d05qajhRTVozUk9Hd3pYc21zQ09USHlkd0tUVDBaSENMNTNYUmpvOERUS2daZll0SklJWURZMjg?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}
