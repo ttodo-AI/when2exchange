@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-16T04:57:00.795753+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch61k344rqi6RYSxvcGph'})"
+  },
+  "articles": [
+    {
+      "title": "\"내년 환율, 달러당 1320원…원화 강세 전환\"[주末머니]",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QZktnNEV0d2ZQekhoZFhwcHljRWFfcEpUS3NEUG1IeVhnaXUzOXVyVVdlWTR1eVZYVC1YNmtnOHRWOWtrdWQ1ekxONHk0RDdoOFJyUFBTVm9pUmNEaHFTMUJn?oc=5",
+      "summary": "\"내년 환율, 달러당 1320원…원화 강세 전환\"[주末머니] 아시아경제",
+      "source": "아시아경제",
+      "date": "2026-11-15T05:15:17+00:00"
+    },
+    {
+      "title": "NH證 \"내년 달러-원 평균 1,345원…2분기 저점 후 반등\"",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1qc0VDdkZjMGRCQUJMN19sdnRjWnVFWHJCOXdPN3JTTmxwWV82OWF0UGlhMDZkNGktOXFUbFU1eUlfc2s1XzJrdVJkdVppOHd0OWl2RjdVbGtOOVM1Q2p1bGpXS25mZFNOVHhFbm1IMDNrZw?oc=5",
+      "summary": "NH證 \"내년 달러-원 평균 1,345원…2분기 저점 후 반등\" KB Think",
+      "source": "KB Think",
+      "date": "2026-11-16T01:02:41+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.9원 내린 1335.8원",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQd3QwZ01JbzNCZG9zQU9zdG11NHA4a3E0aUMxYW9pQXpJcnV0OG82VWVNYU5takZRcExoMnVRYTM4aG5MQ0laeV9MYnZ3Z1BhS0JaLVFmSTM2NnJzS1JpRUNTUE5Ucm1KSGJSM2lSZkdVSkRrN2FYQlRORkgwYWRRMDJDNGRLd9IBmgFBVV95cUxPRTFEWVJUNllTa3NxRktxQjV0UW9MMEkzcnk2cUNPSFZPNlhzaHVscmFYWGtONWJaQVhKa1I5YnFOSVBES3lxVnN3d21XR3QzUWZJenJvVlc1cU51Z2NjQnBOS0l1OHJFRXVNZW5GWEZzajREeGY0YnoxZ3ZadXhvOTBGYXB5c0lhcnBRUmNEbTlOeUZJRmpMODZB?oc=5",
+      "summary": "원·달러 환율, 0.9원 내린 1335.8원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-11-16T00:17:00+00:00"
+    }
+  ]
+}
