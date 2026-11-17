@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-11-17T06:46:08.394104+00:00",
+  "today_kst": "2026-11-17",
+  "guide": "이번 주 원/달러 환율의 최대 변수는 미국 연방공개시장위원회(FOMC) 의사록 공개다. 연준 위원들의 긴축 지속 의지에 따라 달러화의 단기 방향성이 좌우될 전망이다. 달러 실수요자는 의사록 발표 전후 환율 변동성 확대에 유의하며 분할 매수로 대응하는 것이 바람직하다.",
+  "events": [
+    {
+      "date": "2026-11-10",
+      "time": "",
+      "name": "한국은행 10월 금융통화위원회 의사록 공개",
+      "importance": 2,
+      "summary": "금통위원 전원이 긴축 기조 유지와 금리 인상 파급효과 점검 필요성을 확인했다.",
+      "why": "한은의 긴축 유지 의지는 한미 금리차 역전에 따른 원/달러 환율의 추가 상승 압력을 제어하는 핵심 요인이다.",
+      "result": "위원 전원이 긴축 기조 지속 필요성을 강조하며 추가 인상 가능성을 열어둬 환율 상단을 지지했다.",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "금통위원들 \"10월 금리 동결했지만 긴축 기조 이어가야\"",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0WlhxZ0xSbGhlMGdOa1Zub25QQ3BRcG4xZ2VyWG8yOF9wMThYRmxGWks3NEZRR1V1WGFmM25JUUxrdjNjMU1MdTYtamhYaGxMWjRJeklpUjQyVnAwcEpHVdIBeEFVX3lxTE5oam5RNE9HSFhlWldmT1J3bjY2b2F1RVFXZjFRa09zTVRIZUdjOGIyNGxzMzBobkotTHFCS20ycENsaWdlMGRCMXpoQ3MweG44cVVaaFFDM3F4bDhOM2x0bkFDampCOC1QazR3dGxBbWg5NXZJN3pFeA?oc=5",
+          "snippet": "금통위원들 \"10월 금리 동결했지만 긴축 기조 이어가야\" 뉴시스"
+        },
+        {
+          "title": "10월 금통위 리뷰…금통위원 전원 “두 차례 인상 효과 점검해야”",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RYnhPTmhLMU9ISklYU0QzRGd4WHFBRmFJcTNXY3BjYmtLZmRUd1VscUVDbTBabW9qeUQyOUM3YjhXU085VUNHWDJjdzBjMDRLc3oxTXZoUHZXdWxMR2pV?oc=5",
+          "snippet": "10월 금통위 리뷰…금통위원 전원 “두 차례 인상 효과 점검해야” 조세일보"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "time": "04:00",
+      "name": "미국 연방공개시장위원회(FOMC) 의사록 공개",
+      "importance": 3,
+      "summary": "연준 위원들의 향후 기준금리 인상 경로와 통화정책 스탠스를 점검한다.",
+      "why": "연준 내 매파적 기조가 강하게 확인되면 글로벌 달러 강세가 심화되어 원/달러 환율이 상승 탄력을 받을 수 있다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "매파적 긴축 지속 기조가 강하게 확인될 경우",
+          "effect": "달러화 강세가 이어지며 원/달러 환율이 상승 압력을 받는다."
+        },
+        {
+          "cond": "금리 인상 속도 조절 등 비둘기파적 발언이 부각될 경우",
+          "effect": "긴축 우려 완화로 달러화가 약세를 보이며 원/달러 환율이 하락할 수 있다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92N202OU8ydG9pS09BdHI0bEFJYTFKVnF6RVpvMHg5OGJmLVo0c1NvUVVORjM4djQ2cU1pTldHYkM2MXhaMmRmeVVzSzJmYTZhTFpMbmIwcnZCMDFuejhnVDVJX0dxd9IBakFVX3lxTFBiaXQzQXlqUmVHT1dycEdMSmgweXh2RTFXVVdWVFRKZGVHSFZET0hyd1NwTXIyUzNJVEZGWkJjaUNqMUMyOEduSmY3MC1xMEpHM3JUZzFWWmJDYThBTUhFN1BOanJlejdRVEE?oc=5",
+          "snippet": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다 센트럴경제"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BblRxTzBIZWhnT2hoV0ZTeUIzd19NdmVTQmJmSkpycWo4UHZLdVNSS25MT2JZQWhZaE4tbHNnLVIwbTdyaWNGZEhBc0NadnZ1?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外 블루밍비트"
+        }
+      ]
+    }
+  ]
+}

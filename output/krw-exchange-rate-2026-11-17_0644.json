@@ -1,0 +1,54 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-17T06:44:44.247189+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch83mRNWb8bzPJFiNQ6uy'})"
+  },
+  "articles": [
+    {
+      "title": "글로벌 투자은행들 내년 원화 포함 '인공지능 수혜' 아시아 통화 강세 전망, \"수출기업 환전 확대\"",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE85VU9MWFdJZU94Y3pNa21qdnBXQi1OeWhUYkZGdnA3cVA5cElYdTEzMWNTU2tFaU11UlA5N3libG9yTklwOE5xYWNyVG83NlRJUDhMREtxc0VWbTRfNDRBM1czVFFWVHJKSGQxYmFBay1ZZ0U?oc=5",
+      "summary": "글로벌 투자은행들 내년 원화 포함 '인공지능 수혜' 아시아 통화 강세 전망, \"수출기업 환전 확대\" 비즈니스포스트",
+      "source": "비즈니스포스트",
+      "date": "2026-11-17T02:49:36+00:00"
+    },
+    {
+      "title": "원·달러 환율, 0.3원 오른 1336원",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTUp5Z2J1d2x3MDNTcEN0dXlMZUJjQ2ctNnNRX3p2aFZOTy1sSDNLTl9oOVZ4bHViOGpZb3pXdHZkNGx4NHo2cFRfUUlwMUJ1RzBBQ1o3ZG4yc2JpbjBjbGRjQnlfWDFrSS1hQlp3T2xrWHdtZTVpYUg2eG9MTlhaUV9WTHE5Z9IBmgFBVV95cUxQUkxLS0JXMXdWdGVxandMOGc1VHZOTUhydXNUdi1JbGhiSExFNnoyaGFnLUhVNEJMdFdmUlRPXzRoS2V3Mlk4TGEzT184SnEyRU1oMUVtczM4TVBwVTBBUUxZa3VreFBLd05JV3RaXzJtVkFEUXllY1QzX0NsVlhNMElydUZydGhLenJNRWEzN0Y5UkY3S0V6THZn?oc=5",
+      "summary": "원·달러 환율, 0.3원 오른 1336원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-11-17T00:38:00+00:00"
+    },
+    {
+      "title": "'대어' 앤트로픽 상장 임박…잔잔한 환시에 미칠 파장은",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6MDdRd2RDZWQ2Mi1UR2NWc2I2dE9jb283SUlVZnVUZ1Fpck1DcjlUNWkzX2g5ZnJ2aU1VT0JqcGVSb3BUUnVDQ3prNkUzYl9XSjc0R0tKTjNpQ0tLUndVTVE5SFVuU0FWczVQVU9QUDM4dw?oc=5",
+      "summary": "'대어' 앤트로픽 상장 임박…잔잔한 환시에 미칠 파장은 KB Think",
+      "source": "KB Think",
+      "date": "2026-11-17T01:40:25+00:00"
+    },
+    {
+      "title": "[모닝 리포트] 달러/원 환율 상승 압력…강달러·증시 부진에 1340원선 등락 전망",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9lRkozOEE0RVBDSV9yR1JiWER5WFdsU2J4dHJYUDVOMThfbEVxRVlVRFY2ZWhXTUlSV3FkS3Rabmthc2xJaEZOR0N3Q3dwZ3IyOTQ4TVpOLWVCVnRv?oc=5",
+      "summary": "[모닝 리포트] 달러/원 환율 상승 압력…강달러·증시 부진에 1340원선 등락 전망 뉴스핌",
+      "source": "뉴스핌",
+      "date": "2026-11-16T23:17:00+00:00"
+    },
+    {
+      "title": "증시 급락에도 원화는 ‘꿋꿋’…환율 1원 내린 1335.7원 마감 [김혜란의 FX]",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0zSzZMM1lFYlEwUmVHdEZ1RVFsZVh1MERvRHg5MGplelpMOVJuYW5Cb3pZRG5UWXZTeDdzbXJmY1R3SzVmTmltYUVWNVVReXN4aVHSAVNBVV95cUxPbVcxSFpIb1UxT0taaUNpcEhWV1RlSTItQWpCT1VBSHlRTTc0cjJMX1BMWFViVGt4ZzdJM1pmR0JLeXJnbktGN3VfVzUwSHlwemJjQQ?oc=5",
+      "summary": "증시 급락에도 원화는 ‘꿋꿋’…환율 1원 내린 1335.7원 마감 [김혜란의 FX] 서울경제",
+      "source": "서울경제",
+      "date": "2026-11-16T06:46:24+00:00"
+    },
+    {
+      "title": "원·달러 환율, 오름세 제한적…향후 방향성 주목",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1FZ0RmSExhaURpMUgzNXFsQXpFeVlibWFWUEsySlBaLVdySFhVZThVRjNHSEZVaFRORUpOWlQzcU1iSkVocS1ja0s3LW5pMWN2bDc2aG1VNA?oc=5",
+      "summary": "원·달러 환율, 오름세 제한적…향후 방향성 주목 세계비즈",
+      "source": "세계비즈",
+      "date": "2026-11-16T22:00:00+00:00"
+    }
+  ]
+}

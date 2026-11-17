@@ -1,0 +1,141 @@
+{
+  "generated_at": "2026-11-17T06:45:29.531282+00:00",
+  "card_title": "강달러에도 수출 네고 맞서며 보합",
+  "tldr": [
+    "오늘 원/달러 환율은 1,337원으로 어제와 같은 수준에서 장을 마쳤어요.",
+    "미국 긴축 우려로 달러가 강세를 보였지만 수출 기업들이 달러를 원화로 바꾸는 매물이 나와 환율 상승을 막았어요.",
+    "이번 주 발표될 미국 물가 지표와 주요 기술주 실적 발표에 따른 시장 반응을 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "미국의 견조한 경제 흐름과 긴축 장기화 우려로 **글로벌 달러화 강세**가 이어지고 국내 증시의 외국인 매도세가 원화 약세를 부추겼다. 그러나 반도체 기업을 비롯한 국내 수출업체들이 **벌어들인 달러를 시장에 내다 파는 매물(네고)**이 유입되며 상승 압력을 맞받아쳐 환율은 보합권에서 거래를 마쳤다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "글로벌 달러 강세가 이어지며 장중 환율을 밀어올리는 가장 강력한 기본 동인으로 작용함",
+      "headline": "미국 성장세와 긴축 경계로 달러 인덱스가 강세를 이어감",
+      "bullets": [
+        "미국 경제의 견조한 성장세와 긴축 장기화 우려가 반영되며 달러 인덱스는 52주 최고치 수준에서 움직였다.",
+        "주요국 통화 대비 달러 강세가 유지되면서 원/달러 환율에도 지속적인 상승 압력을 가했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 1330원대 중반서 보합권…달러 강세에도 제한적 움직임",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fU0Zxd01HbzhQMFM5VTVzN2pmX1BCQk4yMG5pMDAxcUlITXgxVXJheWhjbmt0OHZFbFlsdGZxSHdiWnZLb1EwQy1EMTBmcm1fZ0ZKeDQ3T0lIdTY5dnc?oc=5"
+        },
+        {
+          "title": "강달러에도 환율 1330원대…美 기술주 급락에 원화 약세 압력",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UNHBtam03MTA5akJvM1ZJbVk4WEM3bWR1OWdMeG9rWmdmQ0c0eUk1WFZNSHNDTldKOEhHOHkzdTZyZ21ZOWVxOGpVblRFQWhYb1BGakd4a0xjR21SVWRJ?oc=5"
+        },
+        {
+          "title": "[외환] 강달러 대외여건에도 원화는 무덤덤…2.00원↓ |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAxZkluR3JpZHpoM201ZGk4OUFIZl83UVhxdmd4a2Vnc3hCVGZqYTFGN3duWGVpaFBrM214Q0Z6M3lWbHozeVozTDBxRldFSFlyWHFncUhUdHpRb3lIdzFGdi1oMmtqSlpIUjBHdUpXdndhaXlr?oc=5"
+        },
+        {
+          "title": "관세 부담 상쇄한 미국 성장세에 달러 강세…달러 인덱스 52주 최고치 : 경제",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE92aUNZdmhRRW9MV2JLbkdxaWRMNnhZQTM1Q3EyWEs0bjBza1hvQWs0SG1PTHEzdjlPMFE5eFFURGk2TDFkQW1hRFFQcw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 4,
+      "impact_reason": "반도체 등 수출 기업의 달러 매도 물량이 강달러 압력을 흡수해 환율 상단을 강하게 방어함",
+      "headline": "반도체 중심의 수출 호조와 달러 매도 물량이 환율 상승을 방어함",
+      "bullets": [
+        "국내 반도체 대기업을 중심으로 수출로 벌어들인 달러를 원화로 환전하는 매도 물량이 시장에 공급됐다.",
+        "경상수지 흑자 기조와 기업들의 달러 매도세가 강달러 압력을 상쇄하며 환율의 추가 상승을 제한했다."
+      ],
+      "sources": [
+        {
+          "title": "[환율 전망] 중요한 건 꺾이지 않는 경상흑자",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9sajJPRjlRMlN5VENuZFoxVXloNWg2ZUoxTW9mYXBuV0ZLUUVxdld3M3J3SDVHQUxGcENNNlNGT1F3SEdYTGU4Wl94d0V4Znp6TnNRYTVSWHJaRlVzS29sQw?oc=5"
+        },
+        {
+          "title": "글로벌 투자은행들 내년 원화 포함 '인공지능 수혜' 아시아 통화 강세 전망, \"수출기업 환전 확대\"",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE85VU9MWFdJZU94Y3pNa21qdnBXQi1OeWhUYkZGdnA3cVA5cElYdTEzMWNTU2tFaU11UlA5N3libG9yTklwOE5xYWNyVG83NlRJUDhMREtxc0VWbTRfNDRBM1czVFFWVHJKSGQxYmFBay1ZZ0U?oc=5"
+        },
+        {
+          "title": "[환율 전망] 반도체 가격의 방향이 곧 원화의 향방",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TUEN6a1NLS3lsQkFtU20xNl9QQlNCQmx3RGM0RzlCbWxVQk9xYnI4NzIyU2VoZ3R5aDZUM284RjMwUWJ3M0owcVYyYzI1MWJZbUtuM1A4U0dmSUZsWHJTXw?oc=5"
+        },
+        {
+          "title": "증시 급락에도 반도체 기업 달러 공급에...원·달러 환율, 소폭 하락해 1335.7원 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WcXBKYkRFbGxGNHBCTV9TYUZqZDJVWm9KYUY1NHlRTTNOSlRZUk5pYXpqRG9BdURJTmF6bVpKT3BxVWxkbkJrbWN1RkRURHJ1VHJfN2lwVUxBN012azlOQTRQd1E?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "국내 증시 약세와 외국인의 주식 순매도가 이어져 원화 약세 심리를 자극함",
+      "headline": "미국 기술주 하락 여파에 국내 증시 외국인 매도세가 이어짐",
+      "bullets": [
+        "미국 기술주 급락 여파로 코스피 시장에서 외국인 투자자들의 주식 매도세가 이어지며 증시가 약세를 보였다.",
+        "외국인의 국내 주식 매도는 달러 수요를 자극해 원화 가치를 떨어뜨리는 요인으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "코스피 하락·달러 강세에도…원/달러 환율 하락하는 이유 - 머니투데이",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9lNHV2OUt6QnJJeFVtZmhsUnJzRWNqVmRFbkQyQUVOWHQ5Nkp0NG5sZ04xUW84ZUZqeDkwMlJ2VHJwcmtxeTR4REExcGFsbGs0blh2WF84TTRONklXdnZsMmpiSFphNmhSNHY40gFwQVVfeXFMUDBBVmhRSzhjYUhJTDgxaDF5Zl9BOGZrQ05XZlZ5Y3ZjTmt4NlBnLW1EM1hQbEFpdjFydllCeC1lTWdxMDNzcVdCRW5mZGJoNFJJWl9uZ1Q1RThORUsxWmI0bjY5Tkt3TWg1MlZSdk82Tw?oc=5"
+        },
+        {
+          "title": "강달러에도 환율 1330원대…美 기술주 급락에 원화 약세 압력",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UNHBtam03MTA5akJvM1ZJbVk4WEM3bWR1OWdMeG9rWmdmQ0c0eUk1WFZNSHNDTldKOEhHOHkzdTZyZ21ZOWVxOGpVblRFQWhYb1BGakd4a0xjR21SVWRJ?oc=5"
+        },
+        {
+          "title": "외국인 주식 26조 팔고 달러는 초강세…그래도 환율 버티는 이유",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE53eHJrX0dON3k5dnlrSFJsTTZBMEFyZXRFNklYdG1NTVRXMWVCazhheW91bFdqSXJQMGg3NGFrRlNkbDV2QlVhMS1mX3dCZUdWTlpwWg?oc=5"
+        },
+        {
+          "title": "코스피, 외국인 매도세에 3%대 하락...반도체주 낙폭 확대",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5relJOM1hTTHdsREF2RWUwczdCRzFiUExraXZ4amJZQU1YcnlvT3RRNjJOd2dBalFBUDFmaDFQOC0xSGQ2d2xBUGVSYlI0ejNmdlI0UXRyVVlyZEN4Smc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 2,
+      "impact_reason": "미 연준의 긴축 장기화 불안과 국채금리 상승세가 시장 전반의 경계감을 유지시킴",
+      "headline": "미국 물가 부담과 긴축 장기화 경계로 국채금리가 높은 수준을 유지함",
+      "bullets": [
+        "미국 물가 부담 등으로 연방준비제도의 긴축 기조가 장기화될 수 있다는 우려가 가라앉지 않았다.",
+        "미국 국채금리가 높은 수준을 이어가며 고금리 환경에 대한 시장의 경계감이 지속됐다."
+      ],
+      "sources": [
+        {
+          "title": "미 긴축 불안을 압도하는 최대 수출과 외환수급",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAtLVNMWkFEalhGbHF4bHg2NHJBOElyM2U5LUFiaEdqSHBtZmtfSk8wOW9DTzJ4a1ZpMGcwVmotNTcwbjBReUNKZDlXWmdJSTZJQUFBUjNCSHU4am5XdVVOQ0Zn?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 중반서 횡보…美 물가 부담에 달러 강세 지속",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ySTNVeWlvN0ZwdEVhRW9ORlp1SXprQ28xUTRSMk9PQm5vQi1sU2pUS2VOUE5OdmtUZjVqVGVGa0M4bW5mbW0tM3M5OGlqYllsLUZ4TVN1eGx1SzI4OHc?oc=5"
+        },
+        {
+          "title": "iM증권 \"이번주 환율 1320~1360원 전망, 미국 국채금리 추가 상승할지 주목\"",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yclphVExIX0U3N2dTZHNOenU5R19NNHZwT2FNbW5hN1BpN2tfcTZrMmZmQmxOTDVZTFFDOV94Nm9JZDJReU1xX2ZabUYyOTNPWktaUXBPMGt5RmFFT3ZmRDI1LU1RbkQybzBOV21GNHMtQmc?oc=5"
+        },
+        {
+          "title": "[뉴욕 금·채권·달러] 미국 달러 2025년 4월 이후 최고 수준…국채금리 5.13%",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYaTBDVlhrTXFZZHpFUDBtY01vVzVUYjhReXVObTdVcXlSNmVKMFdIeHhiWEZockVxajBzV2JzR25WcThBOWk5QkRtdWQ2eGo1RXM0Q1BlaE8?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "실제 전일대비 +0.5원(보합)인데 방향/변동 주장",
+      "임박 ★★★ '미국 연방공개시장위원회(FOMC) 의사록 공개'(D-2)이 요약에 안 보임"
+    ]
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}
