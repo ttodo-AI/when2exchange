@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-18T06:02:19.265647+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9tLi1ePksxpX7FNgWnv'})"
+  },
+  "articles": [
+    {
+      "title": "[37th SRE][Issue]1600원 위협하던 환율의 반전…내년에도 ‘반도체의 힘’ 통할까",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNHZSTHVMdE1mcFlaLXU2MzZkTmdVdjZJRkhNNzdPdllCaU5zYTZEQ21ETzZNdHByRHQ1ekl3QU0wLXlwVTdHV0tOUmEyaW93N3dQUF90aDFIZ245TTEtNng4a05Na0tjS0ZlbnFlQ1BudkktbEFPS2lTS3kzMU9OZg?oc=5",
+      "summary": "[37th SRE][Issue]1600원 위협하던 환율의 반전…내년에도 ‘반도체의 힘’ 통할까 이데일리",
+      "source": "이데일리",
+      "date": "2026-11-18T01:00:04+00:00"
+    },
+    {
+      "title": "KIEP \"내년 달러-원 환율, 현재 수준에서 크게 떨어지긴 어려울 것\" |",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE13NWdmeng4cWVQa0F4RWxvVkJkZXkwMHVyMEpySjhvTEdvRFNHVmUxMldJTVBjQnJGMVRWSlA4d3dXTXNoY0JvYWRZdlNjMDl4OXlOTVN5ZFlkdlhYMEFBRm5DTEpTeVdQajEyRzFtYmU1QTRy?oc=5",
+      "summary": "KIEP \"내년 달러-원 환율, 현재 수준에서 크게 떨어지긴 어려울 것\" | 연합인포맥스",
+      "source": "연합인포맥스",
+      "date": "2026-11-17T06:39:36+00:00"
+    },
+    {
+      "title": "[오늘의 환율] 11월 18일 원·달러 환율 1329.70원…엔화·유로 등 주요 통화 일제히 하락",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5qQlJzRjktMjg4R1NTSTdUN3NNZnNPRUgzZFhnVUx3VGdOQWhWNTRHTG5pYkVXY2JzMEJELWY3RC1MRDUwdkQ5Y0JzYmxlT0FLLTZaRmRBUHZEaGxldHdrUTVaQ3c2eTk1MHpsVGRIRWk5Z9IBckFVX3lxTE5qQlJzRjktMjg4R1NTSTdUN3NNZnNPRUgzZFhnVUx3VGdOQWhWNTRHTG5pYkVXY2JzMEJELWY3RC1MRDUwdkQ5Y0JzYmxlT0FLLTZaRmRBUHZEaGxldHdrUTVaQ3c2eTk1MHpsVGRIRWk5Zw?oc=5",
+      "summary": "[오늘의 환율] 11월 18일 원·달러 환율 1329.70원…엔화·유로 등 주요 통화 일제히 하락 잡포스트",
+      "source": "잡포스트",
+      "date": "2026-11-18T01:36:50+00:00"
+    }
+  ]
+}
