@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-11-19T06:05:19.372738+00:00",
+  "card_title": "FOMC 의사록 대기 속 소폭 하락",
+  "tldr": [
+    "지금 원/달러 환율은 어제보다 내린 1,331원에서 움직이며 소폭 하락세를 이어가고 있어요.",
+    "미국 연준의 긴축 경계감이 여전하지만, 엔비디아의 깜짝 실적으로 시장에 안도감이 돌며 달러를 팔려는 움직임이 우세했어요.",
+    "오늘 밤 공개되는 미국 연방공개시장위원회(FOMC) 회의록에서 향후 금리 정책에 대한 추가 단서가 나올지 주목해야 해요."
+  ],
+  "overall_why": "미국 연방준비제도(연준·Fed)의 긴축 장기화 우려가 여전하지만, 반도체 대장주 **엔비디아의 깜짝 실적**이 위험자산을 사려는 분위기를 되살리며 국내 증시를 끌어올렸다. 여기에 장중 **수출기업의 달러 매도 물량**이 꾸준히 쏟아져 환율 상단을 누르면서, 원/달러 환율은 미국 연방공개시장위원회(FOMC) 의사록 공개를 앞둔 경계감 속에서도 소폭 내려 현재 1,331원에 머물고 있다.",
+  "factors": [
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 5,
+      "impact_reason": "오늘 밤 공개되는 연준 FOMC 의사록을 앞두고 시장 전반의 긴장감이 가장 크게 작용",
+      "headline": "매파적 FOMC 의사록 공개에도 환율 상단이 제한됐다",
+      "bullets": [
+        "미국 10월 FOMC 의사록이 매파적으로 확인되고 연준 인사들의 긴축 지지 발언이 이어지며 달러 강세 압력이 나타났다.",
+        "다만 미 긴축 장기화 우려에도 불구하고 시장 내 힘겨루기가 이어지며 원·달러 환율은 1,330원대 초반에서 상단이 제한됐다."
+      ],
+      "sources": [
+        {
+          "title": "[외환] 1,330원대 초반 유지…매파 FOMC 의사록에도 상단 제한 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB1cVpFX0lBTUFmMnV3aEljMnZ6R3VSYWhtT1JPNnZ4TXZzdDZuNE44WXdiOWtnSFVMRDg1ZkhxOVVneXh3SHd1ZFpoYVNONWg3aGRqbFgyUkEzREdrMGdOV19hWko0WVI3ZkhnMFlZMVZ3eFE1?oc=5"
+        },
+        {
+          "title": "원·달러 환율, 1333.7원…달러, 10월 FOMC 매파적 의사록에 강세",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE41cUF3b3RyMlBaelYwMFJFZnJBSEtBQnpPckFxVWdaWG5kUVU2MGpueTd2d0NjcDNLTEk2OFRIMTJIOEFySFlZLUVsbVZJSzNyckJBM0E3M2ljRENwc0w0?oc=5"
+        },
+        {
+          "title": "美 긴축 우려에도 원·달러 환율 하락…1320원대서 거래",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jNjVweE5uQm1UOVJjSGp6cE5VSUNjNGV0SGFjRkRrdzdXeW1BZ2xMbTI0Rm9EUEg2MEMtQVZxVHN2cElsQ0U2eXR5YWJTa3N2bFJ3NHJrV3PSAVhBVV95cUxNYzY1cHhObkJtVDlSY0hqenBOVUlDYzRldEhhY0ZEa3c3V3ltQWdsTG0yNEZvRFBINjBDLUFWcVRzdnBJbENFNnl0eWFiU2tzdmxSdzRya1dz?oc=5"
+        },
+        {
+          "title": "미국 금융시장, FOMC 의사록 앞두고 국채금리·달러 하락",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQ3FIVlhFZl9za1JheExUUkMzZjVfcDc4X1hNWmZOeDZETTB0cUFHMHlRUDZPNzlBNGR1OVd4S29nTDgzanZrRWJTSEFCUnpJd0w0NTR3dUlSWGljcTJZNWtpRlpXUmczaUNMSUpuek15UWM3ZGY5bDlSMWdOaG4zZkRqMEViRHhzdVNqOUJJU1lfbER5bnc?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 4,
+      "impact_reason": "엔비디아의 호실적이 글로벌 위험자산 투자 심리를 되살리며 달러 선호를 누그러뜨림",
+      "headline": "엔비디아의 깜짝 실적으로 위험자산 선호 심리가 되살아났다",
+      "bullets": [
+        "인공지능(AI) 반도체 대표 기업인 엔비디아가 시장 기대를 웃도는 호실적을 발표하면서 위험자산 선호 심리가 회복됐다.",
+        "엔비디아발 훈풍이 국내 증시 반등으로 이어지며 외환시장에서도 원화 약세 압력을 덜어내는 요인으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "엔비디아發 훈풍에 코스피 반등...원·달러 환율, 5.2원 하락 마감",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XaS1IRTJqRi00aDg0U3JjVHpTV3ZfdktxQ0JkaVdCYnlOQmx1dHIxMjhNN1NzbGFKMDhUNTYyeVVLazlDSFB2RjVhWDQ5eEI1WXFoZzFydXg4OGozdzZqN2MxdUw?oc=5"
+        },
+        {
+          "title": "엔비디아 호실적에 위험선호 회복…원·달러 환율 5.2원 하락 [김혜란의 FX]",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9odHpkMXRmcEx6VTRZdGJjLUFPOURNWFRSWkZOS0RkaWxvLXhHenJKekN0T3lmellxT3NDMmpBZ2tvdVVNUWtHQVRMNEFUcHZWdnfSAVNBVV95cUxNdmhHMkRIMnk4eDBPQkJYZzREMm5GMGFmTFphanpUbG0xNTEwbDh1NFczeFExcnJBTENaN0xtOVAtanNENXA0cUZTUXZ0emZCNmhKSQ?oc=5"
+        },
+        {
+          "title": "코스피, '4천피' 하루 만에 5천 선 탈환...2% 상승 마감",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5qZFdFckhxNnVUWTRUNW05d3Vob0labWdZZjZFSUoxOGFUMWgzbVN1RXNNdkx4T1FUNzJtbENWUmFSZFEwMTlKLUFyLXNiUVpyRE4wQkVQby1sd0phR2c?oc=5"
+        },
+        {
+          "title": "코스피, 2%대 반등 출발…5100선 회복 시도",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Gd2UwYzJBdzg1SjFMNFRmaFFtVjBlWnFOS0NQZllVRlpwaXZQa2E2ZTl1NmRaVXdjUDhCaUt2VDFWQ2NGZjVrdlZIOWJkdk9oNU0wRENFZ0IyREJRRVZXbVNOTUFZN1hW?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 3,
+      "impact_reason": "국내 증시의 5,000선 회복 시도와 반도체주 중심의 매수세가 원화 가치를 지지",
+      "headline": "코스피 5,000선 탈환과 함께 주식시장 투자 심리가 개선됐다",
+      "bullets": [
+        "코스피가 하루 만에 5,000선을 다시 회복하며 반등 흐름을 보이자 외환시장에서도 원화 매수 심리가 힘을 얻었다.",
+        "외국인의 주식 매도세가 이어졌으나 반도체주 중심의 반등과 장중 순매수 흐름이 나타나며 환율 하락을 뒷받침했다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 장중 1320원대 하락…외국인 주식 순매수에 원화 강세",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOeThVNkxOazFmNDBiWmpOb2JrM3EzNFVsbk9qbkFlYmp1WjFCaXB4VlZ0QzNpME1BMUVGOGk4ajUxOTNaZXZkVzhvVjliZ0NmdlZORTdmdEdkSE5JLVZTOVItbkttRDFUeFZFT0Y5YzlCNzdwZTFHS1A3MUt3VUZmcg?oc=5"
+        },
+        {
+          "title": "외국인, 한국 주식 193억 달러 팔았다…AI 투자 불안에 흔들리는 코스피",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9sOWE3QzNpYVdlX1N2SWpPWHpCVG1sazNSb2JUSjFDQU9jeE1NSUpNc3NkMXkyd1BtdlJnVEtGYlZoNG1KSmJNQ01GOFB1aFRzeVJoQ1FXUU5RRFV6UGFwdmdvd0NKdVZBOE5JTzZtVU9VWVVqTWJz?oc=5"
+        },
+        {
+          "title": "코스피, 하루 만에 5000선 탈환…반도체주 반등에도 외국인 매도세 여전",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBPWC1Vck5wU3FNUFZReTh1NTVtbjlMaGNQNHg5ckt0SjBsZWs4Q3ZOb3c5T0hMb2ZjQWdkU2lVRlpIQXJOUjRReGx4X3J5RllpTzNvOWE1RXozTXM3X2Eza0wzUmp2b2M?oc=5"
+        },
+        {
+          "title": "외국인 13조 팔아치웠는데…환율은 되레 하락",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRGh0UzdZYUhOVG1lMDNBa0ZHTkw5eUtueEl4MDhYTVJXLURPQWJfOTh0UGVKLUppbVlPTUtkcXdlaUoxbk9HMzEzS2E4SE5ZQXZSbUgza1hBVThJaEI1dmdaUmZodXhQTHNXVUlRSmdnZ01ZYlVRVnRRMWcwdGlTRg?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 2,
+      "impact_reason": "글로벌 강달러 속에서도 수출기업의 달러 매도 물량이 나와 상단을 방어",
+      "headline": "수출업체의 달러 매도 물량이 유입되며 환율 상승을 방어했다",
+      "bullets": [
+        "수출기업들이 달러를 원화로 바꾸는 매도(네고) 물량을 꾸준히 내놓으며 강달러에 따른 환율 상승 압력을 누그러뜨렸다.",
+        "한국은행 보고서에서 원화 가치가 10% 절상되면 기업 영업이익률이 개선되고 생활비 부담이 줄어든다는 분석이 나왔다."
+      ],
+      "sources": [
+        {
+          "title": "[모닝 리포트] 달러/원 환율 1330원대 중반 등락 전망…수출 네고가 강달러 압력 완화",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JU2xVc1VOR1NDVVJSM2pnTER0anhKRjIwRHBjTlo0NW1lQm5LUmR1aDZpeGtkZkdGdUtFbUNVWEZDTkk2QkNGaWtDZEtydW1IOThxRVBvb0NVMERn?oc=5"
+        },
+        {
+          "title": "강달러도 이기는 원화…亞 통화 희비",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUXRXQ3RJalQ4N3RYc2JEMnJHUGR0M09ZWU1qX0IxWEVDSWxlZnhILTU0aTk0Y0ozZWx1RE81d0dSSlZ1WVpWcEk5WUljM3Axcnp1WVBZXzExWHBGZXlBbV9YV0FaeUJfRkFlUldrbEpEUVh5Rk1maWJ0YzR3OGNmWA?oc=5"
+        },
+        {
+          "title": "원화, 강달러여도 괜찮아…\"별세계로 간 달러-원\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1uSjhWb1EteGtjM0kwU0VqOEo4aUhyTDIzNXdyWFRXd0E4YVpnOXVuQV83YUpWMVNfakViU05SVkdTVlNtVnBCQVp3ZHhzZXpHNE9TZ1RTZjVxejlhcno3NmcxV3VEbEdLRlV1MWVpZnZVZldp0gF0QVVfeXFMTW5KOFZvUS14a2MzSTBTRWo4SjhpSHJMMjM1d3JYVFd3QThhWmc5dW5BXzdhSlYxU19qRWJTTlJWR1NWU21WcEJBWndkeHNlekc0T1NnVFNmNXF6OWFyejc2ZzFXdURsR0tGVXUxZWlmdlVmV2k?oc=5"
+        },
+        {
+          "title": "한은 \"원화 10% 절상 시 기업 영업이익률 1.4%p ↑···양극화 완화 기여\"",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1QTlhpQnNWVUFDWTcyUzNUNGk2RHJqeUNXNVVicm5OalU0MTAwdENWeXE5bjdYTjlLWm85RWFxLVIxWG81TTFpa18xQ3BrVFVsa3hxVTNFSWdGZTc0dHU2MkZLUm9CQS1ZNEE?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 FOMC 회의록 공개 D-0",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": []
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}

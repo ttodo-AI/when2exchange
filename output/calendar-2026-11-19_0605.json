@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-11-19T06:05:38.543533+00:00",
+  "today_kst": "2026-11-19",
+  "guide": "이번 주는 미국 FOMC 의사록 공개에 따른 연준의 긴축 기조 재확인이 원/달러 환율의 핵심 변수입니다. 연준의 긴축 속도에 대한 불확실성이 커진 만큼 달러 강세 압력이 유지될 수 있습니다. 달러 결제나 환전이 필요한 실수요자는 환율 급등 시 추격 매수를 자제하고 분할 매수로 대응하는 것이 바람직합니다.",
+  "events": [
+    {
+      "date": "2026-11-19",
+      "time": "04:00",
+      "name": "미국 FOMC 회의록 공개",
+      "importance": 3,
+      "summary": "연준의 긴축 의지와 금리 정책 경로를 확인하며 달러화 변동성이 확대될 수 있다.",
+      "why": "연방준비제도 위원들의 금리 인상 속도와 통화긴축 방향성에 대한 구체적 입장을 담고 있어 글로벌 달러 가치를 직접 좌우한다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "매파적 긴축 지속 의지가 강하게 확인될 경우",
+          "effect": "달러화가 강세를 나타내며 원/달러 환율이 상승 압력을 받는다."
+        },
+        {
+          "cond": "금리 인상 신중론 등 완화적 발언이 부각될 경우",
+          "effect": "달러화가 약세로 돌아서며 원/달러 환율이 하락할 수 있다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVHNsSl9pR25tTjlEMnhPTXhKUldidEczVWVjbnVNSlpFdXNfUWFTQWZFX3lGem0xRlB4emQzVTA0LVRxOVAzWEhhZENfdlVJOVhyQ0RYU1JGTU5pUFRGZjZuQW04YkF2a21YUjNuQVFOY29FWUJxQVdrNDYzcnp6TjF4dTNRc3FFdXRhSVF2WTZzWjRJa2NfRHlEVEtkaEFadWJkSTJ0TTBkZE5nX3lBZFVsM25hdTk5QTZUSy1makQ3U3oxSFozckU3cUM4aWZ0eUF2WEdQSTJEV3hLUVFNMXhVQ182Zw?oc=5",
+          "snippet": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라 TradingKey"
+        },
+        {
+          "title": "오늘의 외환시장: 영국 물가 지표 혼조에 파운드화 하락, 미 달러화는 FOMC 의사록 대기",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMWVMcVl1U0VuYjZhajlJVXlSWXZfYU45NVBEV1JmQkdaWUhsOFNhUUprNWN0aWMtUi1BcFJOUnE4TW5GZzBrMHp1YnFJc0NHZlpCaENuTDUyOE03V2E1T2V6ZlpGNkliY3Y1VEVCQVJRS1d5WHM4RDZ3NkJsSmt3WnNlVEJUS2FLeXh2a3EybnBkWTcyVFlEenU4MjV0VWNMSENDMjFFZjN1T1lkRXRQSi1KckF1RWhZQjR0V1RWaHRQMXN3YW5zcGtHaG9SUjZ4b2NwdG8ybEFVck5HbGlUNUlWTUJXQUU?oc=5",
+          "snippet": "오늘의 외환시장: 영국 물가 지표 혼조에 파운드화 하락, 미 달러화는 FOMC 의사록 대기 www.tmgm.com"
+        },
+        {
+          "title": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtdG5COGt5TjFRbWFFYVRaYTJEYnp5eGFPY0xkZEU0aXdWNnludXl5UmVNQTRTOGFrVDVnMkJMX25Sd2pyeDVPcjlCZHlzNzg0?oc=5",
+          "snippet": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등 이코노미블록"
+        },
+        {
+          "title": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92N202OU8ydG9pS09BdHI0bEFJYTFKVnF6RVpvMHg5OGJmLVo0c1NvUVVORjM4djQ2cU1pTldHYkM2MXhaMmRmeVVzSzJmYTZhTFpMbmIwcnZCMDFuejhnVDVJX0dxd9IBakFVX3lxTFBiaXQzQXlqUmVHT1dycEdMSmgweXh2RTFXVVdWVFRKZGVHSFZET0hyd1NwTXIyUzNJVEZGWkJjaUNqMUMyOEduSmY3MC1xMEpHM3JUZzFWWmJDYThBTUhFN1BOanJlejdRVEE?oc=5",
+          "snippet": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다 센트럴경제"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BblRxTzBIZWhnT2hoV0ZTeUIzd19NdmVTQmJmSkpycWo4UHZLdVNSS25MT2JZQWhZaE4tbHNnLVIwbTdyaWNGZEhBc0NadnZ1?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外 블루밍비트"
+        }
+      ]
+    }
+  ]
+}
