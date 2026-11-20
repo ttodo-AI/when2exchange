@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-20T05:52:11.672834+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChDfBoJdLbTTc7jP6Mgpg'})"
+  },
+  "articles": [
+    {
+      "title": "원·달러 환율, 5.5원 오른 1335.5원",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVzlQQVdpYkF3aHFkc0RnYXVsZm9PWng1NktyVm5jUHJDR2Y5OUhSTzFSc3lfb1d5TjFUVFRlQjdCZ0VPU3NGY2U4M2RLc1AtclF2MDJUT25BVTZiZV9MREFPN3NmREdOeVJFVzhVa1hJMFo0bzRWQ2syVFdYZ2ozT3VkZWRISVNKSUlnVEFJSWJBSllWRzF0cWtn0gGaAUFVX3lxTE5XOVBBV2liQXdocWRzRGdhdWxmb09aeDU2S3JWbmNQckNHZjk5SFJPMVJzeV9vV3lOMVRUVGVCN0JnRU9Tc0ZjZTgzZEtzUC1yUXYwMlRPbkFVNmJlX0xEQU83c2ZER055UkVXOFVrWEkwWjRvNFZDazJUV1hnajNPdWRlZEhJU0pJSWdUQUlJYkFKWVZHMXRxa2c?oc=5",
+      "summary": "원·달러 환율, 5.5원 오른 1335.5원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-11-20T00:23:00+00:00"
+    },
+    {
+      "title": "AI 위험자산 투심 위축에 강달러 양상⋯\"1340원 회복 시도\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBRR25oU2pVbEhaMjA0dlBuR01PdXlNM3JqWkRHZThWcGlrNDI1MFUwalFjRDU1ajl0LVowd25fSmRHd29yeFhWWi1MZ2t0bm5MajVMZHBBMEliaWd1cEczQzR5dUdlTlpnTEJGZ2YtZk1KdFdU?oc=5",
+      "summary": "AI 위험자산 투심 위축에 강달러 양상⋯\"1340원 회복 시도\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-11-19T23:13:00+00:00"
+    },
+    {
+      "title": "[모닝 리포트] AI 투심 위축에 달러/원 환율 상승 압력…\"1340원 회복 시도\"",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oaEliZ3MxTlRyaEE5akVSWXc1SDZ5S21HYnRDUmw0SEFUZ1JxUl8tQ3luV01ISTJ2MkVxRkhhelFCTjVXQnFCWnpERVlGdlgtOUIxT2tFbUsyb1Fa?oc=5",
+      "summary": "[모닝 리포트] AI 투심 위축에 달러/원 환율 상승 압력…\"1340원 회복 시도\" 뉴스핌",
+      "source": "뉴스핌",
+      "date": "2026-11-19T23:11:00+00:00"
+    }
+  ]
+}

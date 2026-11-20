@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-11-20T05:53:21.383628+00:00",
+  "today_kst": "2026-11-20",
+  "guide": "이번 주 공개된 FOMC 의사록에서 12월 추가 긴축 가능성이 확인되며 원/달러 환율 상승 압력이 이어지고 있습니다. 다음 주 발표될 미국 10월 개인소비지출(PCE) 물가지표 전까지는 달러 강세 흐름이 지속될 수 있으므로, 달러 실수요자는 급등 시 추격 매수를 자제하고 분할 매수로 대응하는 것이 안전합니다.",
+  "events": [
+    {
+      "date": "2026-11-19",
+      "time": "04:00",
+      "name": "미국 FOMC 회의록 공개",
+      "importance": 3,
+      "summary": "연준 위원들의 12월 25bp 초과 금리 인상 가능성 검토가 공개되며 달러 강세 압력이 강화되었다.",
+      "why": "연준 내 금리 인상 속도에 대한 위원들의 구체적인 논의를 확인하여 향후 긴축 경로를 가늠할 수 있는 핵심 지표다.",
+      "result": "일부 위원이 12월 25bp를 초과하는 금리 인상 검토 가능성을 언급한 것으로 확인되어 원/달러 환율 상승 압력으로 작용했다.",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "연준 의사록 “일부 위원, 12월 25bp 초과 금리 인상 검토 가능”",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OYXIyV2ZDbU9UZ3ZKaVFWYVBLckZjTVJySFdCd1BhOHliNXZxdEFsM29nelAwcktwWFlfVlZzRDdTWHRfaWpjY0JxRTVJU3R5ZG94NzZ3VnN2ZHZodWlhdlhpazJFOUwxb3c?oc=5",
+          "snippet": "연준 의사록 “일부 위원, 12월 25bp 초과 금리 인상 검토 가능” Investing.com 한국어"
+        },
+        {
+          "title": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVHNsSl9pR25tTjlEMnhPTXhKUldidEczVWVjbnVNSlpFdXNfUWFTQWZFX3lGem0xRlB4emQzVTA0LVRxOVAzWEhhZENfdlVJOVhyQ0RYU1JGTU5pUFRGZjZuQW04YkF2a21YUjNuQVFOY29FWUJxQVdrNDYzcnp6TjF4dTNRc3FFdXRhSVF2WTZzWjRJa2NfRHlEVEtkaEFadWJkSTJ0TTBkZE5nX3lBZFVsM25hdTk5QTZUSy1makQ3U3oxSFozckU3cUM4aWZ0eUF2WEdQSTJEV3hLUVFNMXhVQ182Zw?oc=5",
+          "snippet": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라 TradingKey"
+        },
+        {
+          "title": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtdG5COGt5TjFRbWFFYVRaYTJEYnp5eGFPY0xkZEU0aXdWNnludXl5UmVNQTRTOGFrVDVnMkJMX25Sd2pyeDVPcjlCZHlzNzg0?oc=5",
+          "snippet": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등 이코노미블록"
+        },
+        {
+          "title": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92N202OU8ydG9pS09BdHI0bEFJYTFKVnF6RVpvMHg5OGJmLVo0c1NvUVVORjM4djQ2cU1pTldHYkM2MXhaMmRmeVVzSzJmYTZhTFpMbmIwcnZCMDFuejhnVDVJX0dxd9IBakFVX3lxTFBiaXQzQXlqUmVHT1dycEdMSmgweXh2RTFXVVdWVFRKZGVHSFZET0hyd1NwTXIyUzNJVEZGWkJjaUNqMUMyOEduSmY3MC1xMEpHM3JUZzFWWmJDYThBTUhFN1BOanJlejdRVEE?oc=5",
+          "snippet": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다 센트럴경제"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BblRxTzBIZWhnT2hoV0ZTeUIzd19NdmVTQmJmSkpycWo4UHZLdVNSS25MT2JZQWhZaE4tbHNnLVIwbTdyaWNGZEhBc0NadnZ1?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外 블루밍비트"
+        }
+      ]
+    }
+  ]
+}
