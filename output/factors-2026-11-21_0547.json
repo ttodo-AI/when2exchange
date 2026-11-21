@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-21T05:47:38.978234+00:00",
+  "card_title": "증시 급락에 환율 급등",
+  "tldr": [
+    "원/달러 환율이 어제보다 11원 오르며 1,347원으로 장을 마쳤어요.",
+    "미국 기술주 충격으로 국내 증시가 급락하자 외국인이 대규모 주식 매도에 나서며 환율을 끌어올렸어요.",
+    "다음 주로 다가온 한국은행 금융통화위원회의 기준금리 결정과 미국 긴축 경계감이 시장에 미칠 영향을 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "미국 연방준비제도의 **추가 긴축 우려**로 달러 선호가 유지된 가운데, 미국 기술주 급락 충격으로 코스피가 5% 넘게 하락했다. 이에 **외국인이 대규모 주식 매도**에 나서며 달러를 대거 사들였고, 이로 인해 원/달러 환율이 1,347원까지 급등했다.",
+  "factors": [
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 5,
+      "impact_reason": "코스피 5%대 급락과 함께 대규모 외국인 주식 순매도가 발생해 환율 급등을 직접 촉발함",
+      "headline": "국내 증시 급락과 대규모 외국인 자금 이탈로 환율 상승",
+      "bullets": [
+        "AI 수익성 불안 등으로 코스피가 5.21% 급락한 가운데 외국인이 1조 3,000억 원 넘게 순매도하며 원화 약세를 부추겼다.",
+        "외국인의 집중적인 국내 주식 매도세는 외환시장에서 달러 수요를 자극하며 환율 상승 압력으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "코스피·코스닥 5%대 동반 급락속 환율 1340원 턱밑…외인 1.3조 순매도",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15YnZjcDdRRXNPN1R4SHZmWDhCblA1QVh0bXVKMlFlUmF4UXdMTFJZb3NmcVdJTTZqNXcwT1Roa1U5N1NSVTBrdUtFcmFsYTAzTzZ0VjFVRXFHOXJsampsRVd0UXE?oc=5"
+        },
+        {
+          "title": "외국인, 한국 주식 193억 달러 팔았다…AI 투자 불안에 흔들리는 코스피",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9sOWE3QzNpYVdlX1N2SWpPWHpCVG1sazNSb2JUSjFDQU9jeE1NSUpNc3NkMXkyd1BtdlJnVEtGYlZoNG1KSmJNQ01GOFB1aFRzeVJoQ1FXUU5RRFV6UGFwdmdvd0NKdVZBOE5JTzZtVU9VWVVqTWJz?oc=5"
+        },
+        {
+          "title": "[위클리오늘] 외국인, 10월 상장주식 25.9조 순매도···AI 수익성 우려에 반도체 매도 집중",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1EcHBLOWY0djktMkZ6T1FlXzlSODhkbUVTcURzUlNxZDZ2bkpIejRCOHVyWTN2ZU4xVVY3TjJ1N01kbGtaM1VwQm1xaGRuajdvaGNTbnp3RGI0OFAtUFBuNE50MmJxaEk3Wm9HZndTaw?oc=5"
+        },
+        {
+          "title": "“외국인·기관 반도체주 매도 집중”…코스피 5.21%·코스닥 5.71% 급락",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1uMGhaMDdCZmV4MU9lcjZnREFudEJ5ZjZQcjM3UjRwVGxrTTB3bjRaN1FJVGJLVVVyZjBQOWVEVEwtOVI0b3RMejNzcWNOMWctZlBDaExtMDBNUXp5LUlEcHlwd1U?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "미 연준의 추가 금리 인상 가능성과 긴축 우려가 강달러 압력의 근본 배경으로 작용함",
+      "headline": "미 연준 추가 긴축 우려 확산에 달러화 매수세 유입",
+      "bullets": [
+        "미국 연방준비제도 인사들의 금리 인상 지지 발언과 12월 25bp 인상 가능성이 거론되며 글로벌 달러 선호 심리가 강화됐다.",
+        "미국의 긴축 재점화 경계감이 이어지며 원화를 비롯한 비달러 자산 전반에 지속적인 부담을 줬다."
+      ],
+      "sources": [
+        {
+          "title": "[도쿄환시] 달러-엔 상승…美 연준 인사들 금리인상 지지 |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WNi1zdkVranlxT29XUFcwZW1oZW1pWHdBMUZTV0RZUmpONV9NMEcyNkZyZUJsZlFTNHplQlFmRmpxQkhELTJyN214TDZsWUo0eWhicGtuVzBzOV9DamdDNDB6OG5yaDU1RlJLQVVmRVBwS3NP?oc=5"
+        },
+        {
+          "title": "美연준 긴축 가능성 고조에 강달러...'반도체 수출 호조' 원화는 무풍지대",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVXltZ2dXODNPTnRvREZwWS1XcENGMzRLMFZyM2FfNGMydEdlblVYUlEtYjY0V1d5U0ZiYlJyaG9QTWVYSXREM0h1c0ExUXh6X0hTbk9xTWhmSTZGdVd1YXdYcHdpX3BIVFNDbXk3dmFmTGJOOWRpekdiN01GaHRvRFFMNGE?oc=5"
+        },
+        {
+          "title": "[금리·물가 예측] 월러 ‘50bp’ 던졌지만 외면…12월 25bp 인상 93%",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9kOTJiZEpnTnRhYkh3V1ozWWZkd0N1Z3o4OFVsSWNkbWZBM0o4c1FqWTNiSjFwRHk1alZZWkN4OUd6Ui1SUUpCY3V3?oc=5"
+        },
+        {
+          "title": "[채권/외환] AI주 급락에 안전자산 선호…국채 금리 하락·달러 강세",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBBRDVZLTJROXFyNUk1VzloVmUwZTRBeTJseUpiMmt3UFNQa3RTQnphQ2ZxRFJmeUU3UGJ6TERtbmxnWTd6NTVZU3NFU2lQM2F3QnhPSTNyZGVwMzYz?oc=5"
+        },
+        {
+          "title": "[경제/금융] 국제 금값 이틀 새 250달러 급락, 3,600달러 선 위협… 연준 12월 금리 인상 우려 확산",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9LOGtRSHlESVBTWllsaU93T2ZHT1I5bnFXeTgxdElHbkN1T19ZQkJ2ajRDdHBVQkl1cHExVTBtQkM4azdaYTdSWEtvZ0VSQ1p0MUtWNlFVZmlEdkI4cnlSV0dFRkNQSEhZZXUzYV9GbFY?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 3,
+      "impact_reason": "글로벌 달러 강세가 이어진 가운데 증시 충격이 맞물리며 환율 반등 폭을 키움",
+      "headline": "기술주 급락과 위험회피 심리로 달러화 강세 지속",
+      "bullets": [
+        "미국 기술주 급락에 따른 안전자산 선호 심리가 확산되며 달러화 가치가 전반적인 상승세를 이어갔다.",
+        "달러 강세와 위험회피 심리가 맞물리며 원/달러 환율은 장중 1,340원선을 시험하는 등 반등 흐름을 나타냈다."
+      ],
+      "sources": [
+        {
+          "title": "환율, 강달러·주가 급락에 6.2원 오른 1,336.2원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE81VkhBQ2dkWFBSanpRUVBUbmhnWkplYW9aYXpwSnduR0VaeVZUSGI5aThlQlZ1WU5qOHh1bXhJaDcxWUlYTVpXcGpxQW5Sa1pfNkNDMGh4Q08yLTZDa2wyR9IBYEFVX3lxTE81VkhBQ2dkWFBSanpRUVBUbmhnWkplYW9aYXpwSnduR0VaeVZUSGI5aThlQlZ1WU5qOHh1bXhJaDcxWUlYTVpXcGpxQW5Sa1pfNkNDMGh4Q08yLTZDa2wyRw?oc=5"
+        },
+        {
+          "title": "美 기술주 급락에 원·달러 환율 반등…1340원선 다시 시험",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5TNXR2LUZTdlc3VDltQ1ZFWVk0SVlmN3JqZzZBWGpoQmliTXN1OTFjS3M0ZGpqazZlQUdUb1JMaDRUMVF6dnJSVGtkVGJWd3J1VlZ0OHJlOTg3dGtkZG5j?oc=5"
+        },
+        {
+          "title": "코스피·코스닥 5%대 동반 급락속 환율 1340원 턱밑…외인 1.3조 순매도",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15YnZjcDdRRXNPN1R4SHZmWDhCblA1QVh0bXVKMlFlUmF4UXdMTFJZb3NmcVdJTTZqNXcwT1Roa1U5N1NSVTBrdUtFcmFsYTAzTzZ0VjFVRXFHOXJsampsRVd0UXE?oc=5"
+        },
+        {
+          "title": "[모닝 리포트] AI 투심 위축에 달러/원 환율 상승 압력…\"1340원 회복 시도\"",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1oaEliZ3MxTlRyaEE5akVSWXc1SDZ5S21HYnRDUmw0SEFUZ1JxUl8tQ3luV01ISTJ2MkVxRkhhelFCTjVXQnFCWnpERVlGdlgtOUIxT2tFbUsyb1Fa?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 2,
+      "impact_reason": "환율 급등과 물가 압력 속에서 차주 예정된 한은 금통위 경계감이 시장에 영향을 줌",
+      "headline": "원화 약세와 경기 여건 속 한은 금통위 경계감 고조",
+      "bullets": [
+        "원/달러 환율이 반등하고 성장률 및 물가 압력이 이어지면서 26일 예정된 한국은행 금융통화위원회의 기준금리 결정에 관심이 쏠렸다.",
+        "시장에서는 한은의 추가 금리 인상 가능성과 최종금리 수준을 주시하며 경계감을 이어갔다."
+      ],
+      "sources": [
+        {
+          "title": "[다음주 환율전망] 강달러에 다시 고개 든 환율…한은 금통위가 방향 가른다",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5tcGhMdFY5S0lIY1JtTm9IS2RQVEZOWWRabVBWSW5nalVxS0dkTVJ1QUZjandPcTJrUFNudTIxSy1XN1ctOVlybmhHRDRyWm0wNlBSaldqRkFoTXVJT0Z4LVoyNm0yUU00VDB5TA?oc=5"
+        },
+        {
+          "title": "[심층분석] 한은 금통위 앞둔 외환·채권시장…금리 결정 시나리오별 환율·국고채 향방은",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IVVVXRzlpbUVDZWVmR0I4bk54MGJ5d1RUM203aUt6Q1g5LVVLUS1mWmFCa1cxX3ZCUlNBMW9mUzNKNGhVYXhhXzdtSWV2V01uQThEbEpmak1ZUmV4MHJfWU1aNkdQdEtOMGxGcGVLb1Z0azdK0gF0QVVfeXFMTkhVVVdHOWltRUNlZWZHQjhuTngwYnl3VFQzbTdpS3pDWDktVUtRLWZaYUJrVzFfdkJSU0Exb2ZTM0o0aFVheGFfN21JZXZXTW5BOERsSmZqTVlSZXgwcl9ZTVo2R1B0S04wbEZwZUtvVnRrN0o?oc=5"
+        },
+        {
+          "title": "[금통위 프리뷰] 도이체 \"한은, 11월 25bp 인상 전망…최종금리 3.75%\" |",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBiWEJodThTRWw2WDZZUTRSR21mZVVNSndYLW1fYnJpWE84dGt6VnZCdjlidW5RR3Jjd0JUQXUxRkQ5cGlnOHpPa01pd3Y2QzVFaG9Db1JTVXpaTTIyTENYQWZLWG9zT3JUN3Q4ZXM5Qnk3cDQw?oc=5"
+        },
+        {
+          "title": "물가·성장 동반 상승…한은, 26일 기준금리 추가 인상하나",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kNlBqa0JCUENocjMxcmE2VGpJbzQtemJuWjFvTWRNWUp5bEpNa1JKR1BkS2FLRzFjLUZ0R0FUajdaQTVTN1hzbkVyeGhwWkNOVVBudDl4ZGdxZUhoMzl1dG5nWkdpSlpjQ29IekI1TnDSAXRBVV95cUxPMnJqM3FKODJNS3VJV2RoVXI0T1praC1LVkZsS0NGU0ZJUVlPMGtldzNuN2VxQkRKZTNXbjMyV1lvb042YTVYVHNKVjZnRjRVSWhzb1NieS1Zcm04Qm95dzZqUVZQUnFIcS1LRXRQc2NERnpBTQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "전일대비 +11원",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}

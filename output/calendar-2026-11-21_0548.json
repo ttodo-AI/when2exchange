@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-11-21T05:48:25.197453+00:00",
+  "today_kst": "2026-11-21",
+  "guide": "지난주 공개된 FOMC 의사록에서 매파적 기조가 확인된 가운데, 다음 주 가장 결정적인 변수는 11월 25일 발표되는 미국 10월 PCE 물가지수다. 물가가 시장 예상치를 웃돌면 연준의 추가 긴축 우려로 원/달러 환율이 상승 압력을 강하게 받을 수 있다. 달러 결제가 필요한 실수요자는 지표 발표 전 분할 매수로 대응하고, 환전 차익을 노린다면 발표 직후 변동성 장세를 확인한 뒤 접근하는 것이 바람직하다.",
+  "events": [
+    {
+      "date": "2026-11-19",
+      "time": "04:00",
+      "name": "미국 연방공개시장위원회(FOMC) 의사록 공개",
+      "importance": 3,
+      "summary": "일부 위원의 12월 빅스텝 인상 검토 가능성이 드러나며 달러 강세 압력이 강화되었다.",
+      "why": "연준 위원들의 향후 기준금리 인상 속도와 정책 방향성을 직접 확인할 수 있어 외환시장의 단기 추세를 결정짓는다.",
+      "result": "FOMC 의사록이 매파적으로 확인되었으나, 원·달러 환율은 3.0원 내린 1330.0원에 마감했다.",
+      "scenarios": [],
+      "sources": [
+        {
+          "title": "연준 의사록 “일부 위원, 12월 25bp 초과 금리 인상 검토 가능”",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OYXIyV2ZDbU9UZ3ZKaVFWYVBLckZjTVJySFdCd1BhOHliNXZxdEFsM29nelAwcktwWFlfVlZzRDdTWHRfaWpjY0JxRTVJU3R5ZG94NzZ3VnN2ZHZodWlhdlhpazJFOUwxb3c?oc=5",
+          "snippet": "연준 의사록 “일부 위원, 12월 25bp 초과 금리 인상 검토 가능” Investing.com 한국어"
+        },
+        {
+          "title": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라",
+          "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQVHNsSl9pR25tTjlEMnhPTXhKUldidEczVWVjbnVNSlpFdXNfUWFTQWZFX3lGem0xRlB4emQzVTA0LVRxOVAzWEhhZENfdlVJOVhyQ0RYU1JGTU5pUFRGZjZuQW04YkF2a21YUjNuQVFOY29FWUJxQVdrNDYzcnp6TjF4dTNRc3FFdXRhSVF2WTZzWjRJa2NfRHlEVEtkaEFadWJkSTJ0TTBkZE5nX3lBZFVsM25hdTk5QTZUSy1makQ3U3oxSFozckU3cUM4aWZ0eUF2WEdQSTJEV3hLUVFNMXhVQ182Zw?oc=5",
+          "snippet": "주간 전망: 엔비디아의 블록버스터급 3분기 실적 발표에 이어 美 10월 소매판매, FOMC 의사록 및 월마트 실적 잇따라 TradingKey"
+        },
+        {
+          "title": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtdG5COGt5TjFRbWFFYVRaYTJEYnp5eGFPY0xkZEU0aXdWNnludXl5UmVNQTRTOGFrVDVnMkJMX25Sd2pyeDVPcjlCZHlzNzg0?oc=5",
+          "snippet": "주간경제일정, 엔비디아 실적·앤트로픽 상장·FOMC 의사록 등 이코노미블록"
+        },
+        {
+          "title": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92N202OU8ydG9pS09BdHI0bEFJYTFKVnF6RVpvMHg5OGJmLVo0c1NvUVVORjM4djQ2cU1pTldHYkM2MXhaMmRmeVVzSzJmYTZhTFpMbmIwcnZCMDFuejhnVDVJX0dxd9IBakFVX3lxTFBiaXQzQXlqUmVHT1dycEdMSmgweXh2RTFXVVdWVFRKZGVHSFZET0hyd1NwTXIyUzNJVEZGWkJjaUNqMUMyOEduSmY3MC1xMEpHM3JUZzFWWmJDYThBTUhFN1BOanJlejdRVEE?oc=5",
+          "snippet": "[이번주 관전포인트] 엔비디아 실적·FOMC 의사록이 이번 주 증시 방향 정한다 센트럴경제"
+        },
+        {
+          "title": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1BblRxTzBIZWhnT2hoV0ZTeUIzd19NdmVTQmJmSkpycWo4UHZLdVNSS25MT2JZQWhZaE4tbHNnLVIwbTdyaWNGZEhBc0NadnZ1?oc=5",
+          "snippet": "[한주간 주요 경제·암호화폐 일정] 美 FOMC 회의록 공개 外 블루밍비트"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "time": "22:30",
+      "name": "미국 10월 개인소비지출(PCE) 물가지수",
+      "importance": 3,
+      "summary": "연준이 가장 중시하는 물가 지표로 12월 금리 결정과 원/달러 환율의 상방 압력을 좌우한다.",
+      "why": "미국 연준의 공식 인플레이션 목표 지표로, 물가 둔화 여부에 따라 연준의 긴축 강도와 달러화 방향이 결정된다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상치보다 높게 나올 경우",
+          "effect": "연준의 추가 긴축 압박이 커지며 국채 금리가 오르고 원/달러 환율이 상승한다."
+        },
+        {
+          "cond": "예상치보다 낮게 나올 경우",
+          "effect": "물가 둔화 안도감에 긴축 속도 조절 기대가 커지며 달러 약세 및 원/달러 환율이 하락한다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+          "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "‘빅스텝’vs.‘연속 인상’… 연준 긴축속도 논쟁 가열",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5uWU16S2V6SDBHeTcyeDZyYUxydUJ5dVVHaHBNYXYwek42LWxoYTZWeXBxOS16cFhVYm14QU9KZGVscnpTdjdWcFFCcWkzRFZCeXdtSk5R?oc=5",
+          "snippet": "‘빅스텝’vs.‘연속 인상’… 연준 긴축속도 논쟁 가열 미주한국일보"
+        }
+      ]
+    }
+  ]
+}

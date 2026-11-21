@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-21T05:47:16.206956+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFYctL9Xggv1ED1ogKks'})"
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 강달러에 다시 고개 든 환율…한은 금통위가 방향 가른다",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5tcGhMdFY5S0lIY1JtTm9IS2RQVEZOWWRabVBWSW5nalVxS0dkTVJ1QUZjandPcTJrUFNudTIxSy1XN1ctOVlybmhHRDRyWm0wNlBSaldqRkFoTXVJT0Z4LVoyNm0yUU00VDB5TA?oc=5",
+      "summary": "[다음주 환율전망] 강달러에 다시 고개 든 환율…한은 금통위가 방향 가른다 굿모닝경제",
+      "source": "굿모닝경제",
+      "date": "2026-11-20T22:00:00+00:00"
+    },
+    {
+      "title": "2026년, 2027~2028년 및 향후 EURUSD 예측 및 전망",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORi11ZUotZm1OV0JYQ0FDYjJyUGJuUGdNdEtub0FDZm44YVJ4b01CN2UyTTctUl92aUp5b2t0eDlheGFQVWR0SzRKZVFxWWtwQUNWa1VIcUZpVThxLWEyNS1LMGhwaTlqOUI3cWtlRzVIQVoydVc0TGpmaGdSZzBuNkRQd1JQeFhxSHg5cXZUNTQ4Zw?oc=5",
+      "summary": "2026년, 2027~2028년 및 향후 EURUSD 예측 및 전망 LiteFinance",
+      "source": "LiteFinance",
+      "date": "2026-11-21T00:48:20+00:00"
+    },
+    {
+      "title": "원·달러 환율, 6.2원 오른 1336.2원",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNzkzRm0ySldVX3JCbEZiY0s0Yndzcl8zY1ZudFlJUnJLQWlJcHhwTmF6Tnk0ZURpV0VNenpyRlk3NHZXV2dsdEFEcV9tb3p0dTJSNG9JX29QYnFDRnBZOXVhLUZvUUc4MkxlY2xuMWR0T2UzN3NJaDZuVmVQaktOdWN2Tl9zQdIBmgFBVV95cUxNblU3V3R5QzhqcW1JRjA0QTJRLVdHbWJiR2hWVzhRNHlmbVd4Q0dvRGI3X2tGQzhDTlJ3Vk5ocXEzaVFmNEQ2UmVqOW9WdmV4V0x2UzJraWxraVB2VmRSdzNmTFNOcm1fQmo4UmZtUEtSU1JTeGhuMThGRERBeTVpWVdfQWxMOXhvY3JTTVRsMHl0NG5vOGp1b0lR?oc=5",
+      "summary": "원·달러 환율, 6.2원 오른 1336.2원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-11-20T06:50:00+00:00"
+    }
+  ]
+}
