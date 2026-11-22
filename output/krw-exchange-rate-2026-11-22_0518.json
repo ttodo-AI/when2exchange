@@ -1,0 +1,26 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-22T05:18:02.806383+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChHQCXvTi1eRoo4M1nmAc'})"
+  },
+  "articles": [
+    {
+      "title": "수출 1조달러에도 연말 환율 1380원 전망…美 긴축·외국인 역송금 변수",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WN1pIRWpiNlNNbkJmVGpqM0FiUUQxNUkwMFJwckNPR3YyVnhUWEI4NmV4QTQwYW1fdkQzWVJQVHhGSGJwTDk0cmF6OHlDOW1LV2xSTk1OTVNZQQ?oc=5",
+      "summary": "수출 1조달러에도 연말 환율 1380원 전망…美 긴축·외국인 역송금 변수 파이낸셜뉴스",
+      "source": "파이낸셜뉴스",
+      "date": "2026-11-21T22:30:22+00:00"
+    },
+    {
+      "title": "2026년, 2027~2028년 및 향후 EURUSD 예측 및 전망",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORi11ZUotZm1OV0JYQ0FDYjJyUGJuUGdNdEtub0FDZm44YVJ4b01CN2UyTTctUl92aUp5b2t0eDlheGFQVWR0SzRKZVFxWWtwQUNWa1VIcUZpVThxLWEyNS1LMGhwaTlqOUI3cWtlRzVIQVoydVc0TGpmaGdSZzBuNkRQd1JQeFhxSHg5cXZUNTQ4Zw?oc=5",
+      "summary": "2026년, 2027~2028년 및 향후 EURUSD 예측 및 전망 LiteFinance",
+      "source": "LiteFinance",
+      "date": "2026-11-21T23:39:27+00:00"
+    }
+  ]
+}
