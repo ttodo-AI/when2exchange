@@ -1,0 +1,54 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-23T05:56:26.883109+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChKLwLAHK3cLmX2V59FXu'})"
+  },
+  "articles": [
+    {
+      "title": "수출 1조달러에도 연말 환율 1380원 전망…美 긴축·역송금 변수",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Y09KVVU4S25PVVljTVdXa1liSzJUbHVmNXdiUjYzUnZhNm9NRDlGcUJYT25YWk9OLTZJeXNtQ29udk8yZm9Cc1Y2MTlBVkUzTU5iakx1RG90cUFWOENXQWFSUHNuTXFQT1E?oc=5",
+      "summary": "수출 1조달러에도 연말 환율 1380원 전망…美 긴축·역송금 변수 nbn 시사경제",
+      "source": "nbn 시사경제",
+      "date": "2026-11-23T02:09:46+00:00"
+    },
+    {
+      "title": "원·달러 환율, 연말 1380원 전망…외국인 주식 매도·美 긴축 변수",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBLRVZSMld5Q2NLV1FKZFhhYVRrb3hIZjVzTzgyZzJNVXZVZlZGWUFIZjZFZ3Q3OVUtS3BsQ29ETXh3TTRWb0VrTHJBOXJkejZJ?oc=5",
+      "summary": "원·달러 환율, 연말 1380원 전망…외국인 주식 매도·美 긴축 변수 블루밍비트",
+      "source": "블루밍비트",
+      "date": "2026-11-22T08:35:24+00:00"
+    },
+    {
+      "title": "[환율 전망] 조금씩 흔들리는 균형",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCT0NpTUlNU1JXb2Y2U3Jod3NwVGkzcEpVQTlubzBQY1I5b0U2QjRVM1NOOGdaRXRlZE9pOFNKbHJOZ3lTUFprdVBjQjBhR1dKZ3lsZnRGcllfLTFBcEpiRg?oc=5",
+      "summary": "[환율 전망] 조금씩 흔들리는 균형 KB Think",
+      "source": "KB Think",
+      "date": "2026-11-22T23:05:54+00:00"
+    },
+    {
+      "title": "원·달러 환율, 6.8원 오른 1343원",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQVkpyVE9EVVlFSE5EcWRpZnA3RlNKSjBINndIVEtwT091Wm84cHhoM0ZJUUxlb01rR0EybTRKbTgzc1NsUEc0b0VnX05VQWVJQzhKcm9feTh3V3NLNmd1YnB4MGJWSm1rdkJ5eXFCYkc3QlhETURMZkVDcC1qRU95Q1JJSHZRUdIBmgFBVV95cUxOcTFJRDZSMUd0Mi0zT1NNRld4RlRBdlJSa2NHQXp4NnUwcUNrYmx3M2ZvdlFadVcycTBlMWZJLXU5OHZUZDV3UTl1WUNxR0wyQzlibE9GS2d2UTNONzZIblpiUnlUaHlJTDlRUkhVOUJEQUxDeXRQZjY4ekZ0UEJvaU0yZ3E2M1dJQWREdnR2SlhwMmFjRURFamVR?oc=5",
+      "summary": "원·달러 환율, 6.8원 오른 1343원 Chosunbiz",
+      "source": "Chosunbiz",
+      "date": "2026-11-23T00:12:00+00:00"
+    },
+    {
+      "title": "기술주 리스크오프에 상승 압력⋯\"1350원 돌파 시도 가능성\" [환율전망]",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kOG9HRzYxWjhNS1pBTXdwS09SN2ZwSjdlcFlaNVpEbkNhN2F0SlNOZHBtTjJxSHVKNzNDZFpoSDVOOWNfMjM2bTdIRG9TTlRpcU1MRw?oc=5",
+      "summary": "기술주 리스크오프에 상승 압력⋯\"1350원 돌파 시도 가능성\" [환율전망] 이투데이",
+      "source": "이투데이",
+      "date": "2026-11-22T22:49:00+00:00"
+    },
+    {
+      "title": "과도한 약세 해소, 반도체 수출 '쌍끌이'…원화 반등폭 키웠다",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSG5PZjd1QUhqQ2ZZSnZSNFpORWttOTNwcjdmNFhFdVVjRUMxSTlSZXFRUlhuUjhmeGpsNVpfN2JnLXZ5SzctMktreWZEYVQzNE95b1MwaEZnb0JfaThiTXVsWDBXSGZHdUNzUVJETEgyZ1dPOVh2M19FMUhaMk95Rg?oc=5",
+      "summary": "과도한 약세 해소, 반도체 수출 '쌍끌이'…원화 반등폭 키웠다 이데일리",
+      "source": "이데일리",
+      "date": "2026-11-22T19:45:04+00:00"
+    }
+  ]
+}

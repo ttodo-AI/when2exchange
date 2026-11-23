@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-11-23T05:57:30.466833+00:00",
+  "today_kst": "2026-11-23",
+  "guide": "이번 주 수요일(25일) 발표되는 미국 10월 개인소비지출(PCE) 물가지수가 원/달러 환율의 최대 분수령이다. 최근 환율이 1340원대 중반까지 상승한 상황에서 물가 지표 결과에 따라 달러화 방향성이 결정될 전망이다. 달러 실수요자는 지표 발표 전 분할 환전으로 변동성에 대비하고, 투자 목적 환전은 지표 확인 후 진입하는 것이 안전하다.",
+  "events": [
+    {
+      "date": "2026-11-25",
+      "time": "22:30",
+      "name": "미국 10월 개인소비지출(PCE) 물가지수",
+      "importance": 3,
+      "summary": "미 연준이 가장 주목하는 핵심 물가 지표로 환율 방향 결정",
+      "why": "연방준비제도(Fed)가 정책 결정 시 가장 신뢰하는 물가 지표로 발표 수치에 따라 금리 인하 기대와 달러화 강세 지속 여부가 좌우된다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상치를 웃돌며 물가 둔화세가 정체될 경우",
+          "effect": "연준의 긴축 완화 기대가 후퇴하면서 달러화 강세와 함께 원/달러 환율이 추가 상승할 수 있다."
+        },
+        {
+          "cond": "예상치에 부합하거나 하회하며 둔화 흐름을 보일 경우",
+          "effect": "금리 인하 기대감이 되살아나며 달러화가 약세로 돌아서고 원/달러 환율이 하락 압력을 받는다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
+          "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
+        },
+        {
+          "title": "[주간환율전망] 야간 1346원까지 뛰었다…美 물가 지표에 달렸다",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqejI1U3hKVGhRaW94Q3lDeks2OHg0REJzUjJCRWdybWJmTEpTMDBoZjRHQmlPb1g2WDhfX2lqMy1kVUEtTlRpSEtDbHFNNHhDalEzNU5zeXVIbjFObXFsdG5ua2l4SkE?oc=5",
+          "snippet": "[주간환율전망] 야간 1346원까지 뛰었다…美 물가 지표에 달렸다 자본시장뉴스"
+        },
+        {
+          "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+          "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+        }
+      ]
+    }
+  ]
+}
