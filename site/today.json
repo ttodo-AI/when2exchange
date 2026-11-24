@@ -1,39 +1,72 @@
 {
-  "generated_at": "2026-11-23T20:55:12.926528+00:00",
-  "asof": "2026-11-24 05:55 KST",
+  "generated_at": "2026-11-24T08:36:38.210619+00:00",
+  "asof": "2026-11-24 17:35 KST",
   "stale_days": 0,
-  "card_title": "美 물가 앞두고 달러 강세 지속",
-  "overall_why": "미국 기술주 충격에 따른 **위험자산 기피 심리**가 이어진 가운데, 모레 예정된 미국 물가 지표 발표를 앞두고 **연준의 긴축 장기화 우려**가 달러화 강세를 이끌었다. 이에 따라 안전자산인 달러 수요가 유지되며 환율은 어제보다 소폭 상승한 1,347원 선에서 등락하고 있다.",
+  "card_title": "PCE 하루 앞두고 기술주 반등",
+  "overall_why": "장 초반 안전한 달러로 돈이 몰리며 환율이 장중 1,350원을 넘어서기도 했으나, 엔비디아 호재로 국내 증시가 급반등하자 **위험자산을 사려는 분위기**가 되살아나며 상승 폭을 반납했다. 다만 내일 발표될 미국 10월 개인소비지출(PCE) 물가지수를 앞두고 **미국 연준의 긴축 경계감**이 여전히 달러화를 지지하면서, 환율은 전일 대비 내린 1,342원에 보합권으로 장을 마쳤다.",
   "tldr": [
-    "원/달러 환율은 어제보다 2원 소폭 오른 1,347원 부근에서 움직이고 있어요.",
-    "미국 기술주 충격에 따른 불안 심리에 더해 미국 긴축 경계감으로 달러화가 강세를 보인 영향이에요.",
-    "모레 발표될 미국 10월 개인소비지출(PCE) 물가지수와 한국은행 금융통화위원회의 기준금리 결정을 지켜볼 필요가 있어요."
+    "원/달러 환율은 어제보다 내린 1,342원에 마감하며 큰 변화 없이 머물렀어요.",
+    "엔비디아 젠슨 황 복귀 소식에 위험자산을 사려는 분위기가 살아나며 장중 1,350원을 넘던 환율이 내려왔지만, 강달러 기조가 유지돼 낙폭은 작았어요.",
+    "내일 발표될 미국 10월 개인소비지출(PCE) 물가지수 결과에 따라 시장의 긴축 경계감이 달라질 수 있어요."
   ],
-  "heat": "normal",
-  "title_badge": "",
+  "heat": "high",
+  "title_badge": "⚡ 오늘 주목",
   "factors": [
     {
-      "name": "미국 통화정책",
-      "emoji": "🇺🇸",
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
       "impact": 5,
-      "impact_reason": "미국 연준의 긴축 장기화 우려와 물가 지표 경계감이 환율 상승의 가장 직접적인 원인으로 작용",
-      "headline": "미국 연준의 긴축 장기화 우려가 이어지며 달러 매수를 자극했다",
+      "impact_reason": "글로벌 달러화 강세와 기술주 반등에 따른 위험선호 심리가 팽팽히 맞서며 환율 흐름을 주도",
+      "headline": "달러화 강세 지속 속 위험선호 회복에 소폭 하락 마감",
       "bullets": [
-        "미국 연방준비제도(Fed)의 긴축 기조 지속에 대한 경계감이 이어지며 환율 상승 압력으로 작용했다.",
-        "미국 개인소비지출(PCE) 가격지수 발표를 앞두고 물가 지표에 대한 경계감이 커지며 환율을 지지했다."
+        "미국 연방준비제도의 긴축 장기화 경계감에 달러화가 강세를 보이며 환율의 하단을 지지했다.",
+        "반면 기술주 중심의 증시 반등과 외국인 매수세 유입으로 위험선호 심리가 회복되며 환율은 전일대비 내린 1,342원에 마감했다."
       ],
       "sources": [
         {
-          "title": "[韓 블랙 먼데이 전운] 美 증시 덮친 긴축 공포…금리·환율도 코스피에 부담",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvblVVTXNDV2Q4X0JhR3hyX3Vxd1BoZGhZQXVDQk9Td0xxWGtXYU1YQjU5N0dROHBUc19GVk5uREN6cjUydFFFQ0dUQkZRanYtWXBIVi1NTGlHd9IBWEFVX3lxTE5jdFpfS2pDdUlIa3l1aGp1UER3OEFxT2NhSUpqcWcxVlNPOXUtanFmU3BpVUt5YWNfQzVHZGZCeWx5U2FneU9hMS1aUXdtclBuN2hEcm05S3g?oc=5"
+          "title": "원·달러 환율, 기술주 급등에 1342.4원 마감…외국인 매수세 유입",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEclBDd3dkZ3dFWW5EWjBKczhkNG9YQkxQbWRnTFYtdlVIRUY1ekZHMEJLd255eUJhTnNiMnAxYlQ2UFdUM3RZNHdBN3FjUXNzVmVFX1lfUEhlb0h1NExBTXVob052SFVHblN6cmtLQmTSAXRBVV95cUxPWktScXJTMHozRU1QWnhDNV9PM0ZDNGMwZ2JUbENPaDl6V0dxQnplWFlqOW1yUnBUeWtTNGxVNHBudWhXN1NoREhHVTNBaWYwRENrTmdDR3pzX0NDU3dWWWtLc3BqWUJGR243a3dNMlB5WkxqYw?oc=5"
         },
         {
-          "title": "美물가 경계 vs 韓금리인상…환율, 엇갈린 긴축 변수 주목[주간외환전망]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmpiak5odXAtd3pxNkJQYnhQeWNMRU53VWhzcTl6alQzMmt5SmRjTmhEZGNjMjdnc3F2NFZKQ3ByTlVGWlpremx2TTJ0RU1sTUFIM05qUmRNY194Tk5Vbmw5NTlVelo5UXhZNFFYdXp2WENHbk02WXBvZUp4Si1XNQ?oc=5"
+          "title": "환율, 엔비디아발 위험선호 회복에 하락…3.5원 내린 1,342.4원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15R09sLTlod2hoeHpQMnYxZlV3QWIyZ1BHNktIamVHTmFOYmRCUFcxcGNsd3BmbmtsenpVRFpWdlpURE5WdktENFg3Y25jN05IYm9QZlFWY2xhVy1uTmNLb9IBYEFVX3lxTE15R09sLTlod2hoeHpQMnYxZlV3QWIyZ1BHNktIamVHTmFOYmRCUFcxcGNsd3BmbmtsenpVRFpWdlpURE5WdktENFg3Y25jN05IYm9QZlFWY2xhVy1uTmNLbw?oc=5"
         },
         {
-          "title": "[외환-주간] 금통위·美 PCE가 온다…AI발 위험회피 어디까지 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tY2RLYnFQZ2JJb1hpdHdWUFVaeXlLdFRqcTJuWjA2LTVxTUtSZWZ3N0RQajVPNlhNalk1UzhGak9Ra1loZm9kanpZRDBhRVJHMUY2S0dnanVpSlVrNC1ha0c1SWlISE5FaEdFSTdEYzJJa0Zu?oc=5"
+          "title": "코스피 5000선 회복에 환율 3.5원↓…강달러에 낙폭 제한",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11dzBiRjBLSjBXOHppLWlKMzdCdTRreGFYTmUwRUpXTklTSkgwS1JmYzdrajI2S3UzWmxIRDB3Vi10NG9VeEkxcFRqbVpZZlpzVXI4bnNxNnlFWmtOd0ZzME50MHcxTUdZeExFRjhFQQ?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 후반서 등락…美 증시 반등에도 강달러 여전",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMcEdlTmNGcklGMFlhdk13YkN5cU5wUExYY1BIS21lZnMxUGJzQlZGLXdHMzdReWNGbXFSdE9CMDJwN2NSM2dfcTZKVW4wMjdvME1Vd0lsTUgxNDI0ZkE?oc=5"
+        },
+        {
+          "title": "[환율마감] 원·달러 사흘만 하락, 상하단 막힌 박스권",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXTVk4Z3dFWHIwNTl3N1I3enNjX281SjJwMlhIU0QxR0JNZ2pfVXlrb1RBRGJEdmpDb2ZWTjJXNnlUMlEtSmI2ODg2amFVRkZaS0ppdmJtcUtudnhiRVJiTXYtUGs1VjllRnFqQzVXMl9kdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "내일 발표될 미국 핵심 물가지표를 앞두고 연준의 금리 판단에 대한 경계감 지속",
+      "headline": "미국 물가 지표 대기 속 연준 긴축 경계감 지속",
+      "bullets": [
+        "미국 개인소비지출(PCE) 물가지수와 성장 지표 발표를 앞두고 물가 및 긴축 경로를 확인하려는 관망세가 짙어졌다.",
+        "미국 단기 국채 수익률이 상승하고 연준의 12월 금리 판단을 둘러싼 경계감이 이어지며 달러화 강세 흐름을 뒷받침했다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 젠슨 황 복귀에 美 단기 국채 수익률 상승…달러, 유로 대비 19개월래 최고",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWczJnUFJob3ZjMEdlb3A0U2JvWDQ4WlR5VlkzdjZFSWMxc1RsVTU0NmRIOHV0TkY0UEZQU2JfMmpBRHVhN3Q3Y2hzVmJRU0h6V3RoVkhXS0o4YWhR?oc=5"
+        },
+        {
+          "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5"
+        },
+        {
+          "title": "원·달러 환율, 1342.6원…달러, 연준 추가 긴축 기대에 강세",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GZDNMOUxwRTBZbzFsMDFMbDd1bUcwZlRoTUo4NmoyblFxWXd1UlRtVUplZTBBOFVmeld6SHlGLWJkalVuWFNxWHUzaFQwMVF6VFdUdlZFYjJYWEFLcTAwdVpERDNsdjJOSXhuVk1nUQ?oc=5"
         },
         {
           "title": "美 물가·성장 지표, 연준의 12월 금리 판단을 바꿀까?",
@@ -42,133 +75,149 @@
       ]
     },
     {
-      "name": "달러 강세(달러인덱스)",
-      "emoji": "💵",
-      "impact": 4,
-      "impact_reason": "글로벌 위험회피 심리와 맞물려 주요 통화 대비 달러 강세 기조가 지속됨",
-      "headline": "글로벌 시장 불안 속에 달러화 강세 흐름이 지속됐다",
-      "bullets": [
-        "글로벌 증시 불안과 맞물려 강달러가 이어지며 원/달러 환율도 1,340원대에서 소폭 오름세를 나타냈다.",
-        "야간 거래에서 1,346원까지 뛰었던 달러 매수세가 이어지며 환율 하단을 지지했다."
-      ],
-      "sources": [
-        {
-          "title": "환율, 1340원선까지 올라…글로벌 증시 불안에 강달러 지속",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15dGRmSE9OY0ZxZTBjcW13TEROdWhpeGstaUhJZ2kySndIV2RUMDBtZF9zUEtjNjg4b1AwdW53Ni1ZYzdYY1puUS1DZExuTURtQXJMVDhxYjVEcU5mLVE?oc=5"
-        },
-        {
-          "title": "[외환] 원·달러 1345원 개장…美금리 내려도 달러 뛰었다",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94R1B0S0xsZ0gxbHJ3V1psOTRSTTNuODlCVGtXZEczcHFKUVZULVVfLVRkZEpzdVhwbVhDQlJjVzhOLWJ1WjAySDVveEVlVXpQaTZaRjVQcTItUC13ckhzbDVjbXVuNDg?oc=5"
-        },
-        {
-          "title": "[외환-주간] 금통위·美 PCE가 온다…AI발 위험회피 어디까지 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tY2RLYnFQZ2JJb1hpdHdWUFVaeXlLdFRqcTJuWjA2LTVxTUtSZWZ3N0RQajVPNlhNalk1UzhGak9Ra1loZm9kanpZRDBhRVJHMUY2S0dnanVpSlVrNC1ha0c1SWlISE5FaEdFSTdEYzJJa0Zu?oc=5"
-        },
-        {
-          "title": "[외환+] 美 기술주 투매에 원화 '출렁'···환율 1340원대 출발",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBnc2JPMXJWTDhoZF90b2ZlSkJOdGlqTmg0dFdQd1FjZDVTb0FuRmxyNExiMTVUNllNVlRSTVVGMlBkSTNIUm9yTkpfYWM3RUJpY085SlEyV1dLbktKbU04VGFIRVVfTk1YakE?oc=5"
-        },
-        {
-          "title": "[주간환율전망] 야간 1346원까지 뛰었다…美 물가 지표에 달렸다",
-          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqejI1U3hKVGhRaW94Q3lDeks2OHg0REJzUjJCRWdybWJmTEpTMDBoZjRHQmlPb1g2WDhfX2lqMy1kVUEtTlRpSEtDbHFNNHhDalEzNU5zeXVIbjFObXFsdG5ua2l4SkE?oc=5"
-        }
-      ]
-    },
-    {
-      "name": "한국 통화정책",
-      "emoji": "🇰🇷",
-      "impact": 3,
-      "impact_reason": "한국은행 금통위를 앞둔 금리 결정 경계감이 환율 추가 상승을 일부 제어",
-      "headline": "한국은행 금융통화위원회를 앞두고 통화정책 경계감이 팽팽히 맞섰다",
-      "bullets": [
-        "이번 주 한국은행 금융통화위원회의 기준금리 결정을 앞두고 시장의 관망세가 짙어졌다.",
-        "일부 기관에서 한국은행의 기준금리 인상 가능성을 제기하면서 원화의 추가 약세를 방어하는 요인으로 작용했다."
-      ],
-      "sources": [
-        {
-          "title": "美물가 경계 vs 韓금리인상…환율, 엇갈린 긴축 변수 주목[주간외환전망]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTmpiak5odXAtd3pxNkJQYnhQeWNMRU53VWhzcTl6alQzMmt5SmRjTmhEZGNjMjdnc3F2NFZKQ3ByTlVGWlpremx2TTJ0RU1sTUFIM05qUmRNY194Tk5Vbmw5NTlVelo5UXhZNFFYdXp2WENHbk02WXBvZUp4Si1XNQ?oc=5"
-        },
-        {
-          "title": "[외환-주간] 금통위·美 PCE가 온다…AI발 위험회피 어디까지 |",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1tY2RLYnFQZ2JJb1hpdHdWUFVaeXlLdFRqcTJuWjA2LTVxTUtSZWZ3N0RQajVPNlhNalk1UzhGak9Ra1loZm9kanpZRDBhRVJHMUY2S0dnanVpSlVrNC1ha0c1SWlISE5FaEdFSTdEYzJJa0Zu?oc=5"
-        },
-        {
-          "title": "MUFG \"한은 금리 25bp 인상 근거 있어…원화에 지지력\"",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBlT28zUlBrS1R2eFRSOTRzZEI3a0pxY1hYTVZ2eVpnbUw3bkxHSndiU2s2ajRJZVZpUmg4LTZUOHlGMHhuWDNPNS1wU3ByWjB3OGRQR2RKTzlEM3h1ZDRGQ2pJeEFqdk5mQzZZNF9vQWt4QQ?oc=5"
-        }
-      ]
-    },
-    {
       "name": "그 외 환율 이슈",
       "emoji": "🔎",
-      "impact": 2,
-      "impact_reason": "미국 기술주 급락 여파로 인한 시장 불안 심리가 장초반 환율 상승 압력으로 작용",
-      "headline": "미국 기술주 폭락 쇼크가 이어지며 투자 심리가 위축됐다",
+      "impact": 3,
+      "impact_reason": "장중 엔비디아 호재로 인한 국내 증시 급반등과 1,350원선 공방이 발생",
+      "headline": "엔비디아發 증시 반등에 장중 1,350원대 진입 후 반락",
       "bullets": [
-        "미국 인공지능(AI) 및 기술주 투매 쇼크가 국내외 증시로 번지며 위험회피 심리를 자극했다.",
-        "증시 불안으로 안전자산 선호가 이어지면서 원/달러 환율이 1,340원대 후반에서 지지력을 받았다."
+        "장중 글로벌 위험회피 심리와 배당 역송금 변수 등으로 환율이 2주 만에 1,350원대를 돌파하기도 했다.",
+        "이후 젠슨 황 복귀에 따른 기술주 랠리로 코스피가 급반등하고 위험회피가 완화되자 환율은 상승 폭을 반납하며 되밀렸다."
       ],
       "sources": [
         {
-          "title": "美 기술주 폭락에 환율 상승…1340원대 초반 등락",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1MaFBSdkxzRG5kSFZBMjFfUnFKVHgxOFBxU1JpejNtc0c2a0VMLW0zSmpwRWhiMF9DXzlOSV9CVHVubW1ab1M1NVZ3SVpUYVNGTG9XRFBybkVDUdIBWEFVX3lxTFBnOGR4WmNkVERqaU9zUnlyRGIxNm9ZeU00Yks0cV9MaWNqTW1qVE1PN0dvNGU0WlhjZFZvQW9YbDloZkVsYTNFckpJZFRvbnYyVktpcVkyam0?oc=5"
+          "title": "돌아온 '젠슨 황', 돌아온 '5000선'... 코스피 6.32% 급등",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00YTFrbVd0a05yWGdIX3RqOHEyUVBqRU9feHQwQzhTNmhBRFlKNDZWbVFQN21yY25JQlpaV0tmcmltSUNhMmtrcndmZVJISmR4aldmSXJzWFJodlhqbFNLNHBkVWtnc3dfWDJ2dXJ2QmZaMXlKUjVZ?oc=5"
         },
         {
-          "title": "美 기술주 폭락에 원화도 직격탄…환율 1350원 위협[외환브리핑]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWUlCOHQzWnBLTGpTSzd6RFBGT2txYVhIeHBja1QydkxmaTVsQ19VblduVTRxSFdKTTV6OWxGa2dpUkh2N2hRWWY0N2dxM0MyY0p6dEs4aVBBa3haWlB4VGRCMm1yNkVxX3BWbk51MzNYRE1feWpFZ0R0TG94STdOeA?oc=5"
+          "title": "증시 급락에 환율 장중 1350원 돌파 … 반도체 네고도 방어 한계 왔나",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdk9iNDhKMlpOZDgwWlBtX0RRNmlHbzRwTWpDSzlQbE13VVQ1VU5XUUcxQzBjc25Ualhjdk94X3pNQzNFRUx3X203dWJOTVRsTWcyT1M2X2ZaeG5aVDdpcDJ5NnFqVHgxSUtnVmFpeDYzU3hKTWRoZjlBZnNYRkZSYtIBgAFBVV95cUxQdk9iNDhKMlpOZDgwWlBtX0RRNmlHbzRwTWpDSzlQbE13VVQ1VU5XUUcxQzBjc25Ualhjdk94X3pNQzNFRUx3X203dWJOTVRsTWcyT1M2X2ZaeG5aVDdpcDJ5NnFqVHgxSUtnVmFpeDYzU3hKTWRoZjlBZnNYRkZSYg?oc=5"
         },
         {
-          "title": "코스피 4800선 내줬지만…환율은 상승 폭 줄이며 1330원대 진입",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc0UxMjVEVnZPanE3VWpkZjhfbWI4WUlCbXdYNFlGNnZ4YVVnVEFZLVp2TEEtLWhpLVhWWFVsMk1xLVVXR1BRYzNEYUdLdUFZdmEzaHBSQ2lIN2FOcDNDaUh5ZUpReXJ1TFhZbVU5c0I5X0x6UG5uWnpmQzlxeWF0Qg?oc=5"
+          "title": "환율, 글로벌 위험회피 심리에 상승…2주만에 장중 1,350원대",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ldll1X3o3U2xic2hZZzlKbFhuc3plYllKYS1Uci1tTUcwZ21HRnZJcTdsdFgxd2tEc0ZwMjJ5ZlE3YU9IcF9fVHhoRWRYWjdKYjNNT3VrVXZUb1nSAWBBVV95cUxPWnplWTRBaXEzU2hSM190UVpwT2RwWDVEcmVYaUJBenM2M3c0eDlaR1h4Y2ZoLTY2YzV6UjNJQVVfX2VEbnUxOU0zTnEwckREZkc0Qk02ck1CbHFQSWlRQjA?oc=5"
         },
         {
-          "title": "美 AI주 투매 쇼크…글로벌 시장 덮친 '블랙먼데이' 공포[뉴스새벽배송]",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWVRMRm10MVRnTzVLQXhsMUU3TGpuWWZicDVUUkNPS2w2VmUxWWRJbkJzWFRtNHdzU3FCYnFRRkhhbzFEX0lrS2pEbGxrZ18yZ2w1VFFUbUQzZTYyMi16d3VJemtETHZVVFJvMTYwMHpkT2FvVlhEeExHOFBBd2VreA?oc=5"
+          "title": "환율 1340원대 초반 등락…美 증시 급반등에 소폭 하락",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVb1pWSlZnWnVBdjRXa2hHbnhva2NYN3F4b09wZXczY1hIN2swQWRQY0I4eldOQ2xDdklVTDFLVlhaMmhnaVlpUU1pU3U2WnlfSWVNczhpM0FhUdIBWEFVX3lxTFBqc0YxT1ZMODB2UlNpQWNib0ZDOEwxVUp0bjk1cDI3cnpjazFwdzNBREhWWWFEaW9abVVCNVNPbkEtb0VIZ3hlX2JFMkRSZEtsSld0bGd5QkY?oc=5"
+        },
+        {
+          "title": "환율, 장중 1350원 돌파…\"증시·삼전 배당 역송금 변수\"",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQalZwZTcwUmpmUThiN0wxMFVjZUZobldsa1NuSGFNZE5jVXJPTnl3MVFsb2U0OXR4T1VRbWIzTEw5amc0NGFuZVZlXzRhS21nN1RIX1lORDVGSmUzWjN4LWctTGxsTUxNQzlrTXZfa0V0ZXJ2bnJzNkRwSWI1QlpyeQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 2,
+      "impact_reason": "반도체 중심의 수출 호조와 달러 환전 수요 기대가 원화의 바닥을 지지",
+      "headline": "반도체 수출 호조 및 달러 환전 수요가 원화 방어벽 형성",
+      "bullets": [
+        "골드만삭스는 반도체 수출 호조를 버팀목으로 내년 한국 경제성장률이 3.2%를 기록하고 원·달러 환율이 1,280원까지 하락할 것으로 전망했다.",
+        "반도체 수출 기업의 달러 환전 수요가 늘어나며 외국인 주식 매도세 속에서도 원화 가치를 지지하는 요인으로 평가받았다."
+      ],
+      "sources": [
+        {
+          "title": "외국인 240조 '팔자'에도 버틴 원화…①반도체 수출 ②리밸런싱 완화 ③ADR",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OS3g3bzZaeG5lbF93NlRFU1A2eFRpVHRVaUFXcEsxWlhfZURCTDVHT09BZWFaSEZ1NGtFWnBSM3ptQ3FvaElTNF9TNmJCbThUTG9fRmh2ZTVkSi1kNVlvbtIBeEFVX3lxTE5pUmhvbE52U3hhWUNBd09ZdGpPY21xMU1rQnBVeGlZOWlhWUZja1dacGtrSjE1SzIxWlZZSFJWTWNMbVBQYXF0ZzdnbUxYZFdYYjZCaDc5c3ppaFh5T1BqUFhFUGFmRWpVYkc0S1hwSFhRQWJLb2VuVQ?oc=5"
+        },
+        {
+          "title": "[2027 한국경제 전망] 골드만삭스 \"내년 말 환율 1280원...반도체가 '버팀목'\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50Mjh0UG40NlBRUXF2cFpXR0psYVAtZ29nVXYxQkFXYl93QTlrWnNHN3hZWVZGMkZicTJKempSYmV3NTdvV2FzV1lma2JiVmx1S0gwVFpmeEUxNHdOQ09JcVNhMmhud1duX0oxY29mWmtTa0ly?oc=5"
+        },
+        {
+          "title": "골드만삭스, 원-달러 환율 내년 1280원까지 하락 전망...\"원화 환전 수요, 올해보다 3배가량 늘어날 것\"",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBIaE5IU2ZTNm9BcGN1bmZLTFBCU0FBX01TT3Awd281TDdEakdjbzFRWHZMNU9lS1R1Vm9CUUpBWWw0STJtTzZMbXl2Z29XTTVaOUM0MXFzdGd1VUpmMng5bHFNMlFPX3lXVnl2Y3lsdmxtejhEa2hLUmNfdjM?oc=5"
+        },
+        {
+          "title": "해외IB들 \"원화 강세\"…반도체 달러 환전이 환율 향방 갈라",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEtGeWtZZ3hNWEI3Z002NjFaNENmUGkzakhQWTEzOGxhMHFoWmVPd0JqYm8xbEllb2tjNElnd3RJU2ZKR3EyY0JiTHVmdDNUYm5lSDhfWkw5ZDZvM29mSUxTMzYtdjF2UE40eGZ2b0V1bDViU3JmRVJHMGtmSTVyeA?oc=5"
         }
       ]
     }
   ],
   "calendar": {
-    "guide": "이번 주 수요일(25일) 발표되는 미국 10월 개인소비지출(PCE) 물가지수가 원/달러 환율의 최대 분수령이다. 최근 환율이 1340원대 중반까지 상승한 상황에서 물가 지표 결과에 따라 달러화 방향성이 결정될 전망이다. 달러 실수요자는 지표 발표 전 분할 환전으로 변동성에 대비하고, 투자 목적 환전은 지표 확인 후 진입하는 것이 안전하다.",
+    "guide": "이번 주 25일 발표되는 미국 10월 PCE 물가지수와 26일 한국은행 금융통화위원회의 기준금리 결정이 원/달러 환율의 최대 분수령이다. 미국의 인플레이션 둔화 폭과 한은의 금리 인상 의지에 따라 단기 변동성이 급격히 커질 수 있다. 지표 발표 전후로 환율 방향성이 결정되므로 무리한 일괄 환전보다는 분할 대응이 유리하다.",
     "events": [
       {
         "date": "2026-11-25",
         "time": "22:30",
         "name": "미국 10월 개인소비지출(PCE) 물가지수",
         "importance": 3,
-        "summary": "미 연준이 가장 주목하는 핵심 물가 지표로 환율 방향 결정",
-        "why": "연방준비제도(Fed)가 정책 결정 시 가장 신뢰하는 물가 지표로 발표 수치에 따라 금리 인하 기대와 달러화 강세 지속 여부가 좌우된다.",
+        "summary": "연준의 최우선 물가 지표로 달러화 방향을 가를 핵심 변수다.",
+        "why": "연방준비제도(Fed)가 통화정책 결정 시 가장 주시하는 물가 지표로, 수치에 따라 달러화 강세 지속 여부가 판가름 난다.",
         "result": "",
         "scenarios": [
           {
-            "cond": "예상치를 웃돌며 물가 둔화세가 정체될 경우",
-            "effect": "연준의 긴축 완화 기대가 후퇴하면서 달러화 강세와 함께 원/달러 환율이 추가 상승할 수 있다."
+            "cond": "예상치를 웃돌아 물가 압력이 지속될 경우",
+            "effect": "긴축 장기화 우려로 달러화가 강세를 보이며 원/달러 환율이 상승 압력을 받는다."
           },
           {
-            "cond": "예상치에 부합하거나 하회하며 둔화 흐름을 보일 경우",
-            "effect": "금리 인하 기대감이 되살아나며 달러화가 약세로 돌아서고 원/달러 환율이 하락 압력을 받는다."
+            "cond": "예상치를 밑돌며 물가 둔화세가 확인될 경우",
+            "effect": "금리 인하 기대감이 형성되며 달러화 약세로 원/달러 환율이 하락할 수 있다."
           }
         ],
         "sources": [
+          {
+            "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+            "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+          },
+          {
+            "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
+            "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
+          },
+          {
+            "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
+            "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-26",
+        "time": "",
+        "name": "한국은행 금융통화위원회 기준금리 결정",
+        "importance": 3,
+        "summary": "한은의 금리 인상 여부와 한미 금리 격차 향방을 결정짓는다.",
+        "why": "국내 기준금리 결정과 통화정책 기조는 원화 가치 방어 및 한미 금리 역전폭에 직결된다.",
+        "result": "",
+        "scenarios": [
+          {
+            "cond": "시장 전망대로 금리를 인상하고 매파적 발언을 이어갈 경우",
+            "effect": "한미 금리차 축소 기대로 원화 약세 심리가 진정되며 환율 상승세가 제한된다."
+          },
+          {
+            "cond": "금리를 동결하거나 비둘기파적인 태도를 보일 경우",
+            "effect": "내외 금리차 확대 및 통화정책 완화 신호로 원화가 약세를 보이며 환율이 반등할 수 있다."
+          }
+        ],
+        "sources": [
+          {
+            "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+            "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+          },
+          {
+            "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
+            "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
+          },
           {
             "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
             "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
           },
           {
-            "title": "[주간환율전망] 야간 1346원까지 뛰었다…美 물가 지표에 달렸다",
-            "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqejI1U3hKVGhRaW94Q3lDeks2OHg0REJzUjJCRWdybWJmTEpTMDBoZjRHQmlPb1g2WDhfX2lqMy1kVUEtTlRpSEtDbHFNNHhDalEzNU5zeXVIbjFObXFsdG5ua2l4SkE?oc=5",
-            "snippet": "[주간환율전망] 야간 1346원까지 뛰었다…美 물가 지표에 달렸다 자본시장뉴스"
-          },
-          {
-            "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
-            "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+            "title": "한은 26일 금통위 '3.25% 인상' 전망 우세…증권사 10곳 모두 인상, 내년 최종금리 3.50% 9곳",
+            "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hS3lsNGpQWlY1c3pTUlNVVHBCRVA1czhCXy0xbEZNR0lud1pGZW9NNEVyZXlaOXZkNUUyTzVxaHR3M2lMUmdqaXRUSVg1ZF90YnVUNHJPRjhDSmdQbFJ3UWhma0E4aXN2U2NJ?oc=5",
+            "snippet": "한은 26일 금통위 '3.25% 인상' 전망 우세…증권사 10곳 모두 인상, 내년 최종금리 3.50% 9곳 ISSUE ON (이슈온)"
           }
         ]
       }
     ],
-    "today_kst": "2026-11-23"
+    "today_kst": "2026-11-24"
   }
 }

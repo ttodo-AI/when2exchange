@@ -1,0 +1,54 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-24T08:35:38.220421+00:00",
+  "window_hours": 24,
+  "count": 6,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChMStKe9NTdCZ5o4SRYhB'})"
+  },
+  "articles": [
+    {
+      "title": "골드만삭스, 원-달러 환율 내년 1280원까지 하락 전망...\"원화 환전 수요, 올해보다 3배가량 늘어날 것\"",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBIaE5IU2ZTNm9BcGN1bmZLTFBCU0FBX01TT3Awd281TDdEakdjbzFRWHZMNU9lS1R1Vm9CUUpBWWw0STJtTzZMbXl2Z29XTTVaOUM0MXFzdGd1VUpmMng5bHFNMlFPX3lXVnl2Y3lsdmxtejhEa2hLUmNfdjM?oc=5",
+      "summary": "골드만삭스, 원-달러 환율 내년 1280원까지 하락 전망...\"원화 환전 수요, 올해보다 3배가량 늘어날 것\" 비욘드포스트",
+      "source": "비욘드포스트",
+      "date": "2026-11-24T06:17:33+00:00"
+    },
+    {
+      "title": "해외IB들 \"원화 강세\"…반도체 달러 환전이 환율 향방 갈라",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEtGeWtZZ3hNWEI3Z002NjFaNENmUGkzakhQWTEzOGxhMHFoWmVPd0JqYm8xbEllb2tjNElnd3RJU2ZKR3EyY0JiTHVmdDNUYm5lSDhfWkw5ZDZvM29mSUxTMzYtdjF2UE40eGZ2b0V1bDViU3JmRVJHMGtmSTVyeA?oc=5",
+      "summary": "해외IB들 \"원화 강세\"…반도체 달러 환전이 환율 향방 갈라 이데일리",
+      "source": "이데일리",
+      "date": "2026-11-23T10:09:18+00:00"
+    },
+    {
+      "title": "골드만삭스 \"한국, 내년 3.2% 성장 전망…기준금리 상단 3.5%\"",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BUzBYTGZJRndUQWZnSjF0NjJ4WkRYbEw5Z2xyNzc5R1F0WXB6Qy0zWWlaYXF1QWVEdnA4T2FvX3BTZGtmellDdW1HamdGLS1ySUxYbkE1S1F3ek3SAWBBVV95cUxQWW1mUmNLVDlCRERMS2lzQ09paXI4YUp1MlY0ZlpleE9HU1AtaWN5Um1tcVhiWEFRQ1FZekdPNDhYYjNGWS1Xd2FXdnpJR0ZaVnRXYmFldU1VWUdHekc4aWY?oc=5",
+      "summary": "골드만삭스 \"한국, 내년 3.2% 성장 전망…기준금리 상단 3.5%\" 연합뉴스",
+      "source": "연합뉴스",
+      "date": "2026-11-24T05:04:27+00:00"
+    },
+    {
+      "title": "골드만삭스 \"내년 말 원·달러 환율 1280원…韓경제성장률 3%대 전망\"",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XZEY2dmVMbGRnU2RYMzRPUmVsOTNvRlZYcFgyOFFjTDEzbUNZTEdCSFZHQWszSDh4bzNYN1lfUGs3cXZjRFZGaEpvaEVNRVA3NklVQ1Rkc0hIUGZqaEJUXzFB?oc=5",
+      "summary": "골드만삭스 \"내년 말 원·달러 환율 1280원…韓경제성장률 3%대 전망\" 아시아경제",
+      "source": "아시아경제",
+      "date": "2026-11-24T07:08:00+00:00"
+    },
+    {
+      "title": "[11월 4주차] 환율(FX) 전망",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kd1B2UF9KTTZYV244clJBWU5aQkdIc1ZZaVRtNjNxSVlmVFJMLW40bWZYQ0t0MndjTzhaZEJJaXlCOGlqb1ZiRDY4VThwd0tueGM4R0dZX1BUckRON2g2ZGVyck9rV1JNRGxZSQ?oc=5",
+      "summary": "[11월 4주차] 환율(FX) 전망 KB Think",
+      "source": "KB Think",
+      "date": "2026-11-24T07:57:32+00:00"
+    },
+    {
+      "title": "[2027 한국경제 전망] 골드만삭스 \"내년 말 환율 1280원...반도체가 '버팀목'\"",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50Mjh0UG40NlBRUXF2cFpXR0psYVAtZ29nVXYxQkFXYl93QTlrWnNHN3hZWVZGMkZicTJKempSYmV3NTdvV2FzV1lma2JiVmx1S0gwVFpmeEUxNHdOQ09JcVNhMmhud1duX0oxY29mWmtTa0ly?oc=5",
+      "summary": "[2027 한국경제 전망] 골드만삭스 \"내년 말 환율 1280원...반도체가 '버팀목'\" 파이낸셜포스트",
+      "source": "파이낸셜포스트",
+      "date": "2026-11-24T04:46:32+00:00"
+    }
+  ]
+}

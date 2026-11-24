@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-11-24T08:36:36.361229+00:00",
+  "today_kst": "2026-11-24",
+  "guide": "이번 주 25일 발표되는 미국 10월 PCE 물가지수와 26일 한국은행 금융통화위원회의 기준금리 결정이 원/달러 환율의 최대 분수령이다. 미국의 인플레이션 둔화 폭과 한은의 금리 인상 의지에 따라 단기 변동성이 급격히 커질 수 있다. 지표 발표 전후로 환율 방향성이 결정되므로 무리한 일괄 환전보다는 분할 대응이 유리하다.",
+  "events": [
+    {
+      "date": "2026-11-25",
+      "time": "22:30",
+      "name": "미국 10월 개인소비지출(PCE) 물가지수",
+      "importance": 3,
+      "summary": "연준의 최우선 물가 지표로 달러화 방향을 가를 핵심 변수다.",
+      "why": "연방준비제도(Fed)가 통화정책 결정 시 가장 주시하는 물가 지표로, 수치에 따라 달러화 강세 지속 여부가 판가름 난다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "예상치를 웃돌아 물가 압력이 지속될 경우",
+          "effect": "긴축 장기화 우려로 달러화가 강세를 보이며 원/달러 환율이 상승 압력을 받는다."
+        },
+        {
+          "cond": "예상치를 밑돌며 물가 둔화세가 확인될 경우",
+          "effect": "금리 인하 기대감이 형성되며 달러화 약세로 원/달러 환율이 하락할 수 있다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+          "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
+          "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
+        },
+        {
+          "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
+          "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "time": "",
+      "name": "한국은행 금융통화위원회 기준금리 결정",
+      "importance": 3,
+      "summary": "한은의 금리 인상 여부와 한미 금리 격차 향방을 결정짓는다.",
+      "why": "국내 기준금리 결정과 통화정책 기조는 원화 가치 방어 및 한미 금리 역전폭에 직결된다.",
+      "result": "",
+      "scenarios": [
+        {
+          "cond": "시장 전망대로 금리를 인상하고 매파적 발언을 이어갈 경우",
+          "effect": "한미 금리차 축소 기대로 원화 약세 심리가 진정되며 환율 상승세가 제한된다."
+        },
+        {
+          "cond": "금리를 동결하거나 비둘기파적인 태도를 보일 경우",
+          "effect": "내외 금리차 확대 및 통화정책 완화 신호로 원화가 약세를 보이며 환율이 반등할 수 있다."
+        }
+      ],
+      "sources": [
+        {
+          "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
+          "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
+        },
+        {
+          "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
+          "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
+        },
+        {
+          "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
+          "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
+        },
+        {
+          "title": "한은 26일 금통위 '3.25% 인상' 전망 우세…증권사 10곳 모두 인상, 내년 최종금리 3.50% 9곳",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hS3lsNGpQWlY1c3pTUlNVVHBCRVA1czhCXy0xbEZNR0lud1pGZW9NNEVyZXlaOXZkNUUyTzVxaHR3M2lMUmdqaXRUSVg1ZF90YnVUNHJPRjhDSmdQbFJ3UWhma0E4aXN2U2NJ?oc=5",
+          "snippet": "한은 26일 금통위 '3.25% 인상' 전망 우세…증권사 10곳 모두 인상, 내년 최종금리 3.50% 9곳 ISSUE ON (이슈온)"
+        }
+      ]
+    }
+  ]
+}

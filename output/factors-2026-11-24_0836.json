@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-11-24T08:36:14.373680+00:00",
+  "card_title": "PCE 하루 앞두고 기술주 반등",
+  "tldr": [
+    "원/달러 환율은 어제보다 내린 1,342원에 마감하며 큰 변화 없이 머물렀어요.",
+    "엔비디아 젠슨 황 복귀 소식에 위험자산을 사려는 분위기가 살아나며 장중 1,350원을 넘던 환율이 내려왔지만, 강달러 기조가 유지돼 낙폭은 작았어요.",
+    "내일 발표될 미국 10월 개인소비지출(PCE) 물가지수 결과에 따라 시장의 긴축 경계감이 달라질 수 있어요."
+  ],
+  "overall_why": "장 초반 안전한 달러로 돈이 몰리며 환율이 장중 1,350원을 넘어서기도 했으나, 엔비디아 호재로 국내 증시가 급반등하자 **위험자산을 사려는 분위기**가 되살아나며 상승 폭을 반납했다. 다만 내일 발표될 미국 10월 개인소비지출(PCE) 물가지수를 앞두고 **미국 연준의 긴축 경계감**이 여전히 달러화를 지지하면서, 환율은 전일 대비 내린 1,342원에 보합권으로 장을 마쳤다.",
+  "factors": [
+    {
+      "name": "달러 강세(달러인덱스)",
+      "emoji": "💵",
+      "impact": 5,
+      "impact_reason": "글로벌 달러화 강세와 기술주 반등에 따른 위험선호 심리가 팽팽히 맞서며 환율 흐름을 주도",
+      "headline": "달러화 강세 지속 속 위험선호 회복에 소폭 하락 마감",
+      "bullets": [
+        "미국 연방준비제도의 긴축 장기화 경계감에 달러화가 강세를 보이며 환율의 하단을 지지했다.",
+        "반면 기술주 중심의 증시 반등과 외국인 매수세 유입으로 위험선호 심리가 회복되며 환율은 전일대비 내린 1,342원에 마감했다."
+      ],
+      "sources": [
+        {
+          "title": "원·달러 환율, 기술주 급등에 1342.4원 마감…외국인 매수세 유입",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBEclBDd3dkZ3dFWW5EWjBKczhkNG9YQkxQbWRnTFYtdlVIRUY1ekZHMEJLd255eUJhTnNiMnAxYlQ2UFdUM3RZNHdBN3FjUXNzVmVFX1lfUEhlb0h1NExBTXVob052SFVHblN6cmtLQmTSAXRBVV95cUxPWktScXJTMHozRU1QWnhDNV9PM0ZDNGMwZ2JUbENPaDl6V0dxQnplWFlqOW1yUnBUeWtTNGxVNHBudWhXN1NoREhHVTNBaWYwRENrTmdDR3pzX0NDU3dWWWtLc3BqWUJGR243a3dNMlB5WkxqYw?oc=5"
+        },
+        {
+          "title": "환율, 엔비디아발 위험선호 회복에 하락…3.5원 내린 1,342.4원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE15R09sLTlod2hoeHpQMnYxZlV3QWIyZ1BHNktIamVHTmFOYmRCUFcxcGNsd3BmbmtsenpVRFpWdlpURE5WdktENFg3Y25jN05IYm9QZlFWY2xhVy1uTmNLb9IBYEFVX3lxTE15R09sLTlod2hoeHpQMnYxZlV3QWIyZ1BHNktIamVHTmFOYmRCUFcxcGNsd3BmbmtsenpVRFpWdlpURE5WdktENFg3Y25jN05IYm9QZlFWY2xhVy1uTmNLbw?oc=5"
+        },
+        {
+          "title": "코스피 5000선 회복에 환율 3.5원↓…강달러에 낙폭 제한",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE11dzBiRjBLSjBXOHppLWlKMzdCdTRreGFYTmUwRUpXTklTSkgwS1JmYzdrajI2S3UzWmxIRDB3Vi10NG9VeEkxcFRqbVpZZlpzVXI4bnNxNnlFWmtOd0ZzME50MHcxTUdZeExFRjhFQQ?oc=5"
+        },
+        {
+          "title": "환율, 1330원대 후반서 등락…美 증시 반등에도 강달러 여전",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMcEdlTmNGcklGMFlhdk13YkN5cU5wUExYY1BIS21lZnMxUGJzQlZGLXdHMzdReWNGbXFSdE9CMDJwN2NSM2dfcTZKVW4wMjdvME1Vd0lsTUgxNDI0ZkE?oc=5"
+        },
+        {
+          "title": "[환율마감] 원·달러 사흘만 하락, 상하단 막힌 박스권",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXTVk4Z3dFWHIwNTl3N1I3enNjX281SjJwMlhIU0QxR0JNZ2pfVXlrb1RBRGJEdmpDb2ZWTjJXNnlUMlEtSmI2ODg2amFVRkZaS0ppdmJtcUtudnhiRVJiTXYtUGs1VjllRnFqQzVXMl9kdw?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 4,
+      "impact_reason": "내일 발표될 미국 핵심 물가지표를 앞두고 연준의 금리 판단에 대한 경계감 지속",
+      "headline": "미국 물가 지표 대기 속 연준 긴축 경계감 지속",
+      "bullets": [
+        "미국 개인소비지출(PCE) 물가지수와 성장 지표 발표를 앞두고 물가 및 긴축 경로를 확인하려는 관망세가 짙어졌다.",
+        "미국 단기 국채 수익률이 상승하고 연준의 12월 금리 판단을 둘러싼 경계감이 이어지며 달러화 강세 흐름을 뒷받침했다."
+      ],
+      "sources": [
+        {
+          "title": "[채권/외환] 젠슨 황 복귀에 美 단기 국채 수익률 상승…달러, 유로 대비 19개월래 최고",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBWczJnUFJob3ZjMEdlb3A0U2JvWDQ4WlR5VlkzdjZFSWMxc1RsVTU0NmRIOHV0TkY0UEZQU2JfMmpBRHVhN3Q3Y2hzVmJRU0h6V3RoVkhXS0o4YWhR?oc=5"
+        },
+        {
+          "title": "PCE 물가, 금통위에 주목해야 할 한 주",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5"
+        },
+        {
+          "title": "원·달러 환율, 1342.6원…달러, 연준 추가 긴축 기대에 강세",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1GZDNMOUxwRTBZbzFsMDFMbDd1bUcwZlRoTUo4NmoyblFxWXd1UlRtVUplZTBBOFVmeld6SHlGLWJkalVuWFNxWHUzaFQwMVF6VFdUdlZFYjJYWEFLcTAwdVpERDNsdjJOSXhuVk1nUQ?oc=5"
+        },
+        {
+          "title": "美 물가·성장 지표, 연준의 12월 금리 판단을 바꿀까?",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45bUgwQk1UZ1h0ckI1eks2ZkcyNWszdkxqeUwxSGtzRVg3M3ZFMExwbTBWeDlZMzNNMlJkRzEwSTZQQmQzVF9URGRVS1oxeXItMWxLVGRTRHlTYjZfRGwtcUVaVHUwMzlQNHgtYtIBcEFVX3lxTE5vd2JvY3FrSHJ6bnY2RzhZcEx2MVBQV0VGY0dRdkRtWlFlZnhZeVRSUzViMmdHZEVQeWFSRDNsNDgwUjdZZXAtbVZ6U2laOVhVV1J2bmZKd19TUlNaYkZrLWVXbllaeVpZWjBkaWtTT3I?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 3,
+      "impact_reason": "장중 엔비디아 호재로 인한 국내 증시 급반등과 1,350원선 공방이 발생",
+      "headline": "엔비디아發 증시 반등에 장중 1,350원대 진입 후 반락",
+      "bullets": [
+        "장중 글로벌 위험회피 심리와 배당 역송금 변수 등으로 환율이 2주 만에 1,350원대를 돌파하기도 했다.",
+        "이후 젠슨 황 복귀에 따른 기술주 랠리로 코스피가 급반등하고 위험회피가 완화되자 환율은 상승 폭을 반납하며 되밀렸다."
+      ],
+      "sources": [
+        {
+          "title": "돌아온 '젠슨 황', 돌아온 '5000선'... 코스피 6.32% 급등",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00YTFrbVd0a05yWGdIX3RqOHEyUVBqRU9feHQwQzhTNmhBRFlKNDZWbVFQN21yY25JQlpaV0tmcmltSUNhMmtrcndmZVJISmR4aldmSXJzWFJodlhqbFNLNHBkVWtnc3dfWDJ2dXJ2QmZaMXlKUjVZ?oc=5"
+        },
+        {
+          "title": "증시 급락에 환율 장중 1350원 돌파 … 반도체 네고도 방어 한계 왔나",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdk9iNDhKMlpOZDgwWlBtX0RRNmlHbzRwTWpDSzlQbE13VVQ1VU5XUUcxQzBjc25Ualhjdk94X3pNQzNFRUx3X203dWJOTVRsTWcyT1M2X2ZaeG5aVDdpcDJ5NnFqVHgxSUtnVmFpeDYzU3hKTWRoZjlBZnNYRkZSYtIBgAFBVV95cUxQdk9iNDhKMlpOZDgwWlBtX0RRNmlHbzRwTWpDSzlQbE13VVQ1VU5XUUcxQzBjc25Ualhjdk94X3pNQzNFRUx3X203dWJOTVRsTWcyT1M2X2ZaeG5aVDdpcDJ5NnFqVHgxSUtnVmFpeDYzU3hKTWRoZjlBZnNYRkZSYg?oc=5"
+        },
+        {
+          "title": "환율, 글로벌 위험회피 심리에 상승…2주만에 장중 1,350원대",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ldll1X3o3U2xic2hZZzlKbFhuc3plYllKYS1Uci1tTUcwZ21HRnZJcTdsdFgxd2tEc0ZwMjJ5ZlE3YU9IcF9fVHhoRWRYWjdKYjNNT3VrVXZUb1nSAWBBVV95cUxPWnplWTRBaXEzU2hSM190UVpwT2RwWDVEcmVYaUJBenM2M3c0eDlaR1h4Y2ZoLTY2YzV6UjNJQVVfX2VEbnUxOU0zTnEwckREZkc0Qk02ck1CbHFQSWlRQjA?oc=5"
+        },
+        {
+          "title": "환율 1340원대 초반 등락…美 증시 급반등에 소폭 하락",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVb1pWSlZnWnVBdjRXa2hHbnhva2NYN3F4b09wZXczY1hIN2swQWRQY0I4eldOQ2xDdklVTDFLVlhaMmhnaVlpUU1pU3U2WnlfSWVNczhpM0FhUdIBWEFVX3lxTFBqc0YxT1ZMODB2UlNpQWNib0ZDOEwxVUp0bjk1cDI3cnpjazFwdzNBREhWWWFEaW9abVVCNVNPbkEtb0VIZ3hlX2JFMkRSZEtsSld0bGd5QkY?oc=5"
+        },
+        {
+          "title": "환율, 장중 1350원 돌파…\"증시·삼전 배당 역송금 변수\"",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQalZwZTcwUmpmUThiN0wxMFVjZUZobldsa1NuSGFNZE5jVXJPTnl3MVFsb2U0OXR4T1VRbWIzTEw5amc0NGFuZVZlXzRhS21nN1RIX1lORDVGSmUzWjN4LWctTGxsTUxNQzlrTXZfa0V0ZXJ2bnJzNkRwSWI1QlpyeQ?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 경제·수출",
+      "emoji": "🏭",
+      "impact": 2,
+      "impact_reason": "반도체 중심의 수출 호조와 달러 환전 수요 기대가 원화의 바닥을 지지",
+      "headline": "반도체 수출 호조 및 달러 환전 수요가 원화 방어벽 형성",
+      "bullets": [
+        "골드만삭스는 반도체 수출 호조를 버팀목으로 내년 한국 경제성장률이 3.2%를 기록하고 원·달러 환율이 1,280원까지 하락할 것으로 전망했다.",
+        "반도체 수출 기업의 달러 환전 수요가 늘어나며 외국인 주식 매도세 속에서도 원화 가치를 지지하는 요인으로 평가받았다."
+      ],
+      "sources": [
+        {
+          "title": "외국인 240조 '팔자'에도 버틴 원화…①반도체 수출 ②리밸런싱 완화 ③ADR",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9OS3g3bzZaeG5lbF93NlRFU1A2eFRpVHRVaUFXcEsxWlhfZURCTDVHT09BZWFaSEZ1NGtFWnBSM3ptQ3FvaElTNF9TNmJCbThUTG9fRmh2ZTVkSi1kNVlvbtIBeEFVX3lxTE5pUmhvbE52U3hhWUNBd09ZdGpPY21xMU1rQnBVeGlZOWlhWUZja1dacGtrSjE1SzIxWlZZSFJWTWNMbVBQYXF0ZzdnbUxYZFdYYjZCaDc5c3ppaFh5T1BqUFhFUGFmRWpVYkc0S1hwSFhRQWJLb2VuVQ?oc=5"
+        },
+        {
+          "title": "[2027 한국경제 전망] 골드만삭스 \"내년 말 환율 1280원...반도체가 '버팀목'\"",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE50Mjh0UG40NlBRUXF2cFpXR0psYVAtZ29nVXYxQkFXYl93QTlrWnNHN3hZWVZGMkZicTJKempSYmV3NTdvV2FzV1lma2JiVmx1S0gwVFpmeEUxNHdOQ09JcVNhMmhud1duX0oxY29mWmtTa0ly?oc=5"
+        },
+        {
+          "title": "골드만삭스, 원-달러 환율 내년 1280원까지 하락 전망...\"원화 환전 수요, 올해보다 3배가량 늘어날 것\"",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBIaE5IU2ZTNm9BcGN1bmZLTFBCU0FBX01TT3Awd281TDdEakdjbzFRWHZMNU9lS1R1Vm9CUUpBWWw0STJtTzZMbXl2Z29XTTVaOUM0MXFzdGd1VUpmMng5bHFNMlFPX3lXVnl2Y3lsdmxtejhEa2hLUmNfdjM?oc=5"
+        },
+        {
+          "title": "해외IB들 \"원화 강세\"…반도체 달러 환전이 환율 향방 갈라",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPOEtGeWtZZ3hNWEI3Z002NjFaNENmUGkzakhQWTEzOGxhMHFoWmVPd0JqYm8xbEllb2tjNElnd3RJU2ZKR3EyY0JiTHVmdDNUYm5lSDhfWkw5ZDZvM29mSUxTMzYtdjF2UE40eGZ2b0V1bDViU3JmRVJHMGtmSTVyeA?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "high",
+  "heat_reason": "미국 10월 개인소비지출( D-1",
+  "title_badge": "⚡ 오늘 주목",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "실제 전일대비 -0.5원(보합)인데 방향/변동 주장"
+    ]
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}
