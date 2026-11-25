@@ -1,0 +1,19 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-25T07:10:04.938090+00:00",
+  "window_hours": 24,
+  "count": 1,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChPEAnfHN8E1SU8e94ven'})"
+  },
+  "articles": [
+    {
+      "title": "골드만삭스 \"내년 한국 3.2% 성장…반도체 기업 환전 수요에 환율 1280원\"",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5LU01hRVo0U01CcUNucVg4UnhqQWhtTTlWWnZWT2RUTHFuNXhzYllSWXZ5VjdXbENlaG1lbk5iREp2aUVpNjU1NTN0azZVTnFRMUxkZGd2WWpKUVRRQUFkS0FJQU5VbHZuamZTVkJB0gFzQVVfeXFMUHdUNzgtR3FpUnc4eXZ6STY1Q3diblhHbDdWT3EtbVc2Vm93ZzY3NGJBbnd2c2FxUm1wUldOcWxnRkl3Q0k5bEVhVVhEM19HSmh2SE5tYTBCQm9ZRktQOTVYOV9JTVFuN0NjNE90aEQwRFJfOA?oc=5",
+      "summary": "골드만삭스 \"내년 한국 3.2% 성장…반도체 기업 환전 수요에 환율 1280원\" 한국일보",
+      "source": "한국일보",
+      "date": "2026-11-24T07:34:00+00:00"
+    }
+  ]
+}
