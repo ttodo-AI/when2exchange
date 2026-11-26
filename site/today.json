@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T07:00:57.618186+00:00",
-  "asof": "2026-11-26 15:59 KST",
+  "generated_at": "2026-11-26T18:51:17.940943+00:00",
+  "asof": "2026-11-27 03:51 KST",
   "stale_days": 0,
   "card_title": "한은 금리 인상에 환율 소폭 하락",
-  "overall_why": "한국은행이 **기준금리를 연 3.25%로 인상**하고 경제 성장률 전망치를 높이면서 원화 가치가 오름세를 나타냈다. 여기에 기술주 반등으로 안전한 달러를 찾던 심리가 다소 진정되었으나, **미국 10월 PCE 물가 발표에 따른 긴축 경계감**이 달러 수요를 지지하면서 환율은 어제보다 내린 1,343원에 마감했다.",
+  "overall_why": "한국은행이 **기준금리를 연 3.25%로 인상**하고 경제 성장률 전망치를 높이면서 원화 가치가 오름세를 나타냈다. 여기에 기술주 반등으로 안전한 달러를 찾던 심리가 다소 진정되었으나, **미국 10월 PCE 물가 발표에 따른 긴축 경계감**이 달러 수요를 지지하면서 환율은 어제보다 내린 현재 1,343원.",
   "tldr": [
     "원/달러 환율은 어제보다 내린 1,343원으로 장을 마감했어요.",
     "한국은행 금융통화위원회가 기준금리를 연 3.25%로 올리면서 원화 가치를 끌어올리는 힘이 작용했어요.",
@@ -111,7 +111,7 @@
       "headline": "국내 증시 급반등에도 환율은 1,340원대 초반 박스권",
       "bullets": [
         "코스피가 하루 만에 5,000선을 회복하는 등 반등했으나 외환시장에서는 저가 매수 수급이 유입됐다.",
-        "금통위 결과와 증시 변동성을 소화하는 가운데 환율은 전일 대비 내린 1,343원에 마감했다."
+        "금통위 결과와 증시 변동성을 소화하는 가운데 환율은 전일 대비 내린 현재 1,343원."
       ],
       "sources": [
         {
@@ -138,86 +138,8 @@
     }
   ],
   "calendar": {
-    "guide": "오늘(26일) 열리는 한국은행 금융통화위원회의 기준금리 결정과 미국 10월 PCE 물가지표 발표가 이번 주 원/달러 환율의 최대 분수령이다. 한은의 금리 결정 및 향후 통화정책 신호에 따라 원화 가치 변동성이 급격히 커질 수 있다. 환전이 필요한 실수요자라면 발표 직후 나타나는 급등락에 휩쓸리지 말고 시장 반응을 확인하며 분할 환전으로 대응하는 것이 안전하다.",
-    "events": [
-      {
-        "date": "2026-11-25",
-        "time": "22:30",
-        "name": "미국 10월 개인소비지출(PCE) 물가지수",
-        "importance": 3,
-        "summary": "연준이 선호하는 물가 지표 발표에 따른 달러화 강약세 결정",
-        "why": "미국 연방준비제도의 향후 금리 인하 경로를 가늠하는 핵심 물가 지표로 달러화 가치에 직접적인 영향을 미친다.",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "PCE 물가상승률이 예상치를 웃돌며 물가 경직성이 확인될 경우",
-            "effect": "연준의 고금리 장기화 우려로 달러화가 강세를 보이며 환율 상승 요인으로 작용한다."
-          },
-          {
-            "cond": "PCE 물가상승률이 예상치를 밑돌며 둔화세를 나타낼 경우",
-            "effect": "연준의 통화 긴축 완화 기대가 커지며 달러 약세와 함께 환율 하락 요인으로 작용한다."
-          }
-        ],
-        "sources": [
-          {
-            "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
-            "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
-          },
-          {
-            "title": "PCE 물가, 금통위에 주목해야 할 한 주",
-            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
-            "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
-          },
-          {
-            "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
-            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
-            "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
-          }
-        ]
-      },
-      {
-        "date": "2026-11-26",
-        "time": "",
-        "name": "한국은행 금융통화위원회 기준금리 결정",
-        "importance": 3,
-        "summary": "한은 기준금리 결정 및 통화정책 방향 발표로 원화 가치에 직접적 영향",
-        "why": "한미 금리 격차와 환율 변동성 속에서 한은의 금리 결정과 정책 코멘트는 원/달러 환율의 방향을 결정하는 핵심 변수다.",
-        "result": "",
-        "scenarios": [
-          {
-            "cond": "기준금리를 인상하거나 매파적 기조를 강하게 시사할 경우",
-            "effect": "원화 가치 하락 압력이 완화되며 원/달러 환율이 하락할 수 있다."
-          },
-          {
-            "cond": "기준금리를 동결하고 추가 긴축에 신중한 태도를 보일 경우",
-            "effect": "한미 금리차 우려로 달러화 대비 원화 약세가 심화되며 환율이 상승할 수 있다."
-          }
-        ],
-        "sources": [
-          {
-            "title": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지",
-            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9YVmxmakRDNGxHVmYzY21rVEJtaFRaREc5bnZHT3NPQ0dndHExUzlmME5ZX0lQQ2g1ZmV0UDY1V3Y0NHY2VHY5NVVSSHp2SkVXT0JacHRVN29TMkNiY1NBcG9XODMzbHNWZWJCb3BTZUt0TU1Ray0teGJqRl91QQ?oc=5",
-            "snippet": "11월 23~27일 한국·미국 증시 주요 일정｜미국 PCE·한국 금통위·델 AI 서버 실적까지 네이버 프리미엄콘텐츠"
-          },
-          {
-            "title": "PCE 물가, 금통위에 주목해야 할 한 주",
-            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBjUlZWdUp5V21EM29ZRGc2Q1k1VWJQaXRfU25uMWphQ2NobzIyUHBTOW9YaDdQdVppR01DMDNablJTa1FoOGFROHRFN2hUZjNITFFZVFVLQnZ1b1YxblJ1RFFENHVyZw?oc=5",
-            "snippet": "PCE 물가, 금통위에 주목해야 할 한 주 KB Think"
-          },
-          {
-            "title": "내일 금통위, 기준금리 3.25%로 오를까… 반도체 호황이 부른 금리 인상, 과거 25번은 '왜 올리느냐'가 갈랐다",
-            "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNUl6MGIwT1lrUTA0Q3hkbUd0dzhzQzQxRnVVTGhUaThaLW1YS2x5YTdaTzFINVdwbTliYTBLY2RXQzd4NDd3cUxyenl2WndidWFqOG9CZFBhcEMwaEtmUERFWEl0QldWcTFuRTdTMGV1Q0gzdG9PTldNOHhhSmpkZ0xXY0tYNHE2YUF3bWZiellXYU93?oc=5",
-            "snippet": "내일 금통위, 기준금리 3.25%로 오를까… 반도체 호황이 부른 금리 인상, 과거 25번은 '왜 올리느냐'가 갈랐다 네이버 프리미엄콘텐츠"
-          },
-          {
-            "title": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다",
-            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUT29QOURPc3ZnTHhVQW9BbklZcl9YOEtYRGVzR3A0ejVxV0xYQWJIRFNQMkpFZUNDLVFnTmVlZ0tiZzNieUh1dUNCQURZVEVfSEVnSU5vS2hTZjNJTEdCS2M1alpXQdIBakFVX3lxTE5yTXJ5TEliQ01QWjlfVnVGMmVSNWx4MmRHR2ZFUnpBUjRCanJGMWFFVjFNNGZyanpnTnphNmVDU2xmRm54OVA1UjdPaFVMdWwzb3VJdlRYanRBUHE2MG9zV1FWMnhzUTdCbnc?oc=5",
-            "snippet": "[이번주 관전포인트]코스피 급락 뒤 PCE·한은 금리 결정이 이번 주 증시 가른다 센트럴경제"
-          }
-        ]
-      }
-    ],
+    "guide": "",
+    "events": [],
     "today_kst": "2026-11-26"
   }
 }
