@@ -1,0 +1,26 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-26T06:59:25.302893+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChR7AZYh56hkZbixByRjt'})"
+  },
+  "articles": [
+    {
+      "title": "내년 원달러 환율 1280원~1380원 전망…엇갈리는 이유는",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5kOWxvRXpvWGdySW00MmZqek5CcklkMFBfQlpsMmstX05sWkxKdzIzdlg4M1k1WF8ya0FBS0lBa2VTeXdqMFFZQXVqM3otRDlhMEFldmhDLThzM2h0dFJ5WUdHZGFtTmI3eEE?oc=5",
+      "summary": "내년 원달러 환율 1280원~1380원 전망…엇갈리는 이유는 중기이코노미",
+      "source": "중기이코노미",
+      "date": "2026-11-25T07:20:00+00:00"
+    },
+    {
+      "title": "하나증권 \"달러 벌어도 해외로 빠져나간다…HD한국조선해양·한화오션 기회\"",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBSYXcxczI4RXZZcFlZNVZDRy1wYkVKdXU4cUVyRmJTMlVBMXNUMnZhNmgxRFFjWU5RS1lpeFFhenRlckU1VGlvcW5GV01PdGUwUWktNmV2THh3S0NSNFVoX1RZOTBqN0FRdTM2ajF1aUdJMEk?oc=5",
+      "summary": "하나증권 \"달러 벌어도 해외로 빠져나간다…HD한국조선해양·한화오션 기회\" 핀포인트뉴스",
+      "source": "핀포인트뉴스",
+      "date": "2026-11-25T08:07:30+00:00"
+    }
+  ]
+}
