@@ -1,0 +1,33 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-27T06:55:02.371409+00:00",
+  "window_hours": 24,
+  "count": 3,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChSze74CtH4mkBaseX9UJ'})"
+  },
+  "articles": [
+    {
+      "title": "삼성전자 역대급 배당과 강달러…환율 상승 압력[외환브리핑]",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTHU4X281ejF2UnM1UV9FcHd4R1ZvUjNaMTZzaVdwS3R2eDRycVdSUGhQQ2laN0xrQkYyRWdIM1NaaS1Fak5yWVJhTndqVEVLTTdWX2t4QWNkTFNEejRaNmR5MUR2QW1ocXJadktHWkhuRGJYUVg1VHRESGxZSjZZZQ?oc=5",
+      "summary": "삼성전자 역대급 배당과 강달러…환율 상승 압력[외환브리핑] 이데일리",
+      "source": "이데일리",
+      "date": "2026-11-26T23:11:22+00:00"
+    },
+    {
+      "title": "[오늘의 환율] 11월 27일 원·달러 환율 1342.50원…주요국 통화 대비 원화 강세",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE84V2d1Ni1SczdLb09iSHk3dHlfMjJoVmtDd1dVUHFFN0hFVVQyY0hZcTVYZV9JTVdmZlJWakp2Y0hacFhOZHdvT3Q2MWNzdTNpeDhzUHo0OWZFM0hyTy1KVTJoMS1YSEpfdXI2Yjh2ZHdEd9IBckFVX3lxTE84V2d1Ni1SczdLb09iSHk3dHlfMjJoVmtDd1dVUHFFN0hFVVQyY0hZcTVYZV9JTVdmZlJWakp2Y0hacFhOZHdvT3Q2MWNzdTNpeDhzUHo0OWZFM0hyTy1KVTJoMS1YSEpfdXI2Yjh2ZHdEdw?oc=5",
+      "summary": "[오늘의 환율] 11월 27일 원·달러 환율 1342.50원…주요국 통화 대비 원화 강세 잡포스트",
+      "source": "잡포스트",
+      "date": "2026-11-27T01:43:09+00:00"
+    },
+    {
+      "title": "[신윤우의 외환분석] 배당, 네고 대격돌의 파장은",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBiR2xGWGMtZWU5MnlmaXliZU9IU2x2WWJETE1yNlBXUmwtS3JuUlQ5R21HZkUwSGZrR3dVY2Q0WDBQbHZnQVRlTTA0Xy1ocko4blV2X01ELWlIUGNTZm04N1NreGdBTkUwU1hsUjlxbUIxUQ?oc=5",
+      "summary": "[신윤우의 외환분석] 배당, 네고 대격돌의 파장은 KB Think",
+      "source": "KB Think",
+      "date": "2026-11-26T23:04:39+00:00"
+    }
+  ]
+}
