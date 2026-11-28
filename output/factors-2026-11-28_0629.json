@@ -1,0 +1,152 @@
+{
+  "generated_at": "2026-11-28T06:29:19.316462+00:00",
+  "card_title": "증시 급반등과 월말 네고에 하락",
+  "tldr": [
+    "원/달러 환율은 어제보다 내린 1,337원으로 떨어졌어요.",
+    "국내 증시가 큰 폭으로 반등하고 수출기업의 월말 달러 매도 물량이 쏟아지며 환율을 끌어내렸어요.",
+    "삼성전자 배당금 지급에 따른 달러 송금 수요와 미국의 소비·물가 지표 추이를 지켜볼 필요가 있어요."
+  ],
+  "overall_why": "글로벌 시장에서 미국 연방준비제도(Fed)의 긴축 유지 전망으로 달러화 강세가 이어졌으나, 국내 증시가 급반등하면서 위험자산을 사려는 심리가 되살아났다. 여기에 **수출기업의 월말 달러 매도 물량(네고)**이 집중적으로 유입되면서 달러 공급이 늘어 원/달러 환율이 하락했다.",
+  "factors": [
+    {
+      "name": "그 외 환율 이슈",
+      "emoji": "🔎",
+      "impact": 5,
+      "impact_reason": "복수 매체가 월말 수출업체 달러 매도(네고)와 수급 요인을 이날 환율 하락의 가장 직접적인 동인으로 지목",
+      "headline": "월말 수출업체 달러 매도 물량이 쏟아지며 환율 하락 주도",
+      "bullets": [
+        "월말을 맞은 수출기업들이 보유하던 달러를 원화로 바꾸는 매도 물량(네고)을 대거 쏟아내며 환율을 끌어내렸다.",
+        "삼성전자의 대규모 배당금 지급에 따른 외국인 역송금 경계감이 있었으나 무거운 네고 물량이 이를 압도했다."
+      ],
+      "sources": [
+        {
+          "title": "[외환] 글로벌 달러 강세에도 하락…얇은 장서 월말 네고",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3OXVRVTNDeDBDaWs1X3d1VWdVVkhYNnpndUhFeVFEN3daR0xoeElTMzVZMGZEbDZUZDQ5U0NvYTMyUkR4ZWc3VlFYaHVzZ051eTVGVWRfclRjbFFIYWtLb3htZUVlZDlYZGtidXZydEJBcS1M0gF0QVVfeXFMUDc5dVFVM0N4MENpazVfd3VVZ1VWSFg2emd1SEV5UUQ3d1pHTGh4SVMzNVkwZkRsNlRkNDlTQ29hMzJSRHhlZzdWUVhodXNnTnV5NUZVZF9yVGNsUUhha0tveG1lRWVkOVhka2J1dnJ0QkFxLUw?oc=5"
+        },
+        {
+          "title": "원·달러 환율, 네고 물량에 1337.9원 마감…4.8원↓",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1WdUV5aDVEUTcwcXdyLVlGUUxqUExxNS1ZWklqUUZzRk52VURJMURKZlUtUlpTVG9kSnU5MjlNR1V4MWo0N3d4UDVhWkxXR20zR25aRGQwR214eXN0S0ZjZUxtMFR6Q3Fo0gFsQVVfeXFMTnJIQnVPZWlLRy1pdlk3NnBmYmMxQzJ2UFhvRHJUVlQzbFFDT2NpVU44TFVpYkZIT1QtVUEzN0QwUTJlbGZqbHp5MG00b1JtbzdvenVYUF9vVmRlMkFtLXQ0QTM4X2thZGdFWllO?oc=5"
+        },
+        {
+          "title": "원/달러 환율, 증시 반등·월말 네고에 하락…1,337.9원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iZ25ZRm9PSGQ0ZlowS19sQ2NqdnFOMEktcW4weV9UbUMzSDM1cDJ4X2pNLXAtUVBwZ1FZc2FuQmZxbjNxOGtuaE50TFhhT1hCRjVHSEVhb2kzSEJYYnByOdIBYEFVX3lxTE1iZ25ZRm9PSGQ0ZlowS19sQ2NqdnFOMEktcW4weV9UbUMzSDM1cDJ4X2pNLXAtUVBwZ1FZc2FuQmZxbjNxOGtuaE50TFhhT1hCRjVHSEVhb2kzSEJYYnByOQ?oc=5"
+        },
+        {
+          "title": "[외환-마감] 삼전 30조원 배당일에도 하락…'무거운 네고'에 1,330원대로",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xYmwtRFJuaC02Nkt1T18zb05qbUVWNHYwai1DUEpYUkhkM2JSeEJvd3VKM0xZOEFwanBEOUctOGZWQ240cmRVMlNoOXRuNmxDRmhMMUVhMjUwcDJsWk9DYUVzOHRTZndjbDk2YzJzb1g?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "외국인 증시 수급",
+      "emoji": "📈",
+      "impact": 4,
+      "impact_reason": "코스피와 코스닥의 급반등으로 위험자산 선호 심리가 확산하며 원화 가치 상승을 뒷받침",
+      "headline": "국내 증시 급반등에 투자 심리 개선되며 원화 강세",
+      "bullets": [
+        "코스피가 4,900선을 회복하고 코스닥이 8%대 급등세를 보이는 등 국내 증시가 강하게 반등했다.",
+        "주식 시장의 반등으로 위험자산을 사려는 분위기가 되살아나며 원화 가치를 밀어 올리는 요인으로 작용했다."
+      ],
+      "sources": [
+        {
+          "title": "원·달러 환율, 증시 급등에 4.8원 하락…1,337.9원 마감",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVNWdZc2FhYXB0U3BUMHJBQ1BjNWRGUHdISW9RbzZwUFUyQTRZXzJISEJtS21GNVZoaWUzTFJvTUpvZUNVRG5FSi1lT1luQ1VZRzhtX0QzVzg3ME1OdDBPZ1pDd1Z6RzExVHVMc09GWTDSAXRBVV95cUxOUUdkeEFlWGlsb21xS0tCeGp3bE5QX2M0QlZGQkpVbkpYZVMtX2dJd1Z2WHhzOC1PLTRuZFVQWmJkbmZab21FMnB2V01sVllTS1BLdFktQTRmbTVmc0VhY0c4RXVvN0k3SlZkakFRcDNldG9IaQ?oc=5"
+        },
+        {
+          "title": "원/달러 환율, 증시 반등·월말 네고에 하락…1,337.9원",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iZ25ZRm9PSGQ0ZlowS19sQ2NqdnFOMEktcW4weV9UbUMzSDM1cDJ4X2pNLXAtUVBwZ1FZc2FuQmZxbjNxOGtuaE50TFhhT1hCRjVHSEVhb2kzSEJYYnByOdIBYEFVX3lxTE1iZ25ZRm9PSGQ0ZlowS19sQ2NqdnFOMEktcW4weV9UbUMzSDM1cDJ4X2pNLXAtUVBwZ1FZc2FuQmZxbjNxOGtuaE50TFhhT1hCRjVHSEVhb2kzSEJYYnByOQ?oc=5"
+        },
+        {
+          "title": "코스피 4.3%·코스닥 8.1% 급반등…엿새 새 사이드카 일곱 번, '널뛰기 장세'",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBwVld6Y21OWElZaUhkMjRvWFNYc2tDU1VicFR3T0xBRmkyUFFyOGRJOXd4aGhKeU5aX1B3Qk8xWjFELURNLTFYTy1tb09BZnZBZ2NjM1VQZkpyc1RLbnhsZ2hYYlZiZHB6TGJwSkZ3bEdCUQ?oc=5"
+        },
+        {
+          "title": "코스피, 4,900선 탈환...코스닥 8% 급등 마감",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pYk91Uk9FXzR5bV9jVnZjLW5xTExjSUJiTzNxM1N3X1lSdW5OTEIydTJud3ZSX2JtTWVwZnE3Vk9WbG5CbHoydmxLMy1CbWtxZnNadnJaUE81dUVvZEE?oc=5"
+        },
+        {
+          "title": "증시 급반등에 원화 강세…환율 4.8원 내린 1,337.9원 : 금융",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBldF9UNDhVMVk1VDlZZTdGakphNGdOaG0xdllncVhQSXZxYVVQQzViMGpzbVhpb01OaGo0ZWZyY2s1MktIWU8zenI2MA?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "한국 통화정책",
+      "emoji": "🇰🇷",
+      "impact": 3,
+      "impact_reason": "한국은행의 기준금리 인상 조치와 매파적 태도가 환율 하락 압력으로 작용",
+      "headline": "한국은행 기준금리 3.25%로 인상하며 긴축 기조 재확인",
+      "bullets": [
+        "한국은행 금융통화위원회가 물가와 환율 안정을 목표로 기준금리를 3.25%로 선제 인상했다.",
+        "금리 인상 발표 직후 환율은 장중 한때 1,340원선을 밑돌며 일시적인 하락 압력을 받았다."
+      ],
+      "sources": [
+        {
+          "title": "원/달러 환율, 금리 인상에도 보합권…전날보다 0.5원↓(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5LLTFVSE8xTEc5NktUWXVjc1ZNTnc1N0JjRmFBU1dFemhUTG5SQWdVU0JmRGo1cUpTZFNGRlhTeDdTeGlNNTZLa21lRHhobGtrVUtIS0s5amd4XzTSAWBBVV95cUxOM1dlTkZkZWFGMHpkTjE4U0JLdmtOYllmUnIyNHJnY2l2STJmYUM3bDN4NlZJS2hyODgzbG1Nalo4VElCZjlaTFpIUEl2cEt5bUFGRkM3QWRwWVE0dG5yY1k?oc=5"
+        },
+        {
+          "title": "원/달러 환율, 금통위 금리 인상에 1,340원선 하회",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXalhYaVBaQkoxQnVneGdxTG1JR1dUb0QwdklDRW1GOE91RVExOFVZd1IzVU82dzhjZmJYVnBBYTlTRGZIY3VyRW9Wa2U4NDVIY3hrOFl3MzkxSnBGMFB2Uzlxa09qMzVMTHc?oc=5"
+        },
+        {
+          "title": "달러·원 환율 1342.7원 '소폭 하락'…한은 금리 인상·수출업체 네고(종합)",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE01TkZUODJlZnBrUmF4QW9iRVJSLWsxLUlmeF9QNmhCRmhKTlZtT1kzcnhEakh3c09RbUZHdlVPYkdrbFlMNkdNTDBVQnRVYnZVSVg2MmRJM3pja2c?oc=5"
+        },
+        {
+          "title": "한은, 기준금리 3.25%로 인상…AI發 성장 기대와 증시 불안 교차",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kZDctYlQtYTBLaEd1a3BXNlo4anRCdE8xckhQZEV2S1RWN004M2tNcWxZaThkV0lmelVwOXd2RF9JckdRd2RTLU1LbmlqcW9wb0E4MGp2QlhuUnNnNWJvenEyQmJ1OFN0MUxFd2VB?oc=5"
+        },
+        {
+          "title": "한은, 반도체 호황에도 금리 인상…물가·환율 잡기 위한 ‘선제 긴축’ 승부수",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE83OWM3OUUzaE02SkJTeHFIWmVOOHg5RmZkY053RVpQbW9XTlp3OUphNHMwc2tleTBLRWlZaERfYVFLMDU3TzVURXpHZndjOWV6RUt5bUhPbFZxVFRUUmY1bkRBdnpvZjg3MDgwMA?oc=5"
+        }
+      ]
+    },
+    {
+      "name": "미국 통화정책",
+      "emoji": "🇺🇸",
+      "impact": 2,
+      "impact_reason": "미국 연준의 긴축 장기화 전망과 글로벌 달러 강세 흐름이 환율의 추가 하락을 방어",
+      "headline": "미국 연준 긴축 지속 전망에 글로벌 달러화 강세 유지",
+      "bullets": [
+        "미국 인플레이션 압력이 이어지며 연방준비제도(Fed)가 높은 금리를 길게 유지할 것이라는 전망이 달러를 지지했다.",
+        "글로벌 달러 강세 흐름 속에서도 국내 수급 부담과 증시 반등이 맞물려 원/달러 환율은 하락세를 나타냈다."
+      ],
+      "sources": [
+        {
+          "title": "[뉴욕환시] 달러, 위험선호 회복·연준 긴축 전망에 상승",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAtbm84TktVTUR2Zm1nZWZaQ0MyQllna2U3ZzVyaXAxY0NBbWtreFUwTlFjTVMybnZCdFhWZFk2a294V2Q5RF9fOWtvdkhvc0N6NXd2UFgtVzQ2Rml3cnNBdGlaNWNEaWgyMFZxRGc2bVlYdw?oc=5"
+        },
+        {
+          "title": "[뉴욕마켓워치] 블프엔 AI주 쇼핑…주식·달러↑채권↓",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9rSlVRa1VqNU11UTZhWktpa28xYkVmLUU0S3loNTZTNXBvcWlleTRVVnBDV0pienNrVG9LY01MLWFfbmtCdjVKNGFBVC11MndDam1Na2FIdlJOVExaZEhnYlRqTVZlc3czTnZ0QWZoVHc?oc=5"
+        },
+        {
+          "title": "[다음주 환율전망] 美 긴축 경계감 지속…원·달러 환율 1340원 전후 공방 예상",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ob1pTMlRaMi15d0tjbVFrRkgwUUlVTi1HS0YwUmJjUlItNEdfb0Z1R0wtLU1hZ1Fhd2hGZTJCZEp5WUktWHdkc3NfaUZ3RzMwLUVld0hVRE1zRUlGQ2JqRE94NlJYN0pQRGd1aw?oc=5"
+        },
+        {
+          "title": "美 물가·성장 모두 강했다…Fed 긴축에도 비트코인 5만8000달러 지킬까 [강민승의 트레이드나우]",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1wckxvbjA3cHNnX0VDWk0tY0dnYjVKMnJvRVhPUURxcmxRS1h2QU95OU1NZng3NjUzTzI1WGYyTFFGUC1xZUE3Qm1VSC1lLWZu?oc=5"
+        },
+        {
+          "title": "[외환] 글로벌 달러 강세에도 하락…얇은 장서 월말 네고",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA3OXVRVTNDeDBDaWs1X3d1VWdVVkhYNnpndUhFeVFEN3daR0xoeElTMzVZMGZEbDZUZDQ5U0NvYTMyUkR4ZWc3VlFYaHVzZ051eTVGVWRfclRjbFFIYWtLb3htZUVlZDlYZGtidXZydEJBcS1M0gF0QVVfeXFMUDc5dVFVM0N4MENpazVfd3VVZ1VWSFg2emd1SEV5UUQ3d1pHTGh4SVMzNVkwZkRsNlRkNDlTQ29hMzJSRHhlZzdWUVhodXNnTnV5NUZVZF9yVGNsUUhha0tveG1lRWVkOVhka2J1dnJ0QkFxLUw?oc=5"
+        }
+      ]
+    }
+  ],
+  "heat": "normal",
+  "heat_reason": "",
+  "title_badge": "",
+  "checks": {
+    "passed": true,
+    "blocks": [],
+    "warnings": [
+      "주말(외환시장 휴장) — 변동 주장 주의"
+    ]
+  },
+  "engine": "gemini",
+  "engine_model": "gemini-flash-latest"
+}

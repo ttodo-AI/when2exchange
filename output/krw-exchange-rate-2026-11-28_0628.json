@@ -1,0 +1,26 @@
+{
+  "query": "원/달러 환율 전망 환전",
+  "generated_at": "2026-11-28T06:28:53.047739+00:00",
+  "window_hours": 24,
+  "count": 2,
+  "monthly_usd": 2000,
+  "timing_verdict": {
+    "text": "(verdict unavailable: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUrTK2KLwJCF8UBg4ZAs'})"
+  },
+  "articles": [
+    {
+      "title": "[다음주 환율전망] 美 긴축 경계감 지속…원·달러 환율 1340원 전후 공방 예상",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ob1pTMlRaMi15d0tjbVFrRkgwUUlVTi1HS0YwUmJjUlItNEdfb0Z1R0wtLU1hZ1Fhd2hGZTJCZEp5WUktWHdkc3NfaUZ3RzMwLUVld0hVRE1zRUlGQ2JqRE94NlJYN0pQRGd1aw?oc=5",
+      "summary": "[다음주 환율전망] 美 긴축 경계감 지속…원·달러 환율 1340원 전후 공방 예상 굿모닝경제",
+      "source": "굿모닝경제",
+      "date": "2026-11-27T22:00:00+00:00"
+    },
+    {
+      "title": "[마켓H] 삼성전자 배당금 쏟아진다…외환시장 긴장 고조",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9lbjlIdVprVDZKb3kwWVFSUXc0YmtWMGZpUEM0UVd0MVZ6ZVM4VHVZdkZoVXlzc0s5ZjI1eDg0M1VseDM4MHNyTERlTVFRUDcyRDlxMDlMM1U5RHlaZk5ISEFLeDFwcVJZNmQ2NFptSdIBb0FVX3lxTE9lbjlIdVprVDZKb3kwWVFSUXc0YmtWMGZpUEM0UVd0MVZ6ZVM4VHVZdkZoVXlzc0s5ZjI1eDg0M1VseDM4MHNyTERlTVFRUDcyRDlxMDlMM1U5RHlaZk5ISEFLeDFwcVJZNmQ2NFptSQ?oc=5",
+      "summary": "[마켓H] 삼성전자 배당금 쏟아진다…외환시장 긴장 고조 한스경제",
+      "source": "한스경제",
+      "date": "2026-11-27T06:48:07+00:00"
+    }
+  ]
+}
